@@ -1,2 +1,2 @@
-baseurl = "https://doks-staging.netlify.app/"
+baseurl = "https://staging.getdoks.org/"
 canonifyURLs = false
