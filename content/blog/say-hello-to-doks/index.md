@@ -1,9 +1,11 @@
 ---
 title: "Say hello to Doks 👋"
-description: "Doks is a Hugo starter helping you build modern documentation websites."
-lead: "Doks is a Hugo starter helping you build modern documentation websites."
-date: 2020-04-17T08:50:12+00:00
+description: "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+lead: "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+date: 2020-11-04T09:19:42+01:00
+lastmod: 2020-11-04T09:19:42+01:00
 draft: false
-images: [image-doks.png]
-authors: ["Henk Verlinde"]
+weight: 50
+images: ["say-hello-to-doks.jpg"]
+contributors: ["Henk Verlinde"]
 ---
