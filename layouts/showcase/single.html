@@ -1,0 +1,20 @@
+{{ define "main" }}
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar">
+			<nav class="docs-links" aria-label="Main navigation">
+				{{ partial "sidebar/showcase-menu.html" . }}
+			</nav>        
+		</div>
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			{{ partial "sidebar/docs-toc.html" . }}
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9">		
+			<h1>{{ .Title }}</h1>
+			<p class="lead">{{ .Params.lead | safeHTML }}</p>
+			<a href="{{ .Params.link }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a>
+			{{ partial "main/headline-hash.html" .Content }}
+			{{ partial "main/edit-page.html" . }}
+			{{ partial "main/showcase-navigation.html" . }}
+		</main>
+	</div>
+{{ end }}

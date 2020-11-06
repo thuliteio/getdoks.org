@@ -34,9 +34,14 @@
   weight = 10
 
 [[main]]
+  name = "Showcase"
+  url = "/showcase/causal-data-science-meeting-2020/"
+  weight = 20
+
+[[main]]
   name = "Blog"
   url = "/blog/"
-  weight = 20
+  weight = 30
 
 # [[social]]
 #   name = "Twitter"
@@ -50,3 +55,9 @@
   url = "https://github.com/h-enk/doks"
   post = "v0.1.0"
   weight = 20
+
+[[showcase]]
+  name = "Browse"
+  weight = 10
+  identifier = "browse"
+  url = "/showcase/"

@@ -33,6 +33,6 @@ footer = "An open source project by <a href=\"https://twitter.com/henkverlinde\"
 alert = false
 alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
-hyasVersion = "v0.2.0"
+doksVersion = "v0.1.0"
 
 docsRepo = "https://github.com/h-enk/doks"
