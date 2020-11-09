@@ -6,11 +6,14 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 images: []
+link: ""
 menu: 
-  docs:
-    parent: ""
+  showcase:
+    parent: "browse"
 weight: 999
-toc: true
+toc: false
 ---
 
-{{< img src="{{ .Name | urlize }}.jpg" alt="{{ replace .Name "-" " " | title }}" caption="{{ replace .Name "-" " " | title }}" class="wide" >}}
+<div class="card my-3">
+  {{< img src="{{ .Name | urlize }}.jpg" alt="{{ replace .Name "-" " " | title }}" class="card-img-top m-0 p-1" >}}
+</div>

@@ -107,6 +107,11 @@ body.dark .navbar-light .navbar-text a {
   color: $navbar-dark-active-color;
 }
 
+body.dark .docs-links h3.sidebar-link a,
+body.dark .page-links h3.sidebar-link a {
+  color: $body-color-dark;
+}
+
 body.dark .navbar-light .navbar-text a:hover,
 body.dark .navbar-light .navbar-text a:focus {
   color: $navbar-dark-active-color;

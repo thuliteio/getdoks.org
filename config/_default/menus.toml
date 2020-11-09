@@ -35,7 +35,7 @@
 
 [[main]]
   name = "Showcase"
-  url = "/showcase/causal-data-science-meeting-2020/"
+  url = "/showcase/causal-data-science-meeting/"
   weight = 20
 
 [[main]]
