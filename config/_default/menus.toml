@@ -5,16 +5,16 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "Basic Hyas"
+  name = "Basic Doks"
   weight = 20
-  identifier = "basic-hyas"
-  url = "/docs/basic-hyas/"
+  identifier = "basic-doks"
+  url = "/docs/basic-doks/"
 
 [[docs]]
-  name = "Core Hyas"
+  name = "Core Doks"
   weight = 30
-  identifier = "core-hyas"
-  url = "/docs/core-hyas/"
+  identifier = "core-doks"
+  url = "/docs/core-doks/"
 
 [[docs]]
   name = "Guides"
