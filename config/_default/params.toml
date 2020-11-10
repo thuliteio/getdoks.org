@@ -28,11 +28,11 @@ landscapePhotoWidths = [1000, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
-footer = "This site is powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a> and the <a href=\"https://getdoks.org/\">Doks</a> theme."
+footer = "This site is powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and the <a href=\"https://getdoks.org/\">Doks</a> theme."
 
 alert = false
 alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
-doksVersion = "v0.1.0"
+doksVersion = "v0.1.1"
 
 docsRepo = "https://github.com/h-enk/doks"

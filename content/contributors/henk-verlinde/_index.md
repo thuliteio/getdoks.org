@@ -7,6 +7,6 @@ draft: false
 images: []
 ---
 
-Creator of Hyas.
+Creator of [Hyas](https://gethyas.com/).
 
 [@HenkVerlinde](https://twitter.com/henkverlinde)
