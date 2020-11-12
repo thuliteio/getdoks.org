@@ -3,7 +3,7 @@ title: "Privacy Policy"
 description: "Privacy Policy Doks"
 date: 2020-08-27T19:23:18+02:00
 lastmod: 2020-08-27T19:23:18+02:00
-draft: true
+draft: false
 images: []
 ---
 
@@ -33,4 +33,4 @@ I run [Plausible](https://plausible.io/) analytics on getdoks.org. The following
 
 [Contact me]({{< ref "contact/index.md" >}}) if you have any questions.
 
-Effective Date: _20th July 2020_
+Effective Date: _27th August 2020_

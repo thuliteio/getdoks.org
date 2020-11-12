@@ -23,8 +23,14 @@
   url = "/docs/guides/"
 
 [[docs]]
-  name = "Help"
+  name = "Contribute"
   weight = 50
+  identifier = "contribute"
+  url = "/docs/contribute/"
+
+[[docs]]
+  name = "Help"
+  weight = 60
   identifier = "help"
   url = "/docs/help/"
 
