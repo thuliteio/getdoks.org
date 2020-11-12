@@ -17,8 +17,8 @@ toc: true
 
 {{< alert icon="👉" text="Doks is a <a href=\"https://gethyas.com/themes/\">Hyas theme</a> build by the creator of Hyas." >}}
 
-
 ## Footer notice?
+
 Please keep in place.
 
 ## Can I get support?
