@@ -12,3 +12,21 @@ menu:
 weight: 280
 toc: true
 ---
+
+
+## Documentation
+
+{{< img src="screen.png" alt="Page Layouts" class="border rounded p-1" >}}
+
+### main
+The main section contains the page content and an _Edit this page on GitHub_ link.
+
+{{< alert icon="👉" text="Set `docsRepo` in `./config/_default/params.toml`." >}}
+
+### toc
+A table of contents is automatically generated from the headings of the main section of a page.
+
+{{< alert icon="💡" text="Disable the toc by setting it to false in the front matter of a page." >}}
+
+
+### nav
