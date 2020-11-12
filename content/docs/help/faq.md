@@ -1,7 +1,7 @@
 ---
 title: "FAQ"
-description: "FAQ Hyas."
-lead: ""
+description: "Answers to frequently asked questions."
+lead: "Answers to frequently asked questions."
 date: 2020-10-06T08:49:31+00:00
 lastmod: 2020-10-06T08:49:31+00:00
 draft: false
@@ -9,21 +9,17 @@ images: []
 menu: 
   docs:
     parent: "help"
-weight: 410
+weight: 540
 toc: true
 ---
 
 ## Hyas?
 
-{{< alert icon="👉" text="Doks is a <a href=\"https://gethyas.com/themes/\">Hyas theme</a> build by the creator of Hyas." >}}
+Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
 
 ## Footer notice?
 
-Please keep in place.
-
-## Can I get support?
-
-Visit [Hugo Discourse](https://discourse.gohugo.io/) and use the search. If that does not help, start a new topic and ask your question. Message me in Hugo Discourse.
+Please keep it in place.
 
 ## Keyboard shortcuts for search?
 
@@ -31,3 +27,17 @@ Visit [Hugo Discourse](https://discourse.gohugo.io/) and use the search. If that
 - select: `↓` and `↑`
 - open: `Enter`
 - close: `Esc`
+
+## Can I get support?
+
+Create a topic:
+
+- [Netlify Community](https://community.netlify.com/)
+- [Hugo Forums](https://discourse.gohugo.io/)
+
+## Contact?
+
+Send me a message at `h-enk`:
+
+- [Netlify Community](https://community.netlify.com/)
+- [Hugo Forums](https://discourse.gohugo.io/)

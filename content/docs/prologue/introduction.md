@@ -37,10 +37,12 @@ Nine reasons why you should use Doks:
 
 ## Requirements
 
+{{< alert icon="👉" text="Node.js is needed to install npm packages and run commands." >}}
+
 Make sure all dependencies have been installed:
 
-- [Hugo](https://gohugo.io/) >= 0.75.0/extended
-- [Node.js](https://nodejs.org/) >= 14.15.0 (needed to install npm packages and run commands)
+- [Hugo](https://gohugo.io/getting-started/installing/) >= 0.75.0/extended
+- [Node.js](https://nodejs.org/) >= 14.15.0
 
 ## Get started
 
@@ -74,7 +76,7 @@ Get your Doks site in 1 min.
 
 ## Example site
 
-👉 [doks.netlify.app](https://doks.netlify.app/)
+{{< alert icon="👉" text="View an example site at <a href=\"https://doks.netlify.app/\">doks.netlify.app</a>." >}}
 
 ## Documentation
 
