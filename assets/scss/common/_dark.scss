@@ -96,6 +96,15 @@ body.dark .page-links a {
   color: $body-color-dark;
 }
 
+body.dark .showcase-meta a {
+  color: $body-color-dark;
+}
+
+body.dark .showcase-meta a:hover,
+body.dark .showcase-meta a:focus {
+  color: $link-color-dark;
+}
+
 body.dark .docs-link:hover,
 body.dark .docs-link.active,
 body.dark .page-links a:hover {

@@ -5,7 +5,7 @@ lead: "A two-day online conference for academics and practitioners to share thei
 date: 2020-11-06T18:10:18+01:00
 lastmod: 2020-11-06T18:10:18+01:00
 draft: false
-images: []
+images: ["causal-data-science-meeting.png"]
 link: "https://causalscience.org/"
 menu: 
   showcase:
@@ -13,7 +13,3 @@ menu:
 weight: 090
 toc: false
 ---
-
-<div class="card my-3">
-  {{< img src="causal-data-science-meeting.png" alt="Causal Data Science Meeting" class="card-img-top m-0 p-1" >}}
-</div>

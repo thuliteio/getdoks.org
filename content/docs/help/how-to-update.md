@@ -17,7 +17,7 @@ toc: true
 
 ## Update npm packages
 
-Bump the versions in the `devDependencies` section of `./package.json` to their latest versions, and run:
+Bump the versions in the `devDependencies` section of `./package.json` to your liking, and run:
 
 ```bash
 npm update

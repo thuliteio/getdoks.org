@@ -35,9 +35,9 @@ Create a topic:
 - [Netlify Community](https://community.netlify.com/)
 - [Hugo Forums](https://discourse.gohugo.io/)
 
-## Contact?
+## Contact the creator?
 
-Send me a message at `h-enk`:
+Send `h-enk` a message:
 
 - [Netlify Community](https://community.netlify.com/)
 - [Hugo Forums](https://discourse.gohugo.io/)
