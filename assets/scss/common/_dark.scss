@@ -13,8 +13,6 @@ $button-color-dark: $link-color-dark;
 $focus-color-dark: lighten($link-color-dark, 2.5%);
 $selection-color-dark: lighten($link-color-dark, 2.5%);
 
-$navbar-dark-brand-color:           $link-color-dark;
-$navbar-dark-brand-hover-color:     $body-color-dark;
 $navbar-dark-color:                 $body-color-dark;
 $navbar-dark-hover-color:           $link-color-dark;
 $navbar-dark-active-color:          $link-color-dark;
@@ -51,12 +49,7 @@ body.dark.home .navbar {
 }
 
 body.dark .navbar-light .navbar-brand {
-  color: $navbar-dark-brand-color !important;
-}
-
-body.dark .navbar-light .navbar-brand:hover,
-body.dark .navbar-light .navbar-brand:focus {
-  color: $navbar-dark-brand-hover-color !important;
+  color: $navbar-dark-color !important;
 }
 
 body.dark .navbar-light .navbar-nav .nav-link {
