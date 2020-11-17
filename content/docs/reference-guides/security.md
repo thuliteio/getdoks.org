@@ -30,7 +30,7 @@ See also: [Headers]({{< ref "netlify#headers" >}}).
 
 ### Content Security Policy
 
-💡 [Laboratory](https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/) is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website.
+{{< alert icon="💡" text="<a href=\"https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/\">Laboratory</a> is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website." >}}
 
 ## Subresource Integrity
 

@@ -5,38 +5,32 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "Tutorial"
-  weight = 20
-  identifier = "tutorial"
-  url = "/docs/tutorial/"
-
-[[docs]]
   name = "Recipes"
-  weight = 30
+  weight = 20
   identifier = "recipes"
   url = "/docs/recipes/"
 
 [[docs]]
   name = "Reference Guides"
-  weight = 40
+  weight = 30
   identifier = "reference-guides"
   url = "/docs/reference-guides/"
 
 [[docs]]
   name = "Extensions"
-  weight = 50
+  weight = 40
   identifier = "extensions"
   url = "/docs/extensions/"
 
 [[docs]]
   name = "Contributing"
-  weight = 60
+  weight = 50
   identifier = "contributing"
   url = "/docs/contributing/"
 
 [[docs]]
   name = "Help"
-  weight = 70
+  weight = 60
   identifier = "help"
   url = "/docs/help/"
 
@@ -72,6 +66,12 @@
   name = "Privacy"
   url = "/privacy-policy/"
   weight = 10
+
+[[tutorial]]
+  name = "Tutorial"
+  weight = 10
+  identifier = "tutorial"
+  url = "/tutorial/"
 
 [[showcase]]
   name = "Browse"

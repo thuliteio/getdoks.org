@@ -1,14 +1,13 @@
 {{ $currentPage := . -}}
-{{ range .Site.Menus.showcase -}}
+{{ range .Site.Menus.tutorial -}}
   <h3>{{ .Name }}</h3>
   {{ if .HasChildren -}}
   <ul class="list-unstyled">
     {{ range .Children -}}
-      {{- $active := or ($currentPage.IsMenuCurrent "showcase" .) ($currentPage.HasMenuCurrent "showcase" .) -}}
+      {{- $active := or ($currentPage.IsMenuCurrent "tutorial" .) ($currentPage.HasMenuCurrent "tutorial" .) -}}
       {{- $active = or $active (eq .Name $currentPage.Title) -}}
       <li><a class="docs-link{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}">{{ .Name }}</a></li>
     {{ end -}}
   </ul>
   {{ end -}}
 {{ end -}}
-<h3 class="sidebar-link"><a href="/docs/contributing/how-to-contribute/#submit-to-showcase">Submit to Showcase →</a></h3>

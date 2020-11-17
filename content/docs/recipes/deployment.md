@@ -1,5 +1,5 @@
 ---
-title: "Deployment"
+title: "Deploy your site"
 description: "Deployment Hyas."
 lead: "Hyas is optimized for deployment to Netlify, but you can use any other static web host if you prefer."
 date: 2020-04-20T12:46:25+02:00

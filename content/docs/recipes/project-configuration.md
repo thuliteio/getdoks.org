@@ -1,5 +1,5 @@
 ---
-title: "Project Configuration"
+title: "Configure your project"
 description: "The Hyas project configuration extends Hugo's."
 lead: "The Hyas project configuration extends Hugo's."
 date: 2020-09-21T12:19:02+02:00

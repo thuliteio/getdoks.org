@@ -41,4 +41,4 @@ toc: true
 
 ## Submit to Showcase
 
-[Share what you’ve built with us]({{< ref "contact/index.md" >}})
+[Share what you’ve built with us →]({{< ref "contact/index.md" >}})

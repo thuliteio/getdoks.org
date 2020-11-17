@@ -1,5 +1,5 @@
 ---
-title: "Prerequisites"
+title: "0. Prerequisites"
 description: "To get started with Doks, make sure all dependencies have been installed."
 lead: "To get started with Doks, make sure all dependencies have been installed."
 date: 2020-11-12T13:21:50+01:00
@@ -7,9 +7,9 @@ lastmod: 2020-11-12T13:21:50+01:00
 draft: false
 images: []
 menu: 
-  docs:
+  tutorial:
     parent: "tutorial"
-weight: 110
+weight: 020
 toc: true
 ---
 
