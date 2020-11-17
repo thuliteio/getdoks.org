@@ -13,6 +13,44 @@ weight: 010
 toc: true
 ---
 
+
+## Get started
+
+There are two main ways to get started with Doks:
+
+### Tutorials
+
+Step-by-step instructions on how to start a new Doks project. [Tutorials →]()
+
+### Quick start
+
+One page summary of how to start a new Doks project. [Quick Start →]({{< ref "quick-start" >}})
+
+## Go further
+
+Recipes, reference guides, extending Doks, and showcase.
+
+### Recipes
+
+Get quick answers how to accomplish some specific, common tasks with Doks.
+
+### Reference guides
+
+### Extending Doks
+
+### Showcase
+
+Check out external sites using Doks.
+
+## Contribute
+
+Visit the [Contributing]({{< ref "how-to-contribute" >}}) section
+
+## Help
+
+Visit the [Help]({{< ref "prerequisites" >}}) section
+
+<!--
 ## Why Doks?
 
 Nine reasons why you should use Doks:
@@ -34,7 +72,9 @@ Nine reasons why you should use Doks:
 8. __Page layouts__. Build pages with a landing page, blog, or documentation layout. Add custom sections and components to suit your needs.
 
 9. __Dark mode__. Switch to a low-light UI with the click of a button. Change colors with variables to match your branding.
+-->
 
+<!--
 ## Requirements
 
 {{< alert icon="👉" text="Node.js is needed to install npm packages and run commands." >}}
@@ -88,3 +128,4 @@ Get your Doks site in 1 min.
 
 - [Netlify Community](https://community.netlify.com/)
 - [Hugo Forums](https://discourse.gohugo.io/)
+-->

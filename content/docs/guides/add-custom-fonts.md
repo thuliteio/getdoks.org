@@ -1,5 +1,5 @@
 ---
-title: "Add Custom Fonts"
+title: "Add Google Fonts"
 description: ""
 lead: ""
 date: 2020-09-21T14:28:38+02:00

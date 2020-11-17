@@ -5,25 +5,31 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "Basic Doks"
+  name = "Tutorials"
+  weight = 15
+  identifier = "tutorials"
+  url = "/docs/tutorials/"
+
+[[docs]]
+  name = "Recipes"
   weight = 20
   identifier = "basic-doks"
   url = "/docs/basic-doks/"
 
 [[docs]]
-  name = "Core Doks"
+  name = "Reference Guides"
   weight = 30
   identifier = "core-doks"
   url = "/docs/core-doks/"
 
 [[docs]]
-  name = "Guides"
+  name = "Extending Doks"
   weight = 40
   identifier = "guides"
   url = "/docs/guides/"
 
 [[docs]]
-  name = "Contribute"
+  name = "Contributing"
   weight = 50
   identifier = "contribute"
   url = "/docs/contribute/"

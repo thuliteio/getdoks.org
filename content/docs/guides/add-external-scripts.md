@@ -1,5 +1,5 @@
 ---
-title: "Add External Scripts"
+title: "Add Plausible analytics"
 description: ""
 lead: ""
 date: 2020-09-21T14:28:51+02:00
