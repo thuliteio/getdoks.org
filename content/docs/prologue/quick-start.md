@@ -15,7 +15,6 @@ toc: true
 
 {{< alert icon="👉" text="For a gentler intro to Doks, <a href=\"\">head to the tutorial</a>." >}}
 
-
 ## Requirements
 
 {{< alert icon="👉" text="Node.js is needed to install npm packages and run commands." >}}
@@ -52,7 +51,6 @@ npm run start
 Doks will start the Hugo live reloading development environment accessible by default at `http://localhost:1313`.
 
 Try editing the home page in `.\layouts\index.html`. Saved changes will live reload in the browser.
-
 
 ## Other commands
 

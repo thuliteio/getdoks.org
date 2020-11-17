@@ -20,7 +20,7 @@ There are two main ways to get started with Doks:
 
 ### Tutorials
 
-Step-by-step instructions on how to start a new Doks project. [Tutorials →]()
+Step-by-step instructions on how to start a new Doks project. [Tutorials →]("/")
 
 ### Quick start
 
