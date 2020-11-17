@@ -5,38 +5,38 @@
   url = "/docs/prologue/"
 
 [[docs]]
-  name = "Tutorials"
-  weight = 15
-  identifier = "tutorials"
-  url = "/docs/tutorials/"
+  name = "Tutorial"
+  weight = 20
+  identifier = "tutorial"
+  url = "/docs/tutorial/"
 
 [[docs]]
   name = "Recipes"
-  weight = 20
-  identifier = "basic-doks"
-  url = "/docs/basic-doks/"
+  weight = 30
+  identifier = "recipes"
+  url = "/docs/recipes/"
 
 [[docs]]
   name = "Reference Guides"
-  weight = 30
-  identifier = "core-doks"
-  url = "/docs/core-doks/"
+  weight = 40
+  identifier = "reference-guides"
+  url = "/docs/reference-guides/"
 
 [[docs]]
-  name = "Extending Doks"
-  weight = 40
-  identifier = "guides"
-  url = "/docs/guides/"
+  name = "Extensions"
+  weight = 50
+  identifier = "extensions"
+  url = "/docs/extensions/"
 
 [[docs]]
   name = "Contributing"
-  weight = 50
-  identifier = "contribute"
-  url = "/docs/contribute/"
+  weight = 60
+  identifier = "contributing"
+  url = "/docs/contributing/"
 
 [[docs]]
   name = "Help"
-  weight = 60
+  weight = 70
   identifier = "help"
   url = "/docs/help/"
 
