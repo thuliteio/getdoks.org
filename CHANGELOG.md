@@ -2,13 +2,6 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [0.1.2](https://github.com/h-enk/getdoks.org/compare/v0.1.1...v0.1.2) (2020-11-09)
-
-
-### Documentation
-
-* update showcase ([bf9cca3](https://github.com/h-enk/getdoks.org/commit/bf9cca367ac7916f3b6dd1ddfe61e9feaa563958))
-
 ### 0.1.1 (2020-11-06)
 
 
