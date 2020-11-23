@@ -54,4 +54,4 @@ Doks will start the Hugo development webserver accessible by default at `http://
 
 ## Other commands
 
-Doks comes with commands for most used tasks, like checking scripts, styles, and markdown for errors, building your production website, and more. [Commands →]({{< ref "commands" >}})
+Doks comes with commands for common tasks. [Commands →]({{< ref "commands" >}})

@@ -1,7 +1,7 @@
 ---
-title: "Configure your project"
-description: "The Hyas project configuration extends Hugo's."
-lead: "The Hyas project configuration extends Hugo's."
+title: "Project Configuration"
+description: "The Doks project configuration extends Hugo's."
+lead: "The Doks project configuration extends Hugo's."
 date: 2020-09-21T12:19:02+02:00
 lastmod: 2020-09-21T12:19:02+02:00
 draft: false
@@ -9,7 +9,7 @@ images: []
 menu: 
   docs:
     parent: "recipes"
-weight: 220
+weight: 110
 toc: true
 ---
 

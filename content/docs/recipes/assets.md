@@ -9,7 +9,7 @@ images: []
 menu: 
   docs:
     parent: "recipes"
-weight: 240
+weight: 170
 toc: true
 ---
 
@@ -30,3 +30,10 @@ toc: true
 ```
 
 See also the Hugo docs: [Hugo Pipes](https://gohugo.io/hugo-pipes/).
+
+
+## js
+
+## lambda
+
+## scss

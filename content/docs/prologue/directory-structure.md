@@ -1,7 +1,7 @@
 ---
 title: "Directory Structure"
-description: "The Hyas project directory structure extends Hugo's."
-lead: "The Hyas project directory structure extends Hugo's."
+description: "The Doks project directory structure extends Hugo's."
+lead: "The Doks project directory structure extends Hugo's."
 date: 2020-04-20T14:14:16+02:00
 lastmod: 2020-04-20T14:14:16+02:00
 draft: false
