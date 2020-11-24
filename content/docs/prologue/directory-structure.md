@@ -42,7 +42,8 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 ```bash
 ..
 ├── blog.md
-└── default.md
+├── default.md
+└── docs.md
 ```
 
 See also: [Archetypes]({{< ref "archetypes" >}}).
@@ -87,7 +88,8 @@ See also: [Project Configuration]({{< ref "project-configuration" >}}).
 ```bash
 ..
 ├── blog/
-├── quick-start/
+├── contributors/
+├── docs/
 └── _index.md
 ```
 
@@ -130,6 +132,9 @@ See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/)
 │   │   └── header.html
 │   └── sidebar/
 ├── shortcodes/
+│   ├── alert.html
+│   ├── email.html
+│   ├── img-simple.html
 │   └── img.html
 ├── 404.html
 ├── index.headers

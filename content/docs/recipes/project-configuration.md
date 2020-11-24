@@ -1,7 +1,7 @@
 ---
 title: "Project Configuration"
-description: "The Doks project configuration extends Hugo's."
-lead: "The Doks project configuration extends Hugo's."
+description: "Set or customize the Doks project configuration."
+lead: "Set or customize the Doks project configuration."
 date: 2020-09-21T12:19:02+02:00
 lastmod: 2020-09-21T12:19:02+02:00
 draft: false
@@ -26,9 +26,91 @@ toc: true
 
 See also the Hugo docs: [Configure Hugo](https://gohugo.io/getting-started/configuration/).
 
-## config.toml
+## Set configuration
 
-### Netlify specifics
+### params.toml
+
+#### SEO
+
+```toml
+title = "Doks"
+titleSeparator = "-"
+titleAddition = "Modern Documentation Theme"
+description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+
+images = ["doks.png"]
+
+twitterSite = "henkverlinde"
+twitterCreator = "henkverlinde"
+facebookAuthor = "verlinde.henk"
+facebookPublisher = "verlinde.henk"
+ogLocale = "en_US"
+
+schemaType = "Organization"
+schemaLogo = "logo-doks.png"
+schemaTwitter = "https://twitter.com/henkverlinde"
+schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaGitHub = "https://github.com/h-enk"
+schemaSection = "blog"
+
+siteLinksSearchBox = false
+
+themeColor = "#fff"
+```
+
+#### Images
+
+```toml
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [1000, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
+lqipWidth = "20x"
+```
+
+#### Footer
+
+```toml
+footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
+```
+
+#### Alert
+
+```toml
+alert = false
+alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
+```
+
+#### Edit page
+
+```toml
+docsRepo = "https://github.com/h-enk/doks"
+editPage = true
+```
+
+### menus.toml
+
+See also: [Menus]({{< ref "menus" >}})
+
+## Customize configuration
+
+### config.toml
+
+#### Basics
+
+```toml
+baseurl = "/"
+disableAliases = true
+disableHugoGeneratorInject = true
+enableEmoji = true
+enableGitInfo = false
+enableRobotsTXT = true
+languageCode = "en-US"
+paginate = 7
+rssLimit = 10
+```
+
+#### Netlify
 
 ```toml
 # add redirects/headers
@@ -42,77 +124,88 @@ delimiter = ""
 
 # add output format for netlify _redirects
 [outputFormats.REDIRECTS]
-mediatype = "text/netlify"
+mediaType = "text/netlify"
 baseName = "_redirects"
 isPlainText = true
 notAlternative = true
 
 # add output format for netlify _headers
 [outputFormats.HEADERS]
-mediatype = "text/netlify"
+mediaType = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
 ```
 
-## menus.toml
-
-No specifics.
-
-## params.toml
-
-### SEO specifics
+#### Markup
 
 ```toml
-title = "Hyas"
-titleSeparator = "-"
-titleAddition = "Modern Hugo Starter"
-description = "Hugo starter helping you build modern websites."
-
-images = ["hyas.png"]
-
-twitterSite = "@henkverlinde"
-twitterCreator = "@henkverlinde"
-facebookAuthor = "verlinde.henk"
-facebookPublisher = "verlinde.henk"
-ogLocale = "en_US"
-
-schemaType = "Organization"
-schemaLogo = "logo-hyas.png"
-schemaTwitter = "https://twitter.com/henkverlinde"
-schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaGitHub = "https://github.com/h-enk"
-schemaSection = "blog"
-
-siteLinksSearchBox = false
-
-themeColor = "#fff"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = false
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    style = "dracula"
+    tabWidth = 4
 ```
 
-### Image shortcode
+#### Sitemap
 
 ```toml
-quality = 85
-bgColor = "#fff"
-landscapePhotoWidths = [1000, 800, 700, 600, 500]
-portraitPhotoWidths = [800, 700, 600, 500]
-lqipWidth = "20x"
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 ```
 
-### Footer
+#### Taxonomies
 
 ```toml
-footer = "© 2020 Henk Verlinde - MIT License"
+[taxonomies]
+  contributor = "contributors"
 ```
 
-### Alert
+#### Permalinks
 
 ```toml
-alert = false
-alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\">Get the free enterprise paper →</a>"
+[permalinks]
+  blog = "/blog/:title/"
 ```
 
-## postcss.config.js
+#### Modules
+
+```toml
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "node_modules/lazysizes"
+    target = "assets/js/vendor/lazysizes"
+  [[module.mounts]]
+    source = "node_modules/instant.page"
+    target = "assets/js/vendor/instant.page"
+  [[module.mounts]]
+    source = "node_modules/lazysizes"
+    target = "assets/js/vendor/lazysizes"
+  [[module.mounts]]
+    source = "node_modules/flexsearch"
+    target = "assets/js/vendor/flexsearch"
+```
+
+### postcss.config.js
 
 ```js
 const autoprefixer = require('autoprefixer');
@@ -127,11 +220,12 @@ module.exports = {
         './layouts/**/*.html',
         './content/**/*.md',
       ],
-      whitelist: [
+      safelist: [
         'lazyloaded',
         ...whitelister([
-          './assets/scss/components/_syntax.scss',
           './assets/scss/components/_code.scss',
+          './assets/scss/components/_search.scss',
+          './assets/scss/common/_dark.scss',
         ]),
       ],
     }),
