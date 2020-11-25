@@ -93,7 +93,7 @@ See also: [Project Configuration]({{< ref "project-configuration" >}}).
 └── _index.md
 ```
 
-See also the Hugo docs: [Content Organization](https://gohugo.io/content-management/organization/).
+See also: [Pages]({{< ref "pages" >}}).
 
 ### data
 
@@ -187,4 +187,4 @@ See the Netlify docs: [File-based configuration](https://docs.netlify.com/config
 
 ### package.json
 
-See the Yarn Documentation: [package.json](https://classic.yarnpkg.com/en/docs/package-json/).
+See the npm Docs: [package.json](https://docs.npmjs.com/cli/v6/configuring-npm/package-json).

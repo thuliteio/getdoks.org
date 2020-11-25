@@ -15,11 +15,11 @@ toc: true
 
 {{< img-simple src="menu-structure.png" alt="Menu Structure" class="border rounded p-1" >}}
 
+See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
+
 ```bash
 ./config/_default/menus.toml
 ```
-
-See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
 
 ## Add to main menu
 

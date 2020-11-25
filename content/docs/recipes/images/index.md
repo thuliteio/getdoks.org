@@ -39,7 +39,7 @@ Add a small image in your page bundle to your page using shortcode `img-simple`.
 {{</* img-simple src="square.png" alt="Square" class="border-0 rounded-circle" */>}}
 ```
 
-The shortcode will be processed into:
+Will be processed into:
 
 {{< img-simple src="square.png" alt="Square" class="border-0 rounded-circle" >}}
 
@@ -57,6 +57,6 @@ Add a large image in your page bundle to your page using shortcode `img`.
 {{</* img src="rectangle.png" alt="Rectangle" caption="<em>Rectangle</em>" class="border-0" */>}}
 ```
 
-The shortcode will be processed into:
+Will be processed into:
 
 {{< img src="rectangle.png" alt="Rectangle" caption="<em>Rectangle</em>" class="border-0" >}}

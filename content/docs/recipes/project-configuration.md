@@ -1,7 +1,7 @@
 ---
 title: "Project Configuration"
-description: "Set or customize the Doks project configuration."
-lead: "Set or customize the Doks project configuration."
+description: "Set and customize the Doks project configuration."
+lead: "Set and customize the Doks project configuration."
 date: 2020-09-21T12:19:02+02:00
 lastmod: 2020-09-21T12:19:02+02:00
 draft: false
@@ -90,7 +90,7 @@ editPage = true
 
 ### menus.toml
 
-See also: [Menus]({{< ref "menus" >}})
+See: [Menus]({{< ref "menus" >}})
 
 ## Customize configuration
 

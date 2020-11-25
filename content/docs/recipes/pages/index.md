@@ -1,7 +1,7 @@
 ---
 title: "Pages"
-description: "Add a default page, documentation page, blog post or contributor page."
-lead: "Add a default page, documentation page, blog post or contributor page."
+description: "Add a default page, documentation page, blog post or contributor page. Customize the homepage and 404 page."
+lead: "Add a default page, documentation page, blog post or contributor page. Customize the homepage and 404 page."
 date: 2020-11-23T11:55:16+01:00
 lastmod: 2020-11-23T11:55:16+01:00
 draft: false
@@ -71,3 +71,11 @@ hugo new blog/say-hello-to-doks/index.md
 ```bash
 hugo new contributors/henk-verlinde/_index.md
 ```
+
+## Customize homepage
+
+See: [Page Layouts]({{< ref "page-layouts" >}}).
+
+## Customize 404 page
+
+See: [Page Layouts]({{< ref "page-layouts" >}}).

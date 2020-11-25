@@ -1,7 +1,7 @@
 ---
 title: "Assets"
-description: ""
-lead: ""
+description: "Customize Doks SCSS, Doks JS, or the FlexSearch index. Add a Lambda function."
+lead: "Customize Doks SCSS, Doks JS, or the FlexSearch index. Add a Lambda function."
 date: 2020-09-21T14:41:53+02:00
 lastmod: 2020-09-21T14:41:53+02:00
 draft: false
@@ -19,7 +19,8 @@ toc: true
 ├── images/
 ├── js/
 │   ├── vendor/
-│   └── app.js
+│   ├── app.js
+│   └── index.js
 ├── lambda/
 └── scss/
     ├── common/
@@ -31,8 +32,61 @@ toc: true
 
 See also the Hugo docs: [Hugo Pipes](https://gohugo.io/hugo-pipes/).
 
-## js
 
-## lambda
+## Customize Doks SCSS
 
-## scss
+```bash
+./assets/scss/app.scss
+```
+
+## Customize Doks JS
+
+```bash
+./assets/js/app.js
+```
+
+## Customize FlexSearch index
+
+See also: [FlexSearch]({{< ref "flexsearch" >}})
+
+```bash
+./assets/js/index.js
+```
+
+```js
+var docs = [
+{{ range $index, $page := (where .Site.Pages "Section" "docs") -}}
+  {
+    id: {{ $index }},
+    href: "{{ .Permalink | absURL }}",
+    title: {{ .Title | jsonify }},
+    description: {{ .Params.description | jsonify }},
+    content: {{ .Content | jsonify }}
+  },
+{{ end -}}
+];
+```
+
+## Add a Lambda function
+
+See also: [Functions]({{< ref "netlify#functions" >}})
+
+### Example
+
+```bash
+./assets/lambda/hi-from-lambda.js
+```
+
+```js
+exports.handler = (event, context, callback) => {
+  callback (null, {
+    statusCode: 200,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      message: 'Hi from Lambda.',
+    }),
+  });
+}
+```

@@ -35,19 +35,19 @@ Recipes, Reference Guides, Extensions, and Showcase.
 
 ### Recipes
 
-Get instructions on how to accomplish common tasks with Doks. [Recipes →]({{< ref "recipes" >}})
+Get instructions on how to accomplish common tasks with Doks. [Recipes →]({{< ref "project-configuration" >}})
 
 ### Reference Guides
 
-Learn how to customize Doks to fully make it your own. [Reference Guides →]({{< ref "reference-guides" >}})
+Learn how to customize Doks to fully make it your own. [Reference Guides →]({{< ref "security" >}})
 
 ### Extensions
 
-Get instructions on how to add even more to Doks. [Extensions →]({{< ref "extensions" >}})
+Get instructions on how to add even more to Doks. [Extensions →]({{< ref "add-google-fonts" >}})
 
 ### Showcase
 
-See what others have build with Doks. [Showcase →]({{< ref "showcase" >}})
+See what others have build with Doks. [Showcase →]({{< ref "causal-data-science-meeting" >}})
 
 ## Contributing
 
@@ -55,4 +55,4 @@ Find out how to contribute to Doks. [Contributing →]({{< ref "how-to-contribut
 
 ## Help
 
-Get help on Doks. [Help →]({{< ref "help" >}})
+Get help on Doks. [Help →]({{< ref "how-to-update" >}})
