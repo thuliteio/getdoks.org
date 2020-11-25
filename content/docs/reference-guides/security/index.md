@@ -44,7 +44,6 @@ See also: [Headers]({{< ref "netlify#headers" >}}).
 
 [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is applied to Doks CSS and JS files when building your Doks site for production.
 
-
 ```bash
 ./layouts/partials/head/stylesheet.html
 ```

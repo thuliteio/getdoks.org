@@ -17,7 +17,6 @@ toc: true
 
 See [Netlify]({{< ref "netlify" >}}).
 
-
 ## Deploy to other hosts
 
 See the Hugo Docs: [Hosting & Deployment](https://gohugo.io/hosting-and-deployment/).
