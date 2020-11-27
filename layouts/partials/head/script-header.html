@@ -1,1 +1,9 @@
-<script async defer data-domain="getdoks.org" src="https://stats.getdoks.org/js/index.js"></script>
+<!-- <script async defer data-domain="getdoks.org" src="https://stats.getdoks.org/js/index.js"></script> -->
+<!-- <script async defer data-domain="getdoks.org" src="https://plausible.io/js/plausible.js"></script> -->
+{{ $plausible := resources.Get "js/vendor/plausible.js" }}
+{{ if eq (hugo.Environment) "development" -}}
+  <script async defer data-domain="getdoks.org" src="{{ $plausible.Permalink }}"></script>
+{{ else -}}
+  {{ $plausibleProd := $plausible | resources.Fingerprint "sha512" }}
+  <script async defer data-domain="getdoks.org" src="{{ $plausibleProd.Permalink }}" integrity="{{ $plausibleProd.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end -}}
