@@ -13,4 +13,6 @@ weight: 420
 toc: false
 ---
 
-_Coming soon..._
+## Resources
+
+- [Plausible Analytics](https://plausible.io/)

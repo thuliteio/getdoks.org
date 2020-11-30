@@ -42,15 +42,10 @@ See also: [Headers]({{< ref "netlify#headers" >}}).
 
 ## Subresource Integrity
 
-[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is applied to Doks CSS and JS files when building your Doks site for production.
+[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is applied to Doks CSS and JS files when building your Doks site for production:
 
-```bash
-./layouts/partials/head/stylesheet.html
-```
-
-```bash
-./layouts/partials/footer/script-footer.html
-```
+- `./layouts/partials/head/stylesheet.html`
+- `./layouts/partials/footer/script-footer.html`
 
 See also the Hugo Docs: [Fingerprinting and SRI](https://gohugo.io/hugo-pipes/fingerprint/).
 

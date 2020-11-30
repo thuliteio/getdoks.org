@@ -34,6 +34,10 @@ See also the Hugo docs: [Hugo Pipes](https://gohugo.io/hugo-pipes/).
 
 ## Customize Doks SCSS
 
+{{< alert icon="👉" text="Set variables in `./assets/scss/common/_variables.scss`." >}}
+
+See also the Bootstrap code: [Variables](https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss).
+
 ```bash
 ./assets/scss/app.scss
 ```

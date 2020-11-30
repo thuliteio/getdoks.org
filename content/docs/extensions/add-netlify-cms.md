@@ -9,8 +9,10 @@ images: []
 menu: 
   docs:
     parent: "extensions"
-weight: 430
+weight: 440
 toc: false
 ---
 
-_Coming soon..._
+## Resources
+
+- [Netlify CMS](https://www.netlifycms.org/)

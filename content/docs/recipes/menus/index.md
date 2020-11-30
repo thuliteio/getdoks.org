@@ -37,6 +37,8 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
 
 ## Add to social menu
 
+{{< alert icon="👉" text="Doks uses <a href=\"https://feathericons.com/\">Feather Icons</a>" >}}
+
 ```toml
 [[social]]
   name = "Twitter"
