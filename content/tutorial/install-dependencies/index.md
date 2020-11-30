@@ -1,7 +1,7 @@
 ---
 title: "0. Install Dependencies"
-description: "To get started with Doks, make sure all dependencies have been installed."
-lead: "To get started with Doks, make sure all dependencies have been installed."
+description: "Install Hugo and Node.js to get started with Doks."
+lead: "Install Hugo and Node.js to get started with Doks."
 date: 2020-11-18T08:20:35+01:00
 lastmod: 2020-11-18T08:20:35+01:00
 draft: false
@@ -22,7 +22,7 @@ Doks requires:
 
 ## Hugo
 
-{{< alert icon="👉" text="The `extended` version is needed for `scss` processing support." >}}
+{{< alert icon="👉" text="The `extended` version is needed for `SCSS` processing support." >}}
 
 Visit the [Hugo site](https://gohugo.io/getting-started/installing/) and follow the instructions to download and install Hugo for your operating system.
 
@@ -31,6 +31,8 @@ Visit the [Hugo site](https://gohugo.io/getting-started/installing/) and follow 
 ```bash
 hugo version
 ```
+
+{{< img-simple src="hugo-version.png" alt="hugo version" >}}
 
 ## Node.js
 
@@ -41,11 +43,13 @@ Visit the [Node.js site](https://nodejs.org/) and follow the instructions to dow
 ### Check Node.js install
 
 ```bash
-node -v
+node --version
 ```
 
 ### Check npm install
 
 ```bash
-npm -v
+npm --version
 ```
+
+{{< img-simple src="node-npm-version.png" alt="node npm version" >}}
