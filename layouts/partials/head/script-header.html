@@ -1,1 +1,4 @@
-<script async defer data-domain="getdoks.org" src="https://stats.getdoks.org/js/index.js"></script>
+<!-- <script async defer data-domain="getdoks.org" src="https://stats.getdoks.org/js/index.js"></script> -->
+
+{{ $plausible := resources.Get "js/vendor/plausible/index.js" -}}
+<script data-domain="getdoks.org" src="{{ $plausible.Permalink }}" async></script>
