@@ -28,11 +28,15 @@ Create a new site, change directories, install npm packages, and start developme
 
 ### Create a new site
 
+{{< btn-copy text="git clone https://github.com/h-enk/doks.git my-doks-site" >}}
+
 ```bash
 git clone https://github.com/h-enk/doks.git my-doks-site
 ```
 
 ### Change directories
+
+{{< btn-copy text="cd my-doks-site" >}}
 
 ```bash
 cd my-doks-site
@@ -40,11 +44,15 @@ cd my-doks-site
 
 ### Install npm packages
 
+{{< btn-copy text="npm install" >}}
+
 ```bash
 npm install
 ```
 
 ### Start development server
+
+{{< btn-copy text="npm run start" >}}
 
 ```bash
 npm run start

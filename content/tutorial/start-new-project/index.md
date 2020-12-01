@@ -15,6 +15,8 @@ toc: true
 
 ### Create a new site
 
+{{< btn-copy text="git clone https://github.com/h-enk/doks.git my-doks-site" >}}
+
 ```bash
 git clone https://github.com/h-enk/doks.git my-doks-site
 ```
@@ -23,11 +25,15 @@ git clone https://github.com/h-enk/doks.git my-doks-site
 
 ### Change directories
 
+{{< btn-copy text="cd my-doks-site" >}}
+
 ```bash
 cd my-doks-site
 ```
 
 ### Install npm packages
+
+{{< btn-copy text="npm install" >}}
 
 ```bash
 npm install
@@ -36,6 +42,8 @@ npm install
 Installing npm packages can take a minute. Warnings can be ignored.
 
 ### Start development server
+
+{{< btn-copy text="npm run start" >}}
 
 ```bash
 npm run start

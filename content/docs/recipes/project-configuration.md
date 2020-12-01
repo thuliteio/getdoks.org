@@ -30,31 +30,50 @@ See also the Hugo docs: [Configure Hugo](https://gohugo.io/getting-started/confi
 
 ### params.toml
 
-#### SEO
+#### Meta data
+
+See also: [SEO]({{< ref "seo" >}})
+
+##### Homepage
 
 ```toml
 title = "Doks"
 titleSeparator = "-"
 titleAddition = "Modern Documentation Theme"
 description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+```
 
+##### Open Graph + Twitter Cards
+
+```toml
 images = ["doks.png"]
-
 twitterSite = "henkverlinde"
 twitterCreator = "henkverlinde"
 facebookAuthor = "verlinde.henk"
 facebookPublisher = "verlinde.henk"
 ogLocale = "en_US"
+```
 
+##### JSON-LD
+
+```toml
 schemaType = "Organization"
 schemaLogo = "logo-doks.png"
 schemaTwitter = "https://twitter.com/henkverlinde"
 schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
+```
 
+##### Sitelinks Search Box
+
+```toml
 siteLinksSearchBox = false
+```
 
+##### Chrome Browser
+
+```toml
 themeColor = "#fff"
 ```
 

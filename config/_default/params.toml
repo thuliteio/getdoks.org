@@ -1,17 +1,20 @@
-# SEO
+# Meta Data for SEO
+
+## Homepage
 title = "Doks"
 titleSeparator = "-"
 titleAddition = "Modern Documentation Theme"
 description = "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
 
+## Open Graph + Twitter Cards
 images = ["doks.png"]
-
 twitterSite = "henkverlinde"
 twitterCreator = "henkverlinde"
 facebookAuthor = "verlinde.henk"
 facebookPublisher = "verlinde.henk"
 ogLocale = "en_US"
 
+## JSON-LD
 schemaType = "Organization"
 schemaLogo = "logo-doks.png"
 schemaTwitter = "https://twitter.com/henkverlinde"
@@ -19,8 +22,10 @@ schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
 
+## Sitelinks Search Box
 siteLinksSearchBox = false
 
+## Chrome Browser
 themeColor = "#fff"
 
 # Images
@@ -37,6 +42,6 @@ footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\
 alert = false
 alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">Star on GitHub</a>. Thanks!</a>"
 
-# Edit page
+# Edit Page
 docsRepo = "https://github.com/h-enk/doks"
 editPage = true

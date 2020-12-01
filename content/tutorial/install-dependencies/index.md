@@ -28,6 +28,8 @@ Visit the [Hugo site](https://gohugo.io/getting-started/installing/) and follow 
 
 ### Check Hugo install
 
+{{< btn-copy text="hugo version" >}}
+
 ```bash
 hugo version
 ```
@@ -42,11 +44,15 @@ Visit the [Node.js site](https://nodejs.org/) and follow the instructions to dow
 
 ### Check Node.js install
 
+{{< btn-copy text="node --version" >}}
+
 ```bash
 node --version
 ```
 
 ### Check npm install
+
+{{< btn-copy text="npm --version" >}}
 
 ```bash
 npm --version
