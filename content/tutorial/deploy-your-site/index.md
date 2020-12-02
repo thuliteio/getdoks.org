@@ -19,75 +19,95 @@ Continuous Deployment (CD) works by connecting a Git repository to a Netlify sit
 
 ### Set up Git repository
 
-{{< alert icon="👉" text="To avoid errors, do not initialize the new repository with README, license, or `gitignore` files." >}}
+Set up your Git repository in 8 steps.
 
-1. Create a new repository on [GitHub](https://github.com/) (or [GitLab](https://gitlab.com/), or [Bitbucket](https://bitbucket.org/)):
+#### 1. Create a new repository
 
-    {{< img-simple src="create-new-repo.png" alt="Create New Repository" >}}
+{{< alert icon="👉" text="To avoid errors, do not initialize the new repository with README, LICENSE, and .gitignore files." >}}
 
-    [Create new repository →](https://github.com/new)
+Create a new repository on [GitHub](https://github.com/) (or [GitLab](https://gitlab.com/), or [Bitbucket](https://bitbucket.org/)):
 
-2. Initialize your local Doks site directory as a Git repository:
+{{< img-simple src="create-new-repo.png" alt="Create New Repository" >}}
 
-    {{< btn-copy text="npm run init" >}}
+[Create new repository →](https://github.com/new)
 
-    ```bash
-    npm run init
-    ```
+#### 2. Initialize your local directory
 
-3. Add the files in your new local repository. This stages them for the first commit:
+Initialize your local Doks site directory as a Git repository:
 
-    {{< btn-copy text="git add ." >}}
+{{< btn-copy text="npm run init" >}}
 
-    ```bash
-    git add .
-    ```
+```bash
+npm run init
+```
 
-4. Commit the files that you've staged in your local repository:
+#### 3. Add your local files
 
-    {{< btn-copy text="git commit -m \"First commit\"" >}}
+Add the files in your new local repository. This stages them for the first commit:
 
-    ```bash
-    git commit -m "First commit"
-    ```
+{{< btn-copy text="git add ." >}}
 
-5. At the top of your GitHub repository's Quick Setup page, click <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg> to copy the remote repository URL:
+```bash
+git add .
+```
 
-    {{< img-simple src="copy-remote-repository-url-quick-setup.png" alt="Copy Remote Repository URL Quick Setup" >}}
+#### 4. Commit your local files
 
-6. Set the new remote — paste the remote repository URL:
+Commit the files that you've staged in your local repository:
 
-    ```bash
-    git remote add origin <remote repository URL>
-    ```
+{{< btn-copy text="git commit -m \"First commit\"" >}}
 
-7. Verify the new remote URL:
+```bash
+git commit -m "First commit"
+```
 
-    {{< btn-copy text="git remote -v" >}}
+#### 5. Copy your remote repository URL
 
-    ```bash
-    git remote -v
-    ```
+At the top of your GitHub repository's Quick Setup page, click the copy icon:
 
-8. Push the changes in your local repository to GitHub:
+{{< img-simple src="copy-remote-repository-url-quick-setup.png" alt="Copy Remote Repository URL Quick Setup" >}}
 
-    {{< btn-copy text="git push origin main" >}}
+#### 6. Set the new remote
 
-    ```bash
-    git push origin main
-    ```
+Set the new remote — replace `<remote repository URL>` with yours:
+
+```bash
+git remote add origin <remote repository URL>
+```
+
+#### 7. Verify the new remote
+
+Verify the new remote:
+
+{{< btn-copy text="git remote -v" >}}
+
+```bash
+git remote -v
+```
+
+#### 8. Push local changes
+
+Push the changes in your local repository to GitHub:
+
+{{< btn-copy text="git push origin main" >}}
+
+```bash
+git push origin main
+```
 
 ### Create new Netlify site
+
+Create your new Netlify site in 3 steps.
 
 {{< img-simple src="create-new-netlify-site.png" alt="Create New Netlify Site" >}}
 
 [New site from Git →](https://app.netlify.com/start)
 
-1. Connect to Git provider
+#### 1. Connect to Git provider
 
-2. Pick a repository
+#### 2. Pick a repository
 
-3. Build options, and deploy!
+#### 3. Build options, and deploy!
 
 ## Deploy to other hosts
 
