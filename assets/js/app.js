@@ -14,7 +14,6 @@ if (localStorage.getItem('theme') === 'dark') {
 }
 
 /* eslint-disable */
-/*
 window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
 
 if (document.querySelector('#deploy-to-netlify') !== null) {
@@ -24,7 +23,6 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
   });
 
 }
-*/
 /* eslint-enable */
 
 var suggestions = document.getElementById('suggestions');
