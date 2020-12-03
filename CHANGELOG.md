@@ -2,6 +2,53 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/h-enk/getdoks.org/compare/v0.1.2...v0.1.3) (2020-12-03)
+
+
+### Features
+
+* add editPage switch ([d43f9e8](https://github.com/h-enk/getdoks.org/commit/d43f9e8d4903dd0427b3635fbf5a47c0a33d4885))
+* add netlify-plugin-submit-sitemap ([bcb64de](https://github.com/h-enk/getdoks.org/commit/bcb64de0fadf66e8dd4be891aa6387f340890d4a))
+
+
+### Bug Fixes
+
+* change subdomain for plausible script ([ee8b746](https://github.com/h-enk/getdoks.org/commit/ee8b7466aef8b94282d2deec476abb60fe767cdf))
+* change subdomain for plausible script ([5460f5d](https://github.com/h-enk/getdoks.org/commit/5460f5d3f8c4d4539048098f91d553d04d9b6243))
+* host plausible.js on main domain ([118e8ac](https://github.com/h-enk/getdoks.org/commit/118e8ac27048d5e29cdc762d14fdd4e8840fcc82))
+* host plausible.js on stats subdomain ([f6ac1a7](https://github.com/h-enk/getdoks.org/commit/f6ac1a7e79fce7a8b5a1972b68bd2cdbce8951f4))
+
+
+### Dependencies
+
+* bump autoprefixer to latest ([46ced7d](https://github.com/h-enk/getdoks.org/commit/46ced7d68fe8b36f7543e8c37012e0327ba78ff5))
+* bump versions ([45db8ad](https://github.com/h-enk/getdoks.org/commit/45db8adf1cf9f737c002f2f781bae52bfba8393d))
+* bump versions to latest ([5639ffd](https://github.com/h-enk/getdoks.org/commit/5639ffdf0f5695792a975df204cc100a79e353fd))
+* bump versions to latest ([71e5849](https://github.com/h-enk/getdoks.org/commit/71e5849586b1c2300dabb182ecf5121c9aa83026))
+* bump versions to latest ([759799c](https://github.com/h-enk/getdoks.org/commit/759799c28d240d9058a57f50f5150b91c9176b12))
+* bump versions to latest ([ec3c5a4](https://github.com/h-enk/getdoks.org/commit/ec3c5a493128da8c109d8fd52157fb504d688c14))
+* bump versions to latest ([ceb2ccf](https://github.com/h-enk/getdoks.org/commit/ceb2ccf7af0e4d99463ff2a44a64522043eff2e4))
+
+
+### Documentation
+
+* restructure content ([6ecda85](https://github.com/h-enk/getdoks.org/commit/6ecda85f1004365b07f68491267029ed8c5e80d4))
+* update ([eae34bd](https://github.com/h-enk/getdoks.org/commit/eae34bd20ab95969945c03b6f342a921e4c8d83f))
+* update content ([2b48422](https://github.com/h-enk/getdoks.org/commit/2b48422d5e3a2d7204d560a657079ca7c984455f))
+* update content ([a0be11c](https://github.com/h-enk/getdoks.org/commit/a0be11ce5d3b6b6f942485b75f72851bf669662c))
+* update content ([4512834](https://github.com/h-enk/getdoks.org/commit/451283496b52c7f16e5fa3bfb611d292d2a22f2e))
+* update extensions sections ([23bf702](https://github.com/h-enk/getdoks.org/commit/23bf702e274c918b59dc303dd2c71ff6e023a601))
+* update readme ([a197218](https://github.com/h-enk/getdoks.org/commit/a197218c995884a89176d7f8b373fa7cebe7a2ce))
+* update readme ([7c00934](https://github.com/h-enk/getdoks.org/commit/7c009342c44816b4ffe15bf32abf79d21f67bf2f))
+* update recipes ([328daa1](https://github.com/h-enk/getdoks.org/commit/328daa196cde0eb801998e64842bd3645c1cd868))
+* update recipes ([9a3a0be](https://github.com/h-enk/getdoks.org/commit/9a3a0bef71758ebb930f898bc484d65d644c0eae))
+* update recipes section ([9980ca0](https://github.com/h-enk/getdoks.org/commit/9980ca09f983992c25a97f7cd0ba4686f3116a4f))
+* update recipes section ([2eb8485](https://github.com/h-enk/getdoks.org/commit/2eb84858d16263d3182b5b18ba48961c79bdc3b3))
+* update tutorial ([682fb66](https://github.com/h-enk/getdoks.org/commit/682fb661fd96956d51126715ac87bbc19d443f7e))
+* update tutorial ([9826f8f](https://github.com/h-enk/getdoks.org/commit/9826f8f63a731359dfa7ef41ef05cc6dddd84b52))
+* update tutorial ([5d30cbe](https://github.com/h-enk/getdoks.org/commit/5d30cbe4209b3206326bcb8eedd4b1107a10b180))
+* update tutorial ([5df6b4e](https://github.com/h-enk/getdoks.org/commit/5df6b4e57cc6a3136a886e3551a9723b8d2cd320))
+
 ### [0.1.2](https://github.com/h-enk/getdoks.org/compare/v0.1.1...v0.1.2) (2020-11-17)
 
 
