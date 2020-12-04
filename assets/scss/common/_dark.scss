@@ -76,8 +76,8 @@ body.dark .navbar-light .navbar-text {
   color: $navbar-dark-color;
 }
 
-body.dark .alert-primary a {
-  color: $body-bg-dark;
+body.dark .alert-global a {
+  color: $body-color-dark;
 }
 
 body.dark .alert-warning {
@@ -275,9 +275,11 @@ body.dark .text-muted {
   color: darken($body-color-dark, 7.5%) !important;
 }
 
-body.dark .alert-primary {
-  background: $link-color-dark;
-  color: $body-bg-dark;
+body.dark .alert-global {
+  background: $body-bg-dark;
+  opacity: 0.975;
+  color: $body-color-dark;
+  border: 1px solid $border-dark !important;
 }
 
 body.dark .figure-caption {
