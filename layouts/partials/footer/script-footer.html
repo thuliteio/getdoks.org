@@ -7,7 +7,7 @@
   {{ $app := resources.Get "js/app.js" -}}
   {{ $js := slice $lazysizes $clipboard $flexsearch $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
-  <script src="{{ $index.Permalink }}" async></script>
+  <script src="{{ $index.Permalink }}" defer></script>
 {{ else -}}
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
@@ -15,5 +15,5 @@
   {{ $jsProd := $js | resources.Fingerprint "sha512" -}}
   {{ $indexProd := $index | resources.Minify | resources.Fingerprint "sha512" -}}
   <script src="{{ $jsProd.Permalink }}" integrity="{{ $jsProd.Data.Integrity }}" crossorigin="anonymous" defer></script>
-  <script src="{{ $indexProd.Permalink }}" integrity="{{ $indexProd.Data.Integrity }}" crossorigin="anonymous" async></script>
+  <script src="{{ $indexProd.Permalink }}" integrity="{{ $indexProd.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
