@@ -66,7 +66,8 @@
 .alert-global {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 0.25rem;
-  margin: 0 2rem 1rem;
+  margin: 0 15% 1rem;
+  font-family: $font-family-base;
 }
 
 @include media-breakpoint-up(sm) {
@@ -84,6 +85,12 @@
 @include media-breakpoint-up(lg) {
   .alert-global {
     margin: 0 35% 1rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .alert-global {
+    margin: 0 40% 1rem;
   }
 }
 
