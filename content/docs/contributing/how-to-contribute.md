@@ -6,7 +6,7 @@ date: 2020-11-12T20:12:04+01:00
 lastmod: 2020-11-12T20:12:04+01:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "contributing"
 weight: 510
@@ -41,4 +41,4 @@ toc: true
 
 ## Submit to Showcase
 
-[Share what you’ve built with us →]({{< ref "contact/index.md" >}})
+[Share what you’ve built with us →](https://github.com/h-enk/doks/discussions?discussions_q=category%3A%22Show+and+tell%22)
