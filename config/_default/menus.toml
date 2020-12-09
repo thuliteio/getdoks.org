@@ -68,9 +68,14 @@
   weight = 20
 
 [[footer]]
+  name = "Code of Conduct"
+  url = "/docs/contributing/code-of-conduct/"
+  weight = 10
+
+[[footer]]
   name = "Privacy"
   url = "/privacy-policy/"
-  weight = 10
+  weight = 20
 
 [[tutorial]]
   name = "Tutorial"
