@@ -10,7 +10,7 @@ rssLimit = 10
 
 # add redirects/headers
 [outputs]
-home = ["HTML", "RSS", "REDIRECTS", "HEADERS", "INDEX"]
+home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
 section = ["HTML", "SITEMAP"]
 
 # remove .{ext} from text/netlify
@@ -31,11 +31,6 @@ mediaType = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
-
-# add output format for index.json
-[outputFormats.INDEX]
-mediaType = "application/json"
-baseName = "index"
 
 # add output format for section sitemap.xml
 [outputFormats.SITEMAP]
