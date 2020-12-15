@@ -29,7 +29,10 @@
 			<h1>{{ .Title }}</h1>
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
 			{{ partial "main/headline-hash.html" .Content }}
-			<p><a href="{{ .Params.link }}">{{ trim .Params.link "https://" }}</a></p>
+			<h2>Website</h2>
+			<ul>
+				<li><a href="{{ .Params.link }}">{{ trim .Params.link "https://" }}</a></li>
+			</ul>
 			<!-- {{ partial "main/edit-page.html" . }} -->
 			{{ partial "main/docs-navigation.html" . }}
 		</main>
