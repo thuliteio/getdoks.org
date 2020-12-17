@@ -40,19 +40,24 @@
   weight = 10
 
 [[main]]
+  name = "Tutorial"
+  url = "/tutorial/introduction/"
+  weight = 20
+
+[[main]]
   name = "Showcase"
   url = "/showcase/causal-data-science-meeting/"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "Blog"
   url = "/blog/"
-  weight = 30
-
-[[main]]
-  name = "Community"
-  url = "https://github.com/h-enk/doks/discussions"
   weight = 40
+
+# [[main]]
+#   name = "Community"
+#   url = "https://github.com/h-enk/doks/discussions"
+#   weight = 50
 
 # [[social]]
 #   name = "Twitter"
