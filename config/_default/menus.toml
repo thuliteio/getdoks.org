@@ -73,14 +73,19 @@
   weight = 20
 
 [[footer]]
-  name = "Code of Conduct"
-  url = "/docs/contributing/code-of-conduct/"
+  name = "Privacy"
+  url = "/privacy-policy/"
   weight = 10
 
 [[footer]]
-  name = "Privacy"
-  url = "/privacy-policy/"
+  name = "Code of Conduct"
+  url = "/docs/contributing/code-of-conduct/"
   weight = 20
+
+[[footer]]
+  name = "Community"
+  url = "https://github.com/h-enk/doks/discussions"
+  weight = 30
 
 [[tutorial]]
   name = "Tutorial"
