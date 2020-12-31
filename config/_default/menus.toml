@@ -46,7 +46,7 @@
 
 [[main]]
   name = "Showcase"
-  url = "/showcase/causal-data-science-meeting/"
+  url = "/showcase/neutrino-oscillations/"
   weight = 30
 
 [[main]]

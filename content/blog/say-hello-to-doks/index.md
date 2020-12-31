@@ -50,7 +50,7 @@ There are two main ways to get started with Doks:
 - [Recipes]({{< ref "docs/recipes/project-configuration" >}}). Get instructions on how to accomplish common tasks with Doks.
 - [Reference Guides]({{< ref "docs/reference-guides/security" >}}). Learn how to customize Doks to fully make it your own.
 - [Extensions]({{< ref "docs/extensions/add-google-fonts" >}}). Get instructions on how to add even more to Doks.
-- [Showcase]({{< ref "showcase/causal-data-science-meeting" >}}). See what others have build with Doks.
+- [Showcase]({{< ref "showcase/neutrino-oscillations" >}}). See what others have build with Doks.
 
 ## Try Doks
 
