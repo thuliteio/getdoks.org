@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/h-enk/getdoks.org/compare/v0.1.3...v0.1.4) (2021-01-12)
+
+
+### Features
+
+* add code of conduct link to footer menu ([edcc123](https://github.com/h-enk/getdoks.org/commit/edcc1235c62c30e17cfd74259d30d8d795ff3534))
+* add community link to main menu ([d9f3569](https://github.com/h-enk/getdoks.org/commit/d9f356980338158500290582515fd38fb3ce04a3))
+* add hugo extended as a dependency ([0a33bf0](https://github.com/h-enk/getdoks.org/commit/0a33bf01406a643888b6e9d69f15852374cb93d8))
+* update config for section rss support ([1201349](https://github.com/h-enk/getdoks.org/commit/120134960fc5230d4fb4bf8be1f01e437a8acf07))
+* update global alert ([73489f8](https://github.com/h-enk/getdoks.org/commit/73489f824c1f9f3cb7a2cb864c5516c1bac89341))
+* update global alert ([9133281](https://github.com/h-enk/getdoks.org/commit/91332814d199ae38945768f3bea72148c82bdee3))
+
+
+### Documentation
+
+* update code of conduct ([b5ae010](https://github.com/h-enk/getdoks.org/commit/b5ae0102e9b4c1b2f4f861d636095f412709e899))
+* update faq for docs discussions ([767b787](https://github.com/h-enk/getdoks.org/commit/767b787542e1e111244ad89e62f82872e055149d))
+
+
+### Dependencies
+
+* bump to latest versions ([79aab03](https://github.com/h-enk/getdoks.org/commit/79aab03b1af1767a229365bcecd624f5c3fc221f))
+* bump to latest versions ([9221abd](https://github.com/h-enk/getdoks.org/commit/9221abd843a9f63a35e9d7f564b62c648c294aeb))
+* bump to latest versions ([590ecaf](https://github.com/h-enk/getdoks.org/commit/590ecaff4c98444d697406ac60dde393c75068da))
+* bump versions to latest ([262cdd2](https://github.com/h-enk/getdoks.org/commit/262cdd2d1c775c8d1d2d4460735148963b9a21b0))
+* bump versions to latest ([d095567](https://github.com/h-enk/getdoks.org/commit/d0955670722db7c3f42635d4ebe6c883f54e1563))
+* bump versions to latest ([03da295](https://github.com/h-enk/getdoks.org/commit/03da295e767a8358fa5cf1b2f721a58669151d52))
+* bump versions to latest ([c78c2b4](https://github.com/h-enk/getdoks.org/commit/c78c2b4c7bc8a5a7b738e3a4a9360e977531734d))
+* bump versions to latest ([55bc322](https://github.com/h-enk/getdoks.org/commit/55bc322e51d5ea82fb6b0c162a8993adac1e57e6))
+* bump versions to latest ([91d23ee](https://github.com/h-enk/getdoks.org/commit/91d23ee288bbf5d4dec38d8f67bd545195c53d1a))
+* bump versions to latest ([dc712ce](https://github.com/h-enk/getdoks.org/commit/dc712cead2faead5443187b03ef8b5a6c195b0a5))
+
 ### [0.1.3](https://github.com/h-enk/getdoks.org/compare/v0.1.2...v0.1.3) (2020-12-03)
 
 
