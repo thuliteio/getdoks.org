@@ -6,7 +6,7 @@ date: 2020-11-17T20:11:42+01:00
 lastmod: 2020-11-17T20:11:42+01:00
 draft: false
 images: []
-menu: 
+menu:
   tutorial:
     parent: "tutorial"
 weight: 010
@@ -15,7 +15,7 @@ toc: false
 
 ## Steps
 
-0. [Install Dependencies]({{< ref "install-dependencies" >}}). Install Hugo and Node.js to get started with Doks.
+0. [Install Dependencies]({{< ref "install-dependencies" >}}). Doks is a npm project. Install Node.js (it includes npm) to get started with Doks.
 1. [Start new project]({{< ref "start-new-project" >}}). Create a new site, change directories, install npm packages, and start development server.
 2. [Set configuration]({{< ref "set-configuration" >}}). Set configuration for Meta data, Images, Footer, Alert, and Edit page.
 3. [Add pages]({{< ref "add-pages" >}}). Customize the homepage, add a blog post, and add a documentation page.

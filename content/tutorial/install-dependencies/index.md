@@ -1,46 +1,21 @@
 ---
 title: "0. Install Dependencies"
-description: "Install Hugo and Node.js to get started with Doks."
-lead: "Install Hugo and Node.js to get started with Doks."
+description: "Doks is a npm project. Install Node.js (it includes npm) to get started with Doks."
+lead: "Doks is a npm project. Install Node.js (it includes npm) to get started with Doks."
 date: 2020-11-18T08:20:35+01:00
 lastmod: 2020-11-18T08:20:35+01:00
 draft: false
 images: []
-menu: 
+menu:
   tutorial:
     parent: "tutorial"
 weight: 020
 toc: true
 ---
 
-{{< alert icon="👉" text="Node.js is needed to install npm packages and run commands." >}}
-
-Doks requires:
-
-- [Hugo](https://gohugo.io/getting-started/installing/) >= 0.75.0/extended
-- [Node.js](https://nodejs.org/) >= 14.15.0
-
-## Hugo
-
-{{< alert icon="👉" text="The `extended` version is needed for `SCSS` processing support." >}}
-
-Visit the [Hugo site](https://gohugo.io/getting-started/installing/) and follow the instructions to download and install Hugo for your operating system.
-
-### Check Hugo install
-
-{{< btn-copy text="hugo version" >}}
-
-```bash
-hugo version
-```
-
-{{< img-simple src="hugo-version.png" alt="hugo version" >}}
-
 ## Node.js
 
-{{< alert icon="👉" text="npm is installed with Node.js." >}}
-
-Visit the [Node.js site](https://nodejs.org/) and follow the instructions to download and install the recommended version for your operating system.
+Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform. The Long Term Support (LTS) release is recommended for most users, the Current release contains the latest features.
 
 ### Check Node.js install
 
