@@ -1,7 +1,7 @@
 ---
 title: "0. Install Dependencies"
-description: "Doks is a npm project. Install Node.js (it includes npm) to get started with Doks."
-lead: "Doks is a npm project. Install Node.js (it includes npm) to get started with Doks."
+description: "Install Node.js to get started with Doks."
+lead: "Install Node.js to get started with Doks."
 date: 2020-11-18T08:20:35+01:00
 lastmod: 2020-11-18T08:20:35+01:00
 draft: false
@@ -15,7 +15,9 @@ toc: true
 
 ## Node.js
 
-Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform. The Long Term Support (LTS) release is recommended for most users, the Current release contains the latest features.
+Download and install Node.js for your platform:
+
+- [Node.js](https://nodejs.org/) >= 14.x
 
 ### Check Node.js install
 
@@ -24,13 +26,3 @@ Download and install [Node.js](https://nodejs.org/) (it includes npm) for your p
 ```bash
 node --version
 ```
-
-### Check npm install
-
-{{< btn-copy text="npm --version" >}}
-
-```bash
-npm --version
-```
-
-{{< img-simple src="node-npm-version.png" alt="node npm version" >}}
