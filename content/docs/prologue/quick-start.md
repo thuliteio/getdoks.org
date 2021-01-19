@@ -13,7 +13,7 @@ weight: 020
 toc: true
 ---
 
-## Requirement
+## Requirements
 
 - [Node.js](https://nodejs.org/) >= 14.x
 

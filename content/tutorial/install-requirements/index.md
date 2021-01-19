@@ -1,5 +1,5 @@
 ---
-title: "0. Install Dependencies"
+title: "0. Install Requirements"
 description: "Install Node.js to get started with Doks."
 lead: "Install Node.js to get started with Doks."
 date: 2020-11-18T08:20:35+01:00
