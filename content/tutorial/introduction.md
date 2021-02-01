@@ -16,7 +16,7 @@ toc: false
 ## Steps
 
 0. [Install requirements]({{< ref "install-requirements" >}}). Install Node.js to get started with Doks.
-1. [Start new project]({{< ref "start-new-project" >}}). Create a new site, change directories, install npm packages, and start development server.
+1. [Start new project]({{< ref "start-new-project" >}}). Create a new site, change directories, install dependencies, and start development server.
 2. [Set configuration]({{< ref "set-configuration" >}}). Set configuration for Meta data, Images, Footer, Alert, and Edit page.
 3. [Add pages]({{< ref "add-pages" >}}). Customize the homepage, add a blog post, and add a documentation page.
 4. [Add menus]({{< ref "add-menus" >}}). Add pages or links to the main, social, docs, or footer menu.

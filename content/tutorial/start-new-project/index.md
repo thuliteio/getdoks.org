@@ -1,7 +1,7 @@
 ---
 title: "1. Start New Project"
-description: "Create a new site, change directories, install npm packages, and start development server."
-lead: "Create a new site, change directories, install npm packages, and start development server."
+description: "Create a new site, change directories, install dependencies, and start development server."
+lead: "Create a new site, change directories, install dependencies, and start development server."
 date: 2020-11-30T14:24:13+01:00
 lastmod: 2020-11-30T14:24:13+01:00
 draft: false
