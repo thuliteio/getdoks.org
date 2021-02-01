@@ -6,7 +6,7 @@ date: 2020-11-30T14:24:13+01:00
 lastmod: 2020-11-30T14:24:13+01:00
 draft: false
 images: []
-menu: 
+menu:
   tutorial:
     parent: "tutorial"
 weight: 030
@@ -31,7 +31,7 @@ git clone https://github.com/h-enk/doks.git my-doks-site
 cd my-doks-site
 ```
 
-### Install npm packages
+### Install dependencies
 
 {{< btn-copy text="npm install" >}}
 
@@ -39,7 +39,7 @@ cd my-doks-site
 npm install
 ```
 
-Installing npm packages can take a minute. Warnings can be ignored.
+Installing dependencies can take a minute. Warnings can be ignored.
 
 ### Start development server
 
