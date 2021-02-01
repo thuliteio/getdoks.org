@@ -1,7 +1,7 @@
 ---
 title: "0. Install Requirements"
-description: "Install npm to get started with Doks."
-lead: "Install npm to get started with Doks."
+description: "Install Node.js to get started with Doks."
+lead: "Install Node.js to get started with Doks."
 date: 2020-11-18T08:20:35+01:00
 lastmod: 2020-11-18T08:20:35+01:00
 draft: false
@@ -13,10 +13,9 @@ weight: 020
 toc: true
 ---
 
-## npm
+## Node.js
 
-Doks uses npm for dependency management and customized build scripts. Installing npm is pretty simple. Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform. I recommend installing the current release.
-
+Doks uses npm to install site dependencies and run build scripts. Installing npm is pretty simple. Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
 
 ### Check Node.js install
 
