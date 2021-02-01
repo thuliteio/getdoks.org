@@ -128,3 +128,28 @@ $alert-border-width:                0;
 $alert-bg-level:                    0;
 $alert-border-level:                0;
 $alert-color-level:                 0;
+
+// docsearch
+$dropdown-config: (
+  main-color: $purple,
+  layout-type: normal,
+  layout-width: normal,
+  layout-alignment: align,
+  background-color: $white,
+  border-radius: 4,
+  border-width: 1,
+  border-color: $gray-200,
+  box-shadow: none,
+  branding-position: bottom,
+  spacing: normal,
+  include-desc: yes,
+  background-category-header: $white,
+  font-size: normal,
+  header-color: $black,
+  title-color: $black,
+  subtitle-color: $black,
+  text-color: $black,
+  highlight-color: $purple,
+  highlight-opacity: 0.1,
+  highlight-type: underline
+);

@@ -7,6 +7,13 @@
 /** Import Bootstrap */
 @import "bootstrap/scss/bootstrap";
 
+/** Import docsearch */
+
+/*! purgecss start ignore */
+@import "docsearch.js/dist/npm/styles/main";
+
+/*! purgecss end ignore */
+
 /** Import theme styles */
 @import "common/fonts";
 @import "common/global";
@@ -18,7 +25,6 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/images";
-@import "components/search";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/pages";
