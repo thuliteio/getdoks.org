@@ -46,7 +46,7 @@
 
 [[main]]
   name = "Showcase"
-  url = "/showcase/mockadillo-documentation/"
+  url = "/showcase/parietal-numerics-documentation/"
   weight = 30
 
 [[main]]
