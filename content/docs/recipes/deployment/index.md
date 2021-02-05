@@ -66,6 +66,7 @@ See [Netlify]({{< ref "netlify" >}}).
 5. Push the changes to GitHub and wait for the action to finish succesfully (after approximately 30 seconds).
 6. That's it. After a minute or so, you site is avaliable at the __Your site is published at__ URL.
 
+Now, after every push to the master branch, your site will be updated — automatically.
 
 ## Deploy to other hosts
 
