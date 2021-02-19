@@ -47,7 +47,7 @@ Get instructions on how to add even more to Doks. [Extensions →]({{< ref "add-
 
 ### Showcase
 
-See what others have build with Doks. [Showcase →]({{< ref "parietal-numerics-documentation" >}})
+See what others have build with Doks. [Showcase →]({{< ref "butterops" >}})
 
 ## Contributing
 

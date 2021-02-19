@@ -23,40 +23,41 @@ See [Netlify]({{< ref "netlify" >}}).
 
 1. Add `.github/workflows/deploy-github.yml`:
 
-    ```yml
-    # Deploy your Hyas site to GitHub Pages
+```yml
+# Deploy your Hyas site to GitHub Pages
 
-    name: GitHub Pages
+name: GitHub Pages
 
-    on:
-      push:
-        branches:
-          - master
+on:
+  push:
+    branches:
+      - master
 
-    jobs:
-      deploy:
-        runs-on: ubuntu-18.04
-        steps:
-          - uses: actions/checkout@v2
-          - uses: actions/setup-node@v2
-            with:
-              node-version: '14'
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-          - name: Install dependencies
-            run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-          - name: Check for linting errors
-            run: npm test
+      - name: Check for linting errors
+        run: npm test
 
-          - name: Build production website
-            run: npm run build
+      - name: Build production website
+        run: npm run build
 
-          - name: Deploy to GitHub Pages
-            uses: peaceiris/actions-gh-pages@v3
-            with:
-              github_token: ${{ secrets.GITHUB_TOKEN }}
-              publish_dir: ./public
-    ```
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+```
+
 2. Click on the __Actions__ tab of your GitHub repo and wait for the action to finish succesfully (after approximately 30 seconds).
 
 {{< img-simple src="select-branch.png" alt="Select branch" class="border-0" >}}

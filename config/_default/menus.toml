@@ -46,7 +46,7 @@
 
 [[main]]
   name = "Showcase"
-  url = "/showcase/parietal-numerics-documentation/"
+  url = "/showcase/butterops/"
   weight = 30
 
 [[main]]
