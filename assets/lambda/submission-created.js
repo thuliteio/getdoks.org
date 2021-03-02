@@ -15,12 +15,12 @@ exports.handler = async event => {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({email: payload.email, referrer_url: payload.page}),
+    body: JSON.stringify({email: payload.email}),
   })
     .catch(error => ({ statusCode: 422, body: String(error) }))
 
     const content = await rawResponse.json();
 
-    console.log(content);
+    console.log(`Submitted to Buttondown:\n ${content}`)
 
 }
