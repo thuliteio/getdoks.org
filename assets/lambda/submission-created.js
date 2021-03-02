@@ -1,6 +1,6 @@
 require("dotenv").config()
 
-const fetch = require("node-fetch").default
+const fetch = require("node-fetch")
 const { EMAIL_TOKEN } = process.env
 
 exports.handler = async event => {
@@ -13,7 +13,7 @@ exports.handler = async event => {
       Authorization: `Token ${EMAIL_TOKEN}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ email: payload.email, notes: payload.name }),
+    body: JSON.stringify({ "email": payload.email, "notes": payload.page }),
   })
     .then(response => response.json())
     .then(data => {
