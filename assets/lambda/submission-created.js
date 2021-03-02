@@ -1,6 +1,6 @@
 exports.handler = async function(event, context) {
   require('dot-env').config()
-  const fetch = require('node-fetch')
+  const fetch = require('node-fetch').default
   const { EMAIL_TOKEN } = process.env
   exports.handler = async event => {
     const email = JSON.parse(event.body).payload.email
