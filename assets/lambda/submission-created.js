@@ -1,17 +1,17 @@
 require('dotenv').config()
 
 const fetch = require('node-fetch').default
-const { EMAIL_TOKEN } = process.env
+const { BUTTONDOWN_API_KEY } = process.env
 
 exports.handler = async event => {
 
   const payload = JSON.parse(event.body).payload
-  console.log(`Recieved a submission: ${payload.email}`)
+  console.log(payload.email)
 
   const rawResponse = await fetch('https://api.buttondown.email/v1/subscribers', {
     method: 'post',
     headers: {
-      Authorization: `Token ${EMAIL_TOKEN}`,
+      Authorization: `Token ${BUTTONDOWN_API_KEY}`,
       'Accept': 'application/json',
       'Content-Type': 'application/json',
     },
@@ -20,7 +20,6 @@ exports.handler = async event => {
     .catch(error => ({ statusCode: 422, body: String(error) }))
 
     const content = await rawResponse.json();
-    console.log('Submitted to Buttondown:')
     console.log(content)
 
 }
