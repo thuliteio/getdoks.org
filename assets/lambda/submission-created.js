@@ -16,7 +16,7 @@ exports.handler = async event => {
     },
     body: JSON.stringify({ "email": payload.email, "referrer_url": payload.page }),
   })
-    .then(response => await response.json())
+    .then(response => response.json())
     .then(data => {
       console.log(`Submitted to Buttondown:\n ${data}`)
     })
