@@ -59,7 +59,10 @@ docsearch({
 });
 /* eslint-enable */
 
-// https://css-tricks.com/using-netlify-forms-and-netlify-functions-to-build-an-email-sign-up-widget/
+/*
+ * https://css-tricks.com/using-netlify-forms-and-netlify-functions-to-build-an-email-sign-up-widget/
+ * https://answers.netlify.com/t/how-to-include-dependencies-in-netlify-lambda-functions/2323/38
+*/
 
 /* eslint-disable */
 const processForm = form => {
