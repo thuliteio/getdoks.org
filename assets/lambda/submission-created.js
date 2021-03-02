@@ -16,8 +16,8 @@ exports.handler = async event => {
     body: JSON.stringify({ "email": payload.email, "referrer_url": payload.page }),
   })
     .then(response => response.json())
-    .then(data => {
-      console.log(`Submitted to Buttondown:\n ${data}`)
+    .then(response => {
+      console.log(`Submitted to Buttondown:\n ${response}`)
     })
     .catch(error => ({ statusCode: 422, body: String(error) }))
 }
