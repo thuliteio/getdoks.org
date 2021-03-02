@@ -39,6 +39,7 @@
     "clipboard": "^2.0",
     "docsearch.js": "^2.6.3",
     "dot-env": "^0.0.1",
+    "encoding": "^0.1.13",
     "eslint": "^7.18",
     "hugo-bin": "^0.69",
     "instant.page": "^5.1",
