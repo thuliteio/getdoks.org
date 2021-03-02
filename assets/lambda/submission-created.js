@@ -20,7 +20,6 @@ exports.handler = async event => {
     .catch(error => ({ statusCode: 422, body: String(error) }))
 
     const content = await rawResponse.json();
-
-    console.log(`Submitted to Buttondown:\n ${content}`)
+    console.log('Submitted to Buttondown:\n' + content)
 
 }
