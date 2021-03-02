@@ -1,6 +1,6 @@
 require("dotenv").config()
 
-const fetch = require("node-fetch")
+const fetch = require("node-fetch").default
 const { EMAIL_TOKEN } = process.env
 
 exports.handler = async event => {
