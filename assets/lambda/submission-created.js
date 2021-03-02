@@ -12,11 +12,11 @@ exports.handler = async event => {
       Authorization: 'Token ${EMAIL_TOKEN}',
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ email }),
+    body: JSON.stringify({ email: email }),
   })
     .then(response => response.json())
     .then(data => {
-      console.log('Submitted to Buttondown:\n ${data}')
+      console.log('Submitted to Buttondown:\n' + data)
     })
     .catch(error => ({ statusCode: 422, body: String(error) }))
 }
