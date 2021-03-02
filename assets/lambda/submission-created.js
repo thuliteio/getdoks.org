@@ -17,7 +17,6 @@ exports.handler = async event => {
     },
     body: JSON.stringify({
       email: payload.email,
-      referrer_url: `${payload.page}`,
       utm_source: 'website',
       utm_medium: 'subscribe-form'
     }),
