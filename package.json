@@ -51,5 +51,9 @@
     "standard-version": "^9.1",
     "stylelint": "^13.11",
     "stylelint-config-standard": "^20.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1"
   }
 }
