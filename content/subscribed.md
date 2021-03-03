@@ -7,7 +7,8 @@ draft: false
 sitemap_exclude: true
 feed_exclude: true
 robots: noindex, nofollow, noarchive
+type: "confirmation"
 images: []
 ---
 
-You're subscribed to Doks newsletter! The next edition will end up in your inbox.
+You're subscribed to the Doks newsletter! The next edition will end up in your inbox.

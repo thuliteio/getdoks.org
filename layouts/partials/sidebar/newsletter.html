@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card-bar"></div>
+  <div class="card-body">
+    <h3 class="h4 card-title">Stay in the loop</h3>
+    <p class="card-text">Subscribe to the Doks newsletter and get occasional updates.</p>
+    <form class="email-form" name="newsletter" method="post" netlify-honeypot="name" data-netlify="true">
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <input name="name" type="text" class="form-control sr-only" placeholder="your name" aria-label="Name">
+          <input name="email" type="email" class="form-control" placeholder="your@email.com" aria-label="Email address" required>
+          <input name="page" type="hidden" value="{{ .Page.Permalink | absLangURL }}">
+        </div>
+        <div class="form-group col-md-4">
+          <button type="submit" class="btn btn-primary btn-block" aria-label="Subscribe">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

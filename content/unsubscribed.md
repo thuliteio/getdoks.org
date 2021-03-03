@@ -7,7 +7,8 @@ draft: false
 sitemap_exclude: true
 feed_exclude: true
 robots: noindex, nofollow, noarchive
+type: "confirmation"
 images: []
 ---
 
-You've successfully unsubscribed from Doks newsletter. Have a good day!
+You've successfully unsubscribed from the Doks newsletter. Have a good day!

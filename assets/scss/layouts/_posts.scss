@@ -1,20 +1,23 @@
 .home .card,
-.contributors.list .card,
-.blog.list .card {
+.blog .card,
+.newsletter .card,
+.contributors.list .card {
   margin-top: 2rem;
   margin-bottom: 2rem;
   transition: transform 0.3s;
 }
 
 .home .card:hover,
-.contributors.list .card:hover,
-.blog.list .card:hover {
+.blog .card:hover,
+.newsletter .card:hover,
+.contributors.list .card:hover {
   transform: scale(1.025);
 }
 
 .home .card-body,
-.contributors.list .card-body,
-.blog.list .card-body {
+.blog .card-body,
+.newsletter .card-body,
+.contributors.list .card-body {
   padding: 0 2rem 1rem;
 }
 
