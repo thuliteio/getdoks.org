@@ -45,3 +45,10 @@ alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/
 # Edit Page
 docsRepo = "https://github.com/h-enk/doks"
 editPage = true
+
+[options]
+  lazySizes = true
+  clipBoard = true
+  instantPage = true
+  darkMode = true
+  bootStrapJs = false
