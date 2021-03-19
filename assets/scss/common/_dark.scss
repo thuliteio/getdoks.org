@@ -150,18 +150,22 @@ body.dark .form-control.is-search {
   */
 }
 
-body.dark .email-form .form-control {
-  background: $body-overlay-dark;
-  border-color: transparent;
+body.dark .navbar-form::after {
+  color: $gray-600;
+  border: 1px solid $gray-800;
 }
 
-body.dark .navbar-form::after {
-  color: $gray-700;
-  border: 1px solid transparent;
+body.dark .form-control {
+  color: $gray-500;
 }
 
 body.dark .form-control:focus {
   box-shadow: 0 0 0 0.2rem $focus-color-dark;
+}
+
+body.dark .email-form .form-control {
+  background: $body-overlay-dark;
+  border-color: transparent;
 }
 
 body.dark .border-top {
