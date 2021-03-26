@@ -6,7 +6,7 @@ date: 2020-09-21T13:58:42+02:00
 lastmod: 2020-09-21T13:58:42+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "recipes"
 weight: 120
