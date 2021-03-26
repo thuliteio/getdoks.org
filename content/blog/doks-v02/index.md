@@ -18,7 +18,6 @@ Read more about [Doks child theme](/)
 
 ## Syntax highlighting
 
-
 ```json
 // Default Doks style
 [
