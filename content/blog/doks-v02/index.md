@@ -2,8 +2,8 @@
 title: "Doks v0.2"
 description: ""
 lead: "Really excited to release Doks 0.2. The biggest update yet."
-date: 2021-03-19T10:05:04+01:00
-lastmod: 2021-03-19T10:05:04+01:00
+date: 2021-03-26T10:05:04+01:00
+lastmod: 2021-03-26T10:05:04+01:00
 draft: true
 weight: 50
 images: ["doks-v02.png"]
@@ -18,7 +18,22 @@ Read more about [Doks child theme](/)
 
 ## Syntax highlighting
 
-{{< img-simple src="highlight.js.png" alt="highlight.js syntax highlighting Doks" >}}
+
+```json
+// Default Doks style
+[
+  {
+    "title": "apples",
+    "count": [12000, 20000],
+    "description": {"text": "...", "sensitive": false}
+  },
+  {
+    "title": "oranges",
+    "count": [17500, null],
+    "description": {"text": "...", "sensitive": false}
+  }
+]
+```
 
 Doks now comes with [highlight.js](https://highlightjs.org/) as the default syntax highlighter. Use the default Doks style, or use one of the other available [higlight.js themes](https://highlightjs.org/static/demo/).
 
@@ -28,23 +43,11 @@ Read more about [Syntax highlighting](/)
 
 ## Math typesetting
 
-Math type setting is super coool — nerd alert!
-
-{{< img-simple src="katex.png" alt="Breadcrumb navigation Doks" class="wide" >}}
-
-Doks now supports math typesetting by making use of the [KaTeX](https://katex.org/) library. It is switched off per default. Activate it by setting `kaTex = true` in `./config/_default/params.toml`.
-
-Math type setting is super coool — nerd alert!
-
-{{< img-simple src="katex.png" alt="Breadcrumb navigation Doks" class="wide22" >}}
-
 Doks now supports math typesetting by making use of the [KaTeX](https://katex.org/) library. It is switched off per default. Activate it by setting `kaTex = true` in `./config/_default/params.toml`.
 
 Read more about [Math typesetting](/)
 
 ## Breadcrumb navigation
-
-{{< img-simple src="breadcrumb.png" alt="Breadcrumb navigation Doks" class="wide" >}}
 
 Doks now comes with breadcrumb navigation. It is switched off per default. Activate it by setting `breadCrumb = true` in `./config/_default/params.toml`.
 
