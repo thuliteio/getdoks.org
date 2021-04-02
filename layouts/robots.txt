@@ -4,4 +4,4 @@ Allow: /
 {{ else -}}
 Disallow: /
 {{ end }}
-Sitemap: {{ "sitemap.xml" | relURL -}}
+Sitemap: {{ "sitemap.xml" | absURL -}}
