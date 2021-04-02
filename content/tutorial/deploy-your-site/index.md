@@ -6,7 +6,7 @@ date: 2020-11-30T14:28:08+01:00
 lastmod: 2020-11-30T14:28:08+01:00
 draft: false
 images: []
-menu: 
+menu:
   tutorial:
     parent: "tutorial"
 weight: 080
@@ -15,7 +15,7 @@ toc: true
 
 ## Deploy to Netlify
 
-Continuous Deployment (CD) works by connecting a Git repository to a Netlify site and keeping the two in sync. Netlify will run the Doks build command and deploy the result whenever you push to your Git repo.
+> Continuous Deployment (CD) works by connecting a Git repository to a Netlify site and keeping the two in sync. Netlify will run the Doks build command and deploy the result whenever you push to your Git repo.
 
 ### Set up Git repository
 

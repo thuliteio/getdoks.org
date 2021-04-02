@@ -15,7 +15,9 @@ toc: true
 
 ## Node.js
 
-Doks uses npm to install dependencies and run commands. Installing npm is pretty simple. Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
+Doks uses npm to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts:
+
+- Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
 
 ### Check Node.js install
 

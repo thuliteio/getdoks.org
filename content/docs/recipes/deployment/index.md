@@ -15,7 +15,7 @@ toc: true
 
 ## Deploy to Netlify
 
-See [Netlify]({{< ref "netlify" >}}).
+See [Netlify]({{< relref "netlify" >}}).
 
 ## Deploy to GitHub Pages
 

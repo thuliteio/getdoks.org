@@ -6,7 +6,7 @@ date: 2020-11-30T14:27:30+01:00
 lastmod: 2020-11-30T14:27:30+01:00
 draft: false
 images: []
-menu: 
+menu:
   tutorial:
     parent: "tutorial"
 weight: 050
@@ -76,12 +76,12 @@ Within a grid, you can use components like [buttons](https://getbootstrap.com/do
 
 ## Add a blog post
 
-Add a blog post using the `hugo new` command.
+Add a blog post using the `npm run create` command.
 
 ### Example
 
 ```bash
-hugo new blog/say-hello-to-doks/index.md
+npm run create blog/say-hello-to-doks/index.md
 ```
 
 #### index.md
@@ -110,12 +110,12 @@ Some website projects require a solid starting point. With a great developer exp
 
 ## Add a documentation page
 
-Add a documentation page using the `hugo new` command.
+Add a documentation page using the `npm run create` command.
 
 ### Example
 
 ```bash
-hugo new docs/prologue/introduction/index.md
+npm run create docs/prologue/introduction/index.md
 ```
 
 #### index.md

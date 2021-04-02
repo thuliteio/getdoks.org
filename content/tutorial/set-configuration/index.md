@@ -6,7 +6,7 @@ date: 2020-11-30T14:27:14+01:00
 lastmod: 2020-11-30T14:27:14+01:00
 draft: false
 images: []
-menu: 
+menu:
   tutorial:
     parent: "tutorial"
 weight: 040
@@ -85,7 +85,7 @@ Optionally, change configuration for image shortcodes:
 ```toml
 quality = 85
 bgColor = "#fff"
-landscapePhotoWidths = [1000, 800, 700, 600, 500]
+landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 ```

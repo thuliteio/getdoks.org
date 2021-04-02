@@ -6,7 +6,7 @@ date: 2020-09-17T15:37:44+02:00
 lastmod: 2020-09-17T15:37:44+02:00
 draft: false
 images: ["google-lighthouse-scan-results-doks.gif"]
-menu: 
+menu:
   docs:
     parent: "reference-guides"
 weight: 320
@@ -34,11 +34,20 @@ module.exports = {
         './layouts/**/*.html',
         './content/**/*.md',
       ],
-      whitelist: [
+      safelist: [
         'lazyloaded',
+        'table',
+        'thead',
+        'tbody',
+        'tr',
+        'th',
+        'td',
         ...whitelister([
-          './assets/scss/components/_syntax.scss',
+          './assets/scss/components/_doks.scss',
           './assets/scss/components/_code.scss',
+          './assets/scss/components/_search.scss',
+          './assets/scss/common/_dark.scss',
+          './node_modules/katex/dist/katex.css',
         ]),
       ],
     }),
@@ -60,6 +69,6 @@ See also the instant.page website: [Intensity](https://instant.page/intensity).
 
 ## Lazy loading images
 
-Hyas uses [lazysizes](https://github.com/aFarkas/lazysizes) with a Low Quality Image Placeholder (LQIP) to lazyload images added with the [image shortcode]({{< ref "layouts" >}}). The LQIP is blurred with a CSS filter.
+Hyas uses [lazysizes](https://github.com/aFarkas/lazysizes) with a Low Quality Image Placeholder (LQIP) to lazyload images added with the [image shortcode]({{< relref "layouts" >}}). The LQIP is blurred with a CSS filter.
 
 See also the lazysizes [Readme](https://github.com/aFarkas/lazysizes#readme)

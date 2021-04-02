@@ -1,10 +1,10 @@
 ---
 title: "Doks v0.2"
-description: ""
-lead: "Really excited to release Doks 0.2. The biggest update yet."
-date: 2021-03-26T10:05:04+01:00
-lastmod: 2021-03-26T10:05:04+01:00
-draft: true
+description: "Version 0.2 is here! Introducing the Doks child theme, several DX + UX updates, and easily switching the main functionalities on/off (also optimizing your CSS + JS footprint)."
+lead: "Version 0.2 is here! Introducing the Doks child theme, several DX + UX updates, and easily switching the main functionalities on/off (also optimizing your CSS + JS footprint)."
+date: 2021-03-28T10:05:04+01:00
+lastmod: 2021-03-28T10:05:04+01:00
+draft: false
 weight: 50
 images: ["doks-v02.png"]
 contributors: ["Henk Verlinde"]
@@ -12,9 +12,9 @@ contributors: ["Henk Verlinde"]
 
 ## Doks child theme
 
-Doks is now also available as a [child theme](https://github.com/h-enk/doks-child-theme), making it super easy to update when a new Doks version is released. Just run `npm update` — that's all. Of course you can still use Doks as a starter, if that fits your use case better.
+Doks is now also released as a [npm package](https://www.npmjs.com/package/@hyas/doks), making it available as a dependency in the new [Doks child theme](https://github.com/h-enk/doks-child-theme). This means it's super easy to update when a new Doks version is released. Just run `npm update` — that's all. Of course, you can still use Doks as a starter, if that fits your use case better.
 
-Read more about [Doks child theme](/)
+[Create a new site →]({{< relref "quick-start#create-a-new-site" >}})
 
 ## Syntax highlighting
 
@@ -34,27 +34,25 @@ Read more about [Doks child theme](/)
 ]
 ```
 
-Doks now comes with [highlight.js](https://highlightjs.org/) as the default syntax highlighter. Use the default Doks style, or use one of the other available [higlight.js themes](https://highlightjs.org/static/demo/).
+Doks now comes with [highlight.js](https://highlightjs.org/) as the default syntax highlighter. Use the default Doks style, or use one of the other available [higlight.js themes](https://highlightjs.org/static/demo/). Or you can still use [Chroma](https://gohugo.io/content-management/syntax-highlighting/) — the Hugo default — if you like.
 
-Note that you can still use [Chroma](https://github.com/alecthomas/chroma) — the Hugo default — if you like.
-
-Read more about [Syntax highlighting](/)
+[How to add highlight.js →]({{< relref "highlight-js" >}})
 
 ## Math typesetting
 
 Doks now supports math typesetting by making use of the [KaTeX](https://katex.org/) library. It is switched off per default. Activate it by setting `kaTex = true` in `./config/_default/params.toml`.
 
-Read more about [Math typesetting](/)
+[How to add KaTeX →]({{< relref "katex" >}})
 
 ## Breadcrumb navigation
 
 Doks now comes with breadcrumb navigation. It is switched off per default. Activate it by setting `breadCrumb = true` in `./config/_default/params.toml`.
 
-Read more about [Breadcrumb navigation](/)
+[How to add breadcrumb navigation →]({{< relref "breadcrumb-navigation" >}})
 
 ## Options
 
-Now you easily switch the main functionalities on/off in `./config/_default/params.toml`:
+Now you can easily switch the main functionalities on/off in `./config/_default/params.toml` (also optimizing your CSS + JS footprint):
 
 ```toml
 [options]
@@ -69,13 +67,41 @@ Now you easily switch the main functionalities on/off in `./config/_default/para
   kaTex = false
 ```
 
+[Options →]({{< relref "project-configuration#options" >}})
+
 ## Tables
+
+Doks now supports [Bootstrap styling](https://getbootstrap.com/docs/5.0/content/tables/) for tables in markdown.
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+{.table-striped}
+
+[Tables →]({{< relref "bootstrap#tables" >}})
 
 ## Other features and fixes
 
-- Update to [Bootstrap 5 Beta 2](https://blog.getbootstrap.com/2021/02/10/bootstrap-5-beta-2/)
-- Add [tables](/) support in markdown
-- Improve contrast searchbar text in dark mode
-- Update for [Netlify CLI](https://docs.netlify.com/cli/get-started/) use
+- Update to [Hugo v0.82](https://gohugo.io/news/0.82.0-relnotes/) (via [hugo-bin](https://www.npmjs.com/package/hugo-bin))
+- Update to [Bootstrap 5 Beta 3](https://blog.getbootstrap.com/2021/03/23/bootstrap-5-beta-3/)
+- Make [development server]({{< relref "development-tools#development-server" >}}) accessible by local IP address (handy for e.g. testing locally on mobile devices)
+- Add [Netlify DEV]({{< relref "development-tools#netlify-dev" >}}) support
+
+[Full changelog →](https://github.com/h-enk/doks/blob/master/CHANGELOG.md)
 
 ## What's next
+
+- Better UX menus (both mobile + desktop)
+- Add multilingual support
+- Replace FlexSearch with Algolia Search + [Autocomplete v1](https://github.com/algolia/autocomplete)
+- Update documentation
+
+[Milestones →](https://github.com/h-enk/doks/milestones)
+
+## 250+ GitHub stars 🌟🎉
+
+Thanks for all contributions to documentation, features, bugfixes and discussions so far! Doks is going fast on its mission to make the easiest and most fun Hugo theme for building modern documentation websites.
+
+[Stargazers →](https://github.com/h-enk/doks/stargazers)

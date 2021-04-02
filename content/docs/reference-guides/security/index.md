@@ -6,7 +6,7 @@ date: 2020-09-17T13:48:09+02:00
 lastmod: 2020-09-17T13:48:09+02:00
 draft: false
 images: ["mozilla-observatory-scan-summary-doks.png", "mozilla-observatory-scan-recommendations-doks.png"]
-menu: 
+menu:
   docs:
     parent: "reference-guides"
 weight: 310
@@ -34,15 +34,15 @@ See also the Netlify website: [Security at Netlify](https://www.netlify.com/secu
   Referrer-Policy: strict-origin
 ```
 
-See also: [Headers]({{< ref "netlify#headers" >}}).
+See also: [Headers]({{< relref "netlify#headers" >}}).
 
 #### Content Security Policy
 
-{{< alert icon="💡" text="<a href=\"https://addons.mozilla.org/nl/firefox/addon/laboratory-by-mozilla/\">Laboratory</a> is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website." >}}
+{{< alert icon="💡" text="<a href=\"https://addons.mozilla.org/en-US/firefox/addon/laboratory-by-mozilla/\">Laboratory</a> is an experimental Firefox extension that helps you generate a Content Security Policy (CSP) header for your website." >}}
 
 ## Subresource Integrity
 
-[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is applied to Doks CSS and JS files when building your Doks site for production:
+[Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is applied to Doks CSS and JS files when building your Doks site for production (and other non development sites):
 
 - `./layouts/partials/head/stylesheet.html`
 - `./layouts/partials/footer/script-footer.html`

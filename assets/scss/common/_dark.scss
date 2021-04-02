@@ -4,6 +4,7 @@
 
 $body-bg-dark: $gray-900;
 $body-overlay-dark: darken($body-bg-dark, 2.5%);
+$body-overlay-darker: darken($body-bg-dark, 5%);
 $border-dark: darken($body-bg-dark, 2.5%);
 $body-color-dark: $gray-300;
 $dots-dark: darken($body-color-dark, 50%);
@@ -196,6 +197,10 @@ body.dark code:not(.hljs) {
   color: $body-color-dark;
 }
 
+body.dark .alert code {
+  background: $body-overlay-darker;
+}
+
 body.dark pre code:hover {
   scrollbar-width: thin;
   scrollbar-color: $border-dark transparent;
@@ -303,6 +308,11 @@ body.dark .text-muted {
 body.dark .alert-primary {
   background: $link-color-dark;
   color: $body-bg-dark;
+}
+
+body.dark .alert-global {
+  background-color: $body-overlay-dark;
+  border: 1px solid $border-dark !important;
 }
 
 body.dark .figure-caption {

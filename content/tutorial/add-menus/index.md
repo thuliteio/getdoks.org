@@ -6,7 +6,7 @@ date: 2020-11-30T14:27:39+01:00
 lastmod: 2020-11-30T14:27:39+01:00
 draft: false
 images: []
-menu: 
+menu:
   tutorial:
     parent: "tutorial"
 weight: 060
@@ -74,7 +74,7 @@ Add first level menu items:
   url = "/docs/help/"
 ```
 
-Add second level menu items in the frontmatter of a [documentation page]({{< ref "add-pages#add-a-documentation-page" >}}):
+Add second level menu items in the frontmatter of a [documentation page]({{< relref "add-pages#add-a-documentation-page" >}}):
 
 ```md
 ..

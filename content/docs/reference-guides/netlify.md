@@ -6,7 +6,7 @@ date: 2020-09-21T15:58:12+02:00
 lastmod: 2020-09-21T15:58:12+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "reference-guides"
 weight: 360
@@ -73,19 +73,44 @@ See also the Netlify docs: [Custom headers](https://docs.netlify.com/routing/hea
   functions = "functions"
 
 [build.environment]
-  HUGO_VERSION = "0.74.3"
-  NODE_VERSION = "13.11.0"
-  NPM_VERSION = "6.13.7"
-  YARN_VERSION = "1.22.4"
+  NODE_VERSION = "15.5.1"
+  NPM_VERSION = "7.3.0"
 
 [context.production]
-  command = "hugo -b $URL --gc --minify && npm run build:functions"
+  command = "npx hugo --gc --minify && npx netlify-lambda build assets/lambda"
 
 [context.deploy-preview]
-  command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
+  command = "npx hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
+  command = "npx hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.next]
+  command = "npx hugo --gc --minify && npx netlify-lambda build assets/lambda"
+
+[context.next.environment]
+  HUGO_ENV = "next"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+ [plugins.inputs]
+    baseUrl = "https://getdoks.org"
+    sitemapPath = "/sitemap.xml"
+    providers = [
+      "google",
+      "bing",
+      "yandex"
+    ]
+
+[dev]
+  framework = "#custom"
+  command = "npx rimraf public resources functions && npx hugo server --bind=0.0.0.0 --disableFastRender"
+  targetPort = 1313
+  port = 8888
+  publish = "public"
+  autoLaunch = false
+
 ```
 
 See also the Netlify docs: [File-based configuration](https://docs.netlify.com/configure-builds/file-based-configuration/)

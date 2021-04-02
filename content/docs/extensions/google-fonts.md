@@ -1,16 +1,16 @@
 ---
-title: "Add Google Fonts"
+title: "Google Fonts"
 description: "How to add Google Fonts to your Doks website."
 lead: "How to add Google Fonts to your Doks website."
 date: 2020-11-17T14:55:39+01:00
 lastmod: 2020-11-17T14:55:39+01:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "extensions"
-weight: 410
-toc: false
+weight: 440
+toc: true
 ---
 
 ## Resources

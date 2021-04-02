@@ -8,7 +8,7 @@
       <div class="col-md-12">
         <input name="name" type="text" class="form-control visually-hidden" placeholder="your name" aria-label="Name">
         <input name="email" type="email" class="form-control" placeholder="your@email.com" aria-label="Email address" required>
-        <input name="page" type="hidden" value="{{ .Page.Permalink | absLangURL }}">
+        <input name="page" type="hidden" value="{{ .Page.Permalink }}">
       </div>
       <div class="col-md-4">
         <button type="submit" class="btn btn-primary w-100" aria-label="Subscribe">Subscribe</button>

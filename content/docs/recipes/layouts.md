@@ -6,7 +6,7 @@ date: 2020-09-21T14:13:01+02:00
 lastmod: 2020-09-21T14:13:01+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "recipes"
 weight: 140
@@ -20,12 +20,14 @@ toc: true
 │   ├── list.html
 │   └── single.html
 ├── blog/
-│   └── single.html
-├── categories/
 │   ├── list.html
-│   └── terms.html
+│   └── single.html
+├── contributors/
+│   └── list.html
+├── docs/
+│   ├── list.html
+│   └── single.html
 ├── partials/
-│   ├── content/
 │   ├── footer/
 │   │   ├── footer.html
 │   │   └── script-footer.html
@@ -42,9 +44,11 @@ toc: true
 │   ├── header/
 │   │   ├── alert.html
 │   │   └── header.html
+│   ├── main/
 │   └── sidebar/
 ├── shortcodes/
 │   ├── alert.html
+│   ├── btn-copy.html
 │   ├── email.html
 │   ├── img-simple.html
 │   └── img.html
@@ -85,7 +89,7 @@ See the Hugo docs: [Custom 404 Page](https://gohugo.io/templates/404/)
 
 ## Customize index.headers
 
-See: [Netlify]({{< ref "netlify#headers" >}}).
+See: [Netlify]({{< relref "netlify#headers" >}}).
 
 ## Customize index.html
 
@@ -93,7 +97,7 @@ See the Hugo docs: [Homepage Template](https://gohugo.io/templates/homepage/)
 
 ## Customize index.redirects
 
-See: [Netlify]({{< ref "netlify#redirects" >}}).
+See: [Netlify]({{< relref "netlify#redirects" >}}).
 
 ## Customize robots.txt
 
@@ -104,7 +108,7 @@ Allow: /
 {{ else -}}
 Disallow: /
 {{ end }}
-Sitemap: {{ "sitemap.xml" | absURL -}}
+Sitemap: {{ "sitemap.xml" | relURL -}}
 ```
 
 See also the Hugo docs: [Robots.txt File](https://gohugo.io/templates/robots/)

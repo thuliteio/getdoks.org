@@ -1,12 +1,12 @@
 {{ define "main" }}
-<section class="section container-fluid mt-n3 pb-5">
+<section class="section container-fluid mt-n1 pb-5">
   <div class="row justify-content-center">
     <div class="col-lg-12 text-center">
       <h1 class="mt-0">{{ .Title }}</h1>
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.Lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | absURL }}" role="button">Get started</a>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="{{ "docs/prologue/introduction/" | relURL }}" role="button">Get started</a>
       <p class="meta">Open-source MIT Licensed. <a href="https://github.com/h-enk/doks">GitHub v{{ .Site.Data.doks.version }}</a></p>
     </div>
   </div>
@@ -18,7 +18,7 @@
   <div class="bg-dots"></div>
 </div>
 
-<section class="section section-sm">
+<section class="section section-md">
   <div class="container">
     <div class="row justify-content-center text-center mt-n3">
       <div class="col-lg-5">
@@ -26,7 +26,7 @@
         <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Fast by default</h2>
+        <h2 class="h4">Fast by default ⚡️</h2>
         <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=7731347bb8ce999eff7428a8e763b637">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
       </div>
       <div class="col-lg-5">
@@ -41,7 +41,7 @@
       </div>
       <div class="col-lg-5">
         <h2 class="h4">Bootstrap framework</h2>
-        <p>Build robust, flexible, and intuitive websites with Bootstrap. Or use any other front-end framework if you prefer.</p>
+        <p>Build robust, flexible, and intuitive websites with Bootstrap 5. Easily customize your Doks site with the source Sass files.</p>
       </div>
       <div class="col-lg-5">
         <h2 class="h4">Netlify-ready</h2>
@@ -67,6 +67,7 @@
 {{ end }}
 
 {{ define "sidebar-footer" }}
+<!--
 <section class="section container-fluid mt-n5">
   <div class="row justify-content-center text-center">
     <div class="col-lg-9">
@@ -80,6 +81,7 @@
 <div class="d-flex justify-content-end">
   <div class="bg-dots bg-dots-md"></div>
 </div>
+-->
 
 <!--
 <section class="section section-sm mt-n3">
@@ -91,7 +93,7 @@
         {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "showcase")  -}}
         <div class="card bg-light">
           <div class="card-body">
-            <h3 class="lead text-center"><a class="stretched-link text-body" href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+            <h3 class="lead text-center"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
           </div>
         </div>
         {{ end -}}
@@ -102,16 +104,33 @@
 </section>
 -->
 
-<section class="section section-sm mt-n3">
+<section class="section section-md mt-1 bg-light">
+  <div class="container">
+    <div class="row justify-content-center align-items-center text-center mt-n3">
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">⭐</p>
+        <h2 class="h4 mt-0">Manage the modern web</h2>
+        <p>The modern web is decoupled and modular. Doks uses npm to centralize dependency management, making it <a href="{{ "docs/help/how-to-update/" | relURL }}">easy to update</a> resources, build tooling, plugins, and build scripts.</p>
+      </div>
+      <div class="col-lg-7">
+        <p class="fs-4 mt-4">🚀</p>
+        <h2 class="h4 mt-0">Make Doks fully yours</h2>
+        <p><a href="{{ "docs/prologue/introduction/" | relURL }}">Get started</a> with the tutorial or quick start. Use Doks as a starter or child theme. Easily switch main functionalities on/off — pick only what fits your use case. Get help if you need it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-sm mt-4 pt-4">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-10 col-xl-8">
-        <h2 class="mt-3 text-center">Doks Blog</h2>
+        <h2 class="h3 mt-3 text-center">Latest from Doks blog</h2>
         <div class="card-list">
         {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog")  -}}
         <div class="card">
           <div class="card-body">
-            <h3><a class="stretched-link text-body" href="{{ .Permalink }}">{{ .Params.title }}</a></h3>
+            <h3><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
             <p>{{ .Params.lead | safeHTML }}</p>
             {{ partial "main/blog-meta.html" . -}}
           </div>
@@ -134,7 +153,7 @@
 </section>
 
 <!--
-<section class="section section-sm container-fluid">
+<section class="section section-md container-fluid">
   <div class="row justify-content-center text-center">
     <div class="col-lg-9 pt-3">
       {{- .Content -}}

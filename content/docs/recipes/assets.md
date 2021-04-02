@@ -6,7 +6,7 @@ date: 2020-09-21T14:41:53+02:00
 lastmod: 2020-09-21T14:41:53+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "recipes"
 weight: 170
@@ -50,7 +50,7 @@ See also the Bootstrap code: [Variables](https://github.com/twbs/bootstrap/blob/
 
 ## Customize FlexSearch index
 
-See also: [FlexSearch]({{< ref "flexsearch" >}})
+See also: [FlexSearch]({{< relref "flexsearch" >}})
 
 ```bash
 ./assets/js/index.js
@@ -61,7 +61,7 @@ var docs = [
 {{ range $index, $page := (where .Site.Pages "Section" "docs") -}}
   {
     id: {{ $index }},
-    href: "{{ .Permalink | absURL }}",
+    href: "{{ .RelPermalink | relURL }}",
     title: {{ .Title | jsonify }},
     description: {{ .Params.description | jsonify }},
     content: {{ .Content | jsonify }}
@@ -72,7 +72,7 @@ var docs = [
 
 ## Add a Lambda function
 
-See also: [Functions]({{< ref "netlify#functions" >}})
+See also: [Functions]({{< relref "netlify#functions" >}})
 
 ### Example
 

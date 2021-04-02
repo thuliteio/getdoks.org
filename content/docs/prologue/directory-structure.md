@@ -6,7 +6,7 @@ date: 2020-04-20T14:14:16+02:00
 lastmod: 2020-04-20T14:14:16+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "prologue"
 weight: 040
@@ -46,7 +46,7 @@ See also the Hugo docs: [Directory Structure](https://gohugo.io/getting-started/
 └── docs.md
 ```
 
-See also: [Archetypes]({{< ref "archetypes" >}}).
+See also: [Archetypes]({{< relref "archetypes" >}}).
 
 ### assets
 
@@ -66,7 +66,7 @@ See also: [Archetypes]({{< ref "archetypes" >}}).
     └── app.scss
 ```
 
-See also: [Assets]({{< ref "assets" >}})
+See also: [Assets]({{< relref "assets" >}})
 
 ### config
 
@@ -81,7 +81,7 @@ See also: [Assets]({{< ref "assets" >}})
 └── postcss.config.js
 ```
 
-See also: [Project Configuration]({{< ref "project-configuration" >}}).
+See also: [Project Configuration]({{< relref "project-configuration" >}}).
 
 ### content
 
@@ -93,7 +93,7 @@ See also: [Project Configuration]({{< ref "project-configuration" >}}).
 └── _index.md
 ```
 
-See also: [Pages]({{< ref "pages" >}}).
+See also: [Pages]({{< relref "pages" >}}).
 
 ### data
 
@@ -145,7 +145,7 @@ See the Hugo docs: [Data Templates](https://gohugo.io/templates/data-templates/)
 └── sitemap.xml
 ```
 
-See also: [Layouts]({{< ref "layouts" >}}).
+See also: [Layouts]({{< relref "layouts" >}}).
 
 ### static
 

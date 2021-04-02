@@ -6,7 +6,7 @@ date: 2020-11-10T11:38:43+01:00
 lastmod: 2020-11-10T11:38:43+01:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "reference-guides"
 weight: 380
@@ -62,7 +62,7 @@ The homepage and 404 page have a landing page layout.
 
 The homepage contains an alert component.
 
-{{< alert icon="👉" text="Set `alert` and `alertText` in `./config/_default/params.toml`." >}}
+{{< alert icon="👉" text="Set <code>alert</code> and <code>alertText</code> in <code>./config/_default/params.toml</code>." >}}
 
 ## Blog page
 
@@ -127,7 +127,7 @@ The homepage contains an alert component.
 
 The main section contains an _Edit this page on GitHub_ link.
 
-{{< alert icon="👉" text="Set `editPage` and `docsRepo` in `./config/_default/params.toml`." >}}
+{{< alert icon="👉" text="Set <code>editPage</code> and <code>docsRepo</code> in <code>./config/_default/params.toml</code>." >}}
 
 ### toc
 
@@ -137,4 +137,4 @@ A table of contents — the _On this page_ section — is automatically generate
 
 ### nav
 
-See also: [Menus]({{< ref "menus" >}}).
+See also: [Menus]({{< relref "menus" >}}).

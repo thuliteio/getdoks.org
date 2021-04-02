@@ -6,7 +6,7 @@ date: 2020-11-23T11:55:16+01:00
 lastmod: 2020-11-23T11:55:16+01:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "recipes"
 weight: 130
@@ -45,7 +45,7 @@ See also the Hugo docs: [Content Organization](https://gohugo.io/content-managem
 ### Example
 
 ```bash
-hugo new about/index.md
+npm run create about/index.md
 ```
 
 ## Add a documentation page
@@ -53,7 +53,7 @@ hugo new about/index.md
 ### Example
 
 ```bash
-hugo new docs/prologue/introduction.md
+npm run create docs/prologue/introduction.md
 ```
 
 ## Add a blog post
@@ -61,7 +61,7 @@ hugo new docs/prologue/introduction.md
 ### Example
 
 ```bash
-hugo new blog/say-hello-to-doks/index.md
+npm run create blog/say-hello-to-doks/index.md
 ```
 
 ## Add a contributor page
@@ -69,13 +69,13 @@ hugo new blog/say-hello-to-doks/index.md
 ### Example
 
 ```bash
-hugo new contributors/henk-verlinde/_index.md
+npm run create contributors/henk-verlinde/_index.md
 ```
 
 ## Customize homepage
 
-See: [Page Layouts]({{< ref "page-layouts" >}}).
+See: [Page Layouts]({{< relref "page-layouts" >}}).
 
 ## Customize 404 page
 
-See: [Page Layouts]({{< ref "page-layouts" >}}).
+See: [Page Layouts]({{< relref "page-layouts" >}}).
