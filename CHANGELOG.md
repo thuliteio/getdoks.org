@@ -2,6 +2,68 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/h-enk/getdoks.org/compare/v0.1.4...v0.2.0) (2021-04-02)
+
+
+### Features
+
+* add check commands ([2270c79](https://github.com/h-enk/getdoks.org/commit/2270c79b473b7596020b0b0bfc210c7961334d93))
+* add newsletter form ([76f1f4d](https://github.com/h-enk/getdoks.org/commit/76f1f4da5322a24dd8e2eb5bf765940145a33a80))
+* add submission to buttondown ([9268141](https://github.com/h-enk/getdoks.org/commit/9268141695f9279c46d50052b5a1edae9aa85c1a))
+* add twitter link ([1b72305](https://github.com/h-enk/getdoks.org/commit/1b72305575e17feae57fc7fab8b6a7f3df3b5c55))
+* replaced flexsearch with docsearch ([2c5e0f9](https://github.com/h-enk/getdoks.org/commit/2c5e0f925c9f6acb4e33df88fd8cdb59d3504b7a))
+* update bootstrap to 5.0.0-beta2 ([46b7c85](https://github.com/h-enk/getdoks.org/commit/46b7c856e4f2fd0c495fe6d21da81f8c9e13268e))
+* update for doks v0.2.2 ([80e2341](https://github.com/h-enk/getdoks.org/commit/80e2341a974507a0ff9c0b25dc0550892e84c0e8))
+
+
+### Bug Fixes
+
+* linting error ([788f979](https://github.com/h-enk/getdoks.org/commit/788f9799d46f3c72d9874db4fae722bfd38067f9))
+* make URL sitemap.xml absolute ([f57cfde](https://github.com/h-enk/getdoks.org/commit/f57cfdee1a34e4d5d51cbc48cf91610f1c2808ea))
+* markdown linting error ([fcc14e1](https://github.com/h-enk/getdoks.org/commit/fcc14e16bfcba005b8f0c545939677d782c79405))
+* markdown linting errors ([bddd0d2](https://github.com/h-enk/getdoks.org/commit/bddd0d29ad9ad772fea71bb9694b02c8d1eeb522))
+* submission-created ([8e4a1df](https://github.com/h-enk/getdoks.org/commit/8e4a1dfeda5ba2f8b932a4eba64df45ece812784))
+* submission-created ([9d7cc15](https://github.com/h-enk/getdoks.org/commit/9d7cc15978054bc84c05f25af47ca210c289021e))
+* update dark theme ([7726af5](https://github.com/h-enk/getdoks.org/commit/7726af52690d9441f5dd813db70fa383443b0c63))
+* update dependencies ([5bce12c](https://github.com/h-enk/getdoks.org/commit/5bce12c0f8482198b96d4c80740258bf9e6df650))
+* update dependencies ([2a66405](https://github.com/h-enk/getdoks.org/commit/2a66405f240f125408009acd20ce92c077b37643))
+* update lambda function ([5e36ad8](https://github.com/h-enk/getdoks.org/commit/5e36ad83522b047e036889447b2c8a8eebce3e9c))
+* update lambda functions ([3115418](https://github.com/h-enk/getdoks.org/commit/311541821a30692b912698fd00eaa2336a793522))
+* update lambda functions ([8ea35d5](https://github.com/h-enk/getdoks.org/commit/8ea35d5a05df5d52947ac931d1172f239677384f))
+* update script build:functions ([edfed6e](https://github.com/h-enk/getdoks.org/commit/edfed6e058851e3b326ceae338b00d355180c7ee))
+* update script build:functions ([8445bc7](https://github.com/h-enk/getdoks.org/commit/8445bc7554812f8e31f588bd196a8aad887940d0))
+* update script submission-created ([b69fe09](https://github.com/h-enk/getdoks.org/commit/b69fe095ca46af90505e8172df27ca53d8567066))
+* update script submission-created ([e6512d3](https://github.com/h-enk/getdoks.org/commit/e6512d3f45432c2d8f8932ae7df1de90ee196ff3))
+* update script submission-created ([f7a3573](https://github.com/h-enk/getdoks.org/commit/f7a357311da649dcb62a7be4dd28a8003900967d))
+* update script submission-created ([0fb75f5](https://github.com/h-enk/getdoks.org/commit/0fb75f5922e14ccb51a9998f1aa60c65202d4124))
+* update spelling package dot-env ([d0313f7](https://github.com/h-enk/getdoks.org/commit/d0313f728b04a65554d13d1813c7c231a37f3b00))
+* update submission-created script ([599d744](https://github.com/h-enk/getdoks.org/commit/599d744cbf130ac752d69e83dea3cd7ac514befd))
+
+
+### Documentation
+
+* update faq ([0865b85](https://github.com/h-enk/getdoks.org/commit/0865b856abdad249e7c5260152278fea2d38dd77))
+* update requirement section ([e7476fb](https://github.com/h-enk/getdoks.org/commit/e7476fb7511b1da09a355bb81eeaa73a0ec32b6e))
+* update requirements sections ([4958fac](https://github.com/h-enk/getdoks.org/commit/4958facecf48afb59940413718bb7eff38bd9f52))
+* update requirements sections ([5c24e62](https://github.com/h-enk/getdoks.org/commit/5c24e62e2d1199cdc6d599d7ffde4a3cfec6040a))
+* update requirements sections ([aa16117](https://github.com/h-enk/getdoks.org/commit/aa16117636ab6bab527a5a4e1e7e95eabf0d1237))
+* update requirements sections ([7df18c9](https://github.com/h-enk/getdoks.org/commit/7df18c9fb5c5207eae974d04ede320e623b21d76))
+* update requirements sections ([e7b89d3](https://github.com/h-enk/getdoks.org/commit/e7b89d3e0db81ed9047a691b65d97df8aeac237f))
+* update requirements sections ([91e7501](https://github.com/h-enk/getdoks.org/commit/91e75011265e45f5a7e74467638e0949e5b0aaeb))
+* update requirements sections ([b1c29f3](https://github.com/h-enk/getdoks.org/commit/b1c29f3494b80bd50b3f410a13e06739246d965a))
+* update requirements sections ([9ebe197](https://github.com/h-enk/getdoks.org/commit/9ebe197bd8d69b5d4e31293c2355b7438e8a1a6e))
+
+
+### Dependencies
+
+* add package encoding ([6b39ab6](https://github.com/h-enk/getdoks.org/commit/6b39ab689a9c6e6378d7ae32fc9783cdd2f3c274))
+* bump autoprefixer, bootstrap, stylelint, and netlify-lambda to latest versions ([7870385](https://github.com/h-enk/getdoks.org/commit/7870385394189a721b17f5e73e416f1d54fcf150))
+* bump versions to latest ([d1a0de3](https://github.com/h-enk/getdoks.org/commit/d1a0de37decd2db53e337027752d4390de22d549))
+* bump versions to latest ([fc1bc34](https://github.com/h-enk/getdoks.org/commit/fc1bc346d895b790e7e4eb06b5a61d727afe098d))
+* bump versions to latest ([53b327a](https://github.com/h-enk/getdoks.org/commit/53b327acbf02a6e24c9b8e234de6064da79a8b0b))
+* bump versions to latest ([4300e4a](https://github.com/h-enk/getdoks.org/commit/4300e4a69808e73f01bf753ecddca32ad0fc3d0e))
+* bump versions to latest ([28a98e7](https://github.com/h-enk/getdoks.org/commit/28a98e7de53fae5d7d2e2138d20fc6babdc03643))
+
 ### [0.1.4](https://github.com/h-enk/getdoks.org/compare/v0.1.3...v0.1.4) (2021-01-12)
 
 
