@@ -13,7 +13,7 @@ weight: 510
 toc: true
 ---
 
-{{< alert icon="👉" text="Make sure to read the <a href=\"/docs/contribute/code-of-conduct/\">Code of Conduct</a>" >}}
+{{< alert icon="👉" text="Make sure to read the <a href=\"/docs/contributing/code-of-conduct/\">Code of Conduct</a>" >}}
 
 ## Contribute to Doks
 
