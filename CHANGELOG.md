@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/h-enk/getdoks.org/compare/v0.2.0...v0.2.1) (2021-06-04)
+
+
+### Bug Fixes
+
+* make permalink absolute ([449094c](https://github.com/h-enk/getdoks.org/commit/449094c5bb3bfe26a94c89b82b2ce34a451fc336))
+* replaces possible backslash for win environments ([b3754d8](https://github.com/h-enk/getdoks.org/commit/b3754d88b4422749d25ef29ade571d0b03704c42))
+
+
+### Dependencies
+
+* bump versions to latest ([e485be3](https://github.com/h-enk/getdoks.org/commit/e485be360fe53200cc7e97c6adf6d8a1f7b46c12))
+
 ## [0.2.0](https://github.com/h-enk/getdoks.org/compare/v0.1.4...v0.2.0) (2021-04-02)
 
 
