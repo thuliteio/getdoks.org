@@ -58,14 +58,14 @@ jobs:
           publish_dir: ./public
 ```
 
-2. Click on the __Actions__ tab of your GitHub repo and wait for the action to finish succesfully (after approximately 30 seconds).
+2. Click on the __Actions__ tab of your GitHub repo and wait for the action to finish successfully (after approximately 30 seconds).
 
 {{< img-simple src="select-branch.png" alt="Select branch" class="border-0" >}}
 
-3. Go to the __Sections__ tab of your GitHub repo and scroll down to the __GitHub Pages__ section. Select branche `gh-pages` and click __Save__.
+3. Go to the __Sections__ tab of your GitHub repo and scroll down to the __GitHub Pages__ section. Select branch `gh-pages` and click __Save__.
 4. Copy the __Your site is published at__ URL and paste it as `baseurl` in `./config/production/config.toml`.
-5. Push the changes to GitHub and wait for the action to finish succesfully (after approximately 30 seconds).
-6. That's it. After a minute or so, you site is avaliable at the __Your site is published at__ URL.
+5. Push the changes to GitHub and wait for the action to finish successfully (after approximately 30 seconds).
+6. That's it. After a minute or so, you site is available at the __Your site is published at__ URL.
 
 Now, after every push to the master branch, your site will be updated — automatically.
 
