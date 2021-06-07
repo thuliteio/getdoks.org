@@ -21,7 +21,7 @@ There are two main ways to get started with Doks:
 
 {{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." >}}
 
-Step-by-step instructions on how to start a new Doks project. [Tutorial →]({{< relref "tutorial/introduction" >}})
+Step-by-step instructions on how to start a new Doks project. {{< section-last section="tutorial" text="Tutorial →">}}
 
 ### Quick Start
 
@@ -35,24 +35,24 @@ Recipes, Reference Guides, Extensions, and Showcase.
 
 ### Recipes
 
-Get instructions on how to accomplish common tasks with Doks. [Recipes →]({{< relref "project-configuration" >}})
+Get instructions on how to accomplish common tasks with Doks. {{< section-last section="recipes" text="Recipes →">}}
 
 ### Reference Guides
 
-Learn how to customize Doks to fully make it your own. [Reference Guides →]({{< relref "security" >}})
+Learn how to customize Doks to fully make it your own. {{< section-last section="reference-guides" text="Reference Guides →">}}
 
 ### Extensions
 
-Get instructions on how to add even more to Doks. [Extensions →]({{< relref "breadcrumb-navigation" >}})
+Get instructions on how to add even more to Doks. {{< section-last section="extensions" text="Extensions →">}}
 
 ### Showcase
 
-See what others have build with Doks. [Showcase →]({{< relref "electric-blocks" >}})
+See what others have build with Doks. {{< section-first section="showcase" text="Showcase →">}}
 
 ## Contributing
 
-Find out how to contribute to Doks. [Contributing →]({{< relref "how-to-contribute" >}})
+Find out how to contribute to Doks. {{< section-last section="contributing" text="Contributing →">}}
 
 ## Help
 
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+Get help on Doks. {{< section-last section="help" text="Help →">}}

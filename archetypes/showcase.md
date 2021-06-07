@@ -7,7 +7,7 @@ lastmod: {{ .Date }}
 draft: true
 images: []
 link: ""
-menu: 
+menu:
   showcase:
     parent: "browse"
 weight: 999

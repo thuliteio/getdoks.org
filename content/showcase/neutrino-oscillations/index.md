@@ -10,6 +10,6 @@ link: "https://neutrino.leima.is"
 menu:
   showcase:
     parent: "browse"
-weight: 080
+weight: 020
 toc: false
 ---

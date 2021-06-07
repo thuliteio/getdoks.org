@@ -4,12 +4,12 @@ description: "Platform for mutual knowledge exchange between industry and academ
 lead: "Platform for mutual knowledge exchange between industry and academia to help causal data science applications diffuse more widely into practice."
 date: 2020-11-06T18:10:18+01:00
 lastmod: 2020-11-06T18:10:18+01:00
-draft: false
+draft: true
 images: ["causal-science.png"]
 link: "https://causalscience.org"
 menu:
   showcase:
     parent: "browse"
-weight: 090
+weight: 010
 toc: false
 ---

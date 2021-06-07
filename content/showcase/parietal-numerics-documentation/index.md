@@ -10,7 +10,7 @@ link: "https://docs.pnumerics.com"
 menu:
   showcase:
     parent: "browse"
-weight: 060
+weight: 040
 toc: false
 ---
 

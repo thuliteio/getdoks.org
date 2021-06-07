@@ -10,7 +10,7 @@ link: "https://electricblocks.github.io"
 menu:
   showcase:
     parent: "browse"
-weight: 040
+weight: 060
 toc: false
 ---
 
