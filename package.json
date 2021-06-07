@@ -40,7 +40,7 @@
     "docsearch.js": "^2.6.3",
     "dotenv": "^10.0",
     "encoding": "^0.1.13",
-    "eslint": "^7.27",
+    "eslint": "^7.28",
     "highlight.js": "^11.0",
     "hugo-bin": "^0.71",
     "instant.page": "^5.1",
