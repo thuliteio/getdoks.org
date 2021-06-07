@@ -1,11 +1,11 @@
 
 Todo:
   ☐ Update Google Lighthouse report
-  ☐ Add to Showcase:
-    ☐ https://eventuous.dev/
-    ☐ https://prometheus-operator.dev/
-    ☐ https://litestream.io/
-    ☐ https://gamesupport.gg/
+  ✔ Add to Showcase: @done(21-06-07 20:23)
+    ✔ https://eventuous.dev/ @done(21-06-07 20:23)
+    ✔ https://prometheus-operator.dev/ @done(21-06-07 20:23)
+    ✔ https://litestream.io/ @done(21-06-07 20:23)
+    ✔ https://gamesupport.gg/ @done(21-06-07 20:23)
   ✔ Remove from Showcase: @done(21-06-07 19:51)
     ✔ https://causalscience.org/ @done(21-06-07 19:51)
   ☐ Add automated share image
