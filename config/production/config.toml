@@ -1,2 +1,2 @@
-baseurl = "https://getdoks.org/"
+baseURL = "https://getdoks.org/"
 canonifyURLs = true

@@ -6,7 +6,7 @@ date: 2021-03-28T10:05:04+01:00
 lastmod: 2021-03-28T10:05:04+01:00
 draft: false
 weight: 50
-images: ["doks-v02.png"]
+images: []
 contributors: ["Henk Verlinde"]
 ---
 
