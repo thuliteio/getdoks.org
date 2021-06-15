@@ -62,7 +62,7 @@ The homepage and 404 page have a landing page layout.
 
 The homepage contains an alert component.
 
-{{< alert icon="👉" text="Set <code>alert</code> and <code>alertText</code> in <code>./config/_default/params.toml</code>." >}}
+{{< alert icon="👉" text="Set <code>alert</code> and <code>alertText</code> in <code>./config/_default/params.toml</code>." />}}
 
 ## Blog page
 
@@ -127,13 +127,13 @@ The homepage contains an alert component.
 
 The main section contains an _Edit this page on GitHub_ link.
 
-{{< alert icon="👉" text="Set <code>editPage</code> and <code>docsRepo</code> in <code>./config/_default/params.toml</code>." >}}
+{{< alert icon="👉" text="Set <code>editPage</code> and <code>docsRepo</code> in <code>./config/_default/params.toml</code>." />}}
 
 ### toc
 
 A table of contents — the _On this page_ section — is automatically generated from the headings of the main section of a page.
 
-{{< alert icon="💡" text="Disable the toc by setting it to false in the front matter of a page." >}}
+{{< alert icon="💡" text="Disable the toc by setting it to false in the front matter of a page." />}}
 
 ### nav
 

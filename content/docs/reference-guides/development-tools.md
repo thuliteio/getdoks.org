@@ -19,7 +19,7 @@ See also: [lint]({{< relref "commands#lint" >}})
 
 ## Development server
 
-{{< alert icon="💡" text="Get your local IP address by running <code>netstat -r</code> from the command line. Your IP address will be in the first (Destination) column." >}}
+{{< alert icon="💡" text="Get your local IP address by running <code>netstat -r</code> from the command line. Your IP address will be in the first (Destination) column." />}}
 
 Doks makes the Hugo development webserver accessible by default at `http://localhost:1313` and `http://<local-ip-address>:1313`. The latter is handy for e.g. testing locally on mobile devices. Saved changes will live reload in the browser.
 

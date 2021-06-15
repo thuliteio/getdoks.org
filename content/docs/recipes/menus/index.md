@@ -6,7 +6,7 @@ date: 2020-11-23T11:55:36+01:00
 lastmod: 2020-11-23T11:55:36+01:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
     parent: "recipes"
 weight: 150
@@ -37,7 +37,7 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
 
 ## Add to social menu
 
-{{< alert icon="👉" text="Doks uses <a href=\"https://feathericons.com/\">Feather Icons</a>" >}}
+{{< alert icon="👉" text="Doks uses <a href=\"https://feathericons.com/\">Feather Icons</a>" />}}
 
 ```toml
 [[social]]

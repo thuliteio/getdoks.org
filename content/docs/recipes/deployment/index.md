@@ -19,7 +19,7 @@ See [Netlify]({{< relref "netlify" >}}).
 
 ## Deploy to GitHub Pages
 
-{{< alert icon="💡" text="Check the <a href=\"https://github.com/h-enk/doks-gh-pages\">example repo</a> showing how to publish to GitHub Pages." >}}
+{{< alert icon="💡" text="Check the <a href=\"https://github.com/h-enk/doks-gh-pages\">example repo</a> showing how to publish to GitHub Pages." />}}
 
 1. Add `.github/workflows/deploy-github.yml`:
 

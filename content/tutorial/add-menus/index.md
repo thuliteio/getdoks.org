@@ -33,7 +33,7 @@ Open `./config/_default/menus.toml` in your code editor.
 
 ## Add to social menu
 
-{{< alert icon="👉" text="Doks uses <a href=\"https://feathericons.com/\">Feather Icons</a>" >}}
+{{< alert icon="👉" text="Doks uses <a href=\"https://feathericons.com/\">Feather Icons</a>" />}}
 
 ```toml
 [[social]]

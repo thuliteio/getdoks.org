@@ -13,7 +13,7 @@ weight: 040
 toc: true
 ---
 
-{{< alert icon="💡" text="<a href=\"https://code.visualstudio.com/\">Visual Studio Code</a> is a free code editor for Linux, macOS, and Windows." >}}
+{{< alert icon="💡" text="<a href=\"https://code.visualstudio.com/\">Visual Studio Code</a> is a free code editor for Linux, macOS, and Windows." />}}
 
 Open `./config/_default/params.toml` in your code editor.
 
@@ -45,7 +45,7 @@ facebookPublisher = "verlinde.henk"
 ogLocale = "en_US"
 ```
 
-{{< alert icon="👉" text="Put your image in the static folder." >}}
+{{< alert icon="👉" text="Put your image in the static folder." />}}
 
 ### JSON-LD
 
@@ -60,7 +60,7 @@ schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
 ```
 
-{{< alert icon="👉" text="Put your logo in the static folder." >}}
+{{< alert icon="👉" text="Put your logo in the static folder." />}}
 
 ### Sitelinks Search Box
 

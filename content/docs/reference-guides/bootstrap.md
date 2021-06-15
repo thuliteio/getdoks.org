@@ -15,7 +15,7 @@ toc: true
 
 ## Tables
 
-{{< alert icon="💡" text="<a href=\"https://www.tablesgenerator.com/markdown_tables\">Tables Generator</a> is a handy tool to generate tables in Markdown format." >}}
+{{< alert icon="💡" text="<a href=\"https://www.tablesgenerator.com/markdown_tables\">Tables Generator</a> is a handy tool to generate tables in Markdown format." />}}
 
 Doks supports [Bootstrap styling](https://getbootstrap.com/docs/5.0/content/tables/) for tables in markdown.
 

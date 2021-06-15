@@ -23,7 +23,7 @@ Set up your Git repository in 8 steps.
 
 #### 1. Create a new repository
 
-{{< alert icon="👉" text="To avoid errors, do not initialize the new repository with README, LICENSE, and .gitignore files." >}}
+{{< alert icon="👉" text="To avoid errors, do not initialize the new repository with README, LICENSE, and .gitignore files." />}}
 
 Create a new repository on [GitHub](https://github.com/) (or [GitLab](https://gitlab.com/), or [Bitbucket](https://bitbucket.org/)):
 

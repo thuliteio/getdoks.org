@@ -13,11 +13,11 @@ weight: 510
 toc: true
 ---
 
-{{< alert icon="👉" text="Make sure to read the <a href=\"/docs/contributing/code-of-conduct/\">Code of Conduct</a>" >}}
+{{< alert icon="👉" text="Make sure to read the <a href=\"/docs/contributing/code-of-conduct/\">Code of Conduct</a>" />}}
 
 ## Contribute to Doks
 
-{{< alert icon="👉" text="The Doks code lives in the <a href=\"https://github.com/h-enk/doks\">`doks` repository</a>." >}}
+{{< alert icon="👉" text="The Doks code lives in the <a href=\"https://github.com/h-enk/doks\">`doks` repository</a>." />}}
 
 - Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
 - Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
@@ -29,7 +29,7 @@ toc: true
 
 ## Improve documentation
 
-{{< alert icon="👉" text="The documentation lives in <a href=\"https://github.com/h-enk/getdoks.org/tree/master/content/docs\">`./content/docs/`</a> of the <a href=\"https://github.com/h-enk/getdoks.org\">`getdoks.org` repository</a>." >}}
+{{< alert icon="👉" text="The documentation lives in <a href=\"https://github.com/h-enk/getdoks.org/tree/master/content/docs\">`./content/docs/`</a> of the <a href=\"https://github.com/h-enk/getdoks.org\">`getdoks.org` repository</a>." />}}
 
 - Follow the [GitHub flow](https://guides.github.com/introduction/flow/).
 - Follow the [Conventional Commits Specification](https://www.conventionalcommits.org/en/v1.0.0/)
