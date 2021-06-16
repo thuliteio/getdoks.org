@@ -13,6 +13,8 @@ weight: 180
 toc: true
 ---
 
+{{< alert icon="👉" text="Make sure to set <code>baseURL</code> in <code>./config/production/config.toml</code> to the URL of your Doks website in production." />}}
+
 ## Deploy to Netlify
 
 See [Netlify]({{< relref "netlify" >}}).

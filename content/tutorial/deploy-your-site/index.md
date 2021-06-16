@@ -13,6 +13,8 @@ weight: 080
 toc: true
 ---
 
+{{< alert icon="👉" text="Make sure to set <code>baseURL</code> in <code>./config/production/config.toml</code> to the URL of your Doks website in production." />}}
+
 ## Deploy to Netlify
 
 > Continuous Deployment (CD) works by connecting a Git repository to a Netlify site and keeping the two in sync. Netlify will run the Doks build command and deploy the result whenever you push to your Git repo.
