@@ -21,8 +21,6 @@ KaTeX support is switched off per default. Activate it by setting `kaTex = true`
 
 Copy KaTeX fonts from `./node_modules/katex/dist/fonts/` to `./static/fonts/`:
 
-{{< btn-copy text="npm run copy:katex-fonts" >}}
-
 ```bash
 npm run copy:katex-fonts
 ```

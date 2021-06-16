@@ -37,8 +37,6 @@ Create a new repository on [GitHub](https://github.com/) (or [GitLab](https://gi
 
 Initialize your local Doks site directory as a Git repository:
 
-{{< btn-copy text="npm run init" >}}
-
 ```bash
 npm run init
 ```
@@ -47,8 +45,6 @@ npm run init
 
 Add the files in your new local repository. This stages them for the first commit:
 
-{{< btn-copy text="git add ." >}}
-
 ```bash
 git add .
 ```
@@ -56,8 +52,6 @@ git add .
 #### 4. Commit your local files
 
 Commit the files that you've staged in your local repository:
-
-{{< btn-copy text="git commit -m \"First commit\"" >}}
 
 ```bash
 git commit -m "First commit"
@@ -81,8 +75,6 @@ git remote add origin <remote repository URL>
 
 Verify the new remote:
 
-{{< btn-copy text="git remote -v" >}}
-
 ```bash
 git remote -v
 ```
@@ -90,8 +82,6 @@ git remote -v
 #### 8. Push local changes
 
 Push the changes in your local repository to GitHub:
-
-{{< btn-copy text="git push origin main" >}}
 
 ```bash
 git push origin main

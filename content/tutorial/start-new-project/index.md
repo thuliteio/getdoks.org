@@ -24,15 +24,11 @@ Not quite sure? Use the Doks child theme.
 
 ### Doks child theme
 
-{{< btn-copy text="git clone https://github.com/h-enk/doks-child-theme.git my-doks-site" >}}
-
 ```bash
 git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
 ```
 
 ### Doks starter theme
-
-{{< btn-copy text="git clone https://github.com/h-enk/doks.git my-doks-site" >}}
 
 ```bash
 git clone https://github.com/h-enk/doks.git my-doks-site
@@ -42,15 +38,11 @@ git clone https://github.com/h-enk/doks.git my-doks-site
 
 ## Change directories
 
-{{< btn-copy text="cd my-doks-site" >}}
-
 ```bash
 cd my-doks-site
 ```
 
 ## Install dependencies
-
-{{< btn-copy text="npm install" >}}
 
 ```bash
 npm install
@@ -59,8 +51,6 @@ npm install
 Installing dependencies can take a minute. Warnings can be ignored.
 
 ## Start development server
-
-{{< btn-copy text="npm run start" >}}
 
 ```bash
 npm run start

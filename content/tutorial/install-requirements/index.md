@@ -21,15 +21,11 @@ Doks uses npm to centralize dependency management, making it [easy to update]({{
 
 ### Check Node.js install
 
-{{< btn-copy text="node --version" >}}
-
 ```bash
 node --version
 ```
 
 ### Check npm install
-
-{{< btn-copy text="npm --version" >}}
 
 ```bash
 npm --version
