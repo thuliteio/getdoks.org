@@ -52,10 +52,6 @@ pre code::-webkit-scrollbar-thumb {
   background: $gray-400;
 }
 
-.alert code {
-  background: darken($beige, 5%);
-}
-
 pre code:hover {
   scrollbar-width: thin;
   scrollbar-color: $gray-500 transparent;

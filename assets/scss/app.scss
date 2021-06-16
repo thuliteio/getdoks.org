@@ -8,7 +8,7 @@
 @import "bootstrap/scss/bootstrap";
 
 /** Import highlight.js */
-// @import "highlight.js/scss/github-dark";
+// @import "highlight.js/scss/github-dark-dimmed";
 
 /** Import docsearch */
 
@@ -23,9 +23,8 @@
 @import "common/dark";
 @import "components/alerts";
 @import "components/buttons";
-@import "components/doks";
-// @import "components/syntax";
 @import "components/code";
+@import "components/syntax";
 @import "components/comments";
 @import "components/forms";
 @import "components/images";
