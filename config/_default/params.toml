@@ -12,6 +12,10 @@ ogLocale = "en_US"
 domainTLD = "getdoks.org"
 titleHome = "Doks Theme"
 
+## Twitter Cards
+twitterSite = "@getdoks"
+twitterCreator = "@henkverlinde"
+
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
