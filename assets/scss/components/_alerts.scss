@@ -97,3 +97,9 @@
 .alert-global a {
   color: $black;
 }
+
+.alert code {
+  background: darken($beige, 5%);
+  color: $black;
+  padding: 0.25rem 0.5rem;
+}
