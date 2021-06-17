@@ -66,5 +66,6 @@ editPage = true
   clipBoard = true
   instantPage = true
   darkMode = true
-  bootStrapJs = false
+  bootStrapJs = true
   highLight = true
+  collapsibleSidebar = true
