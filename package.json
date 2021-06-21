@@ -27,7 +27,8 @@
     "test": "npm run -s lint",
     "env": "env",
     "precheck": "npm version",
-    "check": "hugo version"
+    "check": "hugo version",
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin"
   },
   "devDependencies": {
     "@babel/cli": "^7.14",
@@ -42,7 +43,7 @@
     "encoding": "^0.1.13",
     "eslint": "^7.29",
     "highlight.js": "^11.0",
-    "hugo-bin": "^0.71",
+    "hugo-installer": "^3.0.1",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
     "markdownlint-cli": "^0.27",
@@ -55,5 +56,8 @@
     "standard-version": "^9.3",
     "stylelint": "^13.13",
     "stylelint-config-standard": "^22.0"
+  },
+  "otherDependencies": {
+    "hugo": "0.84.0"
   }
 }
