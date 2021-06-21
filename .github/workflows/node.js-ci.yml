@@ -33,7 +33,7 @@ jobs:
         extended: true
 
     - name: Check install Hugo
-      run: cd bin/hugo && hugo version
+      run: bin/hugo/hugo version
 
     - name: Install dependencies
       run: npm ci
