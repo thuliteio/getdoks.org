@@ -7,7 +7,7 @@
   NPM_VERSION = "7.16.0"
 
 [context.production]
-  command = "hugo --gc --minify && netlify-lambda build assets/lambda"
+  command = "hugo --gc --minify"
 
 [context.deploy-preview]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
