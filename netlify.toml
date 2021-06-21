@@ -7,16 +7,16 @@
   NPM_VERSION = "7.16.0"
 
 [context.production]
-  command = "bin/hugo/hugo --gc --minify && netlify-lambda build assets/lambda"
+  command = "hugo --gc --minify && netlify-lambda build assets/lambda"
 
 [context.deploy-preview]
-  command = "bin/hugo/hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "bin/hugo/hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.next]
-  command = "bin/hugo/hugo --gc --minify && netlify-lambda build assets/lambda"
+  command = "hugo --gc --minify && netlify-lambda build assets/lambda"
 
 [context.next.environment]
   HUGO_ENV = "next"
@@ -35,7 +35,7 @@
 
 [dev]
   framework = "#custom"
-  command = "rimraf public resources functions && bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender"
+  command = "rimraf public resources functions && hugo server --bind=0.0.0.0 --disableFastRender"
   targetPort = 1313
   port = 8888
   publish = "public"
