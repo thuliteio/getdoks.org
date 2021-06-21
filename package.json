@@ -2,7 +2,7 @@
   "name": "getdoks",
   "version": "0.2.1",
   "private": true,
-  "hugo-bin": {
+  "cd bin/hugo && hugo-bin": {
     "buildTags": "extended"
   },
   "browserslist": [
@@ -10,11 +10,11 @@
   ],
   "scripts": {
     "init": "rimraf .git && git init -b main",
-    "create": "hugo new",
+    "create": "cd bin/hugo && hugo new",
     "prestart": "npm run clean",
-    "start": "hugo server --bind=0.0.0.0 --disableFastRender",
+    "start": "cd bin/hugo && hugo server --bind=0.0.0.0 --disableFastRender",
     "prebuild": "npm run clean",
-    "build": "hugo --gc --minify && npm run build:functions",
+    "build": "cd bin/hugo && hugo --gc --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
     "build:preview": "npm run build -D -F",
     "clean": "rimraf public resources functions",
@@ -23,12 +23,12 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "release": "standard-version",
-    "server": "hugo server",
+    "server": "cd bin/hugo && hugo server",
     "test": "npm run -s lint",
     "env": "env",
     "precheck": "npm version",
-    "check": "hugo version",
-    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin"
+    "check": "cd bin/hugo && hugo version",
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended"
   },
   "devDependencies": {
     "@babel/cli": "^7.14",
@@ -43,7 +43,7 @@
     "encoding": "^0.1.13",
     "eslint": "^7.29",
     "highlight.js": "^11.0",
-    "hugo-installer": "^3.0.1",
+    "cd bin/hugo && hugo-installer": "^3.0.1",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
     "markdownlint-cli": "^0.27",
@@ -58,6 +58,6 @@
     "stylelint-config-standard": "^22.0"
   },
   "otherDependencies": {
-    "hugo": "0.84.0"
+    "cd bin/hugo && hugo": "0.84.0"
   }
 }
