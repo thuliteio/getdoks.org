@@ -56,7 +56,7 @@ _Note, this is an image, because Mermaid support is switched off on this site._
 
 ## At build time
 
-If you don't need to generate charts and diagrams at request time, use the Mermaid Live Editor to generate charts and diagrams at build time.
+If you don't need to generate charts and diagrams at request time, use the Mermaid Live Editor to generate charts and diagrams for use at build time.
 
 ### Workflow
 
