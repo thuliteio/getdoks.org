@@ -1,4 +1,7 @@
 {{ if and (or (eq .Section "docs") (eq .Section "tutorial")) (eq .Kind "page") (ne .Page.RelPermalink "/tutorial/introduction/") -}}
 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
 {{ end -}}
+{{ if and (.Site.Params.adHomepage) (eq .Kind "home") -}}
+<script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+{{ end -}}
 <script async defer data-domain="getdoks.org" src="https://stats.getdoks.org/js/index.js"></script>

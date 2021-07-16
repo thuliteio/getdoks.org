@@ -3,4 +3,7 @@
 {{ if and (or (eq .Section "docs") (eq .Section "tutorial")) (eq .Kind "page") (ne .Page.RelPermalink "/tutorial/introduction/") -}}
 <link rel="preconnect" href="https://media.ethicalads.io">
 {{ end -}}
+{{ if and (.Site.Params.adHomepage) (eq .Kind "home") -}}
+<link rel="preconnect" href="https://media.ethicalads.io">
+{{ end -}}
 <link rel="preconnect" href="https://stats.getdoks.org">
