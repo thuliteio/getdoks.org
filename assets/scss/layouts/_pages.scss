@@ -53,12 +53,12 @@ p.meta {
 }
 
 .homepage-ad {
-  height: 7.375rem;
+  min-height: 7.375rem;
 }
 
 @include media-breakpoint-up(md) {
   .homepage-ad {
-    height: 6.25rem;
+    min-height: 6.25rem;
   }
 }
 
