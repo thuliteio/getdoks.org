@@ -7,8 +7,8 @@
   margin-right: 0.75rem;
 }
 
-.docs .alert,
-.tutorial .alert {
+.docs main .alert,
+.tutorial main .alert {
   margin: 2rem -1.5rem;
 }
 
@@ -63,39 +63,15 @@
   text-decoration: none;
 }
 
-.alert-global {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-radius: 0.25rem;
-  margin: 0 15% 1rem;
-  font-family: $font-family-base;
-}
-
-@include media-breakpoint-up(sm) {
-  .alert-global {
-    margin: 0 25% 1rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .alert-global {
-    margin: 0 30% 1rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .alert-global {
-    margin: 0 35% 1rem;
-  }
-}
-
-@include media-breakpoint-up(xl) {
-  .alert-global {
-    margin: 0 40% 1rem;
-  }
-}
-
-.alert-global a {
-  color: $black;
+.alert-dismissible .btn-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.875rem;
+  z-index: 2;
+  padding: 0.5rem 0.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+  background-size: 1.25rem;
+  filter: invert(1) grayscale(100%) brightness(200%);
 }
 
 .alert code {

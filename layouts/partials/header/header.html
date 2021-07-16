@@ -1,24 +1,75 @@
-<div class="header-bar fixed-top"></div>
-<header class="navbar fixed-top navbar-expand-md navbar-light">
-  <div class="container">
-    <input class="menu-btn order-0" type="checkbox" id="menu-btn">
-    <label class="menu-icon d-md-none" for="menu-btn"><span class="navicon"></span></label>
-    <a class="navbar-brand order-1 order-md-0 me-auto" href="{{ "/" | relURL }}">{{ .Site.Params.Title }}</a>
+{{ if .Site.Params.alert -}}
+  {{ partial "header/alert.html" . }}
+{{ end -}}
+
+<div class="header-bar"></div>
+
+<header class="navbar navbar-expand-md navbar-light doks-navbar">
+  <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
+    <a class="navbar-brand p-0 me-auto" href="/" aria-label="Bootstrap">
+      {{ .Site.Params.Title }}
+    </a>
+
+    <button class="btn btn-outline-primary d-block d-md-none order-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Menu
+    </button>
+
+    <div class="offcanvas offcanvas-start d-md-none border-0" tabindex="-1" id="offcanvasExample" data-bs-backdrop="true" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">{{ .Site.Params.Title }}</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+          {{- $current := . -}}
+          {{ range .Site.Menus.main -}}
+            {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
+            {{- $active = or $active (eq .Name $current.Title) -}}
+            {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
+            {{- $active = or $active (and (eq .Name "Tutorial") (eq $current.Section "tutorial")) -}}
+            {{- $active = or $active (and (eq .Name "Showcase") (eq $current.Section "showcase")) -}}
+            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+            <li class="nav-item col-8 col-md-auto{{ if $active }} active{{ end }}">
+              <a class="nav-link py-2" href="{{ .URL | relURL }}">{{ .Name }}</a>
+            </li>
+          {{ end -}}
+        </ul>
+        <hr class="d-md-none text-black-50">
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+          {{ range .Site.Menus.social -}}
+            <li class="nav-item col-8 col-md-auto">
+              <a class="nav-link py-2" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="d-md-none ms-2">{{ .Name | safeHTML }}</small></a>
+            </li>
+          {{ end -}}
+        </ul>
+      </div>
+    </div>
+
     {{ if .Site.Params.options.darkMode -}}
-    <button id="mode" class="btn btn-link order-2 order-md-4" type="button" aria-label="Toggle mode">
+    <button id="mode" class="btn btn-link px-1 order-md-1" type="button" aria-label="Toggle mode">
       <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
       <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
     </button>
     {{ end -}}
-    <ul class="navbar-nav social-nav order-3 order-md-5">
-      {{ range .Site.Menus.social -}}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<span class="ms-2 visually-hidden">{{ .Name | safeHTML }}</span></a>
-        </li>
-      {{ end -}}
-    </ul>
-    <div class="collapse navbar-collapse order-4 order-md-1">
-      <ul class="navbar-nav main-nav me-auto order-5 order-md-2">
+
+    {{ if eq .Site.Params.options.multilingualMode true -}}
+    <div class="dropdown order-md-2">
+      <button class="btn btn-doks-light dropdown-toggle" id="doks-languages" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+        <span class="d-none d-lg-inline"></span>English
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="doks-languages">
+        <li><a class="dropdown-item current" aria-current="true" href="/docs/5.0/">English</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">Dutch</a></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">Russian</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="/docs/contributing/how-to-contribute/">Help Translate</a></li>
+      </ul>
+    </div>
+    {{ end -}}
+
+    <div class="collapse navbar-collapse" id="bdNavbar">
+      <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
         {{- $current := . -}}
         {{ range .Site.Menus.main -}}
           {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
@@ -27,15 +78,108 @@
           {{- $active = or $active (and (eq .Name "Tutorial") (eq $current.Section "tutorial")) -}}
           {{- $active = or $active (and (eq .Name "Showcase") (eq $current.Section "showcase")) -}}
           {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
-          <li class="nav-item{{ if $active }} active{{ end }}">
-            <a class="nav-link" href="{{ .URL | relURL }}">{{ .Name }}</a>
+          <li class="nav-item col-8 col-md-auto{{ if $active }} active{{ end }}">
+            <a class="nav-link py-2" href="{{ .URL | relURL }}">{{ .Name }}</a>
           </li>
         {{ end -}}
       </ul>
-      <div class="break order-6 d-md-none"></div>
-      <form class="navbar-form flex-grow-1 order-7 order-md-3">
-        <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
-      </form>
+      <hr class="d-md-none text-black-50">
+      <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+        {{ range .Site.Menus.social -}}
+          <li class="nav-item col-8 col-md-auto">
+            <a class="nav-link py-2" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="d-md-none ms-2">{{ .Name | safeHTML }}</small></a>
+          </li>
+        {{ end -}}
+      </ul>
     </div>
-  </div>
+  </nav>
 </header>
+
+{{ if eq .Section "docs" -}}
+<nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
+  <div class="container-xxl d-flex align-items-md-center">
+
+    <form class="doks-search position-relative flex-grow-1 me-auto">
+      <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
+    </form>
+
+    {{ if eq .Site.Params.options.docsVersioning true -}}
+    <div class="dropdown ms-3">
+      <button class="btn btn-doks-light dropdown-toggle" id="doks-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+        <span class="d-none d-lg-inline">Doks</span> v5.0
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="doks-versions">
+        <li><a class="dropdown-item current" aria-current="true" href="/docs/5.0/">Latest (5.0.x)</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+        <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+      </ul>
+    </div>
+    {{ end -}}
+
+    <button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+    </button>
+
+  </div>
+</nav>
+
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/docs-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+{{ end -}}
+
+{{ if eq .Section "tutorial" -}}
+<nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
+  <div class="container-xxl d-flex align-items-md-center">
+
+
+    <a class="btn btn-doks-light" href="/docs/help/faq/#can-i-get-support" role="button">Get Support</a>
+
+    <button class="btn doks-sidebar-toggle d-lg-none ms-auto order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+    </button>
+
+  </div>
+</nav>
+
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/tutorial-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+{{ end -}}
+
+{{ if eq .Section "showcase" -}}
+<nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
+  <div class="container-xxl d-flex align-items-md-center">
+
+    <a class="btn btn-doks-light" href="https://github.com/h-enk/doks/discussions?discussions_q=category%3A%22Show+and+tell%22" role="button">Submit to Showcase</a>
+
+    <button class="btn doks-sidebar-toggle d-lg-none ms-auto order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+    </button>
+
+  </div>
+</nav>
+
+<div class="container-xxl">
+  <aside class="doks-sidebar">
+    <nav id="doks-docs-nav" class="collapse d-lg-none" aria-label="Tertiary navigation">
+      {{ partial "sidebar/showcase-menu.html" . }}
+    </nav>
+  </aside>
+</div>
+{{ end -}}

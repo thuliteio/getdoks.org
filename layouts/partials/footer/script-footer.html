@@ -34,6 +34,12 @@
   {{ $slice = $slice | append $darkMode -}}
 {{ end -}}
 
+{{ if .Site.Params.alertDismissable -}}
+  {{ $alert := resources.Get "js/alert.js" -}}
+  {{ $alert := $alert | js.Build -}}
+  {{ $slice = $slice | append $alert -}}
+{{ end -}}
+
 {{ $js := $slice | resources.Concat "main.js" -}}
 
 {{ if eq (hugo.Environment) "development" -}}

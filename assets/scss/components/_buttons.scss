@@ -4,7 +4,7 @@
 }
 
 #mode {
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .btn-link:focus {
@@ -182,4 +182,40 @@ pre {
 
 .btn-toggle-nav a.active {
   color: $link-color;
+}
+
+.btn-doks-light {
+  color: #6c757d;
+  border-color: #dee2e6;
+}
+
+.show > .btn-doks-light,
+.btn-doks-light:hover,
+.btn-doks-light:active {
+  color: $link-color;
+  border-color: $link-color;
+}
+
+.btn-doks-light:focus {
+  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+}
+
+.doks-nabar .dropdown-menu,
+.doks-subnavbar .dropdown-menu {
+  font-size: 0.875rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.doks-navbar .dropdown-item.current,
+.doks-subnavbar .dropdown-item.current {
+  font-weight: 600;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23292b2c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem top 0.6rem;
+  background-size: 0.75rem 0.75rem;
+}
+
+.btn-close {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+  background-size: 1.5rem;
 }

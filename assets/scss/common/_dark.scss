@@ -4,7 +4,11 @@
 
 $body-bg-dark: $gray-900;
 $body-overlay-dark: darken($body-bg-dark, 2.5%);
+
+/*
 $border-dark: darken($body-bg-dark, 2.5%);
+*/
+$border-dark: $gray-800;
 $body-color-dark: $gray-300;
 $dots-dark: darken($body-color-dark, 50%);
 
@@ -47,7 +51,28 @@ body.dark .btn-outline-primary:hover {
   color: $body-bg-dark;
 }
 
-body.dark .navbar {
+body.dark .btn-doks-light {
+  color: $navbar-dark-color;
+  border-color: $dots-dark;
+}
+
+body.dark .show > .btn-doks-light,
+body.dark .btn-doks-light:hover,
+body.dark .btn-doks-light:active {
+  color: $link-color-dark;
+  border-color: $link-color-dark;
+}
+
+body.dark .btn-doks-light:focus {
+  box-shadow: 0 0 0 0.2rem $focus-color-dark;
+}
+
+body.dark .dropdown-menu {
+  @extend .dropdown-menu-dark;
+}
+
+body.dark .navbar,
+body.dark .doks-subnavbar {
   background: $body-bg-dark;
   opacity: 0.975;
   border-bottom: 1px solid $border-dark;
@@ -191,6 +216,8 @@ body.dark .navbar .btn-link:active {
 
 body.dark .form-control.is-search {
   background: $body-overlay-dark;
+  border-color: $gray-600;
+  color: $gray-300;
 
   /*
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
@@ -200,13 +227,25 @@ body.dark .form-control.is-search {
   */
 }
 
+body.dark .doks-search::after {
+  color: $gray-300;
+  border: 1px solid $gray-700;
+}
+
+/*
 body.dark .navbar-form::after {
   color: $gray-600;
   border: 1px solid $gray-800;
 }
+*/
 
 body.dark .form-control {
-  color: $gray-500;
+  color: $gray-300;
+}
+
+body.dark .form-control::placeholder {
+  color: $gray-400;
+  opacity: 1;
 }
 
 body.dark .form-control:focus {
@@ -371,4 +410,30 @@ body.dark .copy-status:active::after {
   content: "Copied";
   display: block;
   color: $link-color-dark;
+}
+
+body.dark .doks-sidebar-toggle {
+  color: $navbar-dark-color;
+}
+
+body.dark .dropdown-toggle:focus,
+body.dark .doks-sidebar-toggle:focus {
+  box-shadow: 0 0 0 0.2rem $focus-color-dark;
+}
+
+body.dark .offcanvas {
+  background-color: $body-bg-dark;
+}
+
+body.dark .btn-close {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNkZWUyZTYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iZmVhdGhlciBmZWF0aGVyLXgiPjxsaW5lIHgxPSIxOCIgeTE9IjYiIHgyPSI2IiB5Mj0iMTgiPjwvbGluZT48bGluZSB4MT0iNiIgeTE9IjYiIHgyPSIxOCIgeTI9IjE4Ij48L2xpbmU+PC9zdmc+");
+  background-size: 1.5rem;
+}
+
+body.dark .btn-close:focus {
+  box-shadow: 0 0 0 0.2rem $focus-color-dark;
+}
+
+body.dark hr.text-black-50 {
+  color: $gray-600 !important;
 }
