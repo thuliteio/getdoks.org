@@ -10,6 +10,7 @@
     "create": "exec-bin bin/hugo/hugo new",
     "prestart": "npm run clean",
     "start": "exec-bin bin/hugo/hugo server --disableFastRender",
+    "start:lan": "exec-bin bin/hugo/hugo server --bind=0.0.0.0 --baseURL=http://192.168.1.10 --port=1313",
     "prebuild": "npm run clean",
     "build": "exec-bin bin/hugo/hugo --gc --minify",
     "build:preview": "npm run build -D -F",

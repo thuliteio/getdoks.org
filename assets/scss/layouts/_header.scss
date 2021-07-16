@@ -14,6 +14,22 @@
   font-weight: $headings-font-weight;
 }
 
+.navbar {
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid $gray-200;
+
+  /*
+  margin-top: 4px;
+  */
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar {
+    z-index: 1025;
+  }
+}
+
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-brand:active {
@@ -39,18 +55,12 @@
 }
 
 .nav-item {
-  margin-left: 1.25rem;
+  margin-left: 0;
 }
 
 @include media-breakpoint-up(md) {
   .nav-item {
     margin-left: 0.5rem;
-  }
-}
-
-@include media-breakpoint-down(sm) {
-  .nav-item:first-child {
-    margin-left: 0;
   }
 }
 
@@ -66,12 +76,31 @@
   height: 0;
 }
 
-.navbar {
-  background-color: rgba(255, 255, 255, 0.95);
-  border-bottom: 1px solid $gray-200;
-  margin-top: 4px;
+@include media-breakpoint-up(md) {
+  button#mode {
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
 }
 
+@include media-breakpoint-down(md) {
+  button#doks-languages {
+    margin-right: 1rem;
+  }
+}
+
+.doks-subnavbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid $gray-200;
+}
+
+/*
+@include media-breakpoint-up(lg) {
+  .doks-subnavbar.sticky-lg-top {
+    top: 4px;
+  }
+}
+*/
 .header-bar {
   border-top: 4px solid;
   border-image-source: linear-gradient(90deg, $primary, #8ed6fb 50%, #d32e9d);
@@ -82,14 +111,9 @@
   border-bottom: 0;
 }
 
-.navbar-form {
-  position: relative;
-  margin-top: 0.25rem;
-}
-
 @include media-breakpoint-up(md) {
   .navbar-brand {
-    margin-right: 1rem !important;
+    margin-right: 0.75rem !important;
   }
 
   .main-nav .nav-item:first-child .nav-link,
@@ -102,32 +126,42 @@
     padding-right: 0;
   }
 
-  .navbar-form {
+  /*
+  .doks-search {
     margin-top: 0;
     margin-left: 3rem;
     margin-right: 1.5rem;
   }
+*/
+  .doks-search {
+    max-width: 20rem;
+  }
 }
 
+/*
 @include media-breakpoint-up(lg) {
-  .navbar-form {
+  .doks-search {
     margin-left: 7rem;
   }
 }
 
 @include media-breakpoint-up(xl) {
-  .navbar-form {
+  .doks-search {
     margin-left: 24rem;
   }
 }
+*/
 
 .form-control.is-search {
   /*
   padding-right: calc(1.5em + 0.75rem);
   */
-  padding-right: 2.5rem;
+  padding-right: 4rem;
+
+  /*
   background: $gray-100;
   border: 0;
+  */
 
   /*
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-search'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
@@ -137,7 +171,7 @@
   */
 }
 
-.navbar-form::after {
+.doks-search::after {
   position: absolute;
   top: 0.4625rem;
   right: 0.5375rem;
@@ -145,11 +179,11 @@
   align-items: center;
   justify-content: center;
   height: 1.5rem;
-  padding-right: 0.4375rem;
-  padding-left: 0.4375rem;
+  padding-right: 0.3125rem;
+  padding-left: 0.3125rem;
   font-size: $font-size-base * 0.75;
   color: $gray-700;
-  content: "/";
+  content: "Ctrl + /";
   border: 1px solid $gray-300;
   border-radius: 0.25rem;
 }
@@ -273,4 +307,21 @@
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::before,
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon::after {
   top: 0;
+}
+
+.doks-sidebar-toggle {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+.doks-sidebar-toggle .doks-collapse {
+  display: none;
+}
+
+.doks-sidebar-toggle:not(.collapsed) .doks-expand {
+  display: none;
+}
+
+.doks-sidebar-toggle:not(.collapsed) .doks-collapse {
+  display: inline-block;
 }

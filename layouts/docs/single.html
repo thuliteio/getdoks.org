@@ -1,12 +1,12 @@
 {{ define "main" }}
 	<div class="row flex-xl-nowrap">
-		<div class="col-lg-5 col-xl-4 docs-sidebar">
-			<nav class="docs-links" aria-label="Main navigation">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			<nav class="docs-links" aria-label="Tertiary navigation">
 				{{ partial "sidebar/docs-menu.html" . }}
 			</nav>
 		</div>
 		{{ if ne .Params.toc false -}}
-		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Quaternary navigation">
 			{{ partial "sidebar/docs-toc.html" . }}
 		</nav>
 		{{ end -}}
@@ -17,6 +17,11 @@
 		{{ end -}}
 			<h1>{{ .Title }}</h1>
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
+			{{ if ne .Params.toc false -}}
+			<nav class="d-xl-none" aria-label="Quaternary navigation">
+				{{ partial "sidebar/docs-toc.html" . }}
+			</nav>
+			{{ end -}}
 			{{ partial "main/headline-hash.html" .Content }}
 			{{ if .Site.Params.editPage -}}
 				{{ partial "main/edit-page.html" . }}

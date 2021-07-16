@@ -13,22 +13,24 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 document.addEventListener('keydown', inputFocus);
 
 function inputFocus(e) {
-  if (e.keyCode == 191 ) {
+  if (e.ctrlKey && e.key === '/' ) {
     e.preventDefault();
     document.getElementById('search').focus();
   }
-  if (e.keyCode == 27 ) {
+  if (e.key === 'Escape' ) {
     document.getElementById('search').blur();
   }
 }
 
 /* eslint-disable */
-docsearch({
-  apiKey: '978789745e8a1cf3e9a3f0fa321dbdb9',
-  indexName: 'getdoks',
-  inputSelector: '#search',
-  debug: false,
-});
+if (document.querySelector('#search') !== null) {
+  docsearch({
+    apiKey: '978789745e8a1cf3e9a3f0fa321dbdb9',
+    indexName: 'getdoks',
+    inputSelector: '#search',
+    debug: false,
+  });
+}
 /* eslint-enable */
 
 /*
