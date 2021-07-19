@@ -1,9 +1,9 @@
 <link rel="preload" as="font" href="{{ "fonts/vendor/jost/jost-v4-latin-regular.woff2" | absURL }}" type="font/woff2" crossorigin>
 <link rel="preload" as="font" href="{{ "fonts/vendor/jost/jost-v4-latin-700.woff2" | absURL }}" type="font/woff2" crossorigin>
-{{ if and (or (eq .Section "docs") (eq .Section "tutorial")) (eq .Kind "page") (ne .Page.RelPermalink "/tutorial/introduction/") -}}
+{{ if and (.Site.Params.ethicalAds) (or (eq .Section "docs") (eq .Section "tutorial")) (eq .Kind "page") (ne .Page.RelPermalink "/tutorial/introduction/") -}}
 <link rel="preconnect" href="https://media.ethicalads.io">
 {{ end -}}
-{{ if and (.Site.Params.adHomepage) (eq .Kind "home") -}}
+{{ if and (.Site.Params.ethicalAds) (.Site.Params.ethicalAdsHomepage) (eq .Kind "home") -}}
 <link rel="preconnect" href="https://media.ethicalads.io">
 {{ end -}}
 <link rel="preconnect" href="https://stats.getdoks.org">

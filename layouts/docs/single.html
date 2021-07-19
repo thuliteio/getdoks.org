@@ -8,9 +8,11 @@
 		{{ if ne .Params.toc false -}}
 		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Quaternary navigation">
 			{{ partial "sidebar/docs-toc.html" . }}
+			{{ if .Site.Params.ethicalAds -}}
 			<div class="docs-toc-ad">
-				<div id="docs-toc" class="flat" data-ea-publisher="httpgetdoksorg" data-ea-type="image" data-ea-keywords="{{ .Title | urlize }}|doks|hugo|jamstack"></div>
+				<div id="docs-toc" class="flat" data-ea-publisher="httpgetdoksorg" data-ea-type="image"></div>
 			</div>
+			{{ end -}}
 		</nav>
 		{{ end -}}
 		{{ if .Params.toc -}}

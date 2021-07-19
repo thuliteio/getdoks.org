@@ -1,8 +1,8 @@
-{{ if and (.Site.Params.adHomepage) (eq .Kind "home") -}}
+{{ if and (.Site.Params.ethicalAds) (.Site.Params.ethicalAdsHomepage) (eq .Kind "home") -}}
   <div class="homepage-ad d-flex justify-content-center">
-    <div id="homepage" class="flat" data-ea-publisher="httpgetdoksorg" data-ea-type="text" data-ea-keywords="doks|hugo|jamstack"></div>
+    <div id="homepage" class="flat" data-ea-publisher="httpgetdoksorg" data-ea-type="text"></div>
   </div>
-{{ end }}
+{{ end -}}
 
 {{ if .Site.Params.alert -}}
   {{ partial "header/alert.html" . }}
