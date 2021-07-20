@@ -52,16 +52,6 @@ p.meta {
   font-size: $font-size-base;
 }
 
-.homepage-ad {
-  min-height: 7.375rem;
-}
-
-@include media-breakpoint-up(md) {
-  .homepage-ad {
-    min-height: 6.25rem;
-  }
-}
-
 .docs-toc-ad {
   margin: 1.5rem 0;
 }

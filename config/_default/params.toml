@@ -60,7 +60,10 @@ alertText = "Help the community by participating in the Doks Community Survey 20
 
 # EthicalAds
 ethicalAds = true
-ethicalAdsHomepage = false
+ethicalAdsBackup = true
+
+# OwnAds
+ownAds = false
 
 # Edit Page
 docsRepo = "https://github.com/h-enk/getdoks.org"

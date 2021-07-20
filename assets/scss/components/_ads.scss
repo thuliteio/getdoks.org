@@ -1,0 +1,47 @@
+.card-ad-vertical {
+  border: 0;
+  border-radius: 3px;
+  box-shadow: none;
+  max-width: 175px;
+  overflow: auto;
+  text-align: center;
+  margin: 2rem 0.5rem 0;
+  background: $gray-100;
+}
+
+.card-ad-vertical .card-body {
+  padding: 1rem;
+}
+
+.card-ad-vertical .card-text {
+  font-size: $font-size-base * 0.9375;
+  margin-top: 0.75rem;
+}
+
+.card-ad-vertical .card-text a {
+  color: inherit;
+}
+
+.card-ad-vertical .card-text a:hover,
+.card-ad-vertical .card-text a:focus {
+  text-decoration: none;
+}
+
+.dark .ad-dark {
+  display: none;
+}
+
+.ad-light {
+  display: none;
+}
+
+.dark .ad-light {
+  display: inline;
+}
+
+.ad-footer {
+  font-size: $font-size-sm;
+  text-align: right;
+  font-style: italic;
+  margin: 0.5rem 1rem 2rem;
+}
