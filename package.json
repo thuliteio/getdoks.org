@@ -40,7 +40,7 @@
     "docsearch.js": "^2.6.3",
     "dotenv": "^10.0",
     "encoding": "^0.1.13",
-    "eslint": "^7.29",
+    "eslint": "^7.31",
     "exec-bin": "^1.0.0",
     "hugo-installer": "^3.0.1",
     "highlight.js": "^11.1",
