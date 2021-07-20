@@ -58,6 +58,13 @@ alert = false
 alertDismissable = false
 alertText = "Help the community by participating in the Doks Community Survey 2021. <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\" target=\"_blank\" rel=\"noopener\">Take the 3-minute survey</a>.</a>"
 
+# EthicalAds
+ethicalAds = true
+ethicalAdsBackup = true
+
+# OwnAds
+ownAds = false
+
 # Edit Page
 docsRepo = "https://github.com/h-enk/getdoks.org"
 editPage = true

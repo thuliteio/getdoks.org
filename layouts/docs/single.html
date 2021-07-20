@@ -8,6 +8,21 @@
 		{{ if ne .Params.toc false -}}
 		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Quaternary navigation">
 			{{ partial "sidebar/docs-toc.html" . }}
+			{{ if .Site.Params.ethicalAds -}}
+			<div class="docs-toc-ad">
+				<div id="docs-toc" class="flat" data-ea-publisher="httpgetdoksorg" data-ea-type="image"></div>
+			</div>
+			{{ end -}}
+			{{ if .Site.Params.ownAds -}}
+			<div class="card card-ad-vertical">
+				<div class="card-body">
+					<img class="ad-dark" src="/images/hyas-ad-dark.png" width="120" height="90" alt="Hyas ad dark">
+					<img class="ad-light" src="/images/hyas-ad-light.png" width="120" height="90" alt="Hyas ad light">
+					<p class="card-text"><a class="stretched-link" href="https://gethyas.com/?utm_campaign=hyas&utm_source=website-docs-section&utm_medium=display" target="_blank" rel="noopener">Build</a> modern Hugo websites that are secure, fast, and SEO-ready — by default.</p>
+				</div>
+			</div>
+			<p class="ad-footer">Advertisement</p>
+			{{ end -}}
 		</nav>
 		{{ end -}}
 		{{ if .Params.toc -}}
