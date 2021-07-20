@@ -40,12 +40,10 @@
   {{ $slice = $slice | append $alert -}}
 {{ end -}}
 
-{{ if and (.Site.Params.ethicalAds) (or (eq .Section "docs") (eq .Section "tutorial")) (eq .Kind "page") (ne .Page.RelPermalink "/tutorial/introduction/") -}}
-  {{ if (.Site.Params.ethicalAdsBackup) -}}
-    {{ $ad := resources.Get "js/ad.js" -}}
-    {{ $ad := $ad | js.Build -}}
-    {{ $slice = $slice | append $ad -}}
-  {{ end -}}
+{{ if and (.Site.Params.ethicalAds) (.Site.Params.ethicalAdsBackup) -}}
+  {{ $ad := resources.Get "js/ad.js" -}}
+  {{ $ad := $ad | js.Build -}}
+  {{ $slice = $slice | append $ad -}}
 {{ end -}}
 
 {{ $js := $slice | resources.Concat "main.js" -}}
