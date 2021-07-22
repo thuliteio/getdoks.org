@@ -11,9 +11,17 @@ Todo:
   ✔ Add automated share image @done(21-06-08 19:20)
   ✔ Update social meta tags @done(21-06-10 16:29)
   ☐ Add copy button
+  ☐ Fix errors W3C Markup Validation
 
 Navigation:
   ✔ Add `start:lan` script @done(21-07-16 10:10)
   ✔ Update alert @done(21-07-16 10:10)
   ✔ Changed keyboard shortcut search @done(21-07-16 10:10)
   ✔ Update for dark mode suppport @done(21-07-16 14:09)
+
+Header:
+  ✔ Update alert @done(21-07-22 10:40)
+  ✔ Update view showcase website button @done(21-07-22 11:01)
+  ✔ Update mobile navigation @done(21-07-22 12:49)
+  ✔ Update dark mode @done(21-07-22 12:49)
+  ✔ Clean up scss @done(21-07-22 14:51)

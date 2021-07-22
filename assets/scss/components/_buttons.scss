@@ -4,7 +4,9 @@
 }
 
 #mode {
-  margin-right: 1rem;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+  margin-right: 0.125rem;
 }
 
 .btn-link:focus {
@@ -18,7 +20,7 @@
 
 @include media-breakpoint-up(md) {
   #mode {
-    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .navbar .btn-link {
@@ -184,26 +186,9 @@ pre {
   color: $link-color;
 }
 
-.btn-doks-light {
-  color: #6c757d;
-  border-color: #dee2e6;
-}
-
-.show > .btn-doks-light,
-.btn-doks-light:hover,
-.btn-doks-light:active {
-  color: $link-color;
-  border-color: $link-color;
-}
-
-.btn-doks-light:focus {
-  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
-}
-
-.doks-nabar .dropdown-menu,
+.doks-navbar .dropdown-menu,
 .doks-subnavbar .dropdown-menu {
   font-size: 0.875rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 .doks-navbar .dropdown-item.current,
