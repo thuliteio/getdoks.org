@@ -24,5 +24,9 @@
 
 .email-form .form-control {
   background: $gray-100;
-  border-color: transparent;
+  border: 1px solid transparent;
+}
+
+.email-form .form-control:focus {
+  border: 1px solid $primary;
 }

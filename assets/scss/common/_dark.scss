@@ -53,18 +53,26 @@ body.dark .btn-outline-primary:hover {
 
 body.dark .btn-doks-light {
   color: $navbar-dark-color;
-  border-color: $dots-dark;
 }
 
 body.dark .show > .btn-doks-light,
 body.dark .btn-doks-light:hover,
 body.dark .btn-doks-light:active {
   color: $link-color-dark;
-  border-color: $link-color-dark;
 }
 
-body.dark .btn-doks-light:focus {
-  box-shadow: 0 0 0 0.2rem $focus-color-dark;
+body.dark .btn-menu svg {
+  color: $body-color-dark;
+}
+
+body.dark .doks-sidebar-toggle {
+  color: $navbar-dark-color;
+}
+
+body.dark .btn-menu:hover,
+body.dark .btn-doks-light:hover,
+body.dark .doks-sidebar-toggle:hover {
+  background: $body-overlay-dark;
 }
 
 body.dark .dropdown-menu {
@@ -73,13 +81,29 @@ body.dark .dropdown-menu {
 
 body.dark .navbar,
 body.dark .doks-subnavbar {
-  background: $body-bg-dark;
-  opacity: 0.975;
+  background-color: rgba(33, 37, 41, 0.95);
   border-bottom: 1px solid $border-dark;
 }
 
 body.dark.home .navbar {
   border-bottom: 0;
+}
+
+body.dark .offcanvas-header {
+  border-bottom: 1px solid $gray-800;
+}
+
+body.dark .offcanvas .nav-link {
+  color: $body-color-dark;
+}
+
+body.dark .offcanvas .nav-link:hover,
+body.dark .offcanvas .nav-link:focus {
+  color: $link-color-dark;
+}
+
+body.dark .offcanvas .nav-link.active {
+  color: $link-color-dark;
 }
 
 body.dark .navbar-light .navbar-brand {
@@ -216,7 +240,7 @@ body.dark .navbar .btn-link:active {
 
 body.dark .form-control.is-search {
   background: $body-overlay-dark;
-  border-color: $gray-600;
+  border: 1px solid transparent;
   color: $gray-300;
 
   /*
@@ -227,9 +251,17 @@ body.dark .form-control.is-search {
   */
 }
 
+body.dark .form-control.is-search:focus {
+  border: 1px solid $link-color-dark;
+}
+
 body.dark .doks-search::after {
   color: $gray-300;
   border: 1px solid $gray-700;
+}
+
+body.dark .text-dark {
+  color: $body-color-dark !important;
 }
 
 /*
@@ -246,10 +278,6 @@ body.dark .form-control {
 body.dark .form-control::placeholder {
   color: $gray-400;
   opacity: 1;
-}
-
-body.dark .form-control:focus {
-  box-shadow: 0 0 0 0.2rem $focus-color-dark;
 }
 
 body.dark .border-top {
@@ -412,14 +440,12 @@ body.dark .copy-status:active::after {
   color: $link-color-dark;
 }
 
-body.dark .doks-sidebar-toggle {
-  color: $navbar-dark-color;
-}
-
+/*
 body.dark .dropdown-toggle:focus,
 body.dark .doks-sidebar-toggle:focus {
   box-shadow: 0 0 0 0.2rem $focus-color-dark;
 }
+*/
 
 body.dark .offcanvas {
   background-color: $body-bg-dark;
@@ -430,10 +456,21 @@ body.dark .btn-close {
   background-size: 1.5rem;
 }
 
+/*
 body.dark .btn-close:focus {
   box-shadow: 0 0 0 0.2rem $focus-color-dark;
 }
+*/
 
 body.dark hr.text-black-50 {
   color: $gray-600 !important;
+}
+
+body.dark .email-form .form-control {
+  background: $body-overlay-dark;
+  border: 1px solid transparent;
+}
+
+body.dark .email-form .form-control:focus {
+  border: 1px solid $link-color-dark;
 }

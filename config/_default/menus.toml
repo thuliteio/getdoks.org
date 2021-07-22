@@ -99,8 +99,18 @@
   identifier = "tutorial"
   url = "/tutorial/"
 
+[[secondary]]
+  name = "Get Support →"
+  url = "/docs/help/faq/#can-i-get-support"
+  weight = 10
+
 [[showcase]]
   name = "Browse"
   weight = 10
   identifier = "browse"
   url = "/showcase/"
+
+[[tertiary]]
+  name = "Submit to Showcase →"
+  url = "https://github.com/h-enk/doks/discussions?discussions_q=category%3A%22Show+and+tell%22"
+  weight = 10
