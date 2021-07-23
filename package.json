@@ -46,7 +46,7 @@
     "highlight.js": "^11.1",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
-    "markdownlint-cli": "^0.27",
+    "markdownlint-cli": "^0.28",
     "node-fetch": "^2.6.1",
     "postcss": "^8.3",
     "postcss-cli": "^8.3",
