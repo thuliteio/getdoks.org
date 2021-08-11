@@ -12,6 +12,7 @@ Todo:
   ✔ Update social meta tags @done(21-06-10 16:29)
   ☐ Add copy button
   ☐ Fix errors W3C Markup Validation
+  ☐ Fix issues Lighthouse
 
 Navigation:
   ✔ Add `start:lan` script @done(21-07-16 10:10)
