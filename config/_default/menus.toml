@@ -79,11 +79,6 @@
 #   weight = 30
 
 [[footer]]
-  name = "Security"
-  url = "https://observatory.mozilla.org/analyze/getdoks.org"
-  weight = 10
-
-[[footer]]
   name = "Privacy"
   url = "/privacy-policy/"
   weight = 20
@@ -100,7 +95,7 @@
   url = "/tutorial/"
 
 [[secondary]]
-  name = "Get Support →"
+  name = "Get Support"
   url = "/docs/help/faq/#can-i-get-support"
   weight = 10
 
@@ -111,6 +106,6 @@
   url = "/showcase/"
 
 [[tertiary]]
-  name = "Submit to Showcase →"
+  name = "Submit to Showcase"
   url = "https://github.com/h-enk/doks/discussions?discussions_q=category%3A%22Show+and+tell%22"
   weight = 10
