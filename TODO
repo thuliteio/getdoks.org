@@ -26,3 +26,9 @@ Header:
   ✔ Update mobile navigation @done(21-07-22 12:49)
   ✔ Update dark mode @done(21-07-22 12:49)
   ✔ Clean up scss @done(21-07-22 14:51)
+
+General:
+  ☐ Remove EthicalAds
+  ☐ Update index page Showcase
+  ☐ Add Open Collective
+  ☐ Update general nav mobile for Bootstrap 5.1 (DRY)
