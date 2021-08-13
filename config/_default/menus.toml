@@ -46,7 +46,7 @@
 
 [[main]]
   name = "Showcase"
-  url = "/showcase/gamesupport/"
+  url = "/showcase/localstack/"
   weight = 30
 
 [[main]]
