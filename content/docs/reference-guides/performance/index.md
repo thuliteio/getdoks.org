@@ -15,7 +15,7 @@ toc: true
 
 {{< img-simple src="google-lighthouse-scan-results-doks.gif" alt="Google Lighthouse Scan Results Doks">}}
 
-See also Google Lighthouse: [Scan Results for doks.netlify.app](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea)
+See also Google Lighthouse: [Scan Results for doks.netlify.app](https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a)
 
 ## Unused CSS removal
 
