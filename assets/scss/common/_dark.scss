@@ -456,6 +456,12 @@ body.dark .btn-close {
   background-size: 1.5rem;
 }
 
+@include media-breakpoint-up(md) {
+  body.dark .alert-dismissible .btn-close {
+    background-size: 1.25rem;
+  }
+}
+
 /*
 body.dark .btn-close:focus {
   box-shadow: 0 0 0 0.2rem $focus-color-dark;

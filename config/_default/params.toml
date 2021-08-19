@@ -54,9 +54,9 @@ footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
 
 # Alert
-alert = false
-alertDismissable = false
-alertText = "Help the community by participating in the Doks Community Survey 2021. <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\" target=\"_blank\" rel=\"noopener\">Take the 3-minute survey</a>.</a>"
+alert = true
+alertDismissable = true
+alertText = "Help support the team developing Doks! <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Donate Now</a>"
 
 # EthicalAds
 ethicalAds = false

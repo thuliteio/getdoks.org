@@ -36,7 +36,7 @@
 
 [dev]
   framework = "#custom"
-  command = "shx rm -rf public resources && hugo server --bind=0.0.0.0 --disableFastRender"
+  command = "npm run start"
   targetPort = 1313
   port = 8888
   publish = "public"
