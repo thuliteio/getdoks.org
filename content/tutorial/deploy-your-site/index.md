@@ -84,7 +84,7 @@ git remote -v
 Push the changes in your local repository to GitHub:
 
 ```bash
-git push origin main
+git push -u origin main
 ```
 
 ### Create new Netlify site
