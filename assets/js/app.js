@@ -10,15 +10,19 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 }
 /* eslint-enable */
 
-document.addEventListener('keydown', inputFocus);
+var search = document.getElementById('search');
+
+if (search !== null) {
+  document.addEventListener('keydown', inputFocus);
+}
 
 function inputFocus(e) {
   if (e.ctrlKey && e.key === '/' ) {
     e.preventDefault();
-    document.getElementById('search').focus();
+    search.focus();
   }
   if (e.key === 'Escape' ) {
-    document.getElementById('search').blur();
+    search.blur();
   }
 }
 
