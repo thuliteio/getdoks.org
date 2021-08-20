@@ -54,7 +54,7 @@ footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\
 copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
 
 # Alert
-alert = true
+alert = false
 alertDismissable = true
 alertText = "Help support the team developing Doks! <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Donate Now</a>"
 
