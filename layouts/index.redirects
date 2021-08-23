@@ -1,7 +1,6 @@
+# redirects for Netlify - https://www.netlify.com/docs/redirects/
 {{- range $p := .Site.Pages -}}
 {{- range .Aliases }}
 {{ . }} {{ $p.RelPermalink -}}
 {{- end }}
 {{- end -}}
-
-/docs/0.2/*  https://v0-2-0--getdoks.netlify.app/docs/:splat  200
