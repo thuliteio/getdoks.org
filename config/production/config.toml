@@ -1,2 +1,2 @@
 baseURL = "https://getdoks.org/"
-canonifyURLs = true
+canonifyURLs = false
