@@ -43,12 +43,6 @@
 {{ $plausible := resources.Get "js/plausible.js" | js.Build -}}
 {{ $slice = $slice | append $plausible -}}
 
-{{ if and (.Site.Params.ethicalAds) (.Site.Params.ethicalAdsBackup) -}}
-  {{ $ad := resources.Get "js/ad.js" -}}
-  {{ $ad := $ad | js.Build -}}
-  {{ $slice = $slice | append $ad -}}
-{{ end -}}
-
 {{ $js := $slice | resources.Concat "main.js" -}}
 
 {{ if eq (hugo.Environment) "development" -}}
@@ -60,9 +54,6 @@
   {{ end -}}
   {{ if eq .Section "docs" -}}
   <script src="{{ $docSearch.RelPermalink }}" defer></script>
-  {{ end -}}
-  {{ if and (.Site.Params.ethicalAds) (or (eq .Section "docs") (eq .Section "tutorial")) (eq .Kind "page") (ne .Page.RelPermalink "/tutorial/introduction/") -}}
-  <script src="https://media.ethicalads.io/media/client/ethicalads.min.js" defer></script>
   {{ end -}}
   <script src="{{ $js.RelPermalink }}" defer></script>
 {{ else -}}
@@ -78,9 +69,6 @@
   {{ end -}}
   {{ if eq .Section "docs" -}}
   <script src="{{ $docSearch.RelPermalink }}" integrity="{{ $docSearch.Data.Integrity }}" crossorigin="anonymous" defer></script>
-  {{ end -}}
-  {{ if and (.Site.Params.ethicalAds) (or (eq .Section "docs") (eq .Section "tutorial")) (eq .Kind "page") (ne .Page.RelPermalink "/tutorial/introduction/") -}}
-  <script src="https://media.ethicalads.io/media/client/ethicalads.min.js" defer></script>
   {{ end -}}
   <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
