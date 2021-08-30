@@ -1,2 +1,1 @@
-baseURL = "https://next.getdoks.org/"
-canonifyURLs = true
+canonifyURLs = false
