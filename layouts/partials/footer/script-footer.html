@@ -40,6 +40,9 @@
   {{ $slice = $slice | append $alert -}}
 {{ end -}}
 
+{{ $plausible := resources.Get "js/plausible.js" | js.Build -}}
+{{ $slice = $slice | append $plausible -}}
+
 {{ if and (.Site.Params.ethicalAds) (.Site.Params.ethicalAdsBackup) -}}
   {{ $ad := resources.Get "js/ad.js" -}}
   {{ $ad := $ad | js.Build -}}
