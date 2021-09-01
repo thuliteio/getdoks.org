@@ -64,22 +64,22 @@
   right: 0;
 }
 
-.dark #carbonads {
+[data-dark-mode] #carbonads {
   display: flex;
   max-width: 330px;
   background-color: hsl(0, 0%, 10%);
 }
 
-.dark #carbonads a {
+[data-dark-mode] #carbonads a {
   color: #ddd;
   text-decoration: none;
 }
 
-.dark #carbonads a:hover {
+[data-dark-mode] #carbonads a:hover {
   color: #ddd;
 }
 
-.dark #carbonads .carbon-poweredby {
+[data-dark-mode] #carbonads .carbon-poweredby {
   display: block;
   padding: 6px 8px;
   background: #1e2021;
