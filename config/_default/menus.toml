@@ -59,10 +59,10 @@
   url = "https://github.com/h-enk/doks/discussions"
   weight = 50
 
-[[main]]
-  name = "Donate"
-  url = "https://opencollective.com/doks"
-  weight = 60
+# [[main]]
+#   name = "Donate"
+#   url = "https://opencollective.com/doks"
+#   weight = 60
 
 [[social]]
   name = "GitHub"
