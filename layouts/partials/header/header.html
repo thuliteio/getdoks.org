@@ -14,15 +14,15 @@
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
     </button>
 
-    <div class="offcanvas offcanvas-start d-md-none border-0" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
-      <div class="header-bar"></div>
-      <div class="offcanvas-header">
+    <div class="offcanvas offcanvas-start border-0 py-md-1" tabindex="-1" id="offcanvasDoks" data-bs-backdrop="true" aria-labelledby="offcanvasDoksLabel">
+      <div class="header-bar d-md-none"></div>
+      <div class="offcanvas-header d-md-none">
         <h2 class="h5 offcanvas-title ps-2" id="offcanvasDoksLabel"><a class="text-dark" href="{{ "/" | relURL }}">{{ .Site.Params.Title }}</a></h2>
         <button type="button" class="btn-close text-reset me-2" data-bs-dismiss="offcanvas" aria-label="Close main menu"></button>
       </div>
       <div class="offcanvas-body px-4">
-        <h3 class="h6 text-uppercase mb-3">Main</h3>
-        <ul class="nav flex-column">
+        <h3 class="h6 text-uppercase mb-3 d-md-none">Main</h3>
+        <ul class="nav flex-column flex-md-row ms-md-n3">
           {{- $current := . -}}
           {{ range .Site.Menus.main -}}
             {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
@@ -32,16 +32,16 @@
             {{- $active = or $active (and (eq .Name "Showcase") (eq $current.Section "showcase")) -}}
             {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
             <li class="nav-item">
-              <a class="nav-link py-1{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
+              <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
             </li>
           {{ end -}}
         </ul>
-        <hr class="text-black-50 my-4">
-        <h3 class="h6 text-uppercase mb-3">Socials</h3>
-        <ul class="nav flex-column">
+        <hr class="text-black-50 my-4 d-md-none">
+        <h3 class="h6 text-uppercase mb-3 d-md-none">Socials</h3>
+        <ul class="nav flex-column flex-md-row ms-md-auto me-md-n5 pe-md-2">
           {{ range .Site.Menus.social -}}
             <li class="nav-item">
-              <a class="nav-link py-1" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2">{{ .Name | safeHTML }}</small></a>
+              <a class="nav-link ps-0 py-1" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 d-md-none">{{ .Name | safeHTML }}</small></a>
             </li>
           {{ end -}}
         </ul>
@@ -70,31 +70,6 @@
       </ul>
     </div>
     {{ end -}}
-
-    <div class="collapse navbar-collapse" id="doksNavbar">
-      <ul class="navbar-nav flex-row flex-wrap pt-2 py-md-0">
-        {{- $current := . -}}
-        {{ range .Site.Menus.main -}}
-          {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
-          {{- $active = or $active (eq .Name $current.Title) -}}
-          {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
-          {{- $active = or $active (and (eq .Name "Tutorial") (eq $current.Section "tutorial")) -}}
-          {{- $active = or $active (and (eq .Name "Showcase") (eq $current.Section "showcase")) -}}
-          {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
-          <li class="nav-item col-8 col-md-auto{{ if $active }} active{{ end }}">
-            <a class="nav-link py-2" href="{{ .URL | relURL }}">{{ .Name }}</a>
-          </li>
-        {{ end -}}
-      </ul>
-      <hr class="d-md-none text-black-50">
-      <ul class="navbar-nav flex-row flex-wrap ms-md-auto me-md-1">
-        {{ range .Site.Menus.social -}}
-          <li class="nav-item col-8 col-md-auto">
-            <a class="nav-link py-2" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="d-md-none ms-2">{{ .Name | safeHTML }}</small></a>
-          </li>
-        {{ end -}}
-      </ul>
-    </div>
   </nav>
 </header>
 

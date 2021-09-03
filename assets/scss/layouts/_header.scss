@@ -67,8 +67,13 @@
 }
 
 button#doks-languages {
-  margin-right: 0;
+  margin-right: -0.5625rem;
   margin-left: 0.75rem;
+}
+
+button#doks-versions {
+  margin-right: -0.5625rem;
+  margin-left: 0;
 }
 
 .offcanvas .nav-link {
