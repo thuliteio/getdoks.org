@@ -1,6 +1,6 @@
 {
   "name": "getdoks",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "browserslist": [
     "defaults"
@@ -16,7 +16,7 @@
     "build:lan": "exec-bin node_modules/.bin/hugo/hugo --gc --minify --baseURL=http://192.168.1.10:8080",
     "build:preview": "npm run build -D -F",
     "clean": "shx rm -rf public resources",
-    "clean:install": "shx rm -rf package-lock.json bin node_modules ",
+    "clean:install": "shx rm -rf package-lock.json node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js config functions",
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
@@ -30,7 +30,7 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "@babel/cli": "^7.14",
+    "@babel/cli": "^7.15",
     "@babel/core": "^7.15",
     "@babel/preset-env": "^7.15",
     "@fullhuman/postcss-purgecss": "^4.0",
@@ -58,6 +58,6 @@
     "stylelint-config-standard": "^22.0"
   },
   "otherDependencies": {
-    "hugo": "0.87.0"
+    "hugo": "0.88.0"
   }
 }
