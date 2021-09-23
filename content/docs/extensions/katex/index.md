@@ -13,6 +13,8 @@ weight: 430
 toc: true
 ---
 
+{{< alert icon="💡" text="<a href=\"https://latex.codecogs.com/\">Equation Editor</a> by CodeCogs is an online LaTeX equation editor, where you can create, integrate, and download equations." />}}
+
 ## 1. Enable
 
 KaTeX support is switched off per default. Activate it by setting `kaTex = true` in `./config/_default/params.toml`.

@@ -13,6 +13,10 @@ weight: 160
 toc: true
 ---
 
+{{< alert icon="💡" text="The images functionality also works when using <a href=\"https://www.markdownguide.org/basic-syntax/#images-1\">markdown for images</a>." />}}
+
+Place your images in a page bundle, like so:
+
 ```bash
 ..
 ├── blog/
