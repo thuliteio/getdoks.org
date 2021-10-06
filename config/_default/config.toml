@@ -47,29 +47,6 @@ rel  = "sitemap"
     dir = ":cacheDir/:project"
     maxAge = "10s"
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      linkify = false
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = "github"
-      [markup.goldmark.parser.attribute]
-        block = true
-        title = true
-    [markup.goldmark.renderer]
-      unsafe = true
-  [markup.highlight]
-    codeFences = false
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = false
-    style = "dracula"
-    tabWidth = 4
-
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
@@ -83,18 +60,3 @@ rel  = "sitemap"
 
 [minify.tdewolff.html]
   keepWhitespace = false
-
-[module]
-  [module.hugoVersion]
-    extended = true
-    min = "0.80.0"
-    max = ""
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
-  [[module.mounts]]
-    source = "static"
-    target = "static"
-  [[module.mounts]]
-    source = "node_modules/docsearch.js"
-    target = "assets/js/vendor/docsearch.js"
