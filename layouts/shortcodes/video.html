@@ -1,4 +1,4 @@
-<div class="ratio ratio-{{ with .Get "ratio" }}{{.}}{{ end }}">
+<div class="mb-4 ratio ratio-{{ with .Get "ratio" }}{{.}}{{ end }}">
   <video{{ with .Get "attributes" }} {{ . | safeHTMLAttr }}{{ end }}>
     {{ with .Get "webm-src" -}}
     <source src="{{ . | relURL }}" type="video/webm">
