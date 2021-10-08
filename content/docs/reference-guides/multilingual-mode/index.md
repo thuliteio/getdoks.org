@@ -20,7 +20,6 @@ toc: true
 In `./config/_default/params.toml`, enable Multilinguage Mode:
 
 ```toml
-
 [options]
   ..
   multilingualMode = true
