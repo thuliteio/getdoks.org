@@ -4,7 +4,7 @@ description: "Version 0.3 is finally here! Better UX navigation, multilingual an
 lead: "Version 0.3 is finally here! Better UX navigation, multilingual and i18n support, versioned documentation support, dismissible global alert, Mermaid diagrams and visualizations, and more!"
 date: 2021-10-06T11:16:21+02:00
 lastmod: 2021-10-06T11:16:21+02:00
-draft: true
+draft: false
 weight: 50
 images: []
 contributors: ["Henk Verlinde"]
@@ -81,10 +81,6 @@ Now, you can also (next to using the image shortcodes) add an image using markdo
 
 ```md
 ![Image](day-and-night-escher.jpg "Day and Night, 1938 — M.C. Escher")
-![Image reference][1]
-[![Image reference + Link][1]][1]
-
-[1]: day-and-night-escher.jpg
 ```
 
 ![Image](day-and-night-escher.jpg "Day and Night, 1938 — M.C. Escher")
