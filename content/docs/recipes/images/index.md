@@ -27,7 +27,6 @@ Place your images in a page bundle, like so:
 
 See also the Hugo docs: [Page Bundles](https://gohugo.io/content-management/page-bundles/)
 
-
 ## Markdown
 
 ### Add an image
