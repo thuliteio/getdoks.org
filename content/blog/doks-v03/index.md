@@ -25,7 +25,7 @@ No more scrolling to the bottom of a page  to get to the next page! The navigati
 
 Doks now is fully prepared for multilingual and i18n support.
 
-[Multilingual Mode →]({{< relref "reference-guides" >}})
+[Multilingual Mode →]({{< relref "multilingual-mode" >}})
 
 ## Versioned documentation support
 
