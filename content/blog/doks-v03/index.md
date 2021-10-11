@@ -33,7 +33,7 @@ Doks now is fully prepared for multilingual and i18n support.
 
 Doks now is fully prepared for versioned documentation support.
 
-[Versioned Documentation →]({{< relref "extensions" >}})
+[Versioned Documentation →]({{< relref "versioned-documentation" >}})
 
 ## Global alert
 
