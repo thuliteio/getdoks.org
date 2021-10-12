@@ -1,4 +1,4 @@
-{{ $docSearch := resources.Get "js/vendor/docsearch.js/dist/cdn/docsearch.min.js" -}}
+{{ $docSearch := resources.Get "js/docsearch.js" | js.Build -}}
 
 {{ $bs := resources.Get "js/bootstrap.js" -}}
 {{ $bs := $bs | js.Build -}}
