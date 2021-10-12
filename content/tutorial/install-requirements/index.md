@@ -19,6 +19,8 @@ Doks uses npm to centralize dependency management, making it [easy to update]({{
 
 - Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
 
+{{< alert icon="👉" text="Check that you minimally have installed the <strong>latest</strong> long term support (LTS) version of <a href=\"https://nodejs.org/\">Node.js</a>, by running <code>node --version</code> in your terminal." />}}
+
 ### Check Node.js install
 
 ```bash

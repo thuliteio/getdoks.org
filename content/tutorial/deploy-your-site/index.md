@@ -29,7 +29,7 @@ Set up your Git repository in 8 steps.
 
 Create a new repository on [GitHub](https://github.com/) (or [GitLab](https://gitlab.com/), or [Bitbucket](https://bitbucket.org/)):
 
-{{< img-simple src="create-new-repo.png" alt="Create New Repository" >}}
+{{< img-simple src="create-new-repo.png" alt="Create New Repository" class="d-block mx-auto shadow my-5" >}}
 
 [Create new repository →](https://github.com/new)
 
@@ -61,7 +61,7 @@ git commit -m "First commit"
 
 At the top of your GitHub repository's Quick Setup page, click the copy icon:
 
-{{< img-simple src="copy-remote-repository-url-quick-setup.png" alt="Copy Remote Repository URL Quick Setup" >}}
+{{< img-simple src="copy-remote-repository-url-quick-setup.png" alt="Copy Remote Repository URL Quick Setup" class="d-block mx-auto shadow my-5" >}}
 
 #### 6. Set the new remote
 
@@ -91,7 +91,7 @@ git push -u origin main
 
 Create your new Netlify site in 3 steps.
 
-{{< img-simple src="create-new-netlify-site.png" alt="Create New Netlify Site" >}}
+{{< img-simple src="create-new-netlify-site.png" alt="Create New Netlify Site" class="d-block mx-auto shadow my-5" >}}
 
 [New site from Git →](https://app.netlify.com/start)
 

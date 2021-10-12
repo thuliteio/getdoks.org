@@ -1,7 +1,7 @@
 ---
 title: "Menus"
-description: "Add pages or links to the main, social, docs, or footer menu."
-lead: "Add pages or links to the main, social, docs, or footer menu."
+description: "Add pages or links to the main, social, docs, or footer menu. Set page level navigation."
+lead: "Add pages or links to the main, social, docs, or footer menu. Set page level navigation."
 date: 2020-11-23T11:55:36+01:00
 lastmod: 2020-11-23T11:55:36+01:00
 draft: false
@@ -13,15 +13,18 @@ weight: 150
 toc: true
 ---
 
-{{< img-simple src="menu-structure.png" alt="Menu Structure" class="border rounded p-1" >}}
+{{< img-simple src="navigation-mobile.png" alt="Navigation Mobile" class="d-block mx-auto shadow my-5" >}}
+{{< img-simple src="navigation-structure-mobile.png" alt="Navigation Structure Mobile" class="d-block mx-auto my-5 shadow" >}}
 
 See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
 
 ```bash
-./config/_default/menus.toml
+./config/_default/menus/menus.en.toml
 ```
 
-## Add to main menu
+## Global navigation
+
+### Add to main menu
 
 ```toml
 [[main]]
@@ -35,7 +38,7 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
   weight = 20
 ```
 
-## Add to social menu
+### Add to social menu
 
 {{< alert icon="👉" text="Doks uses <a href=\"https://feathericons.com/\">Feather Icons</a>" />}}
 
@@ -54,7 +57,11 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
   weight = 20
 ```
 
-## Add to docs menu
+## Section navigation
+
+### Add to docs menu
+
+Add first level menu items:
 
 ```toml
 [[docs]]
@@ -70,7 +77,33 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
   url = "/docs/help/"
 ```
 
-## Add to footer menu
+Add second level menu items in the frontmatter of a docs page:
+
+```md
+..
+menu:
+  docs:
+    parent: "prologue"
+weight: 010
+..
+```
+
+## Page navigation
+
+### Set levels
+
+The On this page (Table of Contents) section is automatically generated. In `./config/_default/markup.toml`, set the levels you'd like to show:
+
+```toml
+[tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 2
+```
+
+## Footer navigation
+
+### Add to footer menu
 
 ```toml
 [[footer]]
