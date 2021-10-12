@@ -51,7 +51,7 @@ See also the Markdown Guide: [Images](https://www.markdownguide.org/basic-syntax
 
 Using `img`, `src`, and `data-src`.
 
-{{< alert icon="💡" text="Valid image formats are: jpg, png, tiff, bmp, and gif." />}}
+{{< alert icon="💡" text="Valid image formats are: webp, jpg, png, tiff, bmp, and gif." />}}
 
 Add a small image in your page bundle to your page using shortcode `img-simple`.
 
@@ -69,7 +69,7 @@ Will be processed into:
 
 Using `figure` and `figcaption` with `img`, `src`, and `data-srcset`. With `noscript` fallback.
 
-{{< alert icon="💡" text="Valid image formats are: jpg, png, tiff, and bmp." />}}
+{{< alert icon="💡" text="Valid image formats are: webp, jpg, png, tiff, and bmp." />}}
 
 Add a large image in your page bundle to your page using shortcode `img`.
 

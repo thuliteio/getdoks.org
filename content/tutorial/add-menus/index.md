@@ -1,7 +1,7 @@
 ---
 title: "4. Add Menus"
-description: "Add pages or links to the main, social, docs, or footer menu."
-lead: "Add pages or links to the main, social, docs, or footer menu."
+description: "Add pages or links to the main, social, docs, or footer menu. Set page level navigation."
+lead: "Add pages or links to the main, social, docs, or footer menu. Set page level navigation."
 date: 2020-11-30T14:27:39+01:00
 lastmod: 2020-11-30T14:27:39+01:00
 draft: false
@@ -13,11 +13,14 @@ weight: 060
 toc: true
 ---
 
-{{< img-simple src="menu-structure.png" alt="Menu Structure" class="border rounded p-1" >}}
+{{< img-simple src="navigation-mobile.png" alt="Navigation Mobile" class="d-block mx-auto shadow my-5" >}}
+{{< img-simple src="navigation-structure-mobile.png" alt="Navigation Structure Mobile" class="d-block mx-auto my-5 shadow" >}}
 
-Open `./config/_default/menus.toml` in your code editor.
+Open `./config/_default/menus/menus.en.toml` in your code editor.
 
-## Add to main menu
+## Global navigation
+
+### Add to main menu
 
 ```toml
 [[main]]
@@ -29,9 +32,14 @@ Open `./config/_default/menus.toml` in your code editor.
   name = "Blog"
   url = "/blog/"
   weight = 20
+
+[[main]]
+  name = "Community"
+  url = "https://github.com/h-enk/doks/discussions"
+  weight = 50
 ```
 
-## Add to social menu
+### Add to social menu
 
 {{< alert icon="👉" text="Doks uses <a href=\"https://feathericons.com/\">Feather Icons</a>" />}}
 
@@ -50,9 +58,11 @@ Open `./config/_default/menus.toml` in your code editor.
   weight = 20
 ```
 
-## Add to docs menu
+## Section navigation
 
-Add first level menu items:
+### Add to docs menu
+
+Add first level menu items (make sure the identifiers are unique):
 
 ```toml
 [[docs]]
@@ -74,7 +84,7 @@ Add first level menu items:
   url = "/docs/help/"
 ```
 
-Add second level menu items in the frontmatter of a [documentation page]({{< relref "add-pages#add-a-documentation-page" >}}):
+Add second level menu items in the frontmatter of a [documentation page]({{< relref "add-pages#add-a-documentation-page" >}}), by referencing a first level menu item (using it's identifier):
 
 ```md
 ..
@@ -85,7 +95,22 @@ weight: 010
 ..
 ```
 
-## Add to footer menu
+## Page navigation
+
+### Set levels
+
+The On this page (Table of Contents) section is automatically generated. In `./config/_default/markup.toml`, set the levels you'd like to show (default only `<h2>` and `<h3>` headings are shown):
+
+```toml
+[tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 2
+```
+
+## Footer navigation
+
+### Add to footer menu
 
 ```toml
 [[footer]]

@@ -105,11 +105,11 @@ In `./content/en/versions.md`, set `draft: false`.
 
 ### Set branch deploys
 
-In Netlify, under Site Settings > Build & deploy > Branches, set Branch deploys to All.
-
 {{< img-simple src="deploy-all-branches.png" alt="Deploy All Branches" class="d-block mx-auto shadow my-5" >}}
 
-## Process
+In Netlify, under Site Settings > Build & deploy > Branches, set Branch deploys to All.
+
+## Release process
 
 1. Prepare new release in local code
 2. Push changes
@@ -117,19 +117,23 @@ In Netlify, under Site Settings > Build & deploy > Branches, set Branch deploys 
 
 ### Notes
 
-- When pushing changes to the master or main branch, the changes will be part of the next release, and already visible on the live website.
+- When pushing changes to the master (or main) branch, the changes will be part of the next release, and __already__ visible on the live website.
 - Use a next branch (merge when issuing the next release), when you do __not__ want future release changes already visible on the live website.
-- Use a separate branch or repo, if would like to be able to update previous releases.
+- Use a separate branch or repository, if you would like to be able to __update__ previous releases.
 
 ## Switch content
 
-### Header switch
+### Version switch
 
 {{< img-simple src="versioned-docs-support.png" alt="Versioned Documentation Support" class="d-block mx-auto shadow my-5" >}}
 
-### All versions page
+The version switch is part of the docs section navigation (available on all docs pages), and only shows versions __known__ (so, no future versions) — given a specific version.
+
+### Versions page
 
 {{< img-simple src="all-versions-page.png" alt="All Versions Page" class="d-block mx-auto shadow my-5" >}}
+
+The versions page (not versioned itself, for it's not part of the docs section) always (for all versions) shows __all__ versions available.
 
 ## Resources
 

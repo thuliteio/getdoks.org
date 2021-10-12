@@ -101,7 +101,10 @@ Built in 985 ms
 
 {{< img-simple src="multilingual-support.png" alt="Multilingual Support" class="d-block mx-auto shadow my-5" >}}
 
-The switch is part of the global navigation (available on all pages). If the current page is __available__ in the newly selected language, the corresponding page in the newly selected language is shown. If the current page is __not available__ in the newly selected language, the homepage of the newly selected language is shown.
+The language switch is part of the global navigation (available on all pages).
+
+- If the current page is __available__ in the newly selected language, the corresponding page in the newly selected language is shown.
+- If the current page is __not available__ in the newly selected language, the homepage of the newly selected language is shown.
 
 ## Resources
 
