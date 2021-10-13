@@ -83,6 +83,13 @@ button#doks-versions {
 .doks-subnavbar {
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid $gray-200;
+  height: 56px;
+}
+
+@include media-breakpoint-up(md) {
+  .doks-subnavbar {
+    height: 59px;
+  }
 }
 
 .doks-subnavbar .nav-link {
