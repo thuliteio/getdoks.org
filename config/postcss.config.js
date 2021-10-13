@@ -19,6 +19,7 @@ module.exports = {
         'th',
         'td',
         'h5',
+        'aria-selected',
         ...whitelister([
           './assets/scss/components/_carbonads.scss',
           './assets/scss/components/_buttons.scss',
