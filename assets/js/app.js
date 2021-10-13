@@ -10,6 +10,16 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 }
 /* eslint-enable */
 
+var docsearch = document.getElementById('docsearch');
+
+if (docsearch !== null) {
+  document.addEventListener('click', buttonBlur);
+}
+
+function buttonBlur() {
+  docsearch.firstElementChild.blur();
+}
+
 /*
 var search = document.getElementById('search');
 
