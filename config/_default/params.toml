@@ -59,7 +59,7 @@ alert = true
 alertDismissable = true
 # alertText = "Help Doks grow by supporting us on Open Collective. <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Become a backer!</a>"
 # alertText = "Better UX navigation, multilingual and i18n support, and more. <a class=\"alert-link stretched-link\" href=\"/blog/doks-v0.3/\">Check out what's new!</a>"
-alertText = "What Doks future features are important to you? We want to hear from you! <a class=\"alert-link stretched-link\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSe0DItAFv2cNSC0S_L6DQBw9ofB0ogYvZqeoWHHRX-Aal-5zQ/viewform?usp=sf_link\" target=\"_blank\" rel=\"noopener\">Take the 2021 Doks Survey</a>"
+alertText = "What Doks future features are important to you? <a class=\"alert-link stretched-link\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSe0DItAFv2cNSC0S_L6DQBw9ofB0ogYvZqeoWHHRX-Aal-5zQ/viewform?usp=sf_link\" target=\"_blank\" rel=\"noopener\">Take the 2021 Doks Survey</a>"
 
 # Edit Page
 docsRepo = "https://github.com/h-enk/getdoks.org"
