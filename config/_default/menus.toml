@@ -82,10 +82,10 @@
   url = "/docs/contributing/code-of-conduct/"
   weight = 30
 
-# [[footer]]
-#   name = "Open Collective"
-#   url = "https://opencollective.com/doks"
-#   weight = 40
+[[footer]]
+  name = "Open Collective"
+  url = "https://opencollective.com/doks"
+  weight = 40
 
 [[tutorial]]
   name = "Tutorial"
