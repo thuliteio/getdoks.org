@@ -6,7 +6,7 @@
 		</nav>
 	</div>
 	<main class="docs-content col-lg-11 mx-xl-auto">
-		<h1 class="text-center">{{ .Title | humanize }}</h1>
+		<h1 class="text-center">{{ .Title | title }}</h1>
 		<p class="lead text-center">{{ .Params.lead | safeHTML }}</p>
 		<p class="lead text-center">Showcase {{ .Data.Singular }} {{ .Title }}</p>
 		<h2>Recent</h2>

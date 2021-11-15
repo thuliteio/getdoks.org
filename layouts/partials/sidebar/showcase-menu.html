@@ -26,7 +26,7 @@
 <ul class="list-unstyled">
   {{ range .Site.Taxonomies.types }}
     {{ $active := eq .Page.Title $currentPage.Title -}}
-    <li><a class="docs-link d-flex{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}"><span>{{ .Page.Title | humanize }}</span><span class="badge bg-light text-dark fw-normal ms-auto me-lg-4">{{ .Count }}</span></a></li>
+    <li><a class="docs-link d-flex{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}"><span>{{ .Page.Title | title }}</span><span class="badge bg-light text-dark fw-normal ms-auto me-lg-4">{{ .Count }}</span></a></li>
   {{ end }}
 </ul>
 
@@ -34,7 +34,7 @@
 <ul class="list-unstyled">
   {{ range .Site.Taxonomies.functionalities }}
     {{ $active := eq .Page.Title $currentPage.Title -}}
-    <li><a class="docs-link d-flex{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}"><span>{{ .Page.Title | humanize }}</span><span class="badge bg-light text-dark fw-normal ms-auto me-lg-4">{{ .Count }}</span></a></li>
+    <li><a class="docs-link d-flex{{ if $active }} active{{ end }}" href="{{ .Page.Permalink }}"><span>{{ .Page.Title | title }}</span><span class="badge bg-light text-dark fw-normal ms-auto me-lg-4">{{ .Count }}</span></a></li>
   {{ end }}
 </ul>
 
