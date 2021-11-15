@@ -12,4 +12,7 @@ menu:
     parent: "browse"
 weight: 030
 toc: false
+pinned: false
+types: ["developer"]
+functionalities: ["dark mode", "search"]
 ---

@@ -29,8 +29,8 @@
             {{- $active = or $active (eq .Name $current.Title) -}}
             {{- $active = or $active (and (eq .Name "Docs") (eq $current.Section "docs")) -}}
             {{- $active = or $active (and (eq .Name "Tutorial") (eq $current.Section "tutorial")) -}}
-            {{- $active = or $active (and (eq .Name "Showcase") (eq $current.Section "showcase")) -}}
-            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+            {{- $active = or $active (and (eq .Name "Showcase") (eq $current.Section "showcase" "types" "functionalities")) -}}
+            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
             <li class="nav-item">
               <a class="nav-link ps-0 py-1{{ if $active }} active{{ end }}" href="{{ .URL | relURL }}">{{ .Name }}</a>
             </li>
@@ -146,7 +146,7 @@
 </div>
 {{ end -}}
 
-{{ if eq .Section "showcase" -}}
+{{ if or (eq .Section "showcase") (eq .Data.Singular .Kind "type") (eq .Data.Singular .Kind "functionality") -}}
 <nav class="doks-subnavbar py-2 sticky-lg-top" aria-label="Secondary navigation">
   <div class="container-xxl d-flex align-items-md-center">
 

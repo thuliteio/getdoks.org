@@ -46,7 +46,7 @@
 
 [[main]]
   name = "Showcase"
-  url = "/showcase/localstack/"
+  url = "/showcase/"
   weight = 30
 
 [[main]]

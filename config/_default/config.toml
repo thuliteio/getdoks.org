@@ -54,9 +54,13 @@ rel  = "sitemap"
 
 [taxonomies]
   contributor = "contributors"
+  type = "types"
+  functionality = "functionalities"
 
 [permalinks]
   blog = "/blog/:title/"
+  types = "/showcase/types/:title/"
+  functionalities = "/showcase/functionalities/:title/"
 
 [minify.tdewolff.html]
   keepWhitespace = false

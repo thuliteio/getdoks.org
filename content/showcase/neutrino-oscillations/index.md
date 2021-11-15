@@ -12,4 +12,7 @@ menu:
     parent: "browse"
 weight: 020
 toc: false
+pinned: false
+types: ["eBook"]
+functionalities: ["dark mode", "search", "KaTeX"]
 ---

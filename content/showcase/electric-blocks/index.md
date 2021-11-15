@@ -12,6 +12,9 @@ menu:
     parent: "browse"
 weight: 060
 toc: false
+pinned: false
+types: ["project"]
+functionalities: ["blog", "dark mode", "search"]
 ---
 
 This mod is sponsored by the University of Idaho as part of the Capstone Design project.

@@ -12,4 +12,7 @@ menu:
     parent: "browse"
 weight: 140
 toc: false
+pinned: false
+types: ["project"]
+functionalities: ["dark mode", "breadcrumb"]
 ---

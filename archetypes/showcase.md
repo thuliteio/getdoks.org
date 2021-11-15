@@ -12,8 +12,7 @@ menu:
     parent: "browse"
 weight: 999
 toc: false
+pinned: false
+types: []
+functionalities: []
 ---
-
-<div class="card my-3">
-  {{< img src="{{ .Name | urlize }}.jpg" alt="{{ replace .Name "-" " " | title }}" class="card-img-top m-0 p-1" >}}
-</div>

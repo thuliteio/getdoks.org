@@ -17,7 +17,9 @@
 		{{ end -}}
 			<h1>{{ .Title }}</h1>
 			<p class="lead">{{ .Params.lead | safeHTML }}</p>
-			{{ partial "main/carbonads.html" . }}
+			{{ if ne (hugo.Environment) "development" -}}
+				{{ partial "main/carbonads.html" . }}
+			{{ end -}}
 			{{ if ne .Params.toc false -}}
 			<nav class="d-xl-none" aria-label="Quaternary navigation">
 				{{ partial "sidebar/docs-toc.html" . }}

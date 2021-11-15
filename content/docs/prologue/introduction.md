@@ -47,7 +47,7 @@ Get instructions on how to add even more to Doks. {{< section-last section="exte
 
 ### Showcase
 
-See what others have build with Doks. {{< section-first section="showcase" text="Showcase →">}}
+See what others have build with Doks. [Showcase →]({{< relref "showcase" >}})
 
 ## Contributing
 

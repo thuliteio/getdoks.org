@@ -1,14 +1,31 @@
-.contributors .content,
-.blog .content,
-.page .content,
-.error404 .content,
-.newsletter .content,
-.confirmation .content,
-.docs.list .content,
-.tutorial.list .content,
-.showcase.list .content {
+.single .content {
   padding-top: 1rem;
   padding-bottom: 3rem;
+}
+
+.single.home .content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list.taxonomy.contributors .content,
+.list.term.contributors .content,
+.list.section.blog .content,
+.list.section.docs .content,
+.list.section.tutorial .content,
+.list.taxonomy.types .content,
+.list.taxonomy.functionalities .content {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.single.section.tutorial .content,
+.single.section.showcase .content,
+.list.section.showcase .content,
+.list.term.types .content,
+.list.term.functionalities .content {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 h1,
@@ -80,23 +97,23 @@ a.btn:focus {
   text-decoration: none;
 }
 
-.section {
+.content .section {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.section-md {
+.content .section-md {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.section-sm {
+.content .section-sm {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 /*
-.section svg {
+.content .section svg {
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -124,9 +141,9 @@ body {
     .docs-sidebar {
       position: -webkit-sticky;
       position: sticky;
-      top: 4rem;
+      top: 3.625rem;
       z-index: 1000;
-      height: calc(100vh - 4rem);
+      height: calc(100vh - 3.625rem);
     }
   }
 }

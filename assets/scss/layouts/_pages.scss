@@ -56,10 +56,12 @@ p.meta {
   margin: 1.5rem 0;
 }
 
+/*
 .view-website {
   padding-left: 0.46875rem;
   padding-right: 0.46875rem;
 }
+*/
 
 .netlify-link {
   margin-top: 0.03125rem;
@@ -79,4 +81,12 @@ p.meta {
 .protocol-labs-link {
   margin-top: -0.75rem;
   margin-bottom: -0.75rem;
+}
+
+.showcase.list h2 {
+  margin: 3rem 0 2rem;
+}
+
+.showcase.list h2.heading-pinned {
+  margin: 2rem 0;
 }

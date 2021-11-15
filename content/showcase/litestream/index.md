@@ -12,4 +12,7 @@ menu:
     parent: "browse"
 weight: 090
 toc: false
+pinned: false
+types: ["hardware"]
+functionalities: ["blog"]
 ---
