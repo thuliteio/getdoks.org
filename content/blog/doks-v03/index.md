@@ -61,7 +61,7 @@ graph TD
 
 _Note, this is an image, because Mermaid support is switched off on this site._
 
-[Mermaid →]({{< relref "mermaid" >}})
+[Mermaid →]({{< relref "docs/extensions/mermaid" >}})
 
 ## Videos shortcode
 
