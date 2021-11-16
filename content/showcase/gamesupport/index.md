@@ -14,5 +14,5 @@ weight: 100
 toc: false
 pinned: true
 types: ["product"]
-functionalities: ["blog", "dark mode"]
+functionalities: ["blog", "dark mode", "custom font"]
 ---

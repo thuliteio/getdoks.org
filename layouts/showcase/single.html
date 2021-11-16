@@ -27,7 +27,7 @@
 			{{ $image := index .Params.images 0 -}}
 			{{ .Scratch.Set "src" $image -}}
 			{{ .Scratch.Set "alt" .Title -}}
-			{{ .Scratch.Set "class" "card-img-top m-0 p-1" -}}
+			{{ .Scratch.Set "class" "card-img-top m-0 p-0" -}}
 			<div class="card my-3">
 				{{ partial "main/img.html" . }}
 			</div>
