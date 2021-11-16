@@ -83,7 +83,7 @@ p.meta {
   margin-bottom: -0.75rem;
 }
 
-.showcase.list h2 {
+.showcase.list h2:not(.offcanvas-title) {
   margin: 3rem 0 2rem;
 }
 
