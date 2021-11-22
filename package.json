@@ -47,7 +47,7 @@
     "hugo-installer": "^3.1",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
-    "markdownlint-cli": "^0.29",
+    "markdownlint-cli": "^0.30",
     "node-fetch": "^3.1",
     "plausible-tracker": "^0.3.4",
     "postcss": "^8.3",
