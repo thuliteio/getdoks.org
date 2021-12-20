@@ -33,31 +33,31 @@
     "@babel/cli": "^7.16",
     "@babel/core": "^7.16",
     "@babel/preset-env": "^7.16",
-    "@docsearch/js": "^3.0.0-alpha.41",
-    "@fullhuman/postcss-purgecss": "^4.0",
+    "@docsearch/js": "^3.0.0-alpha.42",
+    "@fullhuman/postcss-purgecss": "^4.1",
     "auto-changelog": "^2.3.0",
     "autoprefixer": "^10.4",
     "bootstrap": "^5.1",
     "clipboard": "^2.0",
     "dotenv": "^10.0.0",
     "encoding": "^0.1.13",
-    "eslint": "^8.2",
+    "eslint": "^8.5",
     "exec-bin": "^1.0.0",
     "highlight.js": "^11.3",
     "hugo-installer": "^3.1",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
-    "markdownlint-cli": "^0.29",
+    "markdownlint-cli": "^0.30",
     "node-fetch": "^3.1",
     "plausible-tracker": "^0.3.4",
-    "postcss": "^8.3",
-    "postcss-cli": "^9.0",
+    "postcss": "^8.4",
+    "postcss-cli": "^9.1",
     "purgecss-whitelister": "^2.4",
     "shx": "^0.3.3",
-    "stylelint": "^14.0",
-    "stylelint-config-standard-scss": "^2.0.1"
+    "stylelint": "^14.1",
+    "stylelint-config-standard-scss": "^3.0"
   },
   "otherDependencies": {
-    "hugo": "0.89.2"
+    "hugo": "0.91.0"
   }
 }
