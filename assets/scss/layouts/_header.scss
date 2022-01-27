@@ -337,3 +337,13 @@ button#doks-versions {
 .navbar-light .navbar-nav .active .nav-link {
   color: $primary;
 }
+
+#search-placeholder .placeholder {
+  width: 7.25rem;
+}
+
+@include media-breakpoint-up(md) {
+  #search-placeholder .placeholder {
+    width: 7.875rem;
+  }
+}

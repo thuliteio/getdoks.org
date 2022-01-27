@@ -82,8 +82,16 @@
       <input id="search" class="form-control is-search" type="search" placeholder="Search docs..." aria-label="Search docs..." autocomplete="off">
     </form>
     -->
-
+    <!--
     <div id="docsearch" class="me-auto"></div>
+    -->
+
+    <div class="d-inline-flex me-auto placeholder-glow">
+      <div id="search-placeholder" aria-hidden="true">
+        <a href="#" tabindex="-1" class="btn btn-light disabled placeholder"></a>
+      </div>
+      <div id="docsearch"></div>
+    </div>
 
     {{ if eq .Site.Params.options.docsVersioning true -}}
     <div class="dropdown ms-3">

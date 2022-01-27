@@ -75,11 +75,9 @@
   color: var(--docsearch-primary-color);
 }
 
-@include media-breakpoint-up(md) {
-  .DocSearch-Button::after {
-    content: "Search docs";
-    margin: 0 0 0.25rem 0.75rem;
-  }
+.DocSearch-Button::after {
+  content: "Search docs";
+  margin: 0 0 0.25rem 0.75rem;
 }
 
 .DocSearch-Button-Container {

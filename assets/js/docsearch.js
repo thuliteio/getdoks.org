@@ -1,5 +1,11 @@
 import docsearch from '@docsearch/js';
 
+var searchPlaceholder = document.getElementById('search-placeholder');
+
+if (searchPlaceholder !== null) {
+  searchPlaceholder.className = 'd-none';
+}
+
 docsearch({
   container: '#docsearch',
   appId: 'KMWY81ZWS3',

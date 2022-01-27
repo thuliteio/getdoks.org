@@ -10,6 +10,7 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
 }
 /* eslint-enable */
 
+/*
 var docsearch = document.getElementById('docsearch');
 
 if (docsearch !== null) {
@@ -19,6 +20,7 @@ if (docsearch !== null) {
 function buttonBlur() {
   docsearch.firstElementChild.blur();
 }
+*/
 
 /*
 var search = document.getElementById('search');
