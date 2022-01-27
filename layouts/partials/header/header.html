@@ -100,6 +100,8 @@
         <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
       </ul>
     </div>
+    {{ else -}}
+      <span class="navbar-text fs-6 d-none d-sm-block">v{{ $data := getJSON "https://raw.githubusercontent.com/h-enk/doks/master/package.json" }}{{ $data.version }}</span>
     {{ end -}}
 
     <button class="btn doks-sidebar-toggle d-lg-none ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#doks-docs-nav" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle documentation navigation">
