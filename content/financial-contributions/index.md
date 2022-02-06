@@ -1,14 +1,13 @@
 ---
 title: "Financial Contributions"
 description: "Help support the team developing Doks by becoming a financial contributor."
-lead: "Help support the team developing Doks by becoming a financial contributor."
 date: 2022-02-05T20:40:38+01:00
 lastmod: 2022-02-05T20:40:38+01:00
 draft: false
 images: []
 ---
 
-We use [Open Collective](https://opencollective.com/) to receive contributions, share our budget, and manage expenses. Visit the [Doks Open Collective page](https://opencollective.com/doks).
+Help support the team developing Doks by becoming a financial contributor. We use [Open Collective](https://opencollective.com/) to receive contributions, share our budget, and manage expenses. Visit the [Doks Open Collective page](https://opencollective.com/doks).
 
 ## Become a Sponsor
 
