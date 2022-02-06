@@ -3,6 +3,7 @@
   <div class="col-md-12 col-lg-10 col-xl-8">
     <article>
       <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
       {{ .Content }}
     </article>
   </div>
