@@ -26,3 +26,7 @@ Become a backer starting at $5.00 per month. Your avatar will show up on the [Do
 Make a custom one-time or recurring contribution.
 
 [![Make a Donation](contribute-button.png)](https://opencollective.com/doks/donate)
+
+## Thanks
+
+Thanks for your contribution!
