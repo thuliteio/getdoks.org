@@ -75,6 +75,10 @@ editPage = true
   darkMode = true
   bootStrapJs = true
   highLight = true
-  collapsibleSidebar = true
   multilingualMode = false # Not yet functional
   docsVersioning = false # Not yet functional
+
+[menu]
+  [menu.section]
+    auto = false
+    collapsibleSidebar = true
