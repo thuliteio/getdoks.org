@@ -3,7 +3,7 @@
   <div class="col-md-12 col-lg-10 col-xl-8">
     <article>
       <div class="blog-header">
-        <h1>{{ .Title }}</h1>
+        <h1>{{ .Title }}{{ with .Params.emoji -}}&nbsp;{{ . | emojify }}{{ end -}}</h1>
         {{ partial "main/blog-meta.html" . }}
       </div>
       <p class="lead">{{ .Params.lead | safeHTML }}</p>

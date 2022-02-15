@@ -34,7 +34,7 @@
         <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p>
       </div>
       <div class="col-lg-5">
-        <h2 class="h4">Fast by default ⚡️</h2>
+        <h2 class="h4">Fast by default {{ ":zap:" | emojify }}</h2>
         <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p>
       </div>
       <div class="col-lg-5">
@@ -124,18 +124,18 @@
   <div class="container">
     <div class="row justify-content-center align-items-center text-center mt-lg-3">
       <div class="col-lg-7">
-        <p class="fs-4 mt-4">⭐</p>
+        <p class="fs-4 mt-4">{{ ":star:" | emojify }}</p>
         <h2 class="h4 mt-0">Manage the modern web</h2>
         <p>The modern web is decoupled and modular. Doks uses npm to centralize dependency management, making it <a href="{{ "docs/help/how-to-update/" | relURL }}">easy to update</a> resources, build tooling, plugins, and build scripts.</p>
       </div>
       <div class="col-lg-7">
-        <p class="fs-4 mt-4">🚀</p>
+        <p class="fs-4 mt-4">{{ ":rocket:" | emojify }}</p>
         <h2 class="h4 mt-0">Build your site your way</h2>
         <p><a href="{{ "docs/prologue/introduction/" | relURL }}">Get started</a> with the tutorial or quick start. Use Doks as a starter or child theme. Easily switch main functionalities on/off — pick only what fits your use case. Get help if you need it.</p>
       </div>
 
       <div class="col-lg-7">
-        <p class="fs-4 mt-4">⚙️</p>
+        <p class="fs-4 mt-4">{{ ":gear:" | emojify }}</p>
         <h2 class="h4 mt-0">Make Doks fully yours</h2>
         <p>Multilingual and i18n support, versioned documentation support, KaTeX math typesetting, Mermaid diagrams and visualizations, highlight.js syntax highlighting, and more.</p>
       </div>
@@ -154,7 +154,7 @@
         {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "blog")  -}}
         <div class="card">
           <div class="card-body">
-            <h3><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
+            <h3><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}{{ with .Params.emoji -}}&nbsp;{{ . | emojify }}{{ end -}}</a></h3>
             <p>{{ .Params.lead | safeHTML }}</p>
             {{ partial "main/blog-meta.html" . -}}
           </div>

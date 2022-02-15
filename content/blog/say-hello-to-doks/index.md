@@ -1,5 +1,6 @@
 ---
-title: "Say hello to Doks 👋"
+title: "Say hello to Doks"
+emoji: ":wave:"
 description: "Introducing Doks, a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
 lead: "Introducing Doks, a Hyas theme build by the creator of Hyas. Doks helps you build modern documentation websites that are secure, fast, and SEO-ready — by default."
 date: 2020-11-04T09:19:42+01:00
@@ -21,7 +22,7 @@ Use the standard setup or easily make it your own.
 Get all the [Hyas](https://gethyas.com/) goodness:
 
 - Security aware
-- Fast by default ⚡️
+- Fast by default :zap:
 - SEO-ready
 - Development tools (linting, cleaning)
 - Bootstrap framework
@@ -29,7 +30,7 @@ Get all the [Hyas](https://gethyas.com/) goodness:
 
 ### Plus
 
-- Full text search — using [FlexSearch](https://github.com/nextapps-de/flexsearch) 🚀
+- Full text search — using [FlexSearch](https://github.com/nextapps-de/flexsearch) :green_heart:
 - Page layouts (landing page, blog, documentation layout)
 - Dark mode — switch to a low-light UI with the click of a button
 

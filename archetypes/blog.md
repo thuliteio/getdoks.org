@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+emoji: ":tada:"
 description: ""
 lead: ""
 date: {{ .Date }}

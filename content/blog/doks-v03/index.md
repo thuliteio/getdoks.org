@@ -116,7 +116,7 @@ Now, you can also (next to using the image shortcodes) add an image using markdo
 
 Thanks for all contributions to discussions, bugfixes, features, and documentation!
 
-[32u2](https://github.com/32u2), [AsbjornOlling](https://github.com/AsbjornOlling), [deining](https://github.com/deining), [FileFabrik](https://github.com/FileFabrik), [limichange](https://github.com/limichange), [LunaticMuch](https://github.com/LunaticMuch), [mikepianka](https://github.com/mikepianka), [mroswell](https://github.com/mroswell), [OCram85](https://github.com/OCram85), [rslifka](https://github.com/rslifka), [sharjeelaziz](https://github.com/sharjeelaziz), [soichih](https://github.com/soichih), [TheTimeWalker](https://github.com/TheTimeWalker), [umatare5](https://github.com/umatare5), [Yvand](https://github.com/Yvand), and [Zerotask](https://github.com/Zerotask) 💪
+[32u2](https://github.com/32u2), [AsbjornOlling](https://github.com/AsbjornOlling), [deining](https://github.com/deining), [FileFabrik](https://github.com/FileFabrik), [limichange](https://github.com/limichange), [LunaticMuch](https://github.com/LunaticMuch), [mikepianka](https://github.com/mikepianka), [mroswell](https://github.com/mroswell), [OCram85](https://github.com/OCram85), [rslifka](https://github.com/rslifka), [sharjeelaziz](https://github.com/sharjeelaziz), [soichih](https://github.com/soichih), [TheTimeWalker](https://github.com/TheTimeWalker), [umatare5](https://github.com/umatare5), [Yvand](https://github.com/Yvand), and [Zerotask](https://github.com/Zerotask) :muscle:
 
 ## Become a backer
 

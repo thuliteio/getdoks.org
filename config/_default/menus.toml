@@ -78,6 +78,12 @@
   url = "https://github.com/h-enk/doks/discussions"
   parent = "community"
 
+[[main]]
+  name = "Open Collective"
+  weight = 30
+  url = "https://opencollective.com/doks"
+  parent = "community"
+
 # [[main]]
 #   name = "Get Started"
 #   weight = 30

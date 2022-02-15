@@ -1,0 +1,112 @@
+---
+title: "Doks v0.4"
+emoji: ":tada:"
+description: ""
+lead: "Version 0.4 is here! Multi level section menu (three levels deep), auto generated section menu, new docs tree — with a single command, sub navigation main menu (one level deep), and more."
+date: 2022-02-14T11:58:45+01:00
+lastmod: 2022-02-14T11:58:45+01:00
+draft: false
+weight: 50
+images: []
+contributors: ["Henk Verlinde"]
+---
+
+## Multi level section menu
+
+{{< img-simple src="multi-level-section-menu.png" alt="Multi level section menu" class="d-block mx-auto shadow my-5" >}}
+
+Now you can have a multi level section menu (three levels deep). Works with the breadcrumb option if set.
+
+{{< img-simple src="multi-level-breadcrumb.png" alt="Multi level breadcrumb" class="d-block mx-auto shadow my-5" >}}
+
+[Menus →]({{< relref "docs/recipes/menus" >}})
+
+## Auto generated section menu
+
+```toml
+[menu]
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
+```
+
+You now have the option to let Doks auto generate the section menu from the directory folder (tree) structure (no manual configuration needed and respects set weight).
+
+The auto generated section menu is available for both the collapsibile section menu and the default one.
+
+[Menus →]({{< relref "docs/recipes/menus" >}})
+
+## New docs tree
+
+Add a new docs tree — with a single command:
+
+```bash
+npm run create -- --kind docs [section]
+```
+
+For example, create a new docs tree named guides:
+
+```bash
+npm run create -- --kind docs guides
+```
+
+[Commands →]({{< relref "docs/prologue/commands" >}})
+
+## Sub navigation main menu
+
+{{< img-simple src="sub-navigation-main-menu.png" alt="Sub navigation main menu" class="d-block mx-auto shadow my-5" >}}
+
+Doks now also comes with sub navigation for the main menu (one level deep).
+
+[Menus →]({{< relref "docs/recipes/menus" >}})
+
+## Details shortcode
+
+{{< img-simple src="details-shortcode.png" alt="Details shortcode" class="d-block mx-auto shadow my-5" >}}
+
+Use the details shortcode to easily create a disclosure widget in which information is visible only when the widget is toggled into `open` state.
+
+```md
+{{</* details "Markdown and HTML" */>}}
+_Markdown_ and <em>HTML</em> will be rendered.
+{{</* /details */>}}
+```
+
+[Details →]({{< relref "docs/recipes/details" >}})
+
+## Alert types
+
+{{< img-simple src="alert-types.png" alt="Alert types" class="d-block mx-auto shadow my-5" >}}
+
+You can now add one of the contextual Bootstrap class names to page alerts.
+
+```md
+{{</* alert icon="👉" context="info" text="A simple info alert — check it out!" /*/>}}
+```
+
+[Alerts →]({{< relref "docs/recipes/alerts" >}})
+
+## Other features and fixes
+
+- Adds scroll position lock for default docs sidebar
+
+[Full changelog →](https://github.com/h-enk/doks/blob/master/CHANGELOG.md)
+
+## What's next
+
+- Better blog pages
+- Add site wide search as an option
+
+[Milestones →](https://github.com/h-enk/doks/milestones)
+
+## Contributors
+
+Thank you for your contributions to discussions, bugfixes, features, or documentation!
+
+[How to Contribute →](/docs/contributing/how-to-contribute/)
+
+### Support Doks :green_heart:
+
+Help support the team developing Doks by [becoming a financial contributor](/docs/contributing/financial-contributions/).
+
+[Contribute on Open Collective →](https://opencollective.com/doks)

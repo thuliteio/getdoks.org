@@ -100,7 +100,7 @@ Doks now supports [Bootstrap styling](https://getbootstrap.com/docs/5.0/content/
 
 [Milestones →](https://github.com/h-enk/doks/milestones)
 
-## 250+ GitHub stars 🌟🎉
+## 250+ GitHub stars :star2::tada:
 
 Thanks for all contributions to documentation, features, bugfixes and discussions so far! Doks is going fast on its mission to make the easiest and most fun Hugo theme for building modern documentation websites.
 
