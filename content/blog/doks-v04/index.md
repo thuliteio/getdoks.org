@@ -1,8 +1,8 @@
 ---
 title: "Doks v0.4"
 emoji: ":tada:"
-description: ""
-lead: "Version 0.4 is here! Multi level section menu (three levels deep), auto generated section menu, new docs tree — with a single command, sub navigation main menu (one level deep), and more."
+description: "Version 0.4 is here! Multi level section menu (three levels deep), auto generated section menu, new docs based tree — with a single command, sub navigation main menu (one level deep), and more."
+lead: "Version 0.4 is here! Multi level section menu (three levels deep), auto generated section menu, new docs based tree — with a single command, sub navigation main menu (one level deep), and more."
 date: 2022-02-14T11:58:45+01:00
 lastmod: 2022-02-14T11:58:45+01:00
 draft: false
@@ -19,7 +19,7 @@ Now you can have a multi level section menu (three levels deep). Works with the 
 
 {{< img-simple src="multi-level-breadcrumb.png" alt="Multi level breadcrumb" class="d-block mx-auto shadow my-5" >}}
 
-[Menus →]({{< relref "docs/recipes/menus" >}})
+[Menus →]({{< relref "docs/recipes/menus#add-to-docs-menu" >}})
 
 ## Auto generated section menu
 
@@ -34,23 +34,23 @@ You now have the option to let Doks auto generate the section menu from the dire
 
 The auto generated section menu is available for both the collapsibile section menu and the default one.
 
-[Menus →]({{< relref "docs/recipes/menus" >}})
+[Menus →]({{< relref "docs/recipes/menus#configure" >}})
 
-## New docs tree
+## New docs based tree
 
-Add a new docs tree — with a single command:
+Create a docs based tree — with a single command:
 
 ```bash
 npm run create -- --kind docs [section]
 ```
 
-For example, create a new docs tree named guides:
+For example, create a docs based tree named guides:
 
 ```bash
 npm run create -- --kind docs guides
 ```
 
-[Commands →]({{< relref "docs/prologue/commands" >}})
+[Commands →]({{< relref "docs/prologue/commands#docs-based-tree" >}})
 
 ## Sub navigation main menu
 
@@ -58,13 +58,13 @@ npm run create -- --kind docs guides
 
 Doks now also comes with sub navigation for the main menu (one level deep).
 
-[Menus →]({{< relref "docs/recipes/menus" >}})
+[Menus →]({{< relref "docs/recipes/menus#add-to-main-menu" >}})
 
 ## Details shortcode
 
 {{< img-simple src="details-shortcode.png" alt="Details shortcode" class="d-block mx-auto shadow my-5" >}}
 
-Use the details shortcode to easily create a disclosure widget in which information is visible only when the widget is toggled into `open` state.
+Add a disclosure widget with the Doks details shortcode. Information is visible only when the widget is toggled into open state.
 
 ```md
 {{</* details "Markdown and HTML" */>}}
@@ -78,17 +78,44 @@ _Markdown_ and <em>HTML</em> will be rendered.
 
 {{< img-simple src="alert-types.png" alt="Alert types" class="d-block mx-auto shadow my-5" >}}
 
-You can now add one of the contextual Bootstrap class names to page alerts.
+You can now add context to page alerts (info, success, warning, or danger).
 
 ```md
 {{</* alert icon="👉" context="info" text="A simple info alert — check it out!" /*/>}}
 ```
 
-[Alerts →]({{< relref "docs/recipes/alerts" >}})
+[Alerts →]({{< relref "docs/recipes/alerts#context" >}})
 
 ## Other features and fixes
 
-- Adds scroll position lock for default docs sidebar
+### UX
+
+- Add scroll position lock for default docs sidebar
+- Set font weight active page to 500
+- Add [full width]({{< relref "docs/recipes/project-configuration#options" >}}) as an option
+- Support local Jost font from both [Google Fonts](https://fonts.google.com/specimen/Jost) and [indestructible type*](https://indestructibletype.com/Jost.html)
+
+### Edit page link
+
+- Support [docs repository subpath]({{< relref "docs/recipes/project-configuration#edit-page" >}})
+- Support [repository hosts]({{< relref "docs/recipes/project-configuration#edit-page" >}}) Bitbucket and BitbucketServer
+
+### Rendering
+
+- Simplify heading rendering
+- Add error handling image not found
+
+### Global alert
+
+- Make global alert uniquely dismissible (using MD5 hash on alert text)
+- Fix [Cumulative Layout Shift](https://web.dev/cls/) global alert
+
+### FlexSearch
+
+- Improve feedback no results found
+- Plainify index values
+- Fix arrow key navigation error
+- Add .Summary as fallback for description search results
 
 [Full changelog →](https://github.com/h-enk/doks/blob/master/CHANGELOG.md)
 

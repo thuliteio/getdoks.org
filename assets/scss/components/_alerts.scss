@@ -25,6 +25,16 @@
   color: $white;
 }
 
+.alert-info {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+}
+
+.alert-info .alert-link {
+  color: #04414d;
+}
+
 .alert-light {
   color: $black;
 }

@@ -59,3 +59,15 @@ Will be processed into:
 {{< alert icon="👉" >}}
 _Markdown_ and <em>HTML</em> will be rendered.
 {{< /alert >}}
+
+### Context
+
+Add context to page alerts (info, success, warning, or danger).
+
+```md
+{{</* alert icon="👉" context="info" text="A simple info alert — check it out!" /*/>}}
+```
+
+Will be processed into:
+
+{{< alert icon="👉" context="info" text="A simple info alert — check it out!" />}}

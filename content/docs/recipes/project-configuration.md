@@ -274,8 +274,14 @@ alertText = "Like Doks? <a class=\"alert-link\" href=\"https://github.com/h-enk/
 #### Edit page
 
 ```toml
+# repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
+repoHost = "GitHub"
+#repoHost = "Gitea"
 docsRepo = "https://github.com/h-enk/doks"
-editPage = true
+docsRepoBranch = "master"
+docsRepoSubPath = ""
+editPage = false
+lastMod = false
 ```
 
 #### Options
@@ -293,6 +299,7 @@ Switch main functionalities on/off — also optimizing CSS + JS footprint.
   breadCrumb = false
   highLight = true
   kaTex = false
+  fullWidth = false
 ```
 
 ## next

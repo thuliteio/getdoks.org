@@ -30,12 +30,33 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
 [[main]]
   name = "Docs"
   url = "/docs/prologue/introduction/"
+# url = "/docs/1.0/prologue/introduction/"
   weight = 10
 
 [[main]]
   name = "Blog"
   url = "/blog/"
   weight = 20
+
+[[main]]
+  name = "Get Started"
+  weight = 30
+  identifier = "get-started"
+  url = "/docs/prologue/introduction/"
+
+[[main]]
+  name = "Quick Start"
+  weight = 40
+  identifier = "quick-start"
+  url = "/docs/prologue/quick-start/"
+  parent = "get-started"
+
+[[main]]
+  name = "Tutorial"
+  weight = 50
+  identifier = "tutorial"
+  url = "https://getdoks.org/tutorial/introduction/"
+  parent = "get-started"
 ```
 
 ### Add to social menu
@@ -59,11 +80,27 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
 
 ## Section navigation
 
-### Add to docs menu
+### Configure
 
-Add first level menu items:
+In `./config/_default/params.toml` set menu options:
 
 ```toml
+[menu]
+  [menu.section]
+    auto = true
+    collapsibleSidebar = true
+```
+
+You have the option to let Doks auto generate the section menu from the directory folder (tree) structure (no manual configuration needed and respects set weight).
+
+The auto generated section menu is available for both the collapsibile section menu and the default section menu.
+
+### Add to docs menu
+
+Set first level menu items in `./config/_default/menus/menus.en.toml`:
+
+```toml
+..
 [[docs]]
   name = "Prologue"
   weight = 10
@@ -72,19 +109,36 @@ Add first level menu items:
 
 [[docs]]
   name = "Help"
-  weight = 50
+  weight = 60
   identifier = "help"
   url = "/docs/help/"
+
+# [[docs]]
+#   name = "Lorem"
+#   weight = 70
+#   identifier = "lorem"
+#   url = "/docs/lorem/"
+..
 ```
 
-Add second level menu items in the frontmatter of a docs page:
+Set second level menu items in the frontmatter of a docs page (manual mode):
 
 ```md
 ..
 menu:
   docs:
-    parent: "prologue"
-weight: 010
+    parent: "lorem"
+    identifier: "ipsum"
+..
+```
+
+Set third level menu items in the frontmatter of a docs page (manual mode):
+
+```md
+..
+menu:
+  docs:
+    parent: "ipsum"
 ..
 ```
 
