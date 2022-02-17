@@ -256,6 +256,7 @@ bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
+smallLimit = "300"
 ```
 
 #### Footer
@@ -283,6 +284,10 @@ docsRepoSubPath = ""
 editPage = false
 lastMod = false
 ```
+
+{{< details "How to show the last modified date" >}}
+If you'd like to show the last modified date (the last Git revision date), make sure that both `lastMod = true` and `enableGitInfo = true` (see also [Basics]({{< relref "docs/recipes/project-configuration#basics" >}}))
+{{< /details >}}
 
 #### Options
 

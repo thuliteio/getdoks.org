@@ -15,9 +15,11 @@ contributors: ["Henk Verlinde"]
 
 {{< img-simple src="multi-level-section-menu.png" alt="Multi level section menu" class="d-block mx-auto shadow my-5" >}}
 
-Now you can have a multi level section menu (three levels deep). Works with the breadcrumb option if set.
+Now you can have a multi level section menu (three levels deep). Available for both the collapsibile section menu and the default one.
 
 {{< img-simple src="multi-level-breadcrumb.png" alt="Multi level breadcrumb" class="d-block mx-auto shadow my-5" >}}
+
+Works with the breadcrumb option if set.
 
 [Menus →]({{< relref "docs/recipes/menus#add-to-docs-menu" >}})
 
@@ -30,9 +32,7 @@ Now you can have a multi level section menu (three levels deep). Works with the 
     collapsibleSidebar = true
 ```
 
-You now have the option to let Doks auto generate the section menu from the directory folder (tree) structure (no manual configuration needed and respects set weight).
-
-The auto generated section menu is available for both the collapsibile section menu and the default one.
+You now have the option to let Doks auto generate the section menu from the directory folder (tree) structure. No manual configuration needed and respects set weight. Available for both the collapsibile section menu and the default one.
 
 [Menus →]({{< relref "docs/recipes/menus#configure" >}})
 
@@ -56,7 +56,7 @@ npm run create -- --kind docs guides
 
 {{< img-simple src="sub-navigation-main-menu.png" alt="Sub navigation main menu" class="d-block mx-auto shadow my-5" >}}
 
-Doks now also comes with sub navigation for the main menu (one level deep).
+Doks now also supports sub navigation for the main menu (one level deep).
 
 [Menus →]({{< relref "docs/recipes/menus#add-to-main-menu" >}})
 
@@ -86,14 +86,23 @@ You can now add context to page alerts (info, success, warning, or danger).
 
 [Alerts →]({{< relref "docs/recipes/alerts#context" >}})
 
+## Last modified date
+
+{{< img-simple src="last-modified.png" alt="Alert types" class="d-block mx-auto shadow my-5" >}}
+
+You can now show the last modified date (using the last Git revision date).
+
+[Edit page →]({{< relref "docs/recipes/project-configuration#edit-page" >}})
+
 ## Other features and fixes
 
 ### UX
 
-- Add scroll position lock for default docs sidebar
+- Add scroll position lock to default docs sidebar
 - Set font weight active page to 500
 - Add [full width]({{< relref "docs/recipes/project-configuration#options" >}}) as an option
 - Support local Jost font from both [Google Fonts](https://fonts.google.com/specimen/Jost) and [indestructible type*](https://indestructibletype.com/Jost.html)
+- Fix searchable copy button text (when hidden)
 
 ### Edit page link
 
@@ -103,7 +112,9 @@ You can now add context to page alerts (info, success, warning, or danger).
 ### Rendering
 
 - Simplify heading rendering
+- Fix error import Mermaid script
 - Add error handling image not found
+- Add [remote image]({{< relref "docs/recipes/images#add-a-remote-image" >}}) support
 
 ### Global alert
 
@@ -112,10 +123,10 @@ You can now add context to page alerts (info, success, warning, or danger).
 
 ### FlexSearch
 
-- Improve feedback no results found
+- Improve feedback no search results found
 - Plainify index values
 - Fix arrow key navigation error
-- Add .Summary as fallback for description search results
+- Add `.Summary` as fallback for `.Description` search results
 
 [Full changelog →](https://github.com/h-enk/doks/blob/master/CHANGELOG.md)
 
@@ -128,7 +139,7 @@ You can now add context to page alerts (info, success, warning, or danger).
 
 ## Contributors
 
-Thank you for your contributions to discussions, bugfixes, features, or documentation!
+Thank for all contributions to discussions, bugfixes, features, or documentation!
 
 [How to Contribute →](/docs/contributing/how-to-contribute/)
 

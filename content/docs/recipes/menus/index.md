@@ -91,13 +91,11 @@ In `./config/_default/params.toml` set menu options:
     collapsibleSidebar = true
 ```
 
-You have the option to let Doks auto generate the section menu from the directory folder (tree) structure (no manual configuration needed and respects set weight).
-
-The auto generated section menu is available for both the collapsibile section menu and the default section menu.
+You now have the option to let Doks __auto__ generate the section menu from the directory folder (tree) structure. No manual configuration needed and respects set weight. Available for both the collapsibile section menu and the default one.
 
 ### Add to docs menu
 
-Set first level menu items in `./config/_default/menus/menus.en.toml`:
+Set __first__ level menu items in `./config/_default/menus/menus.en.toml`:
 
 ```toml
 ..
@@ -121,7 +119,7 @@ Set first level menu items in `./config/_default/menus/menus.en.toml`:
 ..
 ```
 
-Set second level menu items in the frontmatter of a docs page (manual mode):
+Set __second__ level menu items in the frontmatter of a docs page (manual mode):
 
 ```md
 ..
@@ -132,7 +130,7 @@ menu:
 ..
 ```
 
-Set third level menu items in the frontmatter of a docs page (manual mode):
+Set __third__ level menu items in the frontmatter of a docs page (manual mode):
 
 ```md
 ..
