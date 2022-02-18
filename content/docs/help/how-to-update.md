@@ -24,6 +24,7 @@ npm outdated [[<@scope>/]<pkg> ...]
 ```
 
 {{< details "Example result">}}
+
 ```bash
 Package      Current  Wanted  Latest  Location                  Depended by
 @babel/cli    7.17.0  7.17.3  7.17.3  node_modules/@babel/cli   doks
@@ -32,8 +33,8 @@ eslint         8.8.0   8.9.0   8.9.0  node_modules/eslint       doks
 mermaid      8.13.10  8.14.0  8.14.0  node_modules/mermaid      doks
 stylelint     14.3.0  14.5.1  14.5.1  node_modules/stylelint    doks
 ```
-{{< /details >}}
 
+{{< /details >}}
 
 ## Update packages
 
