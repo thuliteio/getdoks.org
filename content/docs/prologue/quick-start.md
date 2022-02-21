@@ -18,7 +18,9 @@ toc: true
 - [Git](https://git-scm.com/) — latest source release
 - [Node.js](https://nodejs.org/) — latest LTS version or newer
 
+{{< details "Why Node.js?" >}}
 Doks uses npm (included with Node.js) to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts.
+{{< /details >}}
 
 ## Start a new Doks project
 

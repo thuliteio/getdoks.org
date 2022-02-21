@@ -15,26 +15,33 @@ toc: true
 
 ## Create a new site
 
-Doks is available as a child theme, and a starter theme:
+Doks is available as a child theme and a starter theme.
 
-- Use the Doks child theme, if you do __not__ plan to customize a lot, and/or need future Doks updates.
-- Use the Doks starter theme, if you plan to customize a lot, and/or do __not__ need future Doks updates.
+### Child theme
 
-Not quite sure? Use the Doks child theme.
-
-### Doks child theme
+- Intended for novice to intermediate users
+- Intended for minor customizations
+- [Easily update npm packages]({{< relref "how-to-update" >}}) — __including__ [Doks](https://www.npmjs.com/package/@hyas/doks)
 
 ```bash
 git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
 ```
 
-### Doks starter theme
+### Starter theme
+
+- Intended for intermediate to advanced users
+- Intended for major customizations
+- [Easily update npm packages]({{< relref "how-to-update" >}})
 
 ```bash
 git clone https://github.com/h-enk/doks.git my-doks-site
 ```
 
 {{< img-simple src="git-clone.gif" alt="git clone" >}}
+
+{{< details "Help me choose" >}}
+Not sure which one is for you? Pick the child theme.
+{{< /details >}}
 
 ## Change directories
 

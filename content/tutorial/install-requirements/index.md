@@ -1,7 +1,7 @@
 ---
 title: "0. Install Requirements"
-description: "Install Node.js to get started with Doks."
-lead: "Install Node.js to get started with Doks."
+description: "Install Git and Node.js to get started with Doks."
+lead: "Install Git and Node.js to get started with Doks."
 date: 2020-11-18T08:20:35+01:00
 lastmod: 2020-11-18T08:20:35+01:00
 draft: false
@@ -13,13 +13,23 @@ weight: 020
 toc: true
 ---
 
+## Git
+
+Install the latest source release of [Git](https://git-scm.com/).
+
+### Check Git install
+
+```bash
+git --version
+```
+
 ## Node.js
 
-Doks uses npm to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts:
+Install the latest LTS version or newer of [Node.js](https://nodejs.org/).
 
-- Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform.
-
-{{< alert icon="👉" text="Check that you minimally have installed the <strong>latest</strong> long term support (LTS) version of <a href=\"https://nodejs.org/\">Node.js</a>, by running <code>node --version</code> in your terminal." />}}
+{{< details "Why Node.js?" >}}
+Doks uses npm (included with Node.js) to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts.
+{{< /details >}}
 
 ### Check Node.js install
 
