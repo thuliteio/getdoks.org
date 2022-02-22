@@ -34,7 +34,7 @@
     "@babel/cli": "^7.17",
     "@babel/core": "^7.17",
     "@babel/preset-env": "^7.16",
-    "@docsearch/js": "^3.0.0-alpha.50",
+    "@docsearch/js": "^3.0.0",
     "@fullhuman/postcss-purgecss": "^4.1",
     "auto-changelog": "^2.4",
     "autoprefixer": "^10.4",
