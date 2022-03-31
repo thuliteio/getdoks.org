@@ -17,11 +17,15 @@ toc: true
 
 ## At request time
 
+### Install
+
+Install [Mermaid](https://github.com/mermaid-js/mermaid): `npm install mermaid -D`.
+
 ### Enable
 
 Mermaid support is switched off per default. For performance reasons, the script is only loaded on pages that need it (so, not site wide). Activate it by setting `mermaid = true` in the front matter of a page.
 
-### Shortcode
+### Use shortcode
 
 ```md
 {{</* mermaid class="bg-light text-center" */>}}
@@ -39,7 +43,7 @@ Note that, you can add Bootstrap classes to the shortcode, for e.g. aligning the
 
 _Note, this is an image, because Mermaid support is switched off on this site._
 
-### Code fences
+### Use code fences
 
 ````md
 ```mermaid
