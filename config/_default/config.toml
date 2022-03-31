@@ -68,6 +68,7 @@ rel  = "sitemap"
   [minify.tdewolff.html]
     keepWhitespace = false
   [minify.tdewolff.js]
+    # https://github.com/tdewolff/minify/issues/472
     keepVarNames = true
     noNullishOperator = false
     precision = 0
