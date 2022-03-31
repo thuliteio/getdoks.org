@@ -62,5 +62,12 @@ rel  = "sitemap"
   types = "/showcase/types/:title/"
   functionalities = "/showcase/functionalities/:title/"
 
-[minify.tdewolff.html]
-  keepWhitespace = false
+[minify]
+  disableJs = false
+  [minify.tdewolff]
+  [minify.tdewolff.html]
+    keepWhitespace = false
+  [minify.tdewolff.js]
+    keepVarNames = true
+    noNullishOperator = false
+    precision = 0
