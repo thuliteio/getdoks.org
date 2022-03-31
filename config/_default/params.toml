@@ -62,7 +62,8 @@ alert = false
 alertDismissable = true
 # alertText = "Help Doks grow by supporting us on Open Collective. <a class=\"alert-link stretched-link\" href=\"https://opencollective.com/doks\" target=\"_blank\" rel=\"noopener\">Become a backer!</a>"
 # alertText = "Better UX navigation, multilingual and i18n support, and more. <a class=\"alert-link stretched-link\" href=\"/blog/doks-v0.3/\">Check out what's new!</a>"
-alertText = "Multi level section menu — <strong>automatically</strong> generated, and more. <a class=\"alert-link stretched-link\" href=\"/blog/doks-v0.4/\">Check out what's new!</a>"
+alertText = "The Jamstack at Scale: Building Sites for Audiences of Millions. <a class=\"alert-link stretched-link\" href=\"https://www.netlify.com/resources/ebooks/jamstack-at-scale?utm_campaign=Website%20-%20Whitepaper%20-%20Jamstack%20at%20Scale&utm_source=Homepage%20Announcement%20Bar\">Get the eBook!</a>"
+# alertText = "Multi level section menu — <strong>automatically</strong> generated, and more. <a class=\"alert-link stretched-link\" href=\"/blog/doks-v0.4/\">Check out what's new!</a>"
 # alertText = "What Doks future features are important to you? <a class=\"alert-link stretched-link\" href=\"https://docs.google.com/forms/d/e/1FAIpQLSe0DItAFv2cNSC0S_L6DQBw9ofB0ogYvZqeoWHHRX-Aal-5zQ/viewform?usp=sf_link\" target=\"_blank\" rel=\"noopener\">Take the 2021 Doks Survey</a>"
 
 # Edit Page
