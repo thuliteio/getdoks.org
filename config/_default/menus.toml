@@ -45,10 +45,10 @@
   url = "/docs/prologue/introduction/"
   weight = 10
 
-[[main]]
-  name = "Tutorial"
-  url = "/tutorial/introduction/"
-  weight = 20
+# [[main]]
+#   name = "Tutorial"
+#   url = "/tutorial/introduction/"
+#   weight = 20
 
 [[main]]
   name = "Showcase"
@@ -60,29 +60,29 @@
   url = "/blog/"
   weight = 40
 
-[[main]]
-  name = "Community"
-  url = "https://github.com/h-enk/doks/discussions"
-  weight = 50
-  identifier = "community"
-
-[[main]]
-  name = "Contribute"
-  weight = 10
-  url = "/docs/contributing/how-to-contribute/"
-  parent = "community"
-
-[[main]]
-  name = "Discussions"
-  weight = 20
-  url = "https://github.com/h-enk/doks/discussions"
-  parent = "community"
-
-[[main]]
-  name = "Open Collective"
-  weight = 30
-  url = "https://opencollective.com/doks"
-  parent = "community"
+# [[main]]
+#   name = "Community"
+#   url = "https://github.com/h-enk/doks/discussions"
+#   weight = 50
+#   identifier = "community"
+#
+# [[main]]
+#   name = "Contribute"
+#   weight = 10
+#   url = "/docs/contributing/how-to-contribute/"
+#   parent = "community"
+#
+# [[main]]
+#   name = "Discussions"
+#   weight = 20
+#   url = "https://github.com/h-enk/doks/discussions"
+#   parent = "community"
+#
+# [[main]]
+#   name = "Open Collective"
+#   weight = 30
+#   url = "https://opencollective.com/doks"
+#   parent = "community"
 
 # [[main]]
 #   name = "Get Started"
@@ -122,10 +122,10 @@
   url = "/privacy-policy/"
   weight = 20
 
-[[footer]]
-  name = "Code of Conduct"
-  url = "/docs/contributing/code-of-conduct/"
-  weight = 30
+# [[footer]]
+#   name = "Code of Conduct"
+#   url = "/docs/contributing/code-of-conduct/"
+#   weight = 30
 
 # [[footer]]
 #   name = "Open Collective"
