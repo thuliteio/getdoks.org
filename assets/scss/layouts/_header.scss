@@ -308,12 +308,14 @@ button#doks-versions {
 .btn-doks-light:hover,
 .doks-sidebar-toggle:hover {
   background: $pink-100;
+  border-color: transparent;
 }
 
 .btn-menu:focus,
 .doks-sidebar-toggle:focus,
 .doks-mode-toggle:focus {
   outline: 0;
+  border-color: transparent;
 }
 
 .doks-sidebar-toggle .doks-collapse {
