@@ -18,15 +18,11 @@ toc: true
 - [Git](https://git-scm.com/) — latest source release
 - [Node.js](https://nodejs.org/) — latest LTS version or newer
 
-{{< details "Why Node.js?" >}}
-Doks uses npm (included with Node.js) to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts.
-{{< /details >}}
-
 ## Start a new Doks project
 
-Create a new site, change directories, install dependencies, and start development server.
+Create a new site and change directories, install dependencies, and start development server.
 
-### Create a new site
+### 1. Create a new site
 
 Doks is available as a child theme and a starter theme.
 
@@ -37,7 +33,7 @@ Doks is available as a child theme and a starter theme.
 - [Easily update npm packages]({{< relref "how-to-update" >}}) — __including__ [Doks](https://www.npmjs.com/package/@hyas/doks)
 
 ```bash
-git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
+git clone https://github.com/h-enk/doks-child-theme.git my-doks-site && cd my-doks-site
 ```
 
 #### Starter theme
@@ -47,26 +43,20 @@ git clone https://github.com/h-enk/doks-child-theme.git my-doks-site
 - [Easily update npm packages]({{< relref "how-to-update" >}})
 
 ```bash
-git clone https://github.com/h-enk/doks.git my-doks-site
+git clone https://github.com/h-enk/doks.git my-doks-site && cd my-doks-site
 ```
 
 {{< details "Help me choose" >}}
 Not sure which one is for you? Pick the child theme.
 {{< /details >}}
 
-### Change directories
-
-```bash
-cd my-doks-site
-```
-
-### Install dependencies
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Start development server
+### 3. Start development server
 
 ```bash
 npm run start

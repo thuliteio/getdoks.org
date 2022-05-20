@@ -17,6 +17,10 @@ toc: true
 
 Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
 
+## Why Node.js?
+
+Doks uses npm (included with Node.js) to centralize dependency management, making it [easy to update]({{< relref "how-to-update" >}}) resources, build tooling, plugins, and build scripts.
+
 ## Footer notice?
 
 Please keep it in place.
