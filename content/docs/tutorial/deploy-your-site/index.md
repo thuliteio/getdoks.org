@@ -7,7 +7,7 @@ lastmod: 2020-11-30T14:28:08+01:00
 draft: false
 images: []
 menu:
-  tutorial:
+  docs:
     parent: "tutorial"
 weight: 080
 toc: true

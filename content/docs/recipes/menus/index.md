@@ -55,7 +55,7 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
   name = "Tutorial"
   weight = 50
   identifier = "tutorial"
-  url = "https://getdoks.org/tutorial/introduction/"
+  url = "https://getdoks.org/docs/tutorial/introduction/"
   parent = "get-started"
 ```
 

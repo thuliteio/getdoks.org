@@ -43,7 +43,7 @@ Get all the [Hyas](https://gethyas.com/) goodness:
 
 There are two main ways to get started with Doks:
 
-1. [Tutorial]({{< relref "tutorial/introduction" >}}) — step-by-step instructions on how to start a new Doks project
+1. [Tutorial]({{< relref "docs/tutorial/introduction" >}}) — step-by-step instructions on how to start a new Doks project
 2. [Quick Start]({{< relref "docs/overview/quick-start" >}}) — one page summary of how to start a new Doks project
 
 ## Go further

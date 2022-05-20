@@ -5,3 +5,4 @@
 {{- end -}}
 
 /docs/prologue/*  /docs/overview/:splat 301
+/tutorial/*  /docs/tutorial/:splat 301

@@ -5,6 +5,12 @@
   url = "/docs/overview/"
 
 [[docs]]
+  name = "Tutorial"
+  weight = 15
+  identifier = "tutorial"
+  url = "/docs/tutorial/"
+
+[[docs]]
   name = "Recipes"
   weight = 20
   identifier = "recipes"
@@ -47,7 +53,7 @@
 
 # [[main]]
 #   name = "Tutorial"
-#   url = "/tutorial/introduction/"
+#   url = "/docs/tutorial/introduction/"
 #   weight = 20
 
 [[main]]
@@ -101,7 +107,7 @@
 #   name = "Tutorial"
 #   weight = 50
 #   identifier = "tutorial"
-#   url = "https://getdoks.org/tutorial/introduction/"
+#   url = "https://getdoks.org/docs/tutorial/introduction/"
 #   parent = "get-started"
 
 [[social]]
@@ -131,12 +137,6 @@
 #   name = "Open Collective"
 #   url = "https://opencollective.com/doks"
 #   weight = 40
-
-[[tutorial]]
-  name = "Tutorial"
-  weight = 10
-  identifier = "tutorial"
-  url = "/tutorial/"
 
 [[secondary]]
   name = "Get Support"
