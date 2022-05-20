@@ -43,7 +43,7 @@ See also the Netlify docs: [What is Netlify Dev?](https://cli.netlify.com/netlif
 
 See also the Hyas docs:
 
-- [Hyas CLI](https://gethyas.com/docs/prologue/hyas-cli/)
+- [Hyas CLI](https://gethyas.com/docs/overview/hyas-cli/)
 
 ## GitHub CLI
 

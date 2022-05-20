@@ -57,10 +57,10 @@ In `./layouts/index.redirects`, set redirects:
 
 ```bash
 ..
-/docs/1.0/prologue/   /docs/1.0/prologue/introduction/
+/docs/1.0/overview/   /docs/1.0/overview/introduction/
 /docs/1.0/help/       /docs/1.0/help/how-to-update/
-/docs/1.0/            /docs/1.0/prologue/introduction/
-/docs/                /docs/1.0/prologue/introduction/
+/docs/1.0/            /docs/1.0/overview/introduction/
+/docs/                /docs/1.0/overview/introduction/
 
 /docs/0.1/*           https://v0-1-0--doks-versioning-poc.netlify.app/docs/0.1/:splat  200
 /docs/0.2/*           https://v0-2-0--doks-versioning-poc.netlify.app/docs/0.2/:splat  200
@@ -73,7 +73,7 @@ In `./config/_default/menus.en.toml`, set menu entry:
 ```toml
 [[main]]
   name = "Docs"
-  url = "/docs/1.0/prologue/introduction/"
+  url = "/docs/1.0/overview/introduction/"
   weight = 10
 ```
 
@@ -88,10 +88,10 @@ In `./layouts/partials/header/header.html` (lines 109..123), set version switch:
     <span class="d-none d-lg-inline">Doks</span> v{{ .Site.Params.docsVersion }}
   </button>
   <ul class="dropdown-menu dropdown-menu-end shadow rounded border-0" aria-labelledby="doks-versions">
-    <li><a class="dropdown-item current" aria-current="true" href="/docs/{{ .Site.Params.docsVersion }}/prologue/introduction/">Latest ({{ .Site.Params.docsVersion }}.x)</a></li>
+    <li><a class="dropdown-item current" aria-current="true" href="/docs/{{ .Site.Params.docsVersion }}/overview/introduction/">Latest ({{ .Site.Params.docsVersion }}.x)</a></li>
     <li><hr class="dropdown-divider"></li>
-    <li><a class="dropdown-item" href="/docs/0.2/prologue/introduction/">v0.2.x</a></li>
-    <li><a class="dropdown-item" href="/docs/0.1/prologue/introduction/">v0.1.x</a></li>
+    <li><a class="dropdown-item" href="/docs/0.2/overview/introduction/">v0.2.x</a></li>
+    <li><a class="dropdown-item" href="/docs/0.1/overview/introduction/">v0.1.x</a></li>
     <li><hr class="dropdown-divider"></li>
     <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
   </ul>

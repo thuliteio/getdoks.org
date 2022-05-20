@@ -30,7 +30,7 @@ toc: true
 │   ├── help/
 │   │   ├── _index.md
 │   │   └── faq.md
-│   ├── prologue/
+│   ├── overview/
 │   │   ├── _index.md
 │   │   ├── commands.md
 │   │   └── introduction.md
@@ -53,7 +53,7 @@ npm run create about/index.md
 ### Example
 
 ```bash
-npm run create docs/prologue/introduction.md
+npm run create docs/overview/introduction.md
 ```
 
 ## Add a blog post

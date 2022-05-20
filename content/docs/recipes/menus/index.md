@@ -29,8 +29,8 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
 ```toml
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
-# url = "/docs/1.0/prologue/introduction/"
+  url = "/docs/overview/introduction/"
+# url = "/docs/1.0/overview/introduction/"
   weight = 10
 
 [[main]]
@@ -42,13 +42,13 @@ See also the Hugo docs: [Menus](https://gohugo.io/content-management/menus/).
   name = "Get Started"
   weight = 30
   identifier = "get-started"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/overview/introduction/"
 
 [[main]]
   name = "Quick Start"
   weight = 40
   identifier = "quick-start"
-  url = "/docs/prologue/quick-start/"
+  url = "/docs/overview/quick-start/"
   parent = "get-started"
 
 [[main]]
@@ -111,10 +111,10 @@ Set __first__ level menu items in `./config/_default/menus/menus.en.toml`:
 ```toml
 ..
 [[docs]]
-  name = "Prologue"
+  name = "overview"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "overview"
+  url = "/docs/overview/"
 
 [[docs]]
   name = "Help"

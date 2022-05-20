@@ -115,7 +115,7 @@ Add a documentation page using the `npm run create` command.
 ### Example
 
 ```bash
-npm run create docs/prologue/introduction/index.md
+npm run create docs/overview/introduction/index.md
 ```
 
 #### index.md
@@ -131,7 +131,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
+    parent: "overview"
 weight: 010
 toc: true
 ---

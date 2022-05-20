@@ -28,7 +28,7 @@ Breadcrumb navigation support is switched off per default. Activate it by settin
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="https://getdoks.org/">Home</a></li>
     <li class="breadcrumb-item"><a href="https://getdoks.org/docs/">Docs</a></li>
-    <li class="breadcrumb-item"><a href="https://getdoks.org/docs/prologue/">Prologue</a></li>
+    <li class="breadcrumb-item"><a href="https://getdoks.org/docs/overview/">overview</a></li>
     <li class="breadcrumb-item active" aria-current="page">Introduction</li>
   </ol>
 </nav>

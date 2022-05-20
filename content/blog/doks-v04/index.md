@@ -50,7 +50,7 @@ For example, create a docs based tree named guides:
 npm run create -- --kind docs guides
 ```
 
-[Commands →]({{< relref "docs/prologue/commands#docs-based-tree" >}})
+[Commands →]({{< relref "docs/overview/commands#docs-based-tree" >}})
 
 ## Sub navigation main menu
 

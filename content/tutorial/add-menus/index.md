@@ -25,7 +25,7 @@ Open `./config/_default/menus/menus.en.toml` in your code editor.
 ```toml
 [[main]]
   name = "Docs"
-  url = "/docs/prologue/introduction/"
+  url = "/docs/overview/introduction/"
   weight = 10
 
 [[main]]
@@ -66,10 +66,10 @@ Add first level menu items (make sure the identifiers are unique):
 
 ```toml
 [[docs]]
-  name = "Prologue"
+  name = "overview"
   weight = 10
-  identifier = "prologue"
-  url = "/docs/prologue/"
+  identifier = "overview"
+  url = "/docs/overview/"
 
 [[docs]]
   name = "Recipes"
@@ -90,7 +90,7 @@ Add second level menu items in the frontmatter of a [documentation page]({{< rel
 ..
 menu:
   docs:
-    parent: "prologue"
+    parent: "overview"
 weight: 010
 ..
 ```
