@@ -13,6 +13,7 @@ menu:
 weight: 200
 toc: false
 pinned: true
+featured: false
 types: ["university"]
 functionalities: ["blog", "search", "custom font"]
 ---

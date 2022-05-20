@@ -13,6 +13,7 @@ menu:
 weight: 090
 toc: false
 pinned: false
+featured: true
 types: ["hardware"]
 functionalities: ["blog", "custom font"]
 ---

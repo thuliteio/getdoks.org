@@ -13,6 +13,7 @@ menu:
 weight: 080
 toc: false
 pinned: false
+featured: true
 types: ["developer"]
 functionalities: []
 ---

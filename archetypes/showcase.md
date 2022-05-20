@@ -13,6 +13,7 @@ menu:
 weight: 999
 toc: false
 pinned: false
+featured: false
 types: []
 functionalities: []
 ---

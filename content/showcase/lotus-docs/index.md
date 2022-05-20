@@ -13,6 +13,7 @@ menu:
 weight: 190
 toc: false
 pinned: false
+featured: true
 types: ["application"]
 functionalities: ["dark mode", "search", "mermaid", "highlight.js"]
 ---

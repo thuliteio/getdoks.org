@@ -13,6 +13,7 @@ menu:
 weight: 100
 toc: false
 pinned: true
+featured: false
 types: ["product"]
 functionalities: ["blog", "dark mode", "custom font"]
 ---

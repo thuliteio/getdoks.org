@@ -13,6 +13,7 @@ menu:
 weight: 250
 toc: false
 pinned: false
+featured: false
 types: ["ebook"]
 functionalities: ["blog", "breadcrumb", "custom font", "dark mode", "multilingual"]
 ---

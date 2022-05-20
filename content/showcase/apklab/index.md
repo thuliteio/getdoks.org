@@ -13,6 +13,7 @@ menu:
 weight: 170
 toc: false
 pinned: false
+featured: false
 types: ["developer"]
 functionalities: ["blog", "dark mode", "search"]
 ---

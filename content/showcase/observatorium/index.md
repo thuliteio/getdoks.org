@@ -13,6 +13,7 @@ menu:
 weight: 140
 toc: false
 pinned: false
+featured: false
 types: ["project"]
 functionalities: ["dark mode", "breadcrumb"]
 ---

@@ -92,27 +92,10 @@
 -->
 
 <!--
-<section class="section section-sm mt-n3">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8 col-xl-6">
-        <h2 class="h3 mt-3 text-center">Doks Showcase</h2>
-        <div class="card-list">
-        {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "showcase")  -}}
-        <div class="card bg-light">
-          <div class="card-body">
-            <h3 class="lead text-center"><a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
-          </div>
-        </div>
-        {{ end -}}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "main/doks-sponsors.html" . -}}
 -->
 
-{{ partial "main/doks-sponsors.html" . -}}
+{{ partial "main/featured-users.html" . -}}
 
 <!--
 <div class="d-flex justify-content-end mt-5">

@@ -13,6 +13,7 @@ menu:
 weight: 240
 toc: false
 pinned: false
+featured: false
 types: ["software"]
 functionalities: ["dark mode", "breadcrumb", "search"]
 ---

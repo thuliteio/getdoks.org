@@ -13,6 +13,7 @@ menu:
 weight: 180
 toc: false
 pinned: false
+featured: true
 types: ["software"]
 functionalities: ["dark mode"]
 ---

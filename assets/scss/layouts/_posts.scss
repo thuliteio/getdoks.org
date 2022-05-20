@@ -7,6 +7,10 @@
   transition: transform 0.3s;
 }
 
+.home .section-featured .card {
+  margin: 0;
+}
+
 .showcase.list .card,
 .types.list .card,
 .functionalities.list .card {
@@ -28,6 +32,20 @@
 .newsletter .card-body,
 .contributors.list .card-body {
   padding: 0 2rem 1rem;
+}
+
+.home .section-featured .card-body {
+  padding: 1rem;
+}
+
+.home .section-featured .card-title {
+  font-size: $font-size-base;
+  font-weight: normal;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    font-size: $font-size-md;
+  }
 }
 
 .blog-header {

@@ -13,6 +13,7 @@ menu:
 weight: 020
 toc: false
 pinned: false
+featured: false
 types: ["ebook"]
 functionalities: ["dark mode", "search", "KaTeX"]
 ---

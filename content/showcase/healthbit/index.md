@@ -13,6 +13,7 @@ menu:
 weight: 220
 toc: false
 pinned: false
+featured: false
 types: ["university"]
 functionalities: ["blog", "dark mode", "multilingual"]
 ---
