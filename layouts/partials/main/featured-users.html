@@ -9,7 +9,7 @@
           {{ .Scratch.Set "src" $image -}}
           {{ .Scratch.Set "alt" .Title -}}
           <div class="card-body">
-            <h5 class="card-title mt-2"><a class="card-link stretched-link text-dark text-decoration-none" href="{{ .RelPermalink }}">{{ .Params.title | title }}</a></h5>
+            <h3 class="h5 card-title my-2"><a class="card-link stretched-link text-dark text-decoration-none" href="{{ .RelPermalink }}">{{ .Params.title | title }}</a></h3>
           </div>
         </div>
       </div>
