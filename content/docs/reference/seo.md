@@ -6,9 +6,9 @@ date: 2020-09-18T14:25:19+02:00
 lastmod: 2020-09-18T14:25:19+02:00
 draft: false
 images: []
-menu: 
+menu:
   docs:
-    parent: "reference-guides"
+    parent: "reference"
 weight: 330
 toc: true
 ---

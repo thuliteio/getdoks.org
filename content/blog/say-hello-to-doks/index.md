@@ -49,7 +49,7 @@ There are two main ways to get started with Doks:
 ## Go further
 
 - [Recipes]({{< relref "docs/recipes/project-configuration" >}}). Get instructions on how to accomplish common tasks with Doks.
-- [Reference Guides]({{< relref "docs/reference-guides/security" >}}). Learn how to customize Doks to fully make it your own.
+- [Reference Guides]({{< relref "docs/reference/security" >}}). Learn how to customize Doks to fully make it your own.
 - [Extensions]({{< relref "breadcrumb-navigation" >}}). Get instructions on how to add even more to Doks.
 - [Showcase]({{< relref "showcase/neutrino-oscillations" >}}). See what others have build with Doks.
 

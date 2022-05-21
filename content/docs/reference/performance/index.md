@@ -8,7 +8,7 @@ draft: false
 images: ["google-lighthouse-scan-results-doks.gif"]
 menu:
   docs:
-    parent: "reference-guides"
+    parent: "reference"
 weight: 320
 toc: true
 ---

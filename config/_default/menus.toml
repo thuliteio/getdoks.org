@@ -17,10 +17,10 @@
   url = "/docs/recipes/"
 
 [[docs]]
-  name = "Reference Guides"
+  name = "Reference"
   weight = 30
-  identifier = "reference-guides"
-  url = "/docs/reference-guides/"
+  identifier = "reference"
+  url = "/docs/reference/"
 
 [[docs]]
   name = "Extensions"

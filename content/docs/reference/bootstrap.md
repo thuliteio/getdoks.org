@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "reference-guides"
+    parent: "reference"
 weight: 350
 toc: true
 ---

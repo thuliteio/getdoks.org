@@ -39,7 +39,7 @@ Get instructions on how to accomplish common tasks with Doks. {{< section-last s
 
 ### Reference Guides
 
-Learn how to customize Doks to fully make it your own. {{< section-last section="reference-guides" text="Reference Guides →">}}
+Learn how to customize Doks to fully make it your own. {{< section-last section="reference" text="Reference Guides →">}}
 
 ### Extensions
 

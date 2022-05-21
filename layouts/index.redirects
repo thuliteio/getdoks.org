@@ -6,3 +6,4 @@
 
 /docs/prologue/*  /docs/overview/:splat 301
 /tutorial/*  /docs/tutorial/:splat 301
+/reference-guides/*  /docs/reference/:splat 301

@@ -8,7 +8,7 @@ draft: false
 images: ["mozilla-observatory-scan-summary-doks.png", "mozilla-observatory-scan-recommendations-doks.png"]
 menu:
   docs:
-    parent: "reference-guides"
+    parent: "reference"
 weight: 310
 toc: true
 ---
