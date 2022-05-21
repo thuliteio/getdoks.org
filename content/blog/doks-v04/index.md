@@ -21,7 +21,7 @@ Now you can have a multi level section menu (three levels deep). Available for b
 
 Works with the breadcrumb option if set.
 
-[Menus →]({{< relref "docs/recipes/menus#add-to-docs-menu" >}})
+[Menus →]({{< relref "docs/how-to/menus#add-to-docs-menu" >}})
 
 ## Auto generated section menu
 
@@ -34,7 +34,7 @@ Works with the breadcrumb option if set.
 
 You now have the option to let Doks auto generate the section menu from the directory folder (tree) structure. No manual configuration needed and respects set weight. Available for both the collapsibile section menu and the default one.
 
-[Menus →]({{< relref "docs/recipes/menus#configure" >}})
+[Menus →]({{< relref "docs/how-to/menus#configure" >}})
 
 ## New docs based tree
 
@@ -58,7 +58,7 @@ npm run create -- --kind docs guides
 
 Doks now also supports sub navigation for the main menu (one level deep).
 
-[Menus →]({{< relref "docs/recipes/menus#add-to-main-menu" >}})
+[Menus →]({{< relref "docs/how-to/menus#add-to-main-menu" >}})
 
 ## Details shortcode
 
@@ -72,7 +72,7 @@ _Markdown_ and <em>HTML</em> will be rendered.
 {{</* /details */>}}
 ```
 
-[Details →]({{< relref "docs/recipes/details" >}})
+[Details →]({{< relref "docs/how-to/details" >}})
 
 ## Alert types
 
@@ -84,7 +84,7 @@ You can now add context to page alerts (info, success, warning, or danger).
 {{</* alert icon="👉" context="info" text="A simple info alert — check it out!" /*/>}}
 ```
 
-[Alerts →]({{< relref "docs/recipes/alerts#context" >}})
+[Alerts →]({{< relref "docs/how-to/alerts#context" >}})
 
 ## Last modified date
 
@@ -92,7 +92,7 @@ You can now add context to page alerts (info, success, warning, or danger).
 
 You can now show the last modified date (using the last Git revision date).
 
-[Edit page →]({{< relref "docs/recipes/project-configuration#edit-page" >}})
+[Edit page →]({{< relref "docs/how-to/project-configuration#edit-page" >}})
 
 ## Other features and fixes
 
@@ -100,21 +100,21 @@ You can now show the last modified date (using the last Git revision date).
 
 - Add scroll position lock to default docs sidebar
 - Set font weight active page to 500
-- Add [full width]({{< relref "docs/recipes/project-configuration#options" >}}) as an option
+- Add [full width]({{< relref "docs/how-to/project-configuration#options" >}}) as an option
 - Support local Jost font from both [Google Fonts](https://fonts.google.com/specimen/Jost) and [indestructible type*](https://indestructibletype.com/Jost.html)
 - Fix searchable copy button text (when hidden)
 
 ### Edit page link
 
-- Support [docs repository subpath]({{< relref "docs/recipes/project-configuration#edit-page" >}})
-- Support [repository hosts]({{< relref "docs/recipes/project-configuration#edit-page" >}}) Bitbucket and BitbucketServer
+- Support [docs repository subpath]({{< relref "docs/how-to/project-configuration#edit-page" >}})
+- Support [repository hosts]({{< relref "docs/how-to/project-configuration#edit-page" >}}) Bitbucket and BitbucketServer
 
 ### Rendering
 
 - Simplify heading rendering
 - Fix error import Mermaid script
 - Add error handling image not found
-- Add [remote image]({{< relref "docs/recipes/images#add-a-remote-image" >}}) support
+- Add [remote image]({{< relref "docs/how-to/images#add-a-remote-image" >}}) support
 
 ### Global alert
 

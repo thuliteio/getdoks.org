@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "recipes"
+    parent: "how-to"
 weight: 110
 toc: true
 ---
@@ -286,7 +286,7 @@ lastMod = false
 ```
 
 {{< details "How to show the last modified date" >}}
-If you'd like to show the last modified date (the last Git revision date), make sure that both `lastMod = true` and `enableGitInfo = true` (see also [Basics]({{< relref "docs/recipes/project-configuration#basics" >}}))
+If you'd like to show the last modified date (the last Git revision date), make sure that both `lastMod = true` and `enableGitInfo = true` (see also [Basics]({{< relref "docs/how-to/project-configuration#basics" >}}))
 {{< /details >}}
 
 #### Options

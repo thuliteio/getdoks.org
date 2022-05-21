@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "recipes"
+    parent: "how-to"
 weight: 155
 toc: true
 ---

@@ -35,7 +35,7 @@ Recipes, Reference Guides, Extensions, and Showcase.
 
 ### Recipes
 
-Get instructions on how to accomplish common tasks with Doks. {{< section-last section="recipes" text="Recipes →">}}
+Get instructions on how to accomplish common tasks with Doks. {{< section-last section="how-to" text="Recipes →">}}
 
 ### Reference Guides
 

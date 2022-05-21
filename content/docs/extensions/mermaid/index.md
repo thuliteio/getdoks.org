@@ -66,7 +66,7 @@ If you don't need to generate charts and diagrams at request time, use the Merma
 
 1. Generate your chart /diagram in the [Mermaid Live Editor](https://mermaidjs.github.io/mermaid-live-editor)
 2. Save the definition file (for future editing purposes) + png in your [page bundle](https://gohugo.io/content-management/page-bundles/)
-3. Insert the png in your page with the [small image shortcode](https://getdoks.org/docs/recipes/images/#add-a-small-image).
+3. Insert the png in your page with the [small image shortcode](https://getdoks.org/docs/how-to/images/#add-a-small-image).
 
 ## Usage
 

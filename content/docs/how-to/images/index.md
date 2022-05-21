@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "recipes"
+    parent: "how-to"
 weight: 160
 toc: true
 ---
@@ -23,7 +23,7 @@ Render hook template: `./layouts/_default/_markup/render-image.html`. An `<img>`
 
 Set `smallLimit` in `./config/_default/params.toml`, e.g. `smallLimit = "360"`.
 
-See also: [Images](http://localhost:1313/docs/recipes/project-configuration/#images)
+See also: [Images](http://localhost:1313/docs/how-to/project-configuration/#images)
 
 ## Add a local image
 

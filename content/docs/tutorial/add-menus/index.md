@@ -74,8 +74,8 @@ Add first level menu items (make sure the identifiers are unique):
 [[docs]]
   name = "Recipes"
   weight = 20
-  identifier = "recipes"
-  url = "/docs/recipes/"
+  identifier = "how-to"
+  url = "/docs/how-to/"
 
 [[docs]]
   name = "Help"
