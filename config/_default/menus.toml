@@ -6,27 +6,21 @@
 
 [[docs]]
   name = "Tutorial"
-  weight = 15
+  weight = 20
   identifier = "tutorial"
   url = "/docs/tutorial/"
 
 [[docs]]
   name = "How-to Guides"
-  weight = 20
+  weight = 30
   identifier = "how-to"
   url = "/docs/how-to/"
 
 [[docs]]
   name = "Reference"
-  weight = 30
+  weight = 40
   identifier = "reference"
   url = "/docs/reference/"
-
-[[docs]]
-  name = "Extensions"
-  weight = 40
-  identifier = "extensions"
-  url = "/docs/extensions/"
 
 [[docs]]
   name = "Contributing"

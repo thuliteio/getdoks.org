@@ -42,7 +42,7 @@ Doks now comes with [highlight.js](https://highlightjs.org/) as the default synt
 
 Doks now supports math typesetting by making use of the [KaTeX](https://katex.org/) library. It is switched off per default. Activate it by setting `kaTex = true` in `./config/_default/params.toml`.
 
-[How to add KaTeX →]({{< relref "docs/extensions/katex" >}})
+[How to add KaTeX →]({{< relref "docs/how-to/extra-features/katex" >}})
 
 ## Breadcrumb navigation
 
