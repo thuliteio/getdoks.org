@@ -143,6 +143,14 @@ $navbar-light-color:                $black;
 $navbar-light-hover-color:          $primary;
 $navbar-light-active-color:         $primary;
 
+// Modal
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            0.5;
+
+// Offcanvas
+$offcanvas-horizontal-width:        300px;
+$offcanvas-backdrop-bg:             $modal-backdrop-bg;
+
 // Cards
 
 $card-border-color:                 $gray-200;
