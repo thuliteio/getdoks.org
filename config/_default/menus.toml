@@ -45,26 +45,21 @@
   url = "/docs/overview/introduction/"
   weight = 10
 
-# [[main]]
-#   name = "Tutorial"
-#   url = "/docs/tutorial/introduction/"
-#   weight = 20
-
 [[main]]
   name = "Showcase"
   url = "/showcase/"
-  weight = 30
+  weight = 20
 
 [[main]]
   name = "Blog"
   url = "/blog/"
-  weight = 40
+  weight = 30
 
-# [[main]]
-#   name = "Community"
-#   url = "https://github.com/h-enk/doks/discussions"
-#   weight = 50
-#   identifier = "community"
+[[main]]
+  name = "Community"
+  url = "https://github.com/h-enk/doks/discussions"
+  weight = 40
+  identifier = "community"
 #
 # [[main]]
 #   name = "Contribute"
