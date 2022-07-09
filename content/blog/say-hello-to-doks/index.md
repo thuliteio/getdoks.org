@@ -36,7 +36,7 @@ Get all the [Hyas](https://gethyas.com/) goodness:
 
 ### And
 
-- 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=92eaa982d7dbf92f94fe8ecc03987c9a)
+- 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=59aafe464a68f8bc30b8e9a636d5b053)
 - A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/doks.netlify.app)
 
 ## Get started
