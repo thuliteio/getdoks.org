@@ -44,12 +44,12 @@ See also the Hugo docs: [Page Bundles](https://gohugo.io/content-management/page
 ### Example
 
 ```md
-![Green Sea Turtle Hatchling by Hannah Le Leu](green-sea-turtle-hatchling.jpg "A green sea turtle hatchling cautiously surfaces for air, to a sky full of hungry birds.")
+![Green Sea Turtle Hatchling by Hannah Le Leu](images/green-sea-turtle-hatchling.jpg "A green sea turtle hatchling cautiously surfaces for air, to a sky full of hungry birds.")
 ```
 
 Will be processed into:
 
-![Green Sea Turtle Hatchling by Hannah Le Leu](green-sea-turtle-hatchling.jpg "A green sea turtle hatchling cautiously surfaces for air, to a sky full of hungry birds.")
+![Green Sea Turtle Hatchling by Hannah Le Leu](images/green-sea-turtle-hatchling.jpg "A green sea turtle hatchling cautiously surfaces for air, to a sky full of hungry birds.")
 
 ## Add a remote image
 
