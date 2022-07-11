@@ -14,3 +14,11 @@
 [[mounts]]
   source = "node_modules/docsearch.js"
   target = "assets/js/vendor/docsearch.js"
+
+[[mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@hyas/images/layouts"
+  target = "layouts"
