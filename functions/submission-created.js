@@ -1,25 +1,44 @@
-require('dotenv').config()
+import fetch from 'node-fetch'
 
-const fetch = require('node-fetch').default
-const { BUTTONDOWN_API_KEY } = process.env
+const { KEILA_API_KEY } = process.env;
 
-exports.handler = async event => {
+exports.handler = async (event) => {
 
-  const payload = JSON.parse(event.body).payload
-  console.log(payload.email)
+  const body = JSON.parse(event.body);
+  const { email, page } = body.payload.data;
 
-  const rawResponse = await fetch('https://api.buttondown.email/v1/subscribers', {
-    method: 'post',
-    headers: {
-      Authorization: `Token ${BUTTONDOWN_API_KEY}`,
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({email: payload.email}),
-  })
-    .catch(error => ({ statusCode: 422, body: String(error) }))
+  console.log(`Submission: ${email}`)
 
-    const content = await rawResponse.json();
-    console.log(content)
+  let headersList = {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+    'Authorization': `Bearer ${KEILA_API_KEY}`,
+    }
 
-}
+    let bodyContent = JSON.stringify({
+      'data': {
+        'data': {
+        'page': `${page}`,
+          'tags': [
+            'doks',
+          ],
+        },
+        'email': email,
+      },
+    });
+
+  let response = await fetch('https://app.keila.io/api/v1/contacts', {
+    method: 'POST',
+    body: bodyContent,
+    headers: headersList,
+  });
+
+  let data = await response.text();
+  console.log('Response:', data);
+
+  return {
+    statusCode: response.status,
+    body: data,
+  };
+
+};

@@ -21,6 +21,10 @@
 [context.next.environment]
   HUGO_ENV = "next"
 
+[functions]
+  directory = "functions"
+  node_bundler = "esbuild"
+
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"
 

@@ -3,7 +3,10 @@
   <div class="card-body">
     <h3 class="h4 card-title">👋 Stay in the loop</h3>
     <p class="card-text">Subscribe to the Doks newsletter and get occasional updates.</p>
-    <form class="row gx-2 gy-3 email-form" name="newsletter" method="post" netlify-honeypot="name" data-netlify="true" onsubmit="subscribeButton.disabled = true">
+    <form class="row gx-2 gy-3 email-form" name="newsletter" method="post" netlify-honeypot="name" data-netlify-recaptcha="true" data-netlify="true" onsubmit="subscribeButton.disabled = true">
+      <div class="col-16">
+        <div data-netlify-recaptcha="true"></div>
+      </div>
       <div class="col-md-12">
         <input name="name" type="text" class="form-control visually-hidden" placeholder="your name" aria-label="Name">
         <input name="email" type="email" class="form-control" placeholder="your@email.com" aria-label="Email address" required>

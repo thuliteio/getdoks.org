@@ -59,6 +59,7 @@ if (document.querySelector('#search') !== null) {
 */
 
 /* eslint-disable */
+/*
 const processForm = form => {
   const data = new FormData(form)
   data.append('form-name', 'newsletter');
@@ -81,4 +82,28 @@ if (emailForm) {
     processForm(emailForm);
   })
 }
+*/
 /* eslint-enable */
+
+const processForm = form => {
+  const data = new FormData(form)
+  data.append('form-name', 'newsletter');
+  fetch('/', {
+    method: 'POST',
+    body: data,
+  })
+  .then(() => {
+    form.innerHTML = '<p class="form--success">Thank you for joining!</p>';
+  })
+  .catch(error => {
+    form.innerHTML = `<p class="form--error">Oops. Something\\'s wrong: ${error}</p>`;
+  })
+}
+
+const emailForm = document.querySelector('.email-form')
+if (emailForm) {
+  emailForm.addEventListener('submit', e => {
+    e.preventDefault();
+    processForm(emailForm);
+  })
+}
