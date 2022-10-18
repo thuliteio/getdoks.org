@@ -5,7 +5,10 @@
     <p class="card-text">Subscribe to the Doks newsletter and get occasional updates.</p>
     <form class="row gx-2 gy-3 email-form" name="newsletter" method="post" netlify-honeypot="name" data-netlify="true" onsubmit="subscribeButton.disabled = true">
       <div class="col-md-12">
-        <input name="name" type="text" class="form-control visually-hidden" placeholder="your name" aria-label="Name">
+        <input type="hidden" name="subject" value="Doks newsletter submission">
+        <div class="visually-hidden">
+          <input name="name" type="text" class="form-control" placeholder="your name" aria-label="Name">
+        </div>
         <input name="email" type="email" class="form-control" placeholder="your@email.com" aria-label="Email address" required>
         <input name="page" type="hidden" value="{{ .Page.Permalink }}">
       </div>

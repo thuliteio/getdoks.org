@@ -93,10 +93,10 @@ const processForm = form => {
     body: data,
   })
   .then(() => {
-    form.innerHTML = '<p class="form--success">Thank you for joining!</p>';
+    form.innerHTML = '<p class="form--success mb-0">Thank you for subscribing!</p>';
   })
   .catch(error => {
-    form.innerHTML = `<p class="form--error">Oops. Something\\'s wrong: ${error}</p>`;
+    form.innerHTML = `<p class="form--error mb-0">Oops. Something\\'s wrong: ${error}</p>`;
   })
 }
 
