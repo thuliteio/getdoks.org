@@ -48,7 +48,7 @@
     "encoding": "^0.1.13",
     "eslint": "^8.19",
     "exec-bin": "^1.0.0",
-    "highlight.js": "^11.5",
+    "highlight.js": "^11.7",
     "hugo-installer": "^3.1",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
