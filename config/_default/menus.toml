@@ -41,13 +41,13 @@
 #   url = "/docs/lorem/"
 
 [[main]]
-  name = "Docs"
-  url = "/docs/overview/introduction/"
+  name = "Showcase"
+  url = "/showcase/"
   weight = 10
 
 [[main]]
-  name = "Showcase"
-  url = "/showcase/"
+  name = "Docs"
+  url = "/docs/overview/introduction/"
   weight = 20
 
 [[main]]
@@ -57,27 +57,51 @@
 
 [[main]]
   name = "Community"
-  url = "https://github.com/h-enk/doks/discussions"
+  url = "#"
   weight = 40
   identifier = "community"
-#
+
+[[main]]
+  name = "GitHub repository"
+  weight = 10
+  url = "https://github.com/h-enk/doks"
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>'
+  parent = "community"
+  [main.params]
+    target = "_blank"
+
 # [[main]]
 #   name = "Contribute"
-#   weight = 10
+#   weight = 15
 #   url = "/docs/contributing/how-to-contribute/"
 #   parent = "community"
-#
-# [[main]]
-#   name = "Discussions"
-#   weight = 20
-#   url = "https://github.com/h-enk/doks/discussions"
-#   parent = "community"
-#
-# [[main]]
-#   name = "Open Collective"
-#   weight = 30
-#   url = "https://opencollective.com/doks"
-#   parent = "community"
+
+[[main]]
+  name = "Discussions"
+  weight = 20
+  url = "https://github.com/h-enk/doks/discussions"
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>'
+  parent = "community"
+  [main.params]
+    target = "_blank"
+
+[[main]]
+  name = "Open Collective"
+  weight = 30
+  url = "https://opencollective.com/doks"
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>'
+  parent = "community"
+  [main.params]
+    target = "_blank"
+
+[[main]]
+  name = "Hyas website"
+  weight = 40
+  url = "https://gethyas.com/"
+  post = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>'
+  parent = "community"
+  [main.params]
+    target = "_blank"
 
 # [[main]]
 #   name = "Get Started"

@@ -40,7 +40,8 @@
                   {{ range .Children -}}
                   {{- $active = eq .Name $current.Title -}}
                     <li>
-                      <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
+                      <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}{{ with .Params.target}} target="{{ . }}"{{ end }}>{{ .Name }}{{ with .Post }}{{ . | safeHTML }}{{ end }}</a>
+                      <!-- <a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | relLangURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a> -->
                     </li>
                   {{ end -}}
                 </ul>

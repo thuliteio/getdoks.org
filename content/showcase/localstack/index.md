@@ -4,7 +4,7 @@ description: "A fully functional local cloud stack. Develop and test your cloud 
 lead: "A fully functional local cloud stack. Develop and test your cloud and serverless apps offline!"
 date: 2021-08-13T10:52:09+02:00
 lastmod: 2021-08-13T10:52:09+02:00
-draft: false
+draft: true
 images: ["localstack.png"]
 link: "https://localstack.cloud"
 menu:

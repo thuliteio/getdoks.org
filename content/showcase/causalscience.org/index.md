@@ -1,7 +1,7 @@
 ---
 title: "causalscience.org"
-description: "Causal Data Science Meeting 2021. The Causal Data Science Meeting aims to bring experts from industry and science together. Participation is free of charge."
-lead: "Causal Data Science Meeting 2021. The Causal Data Science Meeting aims to bring experts from industry and science together. Participation is free of charge."
+description: "Causal Data Science Meeting 2022. The Causal Data Science Meeting 2022 aims to foster an interdisciplinary dialogue between data scientists from industry and academia on causality in machine learning and AI."
+lead: "Causal Data Science Meeting 2022. The Causal Data Science Meeting 2022 aims to foster an interdisciplinary dialogue between data scientists from industry and academia on causality in machine learning and AI."
 date: 2021-11-16T12:20:40+01:00
 lastmod: 2021-11-16T12:20:40+01:00
 draft: false

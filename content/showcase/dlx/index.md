@@ -4,7 +4,7 @@ description: "DLX is a helper for LXD to rapidly provision development environme
 lead: "DLX is a helper for LXD to rapidly provision development environments on your own hardware."
 date: 2022-03-31T13:53:56+02:00
 lastmod: 2022-03-31T13:53:56+02:00
-draft: false
+draft: true
 images: ["dlx.png"]
 link: "https://dlx.rocks"
 menu:

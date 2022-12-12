@@ -12,7 +12,7 @@ menu:
     parent: "browse"
 weight: 100
 toc: false
-pinned: true
+pinned: false
 featured: false
 types: ["product"]
 functionalities: ["blog", "dark mode", "custom font"]
