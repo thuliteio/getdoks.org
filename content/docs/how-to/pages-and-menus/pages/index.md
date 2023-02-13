@@ -1,7 +1,7 @@
 ---
 title: "Pages"
-description: "Add a default page, documentation page, blog post or contributor page. Customize the homepage and 404 page."
-lead: "Add a default page, documentation page, blog post or contributor page. Customize the homepage and 404 page."
+description: "Add a default page, documentation page, blog post, contributor page, or section. Customize the homepage and 404 page."
+lead: "Add a default page, documentation page, blog post, contributor page or section. Customize the homepage and 404 page."
 date: 2020-11-23T11:55:16+01:00
 lastmod: 2020-11-23T11:55:16+01:00
 draft: false
@@ -70,6 +70,14 @@ npm run create blog/say-hello-to-doks/index.md
 
 ```bash
 npm run create contributors/henk-verlinde/_index.md
+```
+
+## Add a section
+
+### Example
+
+```bash
+npm run create -- --kind docs development-guides/
 ```
 
 ## Customize homepage
