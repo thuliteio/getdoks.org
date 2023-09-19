@@ -1,7 +1,0 @@
-<!-- Source: https://discourse.gohugo.io/t/solved-get-the-first-and-last-post-in-a-section-date-based/6734/7 -->
-{{ $section := .Get "section" -}}
-{{ $text := .Get "text" -}}
-{{ $posts := ($.Site.GetPage "section" $section).Pages.ByWeight -}}
-{{ range first 1 $posts -}}
-  <a href="{{ .Permalink }}">{{ $text | safeHTML }}</a>
-{{ end -}}

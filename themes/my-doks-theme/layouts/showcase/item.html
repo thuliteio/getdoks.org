@@ -1,0 +1,24 @@
+<div class="card rounded-0 border-0">
+  {{ $image := .Resources.GetMatch (printf "**%s" (index .Params.images 0)) -}}
+  {{ if $image -}}
+    <a class="stretched-link text-white text-decoration-none" href="{{ .Params.website }}" target="_blank">
+      {{ partial "picture"  (dict
+      "ctx" .
+      "src" $image
+      "alt" .Title 
+      "class" "card-img img-fluid blur-up w-100 h-auto rounded-0"
+      )}}
+    </a>
+  {{ end -}}
+  <div class="card-img-overlay">
+    <h3 class="card-title fs-3">{{.Title}}</h3>
+    <p class="card-text">
+      {{ .Params.website }}
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M17 7l-10 10"></path>
+        <path d="M8 7l9 0l0 9"></path>
+      </svg>
+    </p>
+  </div>
+</div>

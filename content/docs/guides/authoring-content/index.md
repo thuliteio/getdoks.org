@@ -1,0 +1,102 @@
+---
+title: "Authoring Content"
+description: ""
+summary: ""
+date: 2023-09-12T16:10:28+02:00
+lastmod: 2023-09-12T16:10:28+02:00
+draft: false
+images: []
+menu:
+  docs:
+    parent: ""
+    identifier: "authoring-content-c8eb05af83475c21365e023a6eee3ef0"
+weight: 810
+toc: true
+---
+
+Doks supports the full range of [Markdown](https://daringfireball.net/projects/markdown/) syntax in `.md` files as well as frontmatter [YAML](https://yaml.org/spec/1.2.2/), [TOML](https://toml.io/en/), or [JSON](https://www.json.org/json-en.html) to define metadata such as a title and description.
+
+## Inline styles
+
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+
+```md
+Text can be **bold**, _italic_, or ~~strikethrough~~.
+```
+
+You can [link to another page](/docs/start-here/getting-started/).
+
+```md
+You can [link to another page](/docs/start-here/getting-started/).
+```
+
+You can highlight `inline code` with backticks.
+
+```md
+You can highlight `inline code` with backticks.
+```
+
+## Images
+
+Images use [Hyas' Images integration](https://docs.gethyas.com/guides/integrations-guide/images/).
+
+Hyas Images supports the Markdown syntax for displaying images that includes alt-text for screen readers and assistive technology.
+
+![Lightyear 2 close side rear](lightyear-2-close-side-rear-4k.jpg)
+
+```md
+![Lightyear 2 close side rear](lightyear-2-close-side-rear-4k.jpg)
+```
+
+Relative image paths are supported for images stored locally in a [leaf bundle](https://gohugo.io/content-management/page-bundles/#leaf-bundles) directory or in your project's `assets` directory.
+
+```md
+![Lightyear 2 close side rear](assets/images/lightyear-2-close-side-rear-4k.jpg)
+```
+
+## Headings
+
+You can structure content using a heading. Headings in Markdown are indicated by a number of `#` at the start of the line.
+
+### How to structure page content in Doks
+
+Doks is configured to automatically use your page title as a top-level heading. We recommend starting each page with regular paragraph text content and using on-page headings from `<h2>` and down:
+
+```md
+---
+title: Markdown Guide
+description: How to use Markdown in Doks
+---
+
+This page describes how to use Markdown in Doks.
+
+## Inline Styles
+
+## Headings
+```
+
+### Automatic heading anchor links
+
+Using headings in Markdown will automatically give you anchor links so you can link directly to certain sections of your page:
+
+```md
+---
+title: My page of content
+description: How to use Doks' built-in anchor links
+---
+
+## Introduction
+
+I can link to [my conclusion](#conclusion) lower on the same page.
+
+## Conclusion
+
+`https://my-site.com/page1/#introduction` navigates directly to my Introduction.
+
+```
+
+Level 2 (`<h2>`) and Level 3 (`<h3>`) headings will automatically appear in the page table of contents.
+
+## Callouts
+
+Callouts (also known as "admonitions" or "asides") are useful for displaying secondary information alongside a page's main content.
