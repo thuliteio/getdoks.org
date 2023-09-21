@@ -13653,4 +13653,11 @@ body {
     margin-top: 3rem;
     margin-bottom: -3rem; } }
 
+/*! purgecss start ignore */
+.page-item a[aria-label="Previous"],
+.page-item a[aria-label="Next"] {
+  border-radius: 50%; }
+
+/*! purgecss end ignore */
+
 /*# sourceMappingURL=main.css.map */

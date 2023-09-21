@@ -38,6 +38,8 @@ module.exports = {
         'dd',
         'showing',
         'hiding',
+        'page-item',
+        'page-link',
         ...whitelister([
           './node_modules/@hyas/core/assets/scss/app.scss',
           './node_modules/@hyas/doks-core/assets/scss/common/_global.scss',
