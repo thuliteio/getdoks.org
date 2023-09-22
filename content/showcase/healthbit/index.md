@@ -1,19 +1,11 @@
 ---
 title: "Healthbit"
-description: "Research blog of José Francisco Cancino Mesa — medical student, researcher and web developer."
-lead: "Research blog of José Francisco Cancino Mesa — medical student, researcher and web developer."
-date: 2022-03-31T14:58:11+02:00
-lastmod: 2022-03-31T14:58:11+02:00
+description: "Healthbit"
+summary: "Healthbit"
+date: 2023-09-15T19:21:18+02:00
+lastmod: 2023-09-15T19:21:18+02:00
 draft: false
 images: ["healthbit.png"]
-link: "https://healthbit.me"
-menu:
-  showcase:
-    parent: "browse"
-weight: 220
-toc: false
-pinned: false
-featured: false
-types: ["university"]
-functionalities: ["blog", "dark mode", "multilingual"]
+website: "https://healthbit.me/es/" # URL
+weight: 50
 ---

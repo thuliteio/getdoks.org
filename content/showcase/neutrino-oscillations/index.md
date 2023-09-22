@@ -1,19 +1,11 @@
 ---
 title: "Neutrino Oscillations"
-description: "A free ebook on neutrino flavor conversions in dense media. Neutrino flavor conversions in dense media play important roles in the physical and chemical evolutions of many dense environments. "
-lead: "A free ebook on neutrino flavor conversions in dense media. Neutrino flavor conversions in dense media play important roles in the physical and chemical evolutions of many dense environments."
-date: 2020-12-31T14:40:12+01:00
-lastmod: 2020-12-31T14:40:12+01:00
+description: "Neutrino Oscillations"
+summary: "Neutrino Oscillations"
+date: 2023-09-15T16:23:30+02:00
+lastmod: 2023-09-15T16:23:30+02:00
 draft: false
 images: ["neutrino-oscillations.png"]
-link: "https://neutrino.leima.is"
-menu:
-  showcase:
-    parent: "browse"
-weight: 020
-toc: false
-pinned: false
-featured: false
-types: ["ebook"]
-functionalities: ["dark mode", "search", "KaTeX"]
+website: "https://neutrino.leima.is/" # URL
+weight: 50
 ---
