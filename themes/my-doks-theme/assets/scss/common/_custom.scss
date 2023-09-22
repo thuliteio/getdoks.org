@@ -39,6 +39,24 @@
   }
 }
 
+.section-cards {
+  .card {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .card-title {
+    margin-top: 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .section-cards .col-lg-7:nth-child(2n) .card {
+    margin-top: 3rem;
+    margin-bottom: -3rem;
+  }
+}
+
 @include media-breakpoint-up(xl) {
   .showcase .col-main-section {
     max-width: 80rem;
@@ -79,27 +97,20 @@
   margin-top: 4rem;
 }
 
-.section-cards {
-  .card {
-    margin: 0;
-    padding: 1rem;
-  }
-
-  .card-title {
-    margin-top: 0;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .section-cards .col-lg-7:nth-child(2n) .card {
-    margin-top: 3rem;
-    margin-bottom: -3rem;
-  }
-}
-
 /*! purgecss start ignore */
 .page-item a[aria-label="Previous"],
 .page-item a[aria-label="Next"] {
   border-radius: 50%;
 }
+
 /*! purgecss end ignore */
+
+// Add to Doks
+
+.callout pre {
+  margin: 1rem 0 0;
+}
+
+.callout ul {
+  margin-bottom: 0;
+}

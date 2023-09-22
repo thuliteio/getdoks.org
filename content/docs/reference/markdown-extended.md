@@ -1,5 +1,5 @@
 ---
-title: "Markdown Extended"
+title: "Markdown Extended Syntax"
 description: ""
 summary: ""
 date: 2023-09-12T19:57:52+02:00
@@ -17,7 +17,7 @@ toc: true
 A quick reference to the Markdown extended syntax.
 
 {{< callout icon="info-circle" >}}
-Refer to the [extended syntax](https://www.markdownguide.org/extended-syntax) reference guide for more information.
+Refer to the [Extended Syntax](https://www.markdownguide.org/extended-syntax) reference guide from The Markdown Guide for more information.
 {{< /callout >}}
 
 ## Table

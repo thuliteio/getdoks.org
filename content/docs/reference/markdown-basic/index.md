@@ -1,5 +1,5 @@
 ---
-title: "Markdown Basic"
+title: "Markdown Basic Syntax"
 description: ""
 summary: ""
 date: 2023-09-12T19:57:37+02:00
@@ -17,7 +17,7 @@ toc: true
 A quick reference to the Markdown basic syntax.
 
 {{< callout icon="info-circle" >}}
-Refer to the [basic syntax](https://www.markdownguide.org/basic-syntax) reference guide for more information.
+Refer to the [Basic Syntax](https://www.markdownguide.org/basic-syntax) reference guide from The Markdown Guide for more information.
 {{< /callout >}}
 
 ## Heading

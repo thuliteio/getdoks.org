@@ -16,8 +16,7 @@ toc: true
 
 {{< callout context="tip" title="Doks version 1 is here!" icon="rocket" >}}
 - What’s new in Doks v1? [Find out in the announcement blog post](/blog/doks-1/).
-- Ready to upgrade? [Follow our upgrade guide](/guides/upgrade-to/v2/).
-{.mb-0}
+- Ready to upgrade? [Follow our upgrade guide](/docs/guides/upgrade-to-v1/).
 {{< /callout >}}
 
 ## Creating a new project
@@ -50,7 +49,7 @@ yarn create hyas@latest -- --template doks
 {{< /tab >}}
 {{< /tabs >}}
 
-This will create a new [project directory](/guides/project-structure/) with all the necessary files and configurations for your site.
+This will create a new [project directory](/docs/guides/project-structure/) with all the necessary files and configurations for your site.
 
 {{< callout context="tip" title="See it in action" icon="rocket" >}}
 Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/gethyas/doks).

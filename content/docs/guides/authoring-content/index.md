@@ -1,5 +1,5 @@
 ---
-title: "Authoring Content"
+title: "Authoring Content in Markdown"
 description: ""
 summary: ""
 date: 2023-09-12T16:10:28+02:00
@@ -97,6 +97,50 @@ I can link to [my conclusion](#conclusion) lower on the same page.
 
 Level 2 (`<h2>`) and Level 3 (`<h3>`) headings will automatically appear in the page table of contents.
 
-## Callouts
+## Blockquotes
 
-Callouts (also known as "admonitions" or "asides") are useful for displaying secondary information alongside a page's main content.
+> This is a blockquote, which is commonly used when quoting another person or document.
+>
+> Blockquotes are indicated by a `>` at the start of each line.
+
+```md
+> This is a blockquote, which is commonly used when quoting another person or document.
+>
+> Blockquotes are indicated by a `>` at the start of each line.
+```
+
+## Code blocks
+
+A code block is indicated by a block with three backticks `` ``` `` at the start and end. You can indicate the programming language being used after the opening backticks.
+
+```go
+// Go code with syntax highlighting.
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+
+````md
+```go
+// Go code with syntax highlighting.
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, World!")
+}
+```
+````
+
+```md
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+## Other common Markdown features
+
+Doks supports all other Markdown authoring syntax, such as lists and tables. See [Markdown Basic Syntax](/docs/reference/markdown-basic-syntax/) and [Markdown Extended Syntax](/docs/reference/markdown-extended-syntax/) for a quick overview of all the Markdown syntax elements.

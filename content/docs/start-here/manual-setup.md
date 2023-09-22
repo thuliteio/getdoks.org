@@ -15,3 +15,7 @@ toc: true
 ---
 
 The quickest way to create a new Doks site is using `create hyas` as shown in the [Getting Started guide](/docs/start-here/getting-started/#creating-a-new-project). If you want to add Doks to an existing Hyas project, this guide will explain how.
+
+## Set up Doks
+
+To follow this guide, you’ll need an existing Hyas project.
