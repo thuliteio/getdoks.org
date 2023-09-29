@@ -241,6 +241,9 @@
         <!-- Social menu -->
         {{ if .Site.Menus.social -}}
         <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item d-none d-lg-flex py-1 col-auto">
+            <div class="vr h-100 mx-2 text-muted"></div>
+          </li>
           {{ range .Site.Menus.social -}}
             <li class="nav-item">
               <a rel="me" class="nav-link social-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 visually-hidden">{{ .Name | safeHTML }}</small></a>
