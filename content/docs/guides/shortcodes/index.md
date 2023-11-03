@@ -5,13 +5,17 @@ summary: ""
 date: 2023-09-12T19:58:01+02:00
 lastmod: 2023-09-12T19:58:01+02:00
 draft: false
-images: []
 menu:
   docs:
     parent: ""
     identifier: "shortcodes-8ac2041973478ffa22bad1f7446be3df"
 weight: 820
 toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 Shortcodes let you easily reuse a piece of UI or styling consistently. Examples might include a callout or a YouTube embed. Doks supports the use of shortcodes in Markdown files and provides some common shortcodes for you to use.
@@ -281,10 +285,10 @@ You can display an image from the assets directory or page resources by using th
 Display an image from the assets directory:
 
 ```md
-{{</* picture src="assets/images/bozhin-karaivanov-3HnVKfQZGTQ-unsplash.jpg" alt="Red raspberry" */>}}
+{{</* picture src="images/bozhin-karaivanov-3HnVKfQZGTQ-unsplash.jpg" alt="Red raspberry" */>}}
 ```
 
-{{< picture src="assets/images/bozhin-karaivanov-3HnVKfQZGTQ-unsplash.jpg" alt="Red raspberry" >}}
+{{< picture src="images/bozhin-karaivanov-3HnVKfQZGTQ-unsplash.jpg" alt="Red raspberry" >}}
 
 ### Page resources
 

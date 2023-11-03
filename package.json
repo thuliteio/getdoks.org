@@ -1,16 +1,20 @@
 {
-  "name": "getdoks.org-next",
-  "version": "0.0.0",
-  "description": "Doks theme",
+  "name": "doks-website",
+  "version": "0.5.0",
+  "description": "Doks website",
   "author": "Hyas",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gethyas/getdoks.org.git"
+  },
   "scripts": {
     "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
     "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts",
     "create": "exec-bin node_modules/.bin/hugo/hugo new",
     "lint": "npm run lint:styles && npm run lint:markdown",
-    "lint:scripts": "eslint --cache themes/my-doks-theme/assets/js",
-    "lint:styles": "stylelint --cache \"themes/my-doks-theme/assets/scss/**/*.{css,sass,scss}\"",
+    "lint:scripts": "eslint --cache assets/js",
+    "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
@@ -22,10 +26,14 @@
     "preinfo": "npm version",
     "info": "npm list",
     "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
-    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo"
+    "postinstall": "shx rm -rf node_modules/.bin/hugo && shx mkdir node_modules/.bin/hugo && shx cp node_modules/gethyas/node_modules/.bin/hugo/* node_modules/.bin/hugo",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@hyas/doks-core": "^1.0.7"
+    "@hyas/doks-core": "^1.1.1"
+  },
+  "devDependencies": {
+    "auto-changelog": "^2.4.0"
   },
   "engines": {
     "node": ">=16.12.0"

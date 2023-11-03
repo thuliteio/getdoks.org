@@ -19,6 +19,9 @@ defaultContentLanguageInSubdir = false
 
 copyRight = "Copyright (c) 2023 Hyas"
 
+[build.buildStats]
+  enable = true
+
 [social]
   twitter = "getdoks"
 
@@ -79,7 +82,7 @@ rel  = "sitemap"
     weight = 10
 
 [imaging]
-  anchor = "Smart"
+  anchor = "Center"
   bgColor = "#ffffff"
   hint = "photo"
   quality = 75

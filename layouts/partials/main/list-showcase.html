@@ -1,0 +1,53 @@
+<section class="section section-md">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-11 col-lg-9 text-center">
+        <h1 class="display-2 fw-normal mt-1">{{ .Summary }}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ if site.Params.doks.backgroundDots -}}
+<div class="d-flex justify-content-start mt-n3">
+  <div class="bg-dots"></div>
+</div>
+{{ end -}}
+
+<section class="section section-md">
+  <div class="container">
+    <div class="row row-showcase justify-content-center py-3">
+      <div class="col-main-section">
+        <div class="row row-flex">
+          <!-- Source: https://discourse.gohugo.io/t/how-to-conditionally-apply-html-code-after-every-3-posts/3118/2 -->
+          {{ range $i, $e := .Paginator.Pages }}
+            {{ if or (mod $i 5 | eq 0) (mod $i 5 | eq 1) }}
+              <div class="col-md-8 p-0">
+            {{ else }}
+              <div class="col-md-8 col-xl p-0">
+            {{ end }}
+                {{ .Render "item" }}
+              </div>
+          {{ end }}
+
+          {{ template "_internal/pagination.html" . }}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-md border-top">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-11 col-md-8 col-lg-6 text-center">
+        <h2 class="display-5 fw-normal mt-1">Submit your site</h2>
+        <p class="lead">Anyone is welcome to submit a site for our Showcase!</p>
+        <div class="actions d-flex justify-content-center align-items-center">
+          <a target="_blank" rel="noopener noreferer" class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="https://github.com/orgs/gethyas/discussions/new?category=showcase" role="button">Submit site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

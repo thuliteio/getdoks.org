@@ -5,13 +5,17 @@ summary: ""
 date: 2023-09-12T16:10:28+02:00
 lastmod: 2023-09-12T16:10:28+02:00
 draft: false
-images: []
 menu:
   docs:
     parent: ""
     identifier: "authoring-content-c8eb05af83475c21365e023a6eee3ef0"
 weight: 810
 toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 Doks supports the full range of [Markdown](https://daringfireball.net/projects/markdown/) syntax in `.md` files as well as frontmatter [YAML](https://yaml.org/spec/1.2.2/), [TOML](https://toml.io/en/), or [JSON](https://www.json.org/json-en.html) to define metadata such as a title and description.

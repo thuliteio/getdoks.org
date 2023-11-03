@@ -5,13 +5,17 @@ summary: ""
 date: 2023-09-22T16:15:46+02:00
 lastmod: 2023-09-22T16:15:46+02:00
 draft: false
-images: []
 menu:
   docs:
     parent: ""
     identifier: "upgrade-to-v1-0759044a0c123f8852d4a7b22b02838e"
 weight: 805
 toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 This guide will walk you through the steps to manually migrate from Doks v0.5 to Doks v1.
@@ -126,7 +130,6 @@ yarn add @hyas/doks-core@latest
 After upgrading Doks to the latest version, you may not need to make any changes to your project at all!
 
 But, if you notice errors or unexpected behavior, please check below for what has changed that might need updating in your project.
-{.mb-0}
 {{< /callout >}}
 
 ## Configuration

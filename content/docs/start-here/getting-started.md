@@ -5,13 +5,17 @@ summary: ""
 date: 2023-09-12T12:07:48+02:00
 lastmod: 2023-09-12T12:07:48+02:00
 draft: false
-images: []
 menu:
   docs:
     parent: ""
     identifier: "getting-started-cefa9dc0267d0e3bb7a88365c6178eb1"
 weight: 110
 toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 {{< callout context="tip" title="Doks version 1 is here!" icon="rocket" >}}

@@ -5,13 +5,17 @@ summary: ""
 date: 2023-09-12T19:57:52+02:00
 lastmod: 2023-09-12T19:57:52+02:00
 draft: false
-images: []
 menu:
   docs:
     parent: ""
     identifier: "markdown-extended-ae2f9d665196ad2e0ff32cddf664df92"
 weight: 940
 toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
 ---
 
 A quick reference to the Markdown extended syntax.

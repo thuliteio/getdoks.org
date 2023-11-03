@@ -1,7 +1,7 @@
-[404-text]
+[404_text]
 other = "The page you are looking for doesn't exist or has been moved."
 
-[404-title]
+[404_title]
 other = "Page not found :("
 
 [browse]
@@ -16,14 +16,21 @@ other = "Prev"
 [edit_page]
 other = "Edit this page on"
 
-[get-started]
+[get_started]
 other = "Get Started"
 
 [last_updated]
 other = "Last updated on"
 
-[on-this-page]
+[minute]
+one = "minute"
+other = "minutes"
+
+[on_this_page]
 other = "On this page"
+
+[reading_time]
+other = "Estimated reading time"
 
 [search_loading]
 other = "Loading search index…"
@@ -40,5 +47,5 @@ other = "Search"
 [search_title]
 other = "Search"
 
-[videoUnsupported]
+[video_unsupported]
 other = "Your browser doesn't support embedded videos, but don't worry, you can <a href=\"{{ .RelPermalink }}\">download it</a> and watch it with your favorite video player!"
