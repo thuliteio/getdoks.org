@@ -23,7 +23,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   containerBreakpoint = "fluid" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
 
   ## Button
-  navBarButton = true # false (default) or true
+  navBarButton = false # false (default) or true
   navBarButtonUrl = "https://gethyas.com/"
   navBarButtonText = "Visit gethyas.com"
 
