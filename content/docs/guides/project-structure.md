@@ -24,12 +24,13 @@ Doks projects generally follow the same file and directory structure as other Hy
 
 ## Files and directories
 
-- `config/_default/hyas/doks.toml` — The Doks configuration file.
-- `config/_default/params.yml` — The integrations configuration file.
+- `config/_default/hugo.toml` — The Hugo/site configuration file.
+- `config/_default/module.toml` — The Hugo mounts configuration file.
+- `config/_default/params.toml` — The Doks + Hyas integrations (Images, Inline SVG, and SEO) configuration file.
 - `content/` — Content files.
-- `i18n/` (optional) — Translation data to support [internationalization.](/guides/i18n/)
+- `i18n/` (optional) — Translation data to support [internationalization](/docs/guides/i18n/),
+- `assets/` — Assets (scripts, styles, images, etc.) for your project.
 - `static/` — Static assets (fonts, favicon, PDFs, etc.) that will not be processed.
-- `themes/my-doks-theme/`(optional) — Customizations for the [Doks Core](https://github.com/gethyas/doks-core) integration.
 
 ## Example project contents
 
@@ -37,14 +38,13 @@ A Doks project directory might look like this:
 
 ```bash
 .
+├── assets/
 ├── config/
 │   └───_default/
-│       ├───hyas/
-│       │   └───doks.toml
 │       ├───hugo.toml
 │       ├───menus.toml
 │       ├───module.toml
-│       └───params.yml
+│       └───params.toml
 ├── content/
 │   └───docs/
 │       ├───guides/
@@ -52,10 +52,7 @@ A Doks project directory might look like this:
 │       │   └───getting-started.md
 │       └───_index.md
 ├── i18n/
+├── layouts/
 ├── static/
-├── themes/
-│   └───my-doks-theme/
-│       ├───assets/
-│       └───layouts/
 └── package.json
 ```
