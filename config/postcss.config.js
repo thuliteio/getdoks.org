@@ -59,6 +59,7 @@ module.exports = {
         'page-link',
         ...whitelister([
           './assets/scss/**/*.scss',
+          './node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss',
         ]),
       ],
     }),
