@@ -4,7 +4,7 @@ description: "Foreverliketh.is"
 summary: "Foreverliketh.is"
 date: 2023-11-03T15:52:26+01:00
 lastmod: 2023-11-03T15:52:26+01:00
-draft: false
+draft: true
 website: "https://foreverliketh.is/" # URL
 weight: 50
 seo:
