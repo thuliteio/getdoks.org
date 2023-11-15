@@ -24,7 +24,6 @@ The quickest way to create a new Doks site is using `create hyas` as shown in th
 
 To follow this guide, you’ll need an existing Hyas project.
 
-
 ### Add the Doks integration
 
 Doks is a [Hyas integration](https://docs.gethyas.com/guides/integrations/). Add it to your site by running the following command in your project's root directory:
@@ -62,6 +61,7 @@ This will install the required dependencies.
 Add the following settings to `config/_default/hugo.toml`:
 
 {{< details "Settings" >}}
+
 ```toml
 # Multilingual
 defaultContentLanguage = "en"
@@ -87,6 +87,7 @@ isPlainText = true
 noUgly = true
 rel  = "sitemap"
 ```
+
 {{< /details >}}
 
 #### Update mounts
@@ -94,6 +95,7 @@ rel  = "sitemap"
 Update the mounts configuration in `config/_default/module.toml`:
 
 {{< details "Mounts" >}}
+
 ```toml
 # mounts
 ## archetypes
@@ -201,6 +203,7 @@ Update the mounts configuration in `config/_default/module.toml`:
   source = "static"
   target = "static"
 ```
+
 {{< /details >}}
 
 #### Add parameters
@@ -208,6 +211,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 Add the following parameters to `config/_default/params.toml`:
 
 {{< details "Parameters" >}}
+
 ```toml
 # Doks (@hyas/doks-core)
 [doks]
@@ -340,6 +344,7 @@ Add the following parameters to `config/_default/params.toml`:
     blogPosting = ["blog"] # BlogPosting sections
     product = [] # Product sections
 ```
+
 {{< /details >}}
 
 ### Add fonts

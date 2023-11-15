@@ -19,6 +19,8 @@
       "dl",
       "dt",
       "em",
+      "figcaption",
+      "figure",
       "footer",
       "form",
       "g",
@@ -350,12 +352,10 @@
       "wrap"
     ],
     "ids": [
-      "1-clean-dependencies",
-      "2-update-packagejson",
-      "3-install-doks",
       "TableOfContents",
       "add-content",
       "add-fonts",
+      "add-npmrc",
       "add-pages",
       "add-parameters",
       "add-site-configuration",
@@ -370,13 +370,13 @@
       "buttonColorMode",
       "caching",
       "callouts",
+      "clean-dependencies",
       "clip0_235_26",
       "clip0_235_8",
       "clip0_236_179",
       "code",
       "code-blocks",
       "comparisons",
-      "configuration",
       "configure-the-integration",
       "create-a-new-project",
       "custom-callout-titles",
@@ -501,8 +501,9 @@
       "unordered-list",
       "unsupported-elements",
       "update-mounts",
+      "update-packagejson",
       "updating-doks",
-      "upgrading",
+      "upgrade-doks",
       "video"
     ]
   }

@@ -13680,6 +13680,9 @@ body {
   border-radius: 50%; }
 
 /*! purgecss end ignore */
+.callout-content {
+  min-width: 0; }
+
 .callout pre {
   margin: 1rem 0; }
 
@@ -13711,5 +13714,10 @@ body {
     max-width: 1075px; }
     .container-fw .docs-content {
       width: 675px; } }
+
+figcaption {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */

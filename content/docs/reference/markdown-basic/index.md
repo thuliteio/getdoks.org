@@ -107,7 +107,7 @@ Refer to the [Basic Syntax](https://www.markdownguide.org/basic-syntax) referenc
 ## Image
 
 ```md
-![Young turtle](kris-mikael-krister-aGihPIbrtVE-unsplash.jpg)
+![A yellow and black bird sitting on top of a body of water](vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)
 ```
 
-![Young turtle](kris-mikael-krister-aGihPIbrtVE-unsplash.jpg)
+![A yellow and black bird sitting on top of a body of water](vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)

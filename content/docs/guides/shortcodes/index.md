@@ -26,15 +26,28 @@ Learn more about [Shortcodes](https://gohugo.io/content-management/shortcodes/) 
 
 ## SVG
 
-You can display an [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) from the assets directory, page resources, or Tabler Icons by using the `{{</* inline-svg */>}}` shortcode.
+You can store your SVG as a page resource or global resource.
+
+Display an SVG using the `{{</* inline-svg */>}}` shortcode.
 
 {{< callout icon="info-circle" >}}
-The [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) gets embedded into the pages' HTML.
-{{< /callout >}}
+The SVG gets embedded into the pages' HTML:
 
 ```html
-<svg class="logo-netlify-monogram-monochrome-lightmode svg-inline svg-inline-custom svg-monochrome" height="57px" width="64px" viewBox="0 0 128 113" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_236_179)"><path d="M34.593 94.2052H33.3844l-6.033-6.033V86.9637L36.5743 77.7409h6.3896L43.8158 78.5928v6.3896L34.593 94.2052z" fill="#181a1c"></path><path d="M27.3514 25.9703V24.7617l6.033-6.033H34.593l9.2228 9.2228v6.3896L42.9639 35.1931H36.5743l-9.2229-9.2228z" fill="#181a1c"></path><path d="M80.4594 74.759h-8.777L70.9493 74.026V53.4802C70.9493 49.8248 69.5129 46.9915 65.1046 46.8925 62.836 46.833 60.2405 46.8925 57.4668 47.0014L57.0507 47.4274V74.0161L56.3176 74.7491h-8.777L46.8075 74.0161V38.9179l.7331-.7331H67.2939C74.9713 38.1848 81.1925 44.406 81.1925 52.0834V74.026L80.4594 74.759z" fill="#181a1c"></path><path d="M35.8412 61.6034H.73307L0 60.8703V52.0735l.73307-.7331H35.8412l.7331.7331v8.7968l-.7331.7331z" fill="#181a1c"></path><path d="M127.277 61.6034H92.1687L91.4356 60.8703V52.0735L92.1687 51.3404H127.277L128.01 52.0735v8.7968L127.277 61.6034z" fill="#181a1c"></path><path d="M58.9428 27.2185V.887367l.7331-.73307H68.4727L69.2058.887367V27.2185L68.4727 27.9515H59.6759L58.9428 27.2185z" fill="#181a1c"></path><path d="M58.9428 112.056V85.7254L59.6759 84.9923H68.4727L69.2058 85.7254V112.056L68.4727 112.79H59.6759L58.9428 112.056z" fill="#181a1c"></path></g><defs><clipPath id="clip0_236_179"><rect width="128" height="112.635" fill="#fff" transform="translate(0 0.154297)"></rect></clipPath></defs></svg>
+<svg class="coffee svg-inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 14c.83.642 2.077 1.017 3.5 1 1.423.017 2.67-.358 3.5-1s2.077-1.017 3.5-1c1.423-.017 2.67.358 3.5 1"></path><path d="M8 3A2.4 2.4.0 007 5a2.4 2.4.0 001 2"></path><path d="M12 3a2.4 2.4.0 00-1 2 2.4 2.4.0 001 2"></path><path d="M3 10h14v5a6 6 0 01-6 6H9a6 6 0 01-6-6v-5z"></path><path d="M16.746 16.726a3 3 0 10.252-5.555"></path></svg>
 ```
+
+{{< /callout >}}
+
+### Page resources
+
+You can add a monochrome monogram that respects darkmode/lightmode:
+
+```md
+{{</* inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" */>}}
+```
+
+{{< inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" >}}
 
 ### Assets directory
 
@@ -47,20 +60,6 @@ You can add a logo that respects darkmode/lightmode:
 
 {{< inline-svg src="svgs/logos/logo-netlify-large-fullcolor-lightmode.svg" width="192px" height="79px" class="svg-inline-custom svg-lightmode" >}}
 {{< inline-svg src="svgs/logos/logo-netlify-large-fullcolor-darkmode.svg" width="192px" height="79px" class="svg-inline-custom svg-darkmode" >}}
-
-### Page resources
-
-{{< callout icon="info-circle" >}}
-Learn more about [Page resources](https://gohugo.io/content-management/page-resources/) and [Page bundles](https://gohugo.io/content-management/page-bundles/) in the Hugo Docs.
-{{< /callout >}}
-
-You can add a monochrome monogram that respects darkmode/lightmode:
-
-```md
-{{</* inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" */>}}
-```
-
-{{< inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" >}}
 
 ### Tabler icons
 
@@ -145,7 +144,7 @@ Your users may be more productive and find your product easier to use thanks to 
 
 - Clear navigation
 - User-configurable color theme
-- [i18n support](/guides/i18n/)
+- [i18n support](/docs/guides/i18n/)
 {{< /callout >}}
 
 ```md
@@ -158,7 +157,7 @@ Your users may be more productive and find your product easier to use thanks to 
 
 - Clear navigation
 - User-configurable color theme
-- [i18n support](/guides/i18n/)
+- [i18n support](/docs/guides/i18n/)
 {{</* /callout */>}}
 ```
 
@@ -278,34 +277,44 @@ yarn install
 
 ## Image
 
-You can display an image from the assets directory or page resources by using the `{{</* img */>}}` or `{{</* picture */>}}` shortcodes.
+You can [store your images](https://images.gethyas.com/docs/guides/resources/) as a page resource, global resource, or remote resource.
 
-### Assets directory
-
-Display an image from the assets directory:
-
-```md
-{{</* picture src="images/bozhin-karaivanov-3HnVKfQZGTQ-unsplash.jpg" alt="Red raspberry" */>}}
-```
-
-{{< picture src="images/bozhin-karaivanov-3HnVKfQZGTQ-unsplash.jpg" alt="Red raspberry" >}}
+Display an image using the [`{{</* img */>}}`](https://images.gethyas.com/docs/guides/shortcodes/img/), [`{{</* picture */>}}`](https://images.gethyas.com/docs/guides/shortcodes/picture/), or [`{{</* figure */>}}`](https://images.gethyas.com/docs/guides/shortcodes/figure/) shortcode.
 
 ### Page resources
 
 Display an image from page resources:
 
 ```md
-{{</* picture src="bozhin-karaivanov-zs6GW81O538-unsplash.jpg" alt="Red apples on a tree" */>}}
+{{</* picture src="vincent-van-zalinge-OVCICfR9gXo-unsplash.jpg" alt="A bird flying through a field of tall grass" */>}}
 ```
 
-{{< picture src="bozhin-karaivanov-zs6GW81O538-unsplash.jpg" alt="Red apples on a tree" >}}
+{{< picture src="vincent-van-zalinge-OVCICfR9gXo-unsplash.jpg" alt="A bird flying through a field of tall grass" >}}
+
+### Assets directory
+
+Display an image from the assets directory:
+
+```md
+{{</* figure
+  src="images/vincent-van-zalinge-k-_kK6c4Bkw-unsplash.jpg"
+  alt="A small bird sitting on top of a dry grass field"
+  caption="A small bird sitting on top of a dry grass field. Photo by Vincent van Zalinge"
+*/>}}
+```
+
+{{< figure
+  src="images/vincent-van-zalinge-k-_kK6c4Bkw-unsplash.jpg"
+  alt="A small bird sitting on top of a dry grass field"
+  caption="A small bird sitting on top of a dry grass field. Photo by Vincent van Zalinge"
+>}}
 
 ## Video
 
 You can insert a [Video Embed HTML element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video) using the `{{</* video */>}}` shortcode.
 
 ```md
-{{</* video src="flower" autoplay="true" muted="true" */>}}
+{{</* video src="robin_-_21723 (540p)" autoplay="true" muted="true" */>}}
 ```
 
-{{< video src="flower" autoplay="true" muted="true" >}}
+{{< video src="robin_-_21723 (540p)" autoplay="true" muted="true" >}}

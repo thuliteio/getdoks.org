@@ -27,16 +27,16 @@ Refer to the [Extended Syntax](https://www.markdownguide.org/extended-syntax) re
 ## Table
 
 ```md
-| Syntax | Description |
+| Syntax      | Description |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Header      | Title       |
+| Paragraph   | Text        |
 ```
 
-| Syntax | Description |
+| Syntax      | Description |
 | ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
+| Header      | Title       |
+| Paragraph   | Text        |
 
 ## Fenced Code Block
 

@@ -107,6 +107,10 @@
 
 // Add to Doks
 
+.callout-content {
+  min-width: 0;
+}
+
 .callout pre {
   margin: 1rem 0;
 }
@@ -153,4 +157,10 @@
       width: 675px;
     }
   }
+}
+
+figcaption {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-style: italic;
 }

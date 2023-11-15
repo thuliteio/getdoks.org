@@ -16,6 +16,7 @@ seo:
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
+slug: "authoring-content"
 ---
 
 Doks supports the full range of [Markdown](https://daringfireball.net/projects/markdown/) syntax in `.md` files as well as frontmatter [YAML](https://yaml.org/spec/1.2.2/), [TOML](https://toml.io/en/), or [JSON](https://www.json.org/json-en.html) to define metadata such as a title and description.
@@ -42,21 +43,17 @@ You can highlight `inline code` with backticks.
 
 ## Images
 
-Images use [Hyas' Images integration](https://docs.gethyas.com/guides/integrations-guide/images/).
+Images in Doks use [Hyas' Images integration](https://images.gethyas.com/).
 
-Hyas Images supports the Markdown syntax for displaying images that includes alt-text for screen readers and assistive technology.
+Hyas Images supports the [Markdown syntax for displaying images](https://www.markdownguide.org/basic-syntax/#images-1) that includes alt-text for screen readers and assistive technology.
 
-![Lightyear 2 close side rear](lightyear-2-close-side-rear-4k.jpg)
-
-```md
-![Lightyear 2 close side rear](lightyear-2-close-side-rear-4k.jpg)
-```
-
-Relative image paths are supported for images stored locally in a [leaf bundle](https://gohugo.io/content-management/page-bundles/#leaf-bundles) directory or in your project's `assets` directory.
+![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
 
 ```md
-![Lightyear 2 close side rear](assets/images/lightyear-2-close-side-rear-4k.jpg)
+![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
 ```
+
+You can [store your images](https://images.gethyas.com/docs/guides/resources/) as a page resource, global resource, or remote resource.
 
 ## Headings
 

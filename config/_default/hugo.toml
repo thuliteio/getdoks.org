@@ -85,5 +85,5 @@ rel  = "sitemap"
   anchor = "Center"
   bgColor = "#ffffff"
   hint = "photo"
-  quality = 75
-  resampleFilter = "Box"
+  quality = 85
+  resampleFilter = "Lanczos"
