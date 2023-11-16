@@ -35,6 +35,9 @@
   "devDependencies": {
     "auto-changelog": "^2.4.0"
   },
+  "overrides": {
+    "semver": "7.5.4"
+  },
   "engines": {
     "node": ">=16.12.0"
   }

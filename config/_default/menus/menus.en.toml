@@ -49,6 +49,37 @@
   url = "https://github.com/h-enk/doks/discussions"
   weight = 40
 
+
+[[main]]
+  name = "Other docs"
+  url = "https://github.com/h-enk/doks/discussions"
+  weight = 50
+  identifier = "other-docs"
+
+[[main]]
+  name = "Hyas"
+  weight = 51
+  url = "https://docs.gethyas.com/"
+  parent = "other-docs"
+
+[[main]]
+  name = "Images"
+  weight = 52
+  url = "https://images.gethyas.com/"
+  parent = "other-docs"
+
+[[main]]
+  name = "Inline SVG"
+  weight = 53
+  url = "https://svg.gethyas.com/"
+  parent = "other-docs"
+
+[[main]]
+  name = "SEO"
+  weight = 54
+  url = "https://seo.gethyas.com/"
+  parent = "other-docs"
+
 [[social]]
   name = "Twitter"
   pre = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>'
