@@ -18,7 +18,11 @@
   {{ end -}}
 
     <!-- Site title -->
-    <a class="navbar-brand me-auto me-lg-3" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+    <a class="navbar-brand me-auto me-lg-3" href="{{ site.BaseURL | relLangURL }}">
+      <span class="visually-hidden">{{ .Site.Title }}</span>
+      {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-light-mode.svg" "width" "70px" "height" "100%" "class" "svg-inline-custom svg-lightmode") }}
+      {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-dark-mode.svg" "width" "70px" "height" "100%" "class" "svg-inline-custom svg-darkmode") }}
+    </a>
 
     <!-- FlexSearch mobile -->
     {{ partial "main/showFlexSearch" . }}
@@ -82,7 +86,11 @@
         <div class="header-bar d-lg-none"></div>
       {{ end -}}
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">{{ site.Title }}</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">
+          <span class="visually-hidden">{{ site.Title }}</span>
+          {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-light-mode.svg" "width" "60px" "height" "100%" "class" "svg-inline-custom svg-lightmode") }}
+          {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-dark-mode.svg" "width" "60px" "height" "100%" "class" "svg-inline-custom svg-darkmode") }}
+        </h5>
         <button type="button" class="btn btn-link nav-link p-0" data-bs-dismiss="offcanvas" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

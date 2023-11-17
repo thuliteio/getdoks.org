@@ -164,3 +164,32 @@ figcaption {
   margin-top: 0.5rem;
   font-style: italic;
 }
+
+.navbar-brand svg {
+  width: 60px;
+  height: 100%;
+  margin-right: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-brand svg {
+    width: 70px;
+    height: 100%;
+  }
+}
+
+.section-credits {
+  padding-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .section-credits {
+    padding-top: 4.5rem;
+    margin-bottom: 4.5rem;
+  }
+}
+
+.home .footer {
+  @include visually-hidden;
+}

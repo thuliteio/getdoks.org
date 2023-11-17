@@ -12,6 +12,13 @@ alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1/"
 # Footer
 footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\">Hyas</a>"
 
+# getdoks.org
+[getdoks_org]
+  carbonAds = true
+  docSearch = false
+  plausibleAnalytics = false
+  keila = false
+
 # Doks (@hyas/doks-core)
 [doks]
   # Color mode
@@ -66,7 +73,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   backgroundDots = true # true (default) or false
 
   # Homepage
-  sectionFooter = false # false (default) or true
+  sectionFooter = true # false (default) or true
 
   # Blog
   relatedPosts = false # false (default) or true
