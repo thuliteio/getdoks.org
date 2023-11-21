@@ -9,7 +9,7 @@ menu:
   docs:
     parent: ""
     identifier: "sidebar-9237db3eac8fc3e487bc011e87faef60"
-weight: 880
+weight: 580
 toc: true
 seo:
   title: "" # custom title (optional)

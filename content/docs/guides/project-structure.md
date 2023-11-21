@@ -9,7 +9,7 @@ menu:
   docs:
     parent: ""
     identifier: "project-structure-d6552f67aec02a338ca05eb79bcda91a"
-weight: 870
+weight: 570
 toc: true
 seo:
   title: "" # custom title (optional)

@@ -1,15 +1,15 @@
 ---
-title: "Overriding Layouts"
+title: "Add-ons"
 description: ""
 summary: ""
-date: 2023-11-15T09:05:43+01:00
-lastmod: 2023-11-15T09:05:43+01:00
+date: 2023-11-20T14:41:15+01:00
+lastmod: 2023-11-20T14:41:15+01:00
 draft: false
 menu:
   docs:
     parent: ""
-    identifier: "overriding-layouts-35dcec785a811099b004d6135cad3160"
-weight: 560
+    identifier: "add-ons-0fe9d455dd7709f919acdd606156a4e7"
+weight: 800
 toc: true
 seo:
   title: "" # custom title (optional)
