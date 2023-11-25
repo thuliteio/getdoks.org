@@ -12,6 +12,10 @@ alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1/"
 # Footer
 footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\">Hyas</a>"
 
+# Add-ons
+[add_ons]
+  plausibleDomain = "getdoks.org" # "example.com" (default)
+
 # getdoks.org
 [getdoks_org]
   carbonAds = true
