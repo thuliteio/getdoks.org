@@ -12298,6 +12298,9 @@ code.language-mermaid {
 [data-bs-theme="dark"] .line.hl {
   color: #fcf2dd; }
 
+[data-bs-theme="dark"] .math-block img {
+  filter: invert(1); }
+
 .comment-list ol {
   list-style: none; }
 
