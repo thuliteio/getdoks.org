@@ -30,6 +30,8 @@
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "dependencies": {
+    "@docsearch/css": "^3.5.2",
+    "@docsearch/js": "^3.5.2",
     "@hyas/doks-core": "^1.1.2"
   },
   "devDependencies": {

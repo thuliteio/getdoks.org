@@ -97,3 +97,9 @@ body {
 
 // 9. Custom styles
 @import "common/custom";
+
+// 10. DocSearch
+// @import "@docsearch/css/dist/_variables";
+@import "common/variables-docsearch";
+// @import "@docsearch/css/dist/button";
+@import "@docsearch/css/dist/modal";
