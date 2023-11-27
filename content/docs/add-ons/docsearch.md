@@ -34,7 +34,9 @@ If a file does not exist in your projects' root, copy the file over from `node_m
 Add the following parameters to `config/_default/params.toml`:
 
 ```toml
-docSearch = true # false (default) or true
+# Add-ons
+[add_ons]
+  docSearch = true # false (default) or true
 
 # Doks (@hyas/doks-core)
 [doks]
@@ -84,7 +86,7 @@ Add (around line 38) after `<!-- FlexSearch mobile -->`:
 
 ```html
     <!-- DocSearch mobile -->
-    {{ if site.Params.docSearch -}}
+    {{ if site.Params.add_ons.docSearch -}}
     <div id="docsearch" class="d-none" tabindex="-1" aria-disabled="true"></div>
     <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -106,8 +108,8 @@ Add (around line 170) after `<!-- FlexSearch desktop -->`:
 
 ```html
         <!-- DocSearch desktop -->
-        {{ if site.Params.docSearch -}}
-        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2" aria-label="Search website">
+        {{ if site.Params.add_ons.docSearch -}}
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link mx-2 d-none d-lg-block" aria-label="Search website">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <circle cx="10" cy="10" r="7"></circle>
@@ -149,7 +151,7 @@ document.getElementById('searchToggleDesktop').onclick = onClick;
 Add to `layouts/partials/footer/script-footer-custom.html`:
 
 ```html
-{{ if site.Params.docSearch -}}
+{{ if site.Params.add_ons.docSearch -}}
   {{ partial "footer/esbuild" (dict "src" "js/docsearch.js" "load" "async" "transpile" false) -}}
 {{ end -}}
 ```
