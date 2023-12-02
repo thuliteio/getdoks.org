@@ -200,6 +200,10 @@ figcaption {
   z-index: 2000 !important;
 }
 
+.DocSearch-Hit-title {
+  overflow-y: hidden;
+}
+
 .DocSearch-Hit-icon {
   display: flex;
   align-items: center;
