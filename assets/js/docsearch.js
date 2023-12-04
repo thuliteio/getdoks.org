@@ -9,7 +9,7 @@ docsearch({
 });
 
 const onClick = function() {
-  document.getElementsByClassName("DocSearch-Button")[0].click();  
+  document.getElementsByClassName('DocSearch-Button')[0].click();  
 }
 
 document.getElementById('searchToggleMobile').onclick = onClick;

@@ -11708,6 +11708,16 @@ hr {
   margin: 3rem 0;
   border-radius: 0.375rem; }
 
+.home #carbonads {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  margin: 0; }
+  @media (min-width: 992px) {
+    .home #carbonads {
+      display: flex; } }
 [data-bs-theme="dark"] #carbonads {
   border: 1px solid var(--sl-color-gray-5); }
 
@@ -13886,8 +13896,10 @@ html[data-bs-theme='light'] {
   /* footer */
   --docsearch-footer-height: 44px;
   --docsearch-footer-background: #fff;
+  /*
   --docsearch-footer-shadow: 0 -1px 0 0 rgb(224, 227, 232),
     0 -3px 6px 0 rgba(69, 98, 155, 0.12);
+  */
   --docsearch-footer-shadow: 0 -1px 0 0 var(--sl-color-hairline-dark); }
 
 /* Custom style overrides */
