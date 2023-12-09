@@ -13811,7 +13811,7 @@ figcaption {
   z-index: 2000 !important; }
 
 .DocSearch-Hit-title {
-  overflow-y: hidden; }
+  overflow: hidden; }
 
 .DocSearch-Hit-icon {
   display: flex;
