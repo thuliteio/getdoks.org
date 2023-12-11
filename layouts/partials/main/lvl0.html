@@ -1,0 +1,5 @@
+{{ $lvl0 := .CurrentSection.Title }}
+{{ if eq $lvl0 "Start Here" -}}
+	{{ $lvl0 = "Learn" }}
+{{ end -}}
+<span id="docsearch-lvl0" hidden>{{ $lvl0 }}</span>
