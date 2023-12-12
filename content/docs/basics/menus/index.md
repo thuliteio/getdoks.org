@@ -1,19 +1,26 @@
 ---
-title: "Pages"
+title: "Menus"
 description: ""
 summary: ""
-date: 2023-12-12T09:19:15+01:00
-lastmod: 2023-12-12T09:19:15+01:00
+date: 2023-11-13T16:52:40+01:00
+lastmod: 2023-11-13T16:52:40+01:00
 draft: false
 menu:
   docs:
     parent: ""
-    identifier: "pages-13ebfd3c2d25c120335d223a46b25278"
-weight: 320
+    identifier: "menus-9237db3eac8fc3e487bc011e87faef60"
+weight: 340
 toc: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
+slug: "menus"
 ---
+
+## Main
+
+## Footer
+
+## Sidebar

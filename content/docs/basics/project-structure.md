@@ -20,7 +20,7 @@ seo:
 
 This guide will show you how a Doks project is organized and what the different files in your project do.
 
-Doks projects generally follow the same file and directory structure as other Hyas projects. See [Hyas' project structure documentation](https://docs.gethyas.com/guides/project-structure/) for more detail.
+Doks projects generally follow the same file and directory structure as other Hyas projects. See [Hyas' project structure documentation](https://docs.gethyas.com/basics/project-structure/) for more detail.
 
 ## Files and directories
 

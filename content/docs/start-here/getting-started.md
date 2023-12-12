@@ -50,7 +50,7 @@ yarn create hyas@latest -- --template doks
 {{< /tab >}}
 {{< /tabs >}}
 
-This will create a new [project directory](/docs/guides/project-structure/) with all the necessary files and configurations for your site.
+This will create a new [project directory](/docs/basics/project-structure/) with all the necessary files and configurations for your site.
 
 {{< callout context="tip" title="See it in action" icon="rocket" >}}
 Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/gethyas/doks).
@@ -155,8 +155,8 @@ seo:
 ### Next steps
 
 - **Configure**: Learn about common options in ["Customizing Doks"](/docs/guides/customization/).
-- **Navigate**: Set up your sidebar with the ["Sidebar Navigation"](/docs/guides/sidebar/) guide.
-- **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/guides/shortcodes/) guide.
+- **Menus**: Set up your menus with the ["Menus"](/docs/basics/menus/) guide.
+- **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/basics/shortcodes/) guide.
 - **Deploy**: Publish your work with the ["Deploy your site"](https://docs.gethyas.com/guides/deploy/) guide in the Hyas docs.
 
 ## Updating Doks

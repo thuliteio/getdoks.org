@@ -9,7 +9,7 @@ menu:
   docs:
     parent: ""
     identifier: "shortcodes-8ac2041973478ffa22bad1f7446be3df"
-weight: 340
+weight: 330
 toc: true
 seo:
   title: "" # custom title (optional)

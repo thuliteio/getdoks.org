@@ -20,7 +20,7 @@ seo:
 
 Estimates for the climate impact of the web industry range from between [2%](https://www.sciencefocus.com/science/what-is-the-carbon-footprint-of-the-internet/) and [4% of global carbon emissions](https://www.bbc.com/future/article/20200305-why-your-internet-habits-are-not-as-clean-as-you-think), roughly equivalent to the emissions of the airline industry. There are many complex factors in calculating the ecological impact of a website, but this guide includes a few tips for reducing the environmental footprint of your docs site.
 
-The good news is, choosing Doks is a great start. According to the Website Carbon Calculator, this site is [cleaner than 97% of web pages tested](https://www.websitecarbon.com/website/images-gethyas-com-docs-start-here-getting-started/), producing 0.02g of CO₂ per page visit.
+The good news is, choosing Doks is a great start. According to the Website Carbon Calculator, this site is [cleaner than 97% of web pages tested](https://www.websitecarbon.com/website/images-gethyas-com-docs-start-here-getting-started/), producing 0.03g of CO₂ per page visit.
 
 ## Page weight
 
@@ -77,20 +77,20 @@ These tests with the [Website Carbon Calculator][wcc] compare similar pages buil
 
 | Framework                   | CO₂ per page visit |
 | --------------------------- | ------------------ |
-| [Starlight][sl-carbon]      | 0.01g              |
-| [Doks][dk-carbon]           | 0.02g              |
+| [Starlight][sl-carbon]      | 0.02g              |
+| [Doks][dk-carbon]           | 0.03g              |
 | [VitePress][vp-carbon]      | 0.05g              |
-| [Docus][dc-carbon]          | 0.05g              |
-| [Sphinx][sx-carbon]         | 0.07g              |
-| [MkDocs][mk-carbon]         | 0.10g              |
+| [Docus][dc-carbon]          | 0.09g              |
+| [Sphinx][sx-carbon]         | 0.09g              |
+| [MkDocs][mk-carbon]         | 0.11g              |
 | [Nextra][nx-carbon]         | 0.11g              |
-| [docsify][dy-carbon]        | 0.11g              |
-| [Docusaurus][ds-carbon]     | 0.24g              |
-| [Read the Docs][rtd-carbon] | 0.24g              |
-| [GitBook][gb-carbon]        | 0.71g              |
+| [docsify][dy-carbon]        | 0.12g              |
+| [Docusaurus][ds-carbon]     | 0.18g              |
+| [Read the Docs][rtd-carbon] | 0.27g              |
+| [GitBook][gb-carbon]        | 0.60g              |
 {.mb-4}
 
-<small>Data collected on 14 May 2023. Click a link to see up-to-date figures.</small>
+<small>Data collected on 12 Dec 2023. Click a link to see up-to-date figures.</small>
 
 [sl-carbon]: https://www.websitecarbon.com/website/starlight-astro-build-getting-started/
 [dk-carbon]: https://www.websitecarbon.com/website/images-gethyas-com-docs-start-here-getting-started/

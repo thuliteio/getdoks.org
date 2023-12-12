@@ -9,7 +9,7 @@ menu:
   docs:
     parent: ""
     identifier: "authoring-content-c8eb05af83475c21365e023a6eee3ef0"
-weight: 330
+weight: 320
 toc: true
 seo:
   title: "" # custom title (optional)
