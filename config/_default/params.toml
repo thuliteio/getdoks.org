@@ -14,7 +14,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
 
 # Add-ons
 [add_ons]
-  carbonAds = false # false (default) or true
+  carbonAds = true # false (default) or true
   docSearch = true # false (default) or true
   plausibleDomain = "getdoks.org" # "example.com" (default)
   keila = false # false (default) or true
