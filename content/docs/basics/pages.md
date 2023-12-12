@@ -1,15 +1,15 @@
 ---
-title: "Guides"
+title: "Pages"
 description: ""
 summary: ""
-date: 2023-09-07T16:06:50+02:00
-lastmod: 2023-09-07T16:06:50+02:00
+date: 2023-12-12T09:19:15+01:00
+lastmod: 2023-12-12T09:19:15+01:00
 draft: false
 menu:
   docs:
     parent: ""
-    identifier: "guides-4e0d0e0f89f7decc11eaad4ae9193018"
-weight: 700
+    identifier: "pages-13ebfd3c2d25c120335d223a46b25278"
+weight: 320
 toc: true
 seo:
   title: "" # custom title (optional)

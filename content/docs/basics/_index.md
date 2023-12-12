@@ -1,15 +1,15 @@
 ---
-title: "Add-ons"
+title: "Basics"
 description: ""
 summary: ""
-date: 2023-11-20T14:41:15+01:00
-lastmod: 2023-11-20T14:41:15+01:00
+date: 2023-12-12T08:21:57+01:00
+lastmod: 2023-12-12T08:21:57+01:00
 draft: false
 menu:
   docs:
     parent: ""
-    identifier: "add-ons-0fe9d455dd7709f919acdd606156a4e7"
-weight: 800
+    identifier: "basics-0405745064d92e9186c852d78111b1b3"
+weight: 300
 toc: true
 seo:
   title: "" # custom title (optional)

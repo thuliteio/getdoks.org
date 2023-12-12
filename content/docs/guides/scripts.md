@@ -1,15 +1,15 @@
 ---
-title: "Overriding Layouts"
+title: "Scripts"
 description: ""
 summary: ""
-date: 2023-11-15T09:05:43+01:00
-lastmod: 2023-11-15T09:05:43+01:00
+date: 2023-12-12T08:49:59+01:00
+lastmod: 2023-12-12T08:49:59+01:00
 draft: false
 menu:
   docs:
     parent: ""
-    identifier: "overriding-layouts-35dcec785a811099b004d6135cad3160"
-weight: 560
+    identifier: "scripts-8a92ff2c5f0bd425cc23683dd651fa5a"
+weight: 730
 toc: true
 seo:
   title: "" # custom title (optional)
