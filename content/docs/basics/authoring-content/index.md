@@ -21,6 +21,20 @@ slug: "authoring-content"
 
 Doks supports the full range of [Markdown](https://daringfireball.net/projects/markdown/) syntax in `.md` files as well as frontmatter [YAML](https://yaml.org/spec/1.2.2/), [TOML](https://toml.io/en/), or [JSON](https://www.json.org/json-en.html) to define metadata such as a title and description.
 
+## Frontmatter
+
+You can customize individual pages in Doks by setting values in their frontmatter. Frontmatter is set at the top of your files between `---` separators:
+
+```md
+---
+title: My page title
+---
+
+Page content follows the second `---`.
+```
+
+Every page must include at least a `title`. See the [frontmatter reference](/docs/reference/frontmatter/) for all available fields and how to add custom fields.
+
 ## Inline styles
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -53,7 +67,7 @@ Hyas Images supports the [Markdown syntax for displaying images](https://www.mar
 ![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
 ```
 
-You can [store your images](https://images.gethyas.com/docs/guides/resources/) as a page resource, global resource, or remote resource.
+You can [store your images](https://images.gethyas.com/docs/guides/image-resources/) as a page resource, global resource, or remote resource.
 
 ## Headings
 

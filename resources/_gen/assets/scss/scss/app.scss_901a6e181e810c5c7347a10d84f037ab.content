@@ -13824,6 +13824,18 @@ figcaption {
   .DocSearch-Modal {
     position: fixed !important; } }
 
+.math-block {
+  display: block;
+  margin: 2rem 0;
+  overflow-x: auto; }
+
+.math-inline {
+  display: inline; }
+
+[data-bs-theme="dark"] .math-inline img,
+[data-bs-theme="dark"] .math-block img {
+  filter: invert(1); }
+
 /* Darkmode */
 :root {
   --docsearch-primary-color: var(--sl-color-text-accent);
