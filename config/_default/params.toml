@@ -14,7 +14,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
 
 # Add-ons
 [add_ons]
-  carbonAds = true # false (default) or true
+  carbonAds = false # false (default) or true
   docSearch = true # false (default) or true
   plausibleDomain = "getdoks.org" # "example.com" (default)
   keila = false # false (default) or true
@@ -87,7 +87,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   editPage = true # false (default) or true
   lastMod = true # false (default) or true
   repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
-  docsRepo = "https://github.com/gethyas/doks"
+  docsRepo = "https://github.com/gethyas/getdoks.org"
   docsRepoBranch = "main" # main (default), master, or <branch name>
   docsRepoSubPath = "" # "" (none, default) or <sub path>
 
