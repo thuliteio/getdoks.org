@@ -46,6 +46,7 @@ $$
 ```
 
 You can add [markdown attributes](https://www.veriphor.com/articles/markdown-attributes/) like `class` and `id` to the `div` element that wraps the SVG image — for example:
+{.mt-4}
 
 ````md
 ```math {.text-center}
