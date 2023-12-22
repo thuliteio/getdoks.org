@@ -1,7 +1,7 @@
 ---
-title: "Atplatform"
-description: "Atplatform"
-summary: "Atplatform"
+title: "atPlatform"
+description: "atPlatform"
+summary: "atPlatform"
 date: 2023-12-22T09:30:22+01:00
 lastmod: 2023-12-22T09:30:22+01:00
 draft: false
