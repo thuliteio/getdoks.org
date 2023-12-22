@@ -44,7 +44,7 @@ Cache-Control: public, max-age=604800, immutable
 
 How to configure caching depends on your web host. For example, Vercel applies this caching strategy for you with no config required, while you can set [custom headers for Netlify](https://docs.netlify.com/routing/headers/) by adding a `headers` section to your `netlify.toml` file:
 
-```toml
+```toml {title="netlify.toml"}
 [[headers]]
   for = "/*"
   [headers.values]

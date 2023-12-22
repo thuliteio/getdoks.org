@@ -62,7 +62,7 @@ Add the following settings to `config/_default/hugo.toml`:
 
 {{< details "Settings" >}}
 
-```toml
+```toml {title="hugo.toml"}
 # Multilingual
 defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
@@ -96,7 +96,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 {{< details "Mounts" >}}
 
-```toml
+```toml {title="module.toml"}
 # mounts
 ## archetypes
 [[mounts]]
@@ -212,7 +212,7 @@ Add the following parameters to `config/_default/params.toml`:
 
 {{< details "Parameters" >}}
 
-```toml
+```toml {title="params.toml"}
 # Doks (@hyas/doks-core)
 [doks]
   # Color mode

@@ -45,6 +45,7 @@ module.exports = {
         'blur-up',
         'lazyloaded',
         'alert-link',
+        'container-fw ',
         'container-lg',
         'container-fluid',
         'offcanvas-backdrop',
@@ -61,6 +62,8 @@ module.exports = {
         ...whitelister([
           './assets/scss/**/*.scss',
           './node_modules/@docsearch/css/dist/modal.css',
+          './node_modules/@hyas/doks-core/assets/scss/components/_code.scss',
+          './node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss',
           './node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss',
         ]),
       ],

@@ -1,5 +1,5 @@
 ---
-title: "Mathematical expressions"
+title: "Mathematical Expressions"
 description: ""
 summary: ""
 date: 2023-12-12T08:30:43+01:00
@@ -94,13 +94,13 @@ An inline {{< math >}}${(x+y)}^2${{< /math >}} expression.
 
 ## Performance
 
-The render hook and shortcode above call Hugo's `resources.GetRemote` function to request the SVG image from Math API. Hugo caches the result, and invalidates the cache when (a) you edit the LaTeX markup, or (b) the cache expires.
+The render hook and shortcode call Hugo's `resources.GetRemote` function to request the SVG image from the Math API. Hugo caches the result, and invalidates the cache when (a) you edit the LaTeX markup, or (b) the cache expires.
 
 To optimize performance in a CI/CD environment such as [Cloudflare Pages](https://pages.cloudflare.com/), [GitHub Pages](https://pages.github.com/), or [Netlify](https://www.netlify.com/), you should:
 
 1. Edit your site configuration to store the `getresource` cache in the project's `resources` directory, setting the cache to never expire:
 
-    ```toml
+    ```toml  {title=hugo.toml}
     [getresource]
     dir = ':resourceDir/_gen'
     maxAge = -1

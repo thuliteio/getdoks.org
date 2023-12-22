@@ -56,7 +56,7 @@ yarn run clean:install
 
 Replace the contents of your project's `package.json` with the following:
 
-```json
+```json {title="package.json"}
 {
   "name": "doks",
   "version": "0.0.0",
@@ -93,7 +93,7 @@ Replace the contents of your project's `package.json` with the following:
 
 Add an `.npmrc` file to your project root with the following:
 
-```ini
+```ini {title=".npmrc"}
 enable-pre-post-scripts = true
 auto-install-peers = true
 node-linker = hoisted
@@ -138,7 +138,7 @@ Add the following settings to `config/_default/hugo.toml`:
 
 {{< details "Settings" >}}
 
-```toml
+```toml {title="hugo.toml"}
 # Multilingual
 defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
@@ -172,7 +172,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 {{< details "Mounts" >}}
 
-```toml
+```toml {title="module.toml"}
 # mounts
 ## archetypes
 [[mounts]]
@@ -288,7 +288,7 @@ Add the following parameters to `config/_default/params.toml`:
 
 {{< details "Parameters" >}}
 
-```toml
+```toml {title="params.toml"}
 # Doks (@hyas/doks-core)
 [doks]
   # Color mode
