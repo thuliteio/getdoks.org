@@ -220,3 +220,12 @@ figcaption {
     position: fixed !important;
   }
 }
+
+.single.blog .content h2[id]::before,
+.single.blog .content h3[id]::before,
+.single.blog .content h4[id]::before {
+  display: block;
+  height: 6rem;
+  margin-top: -6rem;
+  content: "";
+}

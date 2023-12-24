@@ -10,7 +10,7 @@
   {{ $featured := partial "main/get-featured" . }}
   {{ if $featured -}}
     <div class="col-md-13">
-      {{ partial "picture" (dict
+      {{ partial "picture-21x9" (dict
       "page" .
       "src" $featured
       "alt" .Title

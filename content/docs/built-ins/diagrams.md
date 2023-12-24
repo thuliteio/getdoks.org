@@ -18,14 +18,14 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Use a fenced code block to embed an SVG image of a diagram in your Hyas site using the free [Kroki](https://kroki.io/) service.
+Use a fenced code block to embed an SVG image of a diagram in your Doks site using the free [Kroki](https://kroki.io/) service.
 
 {{< callout context="note" icon="info-circle" >}}
 Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.
 {{< /callout >}}
 
 {{< callout context="tip" icon="rocket" >}}
-Hugo supports [GoAT diagrams](https://gohugo.io/content-management/diagrams/#goat-diagrams-ascii) (ASCII) natively.
+Hugo supports [GoAT diagrams](https://gohugo.io/content-management/diagrams/#goat-diagrams-ascii) (ASCII diagrams) natively.
 {{< /callout >}}
 
 ## Overview

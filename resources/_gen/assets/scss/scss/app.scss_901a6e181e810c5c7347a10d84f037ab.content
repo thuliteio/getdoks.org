@@ -11822,7 +11822,7 @@ pre code::-webkit-scrollbar-thumb:hover {
   overflow: hidden;
   padding: 1rem;
   max-width: 175px;
-  background: transparent;
+  background: var(--sl-color-black);
   text-align: center;
   font-size: 14px;
   line-height: 1.5;
@@ -14691,6 +14691,16 @@ figcaption {
 @media (max-width: 768px) {
   .DocSearch-Modal {
     position: fixed !important; } }
+
+.single.blog .content h2[id]::before, .single.blog .content [id].h2::before,
+.single.blog .content h3[id]::before,
+.single.blog .content [id].h3::before,
+.single.blog .content h4[id]::before,
+.single.blog .content [id].h4::before {
+  display: block;
+  height: 6rem;
+  margin-top: -6rem;
+  content: ""; }
 
 /* Darkmode */
 :root {

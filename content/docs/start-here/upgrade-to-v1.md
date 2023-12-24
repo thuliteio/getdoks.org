@@ -20,6 +20,10 @@ seo:
 
 This guide will whelp you migrate from Doks v0.5 to Doks v1.
 
+{{< callout context="note" title="Other migration guides" icon="info-circle" >}}
+Need to upgrade your project to v1.x? See our [other migration guides](/migration-guides/v-1/v-1-2/).
+{{< /callout >}}
+
 ## Upgrade Doks
 
 To follow this guide, you'll need an existing Doks v0.5 project.
