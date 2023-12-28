@@ -14709,8 +14709,8 @@ figcaption {
   padding: 1.5rem 0 0; }
 
 .feedback-links li {
-  margin-top: 0.25rem;
-  padding-top: 0.25rem; }
+  margin-top: 0.125rem;
+  padding-top: 0.125rem; }
 
 .feedback-links a {
   color: #1d2d35;
