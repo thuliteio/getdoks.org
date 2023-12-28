@@ -14702,6 +14702,35 @@ figcaption {
   margin-top: -6rem;
   content: ""; }
 
+.feedback-links h3, .feedback-links .h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem;
+  padding: 1.5rem 0 0; }
+
+.feedback-links li {
+  margin-top: 0.25rem;
+  padding-top: 0.25rem; }
+
+.feedback-links a {
+  color: #1d2d35;
+  display: block;
+  padding: 0.125rem 0;
+  font-size: 0.9375rem;
+  text-decoration: none; }
+
+.feedback-links a:hover,
+.feedback-links a.active {
+  text-decoration: none;
+  color: #5d2f86; }
+
+[data-bs-theme="dark"] .feedback-links a {
+  color: #c1c3c8; }
+
+[data-bs-theme="dark"] .feedback-links a:hover {
+  text-decoration: none;
+  color: #b3c7ff; }
+
 /* Darkmode */
 :root {
   --docsearch-primary-color: var(--sl-color-text-accent);

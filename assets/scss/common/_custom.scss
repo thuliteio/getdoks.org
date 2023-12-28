@@ -229,3 +229,40 @@ figcaption {
   margin-top: -6rem;
   content: "";
 }
+
+.feedback-links h3, .feedback-links .h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin: 1.25rem 0 0.5rem;
+  padding: 1.5rem 0 0;
+}
+
+.feedback-links li {
+  margin-top: 0.25rem;
+  padding-top: 0.25rem;
+}
+
+.feedback-links a {
+  color: $body-color;
+  display: block;
+  padding: 0.125rem 0;
+  font-size: $font-size-base * 0.9375;
+  text-decoration: none;
+}
+
+.feedback-links a:hover,
+.feedback-links a.active {
+  text-decoration: none;
+  color: $link-color;
+}
+
+@include color-mode(dark) {
+  .feedback-links a {
+    color: $body-color-dark;
+  }
+
+  .feedback-links a:hover {
+    text-decoration: none;
+    color: $link-color-dark;
+  }
+}
