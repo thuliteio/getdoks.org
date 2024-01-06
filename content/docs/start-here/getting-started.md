@@ -56,6 +56,34 @@ This will create a new [project directory](/docs/basics/project-structure/) with
 Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/gethyas/doks).
 {{< /callout >}}
 
+### Install dependencies
+
+`cd` into your new project directory and install your dependencies before continuing.
+
+{{< tabs "install dependencies" >}}
+{{< tab "npm" >}}
+
+```bash
+npm install
+```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm install
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn install
+```
+
+{{< /tab >}}
+{{< /tabs >}}
+
 ### Start the development server
 
 When working locally, Hugo's development server lets you preview your work and automatically refreshes your browser when you make changes.
