@@ -1,8 +1,2 @@
-.eslintcache
-.stylelintcache
-.netlify
-.hugo_build.lock
-yarn-error.log
-node_modules
-public
-resources
+!.npmrc
+!.gitignore

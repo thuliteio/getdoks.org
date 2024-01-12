@@ -17,13 +17,10 @@ defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = false
 
-copyRight = "Copyright (c) 2023 Hyas"
+copyRight = "Copyright (c) 2020-2024 Hyas"
 
 [build.buildStats]
   enable = true
-
-[social]
-  twitter = "getdoks"
 
 [outputs]
   home = ["HTML", "RSS", "searchIndex"]
@@ -72,14 +69,14 @@ rel  = "sitemap"
   includeNewer = true
   toLower = false
     [[related.indices]]
-    name = "categories"
-    weight = 100
+      name = "categories"
+      weight = 100
     [[related.indices]]
-    name = "tags"
-    weight = 80
+      name = "tags"
+      weight = 80
     [[related.indices]]
-    name = "date"
-    weight = 10
+      name = "date"
+      weight = 10
 
 [imaging]
   anchor = "Center"
