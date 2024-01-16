@@ -1,15 +1,15 @@
 ---
-title: "Upgrade to v1"
+title: "Upgrade to v1.3"
 description: ""
 summary: ""
-date: 2023-09-22T16:15:46+02:00
-lastmod: 2023-09-22T16:15:46+02:00
+date: 2024-01-16T19:23:05+01:00
+lastmod: 2024-01-16T19:23:05+01:00
 draft: false
 menu:
-  docs:
-    parent: ""
-    identifier: "upgrade-to-v1-0759044a0c123f8852d4a7b22b02838e"
-weight: 140
+  migration-guides:
+    parent: "lorem"
+    identifier: "v-1-3-bbba3c17e4db4f84e853b49786793d96"
+weight: 100
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -18,17 +18,9 @@ seo:
   noindex: false # false (default) or true
 ---
 
-This guide will whelp you migrate from Doks v0.5 to Doks v1.
+This guide will help you migrate from Doks v1.2 to Doks v1.3.
 
-{{< callout context="note" title="Other migration guides" icon="info-circle" >}}
-Need to upgrade your project to v1.x? See our [other migration guides](/migration-guides/v-1/v-1-3/).
-{{< /callout >}}
-
-## Upgrade Doks
-
-To follow this guide, you'll need an existing Doks v0.5 project.
-
-### Clean dependencies
+## Clean dependencies
 
 Clean dependencies currently installed to avoid conflicts.
 
@@ -56,7 +48,7 @@ yarn run clean:install
 {{< /tab >}}
 {{< /tabs >}}
 
-### Update `package.json`
+## Update `package.json`
 
 Replace the contents of your project's `package.json` with the following:
 
@@ -114,18 +106,7 @@ Replace the contents of your project's `package.json` with the following:
 }
 ```
 
-### Add ``.npmrc``
-
-Add an `.npmrc` file to your project root with the following:
-
-```ini {title=".npmrc"}
-enable-pre-post-scripts = true
-auto-install-peers = true
-node-linker = hoisted
-prefer-symlinked-executables = false
-```
-
-### Install dependencies
+## Install dependencies
 
 Install the new dependencies.
 
@@ -153,9 +134,9 @@ yarn install
 {{< /tab >}}
 {{< /tabs >}}
 
-### Configure Doks
+## Configure Doks
 
-#### Add site configuration
+### Add site configuration
 
 Add the following settings to `config/_default/hugo.toml`:
 
@@ -252,7 +233,7 @@ copyRight = "Copyright (c) 2020-2024 Hyas"
 
 {{< /details >}}
 
-#### Update mounts
+### Update mounts
 
 Update the mounts configuration in `config/_default/module.toml`:
 
@@ -351,7 +332,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 {{< /details >}}
 
-#### Add parameters
+### Add parameters
 
 Add the following parameters to `config/_default/params.toml`:
 
@@ -500,7 +481,7 @@ mainSections = ["docs"]
 
 {{< /details >}}
 
-#### Add PostCSS settings
+### Add PostCSS settings
 
 Add the following settings to `config/postcss.config.js`:
 
@@ -578,46 +559,3 @@ module.exports = {
 ```
 
 {{< /details >}}
-
-{{< callout context="note" title="Need to continue?" icon="info-circle" >}}
-After upgrading Doks to the latest version, you may not need to make any changes to your project at all!
-
-But, if you notice errors or unexpected behavior, please check below for what has changed that might need updating in your project.
-{{< /callout >}}
-
-## Next steps
-
-- **Configure**: Learn about common options in ["Customizing Doks"](/docs/guides/customization/).
-- **Menus**: Set up your menus with the ["Menus"](/docs/basics/menus/) guide.
-- **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/basics/shortcodes/) guide.
-- **Deploy**: Publish your work with the ["Deploy your site"](https://docs.gethyas.com/guides/deploy/) guide in the Hyas docs.
-
-## Known Issues
-
-### ENOENT
-
-When you get an `ENOENT` error message, clean and reinstall your projects' dependencies:
-
-{{< tabs "reinstall-doks" >}}
-{{< tab "npm" >}}
-
-```bash
-npm run clean:install && npm install
-```
-
-{{< /tab >}}
-{{< tab "pnpm" >}}
-
-```bash
-pnpm run clean:install && pnpm install
-```
-
-{{< /tab >}}
-{{< tab "Yarn" >}}
-
-```bash
-yarn run clean:install && yarn install
-```
-
-{{< /tab >}}
-{{< /tabs >}}
