@@ -559,3 +559,11 @@ module.exports = {
 ```
 
 {{< /details >}}
+
+## Update assets
+
+Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas/doks/releases/tag/v1.3.0). Extract the archive and copy the `assets/js` directory into your project's `assets` directory.
+
+## Update layouts
+
+Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas/doks/releases/tag/v1.3.0). Extract the archive and copy the `layouts/partials` directory into your project's `layouts` directory.

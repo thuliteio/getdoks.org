@@ -18,10 +18,10 @@ seo:
   noindex: false # false (default) or true
 ---
 
-This guide will whelp you migrate from Doks v0.5 to Doks v1.
+This guide will help you migrate from Doks v0.5 to Doks v1.
 
 {{< callout context="note" title="Other migration guides" icon="info-circle" >}}
-Need to upgrade your project to v1.x? See our [other migration guides](/migration-guides/v-1/v-1-3/).
+Need to upgrade a v1.x project? See our [other migration guides](/migration-guides/v-1/v-1-3/).
 {{< /callout >}}
 
 ## Upgrade Doks
@@ -157,7 +157,7 @@ yarn install
 
 #### Add site configuration
 
-Add the following settings to `config/_default/hugo.toml`:
+Rename `config/_default/config.toml` to `config/_default/hugo.toml` and add the following settings:
 
 {{< details "Settings" >}}
 
@@ -252,9 +252,9 @@ copyRight = "Copyright (c) 2020-2024 Hyas"
 
 {{< /details >}}
 
-#### Update mounts
+#### Add mounts
 
-Update the mounts configuration in `config/_default/module.toml`:
+Create `config/_default/module.toml` and add the following mounts:
 
 {{< details "Mounts" >}}
 
@@ -578,6 +578,18 @@ module.exports = {
 ```
 
 {{< /details >}}
+
+### Update assets
+
+Rename the current `assets` directory to `assets-backup`. Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `assets` directory into your project's root.
+
+### Update layouts
+
+Rename the current `layouts` directory to `layouts-backup`. Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `layouts` directory into your project's root.
+
+{{< callout context="tip" title="Add default content" icon="rocket" >}}
+Rename the current `content` directory to `content-backup`. Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `content` directory into your project's root.
+{{< /callout >}}
 
 {{< callout context="note" title="Need to continue?" icon="info-circle" >}}
 After upgrading Doks to the latest version, you may not need to make any changes to your project at all!

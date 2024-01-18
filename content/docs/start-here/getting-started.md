@@ -18,7 +18,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Doks is a full-featured documentation theme built on top of the [Hyas](https://gethyas.com/) framework. This guide will help you get started with a new project. See the [manual setup instructions](/docs/start-here/manual-setup/) to add Doks to an existing Hyas project.
+Doks is a full-featured documentation theme built on top of the [Hyas](https://gethyas.com/) framework. This guide will help you get started with a new project.
 
 ## Quick Start
 
@@ -216,6 +216,11 @@ yarn upgrade @hyas/doks-core --latest
 {{< /tabs >}}
 
 See the [Doks changelog](https://github.com/gethyas/doks-core/blob/main/CHANGELOG.md) for a full list of the changes made in each release.
+
+{{< callout context="tip" title="Upgrade guides" icon="rocket" >}}
+- Need to upgrade from Doks v0.5? See the [Upgrade to v1](/docs/start-here/upgrade-to-v1/) guide.
+- Need to upgrade a v1.x project? See our [other migration guides](/migration-guides/v-1/v-1-3/).
+{{< /callout >}}
 
 ## Troubleshooting Doks
 

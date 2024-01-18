@@ -22,7 +22,7 @@ This guide will help you migrate from Doks v1.1 to Doks v1.2.
 
 ## Upgrade Doks
 
-You can upgrade to Doks 1.2 by running the upgrade command:
+You can upgrade to Doks 1.2 by running the folowing command:
 
 {{< tabs "update-doks" >}}
 {{< tab "npm" >}}
@@ -48,9 +48,11 @@ yarn upgrade @hyas/doks-core --latest
 {{< /tab >}}
 {{< /tabs >}}
 
-## Update Configuration
+## Update PostCSS settings
 
 Add the highlighted lines to `config/postcss.config.js`:
+
+{{< details "PostCSS" >}}
 
 ```js {title=postcss.config.js lineNos=true hl_lines=[46,"51-53"]}
 const autoprefixer = require('autoprefixer');
@@ -112,3 +114,5 @@ module.exports = {
   ],
 }
 ```
+
+{{< /details >}}

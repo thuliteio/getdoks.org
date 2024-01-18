@@ -19,38 +19,12 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Doks 1.2 is out and features support for diagrams, extended code blocks formatting, and more.
+Doks 1.2 is out! This release features support for diagrams, extended code blocks formatting, and more.
 
 - [Diagrams support](#diagrams-support)
 - [Code blocks formatting](#code-blocks-formatting)
 
-To take advantage of the latest features, make sure you're running the latest version of Doks. You can upgrade to Doks 1.2 by running the upgrade command for your package manager of choice:
-
-{{< tabs "update-doks" >}}
-{{< tab "npm" >}}
-
-```bash
-npm install @hyas/doks-core@latest
-```
-
-{{< /tab >}}
-{{< tab "pnpm" >}}
-
-```bash
-pnpm upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< tab "Yarn" >}}
-
-```bash
-yarn upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< /tabs >}}
-
-Need to upgrade from v1.1 to v1.2? Check out the [Upgrade to v1.2](/migration-guides/v-1/v-1-2/) migration guide.
+To take advantage of the latest features, make sure you’re running the latest version of Doks. You can upgrade to Doks 1.2 by following the [Upgrade to v1.2](/migration-guides/v-1/v-1-2/) migration guide.
 
 ## Diagrams Support
 

@@ -56,7 +56,7 @@ Doks main dependencies are now specified in Doks' `package.json` — in stead of
 }
 ```
 
-Hyas Images for example is updated like any `@hyas/*` theme (or integration):
+Hyas Images for example is updated like any `@hyas/*` integration (or theme):
 
 {{< tabs "update-doks" >}}
 {{< tab "npm" >}}
