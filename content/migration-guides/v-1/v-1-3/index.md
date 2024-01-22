@@ -567,3 +567,7 @@ Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas
 ## Update layouts
 
 Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas/doks/releases/tag/v1.3.0). Extract the archive and copy the `layouts/partials` directory into your project's `layouts` directory.
+
+{{< callout context="note" title="Update overrides" icon="info-circle" >}}
+If you have customizations, make sure to align them with `@hyas/doks-core` [v1.3.0](https://github.com/gethyas/doks-core/tree/v1.3.0) — for example [`assets/scss/app.scss`](https://github.com/gethyas/doks-core/blob/v1.3.0/assets/scss/app.scss)
+{{< /callout >}}
