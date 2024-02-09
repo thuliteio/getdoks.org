@@ -150,7 +150,7 @@
               </li>
             {{ else -}}
               <li class="nav-item">
-                <a class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a>
+                <a{{with .Post}} target="blank"{{ end }} class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}{{with .Post}}{{ . }}{{ end }}</a>
               </li>
             {{ end -}}
           {{ end -}}
