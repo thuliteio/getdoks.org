@@ -16,10 +16,10 @@
         {{- with $.Site.GetPage "taxonomyTerm" (printf "contributors/%s" (urlize .)) -}}
           {{ if .Params.avatar -}}
             {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
-            {{ $imageLq := $image.Resize "15x15 webp q95" -}}
-            {{ $image = $image.Resize "60x60 webp q95" -}}
-            <img class="rounded-circle w-auto mx-1 lazyload blur-up" src="{{ $imageLq.RelPermalink }}" data-src="{{ $image.RelPermalink }}" alt="{{ .Title }}" width="30" height="30">
-          {{- end }}
+            {{ $i := $image.Process "fill 168x168" -}}
+            {{ $l := $image.Resize "14x webp q20" -}}
+            <img class="lazyload blur-up rounded-circle d-inline ms-1" src="{{ $l.RelPermalink }}" data-src="{{ $i.RelPermalink }}" alt="{{ .Title }}" width="42" height="42" loading="lazy" decoding="async" fetch-priority="auto">
+          {{ end -}}
         {{- end -}}
         <a class="stretched-link position-relative ms-1" href="{{ "/contributors/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>
       {{- end }}

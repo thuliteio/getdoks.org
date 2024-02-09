@@ -28,9 +28,11 @@
           {{- $featured := $images.GetMatch "*feature*" -}}
           {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
           {{- if $featured -}}
-            {{ partial "img-21x9" (dict
+            {{ partial "img" (dict
             "page" .
             "src" $featured
+            "process" "fill 2100x900"
+            "lqip" "21x webp q20"
             "alt" .Title
             "class" "rounded-top-1"
             )}}

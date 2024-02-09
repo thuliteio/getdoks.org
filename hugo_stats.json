@@ -138,6 +138,7 @@
       "contributor-image",
       "contributors",
       "d-flex",
+      "d-inline",
       "d-lg-block",
       "d-lg-flex",
       "d-lg-none",
@@ -246,7 +247,6 @@
       "mt-4",
       "mt-n2",
       "mt-n3",
-      "mx-1",
       "mx-2",
       "mx-auto",
       "my-3",
@@ -330,7 +330,6 @@
       "visually-hidden",
       "vr",
       "w-100",
-      "w-auto",
       "wrap"
     ],
     "ids": [

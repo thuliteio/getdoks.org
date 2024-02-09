@@ -7,19 +7,27 @@
       {{ partial "main/blog-meta.html" . }}
     </div>
   </div>
-  {{ $featured := partial "main/get-featured" . }}
-  {{ if $featured -}}
-    <div class="col-md-13">
-      {{ partial "picture-21x9" (dict
-      "page" .
-      "src" $featured
-      "alt" .Title
-      "class" "img-fluid blur-up img-post-single w-100 h-auto rounded-0"
-      )}}
-    </div>
+  {{ if site.Params.doks.imageSingle -}}
+    {{- $images := .Resources.ByType "image" -}}
+    {{- $featured := $images.GetMatch "*feature*" -}}
+    {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+    {{- if $featured -}}
+      <div class="col-md-13">
+        {{ partial "picture" (dict
+        "page" .
+        "src" $featured
+        "process" "fill 2100x900"
+        "lqip" "21x webp q20"
+        "loading" "eager"
+        "fetchpriority" "high" 
+        "alt" .Title
+        "class" "img-post-single rounded-0"
+        )}}
+      </div>
+    {{ end -}}
   {{ end -}}
   <div class="col-md-12 col-lg-9">
-    {{/* with .Params.summary -}}<p class="lead">{{ . }}</p>{{ end -*/}}
+    {{ with .Params.summary -}}<p class="lead">{{ . }}</p>{{ end -}}
     {{ .Content }}
     {{ if .Params.tags -}}
     <div class="tag-list-single">
