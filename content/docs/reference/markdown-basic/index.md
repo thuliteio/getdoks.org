@@ -82,7 +82,7 @@ Refer to the [Basic Syntax](https://www.markdownguide.org/basic-syntax) referenc
 
 ## Code
 
-```bash
+```md
 `code`
 ```
 

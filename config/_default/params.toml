@@ -83,9 +83,6 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   imageList = true # true (default) or false
   imageSingle = true # true (default) or false
 
-  # KaTex
-  katex = false
-
   # Repository
   editPage = true # false (default) or true
   lastMod = true # false (default) or true

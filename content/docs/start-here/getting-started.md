@@ -37,14 +37,14 @@ npm create hyas@latest -- --template doks
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas@latest -- --template doks
+pnpm create hyas@latest --template doks
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas@latest -- --template doks
+yarn create hyas@latest --template doks
 ```
 
 {{< /tab >}}
@@ -58,7 +58,7 @@ Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https
 
 ### Install dependencies
 
-`cd` into your new project directory and install your dependencies before continuing.
+`cd` into your new project directory and install the dependencies before continuing.
 
 {{< tabs "install dependencies" >}}
 {{< tab "npm" >}}
@@ -86,7 +86,7 @@ yarn install
 
 ### Start the development server
 
-When working locally, Hugo's development server lets you preview your work and automatically refreshes your browser when you make changes.
+When working locally, [Hugo's development server](https://gohugo.io/commands/hugo_server/) lets you preview your work and automatically refreshes your browser when you make changes.
 
 Inside your project directory, run the following command to start the development server:
 

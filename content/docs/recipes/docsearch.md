@@ -9,7 +9,7 @@ menu:
   docs:
     parent: ""
     identifier: "docsearch-1196384a5ac49030f0eb740cebabdcce"
-weight: 610
+weight: 640
 toc: true
 seo:
   title: "" # custom title (optional)

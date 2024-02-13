@@ -44,6 +44,5 @@
     Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
     Cache-Control= '''
     public,
-    max-age=604800,
-    immutable'''
+    max-age=31536000'''
     Access-Control-Allow-Origin = "*"

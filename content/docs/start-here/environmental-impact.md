@@ -39,7 +39,7 @@ Caching is used to control how long a browser stores and reuses data it already 
 The most common way to configure caching is with the [`Cache-Control` HTTP header](https://csswizardry.com/2019/03/cache-control-for-civilians/). When using Doks, you can set a long cache time for everything in the `/public/` directory. This directory contains CSS, JavaScript, and other bundled assets that can be safely cached forever, reducing unnecessary downloads:
 
 ```bash
-Cache-Control: public, max-age=604800, immutable
+Cache-Control: public, max-age=31536000
 ```
 
 How to configure caching depends on your web host. For example, Vercel applies this caching strategy for you with no config required, while you can set [custom headers for Netlify](https://docs.netlify.com/routing/headers/) by adding a `headers` section to your `netlify.toml` file:
@@ -50,8 +50,7 @@ How to configure caching depends on your web host. For example, Vercel applies t
   [headers.values]
     Cache-Control= '''
     public,
-    max-age=604800,
-    immutable'''
+    max-age=31536000'''
 ```
 
 ## Power consumption
@@ -77,7 +76,6 @@ These tests with the [Website Carbon Calculator][wcc] compare similar pages buil
 
 | Framework                   | CO₂ per page visit |
 | --------------------------- | ------------------ |
-| [Starlight][sl-carbon]      | 0.02g              |
 | [Doks][dk-carbon]           | 0.03g              |
 | [VitePress][vp-carbon]      | 0.05g              |
 | [Docus][dc-carbon]          | 0.09g              |
@@ -92,7 +90,6 @@ These tests with the [Website Carbon Calculator][wcc] compare similar pages buil
 
 <small>Data collected on 12 Dec 2023. Click a link to see up-to-date figures.</small>
 
-[sl-carbon]: https://www.websitecarbon.com/website/starlight-astro-build-getting-started/
 [dk-carbon]: https://www.websitecarbon.com/website/images-gethyas-com-docs-start-here-getting-started/
 [vp-carbon]: https://www.websitecarbon.com/website/vitepress-dev-guide-what-is-vitepress/
 [dc-carbon]: https://www.websitecarbon.com/website/docus-dev-introduction-getting-started/

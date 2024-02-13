@@ -18,70 +18,11 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Shortcodes let you easily reuse a piece of UI or styling consistently. Examples might include a callout or a YouTube embed. Doks supports the use of shortcodes in Markdown files and provides some common shortcodes for you to use.
+Shortcodes let you easily reuse a piece of UI or styling consistently. Examples might include a callout or a video embed. Doks supports the use of shortcodes in Markdown files and provides some common shortcodes for you to use.
 
 {{< callout icon="info-circle" >}}
 Learn more about [Shortcodes](https://gohugo.io/content-management/shortcodes/) in the Hugo Docs.
 {{< /callout >}}
-
-## SVG
-
-You can store your SVG as a page resource or global resource.
-
-Display an SVG using the `{{</* inline-svg */>}}` shortcode.
-
-{{< callout icon="info-circle" >}}
-The SVG gets embedded into the pages' HTML:
-
-```html
-<svg class="coffee svg-inline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 14c.83.642 2.077 1.017 3.5 1 1.423.017 2.67-.358 3.5-1s2.077-1.017 3.5-1c1.423-.017 2.67.358 3.5 1"></path><path d="M8 3A2.4 2.4.0 007 5a2.4 2.4.0 001 2"></path><path d="M12 3a2.4 2.4.0 00-1 2 2.4 2.4.0 001 2"></path><path d="M3 10h14v5a6 6 0 01-6 6H9a6 6 0 01-6-6v-5z"></path><path d="M16.746 16.726a3 3 0 10.252-5.555"></path></svg>
-```
-
-{{< /callout >}}
-
-### Page resources
-
-You can add a monochrome monogram that respects darkmode/lightmode:
-
-```md
-{{</* inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" */>}}
-```
-
-{{< inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" >}}
-
-### Assets directory
-
-You can add a logo that respects darkmode/lightmode:
-
-```md
-{{</* inline-svg src="svgs/logos/logo-netlify-large-fullcolor-lightmode.svg" width="192px" height="79px" class="svg-inline-custom svg-lightmode" */>}}
-{{</* inline-svg src="svgs/logos/logo-netlify-large-fullcolor-darkmode.svg" width="192px" height="79px" class="svg-inline-custom svg-darkmode" */>}}
-```
-
-{{< inline-svg src="svgs/logos/logo-netlify-large-fullcolor-lightmode.svg" width="192px" height="79px" class="svg-inline-custom svg-lightmode" >}}
-{{< inline-svg src="svgs/logos/logo-netlify-large-fullcolor-darkmode.svg" width="192px" height="79px" class="svg-inline-custom svg-darkmode" >}}
-
-### Tabler icons
-
-{{< callout icon="info-circle" >}}
-Copy the icon name from [Tabler Icons](https://tabler-icons.io/) by clicking on it's name.
-{{< /callout >}}
-
-You can add a coffee icon:
-
-```md
-{{</* inline-svg "coffee" */>}}
-```
-
-{{< inline-svg "coffee" >}}
-
-You can specify [SVG attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute), for example:
-
-```md
-{{</* inline-svg src="hand-rock" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" */>}}
-```
-
-{{< inline-svg src="hand-rock" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" >}}
 
 ## Callouts
 
@@ -275,15 +216,17 @@ yarn install
 {{< /tab >}}
 {{< /tabs >}}
 
-## Image
+## Images
 
-You can [store your images](https://images.gethyas.com/docs/guides/resources/) as a page resource, global resource, or remote resource.
+{{< callout context="note" icon="info-circle" >}}
+Images in Doks use [Hyas' Images integration](https://images.gethyas.com/).
+{{< /callout >}}
 
-Display an image using the [`{{</* img */>}}`](https://images.gethyas.com/docs/guides/shortcodes/img/), [`{{</* picture */>}}`](https://images.gethyas.com/docs/guides/shortcodes/picture/), or [`{{</* figure */>}}`](https://images.gethyas.com/docs/guides/shortcodes/figure/) shortcode.
+Display an image using the [`{{</* img */>}}`](https://images.gethyas.com/docs/shortcodes/img/), [`{{</* picture */>}}`](https://images.gethyas.com/docs/shortcodes/picture/), or [`{{</* figure */>}}`](https://images.gethyas.com/docs/shortcodes/figure/) shortcode.
 
-### Page resources
+### Page resource
 
-Display an image from page resources:
+Display a page resource image:
 
 ```md
 {{</* picture src="vincent-van-zalinge-OVCICfR9gXo-unsplash.jpg" alt="A bird flying through a field of tall grass" */>}}
@@ -318,3 +261,55 @@ You can insert a [Video Embed HTML element](https://developer.mozilla.org/en-US/
 ```
 
 {{< video src="robin_-_21723 (540p)" autoplay="true" muted="true" >}}
+
+## SVG
+
+{{< callout context="note" icon="info-circle" >}}
+SVG's in Doks use [Hyas' SVG integration](https://svg.gethyas.com/).
+{{< /callout >}}
+
+Display an SVG using the `{{</* inline-svg */>}}` shortcode. The SVG gets inlined (embedded) into the pages' HTML.
+
+### Page resources
+
+You can add a monochrome monogram that respects darkmode/lightmode:
+
+```md
+{{</* inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" */>}}
+```
+
+{{< inline-svg src="logo-netlify-monogram-monochrome-lightmode.svg" width="64px" height="57px" class="svg-inline-custom svg-monochrome" >}}
+
+### Assets directory
+
+You can add a logo that respects darkmode/lightmode:
+
+```md
+{{</* inline-svg src="svgs/logos/logo-netlify-large-fullcolor-lightmode.svg" width="192px" height="79px" class="svg-inline-custom svg-lightmode" */>}}
+{{</* inline-svg src="svgs/logos/logo-netlify-large-fullcolor-darkmode.svg" width="192px" height="79px" class="svg-inline-custom svg-darkmode" */>}}
+```
+
+{{< inline-svg src="svgs/logos/logo-netlify-large-fullcolor-lightmode.svg" width="192px" height="79px" class="svg-inline-custom svg-lightmode" >}}
+{{< inline-svg src="svgs/logos/logo-netlify-large-fullcolor-darkmode.svg" width="192px" height="79px" class="svg-inline-custom svg-darkmode" >}}
+
+### Tabler icons
+
+{{< callout icon="info-circle" >}}
+Copy the icon name from [Tabler Icons](https://tabler-icons.io/) by clicking on it's name.
+{{< /callout >}}
+
+You can add a coffee icon:
+
+```md
+{{</* inline-svg "coffee" */>}}
+```
+
+{{< inline-svg "coffee" >}}
+
+You can specify [SVG attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute), for example:
+
+```md
+{{</* inline-svg src="hand-rock" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" */>}}
+```
+
+{{< inline-svg src="hand-rock" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" >}}

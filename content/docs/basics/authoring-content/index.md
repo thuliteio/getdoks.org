@@ -25,7 +25,7 @@ Doks supports the full range of [Markdown](https://daringfireball.net/projects/m
 
 You can customize individual pages in Doks by setting values in their frontmatter. Frontmatter is set at the top of your files between `---` separators:
 
-```md
+```md {title="content/docs/example.md"}
 ---
 title: My page title
 ---
@@ -57,7 +57,9 @@ You can highlight `inline code` with backticks.
 
 ## Images
 
+{{< callout context="note" icon="info-circle" >}}
 Images in Doks use [Hyas' Images integration](https://images.gethyas.com/).
+{{< /callout >}}
 
 Hyas Images supports the [Markdown syntax for displaying images](https://www.markdownguide.org/basic-syntax/#images-1) that includes alt-text for screen readers and assistive technology.
 
@@ -66,8 +68,6 @@ Hyas Images supports the [Markdown syntax for displaying images](https://www.mar
 ```md
 ![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
 ```
-
-You can [store your images](https://images.gethyas.com/docs/guides/image-resources/) as a page resource, global resource, or remote resource.
 
 ## Headings
 
@@ -110,7 +110,7 @@ I can link to [my conclusion](#conclusion) lower on the same page.
 
 ```
 
-Level 2 (`<h2>`) and Level 3 (`<h3>`) headings will automatically appear in the page table of contents.
+Level 2 (`<h2>`) and Level 3 (`<h3>`) headings will automatically appear in the page table of contents — the "On this page" section.
 
 ## Blockquotes
 
@@ -152,10 +152,10 @@ func main() {
 ```
 ````
 
-```md
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+{{< callout context="note" title="Extended code formatting" icon="info-circle" >}}
+Need extended code formatting? See our [Code blocks guides](/docs/built-ins/code-blocks/).
+{{< /callout >}}
 
 ## Other common Markdown features
 
-Doks supports all other Markdown authoring syntax, such as lists and tables. See [Markdown Basic Syntax](/docs/reference/markdown-basic-syntax/) and [Markdown Extended Syntax](/docs/reference/markdown-extended-syntax/) for a quick overview of all the Markdown syntax elements.
+Doks supports all other Markdown authoring syntax, such as lists and tables. See [Markdown Basic Syntax](/docs/reference/markdown-basic-syntax/) and [Markdown Extended Syntax](/docs/reference/markdown-extended-syntax/) for a quick overview of all Markdown syntax elements.

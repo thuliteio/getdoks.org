@@ -81,10 +81,10 @@ Replace the contents of your project's `package.json` with the following:
   },
   "dependencies": {
     "@hyas/doks-core": "^1.3.0",
-    "@hyas/images": "^2.0.3",
+    "@hyas/images": "^3.1.0",
     "@hyas/inline-svg": "^1.0.5",
     "@hyas/seo": "^2.1.0",
-    "@tabler/icons": "^2.40.0",
+    "@tabler/icons": "^2.47.0",
     "exec-bin": "^1.0.0",
     "gethyas": "^2.2.2",
     "hugo-installer": "^4.0.1"
@@ -258,7 +258,6 @@ Update the mounts configuration in `config/_default/module.toml`:
 [[mounts]]
   source = "node_modules/@hyas/images/assets"
   target = "assets"
-  excludeFiles = "/scss/**.scss"
 
 [[mounts]]
   source = "node_modules/@hyas/doks-core/assets"
@@ -443,14 +442,14 @@ mainSections = ["docs"]
 
 # Images (@hyas/images)
 [hyas_images]
-  [hyas_images.landscape]
-    normalize = "1360x765" # "1600x900" (default)
-    lqip = "16x9" # "16x9" (default)
-    widths = [480, 640, 800, 1024]
-  [hyas_images.portrait]
-    normalize = "765x1360" # "900x1600" (default)
-    lqip = "9x16" # "9x16" (default)
-    widths = [480, 640, 800, 1024]
+  [hyas_images.defaults]
+    decoding = "async" # sync, async, or auto (default)
+    fetchpriority = "auto" # high, low, or auto (default) 
+    loading = "lazy" # eager or lazy (default)
+    widths = [480, 576, 768, 1025, 1200, 1440] # [640, 768, 1024, 1366, 1600, 1920] for example
+    sizes = "auto" # 100vw (default), 75vw, or auto for example
+    process = "" # "fill 1600x900" or "fill 2100x900" for example
+    lqip = "16x webp q20" # "16x webp q20" or "21x webp q20" for example
 
 # Inline SVG (@hyas/inline-svg)
 [inline_svg]
