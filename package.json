@@ -20,7 +20,7 @@
     "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
     "preview": "http-server --gzip --brotli --ext=html --cors",
     "clean": "npm run clean:build && npm run clean:lint && npm run clean:install",
-    "clean:build": "shx rm -rf public resources .hugo_build.lock",
+    "clean:build": "shx rm -rf public resources .hugo_build.lock hugo_stats.json",
     "clean:install": "shx rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml",
     "clean:lint": "shx rm -rf .eslintcache .stylelintcache",
     "preinfo": "npm version",

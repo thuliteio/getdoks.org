@@ -20,4 +20,4 @@ seo:
 
 Ready to build and deploy your Doks website? Follow one of our Hyas guides to different deployment services.
 
-[Deploy your Hyas site &rarr;](https://docs.gethyas.com/guides/deploy/)
+{{< link-card title="Deploy your Hyas site" description="Guides for Netlify, Vercel, GitHub Pages, and more." href="https://docs.gethyas.com/guides/deploy/" target="_blank">}}

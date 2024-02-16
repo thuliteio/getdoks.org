@@ -20,4 +20,4 @@ seo:
 
 Ready to connect a Headless CMS to your Doks project? Follow one of our Hyas guides to integrate a CMS.
 
-[Use a CMS with Hyas &rarr;](https://docs.gethyas.com/guides/cms/)
+{{< link-card title="Use a CMS with Hyas" description="Guides for Tina CMS, Decap CMS, and CloudCannon." href="https://docs.gethyas.com/guides/cms/" target="_blank">}}

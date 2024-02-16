@@ -216,6 +216,54 @@ yarn install
 {{< /tab >}}
 {{< /tabs >}}
 
+## Link cards
+
+{{< callout context="note" icon="info-circle" >}}
+Available with the next release.
+{{< /callout >}}
+
+Use the `{{</* link-card */>}}` shortcode to link prominently to different pages.
+
+A `{{</* link-card */>}}` requires a `title` and an [`href`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href) attribute. You can optionally include a short `description` or other link attributes such as `target`.
+
+{{< link-card
+  title="Showcase"
+  description="Explore the infinite possibilities of Doks"
+  href="/showcase/"
+  target="_blank"
+>}}
+
+```md
+{{</* link-card
+  title="Showcase"
+  description="Explore the infinite possibilities of Doks"
+  href="/showcase/"
+  target="_blank"
+*/>}}
+```
+
+{{< link-card title="Showcase" href="/showcase/" >}}
+
+```md
+{{</* link-card title="Showcase" href="/showcase/" */>}}
+```
+
+### Card grid
+
+Group multiple `{{</* link-card */>}}` shortcodes in `{{</* card-grid */>}}` to display cards side-by-side when there's enough space.
+
+{{< card-grid >}}
+  {{< link-card title="Showcase" href="/showcase/" >}}
+  {{< link-card title="Showcase" href="/showcase/" >}}
+{{< /card-grid >}}
+
+```md
+{{</* card-grid */>}}
+  {{</* link-card title="Showcase" href="/showcase/" */>}}
+  {{</* link-card title="Showcase" href="/showcase/" */>}}
+{{</* /card-grid */>}}
+```
+
 ## Images
 
 {{< callout context="note" icon="info-circle" >}}
@@ -270,7 +318,7 @@ SVG's in Doks use [Hyas' SVG integration](https://svg.gethyas.com/).
 
 Display an SVG using the `{{</* inline-svg */>}}` shortcode. The SVG gets inlined (embedded) into the pages' HTML.
 
-### Page resources
+### Page resource
 
 You can add a monochrome monogram that respects darkmode/lightmode:
 

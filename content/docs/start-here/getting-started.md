@@ -183,7 +183,7 @@ seo:
 ### Next steps
 
 - **Configure**: Learn about common options in ["Customizing Doks"](/docs/guides/customization/).
-- **Menus**: Set up your menus with the ["Menus"](/docs/basics/menus/) guide.
+- **Navigate**: Set up your sidebar with the ["Sidebar Navigation"](/docs/basics/navigation/#sidebar) guide.
 - **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/basics/shortcodes/) guide.
 - **Deploy**: Publish your work with the ["Deploy your site"](https://docs.gethyas.com/guides/deploy/) guide in the Hyas docs.
 

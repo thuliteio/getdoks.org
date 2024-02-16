@@ -20,4 +20,4 @@ seo:
 
 Ready to add Analytics to your Doks website? Follow one of our Hyas guides to different analytics services.
 
-[Add analytics to Hyas &rarr;](https://docs.gethyas.com/guides/analytics/)
+{{< link-card title="Add analytics to Hyas" description="Guides for Plausible, Fathom, Cabin, and Google Analytics." href="https://docs.gethyas.com/guides/analytics/" target="_blank">}}
