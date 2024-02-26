@@ -105,6 +105,16 @@
   url = "https://twitter.com/getdoks"
   weight = 30
 
+[[sidebar_migration-guides]]
+  name = "v1"
+  pageRef = "/migration-guides/v-1"
+  weight = 10
+
+[[sidebar_migration-guides]]
+  name = "Upgrade to v1"
+  pageRef = "/docs/start-here/upgrade-to-v1"
+  weight = 20
+
 [[footer]]
   name = "Privacy Policy"
   url = "https://gethyas.com/privacy/"

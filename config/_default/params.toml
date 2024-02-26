@@ -100,10 +100,10 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   # textLight = "#1d2d35" # "#1d2d35" (default), "#1d2d35" (orignal), or custom color
   # accentLight = "#8ed6fb" # "#8ed6fb" (default), "#8ed6fb" (orignal), or custom color
 
-  [doks.menu]
-    [doks.menu.section]
-      auto = true # true (default) or false
-      collapsibleSidebar = true # true (default) or false
+  # [doks.menu]
+  #   [doks.menu.section]
+  #     auto = true # true (default) or false
+  #     collapsibleSidebar = true # true (default) or false
 
 # Debug
 [render_hooks.image]

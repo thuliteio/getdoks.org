@@ -5,10 +5,6 @@ summary: ""
 date: 2023-09-12T14:09:18+02:00
 lastmod: 2023-09-12T14:09:18+02:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "environmental-impact-c766394c949d7276e59449b61b67d532"
 weight: 130
 toc: true
 seo:

@@ -5,10 +5,6 @@ summary: ""
 date: 2023-09-22T12:17:19+02:00
 lastmod: 2023-09-22T12:17:19+02:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "project-structure-d6552f67aec02a338ca05eb79bcda91a"
 weight: 310
 toc: true
 seo:

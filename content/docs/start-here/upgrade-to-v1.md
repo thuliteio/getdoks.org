@@ -5,10 +5,6 @@ summary: ""
 date: 2023-09-22T16:15:46+02:00
 lastmod: 2023-09-22T16:15:46+02:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "upgrade-to-v1-0759044a0c123f8852d4a7b22b02838e"
 weight: 140
 toc: true
 seo:

@@ -5,10 +5,6 @@ summary: ""
 date: 2023-11-20T14:41:29+01:00
 lastmod: 2023-11-20T14:41:29+01:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "docsearch-1196384a5ac49030f0eb740cebabdcce"
 weight: 640
 toc: true
 seo:

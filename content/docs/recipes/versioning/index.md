@@ -5,10 +5,6 @@ summary: ""
 date: 2023-12-12T08:32:58+01:00
 lastmod: 2023-12-12T08:32:58+01:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "versioning-f47f3b68467fa25104fe197ca27a4e8a"
 weight: 650
 toc: true
 seo:

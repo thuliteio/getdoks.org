@@ -1,14 +1,12 @@
 ---
-title: "Built-ins"
+title: "{{ replace .Name "-" " " | title }}"
 description: ""
 summary: ""
-date: 2023-12-12T08:22:10+01:00
-lastmod: 2023-12-12T08:22:10+01:00
-draft: false
-weight: 400
+date: {{ .Date }}
+lastmod: {{ .Date }}
+draft: true
+weight: 999
 toc: true
-sidebar:
-  collapsed: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)

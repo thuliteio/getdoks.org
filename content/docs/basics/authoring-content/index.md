@@ -5,10 +5,6 @@ summary: ""
 date: 2023-09-12T16:10:28+02:00
 lastmod: 2023-09-12T16:10:28+02:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "authoring-content-c8eb05af83475c21365e023a6eee3ef0"
 weight: 320
 toc: true
 seo:

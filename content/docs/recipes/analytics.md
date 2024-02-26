@@ -5,10 +5,6 @@ summary: ""
 date: 2024-02-13T15:32:56+01:00
 lastmod: 2024-02-13T15:32:56+01:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "analytics-d8bcd1262087fa126306240c4b89b301"
 weight: 620
 toc: true
 seo:

@@ -5,10 +5,6 @@ summary: ""
 date: 2023-11-13T16:45:29+01:00
 lastmod: 2023-11-13T16:45:29+01:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "frontmatter-08e9f8d65565a852af306c578eb75a9f"
 weight: 920
 toc: true
 seo:
@@ -28,10 +24,6 @@ summary: ""
 date: 2023-09-07T16:04:48+02:00
 lastmod: 2023-09-07T16:04:48+02:00
 draft: true
-menu:
-  docs:
-    parent: ""
-    identifier: "example-6a1a6be4373e933280d78ea53de6158e"
 weight: 999
 toc: true
 seo:

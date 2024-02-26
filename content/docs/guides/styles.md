@@ -5,10 +5,6 @@ summary: ""
 date: 2023-11-15T09:03:55+01:00
 lastmod: 2023-11-15T09:03:55+01:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "styles-fa3a71994944763e519bc048da122644"
 weight: 720
 toc: true
 seo:

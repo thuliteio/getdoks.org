@@ -5,10 +5,6 @@ summary: ""
 date: 2023-09-12T12:07:48+02:00
 lastmod: 2023-09-12T12:07:48+02:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "getting-started-cefa9dc0267d0e3bb7a88365c6178eb1"
 weight: 110
 toc: true
 seo:
@@ -166,10 +162,6 @@ summary: ""
 date: 2023-09-07T16:04:48+02:00
 lastmod: 2023-09-07T16:04:48+02:00
 draft: true
-menu:
-  docs:
-    parent: ""
-    identifier: "example-6a1a6be4373e933280d78ea53de6158e"
 weight: 999
 toc: true
 seo:

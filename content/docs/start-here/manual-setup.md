@@ -5,10 +5,6 @@ summary: ""
 date: 2023-09-12T14:03:48+02:00
 lastmod: 2023-09-12T14:03:48+02:00
 draft: true
-menu:
-  docs:
-    parent: ""
-    identifier: "manual-setup-a73468730193b28f326d271cd38bc17d"
 weight: 120
 toc: true
 seo:

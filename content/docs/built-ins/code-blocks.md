@@ -5,10 +5,6 @@ summary: ""
 date: 2023-12-22T20:30:04+01:00
 lastmod: 2023-12-22T20:30:04+01:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "code-blocks-334b5873d3a263ba6860e4b35a443215"
 weight: 430
 toc: true
 seo:

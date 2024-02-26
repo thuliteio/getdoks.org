@@ -5,10 +5,6 @@ summary: ""
 date: 2023-09-12T19:58:01+02:00
 lastmod: 2023-09-12T19:58:01+02:00
 draft: false
-menu:
-  docs:
-    parent: ""
-    identifier: "shortcodes-8ac2041973478ffa22bad1f7446be3df"
 weight: 330
 toc: true
 seo:

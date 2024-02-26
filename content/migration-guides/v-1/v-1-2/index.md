@@ -5,10 +5,6 @@ summary: ""
 date: 2023-12-23T20:02:32+01:00
 lastmod: 2023-12-23T20:02:32+01:00
 draft: false
-menu:
-  migration-guides:
-    parent: "lorem"
-    identifier: "v-1-2-bbba3c17e4db4f84e853b49786793d96"
 weight: 100
 toc: true
 seo:
