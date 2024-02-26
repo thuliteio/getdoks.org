@@ -215,7 +215,7 @@ yarn install
 ## Link cards
 
 {{< callout context="note" icon="info-circle" >}}
-Available with the next release.
+New feature — available with the next release.
 {{< /callout >}}
 
 Use the `{{</* link-card */>}}` shortcode to link prominently to different pages.

@@ -389,3 +389,31 @@ figcaption {
 .page-links h3 {
   text-transform: none;
 }
+
+.img-lightmode.border {
+  border: 1px solid $gray-200 !important;
+}
+
+.img-darkmode.border {
+  border: 1px solid var(--sl-color-gray-6) !important;
+}
+
+@include color-mode(light) {
+  .img-lightmode {
+    display: block;
+  }
+
+  .img-darkmode {
+    display: none;
+  }
+}
+
+@include color-mode(dark) {
+  .img-lightmode {
+    display: none;
+  }
+
+  .img-darkmode {
+    display: block;
+  }
+}

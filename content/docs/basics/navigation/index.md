@@ -19,9 +19,112 @@ slug: "navigation"
 
 ## Sidebar
 
+{{< callout context="note" icon="info-circle" >}}
+New setup — available with the next release.
+{{< /callout >}}
+
 A well-organized sidebar is key to a good documentation as it is one of the main ways users will navigate your site. Doks provides a complete set of options to customize your sidebar layout and content.
 
-### Default sidebar
+### Default navigation
+
+By default, Doks will automatically generate a sidebar based on the filesystem structure of your documentation, using each file's `title` property as the sidebar entry.
+
+For example, given the following file structure:
+
+```md
+.
+└──content/
+   └───docs/
+       ├───guides/
+       │   ├───_index.md
+       │   └───example.md
+       reference/
+       │   ├───_index.md
+       │   └───example.md
+       └───_index.md
+```
+
+The following sidebar will be automatically generated:
+
+{{< img src="images/section-navigation-light.jpg" alt="Section navigation light variant" class="img-lightmode border" >}}
+{{< img src="images/section-navigation-dark.jpg" alt="Section navigation dark variant" class="img-darkmode border" >}}
+
+### Menu navigation
+
+{{< callout context="note" icon="info-circle" >}}
+Make sure to:
+- use `pageRef` in stead of `url` and
+- omit the trailing slash
+{{< /callout >}}
+
+In stead of using the default navigation, you can define `sidebar_<section>` entries in `config/_default/menus/menus.<language>.toml` — for example:
+
+```toml {title="menus.en.toml"}
+[[sidebar_docs]]
+  name = "Start here"
+  pageRef = "/docs/start-here"
+  weight = 10
+
+[[sidebar_docs]]
+  name = "Guides"
+  pageRef = "/docs/guides"
+  weight = 20
+
+[[sidebar_docs]]
+  name = "Reference"
+  pageRef = "/docs/reference"
+  weight = 30
+```
+
+Child sections — like `guides` and `reference` in the example above — will get automatically generated.
+
+### Settings
+
+Sections can be collapsed by default by setting the `collapsed` property to `true` in the frontmatter of a section's `_index.md`:
+
+```md {title="_index.md"}
+---
+sidebar:
+  collapsed: true
+---
+```
+
+### Other main sections
+
+Sidebar navigation is also available for other `docs` based sections you create — for example when you run the following command:
+
+{{< tabs "create-new-section" >}}
+{{< tab "npm" >}}
+
+```bash
+npm run create -- --kind docs tutorials
+```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm run create --kind docs tutorials
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn run create --kind docs tutorials
+```
+
+{{< /tab >}}
+{{< /tabs >}}
+
+Add the new `docs` based section to `config/_default/params.toml`:
+
+```toml {title="parmas.toml"}
+# Doks (@hyas/doks-core)
+[doks]
+  # Nav
+  sectionNav = ["docs", "tutorials"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+```
 
 ## Main
 
