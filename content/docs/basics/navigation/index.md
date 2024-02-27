@@ -15,7 +15,7 @@ seo:
 slug: "navigation"
 ---
 
-
+This guide will show you how you can customize your Doks project's navigation.
 
 ## Sidebar
 
@@ -46,8 +46,8 @@ For example, given the following file structure:
 
 The following sidebar will be automatically generated:
 
-{{< img src="images/section-navigation-light.jpg" alt="Section navigation light variant" class="img-lightmode border" >}}
-{{< img src="images/section-navigation-dark.jpg" alt="Section navigation dark variant" class="img-darkmode border" >}}
+{{< img src="images/section-navigation-light.png" alt="Section navigation light variant" class="img-lightmode border" >}}
+{{< img src="images/section-navigation-dark.png" alt="Section navigation dark variant" class="img-darkmode border" >}}
 
 ### Menu navigation
 
@@ -61,22 +61,25 @@ In stead of using the default navigation, you can define `sidebar_<section>` ent
 
 ```toml {title="menus.en.toml"}
 [[sidebar_docs]]
-  name = "Start here"
-  pageRef = "/docs/start-here"
-  weight = 10
-
-[[sidebar_docs]]
   name = "Guides"
   pageRef = "/docs/guides"
-  weight = 20
+  weight = 10
 
 [[sidebar_docs]]
   name = "Reference"
   pageRef = "/docs/reference"
+  weight = 20
+
+[[sidebar_docs]]
+  name = "Resources"
+  pageRef = "/docs/resources"
   weight = 30
 ```
 
 Child sections — like `guides` and `reference` in the example above — will get automatically generated.
+
+{{< img src="images/section-navigation-menu-light.png" alt="Section navigation menu light variant" class="img-lightmode border" >}}
+{{< img src="images/section-navigation-menu-dark.png" alt="Section navigation menu dark variant" class="img-darkmode border" >}}
 
 ### Settings
 
@@ -117,9 +120,9 @@ yarn run create --kind docs tutorials
 {{< /tab >}}
 {{< /tabs >}}
 
-Add the new `docs` based section to `config/_default/params.toml`:
+And add the new `tutorials` section to `config/_default/params.toml`:
 
-```toml {title="parmas.toml"}
+```toml {title="params.toml"}
 # Doks (@hyas/doks-core)
 [doks]
   # Nav
