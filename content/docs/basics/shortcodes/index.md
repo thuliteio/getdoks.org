@@ -214,10 +214,6 @@ yarn install
 
 ## Link cards
 
-{{< callout context="note" icon="info-circle" >}}
-New feature — available with the next release.
-{{< /callout >}}
-
 Use the `{{</* link-card */>}}` shortcode to link prominently to different pages.
 
 A `{{</* link-card */>}}` requires a `title` and an [`href`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href) attribute. You can optionally include a short `description` or other link attributes such as `target`.

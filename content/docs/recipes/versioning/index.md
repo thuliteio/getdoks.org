@@ -14,6 +14,6 @@ seo:
   noindex: false # false (default) or true
 ---
 
-{{< callout context="tip" title="Looking for an example?" icon="rocket" >}}
-Check out the [Doks versioning POC](https://github.com/h-enk/doks-versioning-poc)!
+{{< callout context="note" icon="info-circle" >}}
+New setup — available with the next release.
 {{< /callout >}}

@@ -19,10 +19,6 @@ This guide will show you how you can customize your Doks project's navigation.
 
 ## Sidebar
 
-{{< callout context="note" icon="info-circle" >}}
-New setup — available with the next release.
-{{< /callout >}}
-
 A well-organized sidebar is key to a good documentation as it is one of the main ways users will navigate your site. Doks provides a complete set of options to customize your sidebar layout and content.
 
 ### Default navigation
