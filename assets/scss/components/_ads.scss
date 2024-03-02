@@ -1,3 +1,70 @@
+// Ethical Ads
+[data-ea-type="image"].loaded {
+  margin: 1rem 0 2.25rem;
+}
+
+[data-ea-type="text"].loaded {
+  margin: 3rem 0;
+}
+
+/*
+[data-ea-publisher].loaded, [data-ea-type].loaded {
+  font-family: inherit !important;
+}
+*/
+
+.home [data-ea-publisher].loaded {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  margin: 0;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+}
+
+[data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
+  background-color: var(--bs-body-bg) !important;
+  border: 1px solid #e9ecef !important;
+  color: $body-color !important;
+}
+
+[data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link {
+  color: $body-color !important;
+}
+
+[data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
+  color: $primary !important;
+}
+
+[data-ea-publisher].loaded .ea-callout a:link, [data-ea-type].loaded .ea-callout a:link {
+  color: var(--bs-secondary-color) !important
+}
+
+@include color-mode(dark) {
+  [data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
+    background-color: $body-bg-dark !important;
+    border: 1px solid var(--sl-color-gray-5) !important;
+    color: $body-color-dark !important;
+  }
+
+  [data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link {
+    color: $body-color-dark !important;
+  }
+
+  [data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
+    color: $link-color-dark !important;
+  }
+
+  [data-ea-publisher].loaded .ea-callout a:link, [data-ea-type].loaded .ea-callout a:link {
+    color: darken($body-color-dark, 7.5%) !important
+  }
+}
+
+// Carbon Ads
 #carbonads {
   display: block;
   overflow: hidden;

@@ -1,2 +1,5 @@
 {{ $plausibleDomain := site.Params.add_ons.plausibleDomain -}}
 <script defer data-domain="{{ $plausibleDomain }}" src="https://plausible.io/js/script.js"></script>
+{{ if site.Params.add_ons.ethicalAds -}}
+  <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+{{ end -}}
