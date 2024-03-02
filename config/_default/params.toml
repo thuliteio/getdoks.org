@@ -7,7 +7,7 @@ images = ["cover.png"]
 mainSections = ["docs", "migration-guides"]
 
 # Global alert
-alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-3/">Doks 1.3 is out!</a>'
+alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-4/">Doks 1.4 is here!</a>'
 
 # Footer
 footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\">Hyas</a>"
@@ -50,7 +50,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = false # false (default) or true
+  alert = true # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap
