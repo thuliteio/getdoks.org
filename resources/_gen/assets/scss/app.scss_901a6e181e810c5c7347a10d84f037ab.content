@@ -11825,6 +11825,55 @@ pre code::-webkit-scrollbar-thumb:hover {
     background: #17181c;
     border-color: #23262f; }
 
+[data-ea-type="image"].loaded {
+  margin: 1rem 0 2.25rem; }
+
+[data-ea-type="text"].loaded {
+  margin: 3rem 0; }
+
+/*
+[data-ea-publisher].loaded, [data-ea-type].loaded {
+  font-family: inherit !important;
+}
+*/
+.home [data-ea-publisher].loaded {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  margin: 0; }
+  @media (min-width: 992px) {
+    .home [data-ea-publisher].loaded {
+      display: flex; } }
+[data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
+  background-color: var(--bs-body-bg) !important;
+  border: 1px solid #e9ecef !important;
+  color: #1d2d35 !important; }
+
+[data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link {
+  color: #1d2d35 !important; }
+
+[data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
+  color: #5d2f86 !important; }
+
+[data-ea-publisher].loaded .ea-callout a:link, [data-ea-type].loaded .ea-callout a:link {
+  color: var(--bs-secondary-color) !important; }
+
+[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content {
+  background-color: #17181c !important;
+  border: 1px solid var(--sl-color-gray-5) !important;
+  color: #c1c3c8 !important; }
+
+[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a:link, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a:link {
+  color: #c1c3c8 !important; }
+
+[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a strong, [data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a b, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a strong, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a b {
+  color: #b3c7ff !important; }
+
+[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-callout a:link, [data-bs-theme="dark"] [data-ea-type].loaded .ea-callout a:link {
+  color: #adafb6 !important; }
+
 #carbonads {
   display: block;
   overflow: hidden;
@@ -11877,55 +11926,6 @@ pre code::-webkit-scrollbar-thumb:hover {
   letter-spacing: 1px;
   font-size: 10px;
   line-height: 1; }
-
-[data-ea-type="image"].loaded {
-  margin: 1rem 0 2.25rem; }
-
-[data-ea-type="text"].loaded {
-  margin: 3rem 0; }
-
-/*
-[data-ea-publisher].loaded, [data-ea-type].loaded {
-  font-family: inherit !important;
-}
-*/
-.home [data-ea-publisher].loaded {
-  display: none;
-  z-index: 100;
-  position: fixed;
-  right: 1.25rem;
-  bottom: 1.25rem;
-  margin: 0; }
-  @media (min-width: 992px) {
-    .home [data-ea-publisher].loaded {
-      display: flex; } }
-[data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
-  background-color: var(--bs-body-bg) !important;
-  border: 1px solid #e9ecef !important;
-  color: #1d2d35 !important; }
-
-[data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link {
-  color: #1d2d35 !important; }
-
-[data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
-  color: #5d2f86 !important; }
-
-[data-ea-publisher].loaded .ea-callout a:link, [data-ea-type].loaded .ea-callout a:link {
-  color: var(--bs-secondary-color) !important; }
-
-[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content {
-  background-color: #17181c !important;
-  border: 1px solid var(--sl-color-gray-5) !important;
-  color: #c1c3c8 !important; }
-
-[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a:link, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a:link {
-  color: #c1c3c8 !important; }
-
-[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a strong, [data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a b, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a strong, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a b {
-  color: #b3c7ff !important; }
-
-[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-callout a:link, [data-bs-theme="dark"] [data-ea-type].loaded .ea-callout a:link {
-  color: #adafb6 !important; }
 
 .alert {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;

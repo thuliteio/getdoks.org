@@ -31,6 +31,8 @@ module.exports = {
         'id',
         'size',
         'type',
+        'data-ea-type',
+        'data-ea-publisher',
       ],
       safelist: [
         'active',
@@ -63,7 +65,6 @@ module.exports = {
         ...whitelister([
           './assets/scss/**/*.scss',
           './node_modules/@docsearch/css/dist/modal.css',
-          './node_modules/@hyas/doks-core/assets/scss/components/_ads.scss',
           './node_modules/@hyas/doks-core/assets/scss/components/_code.scss',
           './node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss',
           './node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss',

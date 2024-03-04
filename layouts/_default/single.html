@@ -16,7 +16,7 @@
       	{{ partial "main/carbon-ads" . }}
 			{{ end -}}
 			{{ if site.Params.add_ons.ethicalAds -}}
-				<div data-ea-publisher="httpgetdoksorg" data-ea-type="image" class="bordered" id="docs-single"></div>
+				{{ partial "main/ethical-ads" . }}
 			{{ end -}}
 		</nav>
 		{{ end -}}
