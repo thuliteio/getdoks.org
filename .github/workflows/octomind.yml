@@ -1,0 +1,5 @@
+- uses: OctoMind-dev/automagically-action-execute@v2
+  with:
+    url: https://getdoks.org/
+    token: ${{ secrets.AUTOMAGICALLY_TOKEN }}
+    testTargetId: 494969a0-2835-4428-950a-15b4f0cd551a
