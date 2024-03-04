@@ -341,6 +341,7 @@
     ],
     "ids": [
       "TableOfContents",
+      "ad-container",
       "add-buttons",
       "add-content",
       "add-mounts",
