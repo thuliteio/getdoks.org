@@ -9,6 +9,7 @@
     "alpha-value-notation": "number",
     "selector-class-pattern": null,
     "media-feature-range-notation": null,
+    "scss/no-global-function-names": null,
     "at-rule-no-unknown": [
       true,
       {

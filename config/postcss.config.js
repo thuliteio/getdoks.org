@@ -31,6 +31,8 @@ module.exports = {
         'id',
         'size',
         'type',
+        'data-ea-type',
+        'data-ea-publisher',
       ],
       safelist: [
         'active',

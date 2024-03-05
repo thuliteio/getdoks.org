@@ -15,6 +15,9 @@
 			{{ if site.Params.add_ons.carbonAds -}}
       	{{ partial "main/carbon-ads" . }}
 			{{ end -}}
+			{{ if site.Params.add_ons.ethicalAds -}}
+				{{ partial "main/ethical-ads" . }}
+			{{ end -}}
 		</nav>
 		{{ end -}}
 		{{ if .Params.toc -}}
