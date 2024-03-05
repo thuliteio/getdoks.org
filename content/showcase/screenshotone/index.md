@@ -1,10 +1,10 @@
 ---
-title: "Screenshotone"
-description: "Screenshotone"
-summary: "Screenshotone"
+title: "ScreenshotOne"
+description: "ScreenshotOne"
+summary: "ScreenshotOne"
 date: 2023-09-15T22:38:32+02:00
 lastmod: 2023-09-15T22:38:32+02:00
-draft: false
+draft: true
 website: "https://screenshotone.com/" # URL
 weight: 50
 seo:
