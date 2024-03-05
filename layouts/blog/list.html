@@ -16,6 +16,9 @@
     {{ end -}}
     {{ with .Params.summary -}}<p class="lead text-center">{{ . }}</p>{{ end -}}
     {{ with .Content -}}<div class="text-center">{{ . }}</div>{{ end -}}
+    {{ if site.Params.add_ons.ethicalAds -}}
+      {{ partial "main/ethical-ads" . }}
+    {{ end -}}
   </div>
 </div>
 <div class="row justify-content-center">

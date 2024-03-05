@@ -5,6 +5,9 @@
     <div class="blog-header">
       <h1>{{ .Title }}</h1>
       {{ partial "main/blog-meta.html" . }}
+      {{ if site.Params.add_ons.ethicalAds -}}
+        {{ partial "main/ethical-ads" . }}
+      {{ end -}}
     </div>
   </div>
   {{ if site.Params.doks.imageSingle -}}

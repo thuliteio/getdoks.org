@@ -13,12 +13,12 @@
 }
 */
 
-.home [data-ea-publisher].loaded {
+[data-ea-publisher].loaded {
   display: none;
   z-index: 100;
   position: fixed;
   right: 1.25rem;
-  bottom: 1.25rem;
+  bottom: 5.25rem;
   margin: 0;
 
   @include media-breakpoint-up(lg) {

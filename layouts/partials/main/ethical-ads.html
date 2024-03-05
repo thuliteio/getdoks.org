@@ -5,6 +5,12 @@
   {{- $ethicalAdsId = "homepage" }}
 {{- else if and (eq .Section "docs") .IsPage }}
   {{- $ethicalAdsId = "docs-single" }}
+{{- else if and (eq .Section "showcase") .IsNode }}
+  {{- $ethicalAdsId = "showcase-list" }}
+{{- else if and (eq .Section "blog") .IsNode }}
+  {{- $ethicalAdsId = "blog-list" }}
+{{- else if and (eq .Section "blog") .IsPage }}
+  {{- $ethicalAdsId = "blog-single" }}
 {{- else }}
   {{- $ethicalAdsId = "not-defined" }}
 {{- end }}
