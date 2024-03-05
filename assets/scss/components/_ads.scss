@@ -13,7 +13,7 @@
 }
 */
 
-[data-ea-publisher].loaded {
+div [data-ea-publisher].loaded {
   display: none;
   z-index: 100;
   position: fixed;

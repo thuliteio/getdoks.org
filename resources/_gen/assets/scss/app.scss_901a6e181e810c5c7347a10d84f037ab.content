@@ -11836,7 +11836,7 @@ pre code::-webkit-scrollbar-thumb:hover {
   font-family: inherit !important;
 }
 */
-[data-ea-publisher].loaded {
+div [data-ea-publisher].loaded {
   display: none;
   z-index: 100;
   position: fixed;
@@ -11844,7 +11844,7 @@ pre code::-webkit-scrollbar-thumb:hover {
   bottom: 4.625rem;
   margin: 0; }
   @media (min-width: 992px) {
-    [data-ea-publisher].loaded {
+    div [data-ea-publisher].loaded {
       display: flex; } }
 [data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
   background-color: var(--bs-body-bg) !important;
