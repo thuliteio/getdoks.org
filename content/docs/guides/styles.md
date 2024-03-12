@@ -42,3 +42,25 @@ h1 {
 ```
 
 ## Bootstrap
+
+## Color theme
+
+Doks' color theme can be controlled by overriding its default custom properties. These variables are used throughout the UI with a range of gray shades used for text and background colors and an accent color used for links and to highlight current items in navigation.
+
+In `assets/scss/common/_variables-custom.scss` — for example:
+
+```scss {title="_variables-custom.scss"}
+// Put your custom SCSS variables here
+
+// Light mode
+$primary: blue;
+
+// Dark mode
+$link-color-dark: aquamarine;
+$button-color-dark: aquamarine;
+
+:root,
+::backdrop {
+  --sl-color-accent-high: aquamarine;
+}
+```
