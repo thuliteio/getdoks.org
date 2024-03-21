@@ -14,11 +14,31 @@
 */
 
 div [data-ea-publisher].loaded {
+  display: block;
+  overflow: hidden;
+  background: var(--sl-color-black);
+  margin: 2rem 0;
+
+/*
   display: none;
   z-index: 100;
   position: fixed;
   right: 1.25rem;
   bottom: 4.625rem;
+  margin: 0;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+*/
+}
+
+.home div [data-ea-publisher].loaded {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
   margin: 0;
 
   @include media-breakpoint-up(lg) {

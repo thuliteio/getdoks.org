@@ -11837,14 +11837,32 @@ pre code::-webkit-scrollbar-thumb:hover {
 }
 */
 div [data-ea-publisher].loaded {
+  display: block;
+  overflow: hidden;
+  background: var(--sl-color-black);
+  margin: 2rem 0;
+  /*
   display: none;
   z-index: 100;
   position: fixed;
   right: 1.25rem;
   bottom: 4.625rem;
+  margin: 0;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+*/ }
+
+.home div [data-ea-publisher].loaded {
+  display: none;
+  z-index: 100;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
   margin: 0; }
   @media (min-width: 992px) {
-    div [data-ea-publisher].loaded {
+    .home div [data-ea-publisher].loaded {
       display: flex; } }
 [data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
   background-color: var(--bs-body-bg) !important;
@@ -14712,11 +14730,18 @@ figcaption {
     padding-top: 4.5rem;
     margin-bottom: 4.5rem; } }
 
-/*
 .home .footer {
-  @include visually-hidden;
-}
-*/
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important; }
+  .home .footer:not(caption) {
+    position: absolute !important; }
+
 .DocSearch-Container {
   z-index: 2000 !important; }
 
