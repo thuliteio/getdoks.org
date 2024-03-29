@@ -11869,7 +11869,8 @@ div [data-ea-publisher].loaded {
   border: 1px solid #e9ecef !important;
   color: #1d2d35 !important; }
 
-[data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link {
+[data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link,
+[data-ea-publisher].loaded .ea-content a:visited .ea-body, [data-ea-type].loaded .ea-content a:visited .ea-body {
   color: #1d2d35 !important; }
 
 [data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
@@ -11883,7 +11884,8 @@ div [data-ea-publisher].loaded {
   border: 1px solid var(--sl-color-gray-5) !important;
   color: #c1c3c8 !important; }
 
-[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a:link, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a:link {
+[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a:link, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a:link,
+[data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a:visited .ea-body, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a:visited .ea-body {
   color: #c1c3c8 !important; }
 
 [data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a strong, [data-bs-theme="dark"] [data-ea-publisher].loaded .ea-content a b, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a strong, [data-bs-theme="dark"] [data-ea-type].loaded .ea-content a b {
