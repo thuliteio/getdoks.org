@@ -1,10 +1,10 @@
 // Ethical Ads
 [data-ea-type="image"].loaded {
-  margin: 1rem 0 2.25rem;
+    margin: 1rem 0 2.25rem;
 }
 
 [data-ea-type="text"].loaded {
-  margin: 3rem 0;
+    margin: 3rem 0;
 }
 
 /*
@@ -14,12 +14,12 @@
 */
 
 div [data-ea-publisher].loaded {
-  display: block;
-  overflow: hidden;
-  background: var(--sl-color-black);
-  margin: 2rem 0;
+    display: block;
+    overflow: hidden;
+    background: var(--sl-color-black);
+    margin: 2rem 0;
 
-/*
+    /*
   display: none;
   z-index: 100;
   position: fixed;
@@ -34,121 +34,135 @@ div [data-ea-publisher].loaded {
 }
 
 .home div [data-ea-publisher].loaded {
-  display: none;
-  z-index: 100;
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  margin: 0;
+    display: none;
+    z-index: 100;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    margin: 0;
 
-  @include media-breakpoint-up(lg) {
-    display: flex;
-  }
+    @include media-breakpoint-up(lg) {
+        display: flex;
+    }
 }
 
-[data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
-  background-color: var(--bs-body-bg) !important;
-  border: 1px solid #e9ecef !important;
-  color: $body-color !important;
+[data-ea-publisher].loaded .ea-content,
+[data-ea-type].loaded .ea-content {
+    background-color: var(--bs-body-bg) !important;
+    border: 1px solid #e9ecef !important;
+    color: $body-color !important;
 }
 
-[data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link,
-[data-ea-publisher].loaded .ea-content a:visited .ea-body, [data-ea-type].loaded .ea-content a:visited .ea-body {
-  color: $body-color !important;
+[data-ea-publisher].loaded .ea-content a:link,
+[data-ea-type].loaded .ea-content a:link,
+[data-ea-publisher].loaded .ea-content a:visited .ea-body,
+[data-ea-type].loaded .ea-content a:visited .ea-body {
+    color: $body-color !important;
 }
 
-[data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
-  color: $primary !important;
+[data-ea-publisher].loaded .ea-content a strong,
+[data-ea-publisher].loaded .ea-content a b,
+[data-ea-type].loaded .ea-content a strong,
+[data-ea-type].loaded .ea-content a b {
+    color: $primary !important;
 }
 
-[data-ea-publisher].loaded .ea-callout a:link, [data-ea-type].loaded .ea-callout a:link {
-  color: var(--bs-secondary-color) !important
+[data-ea-publisher].loaded .ea-callout a:link,
+[data-ea-type].loaded .ea-callout a:link {
+    color: var(--bs-secondary-color) !important;
 }
 
 @include color-mode(dark) {
-  [data-ea-publisher].loaded .ea-content, [data-ea-type].loaded .ea-content {
-    background-color: $body-bg-dark !important;
-    border: 1px solid var(--sl-color-gray-5) !important;
-    color: $body-color-dark !important;
-  }
+    [data-ea-publisher].loaded .ea-content,
+    [data-ea-type].loaded .ea-content {
+        background-color: $body-bg-dark !important;
+        border: 1px solid var(--sl-color-gray-5) !important;
+        color: $body-color-dark !important;
+    }
 
-  [data-ea-publisher].loaded .ea-content a:link, [data-ea-type].loaded .ea-content a:link,
-  [data-ea-publisher].loaded .ea-content a:visited .ea-body, [data-ea-type].loaded .ea-content a:visited .ea-body {
-    color: $body-color-dark !important;
-  }
+    [data-ea-publisher].loaded .ea-content a:link,
+    [data-ea-type].loaded .ea-content a:link,
+    [data-ea-publisher].loaded .ea-content a:visited .ea-body,
+    [data-ea-type].loaded .ea-content a:visited .ea-body {
+        color: $body-color-dark !important;
+    }
 
-  [data-ea-publisher].loaded .ea-content a strong, [data-ea-publisher].loaded .ea-content a b, [data-ea-type].loaded .ea-content a strong, [data-ea-type].loaded .ea-content a b {
-    color: $link-color-dark !important;
-  }
+    [data-ea-publisher].loaded .ea-content a strong,
+    [data-ea-publisher].loaded .ea-content a b,
+    [data-ea-type].loaded .ea-content a strong,
+    [data-ea-type].loaded .ea-content a b {
+        color: $link-color-dark !important;
+    }
 
-  [data-ea-publisher].loaded .ea-callout a:link, [data-ea-type].loaded .ea-callout a:link {
-    color: darken($body-color-dark, 7.5%) !important
-  }
+    [data-ea-publisher].loaded .ea-callout a:link,
+    [data-ea-type].loaded .ea-callout a:link {
+        color: darken($body-color-dark, 7.5%) !important;
+    }
 }
 
 // Carbon Ads
 #carbonads {
-  display: block;
-  overflow: hidden;
-  padding: 1rem;
-  max-width: 175px;
-  background: var(--sl-color-black);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.5;
-  border: 1px solid #e9ecef;
-  margin: 3rem 0;
-  border-radius: 0.375rem;
+    display: block;
+    overflow: hidden;
+    padding: 1rem;
+    max-width: 175px;
+    background: var(--sl-color-black);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #e9ecef;
+    margin: 3rem 0;
+    border-radius: 0.375rem;
 }
 
 .home #carbonads {
-  display: none;
-  z-index: 100;
-  position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  margin: 0;
+    display: none;
+    z-index: 100;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    margin: 0;
 
-  @include media-breakpoint-up(lg) {
-    display: flex;
-  }
+    @include media-breakpoint-up(lg) {
+        display: flex;
+    }
 }
 
 @include color-mode(dark) {
-  #carbonads {
-    border: 1px solid var(--sl-color-gray-5);
-  }
+    #carbonads {
+        border: 1px solid var(--sl-color-gray-5);
+    }
 }
 
 #carbonads a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 #carbonads a:hover {
-  color: inherit;
+    color: inherit;
 }
 
 #carbonads span {
-  display: block;
-  overflow: hidden;
+    display: block;
+    overflow: hidden;
 }
 
 .carbon-img {
-  display: block;
-  margin: 0 auto 8px;
-  line-height: 1;
+    display: block;
+    margin: 0 auto 8px;
+    line-height: 1;
 }
 
 .carbon-text {
-  display: block;
-  margin-bottom: 8px;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .carbon-poweredby {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 10px;
-  line-height: 1;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    line-height: 1;
 }

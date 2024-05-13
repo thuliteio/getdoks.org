@@ -17,7 +17,7 @@ slug: math
 
 You can use a fenced code block or shortcode to embed an SVG image of a [LaTeX](https://www.latex-project.org/) mathematical expression or equation in your Doks site using the free [Math API](https://math.vercel.app/) service.
 
-{{< callout context="note" icon="info-circle" >}}
+{{< callout context="note" icon="outline/info-circle" >}}
 Unlike JavaScript solutions such as [KaTeX](https://katex.org/) or [MathJax](https://www.mathjax.org/), this approach embeds an SVG image in your page.
 {{< /callout >}}
 
@@ -68,16 +68,20 @@ Include a LaTeX expression or equation in your markdown using a shortcode, eithe
 
 ```md
 {{</* math class=text-center */>}}
+
 $$
 x^n + y^n = z^n
 $$
+
 {{</* /math */>}}
 ```
 
 {{< math class=text-center >}}
+
 $$
 x^n + y^n = z^n
 $$
+
 {{< /math >}}
 
 #### Inline
@@ -96,11 +100,11 @@ To optimize performance in a CI/CD environment such as [Cloudflare Pages](https:
 
 1. Edit your site configuration to store the `getresource` cache in the project's `resources` directory, setting the cache to never expire:
 
-    ```toml  {title=hugo.toml}
-    [getresource]
-    dir = ':resourceDir/_gen'
-    maxAge = -1
-    ```
+   ```toml {title=hugo.toml}
+   [getresource]
+   dir = ':resourceDir/_gen'
+   maxAge = -1
+   ```
 
 2. Check the `resources` directory into source control.
 

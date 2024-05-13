@@ -77,15 +77,15 @@ npm install @hyas/doks-core@latest
 ````
 
 ```js {title="count.js"}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 
 ````md
 ```js {title="count.js"}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 ````

@@ -16,7 +16,7 @@ seo:
 
 Shortcodes let you easily reuse a piece of UI or styling consistently. Examples might include a callout or a video embed. Doks supports the use of shortcodes in Markdown files and provides some common shortcodes for you to use.
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 Learn more about [Shortcodes](https://gohugo.io/content-management/shortcodes/) in the Hugo Docs.
 {{< /callout >}}
 
@@ -34,7 +34,7 @@ You can nest any other Markdown content types inside a callout, but callouts are
 
 ### Note callout
 
-{{< callout context="note" title="Note" icon="info-circle" >}}
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}
 Doks is a documentation website toolkit built with Hyas. You can get started with this command:
 
 ```bash
@@ -44,7 +44,7 @@ npm create hyas@latest -- --template doks
 {{< /callout >}}
 
 ````md
-{{</* callout context="note" title="Note" icon="info-circle" */>}}
+{{</* callout context="note" title="Note" icon="outline/info-circle" */>}}
 Doks is a documentation website toolkit built with Hyas. You can get started with this command:
 
 ```bash
@@ -58,44 +58,44 @@ npm create hyas@latest -- --template doks
 
 You can specify a custom title for the callout using the `title` parameter.
 
-{{< callout context="tip" title="Did you know?" icon="rocket" >}}
+{{< callout context="tip" title="Did you know?" icon="outline/rocket" >}}
 Hyas simplifies developer on boarding time and makes for faster collaboration by using a single declaration manifest for [dependencies](https://docs.gethyas.com/concepts/dependencies/).
 {{< /callout >}}
 
-````md
-{{</* callout context="tip" title="Did you know?" icon="rocket" */>}}
+```md
+{{</* callout context="tip" title="Did you know?" icon="outline/rocket" */>}}
 Hyas simplifies developer on boarding time and makes for faster collaboration by using a single declaration manifest for [dependencies](https://docs.gethyas.com/concepts/dependencies/).
 {{</* /callout */>}}
-````
+```
 
 ### More callout types
 
 Caution and danger callouts are helpful for drawing a user's attention to details that may trip them up. If you find yourself using these a lot, it may also be a sign that the thing you are documenting could benefit from being redesigned.
 
-{{< callout context="caution" title="Caution" icon="alert-triangle" >}}
+{{< callout context="caution" title="Caution" icon="outline/alert-triangle" >}}
 If you are not sure you want an awesome docs site, think twice before using [Doks](https://getdoks.org/).
 {{< /callout >}}
 
-{{< callout context="danger" title="Danger" icon="alert-octagon" >}}
+{{< callout context="danger" title="Danger" icon="outline/alert-octagon" >}}
 Your users may be more productive and find your product easier to use thanks to helpful Doks features.
 
 - Clear navigation
 - User-configurable color theme
 - [i18n support](/docs/guides/i18n/)
-{{< /callout >}}
+  {{< /callout >}}
 
 ```md
-{{</* callout context="caution" title="Caution" icon="alert-triangle" */>}}
+{{</* callout context="caution" title="Caution" icon="outline/alert-triangle" */>}}
 If you are not sure you want an awesome docs site, think twice before using [Doks](https://getdoks.org/).
 {{</* /callout */>}}
 
-{{</* callout context="danger" title="Danger" icon="alert-octagon" */>}}
+{{</* callout context="danger" title="Danger" icon="outline/alert-octagon" */>}}
 Your users may be more productive and find your product easier to use thanks to helpful Doks features.
 
 - Clear navigation
 - User-configurable color theme
 - [i18n support](/docs/guides/i18n/)
-{{</* /callout */>}}
+  {{</* /callout */>}}
 ```
 
 ## Details
@@ -156,7 +156,7 @@ yarn create hyas
 {{</* /tabs */>}}
 ````
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 The selected tab is remembered in and across pages.
 {{< /callout >}}
 
@@ -219,10 +219,10 @@ Use the `{{</* link-card */>}}` shortcode to link prominently to different pages
 A `{{</* link-card */>}}` requires a `title` and an [`href`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href) attribute. You can optionally include a short `description` or other link attributes such as `target`.
 
 {{< link-card
-  title="Showcase"
-  description="Explore the infinite possibilities of Doks"
-  href="/showcase/"
-  target="_blank"
+title="Showcase"
+description="Explore the infinite possibilities of Doks"
+href="/showcase/"
+target="_blank"
 >}}
 
 ```md
@@ -245,20 +245,20 @@ A `{{</* link-card */>}}` requires a `title` and an [`href`](https://developer.m
 Group multiple `{{</* link-card */>}}` shortcodes in `{{</* card-grid */>}}` to display cards side-by-side when there's enough space.
 
 {{< card-grid >}}
-  {{< link-card title="Showcase" href="/showcase/" >}}
-  {{< link-card title="Showcase" href="/showcase/" >}}
+{{< link-card title="Showcase" href="/showcase/" >}}
+{{< link-card title="Showcase" href="/showcase/" >}}
 {{< /card-grid >}}
 
 ```md
 {{</* card-grid */>}}
-  {{</* link-card title="Showcase" href="/showcase/" */>}}
-  {{</* link-card title="Showcase" href="/showcase/" */>}}
+{{</* link-card title="Showcase" href="/showcase/" */>}}
+{{</* link-card title="Showcase" href="/showcase/" */>}}
 {{</* /card-grid */>}}
 ```
 
 ## Images
 
-{{< callout context="note" icon="info-circle" >}}
+{{< callout context="note" icon="outline/info-circle" >}}
 Images in Doks use [Hyas' Images integration](https://images.gethyas.com/).
 {{< /callout >}}
 
@@ -280,16 +280,16 @@ Display an image from the assets directory:
 
 ```md
 {{</* figure
-  src="images/vincent-van-zalinge-k-_kK6c4Bkw-unsplash.jpg"
+  src="images/vincent-van-zalinge-kK6c4Bkw-unsplash.jpg"
   alt="A small bird sitting on top of a dry grass field"
   caption="A small bird sitting on top of a dry grass field. Photo by Vincent van Zalinge"
 */>}}
 ```
 
 {{< figure
-  src="images/vincent-van-zalinge-k-_kK6c4Bkw-unsplash.jpg"
-  alt="A small bird sitting on top of a dry grass field"
-  caption="A small bird sitting on top of a dry grass field. Photo by Vincent van Zalinge"
+src="images/vincent-van-zalinge-kK6c4Bkw-unsplash.jpg"
+alt="A small bird sitting on top of a dry grass field"
+caption="A small bird sitting on top of a dry grass field. Photo by Vincent van Zalinge"
 >}}
 
 ## Video
@@ -304,7 +304,7 @@ You can insert a [Video Embed HTML element](https://developer.mozilla.org/en-US/
 
 ## SVG
 
-{{< callout context="note" icon="info-circle" >}}
+{{< callout context="note" icon="outline/info-circle" >}}
 SVG's in Doks use [Hyas' SVG integration](https://svg.gethyas.com/).
 {{< /callout >}}
 
@@ -334,22 +334,22 @@ You can add a logo that respects darkmode/lightmode:
 
 ### Tabler icons
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 Copy the icon name from [Tabler Icons](https://tabler-icons.io/) by clicking on it's name.
 {{< /callout >}}
 
-You can add a coffee icon:
+You can add a outline/coffee icon:
 
 ```md
-{{</* inline-svg "coffee" */>}}
+{{</* inline-svg "outline/coffee" */>}}
 ```
 
-{{< inline-svg "coffee" >}}
+{{< inline-svg "outline/coffee" >}}
 
 You can specify [SVG attributes](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute), for example:
 
 ```md
-{{</* inline-svg src="hand-rock" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" */>}}
+{{</* inline-svg src="outline/hand-love-you" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" */>}}
 ```
 
-{{< inline-svg src="hand-rock" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" >}}
+{{< inline-svg src="outline/hand-love-you" stroke-width="1" stroke="#ee52b7" height="3rem" width="3rem" class="svg-inline-custom" >}}

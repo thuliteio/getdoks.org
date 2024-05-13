@@ -14,18 +14,18 @@ seo:
   noindex: false # false (default) or true
 ---
 
-A code block is indicated by a block with three backticks `` ``` `` at the start and end. You can indicate the programming language being used after the opening backticks.
+A code block is indicated by a block with three backticks ` ``` ` at the start and end. You can indicate the programming language being used after the opening backticks.
 
 ```js
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 
 ````md
 ```js
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 ````
@@ -39,15 +39,15 @@ A code block’s optional title can be set with a `title="..."` attribute follow
 ### File name tab
 
 ```js {title="count.js"}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 
 ````md
 ```js {title="count.js"}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 ````
@@ -93,15 +93,15 @@ npm install @hyas/doks-core@latest
 ## Line numbers
 
 ```js {lineNos=true lineNoStart=32}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 
 ````md
 ```js {lineNos=true lineNoStart=32}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 ````
@@ -109,15 +109,15 @@ if ([1,"one",2,"two"].includes(value)){
 ## Highlight
 
 ```js {hl_lines=2}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 
 ````md
 ```js {hl_lines=2}
-if ([1,"one",2,"two"].includes(value)){
-  console.log("Number is either 1 or 2.");  // comment
+if ([1, "one", 2, "two"].includes(value)) {
+  console.log("Number is either 1 or 2."); // comment
 }
 ```
 ````

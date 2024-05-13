@@ -16,7 +16,7 @@ seo:
 
 This guide will help you migrate from Doks v0.5 to Doks v1.
 
-{{< callout context="note" title="Other migration guides" icon="info-circle" >}}
+{{< callout context="note" title="Other migration guides" icon="outline/info-circle" >}}
 Need to upgrade a v1.x project? See our [other migration guides](/migration-guides/v-1/v-1-3/).
 {{< /callout >}}
 
@@ -110,7 +110,7 @@ Replace the contents of your project's `package.json` with the following:
 }
 ```
 
-### Add ``.npmrc``
+### Add `.npmrc`
 
 Add an `.npmrc` file to your project root with the following:
 
@@ -459,7 +459,7 @@ mainSections = ["docs"]
 [hyas_images]
   [hyas_images.defaults]
     decoding = "async" # sync, async, or auto (default)
-    fetchpriority = "auto" # high, low, or auto (default) 
+    fetchpriority = "auto" # high, low, or auto (default)
     loading = "lazy" # eager or lazy (default)
     widths = [480, 576, 768, 1025, 1200, 1440] # [640, 768, 1024, 1366, 1600, 1920] for example
     sizes = "auto" # 100vw (default), 75vw, or auto for example
@@ -502,74 +502,69 @@ Add the following settings to `config/postcss.config.js`:
 {{< details "PostCSS" >}}
 
 ```js {title="postcss.config.js"}
-const autoprefixer = require('autoprefixer');
-const purgecss = require('@fullhuman/postcss-purgecss');
-const whitelister = require('purgecss-whitelister');
+const autoprefixer = require("autoprefixer");
+const purgecss = require("@fullhuman/postcss-purgecss");
+const whitelister = require("purgecss-whitelister");
 
 module.exports = {
   plugins: [
     autoprefixer(),
     purgecss({
-      content: [ './hugo_stats.json' ],
+      content: ["./hugo_stats.json"],
       extractors: [
         {
           extractor: (content) => {
             const els = JSON.parse(content).htmlElements;
             return els.tags.concat(els.classes, els.ids);
           },
-          extensions: ['json'],
-        },
+          extensions: ["json"]
+        }
       ],
       dynamicAttributes: [
-        'aria-expanded',
-        'data-bs-popper',
-        'data-bs-target',
-        'data-bs-theme',
-        'data-dark-mode',
-        'data-global-alert',
-        'data-pane',             // tabs.js
-        'data-popper-placement',
-        'data-sizes',
-        'data-toggle-tab',       // tabs.js
-        'id',
-        'size',
-        'type',
+        "aria-expanded",
+        "data-bs-popper",
+        "data-bs-target",
+        "data-bs-theme",
+        "data-dark-mode",
+        "data-global-alert",
+        "data-pane", // tabs.js
+        "data-popper-placement",
+        "data-sizes",
+        "data-toggle-tab", // tabs.js
+        "id",
+        "size",
+        "type"
       ],
       safelist: [
-        'active',
-        'btn-clipboard',         // clipboards.js
-        'clipboard',             // clipboards.js
-        'disabled',
-        'hidden',
-        'modal-backdrop',        // search-modal.js
-        'selected',              // search-modal.js
-        'show',
-        'img-fluid',
-        'blur-up',
-        'lazyload',
-        'lazyloaded',
-        'alert-link',
-        'container-fw ',
-        'container-lg',
-        'container-fluid',
-        'offcanvas-backdrop',
-        'figcaption',
-        'dt',
-        'dd',
-        'showing',
-        'hiding',
-        'page-item',
-        'page-link',
-        ...whitelister([
-          './assets/scss/**/*.scss',
-          './node_modules/@hyas/doks-core/assets/scss/components/_code.scss',
-          './node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss',
-          './node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss',
-        ]),
-      ],
-    }),
-  ],
-}
+        "active",
+        "btn-clipboard", // clipboards.js
+        "clipboard", // clipboards.js
+        "disabled",
+        "hidden",
+        "modal-backdrop", // search-modal.js
+        "selected", // search-modal.js
+        "show",
+        "img-fluid",
+        "blur-up",
+        "lazyload",
+        "lazyloaded",
+        "alert-link",
+        "container-fw ",
+        "container-lg",
+        "container-fluid",
+        "offcanvas-backdrop",
+        "figcaption",
+        "dt",
+        "dd",
+        "showing",
+        "hiding",
+        "page-item",
+        "page-link",
+        ...whitelister(["./assets/scss/**/*.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_code.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss", "./node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss"])
+      ]
+    })
+  ]
+};
 ```
 
 {{< /details >}}
@@ -582,11 +577,11 @@ Rename the current `assets` directory to `assets-backup`. Download the Doks sour
 
 Rename the current `layouts` directory to `layouts-backup`. Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `layouts` directory into your project's root.
 
-{{< callout context="tip" title="Add default content" icon="rocket" >}}
+{{< callout context="tip" title="Add default content" icon="outline/rocket" >}}
 Rename the current `content` directory to `content-backup`. Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `content` directory into your project's root.
 {{< /callout >}}
 
-{{< callout context="note" title="Need to continue?" icon="info-circle" >}}
+{{< callout context="note" title="Need to continue?" icon="outline/info-circle" >}}
 After upgrading Doks to the latest version, you may not need to make any changes to your project at all!
 
 But, if you notice errors or unexpected behavior, please check below for what has changed that might need updating in your project.

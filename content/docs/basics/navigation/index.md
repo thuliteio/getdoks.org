@@ -30,14 +30,14 @@ For example, given the following file structure:
 ```md
 .
 └──content/
-   └───docs/
-       ├───guides/
-       │   ├───_index.md
-       │   └───example.md
-       reference/
-       │   ├───_index.md
-       │   └───example.md
-       └───_index.md
+└───docs/
+├───guides/
+│ ├───_index.md
+│ └───example.md
+reference/
+│ ├───_index.md
+│ └───example.md
+└───_index.md
 ```
 
 The following sidebar will be automatically generated:
@@ -47,11 +47,12 @@ The following sidebar will be automatically generated:
 
 ### Menu navigation
 
-{{< callout context="note" icon="info-circle" >}}
+{{< callout context="note" icon="outline/info-circle" >}}
 Make sure to:
+
 - use `pageRef` in stead of `url` and
 - omit the trailing slash
-{{< /callout >}}
+  {{< /callout >}}
 
 In stead of using the default navigation, you can define `sidebar_<section>` entries in `config/_default/menus/menus.<language>.toml` — for example:
 
@@ -153,7 +154,7 @@ Define social entries in `config/_default/menus/menus.<language>.toml`:
   weight = 30
 ```
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 Copy the icon SVG from [Tabler Icons](https://tabler-icons.io/) by clicking "Copy SVG".
 {{< /callout >}}
 

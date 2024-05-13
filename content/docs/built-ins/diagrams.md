@@ -16,11 +16,11 @@ seo:
 
 Use a fenced code block to embed an SVG image of a diagram in your Doks site using the free [Kroki](https://kroki.io/) service.
 
-{{< callout context="note" icon="info-circle" >}}
+{{< callout context="note" icon="outline/info-circle" >}}
 Unlike JavaScript solutions that require client-side rendering, this approach embeds an SVG image in your page.
 {{< /callout >}}
 
-{{< callout context="tip" icon="rocket" >}}
+{{< callout context="tip" icon="outline/rocket" >}}
 Hugo supports [GoAT diagrams](https://gohugo.io/content-management/diagrams/#goat-diagrams-ascii) (ASCII diagrams) natively.
 {{< /callout >}}
 
@@ -181,11 +181,11 @@ To optimize performance in a CI/CD environment such as [Cloudflare Pages](https:
 
 1. Edit your site configuration to store the `getresource` cache in the project's `resources` directory, setting the cache to never expire:
 
-    ```toml {title=hugo.toml}
-    [getresource]
-    dir = ':resourceDir/_gen'
-    maxAge = -1
-    ```
+   ```toml {title=hugo.toml}
+   [getresource]
+   dir = ':resourceDir/_gen'
+   maxAge = -1
+   ```
 
 2. Check the `resources` directory into source control.
 

@@ -53,7 +53,7 @@ You can highlight `inline code` with backticks.
 
 ## Images
 
-{{< callout context="note" icon="info-circle" >}}
+{{< callout context="note" icon="outline/info-circle" >}}
 Images in Doks use [Hyas' Images integration](https://images.gethyas.com/).
 {{< /callout >}}
 
@@ -103,7 +103,6 @@ I can link to [my conclusion](#conclusion) lower on the same page.
 ## Conclusion
 
 `https://my-site.com/page1/#introduction` navigates directly to my Introduction.
-
 ```
 
 Level 2 (`<h2>`) and Level 3 (`<h3>`) headings will automatically appear in the page table of contents — the "On this page" section.
@@ -122,7 +121,7 @@ Level 2 (`<h2>`) and Level 3 (`<h3>`) headings will automatically appear in the 
 
 ## Code blocks
 
-A code block is indicated by a block with three backticks `` ``` `` at the start and end. You can indicate the programming language being used after the opening backticks.
+A code block is indicated by a block with three backticks ` ``` ` at the start and end. You can indicate the programming language being used after the opening backticks.
 
 ```go
 // Go code with syntax highlighting.
@@ -148,7 +147,7 @@ func main() {
 ```
 ````
 
-{{< callout context="note" title="Extended code formatting" icon="info-circle" >}}
+{{< callout context="note" title="Extended code formatting" icon="outline/info-circle" >}}
 Need extended code formatting? See our [Code blocks guides](/docs/built-ins/code-blocks/).
 {{< /callout >}}
 

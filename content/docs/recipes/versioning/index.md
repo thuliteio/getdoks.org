@@ -14,6 +14,6 @@ seo:
   noindex: false # false (default) or true
 ---
 
-{{< callout context="note" icon="info-circle" >}}
+{{< callout context="note" icon="outline/info-circle" >}}
 New setup — available with the next release.
 {{< /callout >}}

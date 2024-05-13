@@ -55,7 +55,7 @@ How a web page is built can impact the power it takes to run on a user's device.
 
 Be mindful when adding features like analytics tracking scripts or JavaScript-heavy content like video embeds as these can increase the page power usage. If you need analytics, consider choosing a lightweight option like [Cabin](https://withcabin.com/), [Fathom](https://usefathom.com/), or [Plausible](https://plausible.io/). Embeds like YouTube and Vimeo videos can be improved by waiting to [load the video on user interaction](https://web.dev/iframe-lazy-loading/).
 
-{{< callout context="tip" title="Did you know?" icon="rocket" >}}
+{{< callout context="tip" title="Did you know?" icon="outline/rocket" >}}
 Parsing and compiling JavaScript is one of the most expensive tasks browsers have to do. Compared to rendering a JPEG image of the same size, [JavaScript can take more than 30 times longer to process](https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e).
 {{< /callout >}}
 
@@ -82,6 +82,7 @@ These tests with the [Website Carbon Calculator][wcc] compare similar pages buil
 | [Docusaurus][ds-carbon]     | 0.18g              |
 | [Read the Docs][rtd-carbon] | 0.27g              |
 | [GitBook][gb-carbon]        | 0.60g              |
+
 {.mb-4}
 
 <small>Data collected on 12 Dec 2023. Click a link to see up-to-date figures.</small>
