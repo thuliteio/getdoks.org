@@ -52,7 +52,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = true # false (default) or true
+  alert = false # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap
@@ -119,7 +119,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
 [hyas_images]
   [hyas_images.defaults]
     decoding = "async" # sync, async, or auto (default)
-    fetchpriority = "auto" # high, low, or auto (default) 
+    fetchpriority = "auto" # high, low, or auto (default)
     loading = "lazy" # eager or lazy (default)
     widths = [480, 576, 768, 1025, 1200, 1440] # [640, 768, 1024, 1366, 1600, 1920] for example
     sizes = "auto" # 100vw (default), 75vw, or auto for example

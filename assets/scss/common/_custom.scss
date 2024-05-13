@@ -139,7 +139,7 @@
 @include media-breakpoint-up(xl) {
   .container-fw {
     max-width: 875px;
-    
+
     .docs-content {
       width: 575px;
     }
@@ -343,5 +343,93 @@ figcaption {
 
     .img-darkmode {
         display: block;
+    }
+}
+
+// Card shortcode
+
+.card-icon {
+    padding: 0.2em;
+    border-radius: 0.25rem;
+}
+
+.icon-yellow {
+    border: 1px solid var(--sl-color-orange);
+    background-color: var(--sl-color-orange-high);
+}
+
+.icon-purple {
+    border: 1px solid var(--sl-color-purple);
+    background-color: var(--sl-color-purple-high);
+}
+
+.icon-green {
+    border: 1px solid var(--sl-color-green);
+    background-color: var(--sl-color-green-high);
+}
+
+.icon-red {
+    border: 1px solid var(--sl-color-red);
+    background-color: var(--sl-color-red-high);
+}
+
+.icon-blue {
+    border: 1px solid var(--sl-color-blue);
+    background-color: var(--sl-color-blue-high);
+}
+
+.card-nav .card-box svg {
+    stroke: $db-bluishCyan-100;
+}
+
+@include color-mode(dark) {
+    .icon-yellow {
+        border: 1px solid var(--sl-color-orange);
+        background-color: var(--sl-color-orange-low);
+    }
+
+    .icon-purple {
+        border: 1px solid var(--sl-color-purple);
+        background-color: var(--sl-color-purple-low);
+    }
+
+    .icon-green {
+        border: 1px solid var(--sl-color-green);
+        background-color: var(--sl-color-green-low);
+    }
+
+    .icon-red {
+        border: 1px solid var(--sl-color-red);
+        background-color: var(--sl-color-red-low);
+    }
+
+    .icon-blue {
+        border: 1px solid var(--sl-color-blue);
+        background-color: var(--sl-color-blue-low);
+    }
+
+    .card-nav .card-box svg {
+        stroke: $white;
+    }
+}
+
+.card-nav .card-box {
+    border-radius: 0;
+    padding: 1rem 1rem 0;
+}
+
+.card-nav .card-box:hover {
+    border: 1px solid $card-border-color;
+    background-color: transparent;
+}
+
+@include color-mode(dark) {
+    .card-nav .card-box {
+        border: 1px solid hsl(224deg, 10%, 23%);
+    }
+
+    .card-nav .card-box:hover {
+        border: 1px solid hsl(224deg, 10%, 23%);
+        background-color: transparent;
     }
 }
