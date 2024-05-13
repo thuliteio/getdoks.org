@@ -16,23 +16,23 @@ seo:
 
 A quick reference to the Markdown extended syntax.
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 Refer to the [Extended Syntax](https://www.markdownguide.org/extended-syntax) reference guide from The Markdown Guide for more information.
 {{< /callout >}}
 
 ## Table
 
 ```md
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
 ```
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
 
 ## Fenced Code Block
 
@@ -102,17 +102,17 @@ term
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-{.list-unstyled}
+      {.list-unstyled}
 ```
 
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
-{.list-unstyled}
+      {.list-unstyled}
 
 ## Emoji
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 Copy the emoji shortcode from [Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/) by clicking on the emoji.
 {{< /callout >}}
 
@@ -129,7 +129,7 @@ That is so funny! :joy:
 
 ## Unsupported elements
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 Hugo does not [support](https://www.markdownguide.org/tools/hugo/#hugo-markdown-support) the highlight, subscript, and superscript elements. Use the HTML element itself instead.
 {{< /callout >}}
 

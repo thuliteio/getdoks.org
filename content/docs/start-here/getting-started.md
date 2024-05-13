@@ -48,7 +48,7 @@ yarn create hyas@latest --template doks
 
 This will create a new [project directory](/docs/basics/project-structure/) with all the necessary files and configurations for your site.
 
-{{< callout context="tip" title="See it in action" icon="rocket" >}}
+{{< callout context="tip" title="See it in action" icon="outline/rocket" >}}
 Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/gethyas/doks).
 {{< /callout >}}
 
@@ -209,10 +209,11 @@ yarn upgrade @hyas/doks-core --latest
 
 See the [Doks changelog](https://github.com/gethyas/doks-core/blob/main/CHANGELOG.md) for a full list of the changes made in each release.
 
-{{< callout context="tip" title="Upgrade guides" icon="rocket" >}}
+{{< callout context="tip" title="Upgrade guides" icon="outline/rocket" >}}
+
 - Need to upgrade from Doks v0.5? See the [Upgrade to v1](/docs/start-here/upgrade-to-v1/) guide.
 - Need to upgrade a v1.x project? See our [other migration guides](/migration-guides/v-1/v-1-3/).
-{{< /callout >}}
+  {{< /callout >}}
 
 ## Troubleshooting Doks
 

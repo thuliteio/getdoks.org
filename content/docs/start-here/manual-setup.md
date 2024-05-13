@@ -379,7 +379,7 @@ yarn run create docs/guides/faq.md
 {{< /tab >}}
 {{< /tabs >}}
 
-{{< callout context="tip" title="Add default content" icon="rocket" >}}
+{{< callout context="tip" title="Add default content" icon="outline/rocket" >}}
 Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `content` directory into your project's root.
 {{< /callout >}}
 

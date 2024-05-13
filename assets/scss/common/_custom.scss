@@ -1,106 +1,106 @@
 // Put your custom SCSS code here
 
 .list.section.showcase {
-  .wrap.container-fluid,
-  .wrap.container-lg {
-    padding: 0;
-    max-width: 100%;
-  }
+    .wrap.container-fluid,
+    .wrap.container-lg {
+        padding: 0;
+        max-width: 100%;
+    }
 
-  .content {
-    padding: 0;
-  }
+    .content {
+        padding: 0;
+    }
 
-  .container {
-    max-width: 100%;
-  }
+    .container {
+        max-width: 100%;
+    }
 }
 
 .col-main-section {
-  flex: 0 0 auto;
-  width: calc(100% - 2rem);
-  padding-left: 1rem;
-  padding-right: 1rem;
+    flex: 0 0 auto;
+    width: calc(100% - 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-  @include media-breakpoint-up(md) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+    @include media-breakpoint-up(md) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 
-  @include media-breakpoint-up(xl) {
-    max-width: 100rem;
-  }
+    @include media-breakpoint-up(xl) {
+        max-width: 100rem;
+    }
 }
 
 @include media-breakpoint-up(xl) {
-  .col-xl {
-    flex: 0 0 auto;
-    width: 33.3333%;
-  }
+    .col-xl {
+        flex: 0 0 auto;
+        width: 33.3333%;
+    }
 }
 
 .section-cards {
-  .card {
-    margin: 0;
-    padding: 1rem;
-  }
+    .card {
+        margin: 0;
+        padding: 1rem;
+    }
 
-  .card-title {
-    margin-top: 0;
-  }
+    .card-title {
+        margin-top: 0;
+    }
 }
 
 @include media-breakpoint-up(lg) {
-  .section-cards .col-lg-7:nth-child(2n) .card {
-    margin-top: 3rem;
-    margin-bottom: -3rem;
-  }
+    .section-cards .col-lg-7:nth-child(2n) .card {
+        margin-top: 3rem;
+        margin-bottom: -3rem;
+    }
 }
 
 @include media-breakpoint-up(xl) {
-  .showcase .col-main-section {
-    max-width: 80rem;
-  }
+    .showcase .col-main-section {
+        max-width: 80rem;
+    }
 }
 
 .showcase .card {
-  height: auto;
-  margin: 1rem;
+    height: auto;
+    margin: 1rem;
 }
 
 .showcase .card-img-overlay {
-  position: absolute;
-  inset: auto 0 0;
-  padding: var(--bs-card-img-overlay-padding);
-  border-radius: 0;
-  background-color: hsla(224deg, 14%, 16%, 0.95);
-  transition-timing-function: cubic-bezier(0,0,.2,1);
-  transition-duration: .3s;
-  transition-property: opacity;
-  opacity: 0;
+    position: absolute;
+    inset: auto 0 0;
+    padding: var(--bs-card-img-overlay-padding);
+    border-radius: 0;
+    background-color: hsla(224deg, 14%, 16%, 0.95);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 0.3s;
+    transition-property: opacity;
+    opacity: 0;
 
-  .card-title {
-    margin-top: 0;
-    color: var(--sl-color-gray-2);
-  }
+    .card-title {
+        margin-top: 0;
+        color: var(--sl-color-gray-2);
+    }
 
-  .card-text {
-    color: var(--sl-color-gray-2);
-  }
+    .card-text {
+        color: var(--sl-color-gray-2);
+    }
 }
 
 .showcase .card:hover .card-img-overlay {
-  opacity: 1;
+    opacity: 1;
 }
 
 .pagination {
-  margin-top: 4rem;
+    margin-top: 4rem;
 }
 
 /*! purgecss start ignore */
 .page-item a[aria-label="Previous"],
 .page-item a[aria-label="Next"] {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 /*! purgecss end ignore */
@@ -168,103 +168,104 @@ figcaption {
 */
 
 .navbar-brand svg {
-  width: 60px;
-  height: 100%;
-  margin-right: 0;
+    width: 60px;
+    height: 100%;
+    margin-right: 0;
 }
 
 @include media-breakpoint-up(lg) {
-  .navbar-brand svg {
-    width: 70px;
-    height: 100%;
-  }
+    .navbar-brand svg {
+        width: 70px;
+        height: 100%;
+    }
 }
 
 .section-credits {
-  padding-top: 2.5rem;
-  margin-bottom: 2.5rem;
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 @include media-breakpoint-up(lg) {
-  .section-credits {
-    padding-top: 4.5rem;
-    margin-bottom: 4.5rem;
-  }
+    .section-credits {
+        padding-top: 4.5rem;
+        margin-bottom: 4.5rem;
+    }
 }
 
 .home .footer {
-  @include visually-hidden;
+    @include visually-hidden;
 }
 
 // DocSearch
 
 .DocSearch-Container {
-  z-index: 2000 !important;
+    z-index: 2000 !important;
 }
 
 .DocSearch-Hit-title {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .DocSearch-Hit-icon {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .DocSearch-Hits mark {
-  padding: 0;
+    padding: 0;
 }
 
-@media (max-width:768px) {
-  .DocSearch-Modal {
-    position: fixed !important;
-  }
+@media (max-width: 768px) {
+    .DocSearch-Modal {
+        position: fixed !important;
+    }
 }
 
 .single.blog .content h2[id]::before,
 .single.blog .content h3[id]::before,
 .single.blog .content h4[id]::before {
-  display: block;
-  height: 6rem;
-  margin-top: -6rem;
-  content: "";
+    display: block;
+    height: 6rem;
+    margin-top: -6rem;
+    content: "";
 }
 
-.feedback-links h3, .feedback-links .h3 {
-  text-transform: none;
-  font-size: 1rem;
-  margin: 1.25rem 0 0.75rem;
-  padding: 1.5rem 0 0;
+.feedback-links h3,
+.feedback-links .h3 {
+    text-transform: none;
+    font-size: 1rem;
+    margin: 1.25rem 0 0.75rem;
+    padding: 1.5rem 0 0;
 }
 
 .feedback-links li {
-  margin-top: 0.125rem;
-  padding-top: 0.125rem;
+    margin-top: 0.125rem;
+    padding-top: 0.125rem;
 }
 
 .feedback-links a {
-  color: $body-color;
-  display: block;
-  padding: 0.125rem 0;
-  font-size: $font-size-base * 0.9375;
-  text-decoration: none;
+    color: $body-color;
+    display: block;
+    padding: 0.125rem 0;
+    font-size: $font-size-base * 0.9375;
+    text-decoration: none;
 }
 
 .feedback-links a:hover,
 .feedback-links a.active {
-  text-decoration: none;
-  color: $link-color;
+    text-decoration: none;
+    color: $link-color;
 }
 
 @include color-mode(dark) {
-  .feedback-links a {
-    color: $body-color-dark;
-  }
+    .feedback-links a {
+        color: $body-color-dark;
+    }
 
-  .feedback-links a:hover {
-    text-decoration: none;
-    color: $link-color-dark;
-  }
+    .feedback-links a:hover {
+        text-decoration: none;
+        color: $link-color-dark;
+    }
 }
 
 // Link cards
@@ -298,49 +299,49 @@ figcaption {
 // Link cards — blog single pages overrides
 
 .blog.single .card-nav {
-  .card {
-    margin: 0.5rem 0;
-    transition: unset;
-  }
+    .card {
+        margin: 0.5rem 0;
+        transition: unset;
+    }
 
-  .card:hover {
-    transform: unset;
-  }
+    .card:hover {
+        transform: unset;
+    }
 
-  .card-body {
-    padding: 1rem;
-  }
+    .card-body {
+        padding: 1rem;
+    }
 }
 
 .docs-links h3,
 .page-links h3 {
-  text-transform: none;
+    text-transform: none;
 }
 
 .img-lightmode.border {
-  border: 1px solid $gray-200 !important;
+    border: 1px solid $gray-200 !important;
 }
 
 .img-darkmode.border {
-  border: 1px solid var(--sl-color-gray-6) !important;
+    border: 1px solid var(--sl-color-gray-6) !important;
 }
 
 @include color-mode(light) {
-  .img-lightmode {
-    display: block;
-  }
+    .img-lightmode {
+        display: block;
+    }
 
-  .img-darkmode {
-    display: none;
-  }
+    .img-darkmode {
+        display: none;
+    }
 }
 
 @include color-mode(dark) {
-  .img-lightmode {
-    display: none;
-  }
+    .img-lightmode {
+        display: none;
+    }
 
-  .img-darkmode {
-    display: block;
-  }
+    .img-darkmode {
+        display: block;
+    }
 }

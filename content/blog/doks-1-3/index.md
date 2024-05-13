@@ -84,7 +84,7 @@ yarn upgrade @hyas/images --latest
 
 ## Deduplicated Bootstrap variables
 
-Doks now only specifies customized Bootstrap SCSS variables in [`_variables-overrides.scss`](https://github.com/gethyas/doks-core/blob/main/assets/scss/common/_variables-overrides.scss) — instead of overriding *all* Bootstrap SCSS variables — making customizations [easier and more robust](https://github.com/gethyas/doks-core/blob/main/assets/scss/app.scss).
+Doks now only specifies customized Bootstrap SCSS variables in [`_variables-overrides.scss`](https://github.com/gethyas/doks-core/blob/main/assets/scss/common/_variables-overrides.scss) — instead of overriding _all_ Bootstrap SCSS variables — making customizations [easier and more robust](https://github.com/gethyas/doks-core/blob/main/assets/scss/app.scss).
 
 Add your customizations in `assets/scss/common/`:
 

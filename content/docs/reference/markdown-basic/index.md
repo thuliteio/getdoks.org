@@ -16,7 +16,7 @@ seo:
 
 A quick reference to the Markdown basic syntax.
 
-{{< callout icon="info-circle" >}}
+{{< callout icon="outline/info-circle" >}}
 Refer to the [Basic Syntax](https://www.markdownguide.org/basic-syntax) reference guide from The Markdown Guide for more information.
 {{< /callout >}}
 
@@ -24,7 +24,9 @@ Refer to the [Basic Syntax](https://www.markdownguide.org/basic-syntax) referenc
 
 ```md
 # H1
+
 ## H2
+
 ### H3
 ```
 
@@ -39,10 +41,10 @@ Refer to the [Basic Syntax](https://www.markdownguide.org/basic-syntax) referenc
 ## Italic
 
 ```md
-*italicized text*
+_italicized text_
 ```
 
-*italicized text*
+_italicized text_
 
 ## Blockquote
 

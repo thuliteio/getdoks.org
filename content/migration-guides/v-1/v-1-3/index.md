@@ -440,7 +440,7 @@ mainSections = ["docs"]
 [hyas_images]
   [hyas_images.defaults]
     decoding = "async" # sync, async, or auto (default)
-    fetchpriority = "auto" # high, low, or auto (default) 
+    fetchpriority = "auto" # high, low, or auto (default)
     loading = "lazy" # eager or lazy (default)
     widths = [480, 576, 768, 1025, 1200, 1440] # [640, 768, 1024, 1366, 1600, 1920] for example
     sizes = "auto" # 100vw (default), 75vw, or auto for example
@@ -483,74 +483,69 @@ Add the following settings to `config/postcss.config.js`:
 {{< details "PostCSS" >}}
 
 ```js {title="postcss.config.js"}
-const autoprefixer = require('autoprefixer');
-const purgecss = require('@fullhuman/postcss-purgecss');
-const whitelister = require('purgecss-whitelister');
+const autoprefixer = require("autoprefixer");
+const purgecss = require("@fullhuman/postcss-purgecss");
+const whitelister = require("purgecss-whitelister");
 
 module.exports = {
   plugins: [
     autoprefixer(),
     purgecss({
-      content: [ './hugo_stats.json' ],
+      content: ["./hugo_stats.json"],
       extractors: [
         {
           extractor: (content) => {
             const els = JSON.parse(content).htmlElements;
             return els.tags.concat(els.classes, els.ids);
           },
-          extensions: ['json'],
-        },
+          extensions: ["json"]
+        }
       ],
       dynamicAttributes: [
-        'aria-expanded',
-        'data-bs-popper',
-        'data-bs-target',
-        'data-bs-theme',
-        'data-dark-mode',
-        'data-global-alert',
-        'data-pane',             // tabs.js
-        'data-popper-placement',
-        'data-sizes',
-        'data-toggle-tab',       // tabs.js
-        'id',
-        'size',
-        'type',
+        "aria-expanded",
+        "data-bs-popper",
+        "data-bs-target",
+        "data-bs-theme",
+        "data-dark-mode",
+        "data-global-alert",
+        "data-pane", // tabs.js
+        "data-popper-placement",
+        "data-sizes",
+        "data-toggle-tab", // tabs.js
+        "id",
+        "size",
+        "type"
       ],
       safelist: [
-        'active',
-        'btn-clipboard',         // clipboards.js
-        'clipboard',             // clipboards.js
-        'disabled',
-        'hidden',
-        'modal-backdrop',        // search-modal.js
-        'selected',              // search-modal.js
-        'show',
-        'img-fluid',
-        'blur-up',
-        'lazyload',
-        'lazyloaded',
-        'alert-link',
-        'container-fw ',
-        'container-lg',
-        'container-fluid',
-        'offcanvas-backdrop',
-        'figcaption',
-        'dt',
-        'dd',
-        'showing',
-        'hiding',
-        'page-item',
-        'page-link',
-        ...whitelister([
-          './assets/scss/**/*.scss',
-          './node_modules/@hyas/doks-core/assets/scss/components/_code.scss',
-          './node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss',
-          './node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss',
-        ]),
-      ],
-    }),
-  ],
-}
+        "active",
+        "btn-clipboard", // clipboards.js
+        "clipboard", // clipboards.js
+        "disabled",
+        "hidden",
+        "modal-backdrop", // search-modal.js
+        "selected", // search-modal.js
+        "show",
+        "img-fluid",
+        "blur-up",
+        "lazyload",
+        "lazyloaded",
+        "alert-link",
+        "container-fw ",
+        "container-lg",
+        "container-fluid",
+        "offcanvas-backdrop",
+        "figcaption",
+        "dt",
+        "dd",
+        "showing",
+        "hiding",
+        "page-item",
+        "page-link",
+        ...whitelister(["./assets/scss/**/*.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_code.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss", "./node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss"])
+      ]
+    })
+  ]
+};
 ```
 
 {{< /details >}}
@@ -563,6 +558,6 @@ Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas
 
 Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas/doks/releases/tag/v1.3.0). Extract the archive and copy the `layouts/partials` directory into your project's `layouts` directory.
 
-{{< callout context="note" title="Update overrides" icon="info-circle" >}}
+{{< callout context="note" title="Update overrides" icon="outline/info-circle" >}}
 If you have customizations, make sure to align them with `@hyas/doks-core` [v1.3.0](https://github.com/gethyas/doks-core/tree/v1.3.0) — for example [`assets/scss/app.scss`](https://github.com/gethyas/doks-core/blob/v1.3.0/assets/scss/app.scss)
 {{< /callout >}}
