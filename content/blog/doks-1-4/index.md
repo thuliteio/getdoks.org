@@ -21,11 +21,14 @@ seo:
 
 Doks 1.4 is now available! This release includes a new shortcode for link cards, improved sidebar navigation, and more.
 
-Highlights include:
+<!-- omit in toc -->
+## Highlights
 
 - [Link cards shortcode](#link-cards-shortcode)
 - [Improved sidebar navigation](#improved-sidebar-navigation)
+- [Bug Fixes](#bug-fixes)
 
+<!-- omit in toc -->
 ## How to upgrade
 
 To take advantage of the latest features, make sure you’re running the latest version of Doks. You can upgrade to Doks 1.4 by running the following command:

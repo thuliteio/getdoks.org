@@ -4,7 +4,7 @@ description = "Congrats on setting up a new Doks project!"
 images = ["cover.png"]
 
 # mainSections
-mainSections = ["docs", "migration-guides"]
+mainSections = ["docs", "upgrade-guides"]
 
 # Global alert
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-4/">Doks 1.4 is here!</a>'
@@ -59,7 +59,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   bootstrapJavascript = true # false (default) or true
 
   # Nav
-  sectionNav = ["docs", "migration-guides"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionNav = ["docs", "upgrade-guides"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
   headlineHash = true # true (default) or false

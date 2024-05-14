@@ -61,13 +61,13 @@
 #   url = "https://github.com/gethyas/doks/discussions"
 #   weight = 50
 #   identifier = "other-docs"
-# 
+#
 # [[main]]
 #   name = "Hyas"
 #   weight = 51
 #   url = "https://docs.gethyas.com/"
 #   parent = "other-docs"
-# 
+#
 # [[main]]
 #   name = "Images"
 #   weight = 52
@@ -79,7 +79,7 @@
 #   weight = 53
 #   url = "https://svg.gethyas.com/"
 #   parent = "other-docs"
-# 
+#
 # [[main]]
 #   name = "SEO"
 #   weight = 54
@@ -105,15 +105,10 @@
   url = "https://twitter.com/getdoks"
   weight = 30
 
-[[sidebar_migration-guides]]
-  name = "v1"
-  pageRef = "/migration-guides/v-1"
-  weight = 10
-
-[[sidebar_migration-guides]]
+[[sidebar_upgrade-guides]]
   name = "Upgrade to v1"
-  pageRef = "/docs/start-here/upgrade-to-v1"
-  weight = 20
+  pageRef = "/upgrade-guides/upgrade-to-v1/"
+  weight = 10
 
 [[footer]]
   name = "Privacy Policy"

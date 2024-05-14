@@ -32,7 +32,7 @@ Doks projects generally follow the same file and directory structure as other Hy
 
 A Doks project directory might look like this:
 
-```bash
+```bash {frame="none"}
 .
 ├── assets/
 ├── config/

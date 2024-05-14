@@ -209,12 +209,6 @@ yarn upgrade @hyas/doks-core --latest
 
 See the [Doks changelog](https://github.com/gethyas/doks-core/blob/main/CHANGELOG.md) for a full list of the changes made in each release.
 
-{{< callout context="tip" title="Upgrade guides" icon="outline/rocket" >}}
-
-- Need to upgrade from Doks v0.5? See the [Upgrade to v1](/docs/start-here/upgrade-to-v1/) guide.
-- Need to upgrade a v1.x project? See our [other migration guides](/migration-guides/v-1/v-1-3/).
-  {{< /callout >}}
-
 ## Troubleshooting Doks
 
 Use the [project configuration](/docs/reference/configuration/) and [individual page frontmatter configuration](/docs/reference/frontmatter/) reference pages to ensure that your Doks site is configured and functioning properly. See the guides in the sidebar for help adding content and customizing your Doks site.

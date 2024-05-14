@@ -433,3 +433,9 @@ figcaption {
         background-color: transparent;
     }
 }
+
+// Code
+
+.expressive-code pre > code {
+    line-height: 1.7; // 1.8 (default)
+}
