@@ -1,5 +1,5 @@
 ---
-title: "Upgrade to v1"
+title: "Upgrade to Doks v1"
 description: ""
 summary: ""
 date: 2023-09-22T16:15:46+02:00
@@ -18,9 +18,9 @@ This guide will help you migrate from Doks v0.5 to Doks v1.
 
 ## Upgrade Doks
 
-To follow this guide, you'll need an existing Doks v0.5 project.
+You can update your project by following the steps below.
 
-### Clean dependencies
+### 1. Clean dependencies
 
 Clean dependencies currently installed to avoid conflicts.
 
@@ -28,27 +28,27 @@ Clean dependencies currently installed to avoid conflicts.
 {{< tab "npm" >}}
 
 ```bash
-npm run clean:install
+npx shx rm -rf node_modules package-lock.json
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm run clean:install
+pnpm dlx shx rm -rf node_modules pnpm-lock.yaml
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn run clean:install
+yarn dlx shx rm -rf node_modules yarn.lock
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-### Update `package.json`
+### 2. Update `package.json`
 
 Replace the contents of your project's `package.json` with the following:
 
@@ -60,92 +60,76 @@ Replace the contents of your project's `package.json` with the following:
   "author": "Hyas",
   "license": "MIT",
   "scripts": {
-    "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",
-    "dev:drafts": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache --buildDrafts",
-    "create": "exec-bin node_modules/.bin/hugo/hugo new",
-    "lint": "npm run lint:scripts && npm run lint:styles && npm run lint:markdown",
-    "lint:scripts": "eslint --cache assets/js",
-    "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
-    "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "exec-bin node_modules/.bin/hugo/hugo --minify",
-    "preview": "http-server --gzip --brotli --ext=html --cors",
-    "clean": "npm run clean:build && npm run clean:lint && npm run clean:install",
-    "clean:build": "shx rm -rf public resources .hugo_build.lock",
-    "clean:install": "shx rm -rf node_modules package-lock.json yarn.lock pnpm-lock.yaml",
-    "clean:lint": "shx rm -rf .eslintcache .stylelintcache",
-    "preinfo": "npm version",
-    "info": "npm list",
-    "postinfo": "exec-bin node_modules/.bin/hugo/hugo version",
-    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo"
-  },
-  "dependencies": {
-    "@hyas/doks-core": "^1.3.0",
-    "@hyas/images": "^3.1.0",
-    "@hyas/inline-svg": "^1.0.5",
-    "@hyas/seo": "^2.1.0",
-    "@tabler/icons": "^2.47.0",
-    "exec-bin": "^1.0.0",
-    "gethyas": "^2.2.2",
-    "hugo-installer": "^4.0.1"
-  },
-  "devDependencies": {
-    "shx": "^0.3.4"
-  },
-  "otherDependencies": {
-    "hugo": "0.121.1"
-  },
-  "overrides": {
-    "semver": "^7.5.4"
+    "create": "hugo new",
+    "dev": "hugo server --disableFastRender --noHTTPCache",
+    "format": "prettier **/** -w -c",
+    "build": "hugo --minify --gc",
+    "preview": "vite preview --outDir public"
   },
   "engines": {
-    "node": ">=18.14.1",
-    "pnpm": ">=8.10.0"
-  },
-  "packageManager": "pnpm@8.12.0"
+    "node": ">=20.11.0"
+  }
 }
+
 ```
 
-### Add `.npmrc`
+### 3. Install dependencies
 
-Add an `.npmrc` file to your project root with the following:
+Install the latest versions of Doks and other dependencies in your project:
 
-```ini {title=".npmrc"}
-enable-pre-post-scripts = true
-auto-install-peers = true
-node-linker = hoisted
-prefer-symlinked-executables = false
-```
-
-### Install dependencies
-
-Install the new dependencies.
-
-{{< tabs "install-doks" >}}
+{{< tabs "install-dependencies" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm install
+npm install @hyas/doks-core@latest @hyas/images@latest @hyas/inline-svg@latest @hyas/seo@latest @tabler/icons@latest gethyas@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm install
+pnpm install @hyas/doks-core@latest @hyas/images@latest @hyas/inline-svg@latest @hyas/seo@latest @tabler/icons@latest gethyas@latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn install
+yarn add @hyas/doks-core@latest @hyas/images@latest @hyas/inline-svg@latest @hyas/seo@latest @tabler/icons@latest gethyas@latest
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-### Configure Doks
+### 4. Install Prettier and Vite
+
+Install the latest versions of Prettier and Vite — as `devDependencies`:
+
+{{< tabs "install-dev-dependencies" >}}
+{{< tab "npm" >}}
+
+```bash
+npm install -D prettier@latest vite@latest
+```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm install -D prettier@latest vite@latest
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn add -D prettier@latest vite@latest
+```
+
+{{< /tab >}}
+{{< /tabs >}}
+
+### 5. Configure Doks
 
 #### Add site configuration
 
@@ -155,7 +139,7 @@ Rename `config/_default/config.toml` to `config/_default/hugo.toml` and add the 
 
 ```toml {title="hugo.toml"}
 title = "My Docs"
-baseurl = "/"
+baseurl = "http://localhost/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -438,10 +422,10 @@ mainSections = ["docs"]
   # textLight = "#1d2d35" # "#1d2d35" (default), "#1d2d35" (orignal), or custom color
   # accentLight = "#8ed6fb" # "#8ed6fb" (default), "#8ed6fb" (orignal), or custom color
 
-  [doks.menu]
-    [doks.menu.section]
-      auto = true # true (default) or false
-      collapsibleSidebar = true # true (default) or false
+  # [doks.menu]
+  #   [doks.menu.section]
+  #     auto = true # true (default) or false
+  #     collapsibleSidebar = true # true (default) or false
 
 # Debug
 [render_hooks.image]
@@ -498,78 +482,78 @@ Add the following settings to `config/postcss.config.js`:
 {{< details "PostCSS" >}}
 
 ```js {title="postcss.config.js"}
-const autoprefixer = require("autoprefixer");
-const purgecss = require("@fullhuman/postcss-purgecss");
-const whitelister = require("purgecss-whitelister");
+const autoprefixer = require('autoprefixer');
+const purgecss = require('@fullhuman/postcss-purgecss');
+const whitelister = require('purgecss-whitelister');
 
 module.exports = {
-  plugins: [
-    autoprefixer(),
-    purgecss({
-      content: ["./hugo_stats.json"],
-      extractors: [
-        {
-          extractor: (content) => {
-            const els = JSON.parse(content).htmlElements;
-            return els.tags.concat(els.classes, els.ids);
-          },
-          extensions: ["json"]
-        }
-      ],
-      dynamicAttributes: [
-        "aria-expanded",
-        "data-bs-popper",
-        "data-bs-target",
-        "data-bs-theme",
-        "data-dark-mode",
-        "data-global-alert",
-        "data-pane", // tabs.js
-        "data-popper-placement",
-        "data-sizes",
-        "data-toggle-tab", // tabs.js
-        "id",
-        "size",
-        "type"
-      ],
-      safelist: [
-        "active",
-        "btn-clipboard", // clipboards.js
-        "clipboard", // clipboards.js
-        "disabled",
-        "hidden",
-        "modal-backdrop", // search-modal.js
-        "selected", // search-modal.js
-        "show",
-        "img-fluid",
-        "blur-up",
-        "lazyload",
-        "lazyloaded",
-        "alert-link",
-        "container-fw ",
-        "container-lg",
-        "container-fluid",
-        "offcanvas-backdrop",
-        "figcaption",
-        "dt",
-        "dd",
-        "showing",
-        "hiding",
-        "page-item",
-        "page-link",
-        ...whitelister(["./assets/scss/**/*.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_code.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss", "./node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss"])
-      ]
-    })
-  ]
+    plugins: [
+        autoprefixer(),
+        purgecss({
+            content: ['./hugo_stats.json'],
+            extractors: [
+                {
+                    extractor: (content) => {
+                        const els = JSON.parse(content).htmlElements;
+                        return els.tags.concat(els.classes, els.ids);
+                    },
+                    extensions: ['json']
+                }
+            ],
+            dynamicAttributes: [
+                'aria-expanded',
+                'data-bs-popper',
+                'data-bs-target',
+                'data-bs-theme',
+                'data-dark-mode',
+                'data-global-alert',
+                'data-pane', // tabs.js
+                'data-popper-placement',
+                'data-sizes',
+                'data-toggle-tab', // tabs.js
+                'id',
+                'size',
+                'type'
+            ],
+            safelist: [
+                'active',
+                'btn-clipboard', // clipboards.js
+                'clipboard', // clipboards.js
+                'disabled',
+                'hidden',
+                'modal-backdrop', // search-modal.js
+                'selected', // search-modal.js
+                'show',
+                'img-fluid',
+                'blur-up',
+                'lazyload',
+                'lazyloaded',
+                'alert-link',
+                'container-fw ',
+                'container-lg',
+                'container-fluid',
+                'offcanvas-backdrop',
+                'figcaption',
+                'dt',
+                'dd',
+                'showing',
+                'hiding',
+                'page-item',
+                'page-link',
+                ...whitelister(['./assets/scss/**/*.scss', './node_modules/@hyas/doks-core/assets/scss/components/_code.scss', './node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss', './node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss'])
+            ]
+        })
+    ]
 };
 ```
 
 {{< /details >}}
 
-### Update assets
+### 6. Update assets
 
 Rename the current `assets` directory to `assets-backup`. Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `assets` directory into your project's root.
 
-### Update layouts
+### 7. Update layouts
 
 Rename the current `layouts` directory to `layouts-backup`. Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `layouts` directory into your project's root.
 
@@ -582,13 +566,6 @@ After upgrading Doks to the latest version, you may not need to make any changes
 
 But, if you notice errors or unexpected behavior, please check below for what has changed that might need updating in your project.
 {{< /callout >}}
-
-## Next steps
-
-- **Configure**: Learn about common options in ["Customizing Doks"](/docs/guides/customization/).
-- **Navigate**: Set up your sidebar with the ["Sidebar Navigation"](/docs/basics/navigation/#sidebar) guide.
-- **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/basics/shortcodes/) guide.
-- **Deploy**: Publish your work with the ["Deploy your site"](https://docs.gethyas.com/guides/deploy/) guide in the Hyas docs.
 
 ## Known Issues
 
