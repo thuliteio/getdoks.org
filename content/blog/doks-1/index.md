@@ -1,8 +1,8 @@
 ---
 title: "Doks 1.0"
 url: "/blog/doks-1/"
-description: "Doks 1.0 is a restructure release, making Doks more robust, reliable, and flexible."
-summary: "Doks 1.0 is a restructure release, making Doks more robust, reliable, and flexible."
+description: "Doks 1.0 is here! This release is a restructure release, making Doks more robust, reliable, and flexible."
+summary: "Doks 1.0 is here! This release is a restructure release, making Doks more robust, reliable, and flexible."
 date: 2023-09-12T20:20:15+02:00
 lastmod: 2023-09-12T20:20:15+02:00
 draft: false
@@ -19,16 +19,13 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Introducing Doks 1.0! Doks 1.0 is a restructure release, making Doks more robust, reliable, and flexible.
+Doks 1.0 is here! This release is a restructure release, making Doks more robust, reliable, and flexible.
 
-<!-- omit in toc -->
-## How to upgrade
-
-You can upgrade to Doks 1.0 by following the [Upgrade to v1](/upgrade-guides/upgrade-to-v1/) migration guide.
+To upgrade an existing project, see the [Upgrade to v1](/upgrade-guides/upgrade-to-v1/) guide.
 
 ## Quick start
 
-Create a new Hyas + Doks project by running the following command:
+Get a new Doks project up and running locally with our helpful create-hyas CLI wizard!
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
@@ -54,7 +51,7 @@ yarn create hyas@latest -- --template doks
 {{< /tab >}}
 {{< /tabs >}}
 
-This will create a new [project directory](/docs/basics/project-structure/) with all the necessary files and configurations for your site.
+Our [Installation Guide](/docs/start-here/installation/) has step-by-step instructions for installing Doks using our CLI wizard.
 
 ## Quick links
 
@@ -65,4 +62,3 @@ This will create a new [project directory](/docs/basics/project-structure/) with
 ## Bug Fixes
 
 Additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.0.0) to learn more.
-

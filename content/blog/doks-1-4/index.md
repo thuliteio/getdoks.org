@@ -21,41 +21,13 @@ seo:
 
 Doks 1.4 is now available! This release includes a new shortcode for link cards, improved sidebar navigation, and more.
 
+To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-doks/) guide.
+
 <!-- omit in toc -->
 ## Highlights
 
 - [Link cards shortcode](#link-cards-shortcode)
 - [Improved sidebar navigation](#improved-sidebar-navigation)
-- [Bug Fixes](#bug-fixes)
-
-<!-- omit in toc -->
-## How to upgrade
-
-To take advantage of the latest features, make sure you’re running the latest version of Doks. You can upgrade to Doks 1.4 by running the following command:
-
-{{< tabs "update-doks" >}}
-{{< tab "npm" >}}
-
-```bash
-npm install @hyas/doks-core@latest
-```
-
-{{< /tab >}}
-{{< tab "pnpm" >}}
-
-```bash
-pnpm upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< tab "Yarn" >}}
-
-```bash
-yarn upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Link cards shortcode
 
@@ -109,6 +81,7 @@ Sections can be collapsed by default by setting the `collapsed` property to `tru
 
 Sidebar navigation is also available for other `docs` based sections you create. Read more about [sidebar navigation](https://getdoks.org/docs/basics/navigation/#sidebar) in our documentation.
 
+<!-- omit in toc -->
 ## Bug Fixes
 
 As always, additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.4.0) to learn more.

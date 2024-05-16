@@ -1,8 +1,8 @@
 ---
 title: "Doks 1.2"
 url: "/blog/doks-1-2/"
-description: "Diagrams support, extended code blocks formatting, and more."
-summary: "Diagrams support, extended code blocks formatting, and more."
+description: "Doks 1.2 is out! This release features support for diagrams, extended code blocks formatting, and more."
+summary: "Doks 1.2 is out! This release features support for diagrams, extended code blocks formatting, and more."
 date: 2023-12-23T14:33:10+01:00
 lastmod: 2023-12-23T14:33:10+01:00
 draft: false
@@ -21,41 +21,13 @@ seo:
 
 Doks 1.2 is out! This release features support for diagrams, extended code blocks formatting, and more.
 
+To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-doks/) guide.
+
 <!-- omit in toc -->
 ## Highlights
 
 - [Diagrams Support](#diagrams-support)
 - [Code blocks formatting](#code-blocks-formatting)
-- [Bug Fixes](#bug-fixes)
-
-<!-- omit in toc -->
-## How to upgrade
-
-To take advantage of the latest features, make sure you’re running the latest version of Doks. You can upgrade to Doks 1.2 by running the following command:
-
-{{< tabs "update-doks" >}}
-{{< tab "npm" >}}
-
-```bash
-npm install @hyas/doks-core@latest
-```
-
-{{< /tab >}}
-{{< tab "pnpm" >}}
-
-```bash
-pnpm upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< tab "Yarn" >}}
-
-```bash
-yarn upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Diagrams Support
 
@@ -123,6 +95,7 @@ if ([1, "one", 2, "two"].includes(value)) {
 
 Also, you now can add [line numbers](/docs/built-ins/code-blocks/#line-numbers) and [line highlighting](/docs/built-ins/code-blocks/#highlight). Read more about [code blocks](/docs/built-ins/code-blocks/) in our documentation.
 
+<!-- omit in toc -->
 ## Bug Fixes
 
 Additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.2.0) to learn more.

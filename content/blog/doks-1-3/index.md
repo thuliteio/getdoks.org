@@ -21,41 +21,13 @@ seo:
 
 Doks 1.3 — our first release of the new year — is here! This release includes restructured dependencies, deduplicated Bootstrap variables, and more.
 
+To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-doks/) guide.
+
 <!-- omit in toc -->
 ## Highlights
 
 - [Restructured dependencies](#restructured-dependencies)
 - [Deduplicated Bootstrap variables](#deduplicated-bootstrap-variables)
-- [Bug Fixes](#bug-fixes)
-
-<!-- omit in toc -->
-## How to upgrade
-
-To take advantage of the latest features, make sure you’re running the latest version of Doks. You can upgrade to Doks 1.3 by running the following command:
-
-{{< tabs "update-doks" >}}
-{{< tab "npm" >}}
-
-```bash
-npm install @hyas/doks-core@latest
-```
-
-{{< /tab >}}
-{{< tab "pnpm" >}}
-
-```bash
-pnpm upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< tab "Yarn" >}}
-
-```bash
-yarn upgrade @hyas/doks-core --latest
-```
-
-{{< /tab >}}
-{{< /tabs >}}
 
 ## Restructured dependencies
 
@@ -125,6 +97,7 @@ Add your customizations in `assets/scss/common/`:
 /* Put your custom SCSS code here */
 ```
 
+<!-- omit in toc -->
 ## Bug Fixes
 
 Additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.3.0) to learn more.

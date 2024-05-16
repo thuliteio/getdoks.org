@@ -44,7 +44,7 @@ yarn create hyas@latest --template doks
 {{< /tab >}}
 {{< /tabs >}}
 
-Our [Installation Guide](/docs/start-here/installation/) has step-by-step instructions for installing Doks using our CLI wizard and for installing Doks manually.
+Our [Installation Guide](/docs/start-here/installation/) has step-by-step instructions for installing Doks using our CLI wizard.
 
 ## Quick links
 
