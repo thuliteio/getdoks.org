@@ -14964,6 +14964,11 @@ figcaption {
 .expressive-code pre > code {
   line-height: 1.7; }
 
+.feedback-links h3, .feedback-links .h3 {
+  font-size: 1.125rem;
+  margin: 1.25rem 0 0.75rem;
+  padding: 1.5rem 0 0; }
+
 /* Darkmode */
 :root {
   --docsearch-primary-color: var(--sl-color-text-accent);
