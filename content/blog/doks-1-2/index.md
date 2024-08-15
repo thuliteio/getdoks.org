@@ -35,17 +35,9 @@ Diagrams are now available in 1.2. You can use a fenced code block to embed an S
 
 Kroki generates diagrams from textual descriptions, and provides a unified API with support for [D2](https://d2lang.com/), [Mermaid](https://mermaid.js.org/intro/), [PlantUML](https://plantuml.com/), and [other diagram types](https://kroki.io/#support)
 
-```kroki {type=mermaid}
-gantt
-    title A Gantt Diagram
-    dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
-        another task    :24d
-```
+{{< callout context="caution" title="Update August 15, 2024" icon="outline/alert-triangle" >}}
+Unfortunately, the Kroki service no longer is that robust. Use at your own risk! We will most likely remove Kroki support from Thulite core in an upcoming release.
+{{< /callout >}}
 
 ````md
 ```kroki {type=mermaid}
