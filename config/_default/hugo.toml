@@ -50,6 +50,9 @@ rel  = "sitemap"
   [caches.getjson]
     dir = ":cacheDir/:project"
     maxAge = "30m"
+  [caches.getresource]
+    dir = ':resourceDir/_gen'
+    maxAge = -1
 
 [taxonomies]
   contributor = "contributors"

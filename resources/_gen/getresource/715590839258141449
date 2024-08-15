@@ -1,0 +1,14 @@
+HTTP/2.0 400 Bad Request
+Content-Length: 65
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 8b39fbf8ef890a53-AMS
+Content-Type: text/plain
+Date: Thu, 15 Aug 2024 14:48:12 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=HikJwpUHFIDimmU%2BPzORH9q3YkqVGxcFJyvusjiHbkOBdF6tmhHjy%2Bg7lyPQNUkPa4tjxqVf1ex2R%2BT7hjsm3GoS%2B%2Fd6DTObt7vWq2t0Ll3Ti%2BUB271nJvs%2B3Q%3D%3D"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+X-Etags-1: 66acf8da291c2da5665576c52bba25ac
+X-Etags-2: 66acf8da291c2da5665576c52bba25ac
+
+Error 400: Error: An error occurred while converting the diagram

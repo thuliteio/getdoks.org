@@ -97,20 +97,6 @@ defendants.chesscom -> hans: 72 page report of cheating
 
 ### Mermaid
 
-```kroki {type=mermaid}
-sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice->John: Hello John, how are you?
-  loop Healthcheck
-    John->John: Fight against hypochondria
-  end
-  Note right of John: Rational thoughts prevail...
-  John-->Alice: Great!
-  John->Bob: How about you?
-  Bob-->John: Jolly good!
-```
-
 ````md
 ```kroki {type=mermaid}
 sequenceDiagram
