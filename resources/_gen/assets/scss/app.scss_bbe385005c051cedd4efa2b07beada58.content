@@ -15047,7 +15047,7 @@ html[data-bs-theme="light"] {
 .DocSearch-Logo svg * {
   fill: var(--docsearch-muted-color); }
 
-/*! @docsearch/css Modal 3.6.0 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
+/*! @docsearch/css Modal 3.6.1 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 .DocSearch--active {
   overflow: hidden !important; }
 
