@@ -15,7 +15,7 @@ seo:
 slug: "styles"
 ---
 
-You can style your Doks site with custom CSS files or use the Hyas Bootstrap plugin.
+You can style your Doks site with custom CSS files or use the Thulite Bootstrap plugin.
 
 ## Custom CSS
 

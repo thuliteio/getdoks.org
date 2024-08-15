@@ -51,8 +51,8 @@
   weight = 40
 
 [[main]]
-  name = "Hyas"
-  url = "https://gethyas.com"
+  name = "Thulite"
+  url = "https://thulite.io"
   post = '<svg xmlns="http://www.w3.org/2000/svg" class="ms-1 mb-1 icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>'
   weight = 50
 
@@ -63,27 +63,27 @@
 #   identifier = "other-docs"
 #
 # [[main]]
-#   name = "Hyas"
+#   name = "Thulite"
 #   weight = 51
-#   url = "https://docs.gethyas.com/"
+#   url = "https://docs.thulite.io/"
 #   parent = "other-docs"
 #
 # [[main]]
 #   name = "Images"
 #   weight = 52
-#   url = "https://images.gethyas.com/"
+#   url = "https://images.thulite.io/"
 #   parent = "other-docs"
 
 # [[main]]
 #   name = "Inline SVG"
 #   weight = 53
-#   url = "https://svg.gethyas.com/"
+#   url = "https://svg.thulite.io/"
 #   parent = "other-docs"
 #
 # [[main]]
 #   name = "SEO"
 #   weight = 54
-#   url = "https://seo.gethyas.com/"
+#   url = "https://seo.thulite.io/"
 #   parent = "other-docs"
 
 [[social]]
@@ -112,10 +112,10 @@
 
 [[footer]]
   name = "Privacy Policy"
-  url = "https://gethyas.com/privacy/"
+  url = "https://thulite.io/privacy/"
   weight = 10
 
 [[footer]]
   name = "Terms of Service"
-  url = "https://gethyas.com/terms/"
+  url = "https://thulite.io/terms/"
   weight = 20

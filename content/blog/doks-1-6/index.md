@@ -43,7 +43,7 @@ Doks 1.6 introduces a cleaner `scripts` section in your projects' `package.json`
   "name": "doks",
   "version": "0.0.0",
   "description": "Doks theme",
-  "author": "Hyas",
+  "author": "Thulite",
   "license": "MIT",
   "scripts": {
     "create": "hugo new",
@@ -73,7 +73,7 @@ Doks 1.6 introduces a cleaner `scripts` section in your projects' `package.json`
 
 ## New development tools
 
-Hyas/Doks now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vitejs.dev/) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your mobile phone — here's how:
+Thulite/Doks now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vitejs.dev/) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your mobile phone — here's how:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}

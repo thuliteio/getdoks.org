@@ -9,10 +9,10 @@ mainSections = ["docs", "upgrade-guides"]
 # Global alert
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-6/">Doks 1.6 is out!</a>'
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-4/">Doks 1.4 is here!</a>'
-alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://gethyas.com/anna/?utm_source=getdoks&utm_medium=banner&utm_campaign=promotion">Anna will ship soon!</a>'
+alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://thulite.io/anna/?utm_source=getdoks&utm_medium=banner&utm_campaign=promotion">Anna will ship soon!</a>'
 
 # Footer
-footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\">Hyas</a>"
+footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\">Thulite</a>"
 
 [social]
   twitter = "getdoks"
@@ -37,8 +37,8 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
 
   ## Button
   navBarButton = false # false (default) or true
-  navBarButtonUrl = "https://gethyas.com/"
-  navBarButtonText = "Visit gethyas.com"
+  navBarButtonUrl = "https://thulite.io/"
+  navBarButtonText = "Visit thulite.io"
 
   # FlexSearch
   flexSearch = false # true (default) or false
@@ -145,7 +145,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://gethyas.com/\
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
-    name = "Hyas" # Name of Organization or Person
+    name = "Thulite" # Name of Organization or Person
     sameAs = [] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections

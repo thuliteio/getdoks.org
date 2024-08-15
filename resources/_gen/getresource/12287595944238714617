@@ -2,13 +2,13 @@ HTTP/2.0 200 OK
 Alt-Svc: h3=":443"; ma=86400
 Cache-Control: public, max-age=432000
 Cf-Cache-Status: DYNAMIC
-Cf-Ray: 8b3b1860889566db-AMS
+Cf-Ray: 8b3b29b16b2a6570-AMS
 Content-Type: image/svg+xml
-Date: Thu, 15 Aug 2024 18:02:22 GMT
-Expires: Tue, 20 Aug 2024 18:02:22 GMT
+Date: Thu, 15 Aug 2024 18:14:11 GMT
+Expires: Tue, 20 Aug 2024 18:14:11 GMT
 Last-Modified: Sun, 31 Mar 2024 10:20:25 GMT
 Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=J6b7snYo%2FD88Tv9yp5jHor7TNxk8g5ROnH0GiygGLpOX2gF%2FAlf78s3wMzuNYDPZutirP6DFeckZVWYFonDYGcELzOEO9k59XBSHbwMjOk4X9WPfVBXQ8sZ32w%3D%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tYm7MgdV9vc3ecJIe87gIQm5GeolbHVZLw6X1i0L4CsW7ffIB8cKKa0XTVTOiD6MEVnH%2B0i7Pvg3TwMVCqciVefsDIVCfA8a%2FvAaD9A00mFH8p6ED2nqA7YRZg%3D%3D"}],"group":"cf-nel","max_age":604800}
 Server: cloudflare
 X-Etags-1: d0cb62e4443a3fed79fb10be34ca81ea
 X-Etags-2: d0cb62e4443a3fed79fb10be34ca81ea

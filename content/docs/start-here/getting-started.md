@@ -14,7 +14,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Doks is a full-featured documentation theme built on top of the [Hyas](https://gethyas.com/) framework. Here you'll find guides, resources, and references to help you build with Doks.
+Doks is a full-featured documentation theme built on top of the [Thulite](https://thulite.io/) framework. Here you'll find guides, resources, and references to help you build with Doks.
 
 ## Quick Start
 
@@ -53,13 +53,13 @@ Our [Installation Guide](/docs/start-here/installation/) has step-by-step instru
 
 - [Project structure](/docs/basics/project-structure/)
 - [Configuration](/docs/basics/configuration/)
-- [Deploy](https://docs.gethyas.com/guides/deploy/)
+- [Deploy](https://docs.thulite.io/guides/deploy/)
 
 {{< /card >}}
 {{< card title="Extend Doks" icon="outline/puzzle" color="purple" >}}
 
-- [Analytics](https://docs.gethyas.com/guides/analytics/)
-- [CMS](https://docs.gethyas.com/guides/cms/)
+- [Analytics](https://docs.thulite.io/guides/analytics/)
+- [CMS](https://docs.thulite.io/guides/cms/)
 - [DocSearch](/docs/recipes/docsearch/)
 
 {{< /card >}}
@@ -75,9 +75,9 @@ Our [Installation Guide](/docs/start-here/installation/) has step-by-step instru
 {{< /card >}}
 {{< card title="Other docs" icon="outline/books" color="red" >}}
 
-- [Hyas](https://docs.gethyas.com/)
-- [Images](https://images.gethyas.com/)
-- [SEO](https://seo.gethyas.com/)
+- [Thulite](https://docs.thulite.io/)
+- [Images](https://images.thulite.io/)
+- [SEO](https://seo.thulite.io/)
 
 {{< /card >}}
 {{< /card-grid >}}

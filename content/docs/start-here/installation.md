@@ -14,13 +14,13 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Doks is a full-featured documentation theme built on top of the [Hyas](https://gethyas.com/) framework. This guide will help you get started with a new project.
+Doks is a full-featured documentation theme built on top of the [Thulite](https://thulite.io/) framework. This guide will help you get started with a new project.
 
 ## Quick Start
 
 ### Create a new project
 
-Create a new Hyas + Doks project by running the following command in your terminal:
+Create a new Thulite + Doks project by running the following command in your terminal:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
@@ -177,11 +177,11 @@ seo:
 - **Configure**: Learn about common options in ["Customizing Doks"](/docs/guides/customization/).
 - **Navigate**: Set up your sidebar with the ["Sidebar Navigation"](/docs/basics/navigation/#sidebar) guide.
 - **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/basics/shortcodes/) guide.
-- **Deploy**: Publish your work with the ["Deploy your site"](https://docs.gethyas.com/guides/deploy/) guide in the Hyas docs.
+- **Deploy**: Publish your work with the ["Deploy your site"](https://docs.thulite.io/guides/deploy/) guide in the Thulite docs.
 
 ## Updating Doks
 
-Doks is a Hyas theme, and is updated like any `@hyas/*` theme (or integration):
+Doks is a Thulite theme, and is updated like any `@hyas/*` theme (or integration):
 
 {{< tabs "update-doks" >}}
 {{< tab "npm" >}}
@@ -213,6 +213,6 @@ See the [Doks changelog](https://github.com/gethyas/doks-core/blob/main/CHANGELO
 
 Use the [project configuration](/docs/reference/configuration/) and [individual page frontmatter configuration](/docs/reference/frontmatter/) reference pages to ensure that your Doks site is configured and functioning properly. See the guides in the sidebar for help adding content and customizing your Doks site.
 
-If your answer cannot be found in these docs, please visit the [full Hyas Docs](https://docs.gethyas.com/) for complete Hyas documentation. Your question may be answered by understanding how Hyas works in general, underneath this Doks theme.
+If your answer cannot be found in these docs, please visit the [full Thulite Docs](https://docs.thulite.io/) for complete Thulite documentation. Your question may be answered by understanding how Thulite works in general, underneath this Doks theme.
 
 You can also check for any known [Doks issues on GitHub](https://github.com/gethyas/doks/issues), and get help in [Doks Discussions](https://github.com/gethyas/doks/discussions) from our active, friendly community!

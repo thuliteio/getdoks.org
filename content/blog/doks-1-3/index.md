@@ -31,7 +31,7 @@ To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-
 
 ## Restructured dependencies
 
-Doks main dependencies are now specified in Doks' `package.json` — in stead of in `@hyas/doks-core`'s `package.json` — so you can easily update for example Hugo, Hyas Images, and Hyas SEO yourself.
+Doks main dependencies are now specified in Doks' `package.json` — in stead of in `@hyas/doks-core`'s `package.json` — so you can easily update for example Hugo, Thulite Images, and Thulite SEO yourself.
 
 ```json
 {
@@ -57,7 +57,7 @@ Doks main dependencies are now specified in Doks' `package.json` — in stead of
 }
 ```
 
-Hyas Images for example is updated like any `@hyas/*` integration (or theme):
+Thulite Images for example is updated like any `@hyas/*` integration (or theme):
 
 {{< tabs "update-doks" >}}
 {{< tab "npm" >}}

@@ -14,15 +14,15 @@ seo:
   noindex: false # false (default) or true
 ---
 
-The quickest way to create a new Doks site is using `create hyas` as shown in the [Getting Started guide](/docs/start-here/getting-started/#creating-a-new-project). If you want to add Doks to an existing Hyas project, this guide will explain how.
+The quickest way to create a new Doks site is using `create hyas` as shown in the [Getting Started guide](/docs/start-here/getting-started/#creating-a-new-project). If you want to add Doks to an existing Thulite project, this guide will explain how.
 
 ## Set up Doks
 
-To follow this guide, you’ll need an existing Hyas project.
+To follow this guide, you’ll need an existing Thulite project.
 
 ### Add the Doks integration
 
-Doks is a [Hyas integration](https://docs.gethyas.com/guides/integrations/). Add it to your site by running the following command in your project's root directory:
+Doks is a [Thulite integration](https://docs.thulite.io/guides/integrations/). Add it to your site by running the following command in your project's root directory:
 
 {{< tabs "install-doks" >}}
 {{< tab "npm" >}}
@@ -332,7 +332,7 @@ Add the following parameters to `config/_default/params.toml`:
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
-    name = "Hyas" # Name of Organization or Person
+    name = "Thulite" # Name of Organization or Person
     sameAs = [] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
@@ -388,4 +388,4 @@ Download the Doks source code of the [latest release](https://github.com/gethyas
 - **Configure**: Learn about common options in ["Customizing Doks"](/docs/guides/customization/).
 - **Navigate**: Set up your sidebar with the ["Sidebar Navigation"](/docs/basics/navigation/#sidebar) guide.
 - **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/basics/shortcodes/) guide.
-- **Deploy**: Publish your work with the ["Deploy your site"](https://docs.gethyas.com/guides/deploy/) guide in the Hyas docs.
+- **Deploy**: Publish your work with the ["Deploy your site"](https://docs.thulite.io/guides/deploy/) guide in the Thulite docs.

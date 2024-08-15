@@ -16,13 +16,13 @@ seo:
 
 This guide will show you how a Doks project is organized and what the different files in your project do.
 
-Doks projects generally follow the same file and directory structure as other Hyas projects. See [Hyas' project structure documentation](https://docs.gethyas.com/basics/project-structure/) for more detail.
+Doks projects generally follow the same file and directory structure as other Thulite projects. See [Thulite' project structure documentation](https://docs.thulite.io/basics/project-structure/) for more detail.
 
 ## Files and directories
 
 - `config/_default/hugo.toml` — The Hugo/site configuration file.
 - `config/_default/module.toml` — The Hugo mounts configuration file.
-- `config/_default/params.toml` — The Doks + Hyas integrations (Images, Inline SVG, and SEO) configuration file.
+- `config/_default/params.toml` — The Doks + Thulite integrations (Images, Inline SVG, and SEO) configuration file.
 - `content/` — Content files.
 - `i18n/` (optional) — Translation data to support [internationalization](/docs/guides/i18n/),
 - `assets/` — Assets (scripts, styles, images, etc.) for your project.

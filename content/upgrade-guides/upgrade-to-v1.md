@@ -57,7 +57,7 @@ Replace the contents of your project's `package.json` with the following:
   "name": "doks",
   "version": "0.0.0",
   "description": "Doks theme",
-  "author": "Hyas",
+  "author": "Thulite",
   "license": "MIT",
   "scripts": {
     "create": "hugo new",
@@ -157,7 +157,7 @@ defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = false
 
-copyRight = "Copyright (c) 2020-2024 Hyas"
+copyRight = "Copyright (c) 2020-2024 Thulite"
 
 [build.buildStats]
   enable = true
@@ -464,7 +464,7 @@ mainSections = ["docs"]
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
-    name = "Hyas" # Name of Organization or Person
+    name = "Thulite" # Name of Organization or Person
     sameAs = [] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
