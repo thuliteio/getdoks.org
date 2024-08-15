@@ -5,16 +5,16 @@
 [build.environment]
   NODE_VERSION = "20.11.0"
   NPM_VERSION = "10.2.4"
-  HUGO_VERSION = "0.125.1"
+  HUGO_VERSION = "0.131.0"
 
 [context.production]
   command = "pnpm build"
 
 [context.deploy-preview]
-  command = "pnpm build -- -b $DEPLOY_PRIME_URL"
+  command = "pnpm build"
 
 [context.branch-deploy]
-  command = "pnpm build -- -b $DEPLOY_PRIME_URL"
+  command = "pnpm build"
 
 [context.next]
   command = "pnpm build"
