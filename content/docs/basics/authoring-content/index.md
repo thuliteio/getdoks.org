@@ -54,10 +54,10 @@ You can highlight `inline code` with backticks.
 ## Images
 
 {{< callout context="note" icon="outline/info-circle" >}}
-Images in Doks use [Hyas' Images integration](https://images.gethyas.com/).
+Images in Doks use [Thulite' Images integration](https://images.thulite.io/).
 {{< /callout >}}
 
-Hyas Images supports the [Markdown syntax for displaying images](https://www.markdownguide.org/basic-syntax/#images-1) that includes alt-text for screen readers and assistive technology.
+Thulite Images supports the [Markdown syntax for displaying images](https://www.markdownguide.org/basic-syntax/#images-1) that includes alt-text for screen readers and assistive technology.
 
 ![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
 

@@ -26,7 +26,7 @@ Doks builds pages that are as lightweight as possible. For example, on a first v
 
 ### Images
 
-While Doks provides a good baseline, images you add to your docs pages can quickly increase your page weight. Doks uses [Hyas' Images integration](https://images.gethyas.com/) to optimize local images in your Markdown and HTML files.
+While Doks provides a good baseline, images you add to your docs pages can quickly increase your page weight. Doks uses [Thulite' Images integration](https://images.thulite.io/) to optimize local images in your Markdown and HTML files.
 
 ### Caching
 

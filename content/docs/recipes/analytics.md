@@ -14,6 +14,6 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Ready to add Analytics to your Doks website? Follow one of our Hyas guides to different analytics services.
+Ready to add Analytics to your Doks website? Follow one of our Thulite guides to different analytics services.
 
-{{< link-card title="Add analytics to Hyas" description="Guides for Plausible, Fathom, Cabin, and Google Analytics." href="https://docs.gethyas.com/guides/analytics/" target="_blank">}}
+{{< link-card title="Add analytics to Thulite" description="Guides for Plausible, Fathom, Cabin, and Google Analytics." href="https://docs.thulite.io/guides/analytics/" target="_blank">}}

@@ -14,6 +14,6 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Ready to connect a Headless CMS to your Doks project? Follow one of our Hyas guides to integrate a CMS.
+Ready to connect a Headless CMS to your Doks project? Follow one of our Thulite guides to integrate a CMS.
 
-{{< link-card title="Use a CMS with Hyas" description="Guides for Tina CMS, Decap CMS, and CloudCannon." href="https://docs.gethyas.com/guides/cms/" target="_blank">}}
+{{< link-card title="Use a CMS with Thulite" description="Guides for Tina CMS, Decap CMS, and CloudCannon." href="https://docs.thulite.io/guides/cms/" target="_blank">}}

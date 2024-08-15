@@ -35,7 +35,7 @@ You can nest any other Markdown content types inside a callout, but callouts are
 ### Note callout
 
 {{< callout context="note" title="Note" icon="outline/info-circle" >}}
-Doks is a documentation website toolkit built with Hyas. You can get started with this command:
+Doks is a documentation website toolkit built with Thulite. You can get started with this command:
 
 ```bash
 npm create hyas@latest -- --template doks
@@ -45,7 +45,7 @@ npm create hyas@latest -- --template doks
 
 ````md
 {{</* callout context="note" title="Note" icon="outline/info-circle" */>}}
-Doks is a documentation website toolkit built with Hyas. You can get started with this command:
+Doks is a documentation website toolkit built with Thulite. You can get started with this command:
 
 ```bash
 npm create hyas@latest -- --template doks
@@ -59,12 +59,12 @@ npm create hyas@latest -- --template doks
 You can specify a custom title for the callout using the `title` parameter.
 
 {{< callout context="tip" title="Did you know?" icon="outline/rocket" >}}
-Hyas simplifies developer on boarding time and makes for faster collaboration by using a single declaration manifest for [dependencies](https://docs.gethyas.com/concepts/dependencies/).
+Thulite simplifies developer on boarding time and makes for faster collaboration by using a single declaration manifest for [dependencies](https://docs.thulite.io/concepts/dependencies/).
 {{< /callout >}}
 
 ```md
 {{</* callout context="tip" title="Did you know?" icon="outline/rocket" */>}}
-Hyas simplifies developer on boarding time and makes for faster collaboration by using a single declaration manifest for [dependencies](https://docs.gethyas.com/concepts/dependencies/).
+Thulite simplifies developer on boarding time and makes for faster collaboration by using a single declaration manifest for [dependencies](https://docs.thulite.io/concepts/dependencies/).
 {{</* /callout */>}}
 ```
 
@@ -186,7 +186,7 @@ yarn create hyas
 {{< /tab >}}
 {{< /tabs >}}
 
-`cd` into your new project directory to begin using Hyas. Install your dependencies before continuing.
+`cd` into your new project directory to begin using Thulite. Install your dependencies before continuing.
 
 {{< tabs "install-dependencies" >}}
 {{< tab "npm" >}}
@@ -259,10 +259,10 @@ Group multiple `{{</* link-card */>}}` shortcodes in `{{</* card-grid */>}}` to 
 ## Images
 
 {{< callout context="note" icon="outline/info-circle" >}}
-Images in Doks use [Hyas' Images integration](https://images.gethyas.com/).
+Images in Doks use [Thulite' Images integration](https://images.thulite.io/).
 {{< /callout >}}
 
-Display an image using the [`{{</* img */>}}`](https://images.gethyas.com/docs/shortcodes/img/), [`{{</* picture */>}}`](https://images.gethyas.com/docs/shortcodes/picture/), or [`{{</* figure */>}}`](https://images.gethyas.com/docs/shortcodes/figure/) shortcode.
+Display an image using the [`{{</* img */>}}`](https://images.thulite.io/docs/shortcodes/img/), [`{{</* picture */>}}`](https://images.thulite.io/docs/shortcodes/picture/), or [`{{</* figure */>}}`](https://images.thulite.io/docs/shortcodes/figure/) shortcode.
 
 ### Page resource
 
@@ -305,7 +305,7 @@ You can insert a [Video Embed HTML element](https://developer.mozilla.org/en-US/
 ## SVG
 
 {{< callout context="note" icon="outline/info-circle" >}}
-SVG's in Doks use [Hyas' SVG integration](https://svg.gethyas.com/).
+SVG's in Doks use [Thulite' SVG integration](https://svg.thulite.io/).
 {{< /callout >}}
 
 Display an SVG using the `{{</* inline-svg */>}}` shortcode. The SVG gets inlined (embedded) into the pages' HTML.

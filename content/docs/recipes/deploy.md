@@ -14,6 +14,6 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Ready to build and deploy your Doks website? Follow one of our Hyas guides to different deployment services.
+Ready to build and deploy your Doks website? Follow one of our Thulite guides to different deployment services.
 
-{{< link-card title="Deploy your Hyas site" description="Guides for Netlify, Vercel, GitHub Pages, and more." href="https://docs.gethyas.com/guides/deploy/" target="_blank">}}
+{{< link-card title="Deploy your Thulite site" description="Guides for Netlify, Vercel, GitHub Pages, and more." href="https://docs.thulite.io/guides/deploy/" target="_blank">}}
