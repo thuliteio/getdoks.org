@@ -84,7 +84,7 @@ References:
 {{- $attrs = merge $attrs (dict "class" $class "id" $id "alt" "diagram") }}
 
 {{- /* Get diagram. */}}
-{{- $body := dict "diagram_source" $inner "diagram_type" $diagramType "output_format" "SVG" | jsonify }}
+{{- $body := dict "diagram_source" $inner "diagram_type" $diagramType "output_format" "svg" | jsonify }}
 {{- $opts := dict "method" "post" "body" $body }}
 {{- with resources.GetRemote $apiEndpoint $opts }}
   {{- with .Err }}
