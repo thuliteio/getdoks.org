@@ -47,12 +47,12 @@ rel  = "sitemap"
   priority = 0.5
 
 [caches]
-  [caches.getjson]
-    dir = ":cacheDir/:project"
-    maxAge = "30m"
   [caches.getresource]
     dir = ':resourceDir/_gen'
     maxAge = -1
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "30m"
 
 [taxonomies]
   contributor = "contributors"
