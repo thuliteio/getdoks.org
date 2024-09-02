@@ -155,7 +155,7 @@ Define social entries in `config/_default/menus/menus.<language>.toml`:
 ```
 
 {{< callout icon="outline/info-circle" >}}
-Copy the icon SVG from [Tabler Icons](https://tabler-icons.io/) by clicking "Copy SVG".
+Copy the icon SVG from [Tabler Icons](https://tabler.io/icons) by clicking "Copy SVG".
 {{< /callout >}}
 
 ## Footer
