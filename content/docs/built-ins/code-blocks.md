@@ -57,12 +57,12 @@ if ([1, "one", 2, "two"].includes(value)) {
 The default:
 
 ```bash
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 
 ````md
 ```bash
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 ````
 
@@ -81,12 +81,12 @@ npm install
 No frame:
 
 ```bash {frame="none"}
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 
 ````md
 ```bash {frame="none"}
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 ````
 

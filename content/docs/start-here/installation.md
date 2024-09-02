@@ -26,21 +26,21 @@ Create a new Thulite + Doks project by running the following command in your ter
 {{< tab "npm" >}}
 
 ```bash
-npm create hyas@latest -- --template doks
+npm create thulite@latest -- --template doks
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas@latest --template doks
+pnpm create thulite@latest --template doks
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas@latest --template doks
+yarn create thulite@latest --template doks
 ```
 
 {{< /tab >}}
@@ -49,7 +49,7 @@ yarn create hyas@latest --template doks
 This will create a new [project directory](/docs/basics/project-structure/) with all the necessary files and configurations for your site.
 
 {{< callout context="tip" title="See it in action" icon="outline/rocket" >}}
-Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/gethyas/doks).
+Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/thuliteio/doks).
 {{< /callout >}}
 
 ### Install dependencies
@@ -181,33 +181,33 @@ seo:
 
 ## Updating Doks
 
-Doks is a Thulite theme, and is updated like any `@hyas/*` theme (or integration):
+Doks is a Thulite theme, and is updated like any `@thulite/*` theme (or integration):
 
 {{< tabs "update-doks" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm upgrade @hyas/doks-core --latest
+pnpm upgrade @thulite/doks-core --latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn upgrade @hyas/doks-core --latest
+yarn upgrade @thulite/doks-core --latest
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-See the [Doks changelog](https://github.com/gethyas/doks-core/blob/main/CHANGELOG.md) for a full list of the changes made in each release.
+See the [Doks changelog](https://github.com/thuliteio/doks-core/blob/main/CHANGELOG.md) for a full list of the changes made in each release.
 
 ## Troubleshooting Doks
 
@@ -215,4 +215,4 @@ Use the [project configuration](/docs/reference/configuration/) and [individual 
 
 If your answer cannot be found in these docs, please visit the [full Thulite Docs](https://docs.thulite.io/) for complete Thulite documentation. Your question may be answered by understanding how Thulite works in general, underneath this Doks theme.
 
-You can also check for any known [Doks issues on GitHub](https://github.com/gethyas/doks/issues), and get help in [Doks Discussions](https://github.com/gethyas/doks/discussions) from our active, friendly community!
+You can also check for any known [Doks issues on GitHub](https://github.com/thuliteio/doks/issues), and get help in [Doks Discussions](https://github.com/thuliteio/doks/discussions) from our active, friendly community!

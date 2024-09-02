@@ -53,10 +53,10 @@ Doks 1.6 introduces a cleaner `scripts` section in your projects' `package.json`
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@hyas/doks-core": "^1.6.1",
-    "@hyas/images": "^3.2.0",
-    "@hyas/inline-svg": "^1.1.0",
-    "@hyas/seo": "^2.3.0",
+    "@thulite/doks-core": "^1.6.1",
+    "@thulite/images": "^3.2.0",
+    "@thulite/inline-svg": "^1.1.0",
+    "@thulite/seo": "^2.3.0",
     "@tabler/icons": "^3.2.0",
     "gethyas": "^2.4.2"
   },
@@ -102,4 +102,4 @@ yarn run build --baseURL=/ && yarn run preview --host
 <!-- omit in toc -->
 ## Bug Fixes
 
-Doks 1.6 also includes several bug fixes. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.6.0) to learn more.
+Doks 1.6 also includes several bug fixes. Check out the [release notes](https://github.com/thuliteio/doks-core/releases/tag/v1.6.0) to learn more.

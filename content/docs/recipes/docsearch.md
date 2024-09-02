@@ -22,7 +22,7 @@ To follow this guide, you'll need an existing [Doks](https://getdoks.org/) site 
 
 {{< callout context="note" icon="outline/info-circle" >}}
 
-If a file does not exist in your projects' root, copy the file over from `node_modules/@hyas/doks-core/`. Make sure to use the same directory structure in your root.
+If a file does not exist in your projects' root, copy the file over from `node_modules/@thulite/doks-core/`. Make sure to use the same directory structure in your root.
 
 {{< /callout >}}
 
@@ -35,7 +35,7 @@ Add the following parameters to `config/_default/params.toml`:
 [add_ons]
   docSearch = true # false (default) or true
 
-# Doks (@hyas/doks-core)
+# Doks (@thulite/doks-core)
 [doks]
   # FlexSearch
   flexSearch = false # true (default) or false

@@ -18,9 +18,9 @@ This guide covers how to update your version of Doks and related dependencies, h
 
 ## What has changed?
 
-See [all release notes](https://github.com/gethyas/doks/releases) or the [latest release notes](https://github.com/gethyas/doks/releases/latest).
+See [all release notes](https://github.com/thuliteio/doks/releases) or the [latest release notes](https://github.com/thuliteio/doks/releases/latest).
 
-You can find an exhaustive list of all changes in [Doks' changelog](https://github.com/gethyas/doks/blob/main/CHANGELOG.md), and important instructions for upgrading to each new [major version](#major-changes) in our [upgrade guides](#upgrade-guides).
+You can find an exhaustive list of all changes in [Doks' changelog](https://github.com/thuliteio/doks/blob/main/CHANGELOG.md), and important instructions for upgrading to each new [major version](#major-changes) in our [upgrade guides](#upgrade-guides).
 
 ## Upgrade to the latest version
 
@@ -30,21 +30,21 @@ To update Doks and integrations to their current versions, use the appropriate c
 {{< tab "npm" >}}
 
 ```bash
-npm install @hyas/doks-core@latest @hyas/images@latest @hyas/seo@latest
+npm install @thulite/doks-core@latest @thulite/images@latest @thulite/seo@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm install @hyas/doks-core@latest @hyas/images@latest @hyas/seo@latest
+pnpm install @thulite/doks-core@latest @thulite/images@latest @thulite/seo@latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn add @hyas/doks-core@latest @hyas/images@latest @hyas/seo@latest
+yarn add @thulite/doks-core@latest @thulite/images@latest @thulite/seo@latest
 ```
 
 {{< /tab >}}
@@ -58,21 +58,21 @@ To install a specific version of Doks or integrations, use the appropriate comma
 {{< tab "npm" >}}
 
 ```bash
-npm install @hyas/doks-core@1.6.0 @hyas/images@3.1.0
+npm install @thulite/doks-core@1.6.0 @thulite/images@3.1.0
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm install @hyas/doks-core@1.6.0 @hyas/images@3.1.0
+pnpm install @thulite/doks-core@1.6.0 @thulite/images@3.1.0
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn add @hyas/doks-core@1.6.0 @hyas/images@3.1.0
+yarn add @thulite/doks-core@1.6.0 @thulite/images@3.1.0
 ```
 
 {{< /tab >}}
@@ -112,7 +112,7 @@ Semantic versioning enforces a pattern of `X.Y.Z` for software version numbers. 
 
 Patch changes are the least disruptive changes. They do not change the way you use Doks, and no change to your own code is required when you update.
 
-When Doks issues a "patch" version, the last number increases. (e.g. `@hyas/doks-core@1.6.0` -> `@hyas/doks-core@1.6.1`)
+When Doks issues a "patch" version, the last number increases. (e.g. `@thulite/doks-core@1.6.0` -> `@thulite/doks-core@1.6.1`)
 
 Patches may be released for reasons such as:
 

@@ -18,27 +18,27 @@ Doks is a full-featured documentation theme built on top of the [Thulite](https:
 
 ## Quick Start
 
-Get a new Doks project up and running locally with our helpful `create-hyas` CLI wizard!
+Get a new Doks project up and running locally with our helpful `create-thulite` CLI wizard!
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create hyas@latest -- --template doks
+npm create thulite@latest -- --template doks
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas@latest --template doks
+pnpm create thulite@latest --template doks
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas@latest --template doks
+yarn create thulite@latest --template doks
 ```
 
 {{< /tab >}}
@@ -68,8 +68,8 @@ Our [Installation Guide](/docs/start-here/installation/) has step-by-step instru
 {{< card-grid >}}
 {{< card title="What's going on?" icon="outline/info-circle" color="green" >}}
 
-- [Roadmap 2024](https://github.com/orgs/gethyas/discussions/462)
-- [Discussions](https://github.com/gethyas/doks/discussions)
+- [Roadmap 2024](https://github.com/orgs/thuliteio/discussions/462)
+- [Discussions](https://github.com/thuliteio/doks/discussions)
 - [Blog](/blog/)
 
 {{< /card >}}

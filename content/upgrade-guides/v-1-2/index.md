@@ -24,21 +24,21 @@ You can upgrade to Doks 1.2 by running the folowing command:
 {{< tab "npm" >}}
 
 ```bash
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm upgrade @hyas/doks-core --latest
+pnpm upgrade @thulite/doks-core --latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn upgrade @hyas/doks-core --latest
+yarn upgrade @thulite/doks-core --latest
 ```
 
 {{< /tab >}}
@@ -101,9 +101,9 @@ module.exports = {
           "./assets/scss/**/*.css",
           "./assets/scss/**/*.scss",
           // './node_modules/katex/dist/katex.css',
-          "./node_modules/@hyas/doks-core/assets/scss/components/_code.scss",
-          "./node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss",
-          "./node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss"
+          "./node_modules/@thulite/doks-core/assets/scss/components/_code.scss",
+          "./node_modules/@thulite/doks-core/assets/scss/components/_expressive-code.scss",
+          "./node_modules/@thulite/doks-core/assets/scss/common/_syntax.scss"
         ])
       ]
     })
