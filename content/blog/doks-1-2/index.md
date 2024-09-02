@@ -62,12 +62,12 @@ Doks now extends the formatting possibilities for code blocks. Code blocks can b
 A code block's optional title can be set with a `title="..."` attribute following the code block’s opening backticks and language identifier.
 
 ```bash
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 
 ````md
 ```bash
-npm install @hyas/doks-core@latest
+npm install @thulite/doks-core@latest
 ```
 ````
 
@@ -90,4 +90,4 @@ Also, you now can add [line numbers](/docs/built-ins/code-blocks/#line-numbers) 
 <!-- omit in toc -->
 ## Bug Fixes
 
-Additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.2.0) to learn more.
+Additional bug fixes are included in this release. Check out the [release notes](https://github.com/thuliteio/doks-core/releases/tag/v1.2.0) to learn more.

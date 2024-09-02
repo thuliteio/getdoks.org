@@ -38,7 +38,7 @@ You can nest any other Markdown content types inside a callout, but callouts are
 Doks is a documentation website toolkit built with Thulite. You can get started with this command:
 
 ```bash
-npm create hyas@latest -- --template doks
+npm create thulite@latest -- --template doks
 ```
 
 {{< /callout >}}
@@ -48,7 +48,7 @@ npm create hyas@latest -- --template doks
 Doks is a documentation website toolkit built with Thulite. You can get started with this command:
 
 ```bash
-npm create hyas@latest -- --template doks
+npm create thulite@latest -- --template doks
 ```
 
 {{</* /callout */>}}
@@ -135,21 +135,21 @@ You can display a tabbed interface using the `{{</* tabs */>}}` and `{{</* tab *
 {{</* tab "npm" */>}}
 
 ```bash
-npm create hyas@latest
+npm create thulite@latest
 ```
 
 {{</* /tab */>}}
 {{</* tab "pnpm" */>}}
 
 ```bash
-pnpm create hyas@latest
+pnpm create thulite@latest
 ```
 
 {{</* /tab */>}}
 {{</* tab "Yarn" */>}}
 
 ```bash
-yarn create hyas
+yarn create thulite
 ```
 
 {{</* /tab */>}}
@@ -160,27 +160,27 @@ yarn create hyas
 The selected tab is remembered in and across pages.
 {{< /callout >}}
 
-Run the following command in your terminal to start our handy install wizard, `create-hyas`.
+Run the following command in your terminal to start our handy install wizard, `create-thulite`.
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create hyas@latest
+npm create thulite@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas@latest
+pnpm create thulite@latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas
+yarn create thulite
 ```
 
 {{< /tab >}}

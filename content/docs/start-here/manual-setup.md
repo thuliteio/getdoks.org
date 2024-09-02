@@ -14,7 +14,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-The quickest way to create a new Doks site is using `create hyas` as shown in the [Getting Started guide](/docs/start-here/getting-started/#creating-a-new-project). If you want to add Doks to an existing Thulite project, this guide will explain how.
+The quickest way to create a new Doks site is using `create thulite` as shown in the [Getting Started guide](/docs/start-here/getting-started/#creating-a-new-project). If you want to add Doks to an existing Thulite project, this guide will explain how.
 
 ## Set up Doks
 
@@ -28,21 +28,21 @@ Doks is a [Thulite integration](https://docs.thulite.io/guides/integrations/). A
 {{< tab "npm" >}}
 
 ```bash
-npm install @hyas/doks-core
+npm install @thulite/doks-core
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm install @hyas/doks-core
+pnpm install @thulite/doks-core
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn add @hyas/doks-core
+yarn add @thulite/doks-core
 ```
 
 {{< /tab >}}
@@ -96,7 +96,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 # mounts
 ## archetypes
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/archetypes"
+  source = "node_modules/@thulite/doks-core/archetypes"
   target = "archetypes"
 
 [[mounts]]
@@ -105,16 +105,16 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## assets
 [[mounts]]
-  source = "node_modules/@hyas/core/assets"
+  source = "node_modules/@thulite/core/assets"
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@hyas/images/assets"
+  source = "node_modules/@thulite/images/assets"
   target = "assets"
   excludeFiles = "/scss/**.scss"
 
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/assets"
+  source = "node_modules/@thulite/doks-core/assets"
   target = "assets"
   excludeFiles = ["scss/common/_variables-custom.scss", "scss/common/_custom.scss"]
 
@@ -145,11 +145,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## data
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/data"
-  target = "data"
-
-[[mounts]]
-  source = "config/_default/hyas"
+  source = "node_modules/@thulite/doks-core/data"
   target = "data"
 
 [[mounts]]
@@ -158,7 +154,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## i18n
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/i18n"
+  source = "node_modules/@thulite/doks-core/i18n"
   target = "i18n"
 
 [[mounts]]
@@ -167,23 +163,23 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## layouts
 [[mounts]]
-  source = "node_modules/@hyas/core/layouts"
+  source = "node_modules/@thulite/core/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/seo/layouts"
+  source = "node_modules/@thulite/seo/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/images/layouts"
+  source = "node_modules/@thulite/images/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/layouts"
+  source = "node_modules/@thulite/doks-core/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/inline-svg/layouts"
+  source = "node_modules/@thulite/inline-svg/layouts"
   target = "layouts"
 
 [[mounts]]
@@ -192,7 +188,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## static
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/static"
+  source = "node_modules/@thulite/doks-core/static"
   target = "static"
 
 [[mounts]]
@@ -209,7 +205,7 @@ Add the following parameters to `config/_default/params.toml`:
 {{< details "Parameters" >}}
 
 ```toml {title="params.toml"}
-# Doks (@hyas/doks-core)
+# Doks (@thulite/doks-core)
 [doks]
   # Color mode
   colorMode = "auto" # auto (default), light or dark
@@ -303,22 +299,22 @@ Add the following parameters to `config/_default/params.toml`:
   errorLevel = 'ignore' # ignore (default), warning, or error (fails the build)
   highlightBroken = false # true or false (default)
 
-# Images (@hyas/images)
-[hyas_images]
-  [hyas_images.landscape]
+# Images (@thulite/images)
+[thulite_images]
+  [thulite_images.landscape]
     normalize = "1360x765" # "1600x900" (default)
     lqip = "16x9" # "16x9" (default)
     widths = [480, 640, 800, 1024]
-  [hyas_images.portrait]
+  [thulite_images.portrait]
     normalize = "765x1360" # "900x1600" (default)
     lqip = "9x16" # "9x16" (default)
     widths = [480, 640, 800, 1024]
 
-# Inline SVG (@hyas/inline-svg)
+# Inline SVG (@thulite/inline-svg)
 [inline_svg]
   iconSetDir = "tabler-icons" # "tabler-icons" (default)
 
-# SEO (@hyas/seo)
+# SEO (@thulite/seo)
 [seo]
   [seo.title]
     separator = " | "
@@ -333,7 +329,7 @@ Add the following parameters to `config/_default/params.toml`:
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
     name = "Thulite" # Name of Organization or Person
-    sameAs = [] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
+    sameAs = [] # E.g. ["https://github.com/thuliteio/thulite", "https://fosstodon.org/@thulite"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
@@ -345,7 +341,7 @@ Add the following parameters to `config/_default/params.toml`:
 
 ### Add fonts
 
-Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `static` directory into your project's root.
+Download the Doks source code of the [latest release](https://github.com/thuliteio/doks/releases/latest). Extract the archive and copy the `static` directory into your project's root.
 
 ### Add content
 
@@ -380,7 +376,7 @@ yarn run create docs/guides/faq.md
 {{< /tabs >}}
 
 {{< callout context="tip" title="Add default content" icon="outline/rocket" >}}
-Download the Doks source code of the [latest release](https://github.com/gethyas/doks/releases/latest). Extract the archive and copy the `content` directory into your project's root.
+Download the Doks source code of the [latest release](https://github.com/thuliteio/doks/releases/latest). Extract the archive and copy the `content` directory into your project's root.
 {{< /callout >}}
 
 ## Next steps

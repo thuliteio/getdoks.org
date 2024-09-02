@@ -31,7 +31,7 @@ To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-
 
 ## Restructured dependencies
 
-Doks main dependencies are now specified in Doks' `package.json` — in stead of in `@hyas/doks-core`'s `package.json` — so you can easily update for example Hugo, Thulite Images, and Thulite SEO yourself.
+Doks main dependencies are now specified in Doks' `package.json` — in stead of in `@thulite/doks-core`'s `package.json` — so you can easily update for example Hugo, Thulite Images, and Thulite SEO yourself.
 
 ```json
 {
@@ -39,10 +39,10 @@ Doks main dependencies are now specified in Doks' `package.json` — in stead of
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo"
   },
   "dependencies": {
-    "@hyas/doks-core": "^1.3.0",
-    "@hyas/images": "^2.0.3",
-    "@hyas/inline-svg": "^1.0.5",
-    "@hyas/seo": "^2.1.0",
+    "@thulite/doks-core": "^1.3.0",
+    "@thulite/images": "^2.0.3",
+    "@thulite/inline-svg": "^1.0.5",
+    "@thulite/seo": "^2.1.0",
     "@tabler/icons": "^2.40.0",
     "exec-bin": "^1.0.0",
     "gethyas": "^2.2.2",
@@ -57,27 +57,27 @@ Doks main dependencies are now specified in Doks' `package.json` — in stead of
 }
 ```
 
-Thulite Images for example is updated like any `@hyas/*` integration (or theme):
+Thulite Images for example is updated like any `@thulite/*` integration (or theme):
 
 {{< tabs "update-doks" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm install @hyas/images@latest
+npm install @thulite/images@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm upgrade @hyas/images --latest
+pnpm upgrade @thulite/images --latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn upgrade @hyas/images --latest
+yarn upgrade @thulite/images --latest
 ```
 
 {{< /tab >}}
@@ -85,7 +85,7 @@ yarn upgrade @hyas/images --latest
 
 ## Deduplicated Bootstrap variables
 
-Doks now only specifies customized Bootstrap SCSS variables in [`_variables-overrides.scss`](https://github.com/gethyas/doks-core/blob/main/assets/scss/common/_variables-overrides.scss) — instead of overriding _all_ Bootstrap SCSS variables — making customizations [easier and more robust](https://github.com/gethyas/doks-core/blob/main/assets/scss/app.scss).
+Doks now only specifies customized Bootstrap SCSS variables in [`_variables-overrides.scss`](https://github.com/thuliteio/doks-core/blob/main/assets/scss/common/_variables-overrides.scss) — instead of overriding _all_ Bootstrap SCSS variables — making customizations [easier and more robust](https://github.com/thuliteio/doks-core/blob/main/assets/scss/app.scss).
 
 Add your customizations in `assets/scss/common/`:
 
@@ -100,4 +100,4 @@ Add your customizations in `assets/scss/common/`:
 <!-- omit in toc -->
 ## Bug Fixes
 
-Additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.3.0) to learn more.
+Additional bug fixes are included in this release. Check out the [release notes](https://github.com/thuliteio/doks-core/releases/tag/v1.3.0) to learn more.

@@ -25,27 +25,27 @@ To upgrade an existing project, see the [Upgrade to v1](/upgrade-guides/upgrade-
 
 ## Quick start
 
-Get a new Doks project up and running locally with our helpful create-hyas CLI wizard!
+Get a new Doks project up and running locally with our helpful create-thulite CLI wizard!
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create hyas@latest -- --template doks
+npm create thulite@latest -- --template doks
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create hyas@latest -- --template doks
+pnpm create thulite@latest -- --template doks
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create hyas@latest -- --template doks
+yarn create thulite@latest -- --template doks
 ```
 
 {{< /tab >}}
@@ -55,10 +55,10 @@ Our [Installation Guide](/docs/start-here/installation/) has step-by-step instru
 
 ## Quick links
 
-- Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/gethyas/doks).
+- Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/thuliteio/doks).
 - Explore the infinite possibilities of Doks in our [Showcase](/showcase/).
-- Get support, get involved, and join our community of Doks developers — it all happens on [Discussions](https://github.com/gethyas/doks/discussions).
+- Get support, get involved, and join our community of Doks developers — it all happens on [Discussions](https://github.com/thuliteio/doks/discussions).
 
 ## Bug Fixes
 
-Additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.0.0) to learn more.
+Additional bug fixes are included in this release. Check out the [release notes](https://github.com/thuliteio/doks-core/releases/tag/v1.0.0) to learn more.

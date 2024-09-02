@@ -84,4 +84,4 @@ Sidebar navigation is also available for other `docs` based sections you create.
 <!-- omit in toc -->
 ## Bug Fixes
 
-As always, additional bug fixes are included in this release. Check out the [release notes](https://github.com/gethyas/doks-core/releases/tag/v1.4.0) to learn more.
+As always, additional bug fixes are included in this release. Check out the [release notes](https://github.com/thuliteio/doks-core/releases/tag/v1.4.0) to learn more.

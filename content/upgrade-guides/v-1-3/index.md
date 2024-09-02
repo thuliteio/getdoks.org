@@ -76,10 +76,10 @@ Replace the contents of your project's `package.json` with the following:
     "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo"
   },
   "dependencies": {
-    "@hyas/doks-core": "^1.3.0",
-    "@hyas/images": "^3.1.0",
-    "@hyas/inline-svg": "^1.0.5",
-    "@hyas/seo": "^2.1.0",
+    "@thulite/doks-core": "^1.3.0",
+    "@thulite/images": "^3.1.0",
+    "@thulite/inline-svg": "^1.0.5",
+    "@thulite/seo": "^2.1.0",
     "@tabler/icons": "^2.47.0",
     "exec-bin": "^1.0.0",
     "gethyas": "^2.2.2",
@@ -239,7 +239,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 # mounts
 ## archetypes
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/archetypes"
+  source = "node_modules/@thulite/doks-core/archetypes"
   target = "archetypes"
 
 [[mounts]]
@@ -248,15 +248,15 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## assets
 [[mounts]]
-  source = "node_modules/@hyas/core/assets"
+  source = "node_modules/@thulite/core/assets"
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@hyas/images/assets"
+  source = "node_modules/@thulite/images/assets"
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/assets"
+  source = "node_modules/@thulite/doks-core/assets"
   target = "assets"
 
 [[mounts]]
@@ -274,7 +274,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## data
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/data"
+  source = "node_modules/@thulite/doks-core/data"
   target = "data"
 
 [[mounts]]
@@ -283,7 +283,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## i18n
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/i18n"
+  source = "node_modules/@thulite/doks-core/i18n"
   target = "i18n"
 
 [[mounts]]
@@ -292,23 +292,23 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## layouts
 [[mounts]]
-  source = "node_modules/@hyas/core/layouts"
+  source = "node_modules/@thulite/core/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/seo/layouts"
+  source = "node_modules/@thulite/seo/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/images/layouts"
+  source = "node_modules/@thulite/images/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/layouts"
+  source = "node_modules/@thulite/doks-core/layouts"
   target = "layouts"
 
 [[mounts]]
-  source = "node_modules/@hyas/inline-svg/layouts"
+  source = "node_modules/@thulite/inline-svg/layouts"
   target = "layouts"
 
 [[mounts]]
@@ -317,7 +317,7 @@ Update the mounts configuration in `config/_default/module.toml`:
 
 ## static
 [[mounts]]
-  source = "node_modules/@hyas/doks-core/static"
+  source = "node_modules/@thulite/doks-core/static"
   target = "static"
 
 [[mounts]]
@@ -345,7 +345,7 @@ mainSections = ["docs"]
 [social]
   twitter = "getdoks"
 
-# Doks (@hyas/doks-core)
+# Doks (@thulite/doks-core)
 [doks]
   # Color mode
   colorMode = "auto" # auto (default), light or dark
@@ -436,9 +436,9 @@ mainSections = ["docs"]
   errorLevel = 'ignore' # ignore (default), warning, or error (fails the build)
   highlightBroken = false # true or false (default)
 
-# Images (@hyas/images)
-[hyas_images]
-  [hyas_images.defaults]
+# Images (@thulite/images)
+[thulite_images]
+  [thulite_images.defaults]
     decoding = "async" # sync, async, or auto (default)
     fetchpriority = "auto" # high, low, or auto (default)
     loading = "lazy" # eager or lazy (default)
@@ -447,11 +447,11 @@ mainSections = ["docs"]
     process = "" # "fill 1600x900" or "fill 2100x900" for example
     lqip = "16x webp q20" # "16x webp q20" or "21x webp q20" for example
 
-# Inline SVG (@hyas/inline-svg)
+# Inline SVG (@thulite/inline-svg)
 [inline_svg]
   iconSetDir = "tabler-icons" # "tabler-icons" (default)
 
-# SEO (@hyas/seo)
+# SEO (@thulite/seo)
 [seo]
   [seo.title]
     separator = " | "
@@ -466,7 +466,7 @@ mainSections = ["docs"]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
     name = "Thulite" # Name of Organization or Person
-    sameAs = [] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
+    sameAs = [] # E.g. ["https://github.com/thuliteio/hyas", "https://fosstodon.org/@thulite"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
@@ -541,7 +541,7 @@ module.exports = {
         "hiding",
         "page-item",
         "page-link",
-        ...whitelister(["./assets/scss/**/*.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_code.scss", "./node_modules/@hyas/doks-core/assets/scss/components/_expressive-code.scss", "./node_modules/@hyas/doks-core/assets/scss/common/_syntax.scss"])
+        ...whitelister(["./assets/scss/**/*.scss", "./node_modules/@thulite/doks-core/assets/scss/components/_code.scss", "./node_modules/@thulite/doks-core/assets/scss/components/_expressive-code.scss", "./node_modules/@thulite/doks-core/assets/scss/common/_syntax.scss"])
       ]
     })
   ]
@@ -552,12 +552,12 @@ module.exports = {
 
 ## Update assets
 
-Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas/doks/releases/tag/v1.3.0). Extract the archive and copy the `assets/js` directory into your project's `assets` directory.
+Download the Doks source code of the [v1.3.0 release](https://github.com/thuliteio/doks/releases/tag/v1.3.0). Extract the archive and copy the `assets/js` directory into your project's `assets` directory.
 
 ## Update layouts
 
-Download the Doks source code of the [v1.3.0 release](https://github.com/gethyas/doks/releases/tag/v1.3.0). Extract the archive and copy the `layouts/partials` directory into your project's `layouts` directory.
+Download the Doks source code of the [v1.3.0 release](https://github.com/thuliteio/doks/releases/tag/v1.3.0). Extract the archive and copy the `layouts/partials` directory into your project's `layouts` directory.
 
 {{< callout context="note" title="Update overrides" icon="outline/info-circle" >}}
-If you have customizations, make sure to align them with `@hyas/doks-core` [v1.3.0](https://github.com/gethyas/doks-core/tree/v1.3.0) — for example [`assets/scss/app.scss`](https://github.com/gethyas/doks-core/blob/v1.3.0/assets/scss/app.scss)
+If you have customizations, make sure to align them with `@thulite/doks-core` [v1.3.0](https://github.com/thuliteio/doks-core/tree/v1.3.0) — for example [`assets/scss/app.scss`](https://github.com/thuliteio/doks-core/blob/v1.3.0/assets/scss/app.scss)
 {{< /callout >}}
