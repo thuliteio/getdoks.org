@@ -81,7 +81,7 @@ References:
 {{- end }}
 
 {{- /* Merge class and id attributes. */}}
-{{- $attrs = merge $attrs (dict "class" $class "id" $id "alt" "diagram") }}
+{{- $attrs = merge $attrs (dict "class" $class "id" $id "alt" "diagra m") }}
 
 {{- /* Get diagram. */}}
 {{- $body := dict "diagram_source" $inner "diagram_type" $diagramType "output_format" "svg" | jsonify }}

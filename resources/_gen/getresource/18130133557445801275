@@ -1,5 +1,5 @@
 HTTP/2.0 200 OK
-Age: 932
+Age: 1827
 Cache-Control: max-age=604800
 Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
 Content-Type: image/svg+xml
@@ -16,7 +16,7 @@ X-Etags-2: c55d56fc27e6e75065e09e0cc5175704
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
 X-Vercel-Cache: HIT
-X-Vercel-Id: fra1::sfo1::8scq5-1725283120079-ff09f6fea657
+X-Vercel-Id: fra1::sfo1::5xvgh-1725284014901-1ad9e631233f
 X-Xss-Protection: 0
 
 <?xml version="1.0" standalone="no" ?>
