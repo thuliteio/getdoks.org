@@ -5,7 +5,7 @@ summary: "Green Metrics Tool"
 date: 2023-09-15T21:52:46+02:00
 lastmod: 2023-09-15T21:52:46+02:00
 draft: false
-website: "https://docs.green-coding.berlin/" # URL
+website: "https://docs.green-coding.io/" # URL
 weight: 50
 seo:
   title: "" # custom title (optional)

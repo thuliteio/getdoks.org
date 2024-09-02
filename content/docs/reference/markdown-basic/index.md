@@ -17,7 +17,7 @@ seo:
 A quick reference to the Markdown basic syntax.
 
 {{< callout icon="outline/info-circle" >}}
-Refer to the [Basic Syntax](https://www.markdownguide.org/basic-syntax) reference guide from The Markdown Guide for more information.
+Refer to the [Basic Syntax](https://markdownguide.offshoot.io/basic-syntax/) reference guide from The Markdown Guide for more information.
 {{< /callout >}}
 
 ## Heading

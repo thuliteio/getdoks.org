@@ -17,7 +17,7 @@ seo:
 A quick reference to the Markdown extended syntax.
 
 {{< callout icon="outline/info-circle" >}}
-Refer to the [Extended Syntax](https://www.markdownguide.org/extended-syntax) reference guide from The Markdown Guide for more information.
+Refer to the [Extended Syntax](https://markdownguide.offshoot.io/extended-syntax/) reference guide from The Markdown Guide for more information.
 {{< /callout >}}
 
 ## Table

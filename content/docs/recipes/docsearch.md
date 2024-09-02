@@ -283,6 +283,6 @@ module.exports = {
 
 ## Next steps
 
-- [Performance optimization](https://docsearch.algolia.com/docs/DocSearch-v3#performance-optimization)
+- [Performance optimization](https://docsearch.algolia.com/docs/docsearch-v3/#performance-optimization)
 - [Content security policy](https://www.algolia.com/doc/guides/security/security-best-practices/#content-security-policy)
 - [`translations`](https://docsearch.algolia.com/docs/api/#translations)

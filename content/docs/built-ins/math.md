@@ -15,7 +15,7 @@ seo:
 slug: math
 ---
 
-You can use a fenced code block or shortcode to embed an SVG image of a [LaTeX](https://www.latex-project.org/) mathematical expression or equation in your Doks site using the free [Math API](https://math.vercel.app/) service.
+You can use a fenced code block or shortcode to embed an SVG image of a [LaTeX](https://www.latex-project.org/) mathematical expression or equation in your Doks site using the free [Math API](https://math.vercel.app/home) service.
 
 {{< callout context="note" icon="outline/info-circle" >}}
 Unlike JavaScript solutions such as [KaTeX](https://katex.org/) or [MathJax](https://www.mathjax.org/), this approach embeds an SVG image in your page.

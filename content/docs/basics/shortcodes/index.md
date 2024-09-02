@@ -335,7 +335,7 @@ You can add a logo that respects darkmode/lightmode:
 ### Tabler icons
 
 {{< callout icon="outline/info-circle" >}}
-Copy the icon name from [Tabler Icons](https://tabler-icons.io/) by clicking on it's name.
+Copy the icon name from [Tabler Icons](https://tabler.io/icons) by clicking on it's name.
 {{< /callout >}}
 
 You can add a outline/coffee icon:
