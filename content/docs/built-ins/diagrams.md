@@ -107,7 +107,6 @@ gantt
     section Another
         Task in Another :2014-01-12, 12d
         another task    :24d
-
 ```
 
 ````md
@@ -187,3 +186,17 @@ To optimize performance in a CI/CD environment such as [Cloudflare Pages](https:
 2. Check the `resources` directory into source control.
 
 In this configuration, Hugo will use the cached resources when building your site locally and remotely, invalidating the cache when you change the LaTeX markup.
+
+## Timeout
+
+If you're experiencing failing builds and get error messages like:
+
+```bash
+ERROR The "kroki" code block render hook was unable to get the remote diagram. failed to fetch remote resource: Bad Request
+```
+
+Raise the [`timeout`](https://gohugo.io/getting-started/configuration/#timeout) limit, for example:
+
+```toml {title=hugo.toml}
+timeout = "60s" # "30s" (default)
+```

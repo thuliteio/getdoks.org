@@ -12,6 +12,9 @@ paginate = 20
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
+# https://gohugo.io/getting-started/configuration/#timeout
+timeout = "60s" # "30s" (default)
+
 # Multilingual
 defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
