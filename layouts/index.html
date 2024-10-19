@@ -24,6 +24,25 @@
     <div class="bg-dots"></div>
   </div>
   {{ end -}}
+<!--
+  <section class="bg-anna">
+    <a href="https://thulite.io/anna/?utm_source=getdoks&utm_medium=banner&utm_campaign=promotion">
+    {{- $opts := dict
+      "page" .
+      "src" "images/ad-mdn.jpg"
+      "formats" (slice "webp" "jpeg")
+      "process" "fill 950x250"
+      "lqip" "19x webp q20"
+      "decoding" "async"
+      "fetchpriority" "auto"
+      "loading" "eager"
+      "alt" "Ad MDN"
+      "class" "mx-auto"
+    }}
+    {{- partial "img" $opts }}
+    </a>
+  </section>
+-->
   {{ if eq $.Site.Language.LanguageName "English" }}
   <section class="section section-md section-features">
     <div class="container">
