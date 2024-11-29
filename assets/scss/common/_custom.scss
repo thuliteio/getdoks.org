@@ -458,3 +458,13 @@ figcaption {
 
     background-color: #181422;
 }
+
+//
+.alert {
+    font-family: $font-family-sans-serif;
+}
+
+.alert-text {
+    margin-right: 0;
+    font-size: 1.125rem;
+}
