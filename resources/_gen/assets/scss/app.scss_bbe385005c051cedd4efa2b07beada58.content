@@ -14978,13 +14978,16 @@ figcaption {
     */
   background-color: #181422; }
 
+/*
 .alert {
-  font-family: "Jost", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+    font-family: $font-family-sans-serif;
+}
 
 .alert-text {
-  margin-right: 0;
-  font-size: 1.125rem; }
-
+    margin-right: 0;
+    font-size: 1.125rem;
+}
+*/
 /* Darkmode */
 :root {
   --docsearch-primary-color: var(--sl-color-text-accent);
