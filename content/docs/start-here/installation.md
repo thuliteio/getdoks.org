@@ -20,7 +20,7 @@ Doks is a full-featured documentation theme built on top of the [Thulite](https:
 
 ### Create a new project
 
-Create a new Thulite + Doks project by running the following command in your terminal:
+Create a new Thulite + Doks project by running the `create` command in your terminal. You will be asked to enter your project name and install your projects' dependencies.
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}

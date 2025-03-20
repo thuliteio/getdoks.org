@@ -18,7 +18,7 @@ Doks is a full-featured documentation theme built on top of the [Thulite](https:
 
 ## Quick Start
 
-Get a new Doks project up and running locally with our helpful `create-thulite` CLI wizard!
+Get a new Doks project up and running locally with our helpful `create-thulite` CLI wizard! After you run the `create` command, you will be asked to enter your project name and install your projects' dependencies.
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
