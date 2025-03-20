@@ -148,7 +148,7 @@ enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
-paginate = 10
+pagerSize = 10
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
