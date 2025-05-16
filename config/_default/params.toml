@@ -21,7 +21,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
 # Add-ons
 [add_ons]
   carbonAds = false # false (default) or true
-  ethicalAds = true # false (default) or true
+  ethicalAds = false # false (default) or true
   docSearch = true # false (default) or true
   plausibleDomain = "getdoks.org" # "example.com" (default)
   keila = false # false (default) or true
@@ -54,7 +54,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = true # false (default) or true
+  alert = false # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap

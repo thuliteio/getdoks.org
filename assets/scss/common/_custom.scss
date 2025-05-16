@@ -470,3 +470,9 @@ figcaption {
     font-size: 1.125rem;
 }
 */
+
+img,
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

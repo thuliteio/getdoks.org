@@ -8,7 +8,7 @@ enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
-paginate = 20
+pagerSize = 20
 rssLimit = 10
 summarylength = 20 # 70 (default)
 

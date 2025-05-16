@@ -65,13 +65,13 @@
 # [[main]]
 #   name = "Thulite"
 #   weight = 51
-#   url = "https://docs.thulite.io/"
+#   url = "https://docs.thulite.io/getting-started/"
 #   parent = "other-docs"
 #
 # [[main]]
 #   name = "Images"
 #   weight = 52
-#   url = "https://images.thulite.io/"
+#   url = "https://images.thulite.io/docs/start-here/getting-started/"
 #   parent = "other-docs"
 
 # [[main]]
@@ -79,11 +79,11 @@
 #   weight = 53
 #   url = "https://svg.thulite.io/"
 #   parent = "other-docs"
-#
+
 # [[main]]
 #   name = "SEO"
 #   weight = 54
-#   url = "https://seo.thulite.io/"
+#   url = "https://seo.thulite.io/docs/start-here/getting-started/"
 #   parent = "other-docs"
 
 [[social]]
