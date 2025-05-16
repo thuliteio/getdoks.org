@@ -3,9 +3,9 @@
   functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "20.11.0"
-  NPM_VERSION = "10.2.4"
-  HUGO_VERSION = "0.131.0"
+  NODE_VERSION = "22.15.0"
+  NPM_VERSION = "10.9.2"
+  HUGO_VERSION = "0.145.0"
 
 [context.production]
   command = "pnpm build"
