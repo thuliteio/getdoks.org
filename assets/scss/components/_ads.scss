@@ -18,7 +18,7 @@ div [data-ea-publisher].loaded {
     background: var(--sl-color-black);
     */
 
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 
 /*
   display: none;
@@ -38,8 +38,8 @@ div [data-ea-publisher].loaded {
     display: none;
     z-index: 100;
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;
+    right: 1rem;
+    bottom: 1rem;
     margin: 0;
 
     @include media-breakpoint-up(lg) {
@@ -130,6 +130,7 @@ div [data-ea-publisher].loaded {
     display: block;
     overflow: hidden;
     padding: 1rem;
+    width: 100%;
     max-width: 175px;
     background: var(--sl-color-black);
     text-align: center;

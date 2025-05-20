@@ -21,7 +21,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
 # Add-ons
 [add_ons]
   carbonAds = false # false (default) or true
-  ethicalAds = false # false (default) or true
+  ethicalAds = true # false (default) or true
   docSearch = true # false (default) or true
   plausibleDomain = "getdoks.org" # "example.com" (default)
   keila = false # false (default) or true
