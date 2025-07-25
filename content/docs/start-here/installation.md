@@ -16,6 +16,11 @@ seo:
 
 This guide covers creating a new project with the Thulite CLI, installing dependencies, starting the development server, and adding content to your site. You'll also find instructions for updating Doks and troubleshooting common issues.
 
+## Prerequisites
+
+- Node.js —[latest LTS version](https://nodejs.org/en/download)
+- Hugo —[latest extended version](https://github.com/gohugoio/hugo/releases/latest)
+
 ## Get started
 
 ### Create a new project
@@ -58,7 +63,7 @@ This will guide you through an interactive setup process where you'll select you
 {{< steps >}}
 {{< step >}}
 
-Enter your project name — this also is the installation directory
+Enter your project name —this also is the installation directory
 
 ```txt {frame="none"}
 │
@@ -70,7 +75,7 @@ Enter your project name — this also is the installation directory
 {{< /step >}}
 {{< step >}}
 
-Select a template
+Select the Doks theme template
 
 ```txt {frame="none"}
 ◆  Select a template:
@@ -186,7 +191,7 @@ bun dev
 {{< /tab >}}
 {{< /tabs >}}
 
-This will log a message to your terminal with the URL of your local preview. Open this — clickable — URL to start browsing your site.
+This will log a message to your terminal with the URL of your local preview. Open this —clickable— URL to start browsing your site.
 
 ```txt {frame="none"}
 Watching for changes in D:\TEST\thulite-project\{assets,content,layouts,node_modules,package.json,static}
