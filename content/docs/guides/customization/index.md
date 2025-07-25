@@ -99,7 +99,7 @@ If you'd like to use the "Montserrat" font for example:
      "Noto Color Emoji";
    ```
 
-5. Avoid [Cumulative Layout Shift](https://web.dev/articles/cls) by preloading the fonts: copy `node_modules/@thulite/doks-core/layouts/partials/head/resource-hints.html` to `layouts/partials/head/resource-hints.html` and add — for example:
+5. Avoid [Cumulative Layout Shift](https://web.dev/articles/cls) by preloading the fonts: copy `node_modules/@thulite/doks-core/layouts/_partials/head/resource-hints.html` to `layouts/_partials/head/resource-hints.html` and add — for example:
 
    ```html {title="resource-hints.html"}
    <link rel="preload" href="{{ "fonts/montserrat/montserrat-v26-latin-regular.woff2" | absURL }}" as="font" type="font/woff2" crossorigin>
