@@ -14,43 +14,105 @@ seo:
   noindex: false # false (default) or true
 ---
 
-Doks is a full-featured documentation theme built on top of the [Thulite](https://thulite.io/) framework. This guide will help you get started with a new project.
+This guide covers creating a new project with the Thulite CLI, installing dependencies, starting the development server, and adding content to your site. You'll also find instructions for updating Doks and troubleshooting common issues.
 
-## Quick Start
+## Get started
 
 ### Create a new project
 
-Create a new Thulite + Doks project by running the `create` command in your terminal. You will be asked to enter your project name and install your projects' dependencies.
+The following commands will start an interactive CLI that guides you through the setup process. Choose the package manager you have installed:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create thulite@latest -- --template doks
+npm create thulite@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create thulite@latest --template doks
+pnpm create thulite
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create thulite@latest --template doks
+yarn create thulite
+```
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite
 ```
 
 {{< /tab >}}
 {{< /tabs >}}
 
-This will create a new [project directory](/docs/basics/project-structure/) with all the necessary files and configurations for your site.
+This will guide you through an interactive setup process where you'll select your project name, choose the Doks template, and pick your preferred variant. Follow the prompts as shown below:
 
-{{< callout context="tip" title="See it in action" icon="outline/rocket" >}}
-Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/thuliteio/doks).
-{{< /callout >}}
+{{< steps >}}
+{{< step >}}
+
+Enter your project name — this also is the installation directory
+
+```txt {frame="none"}
+│
+◆  Project name:
+│  thulite-project
+└
+```
+
+{{< /step >}}
+{{< step >}}
+
+Select a template
+
+```txt {frame="none"}
+◆  Select a template:
+│  ● Doks theme
+│  ○ Bolt theme
+│  ○ Tailwind CSS starter
+│  ○ Bootstrap starter
+│  ○ Basic starter
+└
+```
+
+{{< /step >}}
+{{< step >}}
+
+Select a variant
+
+```txt {frame="none"}
+◆  Select a variant:
+│  ● With recommended integrations (SEO and Images)
+└
+```
+
+{{< /step >}}
+{{< step >}}
+
+Scaffolding project
+
+```txt {frame="none"}
+◇  Scaffolding project in D:\TEST\thulite-project...
+│
+└  Done. Now run:
+
+  cd thulite-project
+  npm install
+  npm run dev
+```
+
+{{< /step >}}
+{{< /steps >}}
+
+You'll now have a new [project directory](/docs/basics/project-structure/) with all the necessary files and configurations for your site.
+{.mt-3}
 
 ### Install dependencies
 
@@ -75,6 +137,13 @@ pnpm install
 
 ```bash
 yarn install
+```
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun install
 ```
 
 {{< /tab >}}
@@ -108,9 +177,40 @@ yarn dev
 ```
 
 {{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun dev
+```
+
+{{< /tab >}}
 {{< /tabs >}}
 
-This will log a message to your terminal with the URL of your local preview. Open this URL to start browsing your site.
+This will log a message to your terminal with the URL of your local preview. Open this — clickable — URL to start browsing your site.
+
+```txt {frame="none"}
+Watching for changes in D:\TEST\thulite-project\{assets,content,layouts,node_modules,package.json,static}
+Watching for config changes in D:\TEST\thulite-project\config\_default, D:\TEST\thulite-project\config\_default\menus
+Start building sites …
+hugo v0.148.1-98ba786f2f5dca0866f47ab79f394370bcb77d2f+extended windows/amd64 BuildDate=2025-07-11T12:56:21Z VendorInfo=gohugoio
+
+
+                  │ EN
+──────────────────┼────
+ Pages            │ 28
+ Paginator pages  │  0
+ Non-page files   │  0
+ Static files     │ 17
+ Processed images │  4
+ Aliases          │  4
+ Cleaned          │  0
+
+Built in 480 ms
+Environment: "development"
+Serving pages from disk
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+```
 
 ### Add content
 
@@ -126,29 +226,9 @@ Add new pages to your site by creating `.md` or `.html` files in `content/docs/`
 
 For example, the following command will generate a page at `example.com/docs/guides/faq`:
 
-{{< tabs "create-new-page" >}}
-{{< tab "npm" >}}
-
-```bash
-npm run create docs/guides/faq.md
+```bash {frame="none"}
+hugo new content docs/guides/faq.md
 ```
-
-{{< /tab >}}
-{{< tab "pnpm" >}}
-
-```bash
-pnpm run create docs/guides/faq.md
-```
-
-{{< /tab >}}
-{{< tab "Yarn" >}}
-
-```bash
-yarn run create docs/guides/faq.md
-```
-
-{{< /tab >}}
-{{< /tabs >}}
 
 #### Frontmatter
 
@@ -194,14 +274,21 @@ npm install @thulite/doks-core@latest
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm upgrade @thulite/doks-core --latest
+pnpm update @thulite/doks-core@latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn upgrade @thulite/doks-core --latest
+yarn upgrade @thulite/doks-core@latest
+```
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun add @thulite/doks-core@latest
 ```
 
 {{< /tab >}}
