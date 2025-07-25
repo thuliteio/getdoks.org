@@ -73,7 +73,7 @@ This will install the required dependencies.
 
 ### Add buttons
 
-Add to `layouts/partials/header/header.html` buttons for mobile and desktop to trigger the DocSearch modal.
+Add to `layouts/_partials/header/header.html` buttons for mobile and desktop to trigger the DocSearch modal.
 
 #### Button mobile
 
@@ -145,7 +145,7 @@ document.getElementById("searchToggleDesktop").onclick = onClick;
 
 #### Load script
 
-Add to `layouts/partials/footer/script-footer-custom.html`:
+Add to `layouts/_partials/footer/script-footer-custom.html`:
 
 ```html
 {{ if site.Params.add_ons.docSearch -}} {{ partial "footer/esbuild" (dict "src" "js/docsearch.js" "load" "async" "transpile" false) -}} {{ end -}}
