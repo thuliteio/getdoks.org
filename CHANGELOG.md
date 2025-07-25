@@ -1,5 +1,15 @@
 # doks-website
 
+## 0.8.0
+
+### Minor Changes
+
+- [#356](https://github.com/thuliteio/getdoks.org/pull/356) [`d321282`](https://github.com/thuliteio/getdoks.org/commit/d321282987760cac5009ed3da4f624083a0476e3) Thanks [@h-enk](https://github.com/h-enk)! - Upgrade to Doks 1.8.0
+
+### Patch Changes
+
+- [#354](https://github.com/thuliteio/getdoks.org/pull/354) [`1916cb9`](https://github.com/thuliteio/getdoks.org/commit/1916cb906c6585e8db51445e16af3ad1f582abca) Thanks [@h-enk](https://github.com/h-enk)! - Update weight Configuration guide from 999 to 350 — thanks @rmhari!
+
 ## 0.7.0
 
 ### Minor Changes
