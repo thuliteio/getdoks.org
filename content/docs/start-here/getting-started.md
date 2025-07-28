@@ -17,7 +17,7 @@ seo:
 Doks is a full-featured documentation theme built on top of the [Thulite](https://thulite.io/) framework. Here you'll find guides, resources, and references to help you build with Doks.
 
 {{< callout context="tip" title="See it in action" icon="outline/rocket" >}}
-Try Doks in your browser: [open the template on Gitpod](https://gitpod.io/#https://github.com/thuliteio/doks).
+Try Doks in your browser: [open in CodeSandbox](https://codesandbox.io/p/sandbox/github/thuliteio/doks?on=codesandbox) or [open in Gitpod](https://gitpod.io/#https://github.com/thuliteio/doks).
 {{< /callout >}}
 
 ## Quick Start
