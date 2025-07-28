@@ -16,29 +16,40 @@ seo:
 
 Doks is a full-featured documentation theme built on top of the [Thulite](https://thulite.io/) framework. Here you'll find guides, resources, and references to help you build with Doks.
 
+{{< callout context="tip" title="See it in action" icon="outline/rocket" >}}
+Try Doks in your browser: [open in CodeSandbox](https://codesandbox.io/p/sandbox/github/thuliteio/doks?on=codesandbox) or [open in Gitpod](https://gitpod.io/#https://github.com/thuliteio/doks).
+{{< /callout >}}
+
 ## Quick Start
 
-Get a new Doks project up and running locally with our helpful `create-thulite` CLI wizard! After you run the `create` command, you will be asked to enter your project name and install your projects' dependencies.
+Need to create a new documentation site? The commands below will scaffold a new Doks project with all the necessary files and dependencies to get you started quickly. Just choose your preferred package manager:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm create thulite@latest -- --template doks
+npm create thulite@latest my-project -- --template doks
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm create thulite@latest --template doks
+pnpm create thulite my-project --template doks
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn create thulite@latest --template doks
+yarn create thulite my-project --template doks
+```
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite my-project --template doks
 ```
 
 {{< /tab >}}

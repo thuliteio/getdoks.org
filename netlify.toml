@@ -1,16 +1,24 @@
 [build]
   publish = "public"
   functions = "functions"
-  command = "npm run build"
 
 [build.environment]
   NODE_VERSION = "22.17.0"
   NPM_VERSION = "10.9.2"
   HUGO_VERSION = "0.148.1"
 
+[context.production]
+  command = "bun run build"
+
+[context.deploy-preview]
+  command = "bun run build --baseURL $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "bun run build --baseURL $DEPLOY_PRIME_URL"
+
 [dev]
   framework = "#custom"
-  command = "npm run dev"
+  command = "bun run dev"
   targetPort = 1313
   port = 8888
   publish = "public"
