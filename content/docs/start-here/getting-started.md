@@ -3,7 +3,7 @@ title: "Getting Started"
 description: ""
 summary: ""
 date: 2023-09-12T12:07:48+02:00
-lastmod: 2023-09-12T12:07:48+02:00
+lastmod: 2025-07-28T12:00:00+02:00
 draft: false
 weight: 110
 toc: true
