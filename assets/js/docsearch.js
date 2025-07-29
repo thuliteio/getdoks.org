@@ -5,6 +5,7 @@ docsearch({
     appId: 'KMWY81ZWS3',
     indexName: 'getdoks',
     apiKey: '691951526b11e1a708258e4e1a51adc7',
+    // askAi: 'YOUR_ALGOLIA_ASSISTANT_ID',
     insights: true
 });
 

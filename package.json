@@ -16,13 +16,13 @@
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@docsearch/css": "^3.9.0",
-    "@docsearch/js": "^3.9.0",
+    "@docsearch/css": "^4.0.0-beta.5",
+    "@docsearch/js": "^4.0.0-beta.5",
+    "@tabler/icons": "^3.34.1",
     "@thulite/doks-core": "^1.8.3",
     "@thulite/images": "^3.3.1",
     "@thulite/inline-svg": "^1.2.0",
     "@thulite/seo": "^2.4.1",
-    "@tabler/icons": "^3.34.1",
     "thulite": "^2.6.3"
   },
   "devDependencies": {
