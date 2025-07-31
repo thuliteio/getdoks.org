@@ -1,0 +1,47 @@
+# Doks
+
+> Doks is a full-featured documentation theme built on top of the Thulite framework. Everything you need to build a stellar documentation website that is fast, accessible, and easy to use.
+
+Doks provides a modern documentation experience with features like site navigation, search, internationalization, SEO, readable typography, code highlighting, dark mode, and more. Built with Hugo and the Thulite framework, it offers developers a powerful yet simple way to create professional documentation sites.
+
+Key features include:
+
+- Built on Hugo static site generator and Thulite framework
+- Responsive design with light/dark mode toggle
+- Full-text search functionality
+- Internationalization support
+- SEO optimization
+- Built-in analytics support
+- Customizable styling with Bootstrap
+- Rich shortcodes for callouts, tabs, cards, and more
+
+## Documentation
+
+- [Getting Started](/docs/start-here/getting-started/index.md): Introduction to Doks with quick start guide
+- [Installation Guide](/docs/start-here/installation/index.md): Step-by-step installation instructions
+- [Project Structure](/docs/basics/project-structure/index.md): Understanding the Doks file organization
+- [Configuration](/docs/basics/configuration/index.md): Customizing your Doks site
+- [Navigation](/docs/basics/navigation/index.md): Setting up menus and sidebar navigation
+- [Shortcodes](/docs/basics/shortcodes/index.md): Built-in components for rich content
+
+## Guides
+
+- [Customization](/docs/guides/customization/index.md): Customize styling, fonts, and appearance
+- [DocSearch](/docs/recipes/docsearch/index.md): Integrate Algolia DocSearch
+- [Deploy Guide](https://docs.thulite.io/guides/deploy/): Deployment options and instructions
+- [Analytics Guide](https://docs.thulite.io/guides/analytics/): Add analytics to your site
+- [CMS Integration](https://docs.thulite.io/guides/cms/): Content management system options
+
+## Community
+
+- [GitHub Repository](https://github.com/thuliteio/doks): Source code and issue tracking
+- [Discussions](https://github.com/thuliteio/doks/discussions): Community support and discussion
+- [Showcase](/showcase/index.md): Sites built with Doks
+- [Blog](/blog/index.md): Latest updates and announcements
+
+## Optional
+
+- [Upgrade Guides](/docs/start-here/upgrade-doks/index.md): Migration instructions for major versions
+- [Manual Setup](/docs/start-here/manual-setup/index.md): Advanced setup for existing projects
+- [Thulite Documentation](https://docs.thulite.io/): Framework documentation
+- [Hugo Documentation](https://gohugo.io/documentation/): Static site generator docs
