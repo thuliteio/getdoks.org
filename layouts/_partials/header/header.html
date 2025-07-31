@@ -131,7 +131,8 @@
             {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
             {{- $active = or $active (eq .Name $current.Title) -}}
             {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
-            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "authors")) -}}
+            {{- $active = or $active (and (eq .Name "Documentation") (eq $current.Section "docs" )) -}}
+            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
             {{ if .HasChildren -}}
               <li class="nav-item dropdown" data-bs-theme="light">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -306,5 +307,3 @@
 {{ if site.Params.doks.flexSearch -}}
 {{ partial "header/search-modal" . }}
 {{ end -}}
-
-

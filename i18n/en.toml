@@ -1,3 +1,6 @@
+[edit_page]
+other = "Edit on"
+
 [get_started]
 other = "Get Started"
 
@@ -9,3 +12,6 @@ other = "in"
 
 [by]
 other = "by"
+
+[last_updated]
+other = "Last Edited:"
