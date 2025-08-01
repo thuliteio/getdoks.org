@@ -50,13 +50,22 @@
     }
 }
 
-// Copy Markdown button hover effect
-#copy-markdown-btn {
+.btn-ai-wrapper {
+    margin-top: 2rem;
+}
+
+@include media-breakpoint-up(lg) {
+.btn-ai-wrapper {
+    margin-top: 2.5rem;
+}
+}
+
+.btn-ai {
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-        background-color: var(--sl-color-gray-6) !important;
-        border-color: var(--sl-color-gray-5) !important;
+        background-color: var(--sl-color-gray-6);
+        border-color: var(--sl-color-gray-5);
     }
 }
 

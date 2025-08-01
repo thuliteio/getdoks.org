@@ -11,7 +11,7 @@
 		{{ if ne .Params.toc false -}}
 		<nav class="docs-toc{{ if ne site.Params.doks.navbarSticky true }} docs-toc-top{{ end }}{{ if site.Params.doks.headerBar }} docs-toc-offset{{ end }} d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
 			{{ partial "sidebar/docs-toc-desktop.html" . }}
-			{{ partial "sidebar/feedback.html" . }}
+			{{/* partial "sidebar/feedback.html" . */}}
 			{{ if site.Params.add_ons.carbonAds -}}
       	{{ partial "main/carbon-ads" . }}
 			{{ end -}}
@@ -25,13 +25,20 @@
 		{{ else -}}
 		<main class="docs-content col-lg-16 col-xl-9 mx-xl-auto">
 		{{ end -}}
-<!--
+			<div class="d-flex justify-content-start align-items-center btn-ai-wrapper">
+				{{ with .OutputFormats.Get "markdown" -}}
+					<a class="btn btn-sm btn-ai text-reset border" href="https://chatgpt.com/?hints=search&prompt=Read+from+{{ .Permalink | urlquery }}+so+I+can+ask+questions+about+it." target="_blank" role="button">Open in ChatGPT</a>
+					<a class="btn btn-sm btn-ai text-reset border ms-2" href="https://claude.ai/new?q=Please+read+the+content+from+{{ .Permalink | urlquery }}+and+help+me+understand+it." target="_blank" role="button">Open in Claude</a>
+				{{ end -}}
+				<button type="button" id="copy-markdown-btn" class="btn btn-sm btn-ai border ms-2">Copy Markdown</button>
+			</div>
 			{{ if ne .Params.toc false -}}
 			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
 				{{ partial "sidebar/docs-toc-mobile.html" . }}
 			</nav>
 			{{ end -}}
--->
+
+
 			{{ if site.Params.doks.breadcrumbTrail -}}
 				<!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
 				<nav aria-label="breadcrumb">
@@ -41,7 +48,8 @@
 					</ol>
 				</nav>
 			{{ end }}
-			<h1>{{ .Title }}</h1>
+
+			<h1 class="mb-4">{{ .Title }}</h1>
 			<!-- <p class="lead">{{ .Params.lead | safeHTML }}</p> -->
 			{{ if site.Params.doks.headlineHash -}}
 				{{ partial "main/headline-hash" .Content }}
