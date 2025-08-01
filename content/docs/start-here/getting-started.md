@@ -11,7 +11,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Doks is a full-featured documentation theme built on top of the [Thulite](https://thulite.io/) framework. Here you'll find guides, resources, and references to help you build with Doks.

@@ -9,5 +9,5 @@ seo:
   title: "Doks — Build an amazing docs site" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---

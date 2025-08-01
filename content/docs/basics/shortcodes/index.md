@@ -11,7 +11,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Shortcodes let you easily reuse a piece of UI or styling consistently. Examples might include a callout or a video embed. Doks supports the use of shortcodes in Markdown files and provides some common shortcodes for you to use.

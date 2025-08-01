@@ -5,13 +5,13 @@ summary: ""
 date: 2023-09-22T12:17:19+02:00
 lastmod: 2023-09-22T12:17:19+02:00
 draft: false
-weight: 310
+weight: 140
 toc: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 This guide will show you how a Doks project is organized and what the different files in your project do.

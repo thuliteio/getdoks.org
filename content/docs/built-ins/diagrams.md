@@ -11,7 +11,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Use a fenced code block to embed an SVG image of a diagram in your Doks site using the free [Kroki](https://kroki.io/) service.

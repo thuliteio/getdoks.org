@@ -145,13 +145,13 @@
                 <ul class="dropdown-menu shadow rounded border-0">
                   {{ range .Children -}}
                   {{- $active = eq .Name $current.Title -}}
-                    <li><a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}</a></li>
+                    <li><a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}{{with .Post}}{{ . }}{{ end }}</a></li>
                   {{ end -}}
                 </ul>
               </li>
             {{ else -}}
               <li class="nav-item">
-                <a{{with .Post}} target="blank"{{ end }} class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}{{with .Post}}{{ . }}{{ end }}</a>
+                <a{{with .Post}} target="_blank"{{ end }} class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}{{with .Post}}{{ . }}{{ end }}</a>
               </li>
             {{ end -}}
           {{ end -}}

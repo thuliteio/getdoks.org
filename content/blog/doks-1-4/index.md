@@ -16,7 +16,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Doks 1.4 is now available! This release includes a new shortcode for link cards, improved sidebar navigation, and more.

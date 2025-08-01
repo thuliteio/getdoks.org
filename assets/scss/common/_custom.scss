@@ -50,6 +50,16 @@
     }
 }
 
+// Copy Markdown button hover effect
+#copy-markdown-btn {
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+        background-color: var(--sl-color-gray-6) !important;
+        border-color: var(--sl-color-gray-5) !important;
+    }
+}
+
 @include media-breakpoint-up(lg) {
     .section-cards .col-lg-7:nth-child(2n) .card {
         margin-top: 3rem;

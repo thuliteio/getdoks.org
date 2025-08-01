@@ -11,7 +11,7 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Doks comes with FlexSearch preconfigured out of the box. If you want to use [DocSearch](https://docsearch.algolia.com/) in stead, this guide will explain how.

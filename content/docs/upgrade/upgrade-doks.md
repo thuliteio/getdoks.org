@@ -5,13 +5,13 @@ summary: ""
 date: 2023-09-22T16:15:46+02:00
 lastmod: 2023-09-22T16:15:46+02:00
 draft: false
-weight: 140
+weight: 810
 toc: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 This guide covers how to update your version of Doks and related dependencies, how to learn what has changed from one version to the next, and how to understand Doks' versioning system and corresponding documentation updates.

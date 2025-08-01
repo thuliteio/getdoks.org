@@ -17,8 +17,20 @@
   </ul>
 </div>
 -->
+{{ with .OutputFormats.Get "markdown" -}}
+<div class="page-links">
+  <h3>Open this page</h3>
+  <ul class="list-unstyled">
+    <li><a href="https://chatgpt.com/?hints=search&prompt=Read+from+{{ .Permalink | urlquery }}+so+I+can+ask+questions+about+it." target="_blank">Open in ChatGPT</a></li>
+    <li><a href="https://claude.ai/new?q=Please+read+the+content+from+{{ .Permalink | urlquery }}+and+help+me+understand+it." target="_blank">Open in Claude</a></li>
+    <!-- <li><a href="{{ .Permalink }}" target="_blank">View Markdown</a></li> -->
+  </ul>
+</div>
+<button type="button" id="copy-markdown-btn" class="btn btn-sm border mt-4">Copy Markdown</button>
+{{ end -}}
 
-<nav class="section-nav docs-links py-2 my-4">
+<!--
+<nav class="section-nav docs-links p-0 mt-4">
   <ul class="list-unstyled">
     <li>
       <details>
@@ -32,9 +44,9 @@
       </details>
     </li>
     {{ with .OutputFormats.Get "markdown" -}}
-    <li class="mt-3">
+    <li>
       <details>
-        <summary>Use with AI</summary>
+        <summary>Open in AI tools</summary>
         <ul class="list-unstyled list-nested">
           <li><a href="https://chatgpt.com/?hints=search&prompt=Read+from+{{ .Permalink | urlquery }}+so+I+can+ask+questions+about+it." target="_blank">Open in ChatGPT</a></li>
           <li><a href="https://claude.ai/new?q=Please+read+the+content+from+{{ .Permalink | urlquery }}+and+help+me+understand+it." target="_blank">Open in Claude</a></li>
@@ -45,3 +57,4 @@
     {{ end -}}
   </ul>
 </nav>
+-->

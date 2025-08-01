@@ -5,13 +5,13 @@ summary: ""
 date: 2023-09-12T14:09:18+02:00
 lastmod: 2023-09-12T14:09:18+02:00
 draft: true
-weight: 130
+weight: 160
 toc: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
 Estimates for the climate impact of the web industry range from between [2%](https://www.sciencefocus.com/science/what-is-the-carbon-footprint-of-the-internet/) and [4% of global carbon emissions](https://www.bbc.com/future/article/20200305-why-your-internet-habits-are-not-as-clean-as-you-think), roughly equivalent to the emissions of the airline industry. There are many complex factors in calculating the ecological impact of a website, but this guide includes a few tips for reducing the environmental footprint of your docs site.
@@ -72,7 +72,7 @@ These tests with the [Website Carbon Calculator][wcc] compare similar pages buil
 
 | Framework                   | CO₂ per page visit |
 | --------------------------- | ------------------ |
-| [Doks][dk-carbon]           | 0.03g              |
+| [Doks][dk-carbon]           | 0.02g              |
 | [VitePress][vp-carbon]      | 0.05g              |
 | [Docus][dc-carbon]          | 0.09g              |
 | [Sphinx][sx-carbon]         | 0.09g              |
@@ -87,7 +87,7 @@ These tests with the [Website Carbon Calculator][wcc] compare similar pages buil
 
 <small>Data collected on 12 Dec 2023. Click a link to see up-to-date figures.</small>
 
-[dk-carbon]: https://www.websitecarbon.com/website/images-gethyas-com-docs-start-here-getting-started/
+[dk-carbon]: https://www.websitecarbon.com/website/getdoks-org/
 [vp-carbon]: https://www.websitecarbon.com/website/vitepress-dev-guide-what-is-vitepress/
 [dc-carbon]: https://www.websitecarbon.com/website/docus-dev-introduction-getting-started/
 [sx-carbon]: https://www.websitecarbon.com/website/sphinx-doc-org-en-master-usage-quickstart-html/

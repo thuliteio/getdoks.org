@@ -1,13 +1,17 @@
 ---
-title: "Migration Guides"
+title: "Guides"
 description: ""
 summary: ""
-date: 2023-12-23T20:02:32+01:00
-lastmod: 2023-12-23T20:02:32+01:00
+date: 2025-08-01T10:18:06+02:00
+lastmod: 2025-08-01T10:18:06+02:00
 draft: false
+weight: 820
+toc: true
+sidebar:
+  collapsed: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---

@@ -5,25 +5,23 @@ summary: ""
 date: 2024-05-13T20:51:12+02:00
 lastmod: 2025-07-28T12:00:00+02:00
 draft: false
-weight: 115
+weight: 120
 toc: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 
-This guide covers creating a new project with the Thulite CLI, installing dependencies, starting the development server, and adding content to your site. You'll also find instructions for updating Doks and troubleshooting common issues.
+This guide covers creating a new project with the Thulite CLI, installing dependencies, and starting the development server.
 
 ## Prerequisites
 
 - Node.js —[latest LTS version](https://nodejs.org/en/download)
 - Hugo —[latest extended version](https://github.com/gohugoio/hugo/releases/latest)
 
-## Get started
-
-### Create a new project
+## Create a new project
 
 The following commands will start an interactive CLI that guides you through the setup process. Choose the package manager you have installed:
 
@@ -119,7 +117,7 @@ Scaffolding project
 You'll now have a new [project directory](/docs/basics/project-structure/) with all the necessary files and configurations for your site.
 {.mt-3}
 
-### Install dependencies
+## Install dependencies
 
 `cd` into your new project directory and install the dependencies before continuing.
 
@@ -154,7 +152,7 @@ bun install
 {{< /tab >}}
 {{< /tabs >}}
 
-### Start the development server
+## Start the development server
 
 When working locally, [Hugo's development server](https://gohugo.io/commands/hugo_server/) lets you preview your work and automatically refreshes your browser when you make changes.
 
@@ -217,15 +215,16 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-### Add content
+<!--
+## Add content
 
 Doks is ready for you to add new content, or bring your existing files!
 
-#### File formats
+### File formats
 
 Doks supports authoring content in Markdown and HTML with no configuration required. You can add support for Emacs Org-Mode, AsciiDoc, RST, and Pandoc by installing [additional parsers](https://gohugo.io/content-management/formats/#list-of-content-formats).
 
-#### Add pages
+### Add pages
 
 Add new pages to your site by creating `.md` or `.html` files in `content/docs/`. Use sub-folders to organize your files and to create multiple path segments.
 
@@ -253,17 +252,19 @@ seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
-  noindex: false # false (default) or true
+  robots: "" # custom robot tags (optional)
 ---
 ```
+-->
 
-### Next steps
+## Next steps
 
-- **Configure**: Learn about common options in ["Customizing Doks"](/docs/guides/customization/).
-- **Navigate**: Set up your sidebar with the ["Sidebar Navigation"](/docs/basics/navigation/#sidebar) guide.
-- **Shortcodes**: Discover built-in callouts, tabs, and more in the ["Shortcodes"](/docs/basics/shortcodes/) guide.
-- **Deploy**: Publish your work with the ["Deploy your site"](https://docs.thulite.io/guides/deploy/) guide in the Thulite docs.
+- **Configure**: Learn about common options in [Customizing Doks](/docs/guides/customization/).
+- **Navigate**: Set up your sidebar with the [Sidebar Navigation](/docs/basics/navigation/#sidebar) guide.
+- **Shortcodes**: Discover built-in callouts, tabs, and more in the [Shortcodes](/docs/basics/shortcodes/) guide.
+- **Deploy**: Publish your work with the [Deploy your site](https://docs.thulite.io/guides/deploy/) guide in the Thulite docs.
 
+<!--
 ## Updating Doks
 
 Doks is a Thulite theme, and is updated like any `@thulite/*` theme (or integration):
@@ -299,8 +300,12 @@ bun add @thulite/doks-core@latest
 {{< /tab >}}
 {{< /tabs >}}
 
-See the [Doks changelog](https://github.com/thuliteio/doks-core/blob/main/CHANGELOG.md) for a full list of the changes made in each release.
+See the [Doks release notes](https://github.com/thuliteio/doks-core/releases) for a full list of the changes made in each release.
 
+Our [Upgrade Doks](/docs/start-here/upgrade-doks/) has step-by-step instructions for upgrading Doks.
+-->
+
+<!--
 ## Troubleshooting Doks
 
 Use the [project configuration](/docs/reference/configuration/) and [individual page frontmatter configuration](/docs/reference/frontmatter/) reference pages to ensure that your Doks site is configured and functioning properly. See the guides in the sidebar for help adding content and customizing your Doks site.
@@ -308,3 +313,4 @@ Use the [project configuration](/docs/reference/configuration/) and [individual 
 If your answer cannot be found in these docs, please visit the [full Thulite Docs](https://docs.thulite.io/) for complete Thulite documentation. Your question may be answered by understanding how Thulite works in general, underneath this Doks theme.
 
 You can also check for any known [Doks issues on GitHub](https://github.com/thuliteio/doks/issues), and get help in [Doks Discussions](https://github.com/thuliteio/doks/discussions) from our active, friendly community!
+-->

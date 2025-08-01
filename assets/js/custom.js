@@ -1,8 +1,8 @@
 // Put your custom JS code here
 
   document.getElementById('copy-markdown-btn').addEventListener('click', function (e) {
-    e.preventDefault(); // Prevent default link behavior
-    const link = this;
+    e.preventDefault(); // Prevent default button behavior
+    const button = this;
 
     // Get the current page URL and construct the path to the markdown file
     const currentPath = window.location.pathname;
@@ -10,8 +10,8 @@
       currentPath + 'index.md' :
       currentPath + '/index.md';
 
-    // Update link to show loading state
-    link.textContent = '⏳ Loading...';
+    // Update button to show loading state
+    button.textContent = '⏳ Loading...';
 
     // Fetch the markdown file from the public directory
     fetch(markdownPath)
@@ -25,18 +25,18 @@
         return navigator.clipboard.writeText(markdown);
       })
       .then(() => {
-        link.textContent = '✅ Copied';
+        button.textContent = '✅ Copied';
         setTimeout(() => {
-          link.textContent = 'Copy Markdown';
+          button.textContent = 'Copy Markdown';
         }, 2000);
       })
       .catch(err => {
-        link.textContent = '❌ Error';
+        button.textContent = '❌ Error';
         console.error('Failed to copy markdown:', err);
 
-        // Reset link after a delay
+        // Reset button after a delay
         setTimeout(() => {
-          link.textContent = 'Copy Markdown';
+          button.textContent = 'Copy Markdown';
         }, 2000);
       });
   });

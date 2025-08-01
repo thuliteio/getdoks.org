@@ -14653,6 +14653,12 @@ body {
 .section-cards .card-title {
   margin-top: 0; }
 
+#copy-markdown-btn {
+  transition: background-color 0.2s ease-in-out; }
+  #copy-markdown-btn:hover {
+    background-color: var(--sl-color-gray-6) !important;
+    border-color: var(--sl-color-gray-5) !important; }
+
 @media (min-width: 992px) {
   .section-cards .col-lg-7:nth-child(2n) .card {
     margin-top: 3rem;
