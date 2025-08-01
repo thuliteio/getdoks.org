@@ -578,3 +578,13 @@ img,
     top: 68px;
     }
 }
+
+// Fix scroll offset for anchor links when mobile TOC is sticky
+html {
+  scroll-padding-top: 416px;
+
+  @include media-breakpoint-up(lg) {
+    scroll-padding-top: 424px;
+  }
+
+}

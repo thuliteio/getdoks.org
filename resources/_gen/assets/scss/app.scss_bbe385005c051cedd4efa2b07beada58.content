@@ -15082,6 +15082,11 @@ img,
     position: sticky;
     top: 68px; } }
 
+html {
+  scroll-padding-top: 416px; }
+  @media (min-width: 992px) {
+    html {
+      scroll-padding-top: 424px; } }
 /**/
 /*! @docsearch/css Variables 4.0.0-beta.5 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 :root {
