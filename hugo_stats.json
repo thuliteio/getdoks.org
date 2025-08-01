@@ -144,6 +144,7 @@
       "d-lg-flex",
       "d-lg-none",
       "d-none",
+      "d-sm-block",
       "d-xl-block",
       "d-xl-none",
       "diagram",

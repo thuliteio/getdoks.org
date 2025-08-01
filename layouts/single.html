@@ -28,7 +28,7 @@
 			<div class="d-flex justify-content-start align-items-center btn-ai-wrapper">
 				{{ with .OutputFormats.Get "markdown" -}}
 					<a class="btn btn-sm btn-ai text-reset border" href="https://chatgpt.com/?hints=search&prompt=Read+from+{{ .Permalink | urlquery }}+so+I+can+ask+questions+about+it." target="_blank" role="button">Open in ChatGPT</a>
-					<a class="btn btn-sm btn-ai text-reset border ms-2" href="https://claude.ai/new?q=Please+read+the+content+from+{{ .Permalink | urlquery }}+and+help+me+understand+it." target="_blank" role="button">Open in Claude</a>
+					<a class="btn btn-sm btn-ai text-reset border ms-2 d-none d-sm-block" href="https://claude.ai/new?q=Please+read+the+content+from+{{ .Permalink | urlquery }}+and+help+me+understand+it." target="_blank" role="button">Open in Claude</a>
 				{{ end -}}
 				<button type="button" id="copy-markdown-btn" class="btn btn-sm btn-ai border ms-2">Copy Markdown</button>
 			</div>
