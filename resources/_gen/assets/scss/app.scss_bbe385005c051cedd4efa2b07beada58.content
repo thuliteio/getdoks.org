@@ -15055,6 +15055,33 @@ img,
   width: var(--guide-width);
   background-color: var(--sl-color-hairline-light); }
 
+.toc-mobile details {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0; }
+  .toc-mobile details summary {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+
+.toc-mobile .page-links {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+.toc-mobile-sticky {
+  margin: -0.5rem -1.5rem 0;
+  position: sticky;
+  top: 58px;
+  z-index: 1000;
+  background-color: var(--bs-body-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); }
+
+@media (min-width: 992px) {
+  .toc-mobile-sticky {
+    margin: -0.5rem -1.5rem 0;
+    position: sticky;
+    top: 68px; } }
+
 /**/
 /*! @docsearch/css Variables 4.0.0-beta.5 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 :root {
