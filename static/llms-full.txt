@@ -1,0 +1,90 @@
+# Doks
+
+> Doks is a full-featured documentation theme built on top of the Thulite framework. Everything you need to build a stellar documentation website that is fast, accessible, and easy to use.
+
+Doks provides a modern documentation experience with features like site navigation, search, internationalization, SEO, readable typography, code highlighting, dark mode, and more. Built with Hugo and the Thulite framework, it offers developers a powerful yet simple way to create professional documentation sites.
+
+Key features include:
+
+- Built on Hugo static site generator and Thulite framework
+- Responsive design with light/dark mode toggle
+- Full-text search functionality with FlexSearch (or optional DocSearch)
+- Internationalization support
+- SEO optimization with structured data
+- Built-in analytics support
+- Customizable styling with Bootstrap and SCSS
+- Rich shortcodes for callouts, tabs, cards, code blocks, and more
+- Math notation support with KaTeX
+- Diagram support (D2, Mermaid, PlantUML)
+- Content management with Hugo's frontmatter system
+
+## Getting Started
+
+- [Getting Started](/docs/start-here/getting-started/index.md): Introduction to Doks with quick start guide and project creation
+- [Installation Guide](/docs/start-here/installation/index.md): Step-by-step installation instructions using the Thulite CLI
+- [Manual Setup](/docs/start-here/manual-setup/index.md): Adding Doks to an existing Thulite project
+- [Upgrade Guide](/docs/start-here/upgrade-doks/index.md): Migration instructions and version upgrade information
+
+## Core Concepts
+
+- [Project Structure](/docs/basics/project-structure/index.md): Understanding the Doks file organization and Hugo directory structure
+- [Configuration](/docs/basics/configuration/index.md): Customizing your Doks site through Hugo and Thulite configuration files
+- [Navigation](/docs/basics/navigation/index.md): Setting up menus, sidebar navigation, and content organization
+- [Shortcodes](/docs/basics/shortcodes/index.md): Built-in components for rich content including callouts, tabs, cards, and more
+
+## Built-in Features
+
+- [Code Blocks](/docs/built-ins/code-blocks/index.md): Syntax highlighting, line numbers, and code block customization
+- [Math Notation](/docs/built-ins/math/index.md): KaTeX integration for mathematical expressions and formulas
+- [Diagrams](/docs/built-ins/diagrams/index.md): Support for D2, Mermaid, and PlantUML diagram rendering
+
+## Customization Guides
+
+- [Customization](/docs/guides/customization/index.md): Customize styling, fonts, colors, and overall appearance
+- [Internationalization](/docs/guides/i18n/index.md): Multi-language site setup and content translation
+- [DocSearch](/docs/recipes/docsearch/index.md): Integrate Algolia DocSearch for enhanced search functionality
+- [Analytics](/docs/recipes/analytics/index.md): Add Google Analytics, Plausible, or other analytics services
+- [CMS Integration](/docs/recipes/cms/index.md): Connect with headless CMS solutions
+- [Versioning](/docs/recipes/versioning/index.md): Document versioning and maintenance strategies
+
+## Reference Documentation
+
+- [Configuration Reference](/docs/reference/configuration/index.md): Complete configuration options for Hugo and Doks parameters
+- [Frontmatter Reference](/docs/reference/frontmatter/index.md): All available frontmatter properties for pages
+- [Markdown Reference](/docs/reference/markdown-basic/index.md): Basic and extended Markdown syntax support
+- [Extended Markdown](/docs/reference/markdown-extended/index.md): Doks-specific Markdown extensions and enhancements
+
+## Framework Documentation
+
+- [Deploy Guide](https://docs.thulite.io/guides/deploy/): Deployment options for Netlify, Vercel, GitHub Pages, and more
+- [Thulite Documentation](https://docs.thulite.io/): Complete framework documentation for the underlying Thulite system
+- [Hugo Documentation](https://gohugo.io/documentation/): Static site generator documentation for advanced Hugo features
+
+## Community and Development
+
+- [GitHub Repository](https://github.com/thuliteio/doks): Source code, issue tracking, and contributions
+- [GitHub Discussions](https://github.com/thuliteio/doks/discussions): Community support and discussion forum
+- [Showcase](/showcase/index.md): Real-world sites built with Doks for inspiration
+- [Blog](/blog/index.md): Latest updates, announcements, and development news
+- [Contributors](/contributors/index.md): Community contributors and maintainers
+
+## Migration and Upgrades
+
+- [Upgrade to v1](/upgrade-guides/upgrade-to-v1/index.md): Major version upgrade guide with breaking changes
+- [Upgrade to v1.3](/upgrade-guides/v-1-3/index.md): Minor version upgrade with new features and improvements
+- [Changelog](https://github.com/thuliteio/doks-core/blob/main/CHANGELOG.md): Complete version history and release notes
+
+## Development and Build Process
+
+Doks uses modern web development tools and follows Hugo's conventions:
+
+- **Hugo**: Static site generator for fast, secure websites
+- **Thulite**: Framework providing integrations and enhanced functionality
+- **Bootstrap**: CSS framework for responsive design and components
+- **SCSS**: Enhanced CSS with variables, mixins, and modular styling
+- **FlexSearch**: Client-side search with no external dependencies
+- **KaTeX**: Fast math typesetting for mathematical notation
+- **Tabler Icons**: Beautiful SVG icon set
+- **Node.js ecosystem**: NPM/Yarn/PNPM/Bun package management
+
+The build process compiles SCSS to CSS, processes JavaScript, optimizes images, and generates static HTML files that can be deployed to any web server or CDN.

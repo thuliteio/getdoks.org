@@ -1,0 +1,62 @@
+# Doks
+
+> Doks is a full-featured documentation theme built on top of the Thulite framework. Everything you need to build a stellar documentation website that is fast, accessible, and easy to use.
+
+Doks provides a modern documentation experience with features like site navigation, search, internationalization, SEO, readable typography, code highlighting, dark mode, and more. Built with Hugo and the Thulite framework, it offers developers a powerful yet simple way to create professional documentation sites.
+
+Key features include:
+
+- Built on Hugo static site generator and Thulite framework
+- Responsive design with light/dark mode toggle
+- Full-text search functionality with FlexSearch
+- Internationalization support
+- SEO optimization with structured data
+- Customizable styling with Bootstrap and SCSS
+- Rich shortcodes for callouts, tabs, cards, and more
+
+## Getting Started
+
+- [Getting Started](/docs/start-here/getting-started/index.md): Introduction to Doks with quick start guide
+- [Installation Guide](/docs/start-here/installation/index.md): Step-by-step installation instructions
+- [Project Structure](/docs/basics/project-structure/index.md): Understanding the Doks file organization
+- [Configuration](/docs/basics/configuration/index.md): Customizing your Doks site
+
+## Core Features
+
+- [Navigation](/docs/basics/navigation/index.md): Setting up menus and sidebar navigation
+- [Shortcodes](/docs/basics/shortcodes/index.md): Built-in components for rich content
+- [Customization](/docs/guides/customization/index.md): Customize styling, fonts, and appearance
+- [Code Blocks](/docs/built-ins/code-blocks/index.md): Syntax highlighting and code display
+
+## Reference
+
+- [Configuration Reference](/docs/reference/configuration/index.md): Complete configuration options
+- [Frontmatter Reference](/docs/reference/frontmatter/index.md): Page frontmatter properties
+- [Markdown Reference](/docs/reference/markdown-basic/index.md): Markdown syntax support
+
+## Community
+
+- [GitHub Repository](https://github.com/thuliteio/doks): Source code and issue tracking
+- [GitHub Discussions](https://github.com/thuliteio/doks/discussions): Community support
+- [Showcase](/showcase/index.md): Sites built with Doks
+- [Blog](/blog/index.md): Latest updates and announcements
+
+## Framework Links
+
+- [Thulite Documentation](https://docs.thulite.io/): Framework documentation
+- [Hugo Documentation](https://gohugo.io/documentation/): Static site generator docs
+
+## Optional
+
+- [Upgrade Guides](/docs/start-here/upgrade-doks/index.md): Migration instructions for major versions
+- [Manual Setup](/docs/start-here/manual-setup/index.md): Advanced setup for existing projects
+- [DocSearch](/docs/recipes/docsearch/index.md): Integrate Algolia DocSearch for enhanced search
+- [Analytics](/docs/recipes/analytics/index.md): Add analytics services to your site
+- [CMS Integration](/docs/recipes/cms/index.md): Content management system options
+- [Versioning](/docs/recipes/versioning/index.md): Document versioning strategies
+- [Internationalization](/docs/guides/i18n/index.md): Multi-language site setup
+- [Math Notation](/docs/built-ins/math/index.md): KaTeX integration for mathematical expressions
+- [Diagrams](/docs/built-ins/diagrams/index.md): D2, Mermaid, and PlantUML diagram support
+- [Extended Markdown](/docs/reference/markdown-extended/index.md): Doks-specific Markdown extensions
+- [Deploy Guide](https://docs.thulite.io/guides/deploy/): Deployment options and instructions
+- [Migration Guides](/upgrade-guides/upgrade-to-v1/index.md): Version upgrade instructions
