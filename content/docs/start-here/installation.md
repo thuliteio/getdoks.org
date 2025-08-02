@@ -1,7 +1,7 @@
 ---
 title: "Installation"
-description: ""
-summary: ""
+description: "This guide covers creating a new project with the Thulite CLI, installing dependencies, and starting the development server."
+summary: "This guide covers creating a new project with the Thulite CLI, installing dependencies, and starting the development server."
 date: 2024-05-13T20:51:12+02:00
 lastmod: 2025-07-28T12:00:00+02:00
 draft: false
@@ -13,8 +13,6 @@ seo:
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
 ---
-
-This guide covers creating a new project with the Thulite CLI, installing dependencies, and starting the development server.
 
 ## Prerequisites
 

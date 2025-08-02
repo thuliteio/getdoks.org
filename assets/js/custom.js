@@ -1,19 +1,5 @@
 // Put your custom JS code here
 
-// Auto-close mobile TOC details when clicking on a link
-document.addEventListener('click', function(e) {
-  // Check if the clicked element is a link inside the mobile TOC
-  if (e.target.tagName === 'A' && e.target.closest('.toc-mobile .page-links')) {
-    const details = e.target.closest('details');
-    if (details) {
-      // Close the details element after a short delay to allow navigation
-      setTimeout(() => {
-        details.open = false;
-      }, 100);
-    }
-  }
-});
-
 const copyMarkdownBtn = document.getElementById('copy-markdown-btn');
 if (copyMarkdownBtn) {
   copyMarkdownBtn.addEventListener('click', function (e) {

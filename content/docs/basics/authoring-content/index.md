@@ -1,7 +1,7 @@
 ---
 title: "Authoring Content"
-description: ""
-summary: ""
+description: "Learn how to author content in Doks using Markdown, customize pages with frontmatter, add images, headings, code blocks, and more."
+summary: "Learn how to author content in Doks using Markdown, customize pages with frontmatter, add images, headings, code blocks, and more."
 date: 2023-09-12T16:10:28+02:00
 lastmod: 2023-09-12T16:10:28+02:00
 draft: false
@@ -14,6 +14,8 @@ seo:
   robots: "" # custom robot tags (optional)
 slug: "authoring-content"
 ---
+
+## Markdown
 
 Doks supports the full range of [Markdown](https://daringfireball.net/projects/markdown/) syntax in `.md` files as well as frontmatter [YAML](https://yaml.org/spec/1.2.2/), [TOML](https://toml.io/en/), or [JSON](https://www.json.org/json-en.html) to define metadata such as a title and description.
 

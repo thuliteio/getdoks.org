@@ -13,7 +13,6 @@ seo:
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
 ---
-Learn how to edit, build, preview, and deploy your Doks project using popular package managers.
 
 ## Edit your project
 
