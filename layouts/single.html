@@ -46,20 +46,24 @@
 			<h1 class="mb-4">{{ .Title }}</h1>
 			<p>{{ .Params.summary }}</p>
 
-			<!--
+			{{ if and (ne .Params.toc false) (partial "private/has-headings.html" .) -}}
+			<nav class="toc-mobile toc-mobile-sticky d-xl-none" aria-label="Quaternary navigation">
+				<details>
+					<summary>{{ i18n "on_this_page" }}</summary>
+					<div class="page-links">
+						{{ .TableOfContents }}
+					</div>
+				</details>
+			</nav>
+			{{ end -}}
+
+<!--
 			{{ if ne .Params.toc false -}}
 			<nav class="toc-mobile toc-mobile-sticky d-xl-none" aria-label="Quaternary navigation">
 				{{ partial "sidebar/docs-toc-mobile.html" . }}
 			</nav>
 			{{ end -}}
-			-->
-
-			{{ if and (ne .Params.toc false) (partial "private/has-headings.html" .) -}}
-				<div class="page-links d-xl-none">
-					<h2 class="h3">{{ i18n "on_this_page" }}</h2>
-					{{ .TableOfContents }}
-				</div>
-			{{ end -}}
+-->
 
 			{{ if site.Params.doks.headlineHash -}}
 				{{ partial "main/headline-hash" .Content }}
