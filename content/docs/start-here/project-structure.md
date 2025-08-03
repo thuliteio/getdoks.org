@@ -14,6 +14,8 @@ seo:
   robots: "" # custom robot tags (optional)
 ---
 
+## Thulite structure
+
 Doks projects generally follow the same file and directory structure as other Thulite projects. See [Thulite' project structure documentation](https://docs.thulite.io/basics/project-structure/) for more detail.
 
 ## Files and directories
