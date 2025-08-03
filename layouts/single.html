@@ -25,6 +25,13 @@
 		{{ else -}}
 		<main class="docs-content col-lg-16 col-xl-9 mx-xl-auto">
 		{{ end -}}
+
+			{{ if ne .Params.toc false -}}
+			<nav class="toc-mobile toc-mobile-sticky d-xl-none" aria-label="Quaternary navigation">
+				{{ partial "sidebar/docs-toc-mobile.html" . }}
+			</nav>
+			{{ end -}}
+
 			<div class="d-flex justify-content-start align-items-center btn-ai-wrapper">
 				{{ with .OutputFormats.Get "markdown" -}}
 					<a class="btn btn-sm btn-ai text-reset border" href="https://chatgpt.com/?hints=search&prompt=Read+from+{{ .Permalink | urlquery }}+so+I+can+ask+questions+about+it." target="_blank" role="button">Open in ChatGPT</a>
@@ -45,17 +52,6 @@
 
 			<h1 class="mb-4">{{ .Title }}</h1>
 			<p>{{ .Params.summary }}</p>
-
-			{{ if and (ne .Params.toc false) (partial "private/has-headings.html" .) -}}
-			<nav class="toc-mobile toc-mobile-sticky d-xl-none" aria-label="Quaternary navigation">
-				<details>
-					<summary>{{ i18n "on_this_page" }}</summary>
-					<div class="page-links">
-						{{ .TableOfContents }}
-					</div>
-				</details>
-			</nav>
-			{{ end -}}
 
 <!--
 			{{ if ne .Params.toc false -}}

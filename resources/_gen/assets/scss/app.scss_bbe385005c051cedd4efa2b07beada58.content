@@ -15066,6 +15066,58 @@ img,
     margin-top: -5.5rem !important;
     content: ""; } }
 
+.navbar {
+  background-color: var(--bs-body-bg) !important; }
+
+.toc-mobile-sticky {
+  position: sticky;
+  top: 58px;
+  z-index: 10;
+  background-color: var(--bs-body-bg);
+  margin: -32px -24px 60px; }
+  .toc-mobile-sticky details {
+    border-top: 0; }
+    .toc-mobile-sticky details summary {
+      padding-left: 24px;
+      padding-right: 24px; }
+    .toc-mobile-sticky details .page-links {
+      padding-left: 8px;
+      padding-right: 8px; }
+
+@media (min-width: 992px) {
+  .toc-mobile-sticky {
+    position: sticky;
+    top: 68px; }
+    .toc-mobile-sticky details {
+      border-top: 0;
+      border-left: 0; } }
+
+[data-bs-theme="dark"] .toc-mobile-sticky {
+  background-color: var(--bs-body-bg);
+  border-bottom-color: var(--bs-border-color); }
+
+@media (max-width: 1199.98px) {
+  .docs-content > h2[id]::before, .docs-content > [id].h2::before,
+  .docs-content > h3[id]::before,
+  .docs-content > [id].h3::before,
+  .docs-content > h4[id]::before,
+  .docs-content > [id].h4::before {
+    display: block;
+    height: 144px !important;
+    margin-top: -144px !important;
+    content: ""; } }
+
+@media (max-width: 991.98px) {
+  .docs-content > h2[id]::before, .docs-content > [id].h2::before,
+  .docs-content > h3[id]::before,
+  .docs-content > [id].h3::before,
+  .docs-content > h4[id]::before,
+  .docs-content > [id].h4::before {
+    display: block;
+    height: 128px !important;
+    margin-top: -128px !important;
+    content: ""; } }
+
 /**/
 /*! @docsearch/css Variables 4.0.0-beta.5 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 :root {
