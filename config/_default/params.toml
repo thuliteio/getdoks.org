@@ -9,8 +9,9 @@ mainSections = ["docs", "upgrade-guides"]
 # Global alert
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-6/">Doks 1.6 is out!</a>'
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-4/">Doks 1.4 is here!</a>'
-alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://thulite.io/anna/?utm_source=getdoks&utm_medium=banner&utm_campaign=promotion">Anna will ship soon!</a>'
+# alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://thulite.io/anna/?utm_source=getdoks&utm_medium=banner&utm_campaign=promotion">Anna will ship soon!</a>'
 # alertText = '<strong>Cyber Sale</strong>! <a class="alert-link stretched-link text-decoration-none fw-normal" href="https://store.thulite.io/vermeer/?utm_source=doks&utm_medium=banner&utm_campaign=cyber_sale">Get Vermeer at 40% off with code <strong>THULITE40</strong></a>'
+alertText = '<a class="alert-link stretched-link fw-normal" href="/docs/upgrade/guides/doks-v1.8/">Upgrade to Doks v1.8!</a>'
 
 # Footer
 footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\">Thulite</a>"
@@ -54,7 +55,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = false # false (default) or true
+  alert = true # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap
