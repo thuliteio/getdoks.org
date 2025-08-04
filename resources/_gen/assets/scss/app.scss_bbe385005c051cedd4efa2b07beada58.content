@@ -15118,6 +15118,20 @@ img,
     margin-top: -128px !important;
     content: ""; } }
 
+.toc-mobile details summary::after {
+  display: inline-block;
+  content: url("data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9ImN1cnJlbnRDb2xvciIgIHN0cm9rZS13aWR0aD0iMiIgIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgIHN0cm9rZS1saW5lam9pbj0icm91bmQiICBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1tZW51LWRlZXAiPjxwYXRoIHN0cm9rZT0ibm9uZSIgZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik00IDZoMTYiIC8+PHBhdGggZD0iTTcgMTJoMTMiIC8+PHBhdGggZD0iTTEwIDE4aDEwIiAvPjwvc3ZnPg==");
+  transition: transform 0.35s ease;
+  transform-origin: center center;
+  position: absolute;
+  right: 1rem; }
+
+.toc-mobile details[open] > summary::after {
+  transform: none; }
+
+[data-bs-theme="dark"] .toc-mobile details summary::after {
+  content: url("data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9InJnYmEoMjIyLCAyMjYsIDIzMCwgMC43NSkiICBzdHJva2Utd2lkdGg9IjIiICBzdHJva2UtbGluZWNhcD0icm91bmQiICBzdHJva2UtbGluZWpvaW49InJvdW5kIiAgY2xhc3M9Imljb24gaWNvbi10YWJsZXIgaWNvbnMtdGFibGVyLW91dGxpbmUgaWNvbi10YWJsZXItbWVudS1kZWVwIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNNCA2aDE2IiAvPjxwYXRoIGQ9Ik03IDEyaDEzIiAvPjxwYXRoIGQ9Ik0xMCAxOGgxMCIgLz48L3N2Zz4="); }
+
 /**/
 /*! @docsearch/css Variables 4.0.0-beta.5 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 :root {
