@@ -595,10 +595,10 @@ img,
     }
 }
 
-// Adjust the top margin of the On this page section for mobile, when the global alert is open
+// Adjust the vertical margin of the On this page section for mobile, when the global alert is open
 #announcement + div .toc-mobile-sticky,
 #announcement ~ * .toc-mobile-sticky {
-    margin: -8px -24px 60px;
+    margin: -8px -24px 36px;
 }
 
 @include color-mode(dark) {
