@@ -595,6 +595,12 @@ img,
     }
 }
 
+// When alert is present (not dismissed), adjust the margin
+#announcement + div .toc-mobile-sticky,
+#announcement ~ * .toc-mobile-sticky {
+    margin: -8px -24px 60px;
+}
+
 @include color-mode(dark) {
     .toc-mobile-sticky {
         background-color: var(--bs-body-bg);

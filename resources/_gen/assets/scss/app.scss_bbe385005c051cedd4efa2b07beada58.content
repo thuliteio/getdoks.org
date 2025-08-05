@@ -15092,6 +15092,10 @@ img,
       border-top: 0;
       border-left: 0; } }
 
+#announcement + div .toc-mobile-sticky,
+#announcement ~ * .toc-mobile-sticky {
+  margin: -8px -24px 60px; }
+
 [data-bs-theme="dark"] .toc-mobile-sticky {
   background-color: var(--bs-body-bg);
   border-bottom-color: var(--bs-border-color); }
