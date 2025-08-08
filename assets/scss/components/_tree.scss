@@ -1,0 +1,33 @@
+// Tree
+.tree {
+  margin: 1.5rem 0;
+  padding: 1rem 0.5rem 0.5rem;
+  background-color: var(--sl-color-gray-6);
+  border: 1px solid var(--sl-color-gray-5);
+  font-size: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.tree ul {
+  list-style-type: none;
+  padding-left: 1rem;
+}
+
+.tree ul li {
+  padding: 0;
+}
+
+.tree ul li ul {
+  padding-left: 1rem;
+  border-left: 1px solid var(--sl-color-gray-5);
+  margin: 0 0 0 10px;
+}
+
+.content .tree .svg-inline {
+  height: 1.25rem;
+  width: 1.25rem;
+  stroke-width: 1.5;
+  margin-bottom: 0.125rem;
+  margin-right: 0.0625rem;
+}

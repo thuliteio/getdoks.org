@@ -63,7 +63,6 @@
 @import "common/global";
 @import "common/syntax";
 @import "common/dark";
-@import "components/ads";
 @import "components/alerts";
 @import "components/buttons";
 @import "components/callouts";
@@ -92,6 +91,9 @@ body {
 */
 
 // 9. Custom styles
+@import "components/ads";
+@import "components/preview";
+@import "components/tree";
 @import "common/custom";
 
 // 10. DocSearch
