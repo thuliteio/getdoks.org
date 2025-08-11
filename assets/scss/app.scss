@@ -92,6 +92,7 @@ body {
 
 // 9. Custom styles
 @import "components/ads";
+@import "components/basicLightbox";
 @import "components/preview";
 @import "components/tree";
 @import "common/custom";
@@ -102,6 +103,3 @@ body {
 
 // @import "@docsearch/css/dist/button";
 @import "@docsearch/css/dist/modal";
-
-// Import basicLightbox
-@import "components/basicLightbox"
