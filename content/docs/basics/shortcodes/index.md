@@ -289,7 +289,7 @@ Display an image from the assets directory:
 {{< figure
 src="images/vincent-van-zalinge-kK6c4Bkw-unsplash.jpg"
 alt="A small bird sitting on top of a dry grass field"
-caption="A small bird sitting on top of a dry grass field. Photo by Vincent van Zalinge"
+caption="A small bird sitting on top of a dry grass field. Photo by Vincent van Zalinge" class="lightbox"
 >}}
 
 ## Video

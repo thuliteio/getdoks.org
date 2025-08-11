@@ -15177,6 +15177,9 @@ img,
 [data-bs-theme="dark"] .toc-mobile details summary::after {
   content: url("data:image/svg+xml;base64,PHN2ZyAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjI0IiAgaGVpZ2h0PSIyNCIgIHZpZXdCb3g9IjAgMCAyNCAyNCIgIGZpbGw9Im5vbmUiICBzdHJva2U9InJnYmEoMjIyLCAyMjYsIDIzMCwgMC43NSkiICBzdHJva2Utd2lkdGg9IjIiICBzdHJva2UtbGluZWNhcD0icm91bmQiICBzdHJva2UtbGluZWpvaW49InJvdW5kIiAgY2xhc3M9Imljb24gaWNvbi10YWJsZXIgaWNvbnMtdGFibGVyLW91dGxpbmUgaWNvbi10YWJsZXItbWVudS1kZWVwIj48cGF0aCBzdHJva2U9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNNCA2aDE2IiAvPjxwYXRoIGQ9Ik03IDEyaDEzIiAvPjxwYXRoIGQ9Ik0xMCAxOGgxMCIgLz48L3N2Zz4="); }
 
+.lightbox:hover {
+  cursor: pointer; }
+
 /**/
 /*! @docsearch/css Variables 4.0.0-beta.5 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
 :root {
@@ -16314,5 +16317,77 @@ svg.DocSearch-Hit-Select-Icon {
 
 .DocSearch-Markdown-Content--streaming .DocSearch-CodeSnippet-CopyButton {
   display: none; }
+
+.basicLightbox {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--sl-color-black);
+  opacity: .01;
+  transition: opacity 0 ease, backdrop-filter 0 ease;
+  z-index: 1020;
+  will-change: opacity; }
+  .basicLightbox--visible {
+    opacity: 1;
+    backdrop-filter: blur(16px); }
+  .basicLightbox__placeholder {
+    max-width: 100%;
+    transform: scale(0.9);
+    transition: transform 0 ease;
+    z-index: 1;
+    will-change: transform; }
+    .basicLightbox__placeholder > img:first-child:last-child,
+    .basicLightbox__placeholder > video:first-child:last-child,
+    .basicLightbox__placeholder > iframe:first-child:last-child {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      max-width: 95%;
+      max-height: 95%; }
+    .basicLightbox__placeholder > video:first-child:last-child,
+    .basicLightbox__placeholder > iframe:first-child:last-child {
+      pointer-events: auto; }
+    .basicLightbox__placeholder > img:first-child:last-child,
+    .basicLightbox__placeholder > video:first-child:last-child {
+      width: auto;
+      height: auto; }
+  .basicLightbox--img .basicLightbox__placeholder, .basicLightbox--video .basicLightbox__placeholder, .basicLightbox--iframe .basicLightbox__placeholder {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; }
+  .basicLightbox--visible .basicLightbox__placeholder {
+    transform: scale(1); }
+
+body:has(.basicLightbox--visible) {
+  overflow: hidden; }
+
+.basicLightbox::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2em;
+  height: 2em;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>') 0% 0%/contain no-repeat;
+  cursor: pointer; }
+
+[data-bs-theme="dark"] .basicLightbox::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2em;
+  height: 2em;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>') 0% 0%/contain no-repeat;
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

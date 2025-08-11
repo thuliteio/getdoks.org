@@ -652,3 +652,10 @@ img,
     }
 }
 }
+
+// Hand cursor on image hover
+.lightbox {
+    &:hover {
+        cursor: pointer;
+    }
+}

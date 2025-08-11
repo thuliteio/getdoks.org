@@ -1,0 +1,104 @@
+// Vars ---------------------------------------------------------------- //
+$basicLightbox__background: var(--sl-color-black);
+$basicLightbox__zIndex: 1020; // 1000 (default)
+$basicLightbox__duration: 0; // .4s (default)
+$basicLightbox__timing: ease; // ease (default)
+
+// basicLightbox ------------------------------------------------------- //
+.basicLightbox {
+
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: $basicLightbox__background;
+	opacity: .01; // Start with .01 to avoid the repaint that happens from 0 to .01
+	transition: opacity $basicLightbox__duration $basicLightbox__timing, backdrop-filter $basicLightbox__duration $basicLightbox__timing;
+	z-index: $basicLightbox__zIndex;
+	will-change: opacity;
+
+	&--visible {
+		opacity: 1;
+		backdrop-filter: blur(16px);
+	}
+
+	&__placeholder {
+		max-width: 100%;
+		transform: scale(.9);
+		transition: transform $basicLightbox__duration $basicLightbox__timing;
+		z-index: 1;
+		will-change: transform;
+
+		> img:first-child:last-child,
+		> video:first-child:last-child,
+		> iframe:first-child:last-child {
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			max-width: 95%;
+			max-height: 95%;
+		}
+
+		> video:first-child:last-child,
+		> iframe:first-child:last-child {
+			pointer-events: auto;
+		}
+
+		> img:first-child:last-child,
+		> video:first-child:last-child {
+			width: auto;
+			height: auto;
+		}
+	}
+
+	&--img &__placeholder,
+	&--video &__placeholder,
+	&--iframe &__placeholder {
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+	}
+
+	&--visible &__placeholder {
+		transform: scale(1);
+	}
+
+}
+
+// Hide body scrollbar when lightbox is visible
+body:has(.basicLightbox--visible) {
+	overflow: hidden;
+}
+
+//
+.basicLightbox::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2em;
+    height: 2em;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>') 0% 0% / contain no-repeat;
+    cursor: pointer;
+}
+
+@include color-mode(dark) {
+  .basicLightbox::after {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 2em;
+      height: 2em;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>') 0% 0% / contain no-repeat;
+      cursor: pointer;
+  }
+}

@@ -87,7 +87,7 @@ This will log a message to your terminal with the URL of your local preview. Ope
 
 {{< preview >}}
 
-{{< img lqip="16x webp q20" loading="lazy" src="doks-screenshot.jpg" alt="Doks screenshot" >}}
+{{< img lqip="16x webp q20" loading="lazy" src="doks-screenshot.jpg" alt="Doks screenshot" class="lightbox" >}}
 
 {{< /preview >}}
 

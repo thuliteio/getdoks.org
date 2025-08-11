@@ -62,6 +62,7 @@ Images in Doks use [Thulite' Images integration](https://images.thulite.io/).
 Thulite Images supports the [Markdown syntax for displaying images](https://www.markdownguide.org/basic-syntax/#images-1) that includes alt-text for screen readers and assistive technology.
 
 ![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
+{.lightbox}
 
 ```md
 ![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
