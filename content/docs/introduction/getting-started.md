@@ -66,7 +66,7 @@ bun create thulite my-project --template doks
 {{< /tab >}}
 {{< /tabs >}}
 
-After running the command, you'll see output similar to this. Follow the instructions to install your project's dependencies and start your development server.
+After running the command, you'll see output similar to this.
 
 ```txt {frame="none"}
 > npx
@@ -83,7 +83,9 @@ After running the command, you'll see output similar to this. Follow the instruc
 
 ```
 
-This will log a message to your terminal with the URL of your local preview. Open this —clickable— URL to start browsing your site.
+Follow the instructions in your terminal to install your project's dependencies and start your development server.
+
+This will log a message to your terminal with the URL of your local preview. Open this—clickable—URL to start browsing your site.
 
 {{< preview >}}
 
