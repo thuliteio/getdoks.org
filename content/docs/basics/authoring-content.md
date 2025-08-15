@@ -5,7 +5,7 @@ summary: "Learn how to author content in Doks using Markdown, customize pages wi
 date: 2023-09-12T16:10:28+02:00
 lastmod: 2023-09-12T16:10:28+02:00
 draft: false
-weight: 320
+weight: 240
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -61,11 +61,10 @@ Images in Doks use [Thulite' Images integration](https://images.thulite.io/).
 
 Thulite Images supports the [Markdown syntax for displaying images](https://www.markdownguide.org/basic-syntax/#images-1) that includes alt-text for screen readers and assistive technology.
 
-![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
-{.lightbox}
+![A small bird standing on the ground next to a body of water](images/vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
 
 ```md
-![A small bird standing on the ground next to a body of water](vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
+![A small bird standing on the ground next to a body of water](images/vincent-van-zalinge-ip3v0lN8rQg-unsplash.jpg)
 ```
 
 ## Headings

@@ -105,7 +105,7 @@ _italicized text_
 ## Image
 
 ```md
-![A yellow and black bird sitting on top of a body of water](vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)
+![A yellow and black bird sitting on top of a body of water](images/vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)
 ```
 
-![A yellow and black bird sitting on top of a body of water](vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)
+![A yellow and black bird sitting on top of a body of water](images/vincent-van-zalinge-e5VzJJDODbQ-unsplash.jpg)

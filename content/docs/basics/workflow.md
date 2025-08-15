@@ -5,7 +5,7 @@ summary: "Learn how to edit, build, preview, and deploy your Doks project using 
 date: 2024-10-10T09:06:42+02:00
 lastmod: 2025-08-08T09:06:42+02:00
 draft: false
-weight: 150
+weight: 230
 toc: true
 seo:
   title: "" # custom title (optional)

@@ -5,7 +5,7 @@ summary: "This guide covers creating a new project with the Thulite CLI, install
 date: 2024-05-13T20:51:12+02:00
 lastmod: 2025-07-28T12:00:00+02:00
 draft: false
-weight: 120
+weight: 210
 toc: true
 seo:
   title: "" # custom title (optional)

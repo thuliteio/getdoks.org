@@ -1,11 +1,11 @@
 ---
-title: "Configuration"
+title: "Lightbox"
 description: ""
 summary: ""
-date: 2024-09-02T13:21:45+02:00
-lastmod: 2024-09-02T13:21:45+02:00
+date: 2025-08-15T16:56:10+02:00
+lastmod: 2025-08-15T16:56:10+02:00
 draft: false
-weight: 260
+weight: 999
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -13,3 +13,5 @@ seo:
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
 ---
+
+- [basicLightbox](https://basiclightbox.electerious.com/)
