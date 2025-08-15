@@ -13,3 +13,13 @@ seo:
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
 ---
+
+## llms.txt
+
+- [llms.txt](/llms.txt)
+- [llms-small.txt](/llms-small.txt)
+- [llms-full.txt](/llms-full.txt)
+
+## Markdown
+
+- [View Markdown](/docs/extending/llms/index.md)
