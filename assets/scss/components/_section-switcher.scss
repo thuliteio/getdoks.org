@@ -1,0 +1,54 @@
+// Section navigation
+.section-nav {
+    padding: 0;
+}
+
+// Section switcher dropdown
+.section-switcher {
+    margin-top: 1.5rem;
+    font-size: 0.75rem;
+
+    // Common styles for hover, focus, active states
+    %interactive-state {
+        background-color: var(--sl-color-gray-6);
+        border-color: var(--bs-border-color);
+        color: inherit;
+    }
+
+    .dropdown-toggle {
+        min-height: 44px;
+        border: 1px solid var(--bs-border-color);
+        background-color: inherit;
+        color: inherit;
+        transition: none;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.show {
+            @extend %interactive-state;
+        }
+    }
+
+    .dropdown-menu {
+        border: 1px solid var(--bs-border-color);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        background-color: var(--sl-color-black);
+
+        .dropdown-item {
+            padding: 0.5rem 1rem;
+            transition: none;
+            color: inherit;
+
+            &:hover,
+            &.active,
+            &.active:hover {
+                @extend %interactive-state;
+            }
+
+            .icon {
+                flex-shrink: 0;
+            }
+        }
+    }
+}

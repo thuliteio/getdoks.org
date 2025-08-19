@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "Quick Start"
 description: "Doks is a modern documentation theme for Hugo. In this quick start, you’ll install Doks, create your first page, and run your site locally — in under 5 minutes."
 summary: "Doks is a modern documentation theme for Hugo. In this quick start, you’ll install Doks, create your first page, and run your site locally — in under 5 minutes."
 date: 2023-09-12T12:07:48+02:00

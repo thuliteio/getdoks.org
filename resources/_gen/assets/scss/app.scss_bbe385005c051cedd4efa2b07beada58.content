@@ -14705,6 +14705,33 @@ body:has(.basicLightbox--visible) {
   .preview-figure .preview-content {
     padding: 1rem; }
 
+.section-nav {
+  padding: 0; }
+
+.section-switcher {
+  margin-top: 1.5rem;
+  font-size: 0.75rem; }
+  .section-switcher .dropdown-menu .dropdown-item:hover, .section-switcher .dropdown-menu .dropdown-item.active, .section-switcher .dropdown-menu .dropdown-item.active:hover, .section-switcher .dropdown-toggle:hover, .section-switcher .dropdown-toggle:focus, .section-switcher .dropdown-toggle:active, .section-switcher .dropdown-toggle.show {
+    background-color: var(--sl-color-gray-6);
+    border-color: var(--bs-border-color);
+    color: inherit; }
+  .section-switcher .dropdown-toggle {
+    min-height: 44px;
+    border: 1px solid var(--bs-border-color);
+    background-color: inherit;
+    color: inherit;
+    transition: none; }
+  .section-switcher .dropdown-menu {
+    border: 1px solid var(--bs-border-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: var(--sl-color-black); }
+    .section-switcher .dropdown-menu .dropdown-item {
+      padding: 0.5rem 1rem;
+      transition: none;
+      color: inherit; }
+      .section-switcher .dropdown-menu .dropdown-item .icon {
+        flex-shrink: 0; }
+
 .tree {
   margin: 1.5rem 0;
   padding: 1rem 0.5rem 0.5rem;

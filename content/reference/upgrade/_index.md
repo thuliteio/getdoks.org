@@ -1,14 +1,14 @@
 ---
-title: "Guides"
+title: "Upgrade"
 description: ""
 summary: ""
-date: 2025-08-01T10:18:06+02:00
-lastmod: 2025-08-01T10:18:06+02:00
+date: 2025-08-01T09:57:03+02:00
+lastmod: 2025-08-01T09:57:03+02:00
 draft: false
-weight: 820
+weight: 800
 toc: true
 sidebar:
-  collapsed: true
+  collapsed: false
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)

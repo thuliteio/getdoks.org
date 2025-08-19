@@ -1,5 +1,5 @@
 ---
-title: "Customizing Doks"
+title: "Fonts"
 description: ""
 summary: ""
 date: 2023-11-13T16:51:11+01:00
@@ -12,7 +12,7 @@ seo:
   description: "" # custom description (recommended)
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
-slug: "customization"
+# slug: "customization"
 ---
 
 ## Custom fonts

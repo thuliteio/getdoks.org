@@ -4,14 +4,14 @@ description = "Congrats on setting up a new Doks project!"
 images = ["cover-doks.png"]
 
 # mainSections
-mainSections = ["docs", "upgrade-guides"]
+mainSections = ["getting-started", "authoring", "customization", "reference"]
 
 # Global alert
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-6/">Doks 1.6 is out!</a>'
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-4/">Doks 1.4 is here!</a>'
 # alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://thulite.io/anna/?utm_source=getdoks&utm_medium=banner&utm_campaign=promotion">Anna will ship soon!</a>'
 # alertText = '<strong>Cyber Sale</strong>! <a class="alert-link stretched-link text-decoration-none fw-normal" href="https://store.thulite.io/vermeer/?utm_source=doks&utm_medium=banner&utm_campaign=cyber_sale">Get Vermeer at 40% off with code <strong>THULITE40</strong></a>'
-alertText = '<a class="alert-link stretched-link fw-normal" href="/docs/help/upgrade/guides/doks-v1.8/">Upgrade to Doks v1.8!</a>'
+alertText = '<a class="alert-link stretched-link fw-normal" href="/reference/upgrade/guides/v-1-8/">Upgrade to Doks v1.8!</a>'
 
 # Footer
 footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\">Thulite</a>"
@@ -62,7 +62,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
   bootstrapJavascript = true # false (default) or true
 
   # Nav
-  sectionNav = ["docs", "upgrade-guides"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionNav = ["getting-started", "authoring", "customization", "reference"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
   headlineHash = true # true (default) or false

@@ -1,6 +1,6 @@
 [[main]]
   name = "Documentation"
-  pageRef  = "/docs/introduction/getting-started/"
+  pageRef  = "/getting-started/introduction/quick-start/"
 # url = "/docs/1.0/start-here/getting-started/"
   weight = 10
 
