@@ -14724,11 +14724,13 @@ body:has(.basicLightbox--visible) {
   .section-switcher .dropdown-menu {
     border: 1px solid var(--bs-border-color);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: var(--sl-color-black); }
+    background-color: var(--sl-color-black);
+    padding: 0.25rem; }
     .section-switcher .dropdown-menu .dropdown-item {
-      padding: 0.5rem 1rem;
+      padding: 0.5rem;
       transition: none;
-      color: inherit; }
+      color: inherit;
+      border-radius: 0.375rem; }
       .section-switcher .dropdown-menu .dropdown-item .icon {
         flex-shrink: 0; }
 
