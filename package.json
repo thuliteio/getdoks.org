@@ -23,6 +23,7 @@
     "@thulite/images": "^3.3.2",
     "@thulite/inline-svg": "^1.2.1",
     "@thulite/seo": "^2.4.2",
+    "basiclightbox": "^5.0.4",
     "thulite": "^2.6.3"
   },
   "devDependencies": {
