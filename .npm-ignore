@@ -1,7 +1,0 @@
-.env
-.hugo_build.lock
-node_modules
-public
-resources
-.netlify
-hugo_stats.json

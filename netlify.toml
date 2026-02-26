@@ -1,20 +1,18 @@
+[build.environment]
+  DART_SASS_VERSION = "1.97.3"
+  GO_VERSION = "1.26.0"
+  HUGO_VERSION = "0.156.0"
+  NODE_VERSION = "24.13.1"
+  NPM_VERSION = "11.8.0"
+  TZ = "Europe/Amsterdam"
+
 [build]
   publish = "public"
-  functions = "functions"
-
-[build.environment]
-  NODE_VERSION = "22.17.0"
-  NPM_VERSION = "10.9.2"
-  HUGO_VERSION = "0.148.2"
-
-[context.production]
-  command = "bun run build"
-
-[context.deploy-preview]
-  command = "bun run build --baseURL $DEPLOY_PRIME_URL"
-
-[context.branch-deploy]
-  command = "bun run build --baseURL $DEPLOY_PRIME_URL"
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "${URL}"
+  """
 
 [dev]
   framework = "#custom"
@@ -25,6 +23,10 @@
   autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+	from = "/*"
+	to = "/404/"
+	status = 404
 
 # Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
 [[headers]]

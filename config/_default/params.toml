@@ -16,6 +16,10 @@ alertText = '<a class="alert-link stretched-link fw-normal" href="/docs/upgrade/
 # Footer
 footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\">Thulite</a>"
 
+# Enable mathematical rendering on every page (unless you set the `math` parameter to `false` in front matter)
+math = false # false (default) or true
+mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
+
 [social]
   twitter = "getdoks"
 
@@ -55,13 +59,14 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = true # false (default) or true
+  alert = false # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap
   bootstrapJavascript = true # false (default) or true
 
   # Nav
+  sectionSwitcher = false # true or false (default)
   sectionNav = ["docs", "upgrade-guides"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
@@ -79,6 +84,7 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
   # UX
   headerBar = false # true (default) or false
   backgroundDots = true # true (default) or false
+  aiButtons = true # true (default) or false
 
   # Homepage
   sectionFooter = true # false (default) or true
@@ -132,12 +138,15 @@ footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\"
 # Inline SVG (@thulite/inline-svg)
 [inline_svg]
   iconSetDir = "tabler-icons" # "tabler-icons" (default)
+  iconSetVariant = "outline" # outline (default) or filled
 
 # SEO (@thulite/seo)
 [seo]
   [seo.title]
     separator = " — "
     suffix = ""
+  [seo.description]
+    summaryFallback = "" # "" (default)
   [seo.favicons]
     sizes = []
     icon = "favicon.png" # favicon.png (default)
