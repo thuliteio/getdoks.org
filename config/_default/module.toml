@@ -27,8 +27,7 @@
   target = "layouts"
 
 [[mounts]]
-  # Exclude 'home.html' to avoid conflicts with a custom home page layout defined in the local 'layouts' directory.
-  excludeFiles = ["home.html", "single.html"]
+  files = ['! home.html', '! single.html']
   source = "node_modules/@thulite/doks-core/layouts"
   target = "layouts"
 
@@ -82,6 +81,10 @@
 [[mounts]]
   source = "node_modules/@thulite/images/assets"
   target = "assets"
+
+[[mounts]]
+  source = "hugo_stats.json"
+  target = "assets/watching/hugo_stats.json"
 
 [[mounts]]
   source = "assets"
