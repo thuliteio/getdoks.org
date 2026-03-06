@@ -92,6 +92,28 @@ Image-heavy pages now look better on every screen. Doks 1.9 adds responsive ligh
 
 Mathematical expressions and diagrams now have first-class support. Configure KaTeX or MathJax as your math engine, and render Mermaid diagrams directly from fenced code blocks — all wired to respect Doks dark and light mode.
 
+```mermaid
+flowchart TD
+  A[Start] --> B{User clicks button}
+  B -->|Yes| C[Open AI assistant]
+  B -->|No| D[Show docs page]
+  C --> E[Assistant suggests content]
+  D --> E
+  E --> F[User updates documentation]
+```
+
+````md
+```mermaid
+flowchart TD
+  A[Start] --> B{User clicks button}
+  B -->|Yes| C[Open AI assistant]
+  B -->|No| D[Show docs page]
+  C --> E[Assistant suggests content]
+  D --> E
+  E --> F[User updates documentation]
+```
+````
+
 <!-- omit in toc -->
 ## Bug Fixes
 
