@@ -1,10 +1,10 @@
 ---
 title: "Doks 1.9"
 url: "/blog/doks-1-9/"
-description: "Doks 1.9 introduces AI-friendly docs, a refreshed navigation UX, and first-class math and diagrams."
-summary: "Doks 1.9 introduces AI-friendly docs, a refreshed navigation UX, and first-class math and diagrams."
+description: "Doks 1.9 introduces AI-friendly documentation, a refreshed navigation experience, first-class math and diagrams, new content shortcodes, and lightbox support."
+summary: "Doks 1.9 introduces AI-friendly documentation, a refreshed navigation experience, first-class math and diagrams, new content shortcodes, and lightbox support."
 date: 2026-03-06T08:56:37+01:00
-lastmod: 2026-03-06T08:56:44+01:00
+lastmod: 2026-03-06T12:00:08+01:00
 draft: false
 weight: 50
 categories: []
