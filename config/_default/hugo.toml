@@ -12,7 +12,7 @@ rssLimit = 10
 summarylength = 20 # 70 (default)
 
 # https://gohugo.io/getting-started/configuration/#timeout
-timeout = "60s" # "30s" (default)
+timeout = "120s" # "60s" (default)
 
 # Multilingual
 defaultContentLanguage = "en"
