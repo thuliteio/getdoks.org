@@ -16,9 +16,9 @@
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@docsearch/css": "^4.6.0",
-    "@docsearch/js": "^4.6.0",
-    "@tabler/icons": "^3.37.1",
+    "@docsearch/css": "^4.6.3",
+    "@docsearch/js": "^4.6.3",
+    "@tabler/icons": "^3.44.0",
     "@thulite/doks-core": "^1.9.3",
     "@thulite/images": "^3.3.4",
     "@thulite/inline-svg": "^1.2.2",
@@ -30,10 +30,10 @@
     "glob": "^13.0.6"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.5",
-    "prettier": "^3.6.2",
-    "vite": "^7.1.1"
+    "@changesets/changelog-github": "^0.7.0",
+    "@changesets/cli": "^2.31.0",
+    "prettier": "^3.8.3",
+    "vite": "^8.0.16"
   },
   "engines": {
     "node": ">=20.11.0"
