@@ -4,7 +4,8 @@ description = "Congrats on setting up a new Doks project!"
 images = ["cover-doks.png"]
 
 # mainSections
-mainSections = ["docs", "upgrade-guides"]
+# mainSections = ["docs", "upgrade-guides"]
+mainSections = ["start-here", "basics", "advanced", "reference"]
 
 # Global alert
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-6/">Doks 1.6 is out!</a>'
@@ -67,8 +68,9 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
   bootstrapJavascript = true # false (default) or true
 
   # Nav
-  sectionSwitcher = false # true or false (default)
-  sectionNav = ["docs", "upgrade-guides"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionSwitcher = true # true or false (default)
+  # sectionNav = ["docs", "upgrade-guides"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionNav = ["start-here", "basics", "advanced", "reference"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
   headlineHash = true # true (default) or false
@@ -139,7 +141,7 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
 # Inline SVG (@thulite/inline-svg)
 [inline_svg]
   iconSetDir = "tabler-icons" # "tabler-icons" (default)
-  iconSetVariant = "outline" # outline (default) or filled
+  iconSetVariant = "" # outline (default) or filled
 
 # SEO (@thulite/seo)
 [seo]
@@ -148,6 +150,10 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
     suffix = ""
   [seo.description]
     summaryFallback = "" # "" (default)
+  [seo.description.length]
+    errorlevel = "warning" # warning (default), error, or ignore
+    min = 110
+    max = 160
   [seo.favicons]
     sizes = []
     icon = "favicon.png" # favicon.png (default)

@@ -37,6 +37,7 @@
 			{{ end }}
 			<div class="page-header d-flex flex-row justify-content-between align-items-start">
 				<div>
+					{{ partial "main/lvl0" . }}
 					<h1>{{ .Title }}</h1>
 					<!-- <p class="lead">{{ .Params.lead | safeHTML }}</p> -->
 				</div>
@@ -72,5 +73,4 @@
 			</div>
 		{{ end }}
 	</div>
-	{{ partial "main/lvl0" . }}
 {{ end }}

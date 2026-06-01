@@ -6,8 +6,7 @@ disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
-languageCode = "en-US"
-pagerSize = 20
+locale = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
@@ -45,12 +44,12 @@ copyRight = "Copyright (c) 2020-2024 Thulite"
 
 # Add output format for section sitemap.xml
 [outputFormats.sitemap]
-mediaType = "application/xml"
-baseName = "sitemap"
-isHTML = false
-isPlainText = true
-noUgly = true
-rel  = "sitemap"
+  mediaType = "application/xml"
+  baseName = "sitemap"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel  = "sitemap"
 
 [sitemap]
   changefreq = "monthly"
@@ -74,6 +73,9 @@ rel  = "sitemap"
 
 [minify.tdewolff.html]
   keepWhitespace = false
+
+[pagination]
+  pagerSize = 20
 
 [related]
   threshold = 80

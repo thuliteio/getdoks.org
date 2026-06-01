@@ -1,8 +1,53 @@
+
+# [[main]]
+#   name = "Documentation"
+#   url = "/docs/start-here/getting-started/"
+# # url = "/docs/1.0/prologue/introduction/"
+#   weight = 10
+
 [[main]]
   name = "Documentation"
-  pageRef  = "/docs/start-here/getting-started/"
-# url = "/docs/1.0/start-here/getting-started/"
+  url = 'https://docs.thulite.io/'
   weight = 10
+
+[[main]]
+  identifier = "thulite-docs"
+  name = "Thulite"
+  url = 'https://docs.thulite.io/'
+  parent = "Documentation"
+  weight = 11
+
+[[main]]
+  name = "SEO"
+  url = 'https://seo.thulite.io/'
+  parent = "Documentation"
+  weight = 13
+
+[[main]]
+  name = "Images"
+  url = 'https://images.thulite.io/'
+  parent = "Documentation"
+  weight = 15
+
+[[main]]
+  name = "SVG"
+  url = 'https://svg.thulite.io/'
+  parent = "Documentation"
+  weight = 17
+
+[[main]]
+  name = "Doks"
+  url = 'https://getdoks.org/'
+  parent = "Documentation"
+  weight = 19
+
+[[main]]
+  name = "Thulite"
+  url = "https://thulite.io/"
+  weight = 13
+#  post = '<svg xmlns="http://www.w3.org/2000/svg" class="ms-1 mb-1 icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>'
+#  [[main.params]]
+#    rel = 'external'
 
 [[main]]
   name = "Showcase"
