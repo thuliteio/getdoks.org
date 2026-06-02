@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
-description: ""
-summary: ""
+description: "Get oriented with the core goals of Doks, required prerequisites, and the next documentation steps to install, configure, use, and maintain your site."
+summary: "Get oriented with the core goals of Doks, required prerequisites, and the next documentation steps to install, configure, use, and maintain your site."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false
@@ -47,4 +47,4 @@ Thulite builds on the excellent work of the open-source ecosystem, especially:
 - [Vite](https://vite.dev/)
 - [npm](https://www.npmjs.com/)
 
-Special thanks to the Thulite contributors, template authors, integration maintainers, and community members who continuously improve the framework and documentation.
+Special thanks to the Thulite and Doks contributors, template authors, integration maintainers, and community members who continuously improve the framework and documentation.

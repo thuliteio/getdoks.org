@@ -1,7 +1,7 @@
 ---
 title: "Verification"
-description: "Verify your Thulite build by checking generated HTML, assets, metadata, and runtime behavior before deployment with browser and audit tools."
-summary: "Verify your Thulite build by checking generated HTML, assets, metadata, and runtime behavior before deployment with browser and audit tools."
+description: "Verify your Doks build by checking generated HTML, assets, metadata, and runtime behavior before deployment with browser and audit tools."
+summary: "Verify your Doks build by checking generated HTML, assets, metadata, and runtime behavior before deployment with browser and audit tools."
 date: 2026-04-27T12:46:43+02:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false
@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-This page helps you verify that Thulite is generating the expected pages, assets, and metadata.
+This page helps you verify that Doks is generating the expected pages, assets, and metadata.
 
 ## Build your site
 
@@ -73,7 +73,7 @@ Check for:
 - Correct stylesheet and script references
 - Expected language, robots, and structured-data output for your configuration
 
-If you use Thulite Images or Inline SVG, also confirm that generated image and SVG markup appears correctly where expected.
+If you use Thulite Images or Thulite SVG, also confirm that generated image and SVG markup appears correctly where expected.
 
 ## Inspect generated site output
 
@@ -132,7 +132,7 @@ Check for:
 - Responsive layout behavior on desktop and mobile widths
 - No unexpected console errors or visible rendering issues
 
-If your project includes optional integrations, validate those behaviors as well using the dedicated guides for [Thulite SEO](https://seo.thulite.io/docs/start-here/verification/), [Thulite Images](https://images.thulite.io/docs/start-here/verification/), and [Thulite SVG](https://svg.thulite.io/docs/start-here/verification/).
+If your project includes recommended integrations, validate those behaviors as well using the dedicated guides for [Thulite SEO](https://seo.thulite.io/docs/start-here/verification/), [Thulite Images](https://images.thulite.io/docs/start-here/verification/), and [Thulite SVG](https://svg.thulite.io/docs/start-here/verification/).
 
 ## Use tools
 

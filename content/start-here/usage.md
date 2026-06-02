@@ -1,7 +1,7 @@
 ---
 title: "Usage"
-description: "Follow the day-to-day Thulite workflow to create content, run the dev server, format files, build production output, and preview locally."
-summary: "Follow the day-to-day Thulite workflow to create content, run the dev server, format files, build production output, and preview locally."
+description: "Follow the day-to-day Doks workflow to create content, run the dev server, format files, build production output, and preview locally."
+summary: "Follow the day-to-day Doks workflow to create content, run the dev server, format files, build production output, and preview locally."
 date: 2026-04-27T12:46:32+02:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false
@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-This guide covers the standard development workflow for a Thulite project.
+This guide covers the standard development workflow for a Doks project.
 
 {{< callout context="note" icon="info-circle" >}}
 
@@ -243,5 +243,5 @@ bun run build && bun run preview --host
 
 Once everything looks good in preview, deploy your site.
 
-- Follow the deployment guides in [Deploy overview](/basics/deployment/overview/).
+- Follow the deployment guides in [Deploy overview](https://docs.thulite.io/basics/deployment/overview/).
 - Use [Verification](/start-here/verification/) to validate quality and output before production updates.

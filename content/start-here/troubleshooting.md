@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
-description: "Troubleshoot common Thulite issues by validating configuration, checking integration docs, and using GitHub issues and discussions for support."
-summary: "Troubleshoot common Thulite issues by validating configuration, checking integration docs, and using GitHub issues and discussions for support."
+description: "Troubleshoot common Doks issues by validating configuration, checking integration docs, and using GitHub issues and discussions for support."
+summary: "Troubleshoot common Doks issues by validating configuration, checking integration docs, and using GitHub issues and discussions for support."
 date: 2026-04-27T12:47:03+02:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false
@@ -15,7 +15,7 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-This page helps you find answers to common problems with Thulite.
+This page helps you find answers to common problems with Doks.
 
 ## Verify your setup
 
@@ -23,8 +23,8 @@ Use the [Settings](/reference/configuration/settings/), [Parameters](/reference/
 
 ## Consult the documentation
 
-If you cannot find an answer in this documentation, visit the [Thulite SEO Docs](https://seo.thulite.io/), [Thulite Images Docs](https://images.thulite.io/), and [Thulite SVG Docs](https://svg.thulite.io/) for integration-level guidance.
+If you cannot find an answer in this documentation, visit the [Thulite Docs](https://docs.thulite.io/) for framework-level guidance. Many Doks questions can be resolved by understanding how Thulite works under the hood. Visit the [Thulite SEO Docs](https://seo.thulite.io/), [Thulite Images Docs](https://images.thulite.io/), and [Thulite SVG Docs](https://svg.thulite.io/) for integration-level guidance.
 
 ## Ask the community
 
-Check for known [issues on GitHub](https://github.com/thuliteio/thulite/issues), or ask for help in [Thulite Discussions](https://github.com/thuliteio/thulite/discussions). The community is active and happy to help.
+Check for known [issues on GitHub](https://github.com/thuliteio/doks/issues), or ask for help in [Doks Discussions](https://github.com/thuliteio/doks/discussions). The community is active and happy to help.

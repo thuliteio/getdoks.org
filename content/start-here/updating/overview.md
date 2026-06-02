@@ -1,8 +1,8 @@
 ---
 title: "Updating Overview"
 linkTitle: "Overview"
-description: "Learn how to update Thulite, track release changes, and use semantic versioning to plan safe upgrades across patch, minor, and major releases."
-summary: "Learn how to update Thulite, track release changes, and use semantic versioning to plan safe upgrades across patch, minor, and major releases."
+description: "Learn how to update Doks, track release changes, and use semantic versioning to plan safe upgrades across patch, minor, and major releases."
+summary: "Learn how to update Doks, track release changes, and use semantic versioning to plan safe upgrades across patch, minor, and major releases."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false
@@ -16,44 +16,44 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-This page explains how to update Thulite, where to check what changed between releases, and how version numbers affect your upgrade path.
+This page explains how to update Doks, where to check what changed between releases, and how version numbers affect your upgrade path.
 
 ## Quick links
 
-- Release notes: [all releases](https://github.com/thuliteio/thulite/releases) or [latest release](https://github.com/thuliteio/thulite/releases/latest)
-- Full change history: [CHANGELOG.md](https://github.com/thuliteio/thulite/blob/main/CHANGELOG.md)
+- Release notes: [all releases](https://github.com/thuliteio/doks-core/releases) or [latest release](https://github.com/thuliteio/doks-core/releases/latest)
+- Full change history: [CHANGELOG.md](https://github.com/thuliteio/doks-core/blob/main/CHANGELOG.md)
 - Breaking-change instructions: [Upgrade Guides](#upgrade-guides)
 
 ## Update to the latest version
 
 Use the command that matches your package manager.
 
-{{< tabs "update-thulite-command" >}}
+{{< tabs "update-doks-core-command" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm install thulite@latest
+npm install @thulite/doks-core@latest
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm upgrade thulite --latest
+pnpm upgrade @thulite/doks-core --latest
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn upgrade thulite --latest
+yarn upgrade @thulite/doks-core --latest
 ```
 
 {{< /tab >}}
 {{< tab "bun" >}}
 
 ```bash
-bun update thulite --latest
+bun update @thulite/doks-core --latest
 ```
 
 {{< /tab >}}
@@ -61,34 +61,34 @@ bun update thulite --latest
 
 ### Install a specific version
 
-To install a specific [Thulite version](https://www.npmjs.com/package/thulite?activeTab=versions), run one of the following commands.
+To install a specific [Doks version](https://www.npmjs.com/package/@thulite/doks-core?activeTab=versions), run one of the following commands.
 
 {{< tabs "package-manager-1" >}}
 {{< tab "npm" >}}
 
 ```bash
-npm install thulite@2.6.5
+npm install @thulite/doks-core@1.9.3
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm install thulite@2.6.5
+pnpm install @thulite/doks-core@1.9.3
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn add thulite@2.6.5
+yarn add @thulite/doks-core@1.9.3
 ```
 
 {{< /tab >}}
 {{< tab "bun" >}}
 
 ```bash
-bun install thulite@2.6.5
+bun install @thulite/doks-core@1.9.3
 ```
 
 {{< /tab >}}
@@ -96,7 +96,7 @@ bun install thulite@2.6.5
 
 ## Documentation updates
 
-The documentation tracks the latest Thulite behavior, including [minor](#minor-changes) and [major](#major-changes) releases.
+The documentation tracks the latest Doks behavior, including [minor](#minor-changes) and [major](#major-changes) releases.
 
 If your project is behind, you may see differences between docs and runtime behavior. Check `Added in:` version notes in the docs before using newer features, and make sure your project version supports them.
 
@@ -111,10 +111,11 @@ Main docs describe the latest version only. They do not compare historical behav
 Upgrade guides focus on changes that can require code updates, including breaking changes, deprecations, removals, replacements, and updated usage guidance.
 
 - [Upgrade to v2](/start-here/updating/v2/)
+- [Upgrade to v1](/start-here/updating/v1/)
 
 ## Semantic versioning
 
-Thulite follows [semantic versioning](https://semver.org/) to signal the impact of each release.
+Doks follows [semantic versioning](https://semver.org/) to signal the impact of each release.
 
 Version numbers use the `X.Y.Z` pattern:
 
@@ -126,7 +127,7 @@ Version numbers use the `X.Y.Z` pattern:
 
 Patch releases are the least disruptive. They typically require no changes in your project code.
 
-When a patch is released, only the last number increases (for example, `thulite@2.4.1` -> `thulite@2.4.2`).
+When a patch is released, only the last number increases (for example, `@thulite/doks-core@1.9.2` -> `@thulite/doks-core@1.9.3`).
 
 Patch releases can include:
 

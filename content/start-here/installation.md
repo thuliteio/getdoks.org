@@ -1,7 +1,7 @@
 ---
 title: "Installation"
-description: ""
-summary: ""
+description: "Create a new Doks project with the CLI, choose a template and variant, and bootstrap a ready-to-run site with recommended integrations."
+summary: "Create a new Doks project with the CLI, choose a template and variant, and bootstrap a ready-to-run site with recommended integrations."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false

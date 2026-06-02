@@ -1,7 +1,7 @@
 ---
 title: "Editor Setup"
-description: "Set up your editor for Thulite with recommended VS Code extensions and formatting commands to keep Markdown, styles, and scripts consistent."
-summary: "Set up your editor for Thulite with recommended VS Code extensions and formatting commands to keep Markdown, styles, and scripts consistent."
+description: "Set up your editor for Doks with recommended VS Code extensions and formatting commands to keep Markdown, styles, and scripts consistent."
+summary: "Set up your editor for Doks with recommended VS Code extensions and formatting commands to keep Markdown, styles, and scripts consistent."
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:16:22+02:00
 draft: false
@@ -15,11 +15,11 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-This page covers the editor and formatting tools we recommend for Thulite projects.
+This page covers the editor and formatting tools we recommend for Doks projects.
 
 ## Editor choice
 
-Thulite works with any code editor, but we recommend [VS Code](https://code.visualstudio.com/) for the best experience. The VS Code engine also powers in-browser editors such as [GitHub Codespaces](https://github.com/features/codespaces).
+Doks works with any code editor, but we recommend [VS Code](https://code.visualstudio.com/) for the best experience. The VS Code engine also powers in-browser editors such as [GitHub Codespaces](https://github.com/features/codespaces).
 
 If you use VS Code, install these extensions:
 
@@ -33,7 +33,7 @@ If you use VS Code, install these extensions:
 
 ## Formatting
 
-Thulite includes Prettier and a `format` script for formatting JavaScript, HTML, CSS, and other supported files. You can customize the defaults by updating the `.prettierrc.yaml` and `.prettierignore` files in your project root.
+Doks includes Prettier and a `format` script for formatting JavaScript, HTML, CSS, and other supported files. You can customize the defaults by updating the `.prettierrc.yaml` and `.prettierignore` files in your project root.
 
 Use the command that matches your package manager:
 
