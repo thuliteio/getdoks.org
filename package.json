@@ -23,6 +23,7 @@
     "@thulite/images": "^3.3.4",
     "@thulite/inline-svg": "^1.2.2",
     "@thulite/seo": "^2.4.3",
+    "simple-icons": "^16.22.0",
     "thulite": "^2.6.5"
   },
   "overrides": {

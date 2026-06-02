@@ -1,21 +1,27 @@
 [en]
-  languageName = "English"
+  label = "English"
   contentDir = "content/en"
   weight = 10
   [en.params]
     languageISO = "EN"
     languageTag = "en-US"
+    # footer = 'Brought to you by <a class="text-muted" href="https://thulite.io/">Thulite</a>'
+    footer = '© 2026 Thulite'
+    ## alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">Doks version 1.0 just shipped!</a>'
+    alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://thulite.io/blog/hugo-shortcodes-0-1/">Get Hugo Shortcodes</a><svg xmlns="http://www.w3.org/2000/svg" class="ms-1 mb-1 icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>'
 
 [de]
-  languageName = "German"
+  label = "German"
   contentDir = "content/de"
   weight = 15
   [de.params]
     languageISO = "DE"
     languageTag = "de-DE"
+    footer = 'Gebaut mit <a class="text-muted" href="https://thulite.io/">Thulite</a>'
+    alertText = 'Neue Version ist da! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.5/">Doks v0.5</a>'
 
 [nl]
-  languageName = "Nederlands"
+  label = "Nederlands"
   contentDir = "content/nl"
   weight = 20
   [nl.params]
@@ -24,5 +30,5 @@
     titleAddition = "Modern documentatie-thema"
     description = "Doks is een Hugo-thema waarmee je moderne documentatie-websites kunt bouwen die veilig, snel en klaar voor SEO zijn — standaard."
     titleHome = "Doks thema"
-    footer = "Mogelijk gemaakt door <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, en <a href=\"https://getdoks.org/\">Doks</a>"
-    alertText = "Introductie van het Doks-kinderthema, verschillende DX + UX-updates en meer! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\">Bekijk Doks v0.2</a>"
+    footer = 'Mogelijk gemaakt door <a href="https://www.netlify.com/">Netlify</a>, <a href="https://gohugo.io/">Hugo</a>, en <a href="https://getdoks.org/">Doks</a>'
+    alertText = 'Introductie van het Doks-kinderthema, verschillende DX + UX-updates en meer! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.2/">Bekijk Doks v0.2</a>'

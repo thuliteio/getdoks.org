@@ -138,9 +138,11 @@
     }
 }
 
+/*
 .home .footer {
     @include visually-hidden;
 }
+    */
 
 // DocSearch
 /*! purgecss start ignore */
@@ -443,7 +445,7 @@ img,
 }
 
 .section-logos {
-    padding: 1rem 0 3rem;
+    padding: 3rem 0 1rem;
 }
 
 @keyframes logo-carousel-scroll {
@@ -526,7 +528,7 @@ img,
     }
 
     .section-logos {
-        padding: 3rem 0 5rem;
+        padding: 5rem 0 3rem;
     }
 
     .section-prefooter {

@@ -11,3 +11,34 @@ seo:
   canonical: "" # custom canonical URL (optional)
   robots: "" # custom robot tags (optional)
 ---
+
+{{< tabs "create-new-site" >}}
+{{< tab "npm" >}}
+
+```bash
+npm create thulite@latest -- --template doks
+```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm create thulite@latest --template doks
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn create thulite@latest --template doks
+```
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun create thulite@latest --template doks
+```
+
+{{< /tab >}}
+{{< /tabs >}}
