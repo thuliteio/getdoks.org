@@ -16234,9 +16234,9 @@ svg.DocSearch-Hit-Select-Icon {
   opacity: 0; }
   .showcase .card-img-overlay .card-title {
     margin-top: 0;
-    color: var(--sl-color-gray-2); }
+    color: #f6f7f9; }
   .showcase .card-img-overlay .card-text {
-    color: var(--sl-color-gray-2); }
+    color: #888c96; }
 
 .showcase .card:hover .card-img-overlay {
   opacity: 1; }

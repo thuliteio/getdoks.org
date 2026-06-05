@@ -1,7 +1,7 @@
 <div class="card rounded-0 border-0">
   {{ $featured := partial "main/get-featured" . }}
   {{ if $featured -}}
-    <a class="stretched-link text-white text-decoration-none" href="{{ .Params.website }}" target="_blank">
+    <a class="stretched-link text-decoration-none" href="{{ .Params.website }}" target="_blank">
       {{ partial "picture"  (dict
       "page" .
       "src" $featured
