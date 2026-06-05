@@ -413,7 +413,7 @@ img,
     padding: 3rem 0;
 
     .header-content {
-        padding-top: 2rem;
+        padding-top: 3rem;
     }
 }
 
@@ -445,7 +445,7 @@ img,
 }
 
 .section-logos {
-    padding: 3rem 0 1rem;
+    padding: 1rem 0 3rem;
 }
 
 @keyframes logo-carousel-scroll {
@@ -519,7 +519,7 @@ img,
         padding: 5rem 0;
 
         .header-content {
-            padding-top: 3rem;
+            padding-top: 5rem;
         }
     }
 
@@ -528,7 +528,7 @@ img,
     }
 
     .section-logos {
-        padding: 5rem 0 3rem;
+        padding: 3rem 0 5rem;
     }
 
     .section-prefooter {
@@ -793,4 +793,89 @@ h4 code {
 .chroma .cp {
     font-weight: normal !important;
     font-style: normal !important;
+}
+
+// Step card styles
+.step-number {
+    width: 2.25rem;
+    height: 2.25rem;
+    background: var(--sl-color-gray-1);
+    color: var(--sl-color-gray-6);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.row-sponsors {
+    text-align: center;
+    padding: 3rem 3rem 0;
+
+    .col-6 {
+        position: relative;
+        padding: 0.5rem 0;
+        border: 1px solid var(--sl-color-gray-5);
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.15em;
+        }
+    }
+
+    .col-6:first-child {
+        border-right: 0;
+        border-bottom: 0;
+    }
+
+    .col-6:nth-child(2) {
+        border-bottom: 0;
+    }
+
+    .col-6:nth-child(3) {
+        border-right: 0;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .row-sponsors {
+        text-align: center;
+        padding: 3rem 9rem 0;
+
+        .col-6 {
+            position: relative;
+            padding: 0.75rem 0;
+            border: 1px solid var(--sl-color-gray-5);
+        }
+
+        .col-6:first-child {
+            border-right: 0;
+            border-bottom: 1px solid var(--sl-color-gray-5);
+        }
+
+        .col-6:nth-child(2) {
+            border-bottom: 1px solid var(--sl-color-gray-5);
+        }
+
+        .col-6:nth-child(3) {
+            border-left: 0;
+        }
+    }
+}
+
+#newsletter-heading {
+    margin-bottom: 3rem;
+
+    &::after {
+        flex: 1;
+        height: 1px;
+        margin-left: 1rem;
+        background: var(--sl-color-gray-6);
+        content: "";
+    }
 }

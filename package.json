@@ -13,7 +13,8 @@
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
     "build": "hugo --minify --gc",
-    "preview": "vite preview --outDir public"
+    "preview": "vite preview --outDir public",
+    "screenshot": "node scripts/capture-screenshot.mjs"
   },
   "dependencies": {
     "@docsearch/css": "^4.6.3",
@@ -33,6 +34,7 @@
   "devDependencies": {
     "@changesets/changelog-github": "^0.7.0",
     "@changesets/cli": "^2.31.0",
+    "playwright": "^1.55.0",
     "prettier": "^3.8.3",
     "vite": "^8.0.16"
   },

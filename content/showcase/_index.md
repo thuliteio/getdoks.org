@@ -9,7 +9,7 @@ build:
   render: always
 cascade:
   build:
-    list: local
+    list: always
     render: never
 seo:
   title: "" # custom title (optional)

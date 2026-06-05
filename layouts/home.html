@@ -1,100 +1,49 @@
-{{ define "main" }}
-<section class="section container-fluid mt-n3 pb-3">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
-      <h1>{{ .Title }}</h1>
-    </div>
-    <div class="col-lg-9 col-xl-8 text-center">
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}start-here/getting-started/" role="button">{{ i18n "get_started" }}</a>
-			{{ if site.Params.add_ons.carbonAds -}}
-      	{{ partial "main/carbon-ads" . }}
-			{{ end -}}
-			{{ if site.Params.add_ons.ethicalAds -}}
-        {{ partial "main/ethical-ads" . }}
-			{{ end -}}
-    </div>
-  </div>
-</section>
-{{ end }}
-
 {{ define "sidebar-prefooter" }}
-  {{ if site.Params.doks.backgroundDots -}}
-  <div class="d-flex justify-content-start">
-    <div class="bg-dots"></div>
-  </div>
-  {{ end -}}
+  <!-- <div aria-hidden="true" class="page-wash"></div> -->
 
-  <!--
-  <div aria-hidden="true" class="page-wash"></div>
-  -->
-<!--
   <section class="section-header">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-10 text-center">
+        <div class="col-lg-10 col-xl-14 text-center">
           <h1 class="mt-1">{{ .Title }}</h1>
+        </div>
+        <div class="col-lg-10 text-center">
           <p class="lead text-muted">{{ .Params.lead | safeHTML }}</p>
           <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}start-here/getting-started/" role="button">{{ i18n "get_started" }}</a>
         </div>
-        <div class="col-lg-12">
+        <div class="col-lg-14">
           <div class="header-content">
-            {{ .Content }}
+            {{- $opts := dict
+              "page" .
+              "src" "images/start-here-installation-dark.png"
+              "sizes" "auto"
+              "formats" (slice "webp" "jpeg")
+              "decoding" "async"
+              "fetchpriority" "auto"
+              "loading" "eager"
+              "alt" "Doks installation guide screenshot in dark mode"
+              "class" "svg-inline-custom svg-darkmode p-2 border rounded-4"
+            }}
+            {{- partial "picture" $opts }}
+            {{- $opts := dict
+              "page" .
+              "src" "images/start-here-installation-light.png"
+              "sizes" "auto"
+              "formats" (slice "webp" "jpeg")
+              "decoding" "async"
+              "fetchpriority" "auto"
+              "loading" "eager"
+              "alt" "Doks installation guide screenshot in light mode"
+              "class" "svg-inline-custom svg-lightmode p-2 border rounded-4"
+            }}
+            {{- partial "picture" $opts }}
+            {{/* .Content */}}
           </div>
         </div>
       </div>
     </div>
   </section>
--->
 
-<!--
-  <section class="bg-anna">
-    <a href="https://thulite.io/anna/?utm_source=getdoks&utm_medium=banner&utm_campaign=promotion">
-    {{- $opts := dict
-      "page" .
-      "src" "images/ad-mdn.jpg"
-      "formats" (slice "webp" "jpeg")
-      "process" "fill 950x250"
-      "lqip" "19x webp q20"
-      "decoding" "async"
-      "fetchpriority" "auto"
-      "loading" "eager"
-      "alt" "Ad MDN"
-      "class" "mx-auto"
-    }}
-    {{- partial "img" $opts }}
-    </a>
-  </section>
--->
-
-<!--
-  {{ if eq $.Site.Language.LanguageName "English" }}
-  <section class="section section-md section-features">
-    <div class="container">
-      <div class="row justify-content-center text-center">
-        <div class="col-lg-5">
-          <h2 class="h4">Get delighted</h2>
-          <p>Search, SEO, code highlighting, internationalization, versioning, easy-to-read typography, dark mode, and more.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Powered by Thulite</h2>
-          <p>Leverage the full power and performance of Thulite. Extend Doks with your favorite Thulite integrations and libraries.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Deploy anywhere</h2>
-          <p>Ready to build and deploy your Doks site? Follow one of our guides to different deployment services.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Join our community</h2>
-          <p>Get support, get involved, and join our community of Doks developers — it all happens on <a href="https://github.com/thuliteio/doks/discussions">Discussions</a>.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  {{ end }}
--->
-
-<!--
   <section class="section-logos">
     <div class="container">
       <h2 class="fs-5 text-center mt-0">Deploy to any platform</h2>
@@ -126,26 +75,10 @@
       </div>
     </div>
   </section>
--->
-
-<!--
-  <section class="section-main">
-    <div class="container">
-      <h2 class="text-center mt-lg-0">Quickstart</h2>
-      <div class="row justify-content-center g-4">
-        <div class="col-lg-8">
-          <div class="header-content">
-            {{ .Content }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
--->
 
   <section class="section-main">
     <div class="container">
-      <h2 class="text-center mt-lg-0">What you get</h2>
+      <h2 class="text-center mt-lg-0">Why use Doks?</h2>
       <div class="row justify-content-center g-4">
         <div class="col-lg-5">
           <div class="card">
@@ -195,65 +128,102 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "gauge" "stroke-width" "1.5" "class" "text-muted me-2" ) }}SEO & Performance</h3>
+              <p class="text-muted fs-6">Ship optimized defaults for fast, search-friendly websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "article" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Content sites</h3>
+              <p class="text-muted fs-6">Launch documentation, blogs, and other content-heavy sites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="fs-5">{{ partial "inline-svg" (dict "src" "shield-check" "stroke-width" "1.5" "class" "text-muted me-2" ) }}Security hardening</h3>
+              <p class="text-muted fs-6">Apply practical protections with built-in guidance for CSP and headers.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!--
-  <section class="section section-cards">
+  <div class="section section-sm showcase">
     <div class="container">
-      <div class="row justify-content-center g-4">
-        <div class="col-lg-7">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title fs-4">📄 Documentation that delights</h2>
-              <p class="card-text">Includes: Site navigation, search, internationalization, SEO, easy-to-read typography, code highlighting, dark mode and more.</p>
-            </div>
+      <h2 class="fs-3 text-center mb-5">Built with Doks</h2>
+      <div class="row row-showcase justify-content-center">
+        <div class="col-main-section">
+          <div class="row row-flex">
+            {{ $showcasePages := where site.RegularPages "Section" "showcase" }}
+            {{ range first 2 ($showcasePages.ByDate.Reverse) }}
+              <div class="col-md-8">
+                {{ .Render "item" }}
+              </div>
+            {{ end }}
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title fs-4">🚀 Powered by Thulite</h2>
-              <p class="card-text">Leverage the full power and performance of Thulite. Extend Doks with your favorite Thulite integrations and libraries.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title fs-4">🌐 Deploy where you want</h2>
-              <p class="card-text">Ready to build and deploy your Doks site? Follow one of our guides to different deployment services.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title fs-4">👊 Join our community</h2>
-              <p class="card-text">Get support, get involved, and join our community of Doks developers — it all happens on <a href="https://github.com/thuliteio/doks/discussions">Discussions</a>.</p>
-            </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="text-center p-4">
+            <a class="btn btn-outline-primary btn-cta rounded-pill btn-lg my-3" href="/showcase/" role="button">View showcase</a>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <h2 class="fs-3 text-center mb-5">Get started in 3 simple steps</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-5">
+          <div class="text-center p-4">
+            <div class="step-number">1</div>
+            <h3 class="h5 mb-3">Create your project</h3>
+            <p class="text-muted mb-0">Run the Thulite CLI to scaffold a new Doks project in seconds.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card-body text-center p-4">
+            <div class="step-number">2</div>
+            <h3 class="h5 mb-3">Build your site</h3>
+            <p class="text-muted mb-0">Customize and make it your own with our flexible components and powerful features.</p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card-body text-center p-4">
+            <div class="step-number">3</div>
+            <h3 class="h5 mb-3">Deploy anywhere</h3>
+            <p class="text-muted mb-0">Deploy your site to any hosting platform — Netlify, Vercel, GitHub Pages, or your own server.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-prefooter">
+    <div class="container">
+      <h2 class="text-center mt-lg-0">Open-source, powered by Thulite</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <p class="text-muted fs-6">Doks is a documentation theme for Thulite. Sponsorship helps fund maintenance, documentation, and long-term improvements.</p>
+          <a target="_blank" href="https://github.com/sponsors/thuliteio" class="icon-link">Become a sponsor{{ partial "inline-svg" (dict "src" "chevron-right" "stroke-width" "1.5" ) }}</a>
+        </div>
+      </div>
+    </div>
   </section>
-  -->
 {{ end }}
 
 {{ define "sidebar-footer" }}
-  <section class="section-prefooter">
-    <div class="container">
-      <h2 class="text-center mt-lg-0">Open source, MIT licensed</h2>
-      <div class="row justify-content-center">
-        <div class="col-lg-7 text-center">
-          <p class="text-muted fs-6">Help keep Thulite sustainable by supporting maintenance, documentation, and long-term development.</p>
-          <a target="_blank" href="https://github.com/sponsors/thuliteio" class="icon-link">Sponsor Thulite{{ partial "inline-svg" (dict "src" "chevron-right" "stroke-width" "1.5" ) }}</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="section-footer">
     <div class="container">
       <h2 class="text-center mt-lg-0">FAQs</h2>
@@ -271,30 +241,15 @@
     </div>
   </section>
 
-{{ if site.Params.doks.sectionFooter -}}
-<!--
-<section class="section section-md container-fluid bg-light">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-7">
-      <h2 class="mt-2">Start building with Doks today</h2>
-      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get_started" }}</a>
-    </div>
-  </div>
-</section>
--->
-<!--
-<section class="section section-credits container">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-6">
-      <p class="text-muted"><small>Brought to you by</small></p>
-      <div class="card bg-transparent border-0">
-        {{ partial "inline-svg" (dict "src" "svgs/logos/thulite-logo-semibold-wide.svg" "width" "160px" "height" "100%" "class" "svg-inline-custom svg-monochrome mx-auto mt-n2") }}
+  {{ if site.Params.doks.sectionFooter -}}
+    <div class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            {{ partial "main/newsletter-form" . }}
+          </div>
+        </div>
       </div>
-      <p>Thulite is a web framework designed for speed, security, and SEO — all powered by Hugo and npm.</p>
-      <a href="https://thulite.io/">Learn about Thulite</a>
     </div>
-  </div>
-</section>
--->
-{{ end -}}
+  {{ end -}}
 {{ end }}

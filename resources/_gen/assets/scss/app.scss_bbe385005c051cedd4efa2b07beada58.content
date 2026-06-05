@@ -16480,7 +16480,7 @@ img,
 .section-header {
   padding: 3rem 0; }
   .section-header .header-content {
-    padding-top: 2rem; }
+    padding-top: 3rem; }
 
 .section-main {
   padding: 1rem 0; }
@@ -16499,7 +16499,7 @@ img,
         margin-bottom: 0; }
 
 .section-logos {
-  padding: 3rem 0 1rem; }
+  padding: 1rem 0 3rem; }
 
 @keyframes logo-carousel-scroll {
   from {
@@ -16558,11 +16558,11 @@ img,
   .section-header {
     padding: 5rem 0; }
     .section-header .header-content {
-      padding-top: 3rem; }
+      padding-top: 5rem; }
   .section-main {
     padding: 5rem 0 3rem; }
   .section-logos {
-    padding: 5rem 0 3rem; }
+    padding: 3rem 0 5rem; }
   .section-prefooter {
     padding: 5rem; }
   .section-footer {
@@ -16744,5 +16744,62 @@ h4 code, .h4 code {
 .chroma .cp {
   font-weight: normal !important;
   font-style: normal !important; }
+
+.step-number {
+  width: 2.25rem;
+  height: 2.25rem;
+  background: var(--sl-color-gray-1);
+  color: var(--sl-color-gray-6);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 auto; }
+
+.row-sponsors {
+  text-align: center;
+  padding: 3rem 3rem 0; }
+  .row-sponsors .col-6 {
+    position: relative;
+    padding: 0.5rem 0;
+    border: 1px solid var(--sl-color-gray-5); }
+    .row-sponsors .col-6:hover, .row-sponsors .col-6:focus, .row-sponsors .col-6:active {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em; }
+  .row-sponsors .col-6:first-child {
+    border-right: 0;
+    border-bottom: 0; }
+  .row-sponsors .col-6:nth-child(2) {
+    border-bottom: 0; }
+  .row-sponsors .col-6:nth-child(3) {
+    border-right: 0; }
+
+@media (min-width: 992px) {
+  .row-sponsors {
+    text-align: center;
+    padding: 3rem 9rem 0; }
+    .row-sponsors .col-6 {
+      position: relative;
+      padding: 0.75rem 0;
+      border: 1px solid var(--sl-color-gray-5); }
+    .row-sponsors .col-6:first-child {
+      border-right: 0;
+      border-bottom: 1px solid var(--sl-color-gray-5); }
+    .row-sponsors .col-6:nth-child(2) {
+      border-bottom: 1px solid var(--sl-color-gray-5); }
+    .row-sponsors .col-6:nth-child(3) {
+      border-left: 0; } }
+
+#newsletter-heading {
+  margin-bottom: 3rem; }
+  #newsletter-heading::after {
+    flex: 1;
+    height: 1px;
+    margin-left: 1rem;
+    background: var(--sl-color-gray-6);
+    content: ""; }
 
 /*# sourceMappingURL=main.css.map */
