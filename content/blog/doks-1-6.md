@@ -73,7 +73,7 @@ Doks 1.6 introduces a cleaner `scripts` section in your projects' `package.json`
 
 ## New development tools
 
-Thulite/Doks now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vitejs.dev/) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your mobile phone — here's how:
+Thulite/Doks now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vitejs.dev/) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your cellphone — here's how:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}
@@ -102,4 +102,4 @@ yarn run build --baseURL=/ && yarn run preview --host
 <!-- omit in toc -->
 ## Bug Fixes
 
-Doks 1.6 also includes several bug fixes. Check out the [release notes](https://github.com/thuliteio/doks-core/releases/tag/v1.6.0) to learn more.
+Doks 1.6 also includes several bugfixes. Check out the [release notes](https://github.com/thuliteio/doks-core/releases/tag/v1.6.0) to learn more.

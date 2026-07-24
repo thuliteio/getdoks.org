@@ -138,9 +138,11 @@
     }
 }
 
+/*
 .home .footer {
     @include visually-hidden;
 }
+*/
 
 // DocSearch
 /*! purgecss start ignore */
@@ -319,6 +321,7 @@ img,
 */
 
 // Footer fix (when sectionSwitcher = true)
+/*
 @include media-breakpoint-up(lg) {
     .footer {
         position: relative;
@@ -326,3 +329,4 @@ img,
         background-color: inherit;
     }
 }
+*/

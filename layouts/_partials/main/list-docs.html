@@ -1,0 +1,77 @@
+<div class="row justify-content-center">
+  <div class="col-md-12 col-lg-10 col-xl-8">
+    <section class="col-16 docs-col-content" aria-labelledby="docs-list-title">
+
+      <h1 id="docs-list-title" class="my-3">{{ .Title }}</h1>
+
+      {{ with .Content }}
+        <div class="page-content mb-5">
+          {{ . }}
+        </div>
+      {{ else }}
+        {{ with .Summary }}
+          <div class="page-content mb-5">
+            <p>{{ . }}</p>
+          </div>
+        {{ end }}
+      {{ end }}
+
+      {{ with .RegularPages.ByWeight }}
+        <div class="mb-5">
+          <div class="row g-4">
+            {{ range . }}
+              <div class="col-16 col-xl-8">
+                <article class="card h-100 shadow-sm">
+                  <div class="card-body">
+                    <h2 class="h4 card-title my-2">
+                      <a class="nav-link stretched-link p-0" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    </h2>
+                    {{ with .Summary }}
+                      <p class="card-text text-body-secondary mb-0">{{ . }}</p>
+                    {{ end }}
+                  </div>
+                </article>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ with .Sections.ByWeight }}
+        <div class="mb-5">
+          <div class="row g-4">
+            {{ range . }}
+              <div class="col-16 col-xl-8">
+                <article class="card h-100 shadow-sm">
+                  <div class="card-body d-flex flex-column">
+                    <div>
+                      <h2 class="h4 card-title my-2">
+                        <a class="nav-link p-0" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                      </h2>
+                      {{ with .Summary }}
+                        <p class="card-text text-body-secondary">{{ . }}</p>
+                      {{ end }}
+                    </div>
+
+                    {{ with .RegularPages.ByWeight }}
+                      <ul class="list-unstyled mt-3 mb-0">
+                        {{ range . }}
+                          <li class="py-2 border-top">
+                            <a class="nav-link p-0" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                          </li>
+                        {{ end }}
+                      </ul>
+                    {{ else }}
+                      <p class="text-body-secondary small mt-3 mb-0">This section does not have published pages yet.</p>
+                    {{ end }}
+                  </div>
+                </article>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+    </section>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 ---
 title: "Showcase"
 description: "Explore the infinite possibilities of Doks."
-summary: "Explore the infinite possibilities of Doks"
+summary: "Discover what you can build with Doks"
 date: 2023-08-29T15:50:07+02:00
 lastmod: 2023-08-29T15:50:07+02:00
 draft: false

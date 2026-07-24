@@ -9,6 +9,8 @@
     "url": "https://github.com/thuliteio/getdoks.org.git"
   },
   "scripts": {
+    "clean:build": "npx shx rm -rf public resources hugo_stats.json .hugo_build.lock",
+    "clean:install": "npx shx rm -rf node_modules package-lock.json",
     "create": "hugo new",
     "dev": "hugo server --disableFastRender --noHTTPCache",
     "format": "prettier **/** -w -c",
@@ -18,7 +20,7 @@
   "dependencies": {
     "@docsearch/css": "^4.6.3",
     "@docsearch/js": "^4.6.3",
-    "@tabler/icons": "^3.44.0",
+    "@tabler/icons": "^3.45.0",
     "@thulite/doks-core": "^1.9.3",
     "@thulite/images": "^3.3.4",
     "@thulite/inline-svg": "^1.2.2",
@@ -31,9 +33,9 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.7.0",
-    "@changesets/cli": "^2.31.0",
-    "prettier": "^3.8.3",
-    "vite": "^8.0.16"
+    "@changesets/cli": "^2.31.1",
+    "prettier": "^3.9.6",
+    "vite": "^8.1.5"
   },
   "engines": {
     "node": ">=20.11.0"
