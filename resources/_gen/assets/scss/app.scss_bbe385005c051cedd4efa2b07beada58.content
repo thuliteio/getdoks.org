@@ -16421,5 +16421,27 @@ img,
     }
 }
 */
+.offcanvas-header {
+  padding-top: 0.8125rem;
+  padding-bottom: 0.8125rem; }
+
+.navbar-brand,
+.offcanvas-title {
+  font-size: 1.5rem; }
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    margin-bottom: 0.25rem; } }
+
+[data-bs-theme="dark"] .navbar-brand,
+[data-bs-theme="dark"] .offcanvas-title {
+  color: #fff; }
+
+.toc-mobile-sticky {
+  position: sticky;
+  top: 62px;
+  z-index: 10;
+  background-color: var(--bs-body-bg);
+  margin: -32px -24px 60px; }
 
 /*# sourceMappingURL=main.css.map */
