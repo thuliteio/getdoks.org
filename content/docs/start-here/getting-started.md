@@ -36,7 +36,7 @@ Doks is a documentation template for the [Thulite web framework](https://thulite
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card title="Updating" description="Update Doks to the latest version." href="/docs/start-here/updating/overview/" >}}
+{{< link-card title="Updating" description="Update Doks to the latest version." href="/docs/start-here/updating/updating-overview/" >}}
 {{< link-card title="Troubleshooting" description="Diagnose and fix common issues." href="/docs/start-here/troubleshooting/" >}}
 {{< /card-grid >}}
 
