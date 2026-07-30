@@ -361,3 +361,18 @@ img,
     background-color: var(--bs-body-bg);
     margin: -32px -24px 60px;
 }
+
+// Link cards
+.card-nav {
+    column-gap: 1rem;
+}
+
+.card-nav .card {
+    margin: 0.5rem 0;
+}
+
+@include media-breakpoint-up(sm) {
+  .card.w-100.w-50 {
+    width: calc(50% - 0.5rem) !important;
+  }
+}
