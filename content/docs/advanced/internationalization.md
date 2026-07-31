@@ -41,12 +41,12 @@ In `config/_default/languages.toml`, each language has its own settings:
 
 ```toml {title="languages.toml"}
 [en]
-  languageName = "English"
+  label = "English"
   contentDir = "content/en"
   weight = 10
 
 [de]
-  languageName = "German"
+  label = "German"
   contentDir = "content/de"
   weight = 15
 ```

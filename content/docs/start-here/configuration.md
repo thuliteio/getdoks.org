@@ -30,7 +30,7 @@ disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+Locale = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 

@@ -28,7 +28,7 @@ disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+Locale = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
@@ -102,7 +102,7 @@ Whether Hugo adds Git metadata (for example commit date) to pages. A boolean.
 
 Whether Hugo generates a `robots.txt` file. A boolean — default is `true`.
 
-## languageCode
+## Locale
 
 The default site language code. A string — for example `"en-US"`.
 
