@@ -16444,6 +16444,7 @@ img,
   background-color: var(--bs-body-bg);
   margin: -32px -24px 60px; }
 
+/* START — Add to to @thulite/doks-core */
 .card-nav {
   column-gap: 1rem; }
 
@@ -16453,5 +16454,16 @@ img,
 @media (min-width: 576px) {
   .card.w-100.w-50 {
     width: calc(50% - 0.5rem) !important; } }
+
+h2 code, .h2 code {
+  font-size: 2rem; }
+
+h3 code, .h3 code {
+  font-size: 1.75rem; }
+
+h4 code, .h4 code {
+  font-size: 1.5rem; }
+
+/* END — Add to to @thulite/doks-core */
 
 /*# sourceMappingURL=main.css.map */

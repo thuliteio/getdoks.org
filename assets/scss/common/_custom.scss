@@ -362,6 +362,8 @@ img,
     margin: -32px -24px 60px;
 }
 
+/* START — Add to to @thulite/doks-core */
+
 // Link cards
 .card-nav {
     column-gap: 1rem;
@@ -376,3 +378,18 @@ img,
     width: calc(50% - 0.5rem) !important;
   }
 }
+
+// Code heading sizes
+h2 code, .h2 code {
+    font-size: $h2-font-size;
+}
+
+h3 code, .h3 code {
+    font-size: $h3-font-size;
+}
+
+h4 code, .h4 code {
+    font-size: $h4-font-size;
+}
+
+/* END — Add to to @thulite/doks-core */

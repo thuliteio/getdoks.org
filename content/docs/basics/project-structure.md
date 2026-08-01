@@ -24,7 +24,7 @@ Thulite follows the Hugo [directory structure](https://gohugo.io/getting-started
 Most projects include these key directories and files:
 
 - `assets` - processed assets (styles, scripts, images)
-- `config` - Hugo/Thulite configuration
+- `config` - Hugo/Thulite/Doks configuration
 - `content` - pages and section content
 - `layouts` - templates, partials, and shortcodes
 - `static` - files copied as-is to output
@@ -36,14 +36,11 @@ Typical starter structure:
 
 {{< tree >}}
 
-- {folder} archetypes
-  - {markdown} default.md
 - {folder} assets
   - {folder} scss
     - {folder} common
       - {brand-sass} \_custom.scss
       - {brand-sass} \_variables-custom.scss
-    - {brand-sass} app.scss
   - {png} favicon.png
   - {svg} favicon.svg
 - {folder} config
@@ -52,6 +49,11 @@ Typical starter structure:
     - {toml} module.toml
     - {toml} params.toml
 - {folder} content
+  - {folder} docs
+    - {folder} guides
+      - {markdown} example.md
+      - {markdown} \_index.md
+    - {markdown} \_index.md
   - {markdown} \_index.md
 - {folder} layouts
   - {html} home.html
@@ -60,12 +62,6 @@ Typical starter structure:
 - {json} package.json
 
 {{< /tree >}}
-
-### `archetypes`
-
-`default.md`
-
-Template used when creating new content files.
 
 ### `assets`
 
@@ -77,7 +73,7 @@ Use `assets/` for files that should be bundled, transformed, or optimized.
 
 Storing styles in `assets/scss/` is conventional, but not required. Any stylesheet in `assets/` can be processed when imported correctly.
 
-Use `app.scss` as your entrypoint. Put custom variables in `common/_variables-custom.scss` and custom styles in `common/_custom.scss`.
+Put custom variables in `common/_variables-custom.scss` and custom styles in `common/_custom.scss`.
 
 ### `config`
 
@@ -85,15 +81,15 @@ Use `app.scss` as your entrypoint. Put custom variables in `common/_variables-cu
 
 - `hugo.toml`: core [Hugo configuration](https://gohugo.io/configuration/all/)
 - `module.toml`: [Hugo mounts](https://gohugo.io/configuration/module/#mounts), including links from `node_modules` to project directories
-- `params.toml`: site-level [Thulite settings](/thulite/start-here/configuration/#update-parameters), including theme and integration options
+- `params.toml`: site-level [Doks settings](/docs/start-here/configuration/#update-parameters), including Thulite and integration options
 
 ### `content`
 
-Use `content/` for [pages](/thulite/basics/pages/), sections, and page bundles (including page resources).
+Use `content/` for [pages](/docs/basics/pages/), sections, and page bundles (including page resources).
 
 ### `layouts`
 
-[Layouts](/thulite/basics/layouts/) define shared page structure and rendering templates.
+[Layouts](/docs/basics/layouts/) define shared page structure and rendering templates.
 
 ### `static`
 
