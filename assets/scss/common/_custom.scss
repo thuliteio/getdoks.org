@@ -1,11 +1,13 @@
 // Put your custom SCSS code here
 
 /*! purgecss start ignore */
-// @import "@docsearch/css/dist/_variables";
+/*
+// @import "@docsearch/css/dist/_variables.scss";
 @import "common/variables-docsearch";
 
-// @import "@docsearch/css/dist/button";
-@import "@docsearch/css/dist/modal";
+// @import "@docsearch/css/dist/button.scss";
+@import "@docsearch/css/dist/modal.scss";
+*/
 /*! purgecss end ignore */
 
 .list.section.showcase {
