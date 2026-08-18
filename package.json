@@ -18,8 +18,8 @@
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@docsearch/css": "^5.0.1",
-    "@docsearch/js": "^5.0.1",
+    "@docsearch/css": "^5.0.2",
+    "@docsearch/js": "^5.0.2",
     "@tabler/icons": "^3.46.0",
     "@thulite/doks-core": "^1.9.3",
     "@thulite/images": "^3.3.4",
@@ -28,10 +28,8 @@
     "thulite": "^2.6.5"
   },
   "overrides": {
-    "minimatch": "^10.2.2",
-    "glob": "^13.0.6",
-    "undici": "^8.10.0",
-    "@ai-sdk/provider-utils": "^5.0.27"
+    "minimatch": "^10.2.6",
+    "glob": "^13.0.6"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^1.0.0",
