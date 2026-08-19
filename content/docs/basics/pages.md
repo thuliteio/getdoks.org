@@ -30,7 +30,7 @@ Some common patterns:
 
 ## Create new content
 
-Use the [`create` command](/thulite/reference/commands/#create) to scaffold content from your archetypes.
+Use the [`create` command](https://docs.thulite.io/thulite/reference/commands/#create) to scaffold content from your archetypes.
 
 {{< callout context="note" icon="info-circle" >}}
 
@@ -46,28 +46,28 @@ Create a regular page:
 {{< tab "npm" >}}
 
 ```bash
-npm run create about.md
+npm run create content about.md
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm run create about.md
+pnpm run create content about.md
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn run create about.md
+yarn run create content about.md
 ```
 
 {{< /tab >}}
 {{< tab "bun" >}}
 
 ```bash
-bun run create about.md
+bun run create content about.md
 ```
 
 {{< /tab >}}
@@ -79,28 +79,28 @@ Create a page using a [leaf bundle](https://gohugo.io/content-management/page-bu
 {{< tab "npm" >}}
 
 ```bash
-npm run create about/index.md
+npm run create content about/index.md
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm run create about/index.md
+pnpm run create content about/index.md
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn run create about/index.md
+yarn run create content about/index.md
 ```
 
 {{< /tab >}}
 {{< tab "bun" >}}
 
 ```bash
-bun run create about/index.md
+bun run create content about/index.md
 ```
 
 {{< /tab >}}
@@ -112,28 +112,28 @@ Create a section (or home page) using a [branch bundle](https://gohugo.io/conten
 {{< tab "npm" >}}
 
 ```bash
-npm run create docs/_index.md
+npm run create content docs/_index.md
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm run create docs/_index.md
+pnpm run create content docs/_index.md
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn run create docs/_index.md
+yarn run create content docs/_index.md
 ```
 
 {{< /tab >}}
 {{< tab "bun" >}}
 
 ```bash
-bun run create docs/_index.md
+bun run create content docs/_index.md
 ```
 
 {{< /tab >}}
@@ -145,28 +145,28 @@ To create the home page itself, use `_index.md` at the content root:
 {{< tab "npm" >}}
 
 ```bash
-npm run create _index.md
+npm run create content _index.md
 ```
 
 {{< /tab >}}
 {{< tab "pnpm" >}}
 
 ```bash
-pnpm run create _index.md
+pnpm run create content _index.md
 ```
 
 {{< /tab >}}
 {{< tab "Yarn" >}}
 
 ```bash
-yarn run create _index.md
+yarn run create content _index.md
 ```
 
 {{< /tab >}}
 {{< tab "bun" >}}
 
 ```bash
-bun run create _index.md
+bun run create content _index.md
 ```
 
 {{< /tab >}}

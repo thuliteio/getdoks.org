@@ -97,11 +97,11 @@ We build fast, accessible documentation sites with Thulite.
 Read the [Getting Started guide](/start-here/getting-started/) to learn more.
 ```
 
-If you're creating a new page, use the [`create` command](/thulite/reference/commands/#create) so front matter is scaffolded automatically.
+If you're creating a new page, use the [`create` command](https://docs.thulite.io/thulite/reference/commands/#create) so front matter is scaffolded automatically.
 
 ## Learn more
 
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/markdown.svg" title="Basic Syntax" description="Learn the core Markdown elements like headings, lists, links, images, and code blocks." href="/thulite/reference/markdown/basic-syntax/" >}}
-{{< link-card src="svgs/simple-icons/markdown.svg" title="Extended Syntax" description="Explore advanced Markdown features such as tables, footnotes, and task lists." href="/thulite/reference/markdown/extended-syntax/" >}}
+{{< link-card src="svgs/simple-icons/markdown.svg" title="Basic Syntax" description="Learn the core Markdown elements like headings, lists, links, images, and code blocks." href="/docs/reference/markdown/basic-syntax/" >}}
+{{< link-card src="svgs/simple-icons/markdown.svg" title="Extended Syntax" description="Explore advanced Markdown features such as tables, footnotes, and task lists." href="/docs/reference/markdown/extended-syntax/" >}}
 {{< /card-grid >}}

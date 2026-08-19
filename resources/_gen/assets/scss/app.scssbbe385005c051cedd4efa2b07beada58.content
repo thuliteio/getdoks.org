@@ -15216,6 +15216,11 @@ img,
   .card.w-100.w-50 {
     width: calc(50% - 0.5rem) !important; } }
 
+.content .svg-inline-custom.svg-monochrome {
+  margin-bottom: 1.5rem; }
+  .content .svg-inline-custom.svg-monochrome path {
+    fill: var(--sl-color-gray-3); }
+
 h2 code, .h2 code {
   font-size: 2rem; }
 

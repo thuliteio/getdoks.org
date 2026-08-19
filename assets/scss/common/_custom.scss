@@ -381,6 +381,15 @@ img,
   }
 }
 
+// Monochrome inline SVGs inside content
+.content .svg-inline-custom.svg-monochrome {
+    margin-bottom: 1.5rem;
+
+    path {
+        fill: var(--sl-color-gray-3);
+    }
+}
+
 // Code heading sizes
 h2 code, .h2 code {
     font-size: $h2-font-size;
