@@ -15230,6 +15230,58 @@ h3 code, .h3 code {
 h4 code, .h4 code {
   font-size: 1.5rem; }
 
+.callout.callout-info {
+  border-color: var(--sl-color-purple);
+  background-color: var(--sl-color-purple-high); }
+  .callout.callout-info .callout-icon,
+  .callout.callout-info .callout-title,
+  .callout.callout-info .callout-body a {
+    color: var(--sl-color-purple-low); }
+  .callout.callout-info .callout-body,
+  .callout.callout-info .callout-body a:hover,
+  .callout.callout-info .callout-body a:active {
+    color: var(--sl-color-white); }
+
+.callout.callout-warning {
+  border-color: var(--sl-color-orange);
+  background-color: var(--sl-color-orange-high); }
+  .callout.callout-warning .callout-icon,
+  .callout.callout-warning .callout-title,
+  .callout.callout-warning .callout-body a {
+    color: var(--sl-color-orange-low); }
+  .callout.callout-warning .callout-body,
+  .callout.callout-warning .callout-body a:hover,
+  .callout.callout-warning .callout-body a:active {
+    color: var(--sl-color-white); }
+
+[data-bs-theme="dark"] .callout.callout-info {
+  border-color: var(--sl-color-purple);
+  background-color: var(--sl-color-purple-low); }
+  [data-bs-theme="dark"] .callout.callout-info .callout-icon,
+  [data-bs-theme="dark"] .callout.callout-info .callout-title,
+  [data-bs-theme="dark"] .callout.callout-info .callout-body a {
+    color: var(--sl-color-purple-high); }
+  [data-bs-theme="dark"] .callout.callout-info .callout-body,
+  [data-bs-theme="dark"] .callout.callout-info .callout-body a:hover,
+  [data-bs-theme="dark"] .callout.callout-info .callout-body a:active {
+    color: var(--sl-color-white); }
+  [data-bs-theme="dark"] .callout.callout-info code:not(:where(.not-content *)) {
+    color: var(--ec-codeFg); }
+
+[data-bs-theme="dark"] .callout.callout-warning {
+  border-color: var(--sl-color-orange);
+  background-color: var(--sl-color-orange-low); }
+  [data-bs-theme="dark"] .callout.callout-warning .callout-icon,
+  [data-bs-theme="dark"] .callout.callout-warning .callout-title,
+  [data-bs-theme="dark"] .callout.callout-warning .callout-body a {
+    color: var(--sl-color-orange-high); }
+  [data-bs-theme="dark"] .callout.callout-warning .callout-body,
+  [data-bs-theme="dark"] .callout.callout-warning .callout-body a:hover,
+  [data-bs-theme="dark"] .callout.callout-warning .callout-body a:active {
+    color: var(--sl-color-white); }
+  [data-bs-theme="dark"] .callout.callout-warning code:not(:where(.not-content *)) {
+    color: var(--ec-codeFg); }
+
 /* END — Add to to @thulite/doks-core */
 
 /*# sourceMappingURL=main.css.map */

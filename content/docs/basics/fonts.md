@@ -5,7 +5,7 @@ summary: "Self-host fonts in Thulite with Fontsource, Hugo mounts, and SCSS vari
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 250
+weight: 285
 params:
   toc: true
   seo:

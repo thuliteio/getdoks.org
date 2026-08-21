@@ -403,4 +403,82 @@ h4 code, .h4 code {
     font-size: $h4-font-size;
 }
 
+.callout.callout-info {
+    border-color: var(--sl-color-purple);
+    background-color: var(--sl-color-purple-high);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body a {
+        color: var(--sl-color-purple-low);
+    }
+
+    .callout-body,
+    .callout-body a:hover,
+    .callout-body a:active {
+        color: var(--sl-color-white);
+    }
+}
+
+.callout.callout-warning {
+    border-color: var(--sl-color-orange);
+    background-color: var(--sl-color-orange-high);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body a {
+        color: var(--sl-color-orange-low);
+    }
+
+    .callout-body,
+    .callout-body a:hover,
+    .callout-body a:active {
+        color: var(--sl-color-white);
+    }
+}
+
+@include color-mode(dark) {
+    .callout.callout-info {
+        border-color: var(--sl-color-purple);
+        background-color: var(--sl-color-purple-low);
+
+        .callout-icon,
+        .callout-title,
+        .callout-body a {
+            color: var(--sl-color-purple-high);
+        }
+
+        .callout-body,
+        .callout-body a:hover,
+        .callout-body a:active {
+            color: var(--sl-color-white);
+        }
+
+        code:not(:where(.not-content *)) {
+            color: var(--ec-codeFg);
+        }
+    }
+
+    .callout.callout-warning {
+        border-color: var(--sl-color-orange);
+        background-color: var(--sl-color-orange-low);
+
+        .callout-icon,
+        .callout-title,
+        .callout-body a {
+            color: var(--sl-color-orange-high);
+        }
+
+        .callout-body,
+        .callout-body a:hover,
+        .callout-body a:active {
+            color: var(--sl-color-white);
+        }
+
+        code:not(:where(.not-content *)) {
+            color: var(--ec-codeFg);
+        }
+    }
+}
+
 /* END — Add to to @thulite/doks-core */

@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Tabs"
 description: ""
 summary: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
-weight: 999
+date: 2026-08-21T11:19:12+02:00
+lastmod: 2026-08-21T11:19:12+02:00
+draft: false
+weight: 235
 
 params:
   toc: true

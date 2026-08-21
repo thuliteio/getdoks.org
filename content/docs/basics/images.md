@@ -5,7 +5,7 @@ summary: "Organize and reference images in Thulite using practical paths, access
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 245
+weight: 280
 params:
   toc: true
   seo:

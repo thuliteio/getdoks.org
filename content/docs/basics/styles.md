@@ -5,7 +5,7 @@ summary: "Customize Thulite styling with SCSS variables and custom stylesheets, 
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 235
+weight: 270
 params:
   toc: true
   seo:

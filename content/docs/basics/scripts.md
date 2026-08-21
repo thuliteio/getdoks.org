@@ -5,7 +5,7 @@ summary: "Add custom JavaScript in Thulite using assets/js, DOM-ready patterns, 
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 240
+weight: 275
 params:
   toc: true
   seo:

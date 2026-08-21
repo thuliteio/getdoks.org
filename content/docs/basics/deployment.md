@@ -5,7 +5,7 @@ summary: "Compare deployment options for Thulite and follow platform-specific gu
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 255
+weight: 290
 params:
   toc: true
   seo:

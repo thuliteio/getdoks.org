@@ -5,7 +5,7 @@ summary: "Configure multilingual navigation menus in Thulite with menu files, we
 date: 2026-03-24T08:10:51+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 231
+weight: 265
 params:
   toc: true
   seo:

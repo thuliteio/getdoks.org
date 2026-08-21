@@ -5,7 +5,7 @@ summary: "Build reusable partial templates in Thulite layouts to share rendering
 date: 2026-05-15T16:27:22+02:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 230
+weight: 260
 params:
   toc: true
   seo:

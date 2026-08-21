@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Steps"
 description: ""
 summary: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
-weight: 999
+date: 2026-08-21T11:19:05+02:00
+lastmod: 2026-08-21T11:19:05+02:00
+draft: false
+weight: 233
 
 params:
   toc: true

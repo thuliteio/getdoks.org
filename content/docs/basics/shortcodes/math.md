@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Math"
 description: ""
 summary: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
-weight: 999
+date: 2026-08-21T11:18:49+02:00
+lastmod: 2026-08-21T11:18:49+02:00
+draft: false
+weight: 243
 
 params:
   toc: true

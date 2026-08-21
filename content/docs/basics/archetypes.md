@@ -5,7 +5,7 @@ summary: "Define archetypes to standardize frontmatter for new content, reduce r
 date: 2026-03-25T08:23:03+01:00
 lastmod: 2026-05-28T11:19:41+02:00
 draft: false
-weight: 220
+weight: 250
 toc: true
 params:
   toc: true

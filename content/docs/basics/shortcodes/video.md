@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Video"
 description: ""
 summary: ""
-date: {{ .Date }}
-lastmod: {{ .Date }}
-draft: true
-weight: 999
+date: 2026-08-21T11:19:24+02:00
+lastmod: 2026-08-21T11:19:24+02:00
+draft: false
+weight: 239
 
 params:
   toc: true
