@@ -1,0 +1,13 @@
+<figure class="preview-figure">
+  <div class="preview">
+    <figcaption>Preview</figcaption>
+    <div class="preview-content">
+      {{- $content := .Inner -}}
+      {{- if or (.Get "markdown") (eq (.Get "render") "markdown") -}}
+        {{- $content = .InnerDeindent | $.Page.RenderString (dict "display" "block") -}}
+      {{- end -}}
+      {{- /* Default to raw HTML so nested shortcode output and inline SVG stay intact. */ -}}
+      {{ $content | safeHTML }}
+    </div>
+  </div>
+</figure>

@@ -102,6 +102,6 @@ If you're creating a new page, use the [`create` command](https://docs.thulite.i
 ## Learn more
 
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/markdown.svg" title="Basic Syntax" description="Learn the core Markdown elements like headings, lists, links, images, and code blocks." href="/docs/reference/markdown/basic-syntax/" >}}
-{{< link-card src="svgs/simple-icons/markdown.svg" title="Extended Syntax" description="Explore advanced Markdown features such as tables, footnotes, and task lists." href="/docs/reference/markdown/extended-syntax/" >}}
+{{< link-card src="svgs/simple-icons/markdown.svg" title="Basic Syntax" description="Learn the core Markdown elements like headings, lists, links, images, and code blocks." href="https://docs.thulite.io/thulite/reference/markdown/basic-syntax/" >}}
+{{< link-card src="svgs/simple-icons/markdown.svg" title="Extended Syntax" description="Explore advanced Markdown features such as tables, footnotes, and task lists." href="https://docs.thulite.io/thulite/reference/markdown/extended-syntax/" >}}
 {{< /card-grid >}}

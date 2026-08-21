@@ -5,7 +5,7 @@ summary: "Reference page frontmatter fields in Thulite content files, including 
 date: 2026-03-25T13:02:07+01:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false
-weight: 429
+weight: 417
 params:
   toc: true
   seo:

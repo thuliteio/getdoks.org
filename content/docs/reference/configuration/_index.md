@@ -5,7 +5,7 @@ summary: "Navigate Thulite configuration references for file structure, core Hug
 date: 2026-05-12T09:40:44+02:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false
-weight: 420
+weight: 410
 
 params:
   toc: true

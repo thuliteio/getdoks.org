@@ -5,7 +5,7 @@ summary: "Understand the Thulite configuration layout, including default, enviro
 date: 2026-05-27T16:36:35+02:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false
-weight: 423
+weight: 411
 params:
   toc: true
   seo:

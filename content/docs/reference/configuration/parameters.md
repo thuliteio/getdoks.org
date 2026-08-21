@@ -5,7 +5,7 @@ summary: "Reference key Thulite site parameters in params.toml, including metada
 date: 2026-05-11T11:14:33+02:00
 lastmod: 2026-05-28T11:23:00+02:00
 draft: false
-weight: 427
+weight: 415
 params:
   toc: true
   seo:
