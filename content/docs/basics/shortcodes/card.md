@@ -54,13 +54,13 @@ Inner content is optional and supports Markdown.
 ### Standalone card
 
 {{< preview >}}
-{{< card title="Deploy" icon="upload-cloud" color="blue" >}}
+{{< card title="Deploy" icon="cloud-upload" color="blue" >}}
 Push your site to any static hosting provider.
 {{< /card >}}
 {{< /preview >}}
 
 ```go-html-template
-{{</* card title="Deploy" icon="upload-cloud" color="blue" */>}}
+{{</* card title="Deploy" icon="cloud-upload" color="blue" */>}}
 Push your site to any static hosting provider.
 {{</* /card */>}}
 ```
