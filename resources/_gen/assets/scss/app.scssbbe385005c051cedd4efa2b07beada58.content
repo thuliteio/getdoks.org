@@ -15294,9 +15294,19 @@ h4 code, .h4 code {
     width: 2rem;
     height: 2rem; } }
 
+.ec-wrapper .preview-content .expressive-code {
+  margin: 0 !important; }
+  .ec-wrapper .preview-content .expressive-code figcaption {
+    padding: 0;
+    font-size: 0.875rem; }
+
 .preview-content .callout,
 .preview-content .tree {
   margin: 0 !important; }
+
+.preview-content .mermaid {
+  margin: 0 !important;
+  padding: 0; }
 
 /* END — Add to to @thulite/doks-core */
 

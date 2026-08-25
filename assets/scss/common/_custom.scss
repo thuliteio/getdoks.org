@@ -498,10 +498,28 @@ h4 code, .h4 code {
     }
 }
 
+.ec-wrapper .preview-content {
+    .expressive-code {
+        margin: 0 !important;
+
+        figcaption {
+            padding: 0;
+            font-size: 0.875rem;
+        }
+    }
+}
+
 .preview-content {
     .callout,
     .tree {
         margin: 0 !important;
+    }
+}
+
+.preview-content {
+    .mermaid {
+        margin: 0 !important;
+        padding: 0;
     }
 }
 
