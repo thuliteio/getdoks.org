@@ -481,4 +481,28 @@ h4 code, .h4 code {
     }
 }
 
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 3rem 0;
+
+    table {
+        margin: 0;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .expressive-code .copy button {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.preview-content {
+    .callout,
+    .tree {
+        margin: 0 !important;
+    }
+}
+
 /* END — Add to to @thulite/doks-core */

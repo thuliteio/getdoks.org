@@ -16,45 +16,44 @@ params:
     robots: "" # custom robot tags (optional)
 ---
 
-## Usage
+Shortcodes let you use reusable template snippets inside Markdown content.
 
-{{< card-grid >}}
-{{< link-card title="Usage" description="Learn how to use shortcodes in your content." href="/docs/basics/shortcodes/usage/" >}}
-{{< /card-grid >}}
+In Thulite, shortcode templates live in `layouts/_shortcodes/` and are called from page content with Hugo shortcode syntax.
+
+{{< callout context="note" icon="bulb" >}}
+Install the VS Code extension for shortcode snippets and completions: [Hugo Shortcodes for VS Code](https://marketplace.visualstudio.com/items?itemName=thuliteio.hugo-shortcodes).
+{{< /callout >}}
 
 ## Doks
 
 {{< card-grid >}}
-{{< link-card title="Callout" description="" href="/docs/basics/shortcodes/callout/" >}}
-{{< link-card title="Card" description="" href="/docs/basics/shortcodes/card/" >}}
+{{< link-card title="Callout" description="Display highlighted notes, warnings, and other notices inline with your content." href="/docs/basics/shortcodes/callout/" >}}
+{{< link-card title="Card" description="Display content in a styled card with an optional icon, color, and body text." href="/docs/basics/shortcodes/card/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card title="Link Card" description="" href="/docs/basics/shortcodes/link-card/" >}}
-{{< link-card title="Card Grid" description="" href="/docs/basics/shortcodes/card-grid/" >}}
+{{< link-card title="Link Card" description="Display a clickable card that links to another page or URL." href="/docs/basics/shortcodes/link-card/" >}}
+{{< link-card title="Card Grid" description="Arrange cards side by side in a responsive grid layout." href="/docs/basics/shortcodes/card-grid/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card title="Details" description="" href="/docs/basics/shortcodes/details/" >}}
-{{< link-card title="Preview" description="" href="/docs/basics/shortcodes/preview/" >}}
+{{< link-card title="Details" description="Display a collapsible disclosure widget with a summary and hidden body content." href="/docs/basics/shortcodes/details/" >}}
+{{< link-card title="Preview" description="Wrap shortcode output in a labeled preview box to show a live render alongside its code." href="/docs/basics/shortcodes/preview/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card title="Steps" description="" href="/docs/basics/shortcodes/steps/" >}}
-{{< link-card title="Tabs" description="" href="/docs/basics/shortcodes/tabs/" >}}
+{{< link-card title="Steps" description="Display a numbered list of steps with styled step indicators." href="/docs/basics/shortcodes/steps/" >}}
+{{< link-card title="Tabs" description="Display content in a tabbed interface using tabs and tab shortcodes." href="/docs/basics/shortcodes/tabs/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card title="Tree" description="" href="/docs/basics/shortcodes/tree/" >}}
-{{< link-card title="Video" description="" href="/docs/basics/shortcodes/video/" >}}
+{{< link-card title="Tree" description="Render a file and folder tree from a Markdown list with optional SVG icons." href="/docs/basics/shortcodes/tree/" >}}
+{{< link-card title="Video" description="Embed a self-hosted video using the HTML video element." href="/docs/basics/shortcodes/video/" >}}
 {{< /card-grid >}}
 
-{{< card-grid >}}
-{{< link-card title="Kroki" description="" href="/docs/basics/shortcodes/kroki/" >}}
-{{< link-card title="Math" description="" href="/docs/basics/shortcodes/math/" >}}
-{{< /card-grid >}}
+## Integrations
 
-## Images
+### Images
 
 <!-- markdownlint-disable MD034 -->
 
@@ -82,7 +81,7 @@ params:
 
 <!-- markdownlint-enable MD034 -->
 
-## SVGs
+### SVGs
 
 <!-- markdownlint-disable MD034 -->
 
@@ -97,6 +96,37 @@ params:
   description="Insert icon symbols inline with a simple shortcode."
   href="https://docs.thulite.io/svg/basics/shortcode/icons/"
 >}}
+{{< /card-grid >}}
+
+<!-- markdownlint-enable MD034 -->
+
+## Custom shortcodes
+
+Create a template in `layouts/_shortcodes/`.
+
+Example file: `layouts/_shortcodes/note.html`
+
+```html {title="note.html"}
+<div class="callout callout-info">{{ .Inner | markdownify }}</div>
+```
+
+Use it in Markdown:
+
+```md
+{{</* note */>}}
+Use shortcodes when plain Markdown is not enough.
+{{</* /note */>}}
+```
+
+Keep shortcodes focused and reusable. If logic becomes complex, move it to a partial and call that from the shortcode.
+
+### Learn more
+
+<!-- markdownlint-disable MD034 -->
+
+{{< card-grid >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Shortcodes" description="Write and use Hugo shortcodes in content files." href="https://gohugo.io/content-management/shortcodes/" target="_blank" >}}
+{{< link-card src="svgs/simple-icons/hugo.svg" title="Shortcode templates" description="Build shortcode templates and pass arguments." href="https://gohugo.io/templates/shortcode/" target="_blank" >}}
 {{< /card-grid >}}
 
 <!-- markdownlint-enable MD034 -->

@@ -18,7 +18,7 @@ params:
 
 Archetypes are templates used when you create new content.
 
-In Thulite, archetypes live in `archetypes/` and are applied by the [`create` command](/thulite/reference/commands/#create).
+In Thulite, archetypes live in `archetypes/` and are applied by the [`create` command](https://docs.thulite.io/thulite/reference/commands/#create).
 
 ## Default archetype
 
