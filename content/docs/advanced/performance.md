@@ -1,12 +1,11 @@
 ---
-title: "Performance Overview"
-linkTitle: "Overview"
+title: "Performance"
 description: "Improve Thulite build and runtime performance with focused guidance on caching strategy, payload reduction, and high-impact optimization steps."
 summary: "Improve Thulite build and runtime performance with focused guidance on caching strategy, payload reduction, and high-impact optimization steps."
 date: 2026-05-18T08:14:59+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 310
+weight: 330
 params:
   toc: true
   seo:

@@ -1,12 +1,11 @@
 ---
-title: "SEO Overview"
-linkTitle: "Overview"
+title: "SEO"
 description: "Improve Thulite SEO with practical guidance for metadata, crawl signals, and visibility using the official SEO documentation and best practices."
 summary: "Improve Thulite SEO with practical guidance for metadata, crawl signals, and visibility using the official SEO documentation and best practices."
 date: 2026-05-18T08:14:40+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 330
+weight: 340
 params:
   toc: true
   seo:

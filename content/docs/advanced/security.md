@@ -1,12 +1,11 @@
 ---
-title: "Security Overview"
-linkTitle: "Overview"
+title: "Security"
 description: "Apply core security protections in Thulite with practical guidance for CSP, secure headers, and anti-scraping techniques for public websites."
 summary: "Apply core security protections in Thulite with practical guidance for CSP, secure headers, and anti-scraping techniques for public websites."
 date: 2026-05-18T08:14:51+02:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 320
+weight: 335
 params:
   toc: true
   seo:

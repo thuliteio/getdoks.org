@@ -5,10 +5,11 @@ summary: "Set up multilingual Thulite sites using Hugo language config, translat
 date: 2026-03-25T08:23:03+01:00
 lastmod: 2026-05-28T11:21:22+02:00
 draft: false
-weight: 305
+weight: 320
 toc: true
 params:
   toc: true
+  math: true
   seo:
     title: "" # custom title (optional)
     description: "" # custom description (recommended)
