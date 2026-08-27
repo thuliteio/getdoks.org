@@ -20,6 +20,24 @@ Use a fenced code block with the `mermaid` language identifier to add a diagram.
 
 ## Usage
 
+````md
+```mermaid
+flowchart LR
+  A[Write content] --> B[Build site]
+  B --> C[Publish]
+```
+````
+
+No additional page or site settings are required.
+
+## Examples
+
+Mermaid supports many [diagram types](https://mermaid.ai/open-source/intro/#diagram-types).
+
+### Flowcharts
+
+Use `flowchart` to show processes and relationships:
+
 {{< preview render=markdown >}}
 
 ```mermaid
@@ -38,13 +56,9 @@ flowchart LR
 ```
 ````
 
-## Examples
-
-Mermaid supports many diagram types.
-
 ### Sequence diagrams
 
-For example, use `sequenceDiagram` for interactions between participants:
+Use `sequenceDiagram` for interactions between participants:
 
 {{< preview render=markdown >}}
 

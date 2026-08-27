@@ -20,6 +20,21 @@ Use fenced code blocks to display source code. Add a language identifier after t
 
 ## Usage
 
+````md
+```js
+const message = "Hello, Doks!";
+console.log(message);
+```
+````
+
+No additional page or site settings are required.
+
+## Examples
+
+### Basic code block
+
+Use a [language identifier](https://gohugo.io/content-management/syntax-highlighting/#languages) to enable syntax highlighting.
+
 {{< preview render=markdown class="ec-wrapper">}}
 
 ```js
@@ -36,7 +51,7 @@ console.log(message);
 ```
 ````
 
-## Frames and titles
+### Frames and titles
 
 Code blocks with a title use an editor-style frame. The renderer uses a terminal-style frame for `bash`, `sh`, `shell`, and `powershell`.
 
@@ -86,7 +101,7 @@ npm install
 ```
 ````
 
-## Line numbers
+### Line numbers
 
 Use `lineNos=true` to show line numbers. Set the first number with `lineNoStart`.
 
@@ -106,7 +121,7 @@ console.log(message);
 ```
 ````
 
-## Highlight lines
+### Highlight lines
 
 Use `hl_lines` to highlight one or more lines.
 

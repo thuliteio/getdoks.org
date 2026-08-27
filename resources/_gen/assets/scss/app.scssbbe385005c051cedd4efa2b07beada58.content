@@ -15300,6 +15300,16 @@ h4 code, .h4 code {
     padding: 0;
     font-size: 0.875rem; }
 
+.math-wrapper .preview-content {
+  /*
+    .MathJax,
+    .katex-display {
+        margin: 0;
+    }
+    */ }
+  .math-wrapper .preview-content p {
+    margin-bottom: 0; }
+
 .preview-content .callout,
 .preview-content .tree {
   margin: 0 !important; }
