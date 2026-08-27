@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: ""
+description: "Read Doks release notes, product updates, and practical articles covering new features, improvements, and guidance for building documentation websites."
 summary: ""
 date: 2023-09-07T16:21:44+02:00
 lastmod: 2023-09-07T16:21:44+02:00

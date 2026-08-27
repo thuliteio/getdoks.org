@@ -1,6 +1,6 @@
 ---
 title: "Code Blocks"
-description: "Display code with syntax highlighting, frames, titles, line numbers, and highlighted lines."
+description: "Create readable Doks code blocks with syntax highlighting, frames, titles, line numbers, and highlighted lines to explain commands and examples clearly."
 summary: "Display code with syntax highlighting, frames, titles, line numbers, and highlighted lines."
 date: 2026-08-25T12:02:58+02:00
 lastmod: 2026-08-25T12:02:58+02:00

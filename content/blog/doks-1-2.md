@@ -1,7 +1,7 @@
 ---
 title: "Doks 1.2"
 url: "/blog/doks-1-2/"
-description: "Doks 1.2 is out! This release features support for diagrams, extended code blocks formatting, and more."
+description: "Doks 1.2 adds Mermaid diagram support, expanded code block formatting, and other refinements that make documentation pages clearer and easier to maintain."
 summary: "Doks 1.2 is out! This release features support for diagrams, extended code blocks formatting, and more."
 date: 2023-12-23T14:33:10+01:00
 lastmod: 2023-12-23T14:33:10+01:00

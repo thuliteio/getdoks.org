@@ -1,6 +1,6 @@
 ---
 title: "Diagrams"
-description: "Add Mermaid diagrams to your Doks documentation with fenced code blocks."
+description: "Add Mermaid diagrams to Doks documentation using fenced code blocks to present flows, relationships, timelines, and processes directly alongside content."
 summary: "Add Mermaid diagrams to your Doks documentation with fenced code blocks."
 date: 2026-08-25T11:56:57+02:00
 lastmod: 2026-08-25T11:56:57+02:00

@@ -1,7 +1,7 @@
 ---
 title: "Doks 1.0"
 url: "/blog/doks-1/"
-description: "Doks 1.0 is here! This release is a restructure release, making Doks more robust, reliable, and flexible."
+description: "Doks 1.0 delivers a restructured foundation that improves reliability, flexibility, and maintainability for teams building polished documentation sites."
 summary: "Doks 1.0 is here! This release is a restructure release, making Doks more robust, reliable, and flexible."
 date: 2023-09-12T20:20:15+02:00
 lastmod: 2023-09-12T20:20:15+02:00

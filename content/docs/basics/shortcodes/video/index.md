@@ -1,6 +1,6 @@
 ---
 title: "Video"
-description: "Embed a self-hosted video using the HTML video element."
+description: "Use the Doks video shortcode to embed self-hosted HTML video with a consistent presentation, giving readers helpful visual context without external embeds."
 summary: "Embed a self-hosted video using the HTML video element."
 date: 2026-08-21T11:19:24+02:00
 lastmod: 2026-08-21T11:19:24+02:00

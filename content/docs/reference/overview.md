@@ -1,8 +1,8 @@
 ---
 title: "Reference Overview"
 linkTitle: "Overview"
-description: ""
-summary: ""
+description: "Explore the Doks reference documentation for the CLI, configuration options, and Markdown syntax, with authoritative details for building and maintaining sites."
+summary: "Find reference details for Doks CLI, configuration, and Markdown."
 date: 2026-08-21T08:14:49+02:00
 lastmod: 2026-08-21T08:14:49+02:00
 draft: false

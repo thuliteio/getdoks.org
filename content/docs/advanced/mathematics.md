@@ -1,6 +1,6 @@
 ---
 title: "Mathematics"
-description: "Display mathematical expressions and equations with LaTeX in Markdown."
+description: "Display mathematical expressions and equations in Doks with LaTeX and Markdown, including inline notation and larger formulas that remain clear for readers."
 summary: "Display mathematical expressions and equations with LaTeX in Markdown."
 date: 2026-08-25T11:50:33+02:00
 lastmod: 2026-08-25T11:50:33+02:00

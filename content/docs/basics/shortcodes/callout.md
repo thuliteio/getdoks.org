@@ -1,6 +1,6 @@
 ---
 title: "Callout"
-description: "Display highlighted notes, warnings, and other notices inline with your content."
+description: "Use the Doks callout shortcode to highlight notes, tips, warnings, and important notices inline, helping readers quickly recognize essential guidance."
 summary: "Display highlighted notes, warnings, and other notices inline with your content."
 date: 2026-08-21T10:52:30+02:00
 lastmod: 2026-08-21T10:52:30+02:00

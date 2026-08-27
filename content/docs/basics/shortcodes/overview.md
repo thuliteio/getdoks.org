@@ -1,7 +1,7 @@
 ---
 title: "Shortcodes Overview"
-description: ""
-summary: ""
+description: "Review the Doks shortcode collection and choose reusable content components for callouts, cards, tabbed sections, media, navigation, and guided steps."
+summary: "Browse reusable Doks shortcodes for common content patterns."
 date: 2026-08-21T10:39:08+02:00
 lastmod: 2026-08-21T10:39:08+02:00
 draft: false

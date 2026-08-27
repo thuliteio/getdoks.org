@@ -1,6 +1,6 @@
 ---
 title: "Steps"
-description: "Display a numbered list of steps with styled step indicators."
+description: "Use the Doks steps shortcode to present ordered instructions with clear visual indicators, helping readers complete workflows one action at a time."
 summary: "Display a numbered list of steps with styled step indicators."
 date: 2026-08-21T11:19:05+02:00
 lastmod: 2026-08-21T11:19:05+02:00

@@ -1,6 +1,6 @@
 ---
 title: "Card Grid"
-description: "Arrange cards side by side in a responsive grid layout."
+description: "Use the Doks card grid shortcode to arrange related cards in a responsive layout that keeps navigation choices and supporting content easy to scan."
 summary: "Arrange cards side by side in a responsive grid layout."
 date: 2026-08-21T10:52:41+02:00
 lastmod: 2026-08-21T10:52:41+02:00

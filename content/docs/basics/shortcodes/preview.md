@@ -1,6 +1,6 @@
 ---
 title: "Preview"
-description: "Wrap shortcode output in a labeled preview box to show a live render alongside its code."
+description: "Use the Doks preview shortcode to show a labeled live rendering beside its source, making it easier to explain shortcode behavior and expected output."
 summary: "Wrap shortcode output in a labeled preview box to show a live render alongside its code."
 date: 2026-08-21T11:18:56+02:00
 lastmod: 2026-08-21T11:18:56+02:00

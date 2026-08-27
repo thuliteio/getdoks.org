@@ -1,6 +1,6 @@
 ---
 title: "Link Card"
-description: "Display a clickable card that links to another page or URL."
+description: "Use the Doks link card shortcode to create prominent, clickable links to related pages or external resources with clear titles and concise descriptions."
 summary: "Display a clickable card that links to another page or URL."
 date: 2026-08-21T11:18:43+02:00
 lastmod: 2026-08-21T11:18:43+02:00

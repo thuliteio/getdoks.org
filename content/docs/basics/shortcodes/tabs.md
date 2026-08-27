@@ -1,6 +1,6 @@
 ---
 title: "Tabs"
-description: "Display content in a tabbed interface using tabs and tab shortcodes."
+description: "Use the Doks tabs shortcode to group related content in an accessible tabbed interface, keeping alternative instructions and examples compact and organized."
 summary: "Display content in a tabbed interface using tabs and tab shortcodes."
 date: 2026-08-21T11:19:12+02:00
 lastmod: 2026-08-21T11:19:12+02:00

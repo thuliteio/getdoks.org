@@ -1,6 +1,6 @@
 ---
 title: "Card"
-description: "Display content in a styled card with an optional icon, color, and body text."
+description: "Use the Doks card shortcode to present focused content with an optional icon, color, title, link, and body text in a consistent visual format."
 summary: "Display content in a styled card with an optional icon, color, and body text."
 date: 2026-08-21T10:52:35+02:00
 lastmod: 2026-08-21T10:52:35+02:00

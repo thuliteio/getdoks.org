@@ -1,6 +1,6 @@
 ---
 title: "Details"
-description: "Display a collapsible disclosure widget with a summary and hidden body content."
+description: "Use the Doks details shortcode to add accessible collapsible sections with a clear summary and hidden supporting content that readers can reveal when needed."
 summary: "Display a collapsible disclosure widget with a summary and hidden body content."
 date: 2026-08-21T10:52:47+02:00
 lastmod: 2026-08-21T10:52:47+02:00

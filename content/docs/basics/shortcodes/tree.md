@@ -1,6 +1,6 @@
 ---
 title: "Tree"
-description: "Render a file and folder tree from a Markdown list with optional SVG icons."
+description: "Use the Doks tree shortcode to render a clear file and folder structure from a Markdown list, with optional icons that improve visual scanning."
 summary: "Render a file and folder tree from a Markdown list with optional SVG icons."
 date: 2026-08-21T11:19:19+02:00
 lastmod: 2026-08-21T11:19:19+02:00
