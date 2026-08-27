@@ -1,26 +1,31 @@
 <div class="card rounded-0 border-0">
   {{ $featured := partial "main/get-featured" . }}
   {{ if $featured -}}
-    <a class="stretched-link text-white text-decoration-none" href="{{ .Params.website }}" target="_blank">
+    <a class="stretched-link text-white text-decoration-none" href="{{ .Permalink }}">
       {{ partial "picture"  (dict
-      "page" .
-      "src" $featured
-      "process" "fill 1600x900"
-      "lqip" "16x webp q20"
-      "alt" .Title
-      "class" "card-img rounded-0"
+        "page" .
+        "src" $featured
+        "process" "fill 1600x900"
+        "lqip" "16x webp q20"
+        "decoding" "async"
+        "fetchpriority" "auto"
+        "loading" "lazy"
+        "alt" .Title
+        "class" "card-img-top rounded-2"
       )}}
     </a>
   {{ end -}}
-  <div class="card-img-overlay">
-    <h3 class="card-title fs-3">{{.Title}}</h3>
-    <p class="card-text">
-      {{ .Params.website }}
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-        <path d="M17 7l-10 10"></path>
-        <path d="M8 7l9 0l0 9"></path>
-      </svg>
-    </p>
+  <div class="card-img-overlay d-flex flex-column justify-content-between">
+    <h2 class="card-title fs-5 fw-medium lh-1">{{.Title}}</h2>
+    <div class="position-relative z-2">
+      <a href="{{ .Params.website }}" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">
+        {{ .Params.website }}
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-up-right" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M17 7l-10 10"></path>
+          <path d="M8 7l9 0l0 9"></path>
+        </svg>
+      </a>
+    </div>
   </div>
 </div>
