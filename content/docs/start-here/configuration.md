@@ -188,10 +188,19 @@ Update your [page frontmatter](/docs/reference/configuration/page-frontmatter/) 
 ---
 title: "Welcome to Doks"
 description: "Discover how the Doks Hugo theme helps you build fast, modern, and searchable documentation sites with a clean UI, dark mode, and powerful extras."
-lead: "Congrats on setting up a new Doks project!"
+summary: "Congrats on setting up a new Doks project!"
 date: 2023-09-07T16:33:54+02:00
 lastmod: 2026-02-16T16:10:57+01:00
 draft: false
+weight: 999
+
+type: "docs" # Reuse layouts/docs/{list,single}.html for this section and its child pages.
+
+cascade:
+  type: "docs"
+
+params:
+  toc: false
 ---
 ```
 

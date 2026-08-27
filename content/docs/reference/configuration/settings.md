@@ -20,11 +20,11 @@ This reference guide describes the main site settings in `config/_default/hugo.t
 ## Example
 
 ```toml {title="hugo.toml"}
-title = "Thulite"
+title = "My Docs"
 baseurl = "http://localhost/"
 disableAliases = true
 disableHugoGeneratorInject = true
-disableKinds = ["taxonomy", "term"]
+# disableKinds = ["taxonomy", "term"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
@@ -32,28 +32,42 @@ Locale = "en-US"
 rssLimit = 10
 summarylength = 20 # 70 (default)
 
+# Multilingual
+defaultContentLanguage = "en"
+disableLanguages = ["de", "nl"]
+defaultContentLanguageInSubdir = false
+
 copyRight = "Copyright (c) 2020-2026 Thulite"
 
 [build.buildStats]
   enable = true
 
-[outputs]
-  home = ["HTML"]
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [caches]
   [caches.getresource]
     dir = ":cacheDir/:project"
-    maxAge = "30m"
+    maxAge = -1 # "30m"
 
 [taxonomies]
+  contributor = "contributors"
   category = "categories"
+  tag = "tags"
 
 [permalinks]
-  blog = "/:title/"
+  blog = "/blog/:slug/"
+  docs = "/docs/:sections[1:]/:slug/"
+# docs = "/docs/1.0/:sections[1:]/:slug/"
 
 [minify.tdewolff.html]
   keepComments = true # If set to false, build signatures are removed
   keepWhitespace = false
+
+[pagination]
+  pagerSize = 10
 
 [related]
   threshold = 80
@@ -114,6 +128,18 @@ Maximum number of items in RSS feeds. A number.
 
 The word count used for automatically generated summaries. A number.
 
+## defaultContentLanguage
+
+The language used for content that does not specify a language. A language code string — for example `"en"`.
+
+## disableLanguages
+
+Languages excluded from the site build. An array of language code strings — for example `["de", "nl"]`.
+
+## defaultContentLanguageInSubdir
+
+Whether the default content language is included in the URL path. A boolean. When set to `false`, the default language uses the root URL instead of a language subdirectory.
+
 ## copyRight
 
 Copyright text used by templates and metadata. A string.
@@ -124,11 +150,21 @@ Copyright text used by templates and metadata. A string.
 
 Whether Hugo writes build statistics used by tooling. A boolean.
 
-## outputs
+## sitemap
 
-### home
+Settings for the generated sitemap.
 
-Output formats generated for the home page. An array of strings.
+### changefreq
+
+The recommended frequency at which sitemap content changes. A string — for example `"monthly"`.
+
+### filename
+
+The filename generated for the sitemap. A string — for example `"sitemap.xml"`.
+
+### priority
+
+The priority of pages in the sitemap relative to other pages. A number from `0.0` to `1.0` — for example `0.5`.
 
 ## caches
 
@@ -147,6 +183,14 @@ Defines URL patterns per section or content type.
 ## minify.tdewolff.html
 
 Controls HTML minification behavior, including comment and whitespace handling.
+
+## pagination
+
+Pagination settings for list pages.
+
+### pagerSize
+
+The default number of pages or items displayed per paginated page. A number — for example `10`.
 
 ## related
 
