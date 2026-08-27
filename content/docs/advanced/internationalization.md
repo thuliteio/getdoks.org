@@ -19,49 +19,103 @@ params:
 
 Internationalization (i18n) in Thulite is powered by Hugo's multilingual mode.
 
+{{< callout context="tip" title="Looking for an example?" icon="bulb" >}}
+Check out the [Doks Multilingual example project](https://github.com/thuliteio/doks-multilingual) and [demo site](https://profound-caramel-63661a.netlify.app/).
+{{< /callout >}}
+
 ## Quick setup
 
 {{< steps >}}
 {{< step >}}
-Define your languages in `config/_default/languages.toml`.
+Enable multilingual mode in your Doks config.
 {{< /step >}}
 {{< step >}}
-Create language-specific content directories (for example, `content/en`, `content/de`, `content/nl`).
+Define the default language and each supported language in your config.
 {{< /step >}}
 {{< step >}}
-Add translated pages with matching paths in each language directory.
+Create language-specific content folders and matching translated pages.
 {{< /step >}}
 {{< step >}}
-Add UI string translations in `i18n/*.toml`.
+Add translated UI strings and per-language menus if needed.
 {{< /step >}}
 {{< /steps >}}
 
+## Enable multilingual mode
+
+In `config/_default/params.toml`, turn on the Doks multilingual settings:
+
+```toml {title="params.toml"}
+[doks]
+  multilingualMode = true
+  showMissingLanguages = true
+```
+
+Then configure the default language in `config/_default/hugo.toml`:
+
+```toml {title="hugo.toml"}
+defaultContentLanguage = "en"
+disableLanguages = []
+defaultContentLanguageInSubdir = false
+```
+
 ## Configure languages
 
-In `config/_default/languages.toml`, each language has its own settings:
+In `config/_default/languages.toml`, add one block per language:
 
 ```toml {title="languages.toml"}
 [en]
-  label = "English"
   contentDir = "content/en"
+  languageCode = "en-US"
+  languageName = "English"
   weight = 10
 
 [de]
-  label = "German"
   contentDir = "content/de"
-  weight = 15
+  languageCode = "de-DE"
+  languageName = "Deutsch"
+  weight = 20
+
+[nl]
+  contentDir = "content/nl"
+  languageCode = "nl-NL"
+  languageName = "Nederlands"
+  weight = 30
 ```
 
-`contentDir` tells Hugo where to find content for each language.
+`contentDir` tells Hugo where to look for that language's pages. This is the key setting for keeping each language isolated.
 
-## Add translated content
+## Use language-specific content directories
 
-Keep the same relative path for each translation.
+Keep the same relative path for each translation:
 
 - English: `content/en/docs/getting-started.md`
 - German: `content/de/docs/getting-started.md`
+- Dutch: `content/nl/docs/getting-started.md`
 
-This keeps URLs and page structure aligned across languages.
+This keeps URLs and page structure aligned across translations.
+
+## Mount content by language
+
+If you use separate content folders with Doks, mount each folder into Hugo's content tree:
+
+```toml {title="module.toml"}
+[[mounts]]
+  source = "content/en"
+  target = "content"
+  lang = "en"
+
+[[mounts]]
+  source = "content/de"
+  target = "content"
+  lang = "de"
+
+[[mounts]]
+  source = "content/nl"
+  target = "content"
+  lang = "nl"
+```
+
+This is especially useful when you want each language to share the same site structure while keeping content separate.
 
 ## Translate interface strings
 
@@ -78,7 +132,30 @@ Example:
 other = "Read more"
 ```
 
-Use Hugo's `i18n` function in templates to render translated strings.
+Use Hugo's `i18n` function in templates to render the correct language string.
+
+## Optional: fill missing translations
+
+If one language is incomplete, you can reuse content from the default language:
+
+```toml {title="module.toml"}
+[[mounts]]
+  source = "content/en"
+  target = "content"
+  lang = "de"
+```
+
+This lets a translated site fall back to the default language for pages that are not yet available.
+
+## Per-language menus
+
+If your site has different navigation, create menu files like:
+
+- `config/_default/menus/menus.en.toml`
+- `config/_default/menus/menus.de.toml`
+- `config/_default/menus/menus.nl.toml`
+
+This keeps menu labels and links aligned with each language.
 
 ## Learn more
 

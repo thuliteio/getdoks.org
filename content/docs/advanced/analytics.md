@@ -19,12 +19,16 @@ Choose an analytics guide below to add your preferred service to a Thulite proje
 
 ## Analytics Guides
 
+<!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
-{{< link-card src="svgs/cabin.svg" title="Cabin Analytics" href="/thulite/advanced/analytics/cabin-analytics/" >}}
-{{< link-card src="svgs/simple-icons/fathom.svg" title="Fathom Analytics" href="/thulite/advanced/analytics/fathom-analytics/" >}}
+{{< link-card src="svgs/cabin.svg" title="Cabin Analytics" href="https://docs.thulite.io/thulite/advanced/analytics/cabin-analytics/" >}}
+{{< link-card src="svgs/simple-icons/fathom.svg" title="Fathom Analytics" href="https://docs.thulite.io/thulite/advanced/analytics/fathom-analytics/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card src="svgs/simple-icons/googleanalytics.svg" title="Google Analytics" href="/thulite/advanced/analytics/google-analytics/" >}}
-{{< link-card src="svgs/simple-icons/plausibleanalytics.svg" title="Plausible Analytics" href="/thulite/advanced/analytics/plausible-analytics/" >}}
+{{< link-card src="svgs/simple-icons/googleanalytics.svg" title="Google Analytics" href="https://docs.thulite.io/thulite/advanced/analytics/google-analytics/" >}}
+{{< link-card src="svgs/simple-icons/plausibleanalytics.svg" title="Plausible Analytics" href="https://docs.thulite.io/thulite/advanced/analytics/plausible-analytics/" >}}
 {{< /card-grid >}}
+
+<!-- markdownlint-enable MD034 -->

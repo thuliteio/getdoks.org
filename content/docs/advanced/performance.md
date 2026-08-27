@@ -19,7 +19,11 @@ Use this section to improve how fast your Thulite site builds, renders, and deli
 
 ## Performance Guides
 
+<!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
-{{< link-card title="Caching" description="Configure build and runtime caching for faster repeat visits and safer cache busting." href="/thulite/advanced/performance/caching/" >}}
-{{< link-card title="Optimization" description="Reduce payload size and defer non-critical work to improve Core Web Vitals." href="/thulite/advanced/performance/optimization/" >}}
+{{< link-card title="Caching" description="Configure build and runtime caching for faster repeat visits and safer cache busting." href="https://docs.thulite.io/thulite/advanced/performance/caching/" >}}
+{{< link-card title="Optimization" description="Reduce payload size and defer non-critical work to improve Core Web Vitals." href="https://docs.thulite.io/thulite/advanced/performance/optimization/" >}}
 {{< /card-grid >}}
+
+<!-- markdownlint-enable MD034 -->

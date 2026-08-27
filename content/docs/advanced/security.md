@@ -19,11 +19,15 @@ Use this section to apply essential security protections at the framework and ho
 
 ## Security Guides
 
+<!-- markdownlint-disable MD034 -->
+
 {{< card-grid >}}
-{{< link-card title="Content Security Policy" description="Restrict allowed resource sources to reduce XSS and injection risk." href="/thulite/advanced/security/content-security-policy/" >}}
-{{< link-card title="Headers" description="Set secure HTTP headers such as HSTS, nosniff, and permissions policy." href="/thulite/advanced/security/headers/" >}}
+{{< link-card title="Content Security Policy" description="Restrict allowed resource sources to reduce XSS and injection risk." href="https://docs.thulite.io/thulite/advanced/security/content-security-policy/" >}}
+{{< link-card title="Headers" description="Set secure HTTP headers such as HSTS, nosniff, and permissions policy." href="https://docs.thulite.io/thulite/advanced/security/headers/" >}}
 {{< /card-grid >}}
 
 {{< card-grid >}}
-{{< link-card title="Email Obfuscation" description="Protect published email addresses from basic scraping bots." href="/thulite/advanced/security/email-obfuscation/" class="w-50" >}}
+{{< link-card title="Email Obfuscation" description="Protect published email addresses from basic scraping bots." href="https://docs.thulite.io/thulite/advanced/security/email-obfuscation/" class="w-50" >}}
 {{< /card-grid >}}
+
+<!-- markdownlint-enable MD034 -->
