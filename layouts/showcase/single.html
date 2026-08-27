@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10 col-xl-8">
+        <h1 class="text-center my-3">{{ .Title }}</h1>
+        <p class="text-center text-body-secondary lead"><small>{{ .Summary }}</small></p>
+        <div class="page-content">
+          {{ $featured := partial "main/get-featured" . }}
+          {{ if $featured -}}
+            {{ partial "picture"  (dict
+              "page" .
+              "src" $featured
+              "lqip" "16x webp q20"
+              "decoding" "async"
+              "fetchpriority" "auto"
+              "loading" "lazy"
+              "alt" (printf "%s homepage screenshot" .Title)
+              "class" "article-wide-image img-zoom border-0 rounded-2"
+            )}}
+          {{ end -}}
+          {{ .Description }}
+          {{ .Content }}
+        </div>
+        <div class="text-center mt-5">
+          <a class="btn btn-primary btn-cta btn-lg rounded-pill my-3" href="{{ .Params.website }}" target="_blank" role="button">View site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ $pages := .CurrentSection.Pages.Reverse }}
+{{ partial "main/section-navigation" (dict "pages" $pages "context" .) }}
+
+<!--
+<div class="section pt-0 pt-md-3">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        {{ partial "main/newsletter-form" . }}
+      </div>
+    </div>
+  </div>
+</div>
+-->
+{{ end }}

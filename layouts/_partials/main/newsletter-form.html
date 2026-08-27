@@ -1,0 +1,11 @@
+<form name="newsletter" action="/newsletter/success/" method="post" netlify-honeypot="name" data-netlify="true" aria-labelledby="newsletter-heading">
+  <h2 class="fs-6 text-body-secondary d-flex align-items-center" id="newsletter-heading">Stay in the loop</h2>
+  <p class="text-body-secondary22">Get the latest updates, tips, and resources on Thulite delivered straight to your inbox.</p>
+  <div class="d-flex flex-column flex-sm-row w-100 gap-2 mt-4">
+    <input name="name" type="text" class="form-control visually-hidden" placeholder="Your Name" aria-label="Your Name (leave blank)" aria-hidden="true" tabindex="-1" autocomplete="name">
+    <input name="email" type="email" class="form-control shadow-none" placeholder="your@email.com" aria-label="Email address" aria-describedby="button-submit newsletter-description" autocomplete="off" required>
+    <input name="page" type="hidden" value="{{ .Page.Permalink }}">
+    <button type="submit" class="btn btn-thulite align-self-start" aria-label="Subscribe to newsletter" id="button-submit">Subscribe</button>
+  </div>
+  <div id="newsletter-description" class="visually-hidden">Get the latest updates, tips, and resources on Thulite delivered straight to your inbox.</div>
+</form>
