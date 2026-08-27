@@ -536,4 +536,12 @@ h4 code, .h4 code {
     }
 }
 
+.card,
+.blog-header {
+    .rounded-circle {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
 /* END — Add to to @thulite/doks-core */
