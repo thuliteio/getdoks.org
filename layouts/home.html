@@ -43,7 +43,7 @@
     </a>
   </section>
 -->
-  {{ if eq $.Site.Language.LanguageName "English" }}
+  {{ if eq $.Site.Language.Label "English" }}
   <section class="section section-md section-features">
     <div class="container">
       <div class="row justify-content-center text-center">
@@ -107,6 +107,16 @@
     </div>
   </section>
   -->
+
+  <section class="section section-md">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          {{ partial "main/newsletter-form" . }}
+        </div>
+      </div>
+    </div>
+  </section>
 {{ end }}
 
 {{ define "sidebar-footer" }}
@@ -121,6 +131,7 @@
   </div>
 </section>
 -->
+<!--
 <section class="section section-credits container">
   <div class="row justify-content-center text-center">
     <div class="col-lg-6">
@@ -133,5 +144,6 @@
     </div>
   </div>
 </section>
+-->
 {{ end -}}
 {{ end }}

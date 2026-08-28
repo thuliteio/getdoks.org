@@ -18,11 +18,7 @@
   {{ end -}}
 
     <!-- Site title -->
-    <a class="navbar-brand me-auto me-lg-3" href="{{ site.BaseURL | relLangURL }}">
-      <span class="visually-hidden">{{ .Site.Title }}</span>
-      {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-light-mode.svg" "width" "70px" "height" "100%" "class" "svg-inline-custom svg-lightmode") }}
-      {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-dark-mode.svg" "width" "70px" "height" "100%" "class" "svg-inline-custom svg-darkmode") }}
-    </a>
+    <a class="navbar-brand me-auto me-lg-3" href="{{ site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
 
     <!-- FlexSearch mobile -->
     {{ partial "main/showFlexSearch" . }}
@@ -64,7 +60,7 @@
         <div class="header-bar"></div>
       {{ end -}}
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">{{ .Section | humanize }}</h5>
+        <h5 class="offcanvas-title py-0" id="offcanvasNavSectionLabel">{{ .Section | humanize }}</h5>
         <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -98,11 +94,7 @@
         <div class="header-bar d-lg-none"></div>
       {{ end -}}
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">
-          <span class="visually-hidden">{{ site.Title }}</span>
-          {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-light-mode.svg" "width" "60px" "height" "100%" "class" "svg-inline-custom svg-lightmode") }}
-          {{ partial "inline-svg" (dict "src" "svgs/logos/doks-images-dark-mode.svg" "width" "60px" "height" "100%" "class" "svg-inline-custom svg-darkmode") }}
-        </h5>
+        <a class="navbar-brand py-0" id="offcanvasNavMainLabel" href="{{ site.BaseURL | relLangURL }}">{{ .Site.Title }}</a>
         <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -125,36 +117,7 @@
       -->
       <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
         <ul class="navbar-nav flex-grow-1">
-          {{- $current := . -}}
-          {{- $section := $current.Section -}}
-          {{ range .Site.Menus.main -}}
-            {{- $active := or ($current.IsMenuCurrent "main" .) ($current.HasMenuCurrent "main" .) -}}
-            {{- $active = or $active (eq .Name $current.Title) -}}
-            {{- $active = or $active (and (eq .Name ($section | humanize)) (eq $current.Section $section)) -}}
-            {{- $active = or $active (and (eq .Name "Documentation") (eq $current.Section "docs" )) -}}
-            {{- $active = or $active (and (eq .Name "Blog") (eq $current.Section "blog" "contributors")) -}}
-            {{ if .HasChildren -}}
-              <li class="nav-item dropdown" data-bs-theme="light">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  {{ .Name -}}
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M6 9l6 6l6 -6"></path>
-                  </svg>
-                </a>
-                <ul class="dropdown-menu shadow rounded border-0">
-                  {{ range .Children -}}
-                  {{- $active = eq .Name $current.Title -}}
-                    <li><a class="dropdown-item{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}{{with .Post}}{{ . }}{{ end }}</a></li>
-                  {{ end -}}
-                </ul>
-              </li>
-            {{ else -}}
-              <li class="nav-item">
-                <a{{with .Post}} target="_blank"{{ end }} class="nav-link{{ if $active }} active{{ end }}" href="{{ .URL | absURL }}"{{ if $active }} aria-current="true"{{ end }}>{{ .Name }}{{with .Post}}{{ . }}{{ end }}</a>
-              </li>
-            {{ end -}}
-          {{ end -}}
+          {{ partial "header/menu.html" (dict "menuID" "main" "page" .) }}
         </ul>
 
         <!-- FlexSearch desktop -->
@@ -195,7 +158,7 @@
                 <path d="M12 20l4 -9l4 9"></path>
                 <path d="M19.1 18h-6.2"></path>
               </svg>
-              {{ .Site.Language.LanguageName }}
+              {{ .Site.Language.label }}
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M6 9l6 6l6 -6"></path>
@@ -204,7 +167,7 @@
           </button>
           <ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby="doks-languages">
 
-            <li><span class="dropdown-item current" aria-current="true">{{ .Site.Language.LanguageName }}</span></li>
+            <li><span class="dropdown-item current" aria-current="true">{{ .Site.Language.label }}</span></li>
 
             <li><hr class="dropdown-divider"></li>
 
@@ -216,12 +179,12 @@
               {{ range site.Languages -}}
                 {{ if and (ne $.Lang .Lang) (not (in $.Params.skipTranslations .Lang)) -}}
                   {{ $isTranslated := in $translatedLangs .Lang -}}
-                  <li><a class="dropdown-item {{ if not $isTranslated }}untranslated{{ end }}" rel="alternate" href="{{ if $isTranslated }}{{ (index (where $.Translations "Lang" .Lang) 0).RelPermalink }}{{ else }}{{ .Lang | relURL }}{{ end }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .LanguageName }}</a></li>
+                  <li><a class="dropdown-item {{ if not $isTranslated }}untranslated{{ end }}" rel="alternate" href="{{ if $isTranslated }}{{ (index (where $.Translations "Lang" .Lang) 0).RelPermalink }}{{ else }}{{ .Lang | relURL }}{{ end }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .label }}</a></li>
                 {{- end }}
               {{- end }}
             {{ else -}}
               {{ range .Translations -}}
-                <li><a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
+                <li><a class="dropdown-item" rel="alternate" href="{{ .RelPermalink }}" hreflang="{{ .Lang }}" lang="{{ .Lang }}">{{ .Language.label }}</a></li>
               {{- end }}
             {{- end }}
               <!--
@@ -275,7 +238,7 @@
         <ul id="socialMenu" class="nav flex-row order-lg-4">
           {{ range .Site.Menus.social -}}
             <li class="nav-item">
-              <a class="nav-link social-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 visually-hidden">{{ .Name | safeHTML }}</small></a>
+              <a target="_blank" class="nav-link social-link" href="{{ .URL | relURL }}">{{ .Pre | safeHTML }}<small class="ms-2 visually-hidden">{{ .Name | safeHTML }}</small></a>
             </li>
           {{ end -}}
         </ul>

@@ -1,0 +1,43 @@
+{{ with .Site.Title -}}
+    # {{ . }}
+{{- end }}
+
+{{ with .Site.Params.Description -}}
+> {{ . }}
+{{- end }}
+
+{{ define "llms-render-section" -}}
+{{ $section := .section -}}
+{{ $depth := .depth -}}
+{{ $indent := strings.Repeat (sub $depth 2) "  " -}}
+
+{{ with $section.Title -}}
+{{ if eq $depth 2 }}
+    ## {{ . }}
+{{ else }}
+    {{ strings.Repeat $depth "#" }} {{ . }}
+{{ end }}
+{{- end }}
+
+{{ with $section.Description -}}
+{{ $indent }}> {{ . }}
+{{- end }}
+
+{{ range (where (sort $section.Pages "Weight" "asc" "Date" "desc" "Lastmod" "desc") "Params.sitemap" "ne" false) -}}
+    {{ if .Title -}}
+{{ $indent }}- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ else }}{{ with .Summary }}: {{ . }}{{ end }}{{ end }}
+    {{- end }}
+{{ end -}}
+
+{{ range (where (sort $section.Sections "Weight" "asc" "Date" "desc" "Lastmod" "desc") "Params.sitemap" "ne" false) -}}
+{{ template "llms-render-section" (dict "section" . "depth" (add $depth 1)) }}
+{{ end -}}
+{{ end -}}
+
+{{ range (where (sort ((.Site.GetPage "/").Pages) "Weight" "asc" "Date" "desc" "Lastmod" "desc") "Params.sitemap" "ne" false) -}}
+- [{{ .Title }}]({{ .Permalink }}){{ with .Description }}: {{ . }}{{ else }}{{ with .Summary }}: {{ . }}{{ end }}{{ end }}
+{{ end -}}
+
+{{ range (where (sort ((.Site.GetPage "/").Sections) "Weight" "asc" "Date" "desc" "Lastmod" "desc") "Params.sitemap" "ne" false) -}}
+{{ template "llms-render-section" (dict "section" . "depth" 2) }}
+{{ end -}}

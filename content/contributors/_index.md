@@ -1,6 +1,6 @@
 ---
 title: "Contributors"
-description: "The Doks contributors."
+description: "Meet the people who contribute to Doks through design, development, documentation, testing, and community support for the project and its users."
 summary: "The Doks contributors."
 date: 2023-09-12T20:21:35+02:00
 lastmod: 2023-09-12T20:21:35+02:00

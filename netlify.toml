@@ -1,9 +1,9 @@
 [build.environment]
-  DART_SASS_VERSION = "1.97.3"
-  GO_VERSION = "1.26.0"
-  HUGO_VERSION = "0.162.0"
-  NODE_VERSION = "24.16.0"
-  NPM_VERSION = "11.13.0"
+  DART_SASS_VERSION = "1.102.0"
+  GO_VERSION = "1.26.5"
+  HUGO_VERSION = "0.165.0"
+  NODE_VERSION = "24.20.0"
+  NPM_VERSION = "11.19.0"
   TZ = "Europe/Amsterdam"
 
 [build]
@@ -11,18 +11,175 @@
   command = """\
   git config core.quotepath false && \
   npm install && \
-  hugo build --gc --minify --baseURL "${URL}"
+  hugo build --gc --minify --baseURL "${URL}" && \
+  npx pagefind --site public
+  """
+
+[context.deploy-preview]
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL" && \
+  npx pagefind --site public
+  """
+
+[context.branch-deploy]
+  command = """\
+  git config core.quotepath false && \
+  npm install && \
+  hugo build --gc --minify --baseURL "$DEPLOY_PRIME_URL" && \
+  npx pagefind --site public
   """
 
 [dev]
   framework = "#custom"
-  command = "bun run dev"
+  command = "npm run dev"
   targetPort = 1313
   port = 8888
   publish = "public"
   autoLaunch = false
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+[[redirects]]
+  from = "/docs/built-ins/"
+  to = "/docs/advanced/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/recipes/"
+  to = "/docs/advanced/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/guides/"
+  to = "/docs/basics/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/upgrade/"
+  to = "/docs/start-here/updating/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/start-here/project-structure/"
+  to = "/docs/basics/project-structure/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/start-here/workflow/"
+  to = "/docs/start-here/usage/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/basics/authoring-content/"
+  to = "/docs/basics/markdown/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/basics/navigation/"
+  to = "/docs/basics/menus/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/basics/configuration/"
+  to = "/docs/start-here/configuration/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/built-ins/math/"
+  to = "/docs/advanced/mathematics/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/built-ins/diagrams/"
+  to = "/docs/advanced/diagrams/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/built-ins/code-blocks/"
+  to = "/docs/advanced/code-blocks/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/recipes/deploy/"
+  to = "/docs/basics/deployment/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/recipes/analytics/"
+  to = "/docs/advanced/analytics/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/recipes/cms/"
+  to = "/docs/advanced/cms/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/recipes/docsearch/"
+  to = "/docs/advanced/seo/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/recipes/versioning/"
+  to = "/docs/advanced/versioning/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/guides/customization/"
+  to = "/docs/basics/styles/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/guides/styles/"
+  to = "/docs/basics/styles/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/guides/scripts/"
+  to = "/docs/basics/scripts/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/guides/layouts/"
+  to = "/docs/basics/layouts/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/guides/i18n/"
+  to = "/docs/advanced/internationalization/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/guides/troubleshooting/"
+  to = "/docs/start-here/troubleshooting/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/upgrade/upgrade-doks/"
+  to = "/docs/start-here/updating/v2/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/upgrade/guides/"
+  to = "/docs/start-here/updating/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/reference/frontmatter/"
+  to = "/docs/reference/configuration/page-frontmatter/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/reference/markdown-basic-syntax/"
+  to = "/docs/basics/markdown/"
+  status = 301
+
+[[redirects]]
+  from = "/docs/reference/markdown-extended-syntax/"
+  to = "/docs/basics/markdown/"
+  status = 301
+
 [[redirects]]
 	from = "/*"
 	to = "/404/"
@@ -35,7 +192,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://analytics.ahrefs.com/api/event https://plausible.io https://srv.carbonads.net https://*.algolia.net https://*.algolianet.com https://*.algolia.io; font-src 'self'; img-src 'self' https://media.ethicalads.io https://ethicalads.blob.core.windows.net https://server.ethicalads.io https://srv.carbonads.net https://avatars.githubusercontent.com data:; script-src 'self' https://analytics.ahrefs.com/analytics.js https://plausible.io https://cdn.carbonads.com https://cdn.jsdelivr.net https://media.ethicalads.io https://server.ethicalads.io 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk=' 'sha256-d2naYp9C7LmEhG5Ym6TxSt+GauEaZC4Z+I9rATlQz1E='; style-src 'self' 'unsafe-inline'"
+    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://analytics.ahrefs.com/api/event https://plausible.io https://srv.carbonads.net https://*.algolia.net https://*.algolianet.com https://*.algolia.io; font-src 'self'; img-src 'self' https://media.ethicalads.io https://ethicalads.blob.core.windows.net https://server.ethicalads.io https://srv.carbonads.net https://avatars.githubusercontent.com data:; script-src 'self' https://analytics.ahrefs.com/analytics.js https://plausible.io https://cdn.carbonads.com https://cdn.jsdelivr.net https://media.ethicalads.io https://server.ethicalads.io 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' 'sha256-aWZ3y/RxbBYKHXH0z8+8ljrHG1mSBvyzSfxSMjBSaXk=' 'sha256-d2naYp9C7LmEhG5Ym6TxSt+GauEaZC4Z+I9rATlQz1E='; style-src 'self' 'unsafe-inline'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
     Permissions-Policy = "geolocation=(self), microphone=(), camera=()"

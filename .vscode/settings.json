@@ -3,5 +3,8 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "editor.tabSize": 2,
-  "editor.insertSpaces": true
+  "editor.insertSpaces": true,
+  "files.associations": {
+    "**/layouts/_markup/render-table.html": "gotmpl"
+  }
 }

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <h1 class="text-center my-3">{{ .Title }}</h1>
+        <div class="text-center my-4">
+          {{ .Content }}
+          <a class="btn btn-primary mt-4 btn-cta rounded-pill btn-lg" href="/" role="button">Back to homepage</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

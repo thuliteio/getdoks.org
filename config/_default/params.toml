@@ -4,7 +4,7 @@ description = "Congrats on setting up a new Doks project!"
 images = ["cover-doks.png"]
 
 # mainSections
-mainSections = ["docs", "upgrade-guides"]
+mainSections = ["docs"]
 
 # Global alert
 # alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/doks-1-6/">Doks 1.6 is out!</a>'
@@ -15,7 +15,7 @@ mainSections = ["docs", "upgrade-guides"]
 alertText = '<a target="_blank" class="alert-link stretched-link fw-normal" href="https://thulite.io/blog/hugo-shortcodes-0-1/">Get Hugo Shortcodes</a><svg xmlns="http://www.w3.org/2000/svg" class="ms-1 mb-1 icon icon-tabler icon-tabler-external-link" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>'
 
 # Footer
-footer = "Brought to you by <a class=\"text-muted\" href=\"https://thulite.io/\">Thulite</a>"
+footer = "© 2026 Ventizo"
 
 # Enable mathematical rendering on every page (unless you set the `math` parameter to `false` in front matter)
 math = false # false (default) or true
@@ -28,7 +28,7 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
 [add_ons]
   carbonAds = false # false (default) or true
   ethicalAds = false # false (default) or true
-  docSearch = true # false (default) or true
+  docSearch = false # false (default) or true
   plausibleDomain = "getdoks.org" # "example.com" (default)
   keila = false # false (default) or true
 
@@ -48,7 +48,7 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
   navBarButtonText = "Visit thulite.io"
 
   # FlexSearch
-  flexSearch = false # true (default) or false
+  flexSearch = true # true (default) or false
   searchExclKinds = [] # list of page kinds to exclude from search indexing (e.g. ["home", "taxonomy", "term"] )
   searchExclTypes = [] # list of content types to exclude from search indexing (e.g. ["blog", "docs", "legal", "contributors", "categories"])
   showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections (e.g. ["homepage", "blog", "guides"])
@@ -60,11 +60,11 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = true # false (default) or true
+  alert = false # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap
-  bootstrapJavascript = true # false (default) or true
+  bootstrapJavascript = false # false (default) or true
 
   # Nav
   sectionSwitcher = false # true or false (default)
@@ -85,7 +85,7 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
   # UX
   headerBar = false # true (default) or false
   backgroundDots = true # true (default) or false
-  aiButtons = true # true (default) or false
+  aiButtons = false # true (default) or false
 
   # Homepage
   sectionFooter = true # false (default) or true
@@ -96,8 +96,8 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
   imageSingle = true # true (default) or false
 
   # Repository
-  editPage = true # false (default) or true
-  lastMod = true # false (default) or true
+  editPage = false # false (default) or true
+  lastMod = false # false (default) or true
   repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
   docsRepo = "https://github.com/thuliteio/getdoks.org"
   docsRepoBranch = "main" # main (default), master, or <branch name>
@@ -139,7 +139,6 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
 # Inline SVG (@thulite/inline-svg)
 [inline_svg]
   iconSetDir = "tabler-icons" # "tabler-icons" (default)
-  iconSetVariant = "outline" # outline (default) or filled
 
 # SEO (@thulite/seo)
 [seo]
@@ -148,12 +147,13 @@ mathEngine = "KaTeX" # "KaTeX" (default) or "MathJax"
     suffix = ""
   [seo.description]
     summaryFallback = "" # "" (default)
+  [seo.description.length]
+    errorlevel = "warning" # warning (default), error, or ignore
+    min = 110
+    max = 160
   [seo.favicons]
-    sizes = []
     icon = "favicon.png" # favicon.png (default)
     svgIcon = "favicon.svg" # favicon.svg (default)
-    maskIcon = "mask-icon.svg" # mask-icon.svg (default)
-    maskIconColor = "white" # white (default)
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)

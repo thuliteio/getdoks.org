@@ -75,8 +75,12 @@
   target = "assets"
 
 [[mounts]]
-  source = "node_modules/@tabler/icons/icons"
+  source = "node_modules/@tabler/icons/icons/outline"
   target = "assets/svgs/tabler-icons"
+
+[[mounts]]
+  source = "node_modules/simple-icons/icons"
+  target = "assets/svgs/simple-icons"
 
 [[mounts]]
   source = "node_modules/@thulite/images/assets"

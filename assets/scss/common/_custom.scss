@@ -1,11 +1,13 @@
 // Put your custom SCSS code here
 
 /*! purgecss start ignore */
-// @import "@docsearch/css/dist/_variables";
+/*
+// @import "@docsearch/css/dist/_variables.scss";
 @import "common/variables-docsearch";
 
-// @import "@docsearch/css/dist/button";
-@import "@docsearch/css/dist/modal";
+// @import "@docsearch/css/dist/button.scss";
+@import "@docsearch/css/dist/modal.scss";
+*/
 /*! purgecss end ignore */
 
 .list.section.showcase {
@@ -76,6 +78,11 @@
     margin: 1rem;
 }
 
+.showcase .search-result .card {
+    height: auto;
+    margin: 0;
+}
+
 .showcase .card-img-overlay {
     position: absolute;
     inset: auto 0 0;
@@ -138,9 +145,11 @@
     }
 }
 
+/*
 .home .footer {
     @include visually-hidden;
 }
+*/
 
 // DocSearch
 /*! purgecss start ignore */
@@ -319,10 +328,278 @@ img,
 */
 
 // Footer fix (when sectionSwitcher = true)
+/*
 @include media-breakpoint-up(lg) {
     .footer {
         position: relative;
         z-index: $zindex-dropdown;
         background-color: inherit;
+    }
+}
+*/
+
+.offcanvas-header {
+    padding-top: 0.8125rem;
+    padding-bottom: 0.8125rem;
+}
+
+.navbar-brand,
+.offcanvas-title {
+    font-size: 1.5rem;
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar-brand {
+        margin-bottom: 0.25rem
+    }
+}
+
+@include color-mode(dark) {
+    .navbar-brand,
+    .offcanvas-title {
+        color: #fff;
+    }
+}
+
+.toc-mobile-sticky {
+    position: sticky;
+    top: 62px;
+    z-index: 10;
+    background-color: var(--bs-body-bg);
+    margin: -32px -24px 60px;
+}
+
+/* START — Add to to @thulite/doks-core */
+
+// Link cards
+.card-nav {
+    column-gap: 1rem;
+}
+
+.card-nav .card {
+    margin: 0.5rem 0;
+}
+
+@include media-breakpoint-up(sm) {
+  .card.w-100.w-50 {
+    width: calc(50% - 0.5rem) !important;
+  }
+}
+
+// Monochrome inline SVGs inside content
+.content .svg-inline-custom.svg-monochrome {
+    margin-bottom: 1.5rem;
+
+    path {
+        fill: var(--sl-color-gray-3);
+    }
+}
+
+// Code heading sizes
+h2 code, .h2 code {
+    font-size: $h2-font-size;
+}
+
+h3 code, .h3 code {
+    font-size: $h3-font-size;
+}
+
+h4 code, .h4 code {
+    font-size: $h4-font-size;
+}
+
+.callout.callout-info {
+    border-color: var(--sl-color-purple);
+    background-color: var(--sl-color-purple-high);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body a {
+        color: var(--sl-color-purple-low);
+    }
+
+    .callout-body,
+    .callout-body a:hover,
+    .callout-body a:active {
+        color: var(--sl-color-white);
+    }
+}
+
+.callout.callout-warning {
+    border-color: var(--sl-color-orange);
+    background-color: var(--sl-color-orange-high);
+
+    .callout-icon,
+    .callout-title,
+    .callout-body a {
+        color: var(--sl-color-orange-low);
+    }
+
+    .callout-body,
+    .callout-body a:hover,
+    .callout-body a:active {
+        color: var(--sl-color-white);
+    }
+}
+
+@include color-mode(dark) {
+    .callout.callout-info {
+        border-color: var(--sl-color-purple);
+        background-color: var(--sl-color-purple-low);
+
+        .callout-icon,
+        .callout-title,
+        .callout-body a {
+            color: var(--sl-color-purple-high);
+        }
+
+        .callout-body,
+        .callout-body a:hover,
+        .callout-body a:active {
+            color: var(--sl-color-white);
+        }
+
+        code:not(:where(.not-content *)) {
+            color: var(--ec-codeFg);
+        }
+    }
+
+    .callout.callout-warning {
+        border-color: var(--sl-color-orange);
+        background-color: var(--sl-color-orange-low);
+
+        .callout-icon,
+        .callout-title,
+        .callout-body a {
+            color: var(--sl-color-orange-high);
+        }
+
+        .callout-body,
+        .callout-body a:hover,
+        .callout-body a:active {
+            color: var(--sl-color-white);
+        }
+
+        code:not(:where(.not-content *)) {
+            color: var(--ec-codeFg);
+        }
+    }
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 3rem 0;
+
+    table {
+        margin: 0;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .expressive-code .copy button {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.ec-wrapper .preview-content {
+    .expressive-code {
+        margin: 0 !important;
+
+        figcaption {
+            padding: 0;
+            font-size: 0.875rem;
+        }
+    }
+}
+
+.math-wrapper .preview-content {
+    p {
+        margin-bottom: 0;
+    }
+
+    /*
+    .MathJax,
+    .katex-display {
+        margin: 0;
+    }
+    */
+}
+
+.preview-content {
+    .callout,
+    .tree {
+        margin: 0 !important;
+    }
+}
+
+.preview-content {
+    .mermaid {
+        margin: 0 !important;
+        padding: 0;
+    }
+}
+
+.card,
+.blog-header {
+    .rounded-circle {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* END — Add to to @thulite/doks-core */
+
+.page-content img.article-wide-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/*
+.page-content img.img-zoom {
+    cursor: zoom-in;
+}
+    */
+
+.page-content picture:has(> img.article-wide-image),
+.page-content figure:has(> img.article-wide-image) {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.page-content figure:has(> img.article-wide-image) figcaption {
+    margin-top: 0.75rem;
+    text-align: left;
+}
+
+@include media-breakpoint-up(xl) {
+    .page-content picture:has(> img.article-wide-image),
+    .page-content figure:has(> img.article-wide-image) {
+        width: calc(100% + 30rem);
+        max-width: none;
+        margin-left: -15rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+#newsletter-heading::after {
+    flex: 1;
+    height: 1px;
+    margin-left: 1rem;
+    background: #e9ecef;
+    content: "";
+}
+
+@include color-mode(dark) {
+    #newsletter-heading::after {
+        background: #23262f;
     }
 }

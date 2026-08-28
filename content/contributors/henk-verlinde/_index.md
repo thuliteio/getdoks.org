@@ -1,6 +1,6 @@
 ---
 title: "Henk Verlinde"
-description: "Creator of Doks."
+description: "Learn about Henk Verlinde, the creator of Doks, and his work shaping a fast, accessible, and flexible documentation framework for Hugo sites."
 summary: "Creator of Doks."
 date: 2023-09-12T20:21:47+02:00
 lastmod: 2023-09-12T20:21:47+02:00

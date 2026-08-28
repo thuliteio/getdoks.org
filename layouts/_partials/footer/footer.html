@@ -1,0 +1,18 @@
+<div class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <ul class="nav justify-content-center">
+          {{- range site.Menus.legal }}
+            <li class="nav-item">
+              <a class="nav-link px-3" href="{{ .URL }}">
+                {{ .Name }}
+              </a>
+            </li>
+          {{- end }}
+        </ul>
+        <p class="text-center text-body-secondary mt-2">{{ .Site.Params.footer }}</p>
+      </div>
+    </div>
+  </div>
+</div>

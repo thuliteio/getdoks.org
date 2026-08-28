@@ -1,0 +1,117 @@
+{{/* Based on https://gohugo.io/templates/menu/#example */}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+  {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+{{- end }}
+
+{{- define "_partials/inline/menu/walk.html" }}
+  {{- $page := .page }}
+  {{- range .menuEntries }}
+    {{- $hasChildren := .Children }}
+    {{- $name := .Name }}
+    {{- with .Identifier }}
+      {{- with T . }}
+        {{- $name = . }}
+      {{- end }}
+    {{- end }}
+
+    {{/* Determine base classes and current state */}}
+    {{- $isCurrentPage := $page.IsMenuCurrent .Menu . }}
+    {{- $isAncestor := $page.HasMenuCurrent .Menu . }}
+    {{- $baseClass := "nav-link" }}
+    {{- if $hasChildren }}
+      {{- $baseClass = printf "%s dropdown-toggle" $baseClass }}
+    {{- end }}
+    {{- if $isCurrentPage }}
+      {{- $baseClass = printf "%s active" $baseClass }}
+    {{- else if $isAncestor }}
+      {{- $baseClass = printf "%s ancestor" $baseClass }}
+    {{- end }}
+
+    {{/* Build attributes */}}
+    {{- $attrs := dict "class" $baseClass }}
+    {{- if $hasChildren }}
+      {{- $attrs = merge $attrs (dict "href" "#" "role" "button" "data-bs-toggle" "dropdown" "aria-expanded" "false") }}
+    {{- else }}
+      {{- $attrs = merge $attrs (dict "href" .URL) }}
+    {{- end }}
+    {{- if $isCurrentPage }}
+      {{- $attrs = merge $attrs (dict "aria-current" "page") }}
+    {{- else if $isAncestor }}
+      {{- $attrs = merge $attrs (dict "aria-current" "true") }}
+    {{- end }}
+    {{- $rel := "" }}
+    {{- with .Params.rel }}
+      {{- $rel = . }}
+    {{- end }}
+    {{- with .Params.target }}
+      {{- $attrs = merge $attrs (dict "target" .) }}
+      {{- if eq . "_blank" }}
+        {{- if not (in $rel "noopener") }}
+          {{- $rel = printf "%s noopener" $rel | strings.TrimSpace }}
+        {{- end }}
+        {{- if not (in $rel "noreferrer") }}
+          {{- $rel = printf "%s noreferrer" $rel | strings.TrimSpace }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- with $rel }}
+      {{- $attrs = merge $attrs (dict "rel" .) }}
+    {{- end }}
+
+    <li class="nav-item{{ if $hasChildren }} dropdown{{ end }}">
+      <a
+        {{- range $k, $v := $attrs }}
+          {{- with $v }}
+            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+        {{- end -}}
+      >{{ $name }}{{ with .Post }}{{ . | safeHTML }}{{ end }}{{ if $hasChildren }}<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>{{ end }}</a>
+      {{- with .Children }}
+        <ul class="dropdown-menu">
+          {{- range . }}
+            {{- $childName := .Name }}
+            {{- with .Identifier }}
+              {{- with T . }}
+                {{- $childName = . }}
+              {{- end }}
+            {{- end }}
+            {{- $childClass := "dropdown-item" }}
+            {{- $childAttrs := dict "href" .URL "class" $childClass }}
+            {{- $childRel := "" }}
+            {{- with .Params.rel }}
+              {{- $childRel = . }}
+            {{- end }}
+            {{- with .Params.target }}
+              {{- $childAttrs = merge $childAttrs (dict "target" .) }}
+              {{- if eq . "_blank" }}
+                {{- if not (in $childRel "noopener") }}
+                  {{- $childRel = printf "%s noopener" $childRel | strings.TrimSpace }}
+                {{- end }}
+                {{- if not (in $childRel "noreferrer") }}
+                  {{- $childRel = printf "%s noreferrer" $childRel | strings.TrimSpace }}
+                {{- end }}
+              {{- end }}
+            {{- end }}
+            {{- with $childRel }}
+              {{- $childAttrs = merge $childAttrs (dict "rel" .) }}
+            {{- end }}
+            {{- if $page.IsMenuCurrent .Menu . }}
+              {{- $childAttrs = merge $childAttrs (dict "class" "dropdown-item active" "aria-current" "page") }}
+            {{- end }}
+            <li><a
+              {{- range $k, $v := $childAttrs }}
+                {{- with $v }}
+                  {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+                {{- end }}
+              {{- end -}}
+            >{{ $childName }}{{ with .Post }}{{ . | safeHTML }}{{ end }}</a></li>
+          {{- end }}
+        </ul>
+      {{- end }}
+    </li>
+  {{- end }}
+{{- end }}
