@@ -584,3 +584,17 @@ h4 code, .h4 code {
         margin-bottom: 4rem;
     }
 }
+
+#newsletter-heading::after {
+    flex: 1;
+    height: 1px;
+    margin-left: 1rem;
+    background: #e9ecef;
+    content: "";
+}
+
+@include color-mode(dark) {
+    #newsletter-heading::after {
+        background: #23262f;
+    }
+}
