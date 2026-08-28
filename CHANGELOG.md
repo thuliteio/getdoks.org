@@ -1,5 +1,21 @@
 # doks-website
 
+## 0.9.0
+
+### Minor Changes
+
+- [#357](https://github.com/thuliteio/getdoks.org/pull/357) [`fdb6390`](https://github.com/thuliteio/getdoks.org/commit/fdb6390360de456539911497f8408f827623aaeb) Thanks [@h-enk](https://github.com/h-enk)! - Update documentation for new CLI and Hugo 0.148.1
+
+- [#364](https://github.com/thuliteio/getdoks.org/pull/364) [`781b1b8`](https://github.com/thuliteio/getdoks.org/commit/781b1b886f61b1027bd6f297fa4012df24e4ae4b) Thanks [@h-enk](https://github.com/h-enk)! - Restructure documentation
+
+### Patch Changes
+
+- [#360](https://github.com/thuliteio/getdoks.org/pull/360) [`449b2d1`](https://github.com/thuliteio/getdoks.org/commit/449b2d1ef2a1af44dc1d503da7f813793f69e720) Thanks [@h-enk](https://github.com/h-enk)! - Upgrade for Doks 1.9.1
+
+- [#358](https://github.com/thuliteio/getdoks.org/pull/358) [`6f68534`](https://github.com/thuliteio/getdoks.org/commit/6f685346b5c43df0eb2ec4082ed24b89608da5ca) Thanks [@h-enk](https://github.com/h-enk)! - Migrate DocSearch from v3 to v4
+
+- [#360](https://github.com/thuliteio/getdoks.org/pull/360) [`449b2d1`](https://github.com/thuliteio/getdoks.org/commit/449b2d1ef2a1af44dc1d503da7f813793f69e720) Thanks [@h-enk](https://github.com/h-enk)! - Update navigation UX
+
 ## 0.8.0
 
 ### Minor Changes
