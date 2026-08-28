@@ -18,8 +18,8 @@
     "preview": "vite preview --outDir public"
   },
   "dependencies": {
-    "@docsearch/css": "^5.0.3",
-    "@docsearch/js": "^5.0.3",
+    "@docsearch/css": "^5.0.4",
+    "@docsearch/js": "^5.0.4",
     "@tabler/icons": "^3.46.0",
     "@thulite/doks-core": "^1.9.3",
     "@thulite/images": "^3.3.4",
