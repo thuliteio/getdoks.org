@@ -41,7 +41,7 @@ Unfortunately, the Kroki service no longer is that robust. Use at your own risk!
 {{< /callout >}}
 -->
 
-```kroki {type=mermaid}
+```mermaid
 gantt
     title A Gantt Diagram
     dateFormat YYYY-MM-DD
@@ -54,7 +54,7 @@ gantt
 ```
 
 ````md
-```kroki {type=mermaid}
+```mermaid
 gantt
     title A Gantt Diagram
     dateFormat YYYY-MM-DD

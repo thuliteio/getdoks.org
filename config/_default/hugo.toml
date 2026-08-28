@@ -25,11 +25,11 @@ copyRight = "Copyright (c) 2020-2024 Thulite"
   enable = true
 
 [outputs]
-  home = ["html", "rss", "sitemap", "searchIndex"]
-  page     = ["html", "markdown"]
-  section  = ["html", "rss", "sitemap"]
-  taxonomy = ["html", "sitemap"]
-  term     = ["html", "sitemap"]
+  home = ["html", "rss", "sitemap-index", "sitemap", "llms", "searchIndex"]
+  page = ["html", "markdown"]
+  section = ["html", "rss", "sitemap"]
+  taxonomy = ["html", "rss", "sitemap"]
+  term = ["html", "rss", "sitemap"]
 
 [outputFormats.searchIndex]
   mediaType = "application/json"
@@ -43,14 +43,27 @@ copyRight = "Copyright (c) 2020-2024 Thulite"
   isPlainText = true
   mediaType = "text/markdown"
 
-# Add output format for section sitemap.xml
+[outputFormats.llms]
+  baseName = "llms"
+  isHTML = false
+  isPlainText = true
+  mediaType = "text/plain"
+
+[outputFormats.sitemap-index]
+  mediaType = "application/xml"
+  baseName = "sitemap-index"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel  = "sitemap"
+
 [outputFormats.sitemap]
-mediaType = "application/xml"
-baseName = "sitemap"
-isHTML = false
-isPlainText = true
-noUgly = true
-rel  = "sitemap"
+  mediaType = "application/xml"
+  baseName = "sitemap"
+  isHTML = false
+  isPlainText = true
+  noUgly = true
+  rel  = "sitemap"
 
 [sitemap]
   changefreq = "monthly"
@@ -60,7 +73,7 @@ rel  = "sitemap"
 [caches]
   [caches.getresource]
     dir = ":cacheDir/:project"
-    maxAge = -1 # "30m"
+    maxAge = "30m" # "30m"
 
 [taxonomies]
   contributor = "contributors"
