@@ -23,7 +23,7 @@ params:
 
 Doks 1.9 introduces AI-friendly documentation, a refreshed navigation experience, first-class math and diagrams, new content shortcodes, and lightbox support.
 
-To upgrade an existing project, see the [Doks v1.9](https://getdoks.org/docs/upgrade/guides/doks-v1.9/) upgrade guide.
+To upgrade an existing project, see the [Doks v1.9](/docs/start-here/updating/v2/) upgrade guide.
 
 <!-- omit in toc -->
 ## Highlights

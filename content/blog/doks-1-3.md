@@ -21,7 +21,7 @@ seo:
 
 Doks 1.3 — our first release of the new year — is here! This release includes restructured dependencies, deduplicated Bootstrap variables, and more.
 
-To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-doks/) guide.
+To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/updating/v2/) guide.
 
 <!-- omit in toc -->
 ## Highlights

@@ -21,7 +21,7 @@ seo:
 
 Doks 1.2 is out! This release features support for diagrams, extended code blocks formatting, and more.
 
-To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-doks/) guide.
+To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/updating/v2/) guide.
 
 <!-- omit in toc -->
 ## Highlights
@@ -67,7 +67,7 @@ gantt
 ```
 ````
 
-Read more about [diagrams](/docs/built-ins/diagrams/) in our documentation.
+Read more about [diagrams](/docs/advanced/diagrams/) in our documentation.
 
 ## Code blocks formatting
 
@@ -99,7 +99,7 @@ if ([1, "one", 2, "two"].includes(value)) {
 ```
 ````
 
-Also, you now can add [line numbers](/docs/built-ins/code-blocks/#line-numbers) and [line highlighting](/docs/built-ins/code-blocks/#highlight). Read more about [code blocks](/docs/built-ins/code-blocks/) in our documentation.
+Also, you now can add [line numbers](/docs/advanced/code-blocks/#line-numbers) and [line highlighting](/docs/advanced/code-blocks/#highlight-lines). Read more about [code blocks](/docs/advanced/code-blocks/) in our documentation.
 
 <!-- omit in toc -->
 ## Bug Fixes

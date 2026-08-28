@@ -61,7 +61,7 @@ The `module.toml` file specifies the [Hugo mounts](https://gohugo.io/configurati
 
 ### `params.toml`
 
-The `params.toml` file is where you set [Thulite configuration](/thulite/reference/configuration/) options like e.g. options for themes and integrations.
+The `params.toml` file is where you set [Thulite configuration](https://docs.thulite.io/thulite/reference/configuration/) options like e.g. options for themes and integrations.
 
 ## `config/next/`
 

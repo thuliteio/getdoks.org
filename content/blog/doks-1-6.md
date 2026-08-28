@@ -21,7 +21,7 @@ seo:
 
 Doks 1.6 is out! This release includes a new Hugo requirement, an improved `scripts` setup, new development tools, and more.
 
-To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-doks/) guide.
+To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/updating/v2/) guide.
 
 <!-- omit in toc -->
 ## Highlights
@@ -73,7 +73,7 @@ Doks 1.6 introduces a cleaner `scripts` section in your projects' `package.json`
 
 ## New development tools
 
-Thulite/Doks now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vitejs.dev/) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your cellphone — here's how:
+Thulite/Doks now uses [Prettier](https://prettier.io/) as a code formatter and [Vite](https://vite.dev) to preview your project's build. You can configure Prettier in the `.prettierrc.yaml` and `.prettierignore` files in the root of your project. With Vite, when you use the `--host` flag, you can preview the build on your local network — for example on your cellphone — here's how:
 
 {{< tabs "create-new-site" >}}
 {{< tab "npm" >}}

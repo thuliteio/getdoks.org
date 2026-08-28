@@ -21,7 +21,7 @@ seo:
 
 Doks 1.0 is here! This release is a restructure release, making Doks more robust, reliable, and flexible.
 
-To upgrade an existing project, see the [Upgrade to v1](/upgrade-guides/upgrade-to-v1/) guide.
+To upgrade an existing project, see the [Upgrade to v1](/docs/start-here/updating/v2/) guide.
 
 ## Quick start
 

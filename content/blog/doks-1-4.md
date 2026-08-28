@@ -21,7 +21,7 @@ seo:
 
 Doks 1.4 is now available! This release includes a new shortcode for link cards, improved sidebar navigation, and more.
 
-To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-doks/) guide.
+To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/updating/v2/) guide.
 
 <!-- omit in toc -->
 ## Highlights
@@ -33,7 +33,7 @@ To upgrade an existing project, see the [Upgrade Doks](/docs/start-here/upgrade-
 
 You can now use the `{{</* link-card */>}}` shortcode to link prominently to different pages.
 
-A `{{</* link-card */>}}` requires a `title` and an [`href`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#href) attribute. You can optionally include a short `description` or other link attributes such as `target`.
+A `{{</* link-card */>}}` requires a `title` and an [`href`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a#href) attribute. You can optionally include a short `description` or other link attributes such as `target`.
 
 {{< link-card
   title="Showcase"
