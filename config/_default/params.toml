@@ -1,6 +1,6 @@
 # Hugo
-title = "My Docs"
-description = "Congrats on setting up a new Doks project!"
+title = "Doks"
+description = "Build a fast, accessible documentation website with Doks, including practical defaults, flexible components, and an efficient authoring workflow."
 images = ["cover-doks.png"]
 
 # mainSections

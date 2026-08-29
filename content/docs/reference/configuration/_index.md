@@ -1,9 +1,9 @@
 ---
 title: "Configuration"
-description: "Navigate Thulite configuration references for file structure, core Hugo settings, parameters, and page frontmatter fields used in projects."
-summary: "Navigate Thulite configuration references for file structure, core Hugo settings, parameters, and page frontmatter fields used in projects."
+description: "Navigate Doks configuration references for file structure, core Hugo settings, parameters, and page frontmatter fields used in projects."
+summary: "Navigate Doks configuration references for file structure, core Hugo settings, parameters, and page frontmatter fields used in projects."
 date: 2026-05-12T09:40:44+02:00
-lastmod: 2026-05-28T11:23:00+02:00
+lastmod: 2026-08-29T09:52:52+02:00
 draft: false
 weight: 410
 

@@ -3,7 +3,7 @@ title: "Updating"
 description: "Navigate Doks update guidance, including release tracking, semantic versioning, and upgrade paths for keeping projects current and stable."
 summary: "Navigate Doks update guidance, including release tracking, semantic versioning, and upgrade paths for keeping projects current and stable."
 date: 2026-03-24T08:10:51+01:00
-lastmod: 2026-05-28T11:16:22+02:00
+lastmod: 2026-08-29T09:47:18+02:00
 draft: false
 weight: 130
 
