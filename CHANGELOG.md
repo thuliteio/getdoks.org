@@ -1,5 +1,11 @@
 # doks-website
 
+## 0.9.1
+
+### Patch Changes
+
+- [#365](https://github.com/thuliteio/getdoks.org/pull/365) [`cbd0ed7`](https://github.com/thuliteio/getdoks.org/commit/cbd0ed7b2bfe0510dab65a2ae0737d05d9d04a55) Thanks [@h-enk](https://github.com/h-enk)! - chore: update dependencies and add portless configuration
+
 ## 0.9.0
 
 ### Minor Changes
