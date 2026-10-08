@@ -1,5 +1,11 @@
 # doks-website
 
+## 0.9.2
+
+### Patch Changes
+
+- [#366](https://github.com/thuliteio/getdoks.org/pull/366) [`5e0a096`](https://github.com/thuliteio/getdoks.org/commit/5e0a096972863cac7c4bb964a0516892817b28a8) Thanks [@h-enk](https://github.com/h-enk)! - fix: update docsearch configuration and enable search functionality
+
 ## 0.9.1
 
 ### Patch Changes
