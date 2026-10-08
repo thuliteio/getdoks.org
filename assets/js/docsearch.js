@@ -4,8 +4,7 @@ docsearch({
   container: '#docsearch',
   appId: 'KMWY81ZWS3',
   apiKey: '691951526b11e1a708258e4e1a51adc7',
-  indices: [{ name: 'getdoks' }],
-  insights: true,
+  indices: ['getdoks'],
 });
 
 const onClick = function () {
