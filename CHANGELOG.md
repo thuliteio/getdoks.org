@@ -1,5 +1,11 @@
 # doks-website
 
+## 0.9.3
+
+### Patch Changes
+
+- [#367](https://github.com/thuliteio/getdoks.org/pull/367) [`9a7d126`](https://github.com/thuliteio/getdoks.org/commit/9a7d12664fd9768b138a98925dea268e094b71e8) Thanks [@h-enk](https://github.com/h-enk)! - fix: comment out DocSearch imports and update search configuration
+
 ## 0.9.2
 
 ### Patch Changes
