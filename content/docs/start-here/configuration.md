@@ -3,7 +3,7 @@ title: "Configuration"
 description: "Configure Doks by updating Hugo settings, project parameters, and page frontmatter, then apply integration-specific options when needed."
 summary: "Configure Doks by updating Hugo settings, project parameters, and page frontmatter, then apply integration-specific options when needed."
 date: 2026-04-27T12:46:23+02:00
-lastmod: 2026-05-28T11:16:22+02:00
+lastmod: 2026-10-13T11:56:49+02:00
 draft: false
 weight: 115
 params:
