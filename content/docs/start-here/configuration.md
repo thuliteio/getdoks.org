@@ -204,6 +204,17 @@ params:
 ---
 ```
 
+## Update Portless configuration
+
+Update your [Portless configuration](https://portless.sh/configuration) in `./portless.json`:
+
+```json
+{
+  "name": "doks",
+  "appPort": 1313
+}
+```
+
 ## Integrations
 
 <!-- markdownlint-disable MD034 -->
