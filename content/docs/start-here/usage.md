@@ -97,6 +97,43 @@ bun run dev
 
 When the server starts, open the local URL shown in your terminal (for example, `http://localhost:1313/`).
 
+## Start Portless development server
+
+Use Portless to replace port numbers with stable, named `.localhost` URLs during local development.
+
+{{< tabs "start-development-server-command" >}}
+{{< tab "npm" >}}
+
+```bash
+npm run portless
+```
+
+{{< /tab >}}
+{{< tab "pnpm" >}}
+
+```bash
+pnpm run portless
+```
+
+{{< /tab >}}
+{{< tab "Yarn" >}}
+
+```bash
+yarn portless
+```
+
+{{< /tab >}}
+{{< tab "bun" >}}
+
+```bash
+bun run portless
+```
+
+{{< /tab >}}
+{{< /tabs >}}
+
+When the server starts, open the local URL shown in your terminal (for example, `https://doks.localhost/`).
+
 ## Format
 
 Run the formatter before building or opening a pull request to keep Markdown, styles, and scripts consistent.
