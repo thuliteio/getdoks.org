@@ -3,7 +3,7 @@ title: "Usage"
 description: "Follow the day-to-day Doks workflow to create content, run the dev server, format files, build production output, and preview locally."
 summary: "Follow the day-to-day Doks workflow to create content, run the dev server, format files, build production output, and preview locally."
 date: 2026-04-27T12:46:32+02:00
-lastmod: 2026-05-28T11:16:22+02:00
+lastmod: 2026-10-13T11:56:39+02:00
 draft: false
 weight: 120
 params:
