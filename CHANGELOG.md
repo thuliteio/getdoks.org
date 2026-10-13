@@ -1,5 +1,15 @@
 # doks-website
 
+## 0.9.4
+
+### Patch Changes
+
+- [#368](https://github.com/thuliteio/getdoks.org/pull/368) [`9c248f1`](https://github.com/thuliteio/getdoks.org/commit/9c248f162337842ef9acad0e8219558dc8832bfb) Thanks [@h-enk](https://github.com/h-enk)! - docs: add Portless configuration and development server instructions
+
+- [#370](https://github.com/thuliteio/getdoks.org/pull/370) [`23d9ccb`](https://github.com/thuliteio/getdoks.org/commit/23d9ccb50c25b7b4828f74623f2540ae022525ac) Thanks [@h-enk](https://github.com/h-enk)! - feat: update lastmod dates for configuration, usage, and index files; add Doks 2 blog post
+
+- [#369](https://github.com/thuliteio/getdoks.org/pull/369) [`3a10bd1`](https://github.com/thuliteio/getdoks.org/commit/3a10bd1f4d6bc76a6be8e9880c023ed30a9ebd29) Thanks [@h-enk](https://github.com/h-enk)! - feat: add Geometry Dash Creator School and Opsero Docs showcases with cover images
+
 ## 0.9.3
 
 ### Patch Changes
