@@ -1,5 +1,11 @@
 # doks-website
 
+## 0.9.5
+
+### Patch Changes
+
+- [#371](https://github.com/thuliteio/getdoks.org/pull/371) [`feda927`](https://github.com/thuliteio/getdoks.org/commit/feda927880de6735ededb5fed1ff858b345a1ee1) Thanks [@h-enk](https://github.com/h-enk)! - refactor: clean up formatting and structure in menus.en.toml
+
 ## 0.9.4
 
 ### Patch Changes
