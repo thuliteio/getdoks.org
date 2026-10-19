@@ -1,5 +1,11 @@
 # doks-website
 
+## 0.9.6
+
+### Patch Changes
+
+- [#372](https://github.com/thuliteio/getdoks.org/pull/372) [`4ea296e`](https://github.com/thuliteio/getdoks.org/commit/4ea296e8f2134b5a8e0331672b5f3e6d87c64473) Thanks [@h-enk](https://github.com/h-enk)! - fix: add text color to card title for better visibility
+
 ## 0.9.5
 
 ### Patch Changes
